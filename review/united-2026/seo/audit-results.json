@@ -1,0 +1,73 @@
+{
+  "scope": "Private static preview; not a production crawl or Lighthouse score",
+  "pages": {
+    "/": {
+      "title": "Inglês em 18 meses | Curso online United Idiomas",
+      "description": "Conheça o Live Class: curso de inglês online e ao vivo, com trilha de 18 meses, conversação ilimitada e horários flexíveis. Fale inglês, faça United.",
+      "h1": "Você tem muitoa dizer.Fale inglês.",
+      "images": 38,
+      "videos": 3,
+      "stylesheets": 1
+    },
+    "/cursos/": {
+      "title": "Cursos de inglês online: Live Class e Business | United",
+      "description": "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina.",
+      "h1": "Live Class",
+      "images": 39,
+      "videos": 3,
+      "stylesheets": 1
+    },
+    "/quem-somos/": {
+      "title": "Escola de inglês United Idiomas | Quem somos",
+      "description": "Conheça a United Idiomas, escola de inglês com mais de 150 mil alunos em sua história. Aulas online, metodologia interativa e unidades híbridas.",
+      "h1": "Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.",
+      "images": 28,
+      "videos": 1,
+      "stylesheets": 1
+    },
+    "/faq/": {
+      "title": "Dúvidas sobre o curso de inglês | United Idiomas",
+      "description": "Como escolher o melhor curso de inglês para você? Tire dúvidas sobre inglês em 18 meses, aulas online, conversação e certificação na United Idiomas.",
+      "h1": "Tire suas dúvidas sobre nossos cursos de inglês",
+      "images": 19,
+      "videos": 0,
+      "stylesheets": 1
+    }
+  },
+  "local_dependencies_checked": 145,
+  "metrics": {
+    "six_banner_assets": {
+      "original_bytes": 11025845,
+      "optimized_bytes": 1397476,
+      "reduction_percent": 87.33
+    },
+    "all_optimized_images": {
+      "original_bytes": 28288280,
+      "optimized_bytes": 4891248,
+      "reduction_percent": 82.71
+    },
+    "six_previously_remote_videos": {
+      "original_bytes": 211630071,
+      "optimized_bytes": 7931440,
+      "reduction_percent": 96.25
+    },
+    "local_fonts": {
+      "original_bytes": 193820,
+      "optimized_bytes": 60584,
+      "reduction_percent": 68.74
+    },
+    "delivered_raster_image_inventory": {
+      "files": 171,
+      "bytes": 43760574,
+      "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "unmeasured": [
+    "Lighthouse/PageSpeed score: not measured in this final review; an earlier API attempt returned HTTP 429",
+    "Production Core Web Vitals and Search Console indexing",
+    "Real-device Safari behavior",
+    "Server compression, cache headers and TTFB on the official host"
+  ]
+}

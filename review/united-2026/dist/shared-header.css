@@ -1,0 +1,107 @@
+/* One header geometry for the home and every interior page. */
+html body header.united-header,
+html body header.united-header.fixed {
+  box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;
+  width:calc(100% - 76px);max-width:none;min-height:0;height:auto;
+  margin:0 auto;padding:32px clamp(18px,2.75vw,48px) 0!important;
+  gap:16px;left:auto;top:0!important;transform:none;
+  background:transparent!important;box-shadow:none!important;transition:none;
+  font-family:Manrope,Arial,sans-serif;z-index:100;
+}
+html body>header.united-header {position:absolute;left:38px;margin:0}
+html body .header-interno {min-height:116px;background:var(--united-blue-primary)}
+html body .header-interno header.united-header {position:relative}
+html body header.united-header .logo {display:block;width:100px!important;height:auto!important;flex:0 0 100px}
+html body header.united-header .logo img {display:block;width:100%;height:auto}
+html body header.united-header .socials {display:flex!important;align-items:center;gap:12px;flex-shrink:0}
+html body header.united-header .socials img {display:block;width:22px;height:22px;object-fit:contain}
+html body header.united-header nav {display:block}
+html body header.united-header .menu {display:flex;align-items:center}
+html body header.united-header .menu>li>a {font-size:14px!important;height:44px;padding:0 clamp(9px,1.2vw,18px);gap:12px;white-space:nowrap}
+html body header.united-header .menu>li::after {height:20px;background:#ffffff55}
+html body header.united-header .menu>li:last-child::after {display:none}
+html body header.united-header .menu>li>a svg {width:10px;height:8px}
+html body header.united-header .submenu {min-width:170px;border:1px solid #ffffff30;border-radius:10px;overflow:hidden;background:#08294b;box-shadow:0 12px 28px #00102430}
+html body header.united-header .submenu>li {border-color:#ffffff20}
+html body header.united-header .submenu>li>a {font-size:14px;line-height:1.35;min-height:44px;height:auto;padding:12px;background:transparent;backdrop-filter:none}
+html body header.united-header .submenu>li>a:hover,
+html body header.united-header .submenu>li>a:focus-visible {background:#123d71}
+html body header.united-header .menu>li:focus-within .submenu {display:block}
+html body header.united-header .button-area {
+  display:inline-flex!important;align-items:center;justify-content:center;gap:9px;
+  box-sizing:border-box;flex-shrink:0;min-height:44px;height:44px!important;
+  margin:0;padding:0 18px!important;border:1px solid transparent;border-radius:8px;
+  color:#fff;background:#23824b;font-size:14px!important;font-weight:700;line-height:1;
+  white-space:nowrap;text-decoration:none;transition:background .18s ease,border-color .18s ease;
+}
+html body header.united-header .button-area:hover {background:#1b6d3e}
+html body header.united-header .button-contato,
+html body header.united-header .open-menu {display:none!important}
+html body header.united-header :is(a,button):focus-visible,
+html body .united-mobile-menu :is(a,button):focus-visible {outline:2px solid #fff;outline-offset:4px;border-radius:5px}
+html.united-menu-open {overflow:hidden}
+html.united-menu-open .contact-actions {visibility:hidden;pointer-events:none}
+html body .united-mobile-menu {display:none}
+@media(min-width:769px) and (max-width:1190px) {
+  html body header.united-header .socials {display:none!important}
+  html body header.united-header .menu>li>a {padding:0 10px;font-size:13px!important;gap:8px}
+}
+@media(max-width:768px) {
+  html body header.united-header,
+  html body header.united-header.fixed {
+    width:100%;height:88px!important;min-height:88px;
+    padding:16px 20px!important;gap:10px;left:0;top:0!important;
+  }
+  html body .header-interno {min-height:88px}
+  html body header.united-header .logo {width:88px!important;flex-basis:88px}
+  html body header.united-header nav,
+  html body header.united-header .socials {display:none!important}
+  html body header.united-header .button-area {
+    margin-left:auto;padding:0 13px!important;font-size:13px!important;
+    background:#ffffff0d;border-color:#ffffff55;border-radius:10px;
+  }
+  html body header.united-header .button-area::after {display:none}
+  html body header.united-header .button-area:hover {background:#ffffff1c;border-color:#ffffff99}
+  html body header.united-header .open-menu {
+    display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+    width:44px;height:44px;flex:0 0 44px;padding:10px;margin:0;
+    border:1px solid #ffffff33;border-radius:10px;background:transparent;cursor:pointer;
+  }
+  html body header.united-header .open-menu span {display:block;width:22px;height:2px;margin:0;background:#fff;border-radius:2px}
+  html body .united-mobile-menu {
+    box-sizing:border-box;position:fixed;inset:0;width:100%;height:100%;height:100dvh;
+    padding:0 24px max(20px,env(safe-area-inset-bottom));z-index:101;
+    background:#0b2947;color:#fff;overflow:auto;overscroll-behavior:contain;
+    font-family:Manrope,Arial,sans-serif;
+  }
+  html body .united-mobile-menu.open {display:flex;flex-direction:column}
+  html body .united-mobile-menu .header {display:flex;align-items:center;justify-content:space-between;min-height:88px;padding:16px 0;flex-shrink:0}
+  html body .united-mobile-menu .header .logo {width:88px;display:block}
+  html body .united-mobile-menu .header .logo img {display:block;width:100%;height:auto}
+  html body .united-mobile-menu .header .close-menu {
+    display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:44px;height:44px;
+    padding:0;border:1px solid #ffffff33;border-radius:10px;text-indent:0;
+    background:none;color:#fff;font:300 32px/1 Manrope,Arial,sans-serif;cursor:pointer;
+  }
+  html body .united-mobile-menu .student-access {padding:16px;margin:8px 0 18px;border:1px solid #ffffff25;border-radius:14px;background:#ffffff06;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  html body .united-mobile-menu .student-access p {margin:0;font-size:14px;line-height:1.4;color:#c8d9e9}
+  html body .united-mobile-menu .button-area {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 15px;background:#fff;color:#0b2947;border-radius:9px;font-size:14px;font-weight:800;white-space:nowrap;text-decoration:none}
+  html body .united-mobile-menu .button-area::after {display:none}
+  html body .united-mobile-menu nav {padding:0}
+  html body .united-mobile-menu nav>ul>li {border-bottom:1px solid #ffffff18}
+  html body .united-mobile-menu nav>ul>li>a {display:flex;align-items:center;min-height:56px;padding:14px 0;font-size:20px;line-height:1.35;text-transform:none;text-align:left;font-weight:700;color:#fff}
+  html body .united-mobile-menu .mobile-course-links {display:flex;gap:8px;flex-wrap:wrap;padding:0 0 16px}
+  html body .united-mobile-menu .mobile-course-links a {padding:8px 10px;min-height:44px;display:inline-flex;align-items:center;color:#d2e4f5;font-size:13px;font-weight:600;text-transform:none;line-height:1.3;border:1px solid #ffffff24;border-radius:8px}
+  html body .united-mobile-menu .socials {display:flex;align-items:center;justify-content:flex-start;gap:14px;margin:24px 0 0;padding:0}
+  html body .united-mobile-menu .socials a {display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #ffffff20;border-radius:10px}
+  html body .united-mobile-menu .socials img {display:block;max-width:21px;max-height:21px;object-fit:contain}
+}
+@media(max-width:360px) {
+  html body header.united-header,
+  html body header.united-header.fixed {padding:16px!important;gap:8px}
+  html body header.united-header .logo {width:78px!important;flex-basis:78px}
+  html body header.united-header .button-area {padding:0 10px!important}
+  html body .united-mobile-menu {padding-left:20px;padding-right:20px}
+  html body .united-mobile-menu .student-access {padding:12px;gap:8px}
+  html body .united-mobile-menu .student-access p {font-size:13px}
+}

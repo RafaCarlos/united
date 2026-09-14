@@ -1,0 +1,42 @@
+html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden}
+.wow{visibility:visible!important}
+.header-interno { min-height:110px;background:var(--united-blue-primary) }
+.header-interno header,.header-interno header.fixed {
+  position:relative;top:auto;left:auto;transform:none;background:var(--united-blue-primary);
+  max-width:1360px;margin:0 auto;padding:20px 32px;min-height:110px;gap:20px;
+}
+.header-interno header .logo,.header-interno header.fixed .logo { width:100px;flex-shrink:0 }
+.header-interno header .logo img { display:block;width:100%;height:auto }
+.header-interno header .menu>li>a { height:44px;font-size:14px;padding:0 16px;gap:12px }
+.header-interno header .button-contato { display:inline-flex;min-height:46px;height:auto;padding:12px 20px;font-size:15px;border-radius:8px }
+.header-interno header .button-contato::before { display:none }
+.header-interno header .menu .submenu { min-width:170px;background:var(--united-blue-secondary);border-radius:8px;overflow:hidden }
+.header-interno header .menu .submenu a { min-height:44px;font-size:14px }
+.header-interno header .menu>li:focus-within .submenu { display:block }
+.interior-preview .quem-somos .about .content,
+.interior-preview .quem-somos .unidades-hibridas .container { background-color:#0b7085;background-blend-mode:multiply }
+.interior-preview .cursos .business .container { background-color:#393838 }
+.interior-preview .quem-somos .about .content .decoreba .text .box { background-color:var(--united-blue-secondary) }
+.interior-preview .quem-somos .about .content .methodology .inner .carousel-methodology .item .box.bg2 { background:linear-gradient(270deg,#155285,var(--united-blue-deep)) }
+.interior-preview .cursos .top .banner .content { background:var(--united-blue-deep) }
+.interior-preview .cursos video { background:var(--united-blue-deep);object-fit:cover }
+.interior-preview img { height:auto }
+.interior-preview .cursos,.interior-preview .quem-somos { padding-top:56px }
+.interior-preview [id] { scroll-margin-top:24px }
+.interior-preview.preview-deep-link .wow { animation:none!important }
+.interior-preview.preview-deep-link .cursos .top .banner { transition:none;padding:0 }
+.interior-preview .preview-mark { position:fixed;left:14px;bottom:14px;z-index:150;padding:8px 12px;border:1px solid #ffffff36;border-radius:30px;background:#071c35e8;color:white;font:700 11px Manrope,Arial,sans-serif;pointer-events:none }
+.interior-preview form .preview-form-note { font:500 14px/1.4 Manrope,Arial,sans-serif;background:#fff;color:#123d71;padding:12px;border-radius:8px;margin:12px 0 }
+.interior-preview .contact-launcher,.interior-preview .contact-preview-dialog { font-family:Manrope,Arial,sans-serif }
+@media(max-width:1024px){
+ .header-interno,.header-interno header,.header-interno header.fixed { min-height:88px }
+ .header-interno header,.header-interno header.fixed { padding:16px 24px }
+ .header-interno header .button-contato { display:none }
+ .header-interno header .open-menu { width:44px;height:44px;padding:8px;flex-shrink:0 }
+ .header-interno header .open-menu span { height:2px;margin:6px 0 }
+ .menu-mobile { overflow-y:auto;overscroll-behavior:contain }
+ .interior-preview .quem-somos .about .corda { display:none }
+ .interior-preview .quem-somos .about .content .methodology .inner .carousel-methodology .item .box { height:auto;min-height:210px }
+ .interior-preview .quem-somos .unidades-hibridas .container .itens .item .box a { display:inline-flex;align-items:center;min-height:44px }
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

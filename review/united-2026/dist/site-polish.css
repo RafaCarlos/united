@@ -1,0 +1,90 @@
+/* Shared type and compact lower-page sections, including all interior routes. */
+@font-face{font-family:Manrope;src:url('/assets/fonts/Manrope-Regular.woff2') format('woff2');font-style:normal;font-weight:200 500;font-display:swap}
+@font-face{font-family:Manrope;src:url('/assets/fonts/Manrope-Bold.woff2') format('woff2');font-style:normal;font-weight:600 900;font-display:swap}
+body,button,input,select,textarea{font-family:Manrope,Arial,sans-serif}
+body{background-color:#fff}
+.contact-dialog-close{font-family:Manrope,Arial,sans-serif}
+.inline-contact-in-view .contact-actions{visibility:hidden}
+
+.avaliacoes.reviews-section{background:#f3f6fa;padding:64px max(24px,calc((100% - 1200px)/2));text-align:left;scroll-margin-top:28px}
+.reviews-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.avaliacoes.reviews-section h2{font-size:clamp(26px,3vw,38px);line-height:1.18;font-weight:800;letter-spacing:-.035em;color:var(--united-blue-primary);margin:0;max-width:23ch}
+.reviews-controls{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.reviews-controls button{display:grid;place-items:center;width:46px;height:46px;border:1px solid #01285835;border-radius:50%;background:transparent;color:var(--united-blue-primary);font-size:24px;cursor:pointer}
+.reviews-controls button:disabled{opacity:.3;cursor:default}
+.reviews-controls button:focus-visible,.review-card:focus-visible{outline:3px solid #d90050;outline-offset:3px}
+.reviews-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 40px)/3);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#bccbdc transparent;padding:2px 2px 18px}
+.review-card{display:flex;flex-direction:column;scroll-snap-align:start;min-width:0;margin:0;padding:28px;border:1px solid #dee5ef;border-radius:18px;background:#fff;color:#243449}
+.review-stars{color:#a96300;font-size:17px;letter-spacing:.12em;margin:0 0 18px}
+.review-card blockquote{margin:0 0 24px;font-size:16px;line-height:1.65;overflow-wrap:anywhere}
+.review-card:has(.review-read-more) blockquote{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;margin-bottom:12px}
+.review-card.expanded blockquote{display:block;overflow:visible}
+.review-read-more{align-self:flex-start;border:0;background:none;color:var(--united-blue-primary);font-size:14px;line-height:1.5;font-weight:700;padding:6px 0;margin:0 0 18px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.review-read-more:focus-visible,.review-source:focus-visible{outline:2px solid #d90050;outline-offset:3px}
+.review-card figcaption{border-top:1px solid #e7ecf2;padding-top:16px;margin-top:auto;font-size:15px;line-height:1.5;font-weight:800;color:var(--united-blue-primary)}
+.review-source{font-size:13px;font-weight:400;color:#65758b;display:block;margin-top:3px}
+.reviews-status{display:block;color:#63748b;font-size:13px;line-height:1.5;margin-top:10px}
+
+#contato{background:#fff;padding:48px 24px;scroll-margin-top:28px}
+#contato .container{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:64px;max-width:1120px;width:100%;margin:0 auto;padding:0}
+#contato .container .text{width:auto;min-width:0;margin:0;padding:0;color:var(--united-blue-primary)}
+#contato .container .text h2{font-size:clamp(26px,3vw,36px);font-weight:800;line-height:1.2;letter-spacing:-.035em;margin:0 0 14px}
+#contato .container .text p{font-size:16px;line-height:1.65;margin:0 0 18px;max-width:36ch;color:#516177}
+#contato .container .text a{font-size:15px;line-height:1.4;min-height:44px;height:auto;gap:24px;width:auto;border-bottom:1px solid #0128584d;padding:8px 0}
+#contato .container .text a span{gap:8px}
+#contato .container .formulario{width:auto;min-width:0;margin:0;padding:28px;border-radius:20px;background:var(--united-blue-primary)}
+#contato .container .formulario h2{font-size:20px;font-weight:800;line-height:1.35;margin:0 0 20px}
+#contato #formLead{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#contato .container .formulario .form-group{margin:0;min-width:0}
+#contato .container .formulario .form-group:first-child,#contato .container .formulario .form-group:last-child,#contato #formLead>.form-group:has(button),#contato #formLead>.contact-form-error,#contato #formLead>.preview-form-note{grid-column:1/-1}
+#contato .container .formulario .form-group label{display:block;font-size:14px;font-weight:700;line-height:1.4;margin:0 0 6px}
+#contato .container .formulario .form-group input:not([type=hidden]){height:48px;min-height:48px;padding:0 12px;background:#fff;color:#142b44;border:1px solid #dae3ee;border-radius:8px;font-size:16px;line-height:1.5;width:100%}
+#contato .container .formulario .form-group input[aria-invalid=true]{border-color:#ffadc9;color:#142b44}
+#contato .container .formulario .form-group button{min-height:48px;height:auto;padding:12px 16px;font-size:16px;line-height:1.4;border:0;border-radius:8px;background:#d90050;justify-content:center;gap:14px}
+#contato .container .formulario .form-group button::after{display:none}
+#contato .container .formulario .form-group button:hover{background:#be0046}
+#contato .container .formulario .loading{border-radius:8px}
+
+.interior-preview .faq .top{background:var(--united-blue-primary);padding:48px 24px 52px}
+.interior-preview .faq .top>div{max-width:960px;width:100%;margin:auto}
+.interior-preview .faq .top h1{font-size:clamp(28px,4vw,42px);line-height:1.2;letter-spacing:-.035em;font-weight:800;color:#fff;max-width:25ch;margin:0 0 28px}
+.interior-preview .faq .top form{display:flex;gap:12px;max-width:760px}
+.interior-preview .faq .top form input{height:52px;min-width:0;flex:1;width:auto;padding:0 16px;border:0;border-radius:8px;font-size:16px;line-height:1.5;color:#243449}
+.interior-preview .faq .top form button{height:52px;padding:0 24px;border-radius:8px;font-size:15px;background:#d90050}
+.interior-preview .faq .top form button::before{display:none}
+.interior-preview .faq .content-faq{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,2fr);gap:36px;max-width:1200px;margin:0 auto;padding:48px 24px}
+.interior-preview .faq .content-faq aside,.interior-preview .faq .content-faq article{width:auto;min-width:0}
+.interior-preview .faq .content-faq aside .box{border:1px solid #dbe4ef;border-radius:16px;padding:24px}
+.interior-preview .faq .content-faq aside .box h3{font-size:18px;line-height:1.3;color:var(--united-blue-primary);margin-bottom:18px}
+.interior-preview .faq .content-faq aside .box ul li{margin:0 0 12px}
+.interior-preview .faq .content-faq aside .box a{display:block;font-size:14px;line-height:1.6;color:var(--united-blue-primary);padding:4px 0}
+.interior-preview .faq .content-faq article .question{margin:0 0 12px;border:1px solid #dbe4ef;border-radius:12px;overflow:hidden}
+.interior-preview .faq .content-faq article .question .faq-toggle{min-height:70px;height:auto;gap:20px;padding:20px 24px;font-size:16px;line-height:1.5;font-weight:700;background:var(--united-blue-primary)}
+.interior-preview .faq .content-faq article .question .faq-toggle::after{font-size:26px;line-height:1;flex-shrink:0}
+.interior-preview .faq .content-faq article .question .text{padding:22px 24px;background:#f3f6fa}
+.interior-preview .faq .content-faq article .question .text p{font-size:16px;font-weight:400;line-height:1.7;color:#35465d}
+@media(max-width:1024px){.reviews-track{grid-auto-columns:calc((100% - 20px)/2)}}
+@media(max-width:760px){
+ .avaliacoes.reviews-section{padding:40px 20px}
+ .reviews-heading{align-items:flex-start;gap:16px;margin-bottom:24px}
+ .reviews-controls{gap:6px}
+ .reviews-controls button{width:40px;height:40px}
+ .reviews-track{grid-auto-columns:100%;gap:16px}
+ .review-card{padding:24px}
+ #contato{padding:36px 20px}
+ #contato .container{grid-template-columns:1fr;gap:24px}
+ #contato .container .text p{max-width:48ch;margin-bottom:10px}
+ #contato .container .formulario{padding:24px}
+ .interior-preview .faq .content-faq{grid-template-columns:1fr;padding:32px 20px;gap:0}
+ .interior-preview .faq .content-faq aside{display:none}
+ .interior-preview .faq .top{padding:32px 20px 36px}
+ .interior-preview .faq .top form{gap:8px}
+ .interior-preview .faq .top form button{padding:0 14px}
+ .interior-preview .faq .content-faq article .question .faq-toggle{padding:18px 20px}
+}
+@media(max-width:440px){
+ .reviews-heading{flex-direction:column}
+ #contato #formLead{grid-template-columns:1fr;gap:14px}
+ #contato .container .formulario{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){.reviews-track{scroll-behavior:auto}}

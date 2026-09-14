@@ -1,0 +1,58 @@
+{
+  "/": [
+    "/assets/css/style.css",
+    "/assets/css/contact-forms.css",
+    "/theme.css",
+    "/preview.css",
+    "/responsive-home.css",
+    "/benefits.css",
+    "/contact-preview.css",
+    "/footer-refinement.css",
+    "/site-polish.css",
+    "/storytelling-preview.css",
+    "/courses-compact.css",
+    "/jimmy-current.css",
+    "/liveclass-intro.css",
+    "/shared-header.css",
+    "/seo-performance.css",
+    "/ondemand-current.css"
+  ],
+  "/cursos/": [
+    "/assets/css/style.css",
+    "/assets/css/contact-forms.css",
+    "/theme.css",
+    "/interior-preview.css",
+    "/responsive-home.css",
+    "/contact-preview.css",
+    "/footer-refinement.css",
+    "/site-polish.css",
+    "/jimmy-current.css",
+    "/liveclass-intro.css",
+    "/shared-header.css",
+    "/seo-performance.css"
+  ],
+  "/quem-somos/": [
+    "/assets/css/style.css",
+    "/assets/css/contact-forms.css",
+    "/theme.css",
+    "/interior-preview.css",
+    "/responsive-home.css",
+    "/contact-preview.css",
+    "/footer-refinement.css",
+    "/site-polish.css",
+    "/shared-header.css",
+    "/seo-performance.css"
+  ],
+  "/faq/": [
+    "/assets/css/style.css",
+    "/assets/css/contact-forms.css",
+    "/theme.css",
+    "/interior-preview.css",
+    "/responsive-home.css",
+    "/contact-preview.css",
+    "/footer-refinement.css",
+    "/site-polish.css",
+    "/shared-header.css",
+    "/seo-performance.css"
+  ]
+}

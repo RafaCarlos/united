@@ -1,0 +1,26 @@
+{
+  "/": {
+    "title": "Inglês em 18 meses | Curso online United Idiomas",
+    "description": "Conheça o Live Class: curso de inglês online e ao vivo, com trilha de 18 meses, conversação ilimitada e horários flexíveis. Fale inglês, faça United.",
+    "type": "WebPage",
+    "name": "Curso de inglês United Idiomas"
+  },
+  "/cursos/": {
+    "title": "Cursos de inglês online: Live Class e Business | United",
+    "description": "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina.",
+    "type": "CollectionPage",
+    "name": "Cursos de inglês"
+  },
+  "/quem-somos/": {
+    "title": "Escola de inglês United Idiomas | Quem somos",
+    "description": "Conheça a United Idiomas, escola de inglês com mais de 150 mil alunos em sua história. Aulas online, metodologia interativa e unidades híbridas.",
+    "type": "AboutPage",
+    "name": "Quem somos"
+  },
+  "/faq/": {
+    "title": "Dúvidas sobre o curso de inglês | United Idiomas",
+    "description": "Como escolher o melhor curso de inglês para você? Tire dúvidas sobre inglês em 18 meses, aulas online, conversação e certificação na United Idiomas.",
+    "type": "WebPage",
+    "name": "Perguntas frequentes"
+  }
+}

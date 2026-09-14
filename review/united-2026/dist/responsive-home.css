@@ -1,0 +1,28 @@
+/* Keep intrinsic image dimensions useful without stretching responsive images. */
+img{height:auto}
+@media(max-width:1024px){
+ .about-home>.corda{display:none!important}
+ .about-home .carousel-steps .item .text{height:auto;min-height:180px}
+ .about-home .carousel-steps .item figure img{display:block;width:100%;height:auto}
+ .about-home .carousel-steps .slick-arrow{width:44px;height:44px}
+ .avaliacoes .masonry .itens{width:100%}
+ .avaliacoes .masonry .itens .item img{width:100%;height:auto}
+ .plataforma{padding:40px 20px}
+ .plataforma h2{position:static;color:#fff;padding:20px 16px 0;margin:0 0 24px}
+ .plataforma .content .video-content{display:block;border-radius:20px;overflow:hidden;margin-bottom:28px}
+ .plataforma .content .video-content>img{display:none}
+ .plataforma .content .video-content .video-play{position:relative;inset:auto;width:100%}
+ .plataforma .content .video-content .video-play::after{display:none}
+ .plataforma .content .video-content video{display:block;width:100%;height:auto;max-height:65svh;object-fit:contain}
+ .plataforma .content .texts h3{padding:0;margin-bottom:28px;line-height:1.45}
+ .plataforma .content .texts .itens .item .text{min-width:0}
+ .plataforma .content .texts .itens .item .text h4::before{flex-shrink:0}
+ .master-business .container .mb2 .text{margin-bottom:24px}
+ .master-business .container .mb2 .text .carousel-mb{margin-bottom:24px}
+ .master-business .container .mb2 .text .carousel-mb .slick-dots{position:static;margin:20px 0;gap:12px}
+ .master-business .container .mb2 .video-content{display:block;width:100%}
+ .master-business .container .mb2 .video-content .vd{height:auto}
+ .master-business .container .mb2 .video-content video{height:auto;max-height:65svh;object-fit:contain;border-radius:20px;background:#000}
+ .master-business .container .mb2 .video-content .arrows{display:flex;gap:16px;margin-top:20px}
+ .master-business .container .mb2 .video-content .arrows .slick-arrow{width:44px;height:44px}
+}

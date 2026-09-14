@@ -1,0 +1,24 @@
+/* Shared approved Jimmy, home and Live Class detail. */
+
+#jimmy-united-idiomas{scroll-margin-top:32px;width:min(1200px,calc(100% - 96px));padding:0;margin:0 auto 80px}
+.features:has(#jimmy-united-idiomas)::after{display:none}
+#jimmy-united-idiomas .content{display:grid;grid-template-columns:minmax(0,38fr) minmax(0,62fr);gap:clamp(28px,4vw,64px);height:auto;min-height:460px;padding:clamp(24px,3vw,44px);border:1px solid #153e68;background:linear-gradient(115deg,#08294b 0%,#012858 55%,#021a36 100%);font-family:Manrope,Arial,sans-serif}
+#jimmy-united-idiomas .content figure{width:100%;height:auto;aspect-ratio:850/815;margin:0;overflow:hidden;border-radius:20px;align-self:center}
+#jimmy-united-idiomas .content figure img{position:absolute;display:block;left:-25.294118%;top:-52.760736%;bottom:auto;width:132%;height:auto;max-width:none}
+#jimmy-united-idiomas .content .text{width:auto;padding:0;color:#fff}
+#jimmy-united-idiomas .content .text h2{display:inline-block;margin:0 0 20px;padding:7px 12px;border:1px solid #ffffff35;border-radius:30px;background:#ffffff09;color:#d4e7fd;text-align:left;font-size:13px;line-height:1.4;font-weight:800;letter-spacing:.16em}
+#jimmy-united-idiomas .content .text h3{margin:0 0 20px;font-size:clamp(30px,3.25vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.035em}
+#jimmy-united-idiomas .content .text p{color:#c1d3e8;font-size:16px;line-height:1.65;margin:0 0 26px;max-width:52ch}
+#jimmy-united-idiomas .content .text .jimmy-intro{color:#fff;font-weight:700;font-size:18px;line-height:1.5;margin-bottom:12px;max-width:42ch}
+#jimmy-united-idiomas .content .text .button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:14px 22px;height:auto;background:#fff;color:var(--united-blue-primary);font-size:15px;line-height:1.4;border-radius:9px}
+#jimmy-united-idiomas .content .text .button::after{content:'→';display:block;width:auto;height:auto;background:none;font-size:22px;line-height:1}
+#jimmy-united-idiomas .content .text .button:hover{background:#e4eefb}
+#jimmy-united-idiomas .content .text .button:focus-visible{outline:3px solid white;outline-offset:4px}
+@media(max-width:768px){
+ #jimmy-united-idiomas{width:calc(100% - 40px);margin-bottom:48px}
+ #jimmy-united-idiomas .content{grid-template-columns:1fr;padding:24px;gap:26px;min-height:0;border-radius:24px}
+ #jimmy-united-idiomas .content figure{max-width:420px;justify-self:center}
+ #jimmy-united-idiomas .content .text{text-align:left}
+ #jimmy-united-idiomas .content .text h3{font-size:clamp(27px,6.8vw,40px)}
+ #jimmy-united-idiomas .content .text .button{max-width:100%;padding:14px 18px;font-size:14px}
+}
