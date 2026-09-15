@@ -10,7 +10,7 @@ args = parser.parse_args()
 allowed = {'dist', 'src', 'scripts', 'seo'}
 files = [p for p in root.rglob('*') if p.is_file() and p.relative_to(root).parts[0] in allowed
          and '.openai' not in p.relative_to(root).parts and '__pycache__' not in p.parts]
-files += [root / p for p in ['README.md','package.json','package-lock.json','vite.config.mjs','requirements-review.txt']]
+files += [root / p for p in ['README.md','package.json','package-lock.json','vite.config.mjs','requirements-review.txt','CORRECAO-SERVIDOR.md','MANIFEST-SERVIDOR.json']]
 prefix = 'review/united-2026/'
 commit = subprocess.check_output(['git','rev-parse','--verify','HEAD'], cwd=root, text=True).strip()
 manifest = {'source_commit':commit, 'target_repository':'RafaCarlos/united',
