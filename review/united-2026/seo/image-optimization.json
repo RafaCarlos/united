@@ -1,0 +1,203 @@
+{
+  "assets/banners/institucional-wide.png": {
+    "path": "assets/banners/institucional-wide.webp",
+    "before": 1952585,
+    "after": 292600,
+    "width": 1774,
+    "height": 887,
+    "quality": 94,
+    "ssim": 0.975017766157786
+  },
+  "assets/banners/institucional.png": {
+    "path": "assets/banners/institucional.webp",
+    "before": 1829838,
+    "after": 220638,
+    "width": 1122,
+    "height": 1402,
+    "quality": 94,
+    "ssim": 0.9792880018552145
+  },
+  "assets/banners/jimmy-wide.png": {
+    "path": "assets/banners/jimmy-wide.webp",
+    "before": 2013175,
+    "after": 288004,
+    "width": 1772,
+    "height": 888,
+    "quality": 94,
+    "ssim": 0.9835304816563925
+  },
+  "assets/banners/jimmy.png": {
+    "path": "assets/banners/jimmy.webp",
+    "before": 1800362,
+    "after": 214822,
+    "width": 1122,
+    "height": 1402,
+    "quality": 94,
+    "ssim": 0.9815279046694437
+  },
+  "assets/banners/liveclass-wide.png": {
+    "path": "assets/banners/liveclass-wide.webp",
+    "before": 1632721,
+    "after": 150664,
+    "width": 1773,
+    "height": 887,
+    "quality": 94,
+    "ssim": 0.9787757992744446
+  },
+  "assets/banners/liveclass.png": {
+    "path": "assets/banners/liveclass.webp",
+    "before": 1797164,
+    "after": 230748,
+    "width": 1122,
+    "height": 1402,
+    "quality": 94,
+    "ssim": 0.9770963788032532
+  },
+  "assets/images/bg-united-full.png": {
+    "path": "assets/images/bg-united-full.webp",
+    "before": 1394163,
+    "after": 942034,
+    "width": 1924,
+    "height": 3668,
+    "quality": 94,
+    "ssim": 0.9913031061490377
+  },
+  "assets/images/bg-vitrine-01.png": {
+    "path": "assets/images/bg-vitrine-01.webp",
+    "before": 449948,
+    "after": 155388,
+    "width": 931,
+    "height": 1192,
+    "quality": 94,
+    "ssim": 0.9517552852630615
+  },
+  "assets/images/bg-vitrine-02.png": {
+    "path": "assets/images/bg-vitrine-02.webp",
+    "before": 681303,
+    "after": 194910,
+    "width": 1077,
+    "height": 1190,
+    "quality": 94,
+    "ssim": 0.9935283064842224
+  },
+  "assets/images/bg-vitrine-03.png": {
+    "path": "assets/images/bg-vitrine-03.webp",
+    "before": 987701,
+    "after": 250020,
+    "width": 1047,
+    "height": 1192,
+    "quality": 94,
+    "ssim": 0.9687421917915344
+  },
+  "assets/images/bg-vitrine.png": {
+    "path": "assets/images/bg-vitrine.webp",
+    "before": 660755,
+    "after": 515726,
+    "width": 1924,
+    "height": 1102,
+    "quality": 94,
+    "ssim": 0.9993617733319601
+  },
+  "assets/images/img-catalogos.png": {
+    "path": "assets/images/img-catalogos.webp",
+    "before": 428136,
+    "after": 94320,
+    "width": 1371,
+    "height": 847,
+    "quality": 94,
+    "ssim": 0.9949657917022705
+  },
+  "assets/images/img-quem-somos-01.png": {
+    "path": "assets/images/img-quem-somos-01.webp",
+    "before": 879641,
+    "after": 114672,
+    "width": 703,
+    "height": 766,
+    "quality": 94,
+    "ssim": 0.9777806997299194
+  },
+  "assets/images/img-quem-somos-02.png": {
+    "path": "assets/images/img-quem-somos-02.webp",
+    "before": 627464,
+    "after": 57878,
+    "width": 1201,
+    "height": 472,
+    "quality": 94,
+    "ssim": 0.9848042329152426
+  },
+  "assets/images/img-tema-01.png": {
+    "path": "assets/images/img-tema-01.webp",
+    "before": 475064,
+    "after": 47526,
+    "width": 655,
+    "height": 439,
+    "quality": 94,
+    "ssim": 0.968683103720347
+  },
+  "assets/images/img-tema-02.png": {
+    "path": "assets/images/img-tema-02.webp",
+    "before": 487992,
+    "after": 51738,
+    "width": 675,
+    "height": 378,
+    "quality": 94,
+    "ssim": 0.9654700954755148
+  },
+  "assets/images/img-unidades.png": {
+    "path": "assets/images/img-unidades.webp",
+    "before": 522080,
+    "after": 55164,
+    "width": 1002,
+    "height": 468,
+    "quality": 94,
+    "ssim": 0.9859327077865601
+  },
+  "assets/images/liveclass-conversation-2026.png": {
+    "path": "assets/images/liveclass-conversation-2026.webp",
+    "before": 1864807,
+    "after": 152962,
+    "width": 1536,
+    "height": 1024,
+    "quality": 94,
+    "ssim": 0.9804893136024475
+  },
+  "assets/images/storytelling-characters-3d.png": {
+    "path": "assets/images/storytelling-characters-3d.webp",
+    "before": 2985107,
+    "after": 379716,
+    "width": 1672,
+    "height": 941,
+    "quality": 94,
+    "ssim": 0.9782091776529948
+  },
+  "https://www.unitedidiomas.com/assets/images/img-curso-03.png": {
+    "path": "assets/images/img-curso-03.webp",
+    "before": 1774820,
+    "after": 219126,
+    "width": 1920,
+    "height": 1388,
+    "quality": 94,
+    "ssim": 0.9897114038467407,
+    "source_sha256": "4369dceb3e87ff3769ebfa91001ad694e3657c84acf30e8658fa9570fa2f8e7c"
+  },
+  "https://www.unitedidiomas.com/assets/images/img-curso-04.png": {
+    "path": "assets/images/img-curso-04.webp",
+    "before": 1970874,
+    "after": 149842,
+    "width": 1920,
+    "height": 687,
+    "quality": 94,
+    "ssim": 0.9753749569257101,
+    "source_sha256": "a72e86af614835c15d943e4c5c0e72ce2ea62973b28f0764ce874c401302921f"
+  },
+  "https://www.unitedidiomas.com/assets/images/img-curso-05.png": {
+    "path": "assets/images/img-curso-05.webp",
+    "before": 1072580,
+    "after": 112750,
+    "width": 1501,
+    "height": 455,
+    "quality": 94,
+    "ssim": 0.9814274311065674,
+    "source_sha256": "1f4685cdacbf7ee81a1f40ba5a222bce2a9a245d64fcac7f76e7c9cd520b1168"
+  }
+}

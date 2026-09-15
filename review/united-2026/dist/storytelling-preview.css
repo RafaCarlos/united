@@ -1,0 +1,25 @@
+/* Local proposal: approved platform layout, new 3D characters. */
+#live-class .video-content > img { pointer-events:none }
+#live-class .content .video-content .video-play {
+  inset:20.5% auto auto 12.4%;width:25.5%;height:65.7%;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+  overflow:hidden;background:#021a36;border-radius:9%;padding:36px 0 22px;box-sizing:border-box;
+}
+#live-class .content .video-content .video-play::after { display:none }
+#live-class .character-phone-heading { margin:0;padding:0 20px;text-align:center;color:#fff;font:800 clamp(16px,1.7vw,25px)/1.25 Manrope,Arial,sans-serif;letter-spacing:-.025em }
+#live-class .character-phone-heading span { display:block;margin-bottom:12px;color:#bdd4ee;font:800 12px/1.4 Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase }
+#live-class .content .video-content video { display:block;width:100%;height:auto;max-height:70%;object-fit:contain;background:#021a36;flex:0 1 auto }
+#live-class .character-phone-caption { margin:0;padding:0 20px;color:#c8dcf0;font:400 14px/1.45 Manrope,Arial,sans-serif;text-align:center }
+#live-class .storytelling-card figure img { object-position:65% center }
+#live-class .content .texts .itens .storytelling-card .text p { font-size:16px;line-height:1.55 }
+@media(max-width:1024px) {
+  #live-class .content .video-content { background:#021a36 }
+  #live-class .content .video-content .video-play { position:relative;inset:auto;width:100%;height:auto;border-radius:0;padding:12px 0 24px;gap:20px }
+  #live-class .character-phone-heading { font-size:24px;max-width:24ch }
+  #live-class .content .video-content video { width:min(100%,360px);max-height:52svh;aspect-ratio:624/720 }
+  #live-class .character-phone-caption { font-size:14px }
+  #live-class .storytelling-card { flex-direction:column }
+  #live-class .content .texts .itens .storytelling-card figure { flex:auto;width:100% }
+  #live-class .content .texts .itens .storytelling-card figure img { width:100%;height:auto;aspect-ratio:16/9;border-radius:20px 20px 0 0;object-fit:contain }
+  #live-class .content .texts .itens .storytelling-card .text { flex:auto;border-radius:0 0 20px 20px;padding:20px }
+}

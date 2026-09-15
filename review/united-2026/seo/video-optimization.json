@@ -1,0 +1,220 @@
+{
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-02.mp4": {
+    "path": "assets/videos/video-united-idiomas-02-web.mp4",
+    "poster": "assets/images/video-united-idiomas-02-poster.webp",
+    "original": {
+      "bytes": 8389051,
+      "width": 1920,
+      "height": 1080,
+      "duration": 10.0,
+      "video_duration": 10.0,
+      "fps": "24/1",
+      "codec": "h264",
+      "audio": false
+    },
+    "optimized": {
+      "bytes": 849394,
+      "width": 1280,
+      "height": 720,
+      "duration": 10.0,
+      "video_duration": 10.0,
+      "fps": "24/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9"
+    },
+    "validation": {
+      "frames_preserved": 240,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-03.mp4": {
+    "path": "assets/videos/video-united-idiomas-03-web.mp4",
+    "poster": "assets/images/video-united-idiomas-03-poster.webp",
+    "original": {
+      "bytes": 3089227,
+      "width": 1688,
+      "height": 560,
+      "duration": 12.96,
+      "video_duration": 12.933333,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": true
+    },
+    "optimized": {
+      "bytes": 814070,
+      "width": 1280,
+      "height": 424,
+      "duration": 12.933333,
+      "video_duration": 12.933333,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "11183:11200",
+      "display_aspect_ratio": "211:70"
+    },
+    "validation": {
+      "frames_preserved": 388,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-04.mp4": {
+    "path": "assets/videos/video-united-idiomas-04-web.mp4",
+    "poster": "assets/images/video-united-idiomas-04-poster.webp",
+    "original": {
+      "bytes": 9174023,
+      "width": 1356,
+      "height": 720,
+      "duration": 18.900998,
+      "video_duration": 18.9,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": true
+    },
+    "optimized": {
+      "bytes": 1045164,
+      "width": 1280,
+      "height": 678,
+      "duration": 18.9,
+      "video_duration": 18.9,
+      "fps": "30/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "12769:12800",
+      "display_aspect_ratio": "113:60"
+    },
+    "validation": {
+      "frames_preserved": 567,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-05.mp4": {
+    "path": "assets/videos/video-united-idiomas-05-web.mp4",
+    "poster": "assets/images/video-united-idiomas-05-poster.webp",
+    "original": {
+      "bytes": 126620441,
+      "width": 1920,
+      "height": 1080,
+      "duration": 29.76,
+      "video_duration": 29.76,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false
+    },
+    "optimized": {
+      "bytes": 2559190,
+      "width": 1280,
+      "height": 720,
+      "duration": 29.76,
+      "video_duration": 29.76,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9"
+    },
+    "validation": {
+      "frames_preserved": 744,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-06.mp4": {
+    "path": "assets/videos/video-united-idiomas-06-web.mp4",
+    "poster": "assets/images/video-united-idiomas-06-poster.webp",
+    "original": {
+      "bytes": 53978048,
+      "width": 3840,
+      "height": 2160,
+      "duration": 28.04,
+      "video_duration": 28.04,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false
+    },
+    "optimized": {
+      "bytes": 1726317,
+      "width": 1280,
+      "height": 720,
+      "duration": 28.04,
+      "video_duration": 28.04,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "1280:720"
+    },
+    "validation": {
+      "frames_preserved": 701,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "https://www.unitedidiomas.com/assets/videos/video-united-idiomas-07.mp4": {
+    "path": "assets/videos/video-united-idiomas-07-web.mp4",
+    "poster": "assets/images/video-united-idiomas-07-poster.webp",
+    "original": {
+      "bytes": 10379281,
+      "width": 1920,
+      "height": 1080,
+      "duration": 12.56,
+      "video_duration": 12.56,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false
+    },
+    "optimized": {
+      "bytes": 937305,
+      "width": 1280,
+      "height": 720,
+      "duration": 12.56,
+      "video_duration": 12.56,
+      "fps": "25/1",
+      "codec": "h264",
+      "audio": false,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9"
+    },
+    "validation": {
+      "frames_preserved": 314,
+      "fps_preserved": true,
+      "video_duration_preserved": true,
+      "faststart_verified": true,
+      "silent_h264_yuv420p": true,
+      "poster_visually_reviewed": true
+    }
+  },
+  "assets/videos/united-characters-loop.mp4": {
+    "path": "assets/videos/united-characters-loop-web.mp4",
+    "poster": "assets/images/united-characters-loop-poster.webp",
+    "original": {
+      "bytes": 708069,
+      "width": 624,
+      "height": 720
+    },
+    "optimized": {
+      "bytes": 442407,
+      "width": 624,
+      "height": 720
+    }
+  }
+}

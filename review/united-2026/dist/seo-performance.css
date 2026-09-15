@@ -1,0 +1,23 @@
+/* Stable media geometry and unobtrusive, keyboard-accessible playback. */
+.united-motion-frame{position:relative;display:block;width:100%;line-height:0;isolation:isolate}
+.united-motion-frame video{display:block;width:100%;height:auto;pointer-events:none}
+.united-motion-toggle{position:absolute;right:10px;bottom:10px;z-index:5;display:grid;place-items:center;width:44px;height:44px;min-width:44px;padding:0;border:1px solid #ffffff80;border-radius:50%;background:#08294bf0;color:#fff;font:700 17px/1 Manrope,Arial,sans-serif;cursor:pointer;opacity:0;transition:opacity .2s ease}
+.united-motion-frame:hover .united-motion-toggle,.united-motion-frame:focus-within .united-motion-toggle,.united-motion-frame.is-paused .united-motion-toggle{opacity:1}
+.united-motion-toggle:focus-visible{outline:3px solid #fff;outline-offset:3px}
+video[data-managed-video]::-webkit-media-controls,video[data-managed-video]::-webkit-media-controls-enclosure,video[data-managed-video]::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none}
+#live-class .video-play .united-motion-frame{min-height:0;flex:0 1 auto;max-height:70%;aspect-ratio:624/720}
+#live-class .video-play .united-motion-frame video{max-height:100%;height:100%;object-fit:contain}
+#live-class .video-play .united-motion-toggle{right:8px;bottom:8px}
+.wide-picture,.portrait-picture{display:contents}
+.cursos .top .banner .content>.united-motion-frame{position:absolute;inset:0;height:100%;border-radius:inherit}
+.cursos .top .banner .content>.united-motion-frame video{height:100%;border-radius:inherit}
+.cursos .infos .video-content>.united-motion-frame,.cursos .business .duracao-curso .video-content>.united-motion-frame,.quem-somos .about .video-content>.united-motion-frame{height:100%}
+.cursos .infos .video-content>.united-motion-frame video,.cursos .business .duracao-curso .video-content>.united-motion-frame video,.quem-somos .about .video-content>.united-motion-frame video{height:100%}
+@media(hover:none){.united-motion-toggle{opacity:.82}}
+@media(max-width:1024px){#live-class .video-play .united-motion-frame{width:min(100%,360px);max-height:52svh}#live-class .video-play .united-motion-frame video{width:100%;height:100%;max-height:52svh}}
+@media(max-width:1024px){.cursos .infos .video-content>.united-motion-frame,.cursos .business .duracao-curso .video-content>.united-motion-frame{height:auto}.cursos .infos .video-content>.united-motion-frame video,.cursos .business .duracao-curso .video-content>.united-motion-frame video{height:auto}}
+@media(prefers-reduced-motion:reduce){.united-motion-toggle{transition:none}}
+
+/* Preserve Business topic styling while correcting heading hierarchy. */
+.cursos #temas .content .text h3.business-topics-heading{font-size:2.6vw;font-weight:500;margin:0 0 2.5vh}
+@media(max-width:1024px){.cursos #temas .content .text h3.business-topics-heading{font-size:20px;margin:0 0 15px}}

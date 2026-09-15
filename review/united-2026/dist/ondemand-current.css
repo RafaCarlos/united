@@ -1,0 +1,21 @@
+/* Keep the original fadeIn / zoomPlat entrance with the supplied OnDemand artwork. */
+.features .ondemand-current { margin:0 0 clamp(64px,8vw,120px);padding:0 3.5vw;scroll-margin-top:32px }
+.features .ondemand-current .content { display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);align-items:center;height:auto;min-height:580px;padding:0 0 0 clamp(28px,4.5vw,72px);border-radius:32px;background:#030815;overflow:hidden;isolation:isolate }
+.features .ondemand-current .content .text { width:auto;min-width:0;margin:0;padding:clamp(32px,4vw,64px) 0;z-index:1 }
+.features .ondemand-current .content .text .ondemand-eyebrow { margin:0 0 22px;color:#22d7f2;font-size:14px;line-height:1.5;font-weight:700 }
+.features .ondemand-current .content .text h2 { display:block;margin:0 0 24px;color:#fff;font-size:clamp(32px,3.5vw,54px);font-weight:800;line-height:1.12;letter-spacing:-.035em;text-align:left;text-transform:none }
+.features .ondemand-current .content .text p { max-width:44ch;margin:0 0 24px;color:#b9c6d9;font-size:16px;line-height:1.7;font-weight:400 }
+.features .ondemand-current .content .text .ondemand-intro { max-width:29ch;color:#edf4ff;font-size:clamp(20px,1.9vw,27px);line-height:1.4;font-weight:700 }
+.features .ondemand-current .content .text .button { display:inline-flex;align-items:center;justify-content:center;min-height:50px;height:auto;max-width:100%;padding:14px 20px;box-sizing:border-box;font-size:16px;line-height:1.4;text-align:center }
+.features .ondemand-current .content figure { position:relative;bottom:auto;right:auto;width:100%;min-width:0;margin:0;align-self:stretch }
+.features .ondemand-current .content figure img { display:block;position:absolute;right:0;bottom:0;width:125%;height:auto;max-width:none;max-height:100%;object-fit:contain;object-position:right bottom }
+@media(max-width:800px) {
+  .features .ondemand-current { padding:0 20px }
+  .features .ondemand-current .content { grid-template-columns:minmax(0,1fr);gap:10px;min-height:0;margin:0;padding:30px 0 0;border-radius:24px }
+  .features .ondemand-current .content .text { padding:0 24px;text-align:left }
+  .features .ondemand-current .content .text h2 { font-size:clamp(30px,7vw,44px) }
+  .features .ondemand-current .content .text .ondemand-intro { font-size:22px }
+  .features .ondemand-current .content .text .button { width:100%;margin-bottom:8px }
+  .features .ondemand-current .content figure { margin:0 }
+  .features .ondemand-current .content figure img { position:static;width:118%;max-height:none;margin-left:-18% }
+}

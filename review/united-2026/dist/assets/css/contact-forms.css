@@ -1,0 +1,56 @@
+/* Scoped to the existing lead forms; other page typography is unchanged. */
+#formLead [hidden],
+#formBar [hidden],
+.fixed-bar .box-form > .success[hidden] {
+    display: none !important;
+}
+
+#formLead .contact-field-error,
+#formBar .contact-field-error {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 6px 0 0;
+    text-align: left;
+}
+
+#formBar .form-group {
+    flex-wrap: wrap;
+}
+
+#formBar .contact-field-error {
+    flex-basis: 100%;
+}
+
+#formLead .contact-form-error,
+#formBar .contact-form-error {
+    background: #fff;
+    border-radius: 6px;
+    color: #7a1632;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 12px 0;
+    padding: 10px;
+}
+
+#formLead input[aria-invalid=true] {
+    border-color: #ffcfda;
+    color: #fff;
+}
+
+#formBar input[aria-invalid=true] {
+    border: 2px solid #7a1632;
+    color: #7a1632;
+}
+
+#formLead :focus-visible,
+#formBar :focus-visible {
+    outline: 2px solid #ffcfda;
+    outline-offset: 3px;
+}
+
+#formLead button:disabled,
+#formBar button:disabled {
+    cursor: wait;
+    opacity: .7;
+}

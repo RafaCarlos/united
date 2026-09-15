@@ -1,0 +1,70 @@
+/* Benefit hierarchy: three learning promises, then the ecosystem behind them. */
+.about-home .united-benefits{position:relative;z-index:2;width:min(1200px,calc(100% - 96px));margin:80px auto 0;padding:12px 0 0;background:#fff;color:var(--united-blue-primary);font-family:Manrope,Arial,sans-serif;scroll-margin-top:28px}
+.benefits-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin:0 0 32px}
+.benefits-eyebrow{font-size:13px;line-height:1.5;font-weight:800;letter-spacing:.12em;color:#576f8b;margin:0 0 14px}
+.benefits-heading h2{font-size:clamp(30px,3.4vw,46px);line-height:1.13;font-weight:800;letter-spacing:-.04em;margin:0}
+.benefits-intro{max-width:29ch;font-size:16px;line-height:1.65;color:#53667f;margin:0 0 2px}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;min-width:0}
+.benefit-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;border:1px solid #dce5ef;border-radius:24px;padding:28px;overflow:hidden}
+.benefit-card h3{font-size:clamp(25px,2.3vw,31px);line-height:1.14;font-weight:800;letter-spacing:-.035em;margin:0 0 16px}
+.benefit-card p{font-size:16px;line-height:1.6;margin:0;max-width:32ch}
+.benefit-duration{background:linear-gradient(145deg,#012858,#08294b);color:#fff;border-color:#012858;justify-content:space-between;min-height:310px}
+.benefit-duration h3{width:100%;margin-bottom:24px}
+.benefit-overline{display:block;font-size:20px;line-height:1.3;letter-spacing:0;font-weight:700;margin-bottom:4px}
+.benefit-number{display:flex;align-items:baseline;gap:14px;font-size:112px;font-weight:800;line-height:1;letter-spacing:-.075em}
+.benefit-number>span{font-size:26px;line-height:1.2;font-weight:700;letter-spacing:-.03em}
+.benefit-duration p{color:#e0eaf5}
+.benefit-schedule{background:#f1f5fa;color:var(--united-blue-primary);border-color:#e4ebf4}
+.benefit-symbol{width:58px;height:58px;margin:0 0 24px;color:#406993;flex-shrink:0}
+.benefit-schedule p{color:#445d78}
+.benefit-speaking{background:#1354dd;color:#fff;border-color:#1354dd}
+.benefit-infinity{display:block;height:58px;font-size:88px;line-height:.6;font-weight:500;margin:0 0 24px;letter-spacing:-.045em;color:#fff}
+.benefit-speaking p{color:#eff5ff}
+.benefit-support{background:#fff;padding:26px 28px 28px}
+.benefit-icon{width:30px;height:30px;margin:0 0 20px;color:#326693;flex-shrink:0}
+.benefit-support h3{font-size:22px;line-height:1.25;letter-spacing:-.025em;margin-bottom:12px}
+.benefit-support p{color:#53667f}
+.benefits-navigation{display:none}
+.benefits-grid:focus-visible{outline:3px solid #d90050;outline-offset:6px;border-radius:24px}
+@media(min-width:1025px){
+ .about-home:has(.united-benefits){padding-bottom:72px}
+ .about-home:has(.united-benefits)>.corda{display:none}
+}
+@media(max-width:1000px){
+ .about-home .united-benefits{width:calc(100% - 48px);margin-top:56px}
+ .benefits-heading{gap:24px}
+ .benefits-intro{max-width:24ch;font-size:15px}
+ .benefit-card{padding:24px}
+ .benefit-number{font-size:88px;gap:10px}
+ .benefit-number>span{font-size:22px}
+ .benefit-support h3{font-size:20px}
+}
+@media(max-width:760px){
+ .about-home .united-benefits{width:100%;padding:0 0 8px;margin:44px 0 0}
+ .benefits-heading{display:block;margin:0 20px 24px}
+ .benefits-eyebrow{font-size:12px;margin-bottom:12px}
+ .benefits-heading h2{font-size:clamp(28px,7.6vw,32px);max-width:23ch}
+ .benefits-heading h2 br{display:none}
+ .benefits-intro{max-width:40ch;font-size:16px;margin-top:16px}
+ .benefits-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc(100% - 12px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;overscroll-behavior-x:contain;padding:0 20px 14px;scrollbar-width:none}
+ .benefits-grid::-webkit-scrollbar{display:none}
+ .benefit-card{min-height:340px;padding:28px;scroll-snap-align:start}
+ .benefit-card h3{font-size:29px;line-height:1.15;max-width:15ch}
+ .benefit-card p{font-size:16px;line-height:1.65}
+ .benefit-symbol{margin-bottom:28px;width:62px;height:62px}
+ .benefit-infinity{margin-bottom:32px}
+ .benefit-duration{justify-content:flex-start}
+ .benefit-duration h3{max-width:none;margin-bottom:30px}
+ .benefit-number{font-size:106px;gap:12px}
+ .benefit-number>span{font-size:25px}
+ .benefit-support{justify-content:flex-start}
+ .benefit-icon{width:42px;height:42px;margin:12px 0 30px}
+ .benefit-support h3{font-size:26px}
+ .benefits-navigation{display:flex;justify-content:space-between;align-items:center;margin:4px 20px 0}
+ .benefits-position{font-size:14px;line-height:1.5;color:#5c708a}
+ .benefits-navigation>div{display:flex;gap:10px}
+ .benefits-navigation button{display:grid;place-items:center;width:46px;height:46px;border:1px solid #c9d7e7;border-radius:50%;background:#fff;color:var(--united-blue-primary);font:500 24px/1 Manrope,Arial,sans-serif;cursor:pointer}
+ .benefits-navigation button:disabled{opacity:.3;cursor:default}
+ .benefits-navigation button:focus-visible{outline:3px solid #d90050;outline-offset:3px}
+}
+@media(prefers-reduced-motion:reduce){.benefits-grid{scroll-behavior:auto}}

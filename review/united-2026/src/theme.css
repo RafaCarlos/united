@@ -1,0 +1,22 @@
+/* Blue palette sampled from the approved banners; other brand colors stay intact. */
+:root{
+ --united-blue-primary:#012858;
+ --united-blue-deep:#021a4e;
+ --united-blue-secondary:#08294b;
+ --united-blue-accent:#0d4dff;
+ --united-blue-primary-rgb:1,40,88;
+}
+/* Multiply only the decorative background, retaining its waves and all foreground colors.
+   The original #185ba9 multiplied by #0b7085 becomes #012858. */
+.about-home .apresentation .content,.ia-united.blue .content{
+ background-color:#0b7085;
+ background-blend-mode:multiply;
+}
+footer{background-color:var(--united-blue-secondary)}
+footer .container .infos .accordeon .content{background-color:var(--united-blue-primary)}
+/* Preserve the original arrow silhouette while aligning its blue with the button text. */
+.button.white::after,#contato .container .text a::after{
+ background:var(--united-blue-primary);
+ -webkit-mask:url(assets/images/arrow-right-short-blue.png) center/contain no-repeat;
+ mask:url(assets/images/arrow-right-short-blue.png) center/contain no-repeat;
+}
