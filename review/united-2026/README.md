@@ -4,13 +4,15 @@ Entrega para revisão de Rafael. A prévia completa está em `dist/`; não é um
 
 ## Abrir a prévia
 
-Sirva **dist como raiz HTTP**. Não abra o HTML diretamente e não sirva o projeto dentro de um subdiretório de URL: os links usam `/assets/`, `/cursos/` etc.
+Desde a correção de 15/09/2026, a prévia usa caminhos relativos e funciona tanto com **dist como raiz HTTP** quanto em uma subpasta, como `/review/united-2026/dist/`. Preserve toda a estrutura de `dist` e abra por HTTP, em vez de abrir o HTML diretamente.
 
 ```bash
 python3 -m http.server 8080 --directory dist
 ```
 
 Abra `http://localhost:8080/`. Para celular na mesma rede, use o IP local do computador e a porta 8080. Alternativamente, `npm ci` e `npm run dev` iniciam o Vite. Não há build necessário para a entrega estática.
+
+Para reproduzir o caminho do servidor, execute `python3 -m http.server 8766` na raiz do repositório e abra `http://localhost:8766/review/united-2026/dist/`. Consulte `CORRECAO-SERVIDOR.md` para aplicar os arquivos à prévia existente. O PHP de produção permanece separado.
 
 Páginas: Home `/`, Live Class/Business `/cursos/`, Quem Somos `/quem-somos/`, FAQ `/faq/`. Blog, unidades e serviços externos preservam seus destinos originais.
 
@@ -34,8 +36,12 @@ Após editar componentes, use apenas o atualizador correspondente: `update-conta
 ```bash
 python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
+python3 scripts/prepare-subdirectory.py
 python3 scripts/audit-seo-performance.py
+python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
+
+O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
 
 Requer Python, Pillow e lxml (`requirements-review.txt`). Se trocar imagens intencionalmente, atualize `scripts/inventory-images.py` antes da auditoria e confira o diff de `seo/image-inventory.json`. O inventário registra bytes, dimensões e SHA-256 de todas as imagens raster entregues, inclusive originais de referência; não representa o peso inicial da página.
 

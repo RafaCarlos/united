@@ -18,7 +18,11 @@ Após qualquer gerador legado ou alteração visual em `dist`, executar, nesta o
 ```bash
 python scripts/update-seo-performance.py
 python scripts/optimize-static-assets.py
+python scripts/prepare-subdirectory.py
 python scripts/audit-seo-performance.py
+python scripts/prepare-subdirectory.py --refresh-manifests
 ```
+
+A normalização final mantém a prévia compatível com subpastas, inclusive `/review/united-2026/dist/`. A última chamada atualiza os manifestos após a auditoria. As URLs oficiais nos metadados de produção são preservadas.
 
 Requer Python com `lxml` e `Pillow`. `dist` é o artefato completo e pode ser servido sem build. Os geradores antigos dependem de materiais de referência; não são necessários para servir nem para reaplicar esta etapa final. Os arquivos em `src` relacionados a esta revisão são a fonte dos controladores e estilos; `seo/css-inputs.json` conserva a ordem original dos estilos. A etapa final não ativa indexação na prévia nem envia dados de formulários.

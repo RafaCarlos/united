@@ -62,7 +62,9 @@ for route, doc in DOCS.items():
         check(bool(v.get('poster') and v.get('width') and v.get('height') and v.get('aria-label')), f'{route}: video poster/geometry/name')
         check('data-managed-video' in v.attrib, f'{route}: missing accessible playback enhancement')
         for source in v.xpath('./source'):
-            check(source.get('src', '').startswith('/assets/videos/'), f'{route}: external video remains')
+            source_url = urlsplit(source.get('src', ''))
+            source_path = urljoin(route, unquote(source_url.path))
+            check(not source_url.scheme and not source_url.netloc and source_path.startswith('/assets/videos/'), f'{route}: external video remains')
     for script in doc.xpath('//script[@src]'):
         check('defer' in script.attrib, f'{route}: parser-blocking script')
         url = urlsplit(script.get('src'))
@@ -70,7 +72,7 @@ for route, doc in DOCS.items():
             file = D / urljoin(route, url.path).lstrip('/')
             check(parse_qs(url.query).get('v') == [sha256(file.read_bytes()).hexdigest()[:12]], f'{route}: stale script cache version {url.path}')
     for link in doc.xpath('//link[@rel="stylesheet"]'):
-        file = D / urlsplit(link.get('href')).path.lstrip('/')
+        file = D / urljoin(route, unquote(urlsplit(link.get('href')).path)).lstrip('/')
         css = file.read_text()
         for match in re.finditer(r'url\(([\"\']?)(.*?)\1\)', css): dependency(match.group(2), str(file.relative_to(D)), 'CSS url')
         check('.ttf' not in css, f'{route}: uncompressed font reference')

@@ -1,5 +1,11 @@
 # SEO e desempenho — revisão de 12/09/2026
 
+## Correção de caminhos — 15/09/2026
+
+A prévia no endereço `/review/united-2026/dist/` procurava CSS e scripts na raiz do domínio. Os caminhos locais em cinco HTML e cinco CSS foram convertidos para relativos; os quatro bundles CSS receberam novos nomes de versão. Os arquivos JavaScript externos, imagens, vídeos, conteúdo, regras visuais, metadados e bloqueio de indexação foram preservados.
+
+O teste local no mesmo subdiretório verificou cinco páginas (incluindo a comparação interna de contato) e 149 endereços HTTP de arquivos e links, sem falhas. A Home e Cursos foram conferidas visualmente, e a navegação de Cursos para FAQ manteve a pasta da prévia. Isso não representa uma nova medição de Lighthouse ou de desempenho do servidor. As medições e observações abaixo permanecem como histórico da revisão de 12/09.
+
 Escopo: as quatro páginas da prévia privada. Esta revisão não significa que o domínio oficial recebeu alterações e não atribui uma nota Lighthouse, uma posição no Google ou um aumento de tráfego.
 
 ## Alterações concluídas
