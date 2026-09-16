@@ -72,24 +72,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-88f7b2068b83.css",
-      "bytes": 212242,
-      "sha256": "88f7b2068b8386ec176ae0980c0c436b4829b2c047e73565d07aa8a78e67cc22"
+      "path": "dist/assets/css/page-cursos-308a91fc2594.css",
+      "bytes": 212300,
+      "sha256": "308a91fc2594b8ea5cd8bf561a7344f9b404c208d1a0409a03b4a4aa7596ef89"
     },
     {
-      "path": "dist/assets/css/page-faq-fba6e4fb5357.css",
-      "bytes": 205868,
-      "sha256": "fba6e4fb53574b0e6a6e139a0298a4129da61aaae72b0a7939c85cb8417c29ae"
+      "path": "dist/assets/css/page-faq-a64547d8b46f.css",
+      "bytes": 205926,
+      "sha256": "a64547d8b46f222d3b8cdb21965cbbc0ce947fc62b526eba9e719a7511e11399"
     },
     {
-      "path": "dist/assets/css/page-home-e2be616df4b3.css",
-      "bytes": 234764,
-      "sha256": "e2be616df4b333d87da0587fb72cf119023e0506e6a4e48103da783d9f4ca64b"
+      "path": "dist/assets/css/page-home-fca735893b90.css",
+      "bytes": 234822,
+      "sha256": "fca735893b90633cf68f3c80cd11f7dcb24a4623c32ee1c7b1bdd8a644c0147e"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-fba6e4fb5357.css",
-      "bytes": 205868,
-      "sha256": "fba6e4fb53574b0e6a6e139a0298a4129da61aaae72b0a7939c85cb8417c29ae"
+      "path": "dist/assets/css/page-quem-somos-a64547d8b46f.css",
+      "bytes": 205926,
+      "sha256": "a64547d8b46f222d3b8cdb21965cbbc0ce947fc62b526eba9e719a7511e11399"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -994,12 +994,12 @@
     {
       "path": "dist/cursos/index.html",
       "bytes": 50822,
-      "sha256": "b23dcae2f3917ad1d13195ee501d20531171b7158c9b5201019c840bc983b8f4"
+      "sha256": "e8e548ef25428373df7a3ce5e54d17631c98b4a41a4ff2a5134cd4e51180aa62"
     },
     {
       "path": "dist/faq/index.html",
       "bytes": 36860,
-      "sha256": "abb9a067b58cc1e48db7b491d3b2c78a6adce272d7675c4b6a5ccf4a7a3aeeaf"
+      "sha256": "5d0f6f98762f6f48d3d435566a29a5e553f87b23b38fc4cefed1516070add1fe"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1009,7 +1009,7 @@
     {
       "path": "dist/index.html",
       "bytes": 47215,
-      "sha256": "0f80633ccc8f38222f2ed70b732d15a4ff3dbddd9ca2780c216aef44cb035287"
+      "sha256": "bbffe27ecab49f267b9c441d59dde63d357914b20cd2ab0585b4e1b6c29b03ac"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1049,12 +1049,12 @@
     {
       "path": "dist/quem-somos/index.html",
       "bytes": 37853,
-      "sha256": "77ca55136e6901bc69783f1b9eb68001233e9a41d74c31f07bcb2e07b0f6dece"
+      "sha256": "a809a4d76b558d6edf097b3fcf611573a442d0484955a12a775cb33f51a96488"
     },
     {
       "path": "dist/rdstation-form.css",
-      "bytes": 3837,
-      "sha256": "85a863436985b17189e83efe992d65ed13d034baaf319050c14484054d9c3822"
+      "bytes": 3895,
+      "sha256": "3f7944fd988d0c981eceac40bfe6e34e837cd8fcb9a594ee0e238403583c1b2f"
     },
     {
       "path": "dist/rdstation-form.js",
