@@ -11,12 +11,12 @@
     {
       "path": "MANIFEST-SERVIDOR.json",
       "bytes": 39605,
-      "sha256": "6cd8041e051b710db0722c32ba9971002a54cac04138d57e51e77c6da901ccc7"
+      "sha256": "848188e863792f87ae1aa6b52efddb3da2d498e5aec1b2b4c9e9e378a6b4e921"
     },
     {
       "path": "README.md",
-      "bytes": 7090,
-      "sha256": "cb81490e333958ef53a1439ce61c47153444df9679a122a3dfdb94b5dd49e1f9"
+      "bytes": 7302,
+      "sha256": "7f52f2f0ce625f16dcea01fc2f21472e3c6ed359450d5f75e862fe7679cbb519"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -84,24 +84,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-c6fe4301f930.css",
-      "bytes": 212188,
-      "sha256": "c6fe4301f9309d15d44e4749dc8be42dbd2a70761bace8180c27027f9dbd961f"
+      "path": "dist/assets/css/page-cursos-88f7b2068b83.css",
+      "bytes": 212242,
+      "sha256": "88f7b2068b8386ec176ae0980c0c436b4829b2c047e73565d07aa8a78e67cc22"
     },
     {
-      "path": "dist/assets/css/page-faq-80cfc665f822.css",
-      "bytes": 205814,
-      "sha256": "80cfc665f82212373391ca8b267fbfc178b7082c7827f9e5af5fb4950792a0a4"
+      "path": "dist/assets/css/page-faq-fba6e4fb5357.css",
+      "bytes": 205868,
+      "sha256": "fba6e4fb53574b0e6a6e139a0298a4129da61aaae72b0a7939c85cb8417c29ae"
     },
     {
-      "path": "dist/assets/css/page-home-c35536582698.css",
-      "bytes": 234710,
-      "sha256": "c3553658269867fdb54cc4dccb8b353efa9aee18bb9d071c67eece926a8da245"
+      "path": "dist/assets/css/page-home-e2be616df4b3.css",
+      "bytes": 234764,
+      "sha256": "e2be616df4b333d87da0587fb72cf119023e0506e6a4e48103da783d9f4ca64b"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-80cfc665f822.css",
-      "bytes": 205814,
-      "sha256": "80cfc665f82212373391ca8b267fbfc178b7082c7827f9e5af5fb4950792a0a4"
+      "path": "dist/assets/css/page-quem-somos-fba6e4fb5357.css",
+      "bytes": 205868,
+      "sha256": "fba6e4fb53574b0e6a6e139a0298a4129da61aaae72b0a7939c85cb8417c29ae"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50819,
-      "sha256": "ed3846862fd75b7df008ca5cfe384de6d563b7612dc622248fcc9d39e5fb12c9"
+      "bytes": 50822,
+      "sha256": "b23dcae2f3917ad1d13195ee501d20531171b7158c9b5201019c840bc983b8f4"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 36857,
-      "sha256": "957b72b023f68f6cd3f0ce8e7966e81b4dd0d1ff66646622569fce4a83043d8b"
+      "bytes": 36860,
+      "sha256": "abb9a067b58cc1e48db7b491d3b2c78a6adce272d7675c4b6a5ccf4a7a3aeeaf"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 47212,
-      "sha256": "db563dd753ae0343c7b7104991fd6de8ce642c03fae99ca7f484974c9ee72c2b"
+      "bytes": 47215,
+      "sha256": "0f80633ccc8f38222f2ed70b732d15a4ff3dbddd9ca2780c216aef44cb035287"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1060,18 +1060,18 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 37850,
-      "sha256": "b5483dc03b09e6cf98e980a617636b5f44e13258ac4bf0ab60771e5d4d0afeea"
+      "bytes": 37853,
+      "sha256": "77ca55136e6901bc69783f1b9eb68001233e9a41d74c31f07bcb2e07b0f6dece"
     },
     {
       "path": "dist/rdstation-form.css",
-      "bytes": 3783,
-      "sha256": "64ad96397b66e1d561bc7f8a5b43be51ca3a4c689d5ddcec9dc868869cca6594"
+      "bytes": 3837,
+      "sha256": "85a863436985b17189e83efe992d65ed13d034baaf319050c14484054d9c3822"
     },
     {
       "path": "dist/rdstation-form.js",
-      "bytes": 4839,
-      "sha256": "f804866c234a1c528e69795e022a423e0157bba93d521cc8d8b7229904c4184d"
+      "bytes": 4842,
+      "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
     },
     {
       "path": "dist/responsive-home.css",
@@ -1140,8 +1140,8 @@
     },
     {
       "path": "scripts/audit-seo-performance.py",
-      "bytes": 11546,
-      "sha256": "531b67d5b3b4c7d7cdda099eb8373a7872b58e13fdbd6ef601c91381d3e6c2d9"
+      "bytes": 11549,
+      "sha256": "901d210d3ac2f91bdc893f85ddcd06a27f073ab5231d5d3ec631e8aef5515d2c"
     },
     {
       "path": "scripts/build-interior-preview.py",
@@ -1255,18 +1255,18 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 9200,
-      "sha256": "ad0c48438105a7489a9f9ef5fb86f79714249c9db0826ad85a7214c9b029ae4d"
+      "bytes": 10521,
+      "sha256": "96b62765f09d8856ec890f987f8f96b9b8c3546b62549408180755530f947176"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 4865,
-      "sha256": "dac6337ebf8a2fea5fd71f60a2227fe821e0ca6efadc64616dab422857d14121"
+      "bytes": 5075,
+      "sha256": "b6a65b7b424b6dbce52722dd15459878405438b6dcc02d63d9dcfe7a646c3e35"
     },
     {
       "path": "seo/RD-STATION.md",
-      "bytes": 8868,
-      "sha256": "2090ecff097515a50500a791a2fccd5f7ab7453f2c7a7ff777e9e039d7974e17"
+      "bytes": 11291,
+      "sha256": "ad6bd316e4eb4d470bb09b93b45dd6f40dd72990ded08a76ba295d3311f80038"
     },
     {
       "path": "seo/audit-results.json",
@@ -1445,18 +1445,18 @@
     },
     {
       "path": "src/rdstation-form.css",
-      "bytes": 3783,
-      "sha256": "64ad96397b66e1d561bc7f8a5b43be51ca3a4c689d5ddcec9dc868869cca6594"
+      "bytes": 3837,
+      "sha256": "85a863436985b17189e83efe992d65ed13d034baaf319050c14484054d9c3822"
     },
     {
       "path": "src/rdstation-form.html",
-      "bytes": 858,
-      "sha256": "17faf668ce4ad804c49e789005ade057ab7ae2f918bbfa19ed9875f90e386f3a"
+      "bytes": 861,
+      "sha256": "3b3dfa86f25c516849a830d52e3b975eb784ea562e50e8a74288be9d0c463f8c"
     },
     {
       "path": "src/rdstation-form.js",
-      "bytes": 4839,
-      "sha256": "f804866c234a1c528e69795e022a423e0157bba93d521cc8d8b7229904c4184d"
+      "bytes": 4842,
+      "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
     },
     {
       "path": "src/reference/cursos.php",

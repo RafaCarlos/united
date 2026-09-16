@@ -95,7 +95,7 @@
   timeout = setTimeout(unavailable, 20000);
   try {
     // Keep the official RD form's fields, validation, captcha and submission flow.
-    new window.RDStationForms('lp-vamos-coversar-cbaf85f09c7f676d42c3', 'UA-42887237-1').createForm();
+    new window.RDStationForms('form-vamos-conversar-5ba05329ea8c88b5c10d', 'UA-42887237-1').createForm();
   } catch (exception) {
     clearTimeout(timeout);
     observer.disconnect();
