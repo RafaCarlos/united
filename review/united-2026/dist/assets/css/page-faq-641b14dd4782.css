@@ -444,79 +444,6 @@ body{background-color:#fff}
 }
 @media(prefers-reduced-motion:reduce){.reviews-track{scroll-behavior:auto}}
 
-/* /jimmy-current.css */
-/* Shared approved Jimmy, home and Live Class detail. */
-
-#jimmy-united-idiomas{scroll-margin-top:32px;width:min(1200px,calc(100% - 96px));padding:0;margin:0 auto 80px}
-.features:has(#jimmy-united-idiomas)::after{display:none}
-#jimmy-united-idiomas .content{display:grid;grid-template-columns:minmax(0,38fr) minmax(0,62fr);gap:clamp(28px,4vw,64px);height:auto;min-height:460px;padding:clamp(24px,3vw,44px);border:1px solid #153e68;background:linear-gradient(115deg,#08294b 0%,#012858 55%,#021a36 100%);font-family:Manrope,Arial,sans-serif}
-#jimmy-united-idiomas .content figure{width:100%;height:auto;aspect-ratio:850/815;margin:0;overflow:hidden;border-radius:20px;align-self:center}
-#jimmy-united-idiomas .content figure img{position:absolute;display:block;left:-25.294118%;top:-52.760736%;bottom:auto;width:132%;height:auto;max-width:none}
-#jimmy-united-idiomas .content .text{width:auto;padding:0;color:#fff}
-#jimmy-united-idiomas .content .text h2{display:inline-block;margin:0 0 20px;padding:7px 12px;border:1px solid #ffffff35;border-radius:30px;background:#ffffff09;color:#d4e7fd;text-align:left;font-size:13px;line-height:1.4;font-weight:800;letter-spacing:.16em}
-#jimmy-united-idiomas .content .text h3{margin:0 0 20px;font-size:clamp(30px,3.25vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.035em}
-#jimmy-united-idiomas .content .text p{color:#c1d3e8;font-size:16px;line-height:1.65;margin:0 0 26px;max-width:52ch}
-#jimmy-united-idiomas .content .text .jimmy-intro{color:#fff;font-weight:700;font-size:18px;line-height:1.5;margin-bottom:12px;max-width:42ch}
-#jimmy-united-idiomas .content .text .button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:48px;padding:14px 22px;height:auto;background:#fff;color:var(--united-blue-primary);font-size:15px;line-height:1.4;border-radius:9px}
-#jimmy-united-idiomas .content .text .button::after{content:'→';display:block;width:auto;height:auto;background:none;font-size:22px;line-height:1}
-#jimmy-united-idiomas .content .text .button:hover{background:#e4eefb}
-#jimmy-united-idiomas .content .text .button:focus-visible{outline:3px solid white;outline-offset:4px}
-@media(max-width:768px){
- #jimmy-united-idiomas{width:calc(100% - 40px);margin-bottom:48px}
- #jimmy-united-idiomas .content{grid-template-columns:1fr;padding:24px;gap:26px;min-height:0;border-radius:24px}
- #jimmy-united-idiomas .content figure{max-width:420px;justify-self:center}
- #jimmy-united-idiomas .content .text{text-align:left}
- #jimmy-united-idiomas .content .text h3{font-size:clamp(27px,6.8vw,40px)}
- #jimmy-united-idiomas .content .text .button{max-width:100%;padding:14px 18px;font-size:14px}
-}
-
-/* /liveclass-intro.css */
-/* Conversation-led campaign: expressive portrait, short copy, one shared scene. */
-.about-home:has(>.liveclass-intro){padding-top:64px}
-.about-home>.liveclass-intro{position:relative;isolation:isolate;width:min(1200px,calc(100% - 96px));min-height:610px;margin:0 auto;overflow:hidden;border-radius:28px;background:#061d38;color:#fff;font-family:Manrope,Arial,sans-serif;scroll-margin-top:28px}
-.liveclass-intro-copy{position:relative;z-index:2;width:55%;padding:48px;box-sizing:border-box}
-.liveclass-eyebrow{margin:0 0 24px;font-size:.875rem;font-weight:800;line-height:1.4;letter-spacing:.15em;text-transform:uppercase;color:#b9d4f0}
-.liveclass-intro :is(h1,h2){margin:0 0 24px;font-size:clamp(42px,4.65vw,64px);line-height:1.04;font-weight:800;letter-spacing:-.045em;color:#fff}
-.liveclass-intro :is(h1,h2) span{color:#ff75a1;font-weight:800}
-.liveclass-intro-description{max-width:36ch;margin:0;color:#e1ebf5;font-size:1rem;line-height:1.65}
-.liveclass-journey{margin:20px 0 0;color:#b9cde2;font-size:.875rem;line-height:1.6}
-.liveclass-journey strong{color:#fff;font-weight:800;white-space:nowrap}
-.liveclass-intro-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;margin-top:24px}
-.liveclass-primary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:8px;background:#d90050;color:#fff;font-size:1rem;font-weight:800;line-height:1.4;text-decoration:none}
-.liveclass-primary:hover{background:#b90044}
-.liveclass-secondary{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:#fff;font-size:.875rem;font-weight:700;line-height:1.5;text-decoration:underline;text-underline-offset:4px}
-.liveclass-intro a:focus-visible{outline:3px solid #fff;outline-offset:4px}
-.liveclass-intro-visual{position:absolute;inset:0 0 0 28%;z-index:-1;margin:0;overflow:hidden}
-.liveclass-intro-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:100% center}
-.liveclass-intro-visual::after{position:absolute;inset:0;content:"";background:linear-gradient(90deg,#061d38 0%,#061d38d9 13%,#061d3855 31%,transparent 55%)}
-.about-home:has(>.liveclass-intro)::before,.about-home:has(>.liveclass-intro)::after{display:none}
-.interior-preview #jimmy-united-idiomas .content{border-radius:28px}
-.interior-preview #jimmy-united-idiomas .content figure{position:relative}
-@media(max-width:1000px){
- .about-home>.liveclass-intro{width:calc(100% - 48px);min-height:590px}
- .liveclass-intro-copy{padding:36px;width:57%}
- .liveclass-intro :is(h1,h2){font-size:48px}
-}
-@media(max-width:760px){
- .about-home:has(>.liveclass-intro){padding-top:36px}
- .about-home>.liveclass-intro{display:flex;flex-direction:column;width:calc(100% - 40px);min-height:0;border-radius:24px}
- .liveclass-intro-visual{position:relative;inset:auto;order:0;z-index:0;height:285px;margin:0;flex:none}
- .liveclass-intro-visual img{object-position:100% 33%;object-fit:cover}
- .liveclass-intro-visual::after{background:linear-gradient(0deg,#061d38 0%,#061d3800 32%)}
- .liveclass-intro-copy{order:1;width:100%;padding:8px 24px 28px;margin-top:-4px}
- .liveclass-eyebrow{margin-bottom:16px;font-size:.875rem}
- .liveclass-intro :is(h1,h2){font-size:clamp(34px,9.3vw,44px);margin-bottom:20px;line-height:1.05}
- .liveclass-intro-description{max-width:none}
- .liveclass-journey{margin-top:16px}
- .liveclass-intro-actions{margin-top:20px;gap:8px 16px}
- .interior-preview #jimmy-united-idiomas .content{border-radius:24px}
-}
-@media(max-width:359px){
- .liveclass-intro-visual{height:245px}
- .liveclass-intro-copy{padding-left:20px;padding-right:20px}
- .liveclass-intro :is(h1,h2){font-size:32px}
-}
-
 /* /shared-header.css */
 /* One header geometry for the home and every interior page. */
 html body header.united-header,
@@ -670,10 +597,10 @@ video[data-managed-video]::-webkit-media-controls,video[data-managed-video]::-we
 #form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__field { width:100%!important;padding:0!important;margin:0 0 16px!important }
 #form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__label { display:block!important;color:#fff!important;margin-bottom:7px!important;font:700 14px/1.5 Manrope,Arial,sans-serif!important }
 #form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__input { min-height:48px!important;border-radius:9px!important;background:#fff!important;color:#142b44!important;font:400 16px/1.5 Manrope,Arial,sans-serif!important }
-#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button { width:100%!important;min-height:50px!important;border:0!important;border-radius:9px!important;background:#23824b!important;color:#fff!important;font:700 16px/1.4 Manrope,Arial,sans-serif!important;cursor:pointer }
-#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button:hover { background:#1b6d3e!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button { width:100%!important;min-height:50px!important;border:0!important;border-radius:9px!important;background:#d90050!important;color:#fff!important;font:700 16px/1.4 Manrope,Arial,sans-serif!important;cursor:pointer }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button:hover { background:#be0046!important }
 #form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__input:focus-visible { outline:3px solid #ffabc9!important;outline-offset:2px }
-#form-vamos-conversar-5ba05329ea8c88b5c10d button:focus-visible { outline:3px solid #a7e8bc!important;outline-offset:2px }
+#form-vamos-conversar-5ba05329ea8c88b5c10d button:focus-visible { outline:3px solid #ffabc9!important;outline-offset:2px }
 /* Country is fixed to Brazil; RD still owns the telephone field and its +55 mask. */
 #form-vamos-conversar-5ba05329ea8c88b5c10d .phone-input-group > .phone-country,
 #form-vamos-conversar-5ba05329ea8c88b5c10d .phone-input-group > .select2-container { display:none!important }
