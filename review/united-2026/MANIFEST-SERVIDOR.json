@@ -1,29 +1,10 @@
 {
-  "source_commit": "7a70b9cbd1ce40a3680cf2bba69a67ce912acc30",
-  "scope": "Static preview path correction only; production PHP and forms unchanged.",
-  "changed_source_files": [
-    "assets/css/page-cursos-7c590f415214.css",
-    "assets/css/page-faq-dfaa18d900a8.css",
-    "assets/css/page-home-56b178ee88b8.css",
-    "assets/css/page-quem-somos-dfaa18d900a8.css",
-    "site-polish.css",
-    "comparar-contato/index.html",
-    "cursos/index.html",
-    "faq/index.html",
-    "index.html",
-    "quem-somos/index.html"
-  ],
-  "renamed_css": {
-    "page-cursos-7c590f415214.css": "page-cursos-c09f2a25d43e.css",
-    "page-faq-dfaa18d900a8.css": "page-faq-5909f80a0e5b.css",
-    "page-home-56b178ee88b8.css": "page-home-dcc460522e0f.css",
-    "page-quem-somos-dfaa18d900a8.css": "page-quem-somos-5909f80a0e5b.css"
-  },
+  "scope": "Static preview with RD Station integration and local thank-you page; production PHP and hosting unchanged.",
   "files": [
     {
       "path": "CORRECAO-SERVIDOR.md",
-      "bytes": 2082,
-      "sha256": "d793adefa0e0b17f6039a04f6fd0a7532b5058239e701316127cf1207300b2ce"
+      "bytes": 2797,
+      "sha256": "26f511cff126818047b7c4f8e0a440c817608a118b38179ff2620dcc953ae169"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -91,24 +72,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-c09f2a25d43e.css",
-      "bytes": 208378,
-      "sha256": "c09f2a25d43ece25bbd4a06ed32806d1a2ef42aabb7626b31ba3c2a94b8d2a78"
+      "path": "dist/assets/css/page-cursos-8cb460300f11.css",
+      "bytes": 211441,
+      "sha256": "8cb460300f11498c4c0c08e07c015f8439be244947d9c0c6d47ccd45fe1f31b6"
     },
     {
-      "path": "dist/assets/css/page-faq-5909f80a0e5b.css",
-      "bytes": 202004,
-      "sha256": "5909f80a0e5bda0b29998d2bc22e200490555e3e9969ebb0ebdad163b3374e64"
+      "path": "dist/assets/css/page-faq-44d971ab2bfb.css",
+      "bytes": 205067,
+      "sha256": "44d971ab2bfb54cec6c12f90e009f326d7753e730a98b74c40b2a4994b543207"
     },
     {
-      "path": "dist/assets/css/page-home-dcc460522e0f.css",
-      "bytes": 230900,
-      "sha256": "dcc460522e0f9523979d5a09a82817581908ca0341430b2faf1649f851e4990b"
+      "path": "dist/assets/css/page-home-ac33a43aad77.css",
+      "bytes": 233963,
+      "sha256": "ac33a43aad775e0cc51b531e9dea109294fe0dcb6593bbab63457487d6eabf87"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-5909f80a0e5b.css",
-      "bytes": 202004,
-      "sha256": "5909f80a0e5bda0b29998d2bc22e200490555e3e9969ebb0ebdad163b3374e64"
+      "path": "dist/assets/css/page-quem-somos-44d971ab2bfb.css",
+      "bytes": 205067,
+      "sha256": "44d971ab2bfb54cec6c12f90e009f326d7753e730a98b74c40b2a4994b543207"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -992,8 +973,8 @@
     },
     {
       "path": "dist/comparar-contato/index.html",
-      "bytes": 5632,
-      "sha256": "1856efacf7490997332d6010d0ffb1463139ae3adf25f9713dda38cf5915ed76"
+      "bytes": 5656,
+      "sha256": "38ebafdc368a2e4d03afdb458736844317fc2fc51a1d8f285677e6f703ef3d7d"
     },
     {
       "path": "dist/contact-preview.css",
@@ -1002,8 +983,8 @@
     },
     {
       "path": "dist/contact-preview.js",
-      "bytes": 6836,
-      "sha256": "2be9eeaabb00f1586e4a9423dc5f2960e1fd7043f786dfb0104c8c22ed1c03a7"
+      "bytes": 6151,
+      "sha256": "4352c247f35f34a6991327a680b24a270077e04ba4640e64ddea04c4361696fb"
     },
     {
       "path": "dist/courses-compact.css",
@@ -1012,13 +993,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 54736,
-      "sha256": "032cdaf38d4cd428bd9f8dd91250dae8a6fc572b1950450476238a5924c677f0"
+      "bytes": 50567,
+      "sha256": "2e5e381699c3acbec2ac03653696e5e7a05647e625865541f437e3e4932b28db"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 40774,
-      "sha256": "db641b8db0b64e5b054a2b409f427c8220f1a1a567fc3aa0662d397fceb47622"
+      "bytes": 36605,
+      "sha256": "1ba79d94a7131c8742cad7344fd05739512d2419f44ddeffbaa8f2f10eea4c5e"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1027,8 +1008,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 51129,
-      "sha256": "48a538d3d60be586925f2384bf87cf1c4d42a22e830a912ec39fdfa6a3ea1afc"
+      "bytes": 46960,
+      "sha256": "e757490ee4c7f18e07aa7b932006f8cc5a6aa6ee954ab360c52636ed1f1e5063"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1051,6 +1032,11 @@
       "sha256": "9dae432b8ce850a835b4b2f03e75d20915c761f4d7e28e485c1becc9639882a9"
     },
     {
+      "path": "dist/obrigado/index.html",
+      "bytes": 2114,
+      "sha256": "6cdf1377799c8b3973739141ae4d67972e33217288c52fb255854b8508984f86"
+    },
+    {
       "path": "dist/ondemand-current.css",
       "bytes": 2548,
       "sha256": "1169fc49a5a154e60d29bfa4b8b396aa39c4026c4ba0e3e750d0eae82064e94a"
@@ -1062,13 +1048,23 @@
     },
     {
       "path": "dist/preview.js",
-      "bytes": 6061,
-      "sha256": "0d2abc390e8961a64513f5bf9eac409368c7901146c8e4ecdfa708e9f390a40b"
+      "bytes": 5637,
+      "sha256": "e5f152ce4f45c5f2c757d375801897d815ccd5a5303941c75cbba160d4e239c2"
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 41767,
-      "sha256": "95aed56b5f16aa974dc0ffbfb43b54fac5b50bd698f070d37baa22bd70372d92"
+      "bytes": 37598,
+      "sha256": "48a928acb5a612dfd45b38ab120578a0d8291de366905f9950dbef889e5cc8c2"
+    },
+    {
+      "path": "dist/rdstation-form.css",
+      "bytes": 3036,
+      "sha256": "b28c1a0e2a8c63cfe76db5a7837e0f1579fb5f24374b13b0d346053c6a1bfd19"
+    },
+    {
+      "path": "dist/rdstation-form.js",
+      "bytes": 3170,
+      "sha256": "a9477ddaab06acbe404bfb675e26ec7748bac261b5833c275f825640451cc3b2"
     },
     {
       "path": "dist/responsive-home.css",
@@ -1120,5 +1116,27 @@
       "bytes": 1036,
       "sha256": "f644eb1b7c6c2709914949e523bedcaa3d1bfc9e99b635df7e16aadb4efbddb4"
     }
-  ]
+  ],
+  "path_correction_2026_09_15": {
+    "source_commit": "7a70b9cbd1ce40a3680cf2bba69a67ce912acc30",
+    "changed_source_files": [
+      "assets/css/page-cursos-7c590f415214.css",
+      "assets/css/page-faq-dfaa18d900a8.css",
+      "assets/css/page-home-56b178ee88b8.css",
+      "assets/css/page-quem-somos-dfaa18d900a8.css",
+      "site-polish.css",
+      "comparar-contato/index.html",
+      "cursos/index.html",
+      "faq/index.html",
+      "index.html",
+      "quem-somos/index.html"
+    ],
+    "renamed_css": {
+      "page-cursos-7c590f415214.css": "page-cursos-c09f2a25d43e.css",
+      "page-faq-dfaa18d900a8.css": "page-faq-5909f80a0e5b.css",
+      "page-home-56b178ee88b8.css": "page-home-dcc460522e0f.css",
+      "page-quem-somos-dfaa18d900a8.css": "page-quem-somos-5909f80a0e5b.css"
+    }
+  },
+  "revision_base_commit": "37932d0d816815d5796b8ec4e73f1b4933016697"
 }

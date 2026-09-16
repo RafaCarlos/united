@@ -3,8 +3,8 @@
 O conteúdo deste diretório prepara a integração; não modifica automaticamente o PHP nem a hospedagem de www.unitedidiomas.com.
 
 1. Aplicar cada fragmento `production/*-head.html` ao head da página correspondente, removendo metadados antigos duplicados. Os quatro caminhos canônicos devem responder em HTTPS com status 200. Conferir redirects entre www/sem-www e entre variantes com/sem barra no servidor real.
-2. Usar a estrutura HTML, fontes, CSS e scripts locais revisados. Preservar os endpoints e processamento reais de leads; o diálogo e formulário de `dist` são demonstrativos e não devem substituir o backend de produção.
-   Na versão estática, `src/preview.js` cancela envios de formulário na fase de captura, os inicializadores `contactLead`/`contactForm` em `dist/assets/js/dist/scripts.js` estão desativados e os formulários não têm `action` de produção. Restaurar apenas o endpoint não basta: integrar controladores reais, contrato dos três campos, validação, tratamento de erros/sucesso e processamento no servidor; retirar a interceptação demonstrativa e testar recebimento real antes da publicação. Não carregar controladores antigos e novos simultaneamente.
+2. Usar a estrutura HTML, fontes, CSS e scripts locais revisados. Desde 16/09/2026, `dist` usa o formulário oficial RD Station `lp-vamos-coversar-cbaf85f09c7f676d42c3`, pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. O mesmo embed é movido do contato junto ao rodapé para o diálogo e devolvido ao fechar; não criar um segundo embed nem reinicializar o formulário a cada abertura.
+   O envio é realizado diretamente pelo RD Station. Brasil (+55) fica fixo, sem seletor de país. Manter a página `obrigado/` e a configuração de retorno local em `rdstation-form.js`: ela evita o alerta nativo e o redirecionamento do embed para o site antigo. Os formulários demonstrativos e sua interceptação de envio foram removidos; manter `contactLead`/`contactForm` legados desativados e não conectar endpoints PHP em paralelo ao formulário RD. O PHP da raiz continua separado. Conferir campos, validação, estados de erro/sucesso e recebimento na conta RD antes de considerar a integração final validada. A configuração pública e o roteiro de teste estão em `RD-STATION.md`; esta documentação não confirma o recebimento de um lead de teste.
 3. Para imagens/vídeos, seguir os mapas JSON. Os recortes aprovados não mudam. Manter `playsinline`, poster, `preload="none"` e o controlador `/media-runtime.js`; remover o controlador antigo que reintroduzia `controls`. Não carregar as duas versões.
 4. **Somente no domínio oficial:** remover o meta `noindex,nofollow` da prévia; publicar `production/robots.txt` e `production/sitemap.xml` na raiz. Verificar também a ausência de `X-Robots-Tag: noindex` no servidor. Nunca copiar o `robots.txt` de `dist` para produção.
 5. Ativar compressão Brotli/gzip para HTML/CSS/JS/JSON/SVG. Definir cache longo somente para arquivos versionados e invalidação para HTML. Testar respostas parciais de vídeo (Range/206), tipos MIME e conteúdo dos arquivos antes de publicar. Essas configurações dependem da hospedagem e não foram alteradas aqui.
@@ -16,6 +16,7 @@ O conteúdo deste diretório prepara a integração; não modifica automaticamen
 Após qualquer gerador legado ou alteração visual em `dist`, executar, nesta ordem:
 
 ```bash
+python scripts/update-contact-layout.py
 python scripts/update-seo-performance.py
 python scripts/optimize-static-assets.py
 python scripts/prepare-subdirectory.py
@@ -25,4 +26,4 @@ python scripts/prepare-subdirectory.py --refresh-manifests
 
 A normalização final mantém a prévia compatível com subpastas, inclusive `/review/united-2026/dist/`. A última chamada atualiza os manifestos após a auditoria. As URLs oficiais nos metadados de produção são preservadas.
 
-Requer Python com `lxml` e `Pillow`. `dist` é o artefato completo e pode ser servido sem build. Os geradores antigos dependem de materiais de referência; não são necessários para servir nem para reaplicar esta etapa final. Os arquivos em `src` relacionados a esta revisão são a fonte dos controladores e estilos; `seo/css-inputs.json` conserva a ordem original dos estilos. A etapa final não ativa indexação na prévia nem envia dados de formulários.
+Requer Python com `lxml` e `Pillow`. `dist` é o artefato completo e pode ser servido sem build. Os geradores antigos dependem de materiais de referência; não são necessários para servir nem para reaplicar esta etapa final. Os arquivos em `src` relacionados a esta revisão são a fonte dos controladores e estilos; `seo/css-inputs.json` conserva a ordem original dos estilos. Os geradores não submetem formulários nem ativam indexação. O formulário RD usado no navegador pode criar leads reais na prévia, mesmo com `noindex,nofollow` e robots bloqueado.

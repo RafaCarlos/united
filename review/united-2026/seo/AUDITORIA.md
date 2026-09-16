@@ -1,5 +1,13 @@
 # SEO e desempenho — revisão de 12/09/2026
 
+## Integração RD Station — 16/09/2026
+
+As quatro páginas receberam o embed oficial `lp-vamos-coversar-cbaf85f09c7f676d42c3` e deixaram de usar formulários demonstrativos. O envio e a validação ficam a cargo do SDK RD. Um único formulário é compartilhado entre o contato inline e o diálogo; o seletor de país foi retirado a pedido do usuário, mantendo Brasil (+55). A busca da FAQ e o `noindex,nofollow` da prévia foram preservados.
+
+A auditoria estática passou com quatro páginas comerciais, a página de agradecimento, 147 dependências e zero erros. Foram acrescentadas verificações da unicidade do embed, ordem de carregamento do SDK/inicializador, remoção dos formulários legados e preservação da busca. O teste da busca por “18 meses” funcionou no navegador. O SDK oficial isolado respondeu HTTP 200 e “Obrigado!” no teste autorizado das 15h53 (America/Sao_Paulo); o recebimento na conta RD permanece pendente. O teste final pela FAQ confirmou o retorno para a página local `obrigado/`, sem alerta nativo ou navegação ao site antigo. A verificação HTTP percorreu seis páginas e 150 URLs locais, sem erros e sem sair da pasta da prévia. Detalhes e limites em `RD-STATION.md`.
+
+As observações abaixo são o histórico das revisões anteriores, inclusive as referências a formulários demonstrativos e ausência de envio naquela data. Não houve publicação no servidor nem alteração no PHP da raiz nesta integração.
+
 ## Correção de caminhos — 15/09/2026
 
 A prévia no endereço `/review/united-2026/dist/` procurava CSS e scripts na raiz do domínio. Os caminhos locais em cinco HTML e cinco CSS foram convertidos para relativos; os quatro bundles CSS receberam novos nomes de versão. Os arquivos JavaScript externos, imagens, vídeos, conteúdo, regras visuais, metadados e bloqueio de indexação foram preservados.

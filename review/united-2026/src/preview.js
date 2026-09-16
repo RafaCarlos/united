@@ -82,13 +82,6 @@
  const requested=Number(new URLSearchParams(location.search).get('banner'));
  select(Number.isInteger(requested)&&requested>=1&&requested<=3?requested-1:0);
  }
- document.addEventListener('submit',e=>{
-  if(!e.target.matches('#formLead,#formBar'))return;
-  e.preventDefault();e.stopImmediatePropagation();
-  let note=e.target.querySelector('.preview-form-note');
-  if(!note){note=document.createElement('p');note.className='preview-form-note';note.setAttribute('role','status');e.target.appendChild(note);}
-  note.textContent='Esta é uma prévia. Nenhum dado foi enviado.';
- },true);
  document.addEventListener('click',e=>{
   if(e.defaultPrevented)return;
   const link=e.target.closest('a');if(!link)return;
