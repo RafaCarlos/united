@@ -19,7 +19,7 @@
 <section class="option" id="option-button" data-active="false" aria-labelledby="title-button"><h2 id="title-button">A · Botão único</h2><div class="screen"><iframe id="frame-button" title="Prévia com botão único" src="../?cta=button&amp;banner=1&amp;compare=1"></iframe></div><p>Ocupa menos espaço e fica no canto da tela.</p><a id="open-button" href="../?cta=button&amp;banner=1" target="_blank" rel="noopener">Abrir esta opção em tela inteira ↗</a></section>
 <section class="option" id="option-bar" data-active="true" aria-labelledby="title-bar"><h2 id="title-bar">B · Barra compacta <span class="badge">Recomendada</span></h2><div class="screen"><iframe id="frame-bar" title="Prévia com barra compacta" src="../?cta=bar&amp;banner=1&amp;compare=1"></iframe></div><p>Uma área maior para tocar, sempre na base do celular.</p><a id="open-bar" href="../?cta=bar&amp;banner=1" target="_blank" rel="noopener">Abrir esta opção em tela inteira ↗</a></section>
 </div>
-<footer>No desktop, as duas opções usam o botão único. No celular, compare acima. A ação fixa se recolhe ao abrir o formulário/menu e quando o bloco de contato está visível. Os formulários desta prévia não enviam dados.</footer>
+<footer>No desktop, as duas opções usam o botão único. No celular, compare acima. A ação fixa se recolhe ao abrir o formulário/menu e quando o bloco de contato está visível. Os formulários estão conectados ao RD Station e enviam contatos reais.</footer>
 </main><script>
 const tabs=[...document.querySelectorAll('[data-option]')];
 function selectOption(name){tabs.forEach(t=>{const active=t.dataset.option===name;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;document.getElementById('option-'+t.dataset.option).dataset.active=String(active)});}

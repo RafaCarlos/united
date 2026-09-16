@@ -1,5 +1,21 @@
 # SEO e desempenho — revisão de 12/09/2026
 
+## Formulário RD Station atual — troca solicitada pelo usuário
+
+As quatro páginas usam agora o embed oficial `form-vamos-conversar-5ba05329ea8c88b5c10d`, fornecido em substituição ao formulário anterior, com o mesmo argumento `UA-42887237-1`. O template público respondeu HTTP 200, gera `conversion-form-form-vamos-conversar` e mantém Nome, Celular e E-mail obrigatórios, com conversão pelo endpoint `https://cta-redirect.rdstation.com/v2/conversions`.
+
+O envio e a validação ficam a cargo do SDK RD. Um único formulário é compartilhado entre o contato inline e o diálogo; Brasil (+55) permanece fixo, sem seletor de país. A busca da FAQ e o `noindex,nofollow` da prévia foram preservados. O controlador configura o destino do SDK com a URL atual e um fragmento temporário exclusivo por tentativa. Após o retorno de sucesso do SDK, `hashchange` confere a tentativa correspondente, restaura a URL e apresenta a mensagem na própria caixa. Não há envio por XHR próprio, uso de callbacks privados nem sucesso simulado.
+
+O novo formulário foi testado na Home pelo Chrome em 16/09/2026, às 16h36 (America/Sao_Paulo). O DOM confirmou `conversion-form-form-vamos-conversar`; campos vazios foram bloqueados pela validação obrigatória e a máscara +55 funcionou sem seletor de país. O envio autorizado retornou sucesso indicado pelo SDK, com “Mensagem enviada!” na própria caixa, URL intacta e ausência de alerta ou navegação. Fechar e reabrir preservou a confirmação e o foco. Cursos, Quem Somos e FAQ carregaram cada uma um único elemento de montagem e um único formulário com o novo ID, contendo os três campos obrigatórios, sem envios reais adicionais. O status HTTP da conversão não foi capturado diretamente nesse teste. A auditoria estática passou com quatro páginas e 146 dependências; a verificação HTTP percorreu cinco páginas e 150 URLs locais sem falhas; os nove testes comportamentais Node passaram. O recebimento desse novo teste na conta Marketing ainda está pendente, e a equipe verifica separadamente o CRM.
+
+## Histórico da integração RD Station — 16/09/2026
+
+Com o formulário anterior, a auditoria estática passou com quatro páginas e 146 dependências; a verificação HTTP percorreu cinco páginas e 150 URLs locais sem erros. No Chrome, campos vazios mostraram validação sem confirmação falsa; o envio autorizado exibiu “Mensagem enviada!” no próprio diálogo, conservando a URL da Home. Fechar e reabrir manteve a confirmação e o foco acessível. O usuário confirmou posteriormente o recebimento no RD Station Marketing; a equipe ainda verifica o CRM. Essas validações pertencem ao formulário substituído e não comprovam o envio pelo novo ID.
+
+Também foram verificadas a unicidade do embed anterior, a ordem de carregamento do SDK/inicializador, a remoção dos formulários legados e a preservação da busca. A pesquisa da FAQ por “18 meses” funcionou no navegador. O SDK oficial isolado respondeu HTTP 200 e “Obrigado!” no teste autorizado das 15h53 (America/Sao_Paulo). Uma correção intermediária confirmou o retorno pela FAQ para uma página local de agradecimento, sem alerta nativo ou navegação ao site antigo; essa página foi substituída pelo retorno na própria caixa. Detalhes e limites em `RD-STATION.md`.
+
+As observações abaixo são o histórico das revisões anteriores, inclusive as referências a formulários demonstrativos e ausência de envio naquela data. Não houve publicação no servidor nem alteração no PHP da raiz nesta integração.
+
 ## Correção de caminhos — 15/09/2026
 
 A prévia no endereço `/review/united-2026/dist/` procurava CSS e scripts na raiz do domínio. Os caminhos locais em cinco HTML e cinco CSS foram convertidos para relativos; os quatro bundles CSS receberam novos nomes de versão. Os arquivos JavaScript externos, imagens, vídeos, conteúdo, regras visuais, metadados e bloqueio de indexação foram preservados.

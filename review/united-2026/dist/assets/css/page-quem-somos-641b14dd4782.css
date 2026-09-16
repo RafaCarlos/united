@@ -577,3 +577,41 @@ video[data-managed-video]::-webkit-media-controls,video[data-managed-video]::-we
 /* Preserve Business topic styling while correcting heading hierarchy. */
 .cursos #temas .content .text h3.business-topics-heading{font-size:2.6vw;font-weight:500;margin:0 0 2.5vh}
 @media(max-width:1024px){.cursos #temas .content .text h3.business-topics-heading{font-size:20px;margin:0 0 15px}}
+
+/* /rdstation-form.css */
+/* Scoped presentation; RD retains the fields, validation and submission. */
+.united-rd-contact { width:100%;min-width:0;color:#fff;font-family:Manrope,Arial,sans-serif }
+.united-rd-contact [data-rd-status] { margin:12px 0;line-height:1.5;color:#dbe7f5 }
+.united-rd-contact [data-rd-error] { padding:16px;border:1px solid #ffffff55;border-radius:12px }
+.united-rd-contact [data-rd-error] p { margin:0 0 12px;line-height:1.5;color:#fff }
+.united-rd-contact [data-rd-reload] { padding:12px 16px;border:0;border-radius:8px;background:#d90050;color:#fff;font:700 15px Manrope,Arial,sans-serif;cursor:pointer }
+.united-rd-contact [data-rd-status][hidden],.united-rd-contact [data-rd-error][hidden] { display:none!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d { width:100%;min-width:0 }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-section,
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-column > div { background:transparent!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-row { width:100%!important;max-width:100%!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-column { min-width:0!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-column > div { padding:0!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .rd-form { width:100%!important;max-width:100%!important;margin:0!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__fieldset { margin:0!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__field { width:100%!important;padding:0!important;margin:0 0 16px!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__label { display:block!important;color:#fff!important;margin-bottom:7px!important;font:700 14px/1.5 Manrope,Arial,sans-serif!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__input { min-height:48px!important;border-radius:9px!important;background:#fff!important;color:#142b44!important;font:400 16px/1.5 Manrope,Arial,sans-serif!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button { width:100%!important;min-height:50px!important;border:0!important;border-radius:9px!important;background:#d90050!important;color:#fff!important;font:700 16px/1.4 Manrope,Arial,sans-serif!important;cursor:pointer }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__submit button:hover { background:#be0046!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .bricks-form__input:focus-visible { outline:3px solid #ffabc9!important;outline-offset:2px }
+#form-vamos-conversar-5ba05329ea8c88b5c10d button:focus-visible { outline:3px solid #ffabc9!important;outline-offset:2px }
+/* Country is fixed to Brazil; RD still owns the telephone field and its +55 mask. */
+#form-vamos-conversar-5ba05329ea8c88b5c10d .phone-input-group > .phone-country,
+#form-vamos-conversar-5ba05329ea8c88b5c10d .phone-input-group > .select2-container { display:none!important }
+#form-vamos-conversar-5ba05329ea8c88b5c10d .with-select-flags > .phone-input-group > input.phone {
+  width:100%!important;min-width:0;flex:1 1 auto;
+  border-top-left-radius:9px!important;border-bottom-left-radius:9px!important;
+}
+
+.united-rd-contact [data-rd-mount][hidden],.united-rd-contact [data-rd-success][hidden] { display:none!important }
+.rd-contact-success { padding:24px 18px;text-align:center;border:1px solid #ffffff33;border-radius:16px;background:#ffffff08 }
+.rd-contact-success-icon { display:inline-grid;place-items:center;width:52px;height:52px;margin-bottom:18px;border-radius:50%;background:#23824b;color:#fff;font-size:28px;line-height:1 }
+.rd-contact-success h3 { margin:0 0 12px!important;color:#fff!important;font:700 26px/1.25 Manrope,Arial,sans-serif!important }
+.rd-contact-success p { margin:0!important;color:#dbe7f5!important;font:400 16px/1.6 Manrope,Arial,sans-serif!important }
+.rd-contact-success:focus-visible { outline:3px solid #a7e8bc;outline-offset:4px }

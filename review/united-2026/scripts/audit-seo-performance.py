@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / 'dist'
 META = json.loads((ROOT / 'seo/metadata.json').read_text())
 DOCS = {route: html.fromstring((D / route.strip('/') / 'index.html').read_bytes()) for route in META}
+RD_FORM_ID = 'form-vamos-conversar-5ba05329ea8c88b5c10d'
+RD_SDK = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
 errors, warnings, pages = [], [], {}
 checked_files = set()
 
@@ -46,6 +48,38 @@ for route, doc in DOCS.items():
         check(bool(graph), f'{route}: empty structured data')
     check(len(doc.xpath('//script[@type="application/ld+json"]')) == 1, f'{route}: structured data')
     check(len(doc.xpath('//link[@rel="stylesheet"]')) == 1, f'{route}: CSS bundle count')
+    mounts = doc.xpath('//*[@data-rd-mount]')
+    containers = doc.xpath('//*[@data-rd-contact]')
+    check(len(mounts) == 1 and mounts[0].get('id') == RD_FORM_ID
+          and len(doc.xpath('//*[@id=$id]', id=RD_FORM_ID)) == 1,
+          f'{route}: requires exactly one official RD form mount')
+    check(len(containers) == 1 and len(containers[0].xpath('.//*[@data-rd-mount]')) == 1
+          and bool(containers[0].xpath('ancestor::*[@id="contato"]')),
+          f'{route}: RD form must start in the inline contact section')
+    check(not doc.xpath('//*[@id="formLead" or @id="formBar"]|//form[@data-preview-form]'),
+          f'{route}: legacy demonstration form remains')
+    confirmations = doc.xpath('//*[@data-rd-success]')
+    check(len(confirmations) == 1 and 'hidden' in confirmations[0].attrib
+          and confirmations[0].get('role') == 'status'
+          and bool(confirmations[0].xpath('ancestor::*[@data-rd-contact]')),
+          f'{route}: requires one hidden, accessible inline confirmation in the contact box')
+    scripts = doc.xpath('//script[@src]')
+    sdk_scripts = [s for s in scripts if urlsplit(s.get('src')).path.endswith('/rdstation-forms.min.js')]
+    init_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-form.js']
+    check(len(sdk_scripts) == 1 and sdk_scripts[0].get('src') == RD_SDK,
+          f'{route}: requires exactly one official RD SDK script')
+    check(len(init_scripts) == 1, f'{route}: requires exactly one RD initialization script')
+    if len(sdk_scripts) == 1 and len(init_scripts) == 1:
+        init_url = urlsplit(init_scripts[0].get('src'))
+        check(not init_url.scheme and not init_url.netloc
+              and urljoin(route, unquote(init_url.path)) == '/rdstation-form.js',
+              f'{route}: RD initialization must use the maintained local script')
+        check(scripts.index(sdk_scripts[0]) < scripts.index(init_scripts[0]),
+              f'{route}: RD SDK must precede initialization')
+        check(all('defer' in s.attrib and 'async' not in s.attrib for s in [sdk_scripts[0], init_scripts[0]]),
+              f'{route}: RD scripts require ordered deferred execution')
+    check(not doc.xpath('//script[not(@src) and contains(text(), "RDStationForms")]'),
+          f'{route}: inline RD initialization bypasses deferred SDK ordering')
     for e in doc.xpath('//*[@src or @href or @poster or @srcset]'):
         for attr in ['src', 'href', 'poster']:
             if e.get(attr): dependency(e.get(attr), route, e.tag+' '+attr, fragment=e.tag == 'a')
@@ -80,6 +114,9 @@ for route, doc in DOCS.items():
 
 check(len(set(x['title'] for x in pages.values())) == len(pages), 'duplicate page titles')
 faq = DOCS['/faq/']
+faq_search = faq.xpath('//form[.//input[@id="busca" and @name="busca"]]')
+check(len(faq_search) == 1 and bool(faq_search[0].xpath('.//button[@id="btnBuscar" and @type="submit"]')),
+      'FAQ search form must remain independent of RD contact')
 questions = faq.xpath('//button[contains(@class,"faq-toggle")]/@aria-controls')
 index = faq.xpath('//a[@data-faq-id]/@data-faq-id')
 check(set(q.removesuffix('-answer') for q in questions) == set(index), 'FAQ index does not cover all questions')

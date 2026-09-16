@@ -1,7 +1,9 @@
 (function () {
   'use strict';
-  const form = document.getElementById('formBar');
+  const form = document.querySelector('[data-rd-contact]');
   if (!form || typeof HTMLDialogElement === 'undefined') return;
+  const home = document.createComment('RD form returns here after closing the dialog');
+  form.before(home);
   // Comparison links opt into the compact alternative; the mobile default is the bar.
   document.documentElement.dataset.contactPresentation = new URLSearchParams(window.location.search).get('cta') === 'button' ? 'button' : 'bar';
 
@@ -11,14 +13,6 @@
   dialog.setAttribute('aria-labelledby', 'contact-preview-title');
   dialog.setAttribute('aria-describedby', 'contact-preview-intro');
   dialog.innerHTML = '<div class="contact-dialog-header"><div><p class="contact-eyebrow">SEU PRÓXIMO PASSO</p><h2 id="contact-preview-title">Conheça a United.</h2></div><button type="button" class="contact-dialog-close" aria-label="Fechar formulário"><span aria-hidden="true">×</span></button></div><div class="contact-dialog-scroll"><p id="contact-preview-intro">Deixe seu contato. Nossa equipe ajuda você a conhecer o curso e tirar suas dúvidas.</p></div>';
-  dialog.querySelector('.contact-dialog-scroll').appendChild(form);
-  form.querySelector('button[type="submit"]').textContent = 'Quero conhecer';
-  form.querySelector('label[for="name"]').textContent = 'Nome';
-  form.querySelector('label[for="phone"]').textContent = 'Telefone';
-  form.querySelector('label[for="mail"]').textContent = 'E-mail';
-  form.querySelector('#name').placeholder = 'Como podemos chamar você?';
-  form.querySelector('#phone').placeholder = '(DDD) + número';
-  form.querySelector('#mail').placeholder = 'voce@exemplo.com';
   document.body.appendChild(dialog);
 
   const launcher = document.createElement('button');
@@ -47,13 +41,23 @@
     trigger.setAttribute('aria-expanded', 'false');
     // Preserve each link's label; the persistent launcher is the main contact action.
   });
-  const footerButton = document.querySelector('#formLead button[type="submit"]');
-  if (footerButton) footerButton.textContent = 'Quero conhecer';
   document.body.classList.add('contact-preview-ready');
 
   let opener = null;
   let previousOverflow = '';
   const viewport = window.visualViewport;
+  function focusForm() {
+    if (form.dataset.rdComplete === 'true') { form.querySelector('[data-rd-success]').focus({preventScroll:true}); return; }
+    const input = Array.from(form.querySelectorAll('input:not([type="hidden"]):not([disabled]),select:not([disabled]),textarea:not([disabled])'))
+      .find(function (element) { return element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden'; });
+    (input || dialog.querySelector('.contact-dialog-close')).focus({preventScroll:true});
+  }
+  form.addEventListener('united:rd-form-ready', function () {
+    if (dialog.open && document.activeElement === dialog.querySelector('.contact-dialog-close')) focusForm();
+  });
+  form.addEventListener('united:rd-form-success', function () {
+    dialog.querySelector('#contact-preview-intro').hidden = true;
+  });
   function fitDialog() {
     if (!dialog.open) return;
     dialog.style.setProperty('--contact-viewport-height', (viewport ? viewport.height : window.innerHeight) + 'px');
@@ -68,9 +72,10 @@
     document.documentElement.style.overflow = 'hidden';
     document.body.classList.add('contact-preview-open');
     triggers.forEach(function (item) { item.setAttribute('aria-expanded', 'true'); });
+    dialog.querySelector('.contact-dialog-scroll').appendChild(form);
     dialog.showModal();
     fitDialog();
-    form.querySelector('#name').focus({ preventScroll: true });
+    focusForm();
   }
   document.addEventListener('click', function (event) {
     const trigger = event.target.closest('a[href="#contato"], [data-contact-open]');
@@ -90,26 +95,16 @@
     if (backdropPress && outsidePanel(event)) dialog.close();
     backdropPress = false;
   });
-  // Keep Tab cycling through the panel, including at the browser-chrome boundary.
-  // Native dialog supplies Escape and makes the page behind it inert.
-  dialog.addEventListener('keydown', function (event) {
-    if (event.key !== 'Tab') return;
-    const controls = Array.from(dialog.querySelectorAll('button:not([disabled]), input:not([type="hidden"]):not([disabled]):not([tabindex="-1"])'))
-      .filter(function (element) { return element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden'; });
-    const first = controls[0], last = controls[controls.length - 1];
-    if ((event.shiftKey && document.activeElement === first) || (!event.shiftKey && document.activeElement === last)) {
-      event.preventDefault();
-      (event.shiftKey ? last : first).focus();
-    }
-  });
+  // Native dialog manages focus and Escape, including RD's phone selector/captcha.
   dialog.addEventListener('close', function () {
+    home.after(form);
     document.documentElement.style.overflow = previousOverflow;
     document.body.classList.remove('contact-preview-open');
     triggers.forEach(function (item) { item.setAttribute('aria-expanded', 'false'); });
     function visible(element) {
       return element && element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden';
     }
-    const target = visible(opener) ? opener : visible(launcher) ? launcher : document.querySelector('#formLead input[name="nome"]');
+    const target = visible(opener) ? opener : visible(launcher) ? launcher : form.querySelector('input:not([type="hidden"])');
     if (visible(target)) target.focus({ preventScroll: true });
   });
   window.addEventListener('resize', fitDialog);

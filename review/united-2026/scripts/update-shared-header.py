@@ -18,7 +18,7 @@ logo=re.search(r'<a[^>]*class="logo".*?</a>',header,re.S).group()
 socials=re.search(r'<ul class="socials">.*?</ul>',header,re.S).group()
 menu=f'''<div class="menu-mobile united-mobile-menu" id="united-mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação" aria-hidden="true">
   <div class="header">{logo}<button type="button" class="close-menu" aria-label="Fechar menu"><span aria-hidden="true">×</span></button></div>
-  <div class="student-access"><p>Já é aluno?</p><a class="button-area" href="https://www.unitedon.com.br/student/" target="_blank" rel="noopener">Área do Aluno <span aria-hidden="true">↗</span></a></div>
+  <div class="student-access"><p>Já é aluno?</p><a class="button-area" href="https://liveclass.app.br" target="_blank" rel="noopener">Área do Aluno <span aria-hidden="true">↗</span></a></div>
   <nav aria-label="Menu principal no celular"><ul>
     <li><a href="/quem-somos/">Quem somos</a></li>
     <li><a href="/cursos/">Cursos</a><div class="mobile-course-links"><a href="/cursos/#live-class">Live Class</a><a href="/cursos/#united-business">Business</a><a href="/#united-full">Full</a></div></li>

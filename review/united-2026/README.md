@@ -34,14 +34,16 @@ Páginas: Home `/`, Live Class/Business `/cursos/`, Quem Somos `/quem-somos/`, F
 Após editar componentes, use apenas o atualizador correspondente: `update-contact-layout.py`, `update-home-navigation.py`, `update-ondemand.py`, `update-footer-copy.py`, `update-liveclass-intro.py`, `update-courses-compact.py` ou `update-benefits.py`. Finalize:
 
 ```bash
+python3 scripts/update-contact-layout.py
 python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
 python3 scripts/prepare-subdirectory.py
 python3 scripts/audit-seo-performance.py
+node --test scripts/test-rdstation-form.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
 
-O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
+O atualizador de contato reaplica o embed RD Station e os controladores mantidos nas quatro páginas, sem duplicar o formulário. O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
 
 Requer Python, Pillow e lxml (`requirements-review.txt`). Se trocar imagens intencionalmente, atualize `scripts/inventory-images.py` antes da auditoria e confira o diff de `seo/image-inventory.json`. O inventário registra bytes, dimensões e SHA-256 de todas as imagens raster entregues, inclusive originais de referência; não representa o peso inicial da página.
 
@@ -49,7 +51,11 @@ Os geradores/exportadores legados (`build-preview.cjs`, `build-interior-preview.
 
 ## Integração e limites
 
-Consulte `seo/INTEGRACAO.md`, `seo/AUDITORIA.md` e `seo/audit-results.json`. Os formulários são demonstrativos e não enviam leads; rastreamento de produção não é carregado. O backend PHP, controladores reais, validação e contrato dos campos precisam ser integrados e testados antes de publicar.
+A integração RD Station foi iniciada em 16/09/2026. A pedido do usuário, o contato passou a usar o novo formulário oficial `form-vamos-conversar-5ba05329ea8c88b5c10d`, com o mesmo argumento `UA-42887237-1`, carregado pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. Há um único embed por página: ele fica no contato junto ao rodapé, é movido para o diálogo ao abrir e retorna ao contato ao fechar. Os formulários demonstrativos foram substituídos; o envio é feito diretamente pelo RD Station, sem acionar os controladores PHP legados em paralelo. Brasil (+55) fica fixo, sem seletor de país. A confirmação permanece na própria caixa de contato após o sucesso indicado pelo SDK, sem subpágina de agradecimento, alerta nativo ou navegação ao site antigo.
+
+**O formulário pode criar leads reais também na prévia.** O novo formulário foi testado no Chrome em 16/09/2026, às 16h36: campos obrigatórios bloquearam o envio vazio e o envio autorizado retornou sucesso indicado pelo SDK, com “Mensagem enviada!” na própria caixa e URL preservada. A conferência desse novo teste na conta Marketing ainda está pendente. O usuário confirmou o recebimento do teste do formulário anterior no Marketing; a equipe ainda verifica a integração com o CRM. Essa confirmação anterior não valida o recebimento pelo novo ID. Consulte `seo/RD-STATION.md` para configuração e resultados separados por formulário.
+
+Consulte também `seo/INTEGRACAO.md`, `seo/AUDITORIA.md` e `seo/audit-results.json`. As auditorias históricas de arquivos e apresentação não validam o recebimento da nova integração RD Station. O PHP de produção permanece separado e sua publicação exige revisão da integração final.
 
 A prévia possui `noindex,nofollow` e robots bloqueado. Os metadados, robots e sitemap para o domínio oficial ficam em `seo/production/`; não copie o bloqueio da prévia para produção. `/comparar-contato/` é ferramenta interna de revisão, fora do sitemap e da integração pública.
 
