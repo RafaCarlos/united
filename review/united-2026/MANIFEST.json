@@ -10,13 +10,13 @@
     },
     {
       "path": "MANIFEST-SERVIDOR.json",
-      "bytes": 39765,
-      "sha256": "46e3244162f44f026ceb7d47266234ec145a9a0bf269995546e6df235e870730"
+      "bytes": 39605,
+      "sha256": "6cd8041e051b710db0722c32ba9971002a54cac04138d57e51e77c6da901ccc7"
     },
     {
       "path": "README.md",
-      "bytes": 6871,
-      "sha256": "46a3bff75fda50f7361230dde8a0794af7ff524ef659467b0e6e5a65e98efb4d"
+      "bytes": 7090,
+      "sha256": "cb81490e333958ef53a1439ce61c47153444df9679a122a3dfdb94b5dd49e1f9"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -84,24 +84,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-8cb460300f11.css",
-      "bytes": 211441,
-      "sha256": "8cb460300f11498c4c0c08e07c015f8439be244947d9c0c6d47ccd45fe1f31b6"
+      "path": "dist/assets/css/page-cursos-c6fe4301f930.css",
+      "bytes": 212188,
+      "sha256": "c6fe4301f9309d15d44e4749dc8be42dbd2a70761bace8180c27027f9dbd961f"
     },
     {
-      "path": "dist/assets/css/page-faq-44d971ab2bfb.css",
-      "bytes": 205067,
-      "sha256": "44d971ab2bfb54cec6c12f90e009f326d7753e730a98b74c40b2a4994b543207"
+      "path": "dist/assets/css/page-faq-80cfc665f822.css",
+      "bytes": 205814,
+      "sha256": "80cfc665f82212373391ca8b267fbfc178b7082c7827f9e5af5fb4950792a0a4"
     },
     {
-      "path": "dist/assets/css/page-home-ac33a43aad77.css",
-      "bytes": 233963,
-      "sha256": "ac33a43aad775e0cc51b531e9dea109294fe0dcb6593bbab63457487d6eabf87"
+      "path": "dist/assets/css/page-home-c35536582698.css",
+      "bytes": 234710,
+      "sha256": "c3553658269867fdb54cc4dccb8b353efa9aee18bb9d071c67eece926a8da245"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-44d971ab2bfb.css",
-      "bytes": 205067,
-      "sha256": "44d971ab2bfb54cec6c12f90e009f326d7753e730a98b74c40b2a4994b543207"
+      "path": "dist/assets/css/page-quem-somos-80cfc665f822.css",
+      "bytes": 205814,
+      "sha256": "80cfc665f82212373391ca8b267fbfc178b7082c7827f9e5af5fb4950792a0a4"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -995,8 +995,8 @@
     },
     {
       "path": "dist/contact-preview.js",
-      "bytes": 6151,
-      "sha256": "4352c247f35f34a6991327a680b24a270077e04ba4640e64ddea04c4361696fb"
+      "bytes": 6412,
+      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
     },
     {
       "path": "dist/courses-compact.css",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50543,
-      "sha256": "f8a34801491d68ae0325734279fcdb4d2e7f569ffde1547fceb7c83f992cf529"
+      "bytes": 50819,
+      "sha256": "ed3846862fd75b7df008ca5cfe384de6d563b7612dc622248fcc9d39e5fb12c9"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 36581,
-      "sha256": "8617d8bbf1c8f9d00b5d3dd7a5eaf36bb36a6abc4975a785344048258e9aa863"
+      "bytes": 36857,
+      "sha256": "957b72b023f68f6cd3f0ce8e7966e81b4dd0d1ff66646622569fce4a83043d8b"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 46936,
-      "sha256": "10d458f1dee2e18fa524a4278410ea3701c38e44275accb3c7f46520d1e5911b"
+      "bytes": 47212,
+      "sha256": "db563dd753ae0343c7b7104991fd6de8ce642c03fae99ca7f484974c9ee72c2b"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1044,11 +1044,6 @@
       "sha256": "9dae432b8ce850a835b4b2f03e75d20915c761f4d7e28e485c1becc9639882a9"
     },
     {
-      "path": "dist/obrigado/index.html",
-      "bytes": 2114,
-      "sha256": "6cdf1377799c8b3973739141ae4d67972e33217288c52fb255854b8508984f86"
-    },
-    {
       "path": "dist/ondemand-current.css",
       "bytes": 2548,
       "sha256": "1169fc49a5a154e60d29bfa4b8b396aa39c4026c4ba0e3e750d0eae82064e94a"
@@ -1065,18 +1060,18 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 37574,
-      "sha256": "380dc1c1af4053f9fb40ff780b659950e1a1738ee6f4440d913ec0989c48202c"
+      "bytes": 37850,
+      "sha256": "b5483dc03b09e6cf98e980a617636b5f44e13258ac4bf0ab60771e5d4d0afeea"
     },
     {
       "path": "dist/rdstation-form.css",
-      "bytes": 3036,
-      "sha256": "b28c1a0e2a8c63cfe76db5a7837e0f1579fb5f24374b13b0d346053c6a1bfd19"
+      "bytes": 3783,
+      "sha256": "64ad96397b66e1d561bc7f8a5b43be51ca3a4c689d5ddcec9dc868869cca6594"
     },
     {
       "path": "dist/rdstation-form.js",
-      "bytes": 3170,
-      "sha256": "a9477ddaab06acbe404bfb675e26ec7748bac261b5833c275f825640451cc3b2"
+      "bytes": 4839,
+      "sha256": "f804866c234a1c528e69795e022a423e0157bba93d521cc8d8b7229904c4184d"
     },
     {
       "path": "dist/responsive-home.css",
@@ -1145,8 +1140,8 @@
     },
     {
       "path": "scripts/audit-seo-performance.py",
-      "bytes": 12965,
-      "sha256": "9c8537e70972f2dc59296e98a6278b7163f583a425e8381c1977d9cbc14fca31"
+      "bytes": 11546,
+      "sha256": "531b67d5b3b4c7d7cdda099eb8373a7872b58e13fdbd6ef601c91381d3e6c2d9"
     },
     {
       "path": "scripts/build-interior-preview.py",
@@ -1199,14 +1194,19 @@
       "sha256": "56e8e5a03dd17968e23027b0852c7213f625a33fffdc4fa9a08b45466e34b654"
     },
     {
+      "path": "scripts/test-rdstation-form.cjs",
+      "bytes": 10442,
+      "sha256": "6fe9218b2dafa95b9ea64fc95b48fbd289c3300c41b2807d453949e57c1a6d60"
+    },
+    {
       "path": "scripts/update-benefits.py",
       "bytes": 1240,
       "sha256": "b0931734bf4dfd3b7a457cfb12bf92ed78fc6e973433ba9ca1181afbf9ce95f7"
     },
     {
       "path": "scripts/update-contact-layout.py",
-      "bytes": 2522,
-      "sha256": "3dba583886fd6cb2b182dfbf7a4d3c22f85f86375408928399094b7c3615a0c9"
+      "bytes": 2383,
+      "sha256": "272c0374787545131fb022eedb4f0a5780530f51a5f90c0564322021c580a1fe"
     },
     {
       "path": "scripts/update-contact-preview.cjs",
@@ -1255,23 +1255,23 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 8413,
-      "sha256": "d7f6f8640c6068dc05b1171c2880b2b69be27392e55a9f0a9c6c114a9b264d10"
+      "bytes": 9200,
+      "sha256": "ad0c48438105a7489a9f9ef5fb86f79714249c9db0826ad85a7214c9b029ae4d"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 4276,
-      "sha256": "348fcbf01a2274cfb5922cb30a116d4bfb8ec123cc93921d5e6241339fee2cc6"
+      "bytes": 4865,
+      "sha256": "dac6337ebf8a2fea5fd71f60a2227fe821e0ca6efadc64616dab422857d14121"
     },
     {
       "path": "seo/RD-STATION.md",
-      "bytes": 6537,
-      "sha256": "45d93fc4b380f76076994a4790502669d2949711295cc298e2f05bd74cfb7db0"
+      "bytes": 8868,
+      "sha256": "2090ecff097515a50500a791a2fccd5f7ab7453f2c7a7ff777e9e039d7974e17"
     },
     {
       "path": "seo/audit-results.json",
       "bytes": 2839,
-      "sha256": "6104fe12431a1015f8486bcedacf5ae35f4baf62819b9245f9a5c696420651cf"
+      "sha256": "a5b292a529d72eca7e1e77477323d7a30a75b6c750b32307c57b0c53df125b86"
     },
     {
       "path": "seo/css-inputs.json",
@@ -1370,8 +1370,8 @@
     },
     {
       "path": "src/contact-preview.js",
-      "bytes": 6151,
-      "sha256": "4352c247f35f34a6991327a680b24a270077e04ba4640e64ddea04c4361696fb"
+      "bytes": 6412,
+      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
     },
     {
       "path": "src/course-business-compact.html",
@@ -1445,23 +1445,18 @@
     },
     {
       "path": "src/rdstation-form.css",
-      "bytes": 3036,
-      "sha256": "b28c1a0e2a8c63cfe76db5a7837e0f1579fb5f24374b13b0d346053c6a1bfd19"
+      "bytes": 3783,
+      "sha256": "64ad96397b66e1d561bc7f8a5b43be51ca3a4c689d5ddcec9dc868869cca6594"
     },
     {
       "path": "src/rdstation-form.html",
-      "bytes": 582,
-      "sha256": "59ccdb784bb0a72d47902d29c9dc2ea5169811128f239ff0a3ebfa1e0e5bbb83"
+      "bytes": 858,
+      "sha256": "17faf668ce4ad804c49e789005ade057ab7ae2f918bbfa19ed9875f90e386f3a"
     },
     {
       "path": "src/rdstation-form.js",
-      "bytes": 3170,
-      "sha256": "a9477ddaab06acbe404bfb675e26ec7748bac261b5833c275f825640451cc3b2"
-    },
-    {
-      "path": "src/rdstation-thanks.html",
-      "bytes": 2114,
-      "sha256": "6cdf1377799c8b3973739141ae4d67972e33217288c52fb255854b8508984f86"
+      "bytes": 4839,
+      "sha256": "f804866c234a1c528e69795e022a423e0157bba93d521cc8d8b7229904c4184d"
     },
     {
       "path": "src/reference/cursos.php",

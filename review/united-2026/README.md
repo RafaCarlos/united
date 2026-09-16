@@ -39,6 +39,7 @@ python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
 python3 scripts/prepare-subdirectory.py
 python3 scripts/audit-seo-performance.py
+node --test scripts/test-rdstation-form.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
 
@@ -50,9 +51,9 @@ Os geradores/exportadores legados (`build-preview.cjs`, `build-interior-preview.
 
 ## Integração e limites
 
-Desde a integração de 16/09/2026, o contato usa o formulário oficial RD Station `lp-vamos-coversar-cbaf85f09c7f676d42c3`, carregado pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. Há um único embed por página: ele fica no contato junto ao rodapé, é movido para o diálogo ao abrir e retorna ao contato ao fechar. Os formulários demonstrativos foram substituídos; o envio é feito diretamente pelo RD Station, sem acionar os controladores PHP legados em paralelo. Brasil (+55) fica fixo, sem seletor de país. Após sucesso no RD, a confirmação abre em `obrigado/`, dentro da própria prévia, sem o alerta nativo e sem redirecionar ao site antigo.
+Desde a integração de 16/09/2026, o contato usa o formulário oficial RD Station `lp-vamos-coversar-cbaf85f09c7f676d42c3`, carregado pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. Há um único embed por página: ele fica no contato junto ao rodapé, é movido para o diálogo ao abrir e retorna ao contato ao fechar. Os formulários demonstrativos foram substituídos; o envio é feito diretamente pelo RD Station, sem acionar os controladores PHP legados em paralelo. Brasil (+55) fica fixo, sem seletor de país. A confirmação permanece na própria caixa de contato após o sucesso indicado pelo SDK, sem subpágina de agradecimento, alerta nativo ou navegação ao site antigo.
 
-**O formulário pode criar leads reais também na prévia.** A confirmação de recebimento depende da conferência na conta RD Station; carregar o formulário ou exibir uma resposta no navegador não comprova, por si só, que o lead consta na conta. Consulte `seo/RD-STATION.md` para configuração e teste. Esta documentação não registra um teste final de recebimento aprovado.
+**O formulário pode criar leads reais também na prévia.** A confirmação de recebimento depende da conferência na conta RD Station; carregar o formulário ou exibir uma resposta no navegador não comprova, por si só, que o lead consta na conta. Consulte `seo/RD-STATION.md` para configuração e teste. O retorno na própria caixa foi validado no navegador, incluindo campos obrigatórios, confirmação após envio e fechamento/reabertura do diálogo. A confirmação de recebimento dentro da conta RD ainda está pendente.
 
 Consulte também `seo/INTEGRACAO.md`, `seo/AUDITORIA.md` e `seo/audit-results.json`. As auditorias históricas de arquivos e apresentação não validam o recebimento da nova integração RD Station. O PHP de produção permanece separado e sua publicação exige revisão da integração final.
 

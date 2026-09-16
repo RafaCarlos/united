@@ -3,8 +3,6 @@ from pathlib import Path
 from lxml import html, etree
 import json
 ROOT=Path(__file__).resolve().parents[1]
-(ROOT/'dist/obrigado').mkdir(exist_ok=True)
-(ROOT/'dist/obrigado/index.html').write_bytes((ROOT/'src/rdstation-thanks.html').read_bytes())
 SDK='https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
 for name in ['contact-preview.js','contact-preview.css','preview.js','rdstation-form.js','rdstation-form.css']:
  (ROOT/'dist'/name).write_bytes((ROOT/'src'/name).read_bytes())

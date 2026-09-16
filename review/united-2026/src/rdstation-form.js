@@ -1,12 +1,52 @@
 (function () {
   'use strict';
-  const thanksUrl = new URL('obrigado/', document.currentScript.src).href;
   const container = document.querySelector('[data-rd-contact]');
   if (!container || container.dataset.rdInitialized) return;
   container.dataset.rdInitialized = 'true';
   const mount = container.querySelector('[data-rd-mount]');
   const status = container.querySelector('[data-rd-status]');
   const error = container.querySelector('[data-rd-error]');
+  const success = container.querySelector('[data-rd-success]');
+  const attempts = new Map();
+  let completed = false;
+  function showConfirmation() {
+    const originalUrl = attempts.get(window.location.hash);
+    if (!originalUrl || completed) return;
+    // The SDK follows this fragment only in its successful conversion handler.
+    // Ignore page loads, unrelated hashes, validation errors and failed requests.
+    completed = true;
+    attempts.clear();
+    window.history.replaceState(window.history.state, '', originalUrl);
+    mount.hidden = true;
+    status.hidden = true;
+    error.hidden = true;
+    success.hidden = false;
+    container.dataset.rdComplete = 'true';
+    container.dispatchEvent(new CustomEvent('united:rd-form-success', {bubbles: true}));
+    success.focus({preventScroll: true});
+  }
+  window.addEventListener('hashchange', showConfirmation);
+  function prepareConfirmation(event) {
+    if (completed) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      return;
+    }
+    const rdForm = event.currentTarget;
+    const originalUrl = window.location.href;
+    const destinationUrl = new URL(originalUrl);
+    const nonce = Array.from(window.crypto.getRandomValues(new Uint32Array(4))).join('-');
+    destinationUrl.hash = 'united-rd-confirmed-' + nonce;
+    attempts.set(destinationUrl.hash, originalUrl);
+    const destination = btoa(destinationUrl.href);
+    rdForm.dataset.assetAction = destination;
+    if (window.jQuery) window.jQuery(rdForm).data('assetAction', destination);
+    // RD appends its own redirect field; keep older attempts consistent too.
+    rdForm.querySelectorAll('input[name="redirect_to"]').forEach(function (input) { input.value = destinationUrl.href; });
+    const message = rdForm.querySelector('input[name="thankyou_message"]');
+    if (message) message.value = '';
+    // Do not cancel submission: RD still validates and sends the real conversion.
+  }
   container.querySelector('[data-rd-reload]').addEventListener('click', function () {
     // A full reload retries the SDK without registering a second form or handler.
     window.location.reload();
@@ -39,14 +79,12 @@
   const observer = new MutationObserver(function () {
     const rdForm = mount.querySelector('form');
     if (!rdForm) return;
-    // RD follows this return URL only after a successful conversion response.
-    // Override the embed's old-site destination and native alert, not its submit.
-    const destination = btoa(thanksUrl);
-    rdForm.dataset.assetAction = destination;
-    if (window.jQuery) window.jQuery(rdForm).data('assetAction', destination);
+    // Replace the old-site destination only when this form is submitted.
+    rdForm.dataset.assetAction = '';
+    if (window.jQuery) window.jQuery(rdForm).data('assetAction', '');
     const message = rdForm.querySelector('input[name="thankyou_message"]');
     if (message) message.value = '';
-    rdForm.querySelectorAll('input[name="redirect_to"]').forEach(function (input) { input.value = thanksUrl; });
+    rdForm.addEventListener('submit', prepareConfirmation, true);
     status.hidden = true;
     error.hidden = true;
     clearTimeout(timeout);

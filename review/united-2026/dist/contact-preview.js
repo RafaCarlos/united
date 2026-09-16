@@ -47,12 +47,16 @@
   let previousOverflow = '';
   const viewport = window.visualViewport;
   function focusForm() {
+    if (form.dataset.rdComplete === 'true') { form.querySelector('[data-rd-success]').focus({preventScroll:true}); return; }
     const input = Array.from(form.querySelectorAll('input:not([type="hidden"]):not([disabled]),select:not([disabled]),textarea:not([disabled])'))
       .find(function (element) { return element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden'; });
     (input || dialog.querySelector('.contact-dialog-close')).focus({preventScroll:true});
   }
   form.addEventListener('united:rd-form-ready', function () {
     if (dialog.open && document.activeElement === dialog.querySelector('.contact-dialog-close')) focusForm();
+  });
+  form.addEventListener('united:rd-form-success', function () {
+    dialog.querySelector('#contact-preview-intro').hidden = true;
   });
   function fitDialog() {
     if (!dialog.open) return;

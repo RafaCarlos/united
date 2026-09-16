@@ -1,4 +1,4 @@
-/* Scope presentation to the official embed; never alter its validation or hidden fields. */
+/* Scoped presentation; RD retains the fields, validation and submission. */
 .united-rd-contact { width:100%;min-width:0;color:#fff;font-family:Manrope,Arial,sans-serif }
 .united-rd-contact [data-rd-status] { margin:12px 0;line-height:1.5;color:#dbe7f5 }
 .united-rd-contact [data-rd-error] { padding:16px;border:1px solid #ffffff55;border-radius:12px }
@@ -27,3 +27,10 @@
   width:100%!important;min-width:0;flex:1 1 auto;
   border-top-left-radius:9px!important;border-bottom-left-radius:9px!important;
 }
+
+.united-rd-contact [data-rd-mount][hidden],.united-rd-contact [data-rd-success][hidden] { display:none!important }
+.rd-contact-success { padding:24px 18px;text-align:center;border:1px solid #ffffff33;border-radius:16px;background:#ffffff08 }
+.rd-contact-success-icon { display:inline-grid;place-items:center;width:52px;height:52px;margin-bottom:18px;border-radius:50%;background:#d90050;color:#fff;font-size:28px;line-height:1 }
+.rd-contact-success h3 { margin:0 0 12px!important;color:#fff!important;font:700 26px/1.25 Manrope,Arial,sans-serif!important }
+.rd-contact-success p { margin:0!important;color:#dbe7f5!important;font:400 16px/1.6 Manrope,Arial,sans-serif!important }
+.rd-contact-success:focus-visible { outline:3px solid #ffabc9;outline-offset:4px }

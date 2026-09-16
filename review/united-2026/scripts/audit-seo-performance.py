@@ -58,6 +58,11 @@ for route, doc in DOCS.items():
           f'{route}: RD form must start in the inline contact section')
     check(not doc.xpath('//*[@id="formLead" or @id="formBar"]|//form[@data-preview-form]'),
           f'{route}: legacy demonstration form remains')
+    confirmations = doc.xpath('//*[@data-rd-success]')
+    check(len(confirmations) == 1 and 'hidden' in confirmations[0].attrib
+          and confirmations[0].get('role') == 'status'
+          and bool(confirmations[0].xpath('ancestor::*[@data-rd-contact]')),
+          f'{route}: requires one hidden, accessible inline confirmation in the contact box')
     scripts = doc.xpath('//script[@src]')
     sdk_scripts = [s for s in scripts if urlsplit(s.get('src')).path.endswith('/rdstation-forms.min.js')]
     init_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-form.js']
@@ -108,32 +113,6 @@ for route, doc in DOCS.items():
     pages[route] = {'title': title, 'description': description[0], 'h1': doc.xpath('//h1')[0].text_content(), 'images': len(doc.xpath('//img')), 'videos': len(doc.xpath('//video')), 'stylesheets': 1}
 
 check(len(set(x['title'] for x in pages.values())) == len(pages), 'duplicate page titles')
-thanks_path = D / 'obrigado/index.html'
-check(thanks_path.is_file(), 'local RD return page is missing')
-if thanks_path.is_file():
-    checked_files.add('obrigado/index.html')
-    thanks = html.fromstring(thanks_path.read_bytes())
-    thanks_robots = thanks.xpath('//meta[@name="robots"]/@content')
-    check(len(thanks_robots) == 1 and {value.strip().lower() for value in thanks_robots[0].split(',')} == {'noindex', 'nofollow'},
-          'RD return page must retain private preview indexing protection')
-    check(not thanks.xpath('//form|//*[@data-rd-contact or @data-rd-mount or @id=$id]', id=RD_FORM_ID),
-          'RD return page must not mount another lead form')
-    check(not thanks.xpath('//script[contains(@src,"rdstation") or contains(text(),"RDStationForms")]'),
-          'RD return page must not initialize RD again')
-    for element in thanks.xpath('//*[@href or @src or @poster or @srcset]'):
-        for attr in ['href', 'src', 'poster']:
-            value = element.get(attr)
-            if value:
-                parsed = urlsplit(value)
-                if not parsed.scheme and not parsed.netloc:
-                    check(not value.startswith('/'), 'RD return page local links must support subdirectories')
-                dependency(value, '/obrigado/', 'return page ' + attr, fragment=element.tag == 'a')
-        if element.get('srcset') and not element.get('srcset').startswith('data:'):
-            for item in element.get('srcset').split(','):
-                dependency(item.strip().split()[0], '/obrigado/', 'return page srcset')
-    for style in thanks.xpath('//style/text()|//*[@style]/@style'):
-        for match in re.finditer(r'url\(([\"\']?)(.*?)\1\)', style):
-            dependency(match.group(2), '/obrigado/', 'return page inline CSS')
 faq = DOCS['/faq/']
 faq_search = faq.xpath('//form[.//input[@id="busca" and @name="busca"]]')
 check(len(faq_search) == 1 and bool(faq_search[0].xpath('.//button[@id="btnBuscar" and @type="submit"]')),
