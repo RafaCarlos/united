@@ -18,7 +18,7 @@ O clique no círculo abriu o popup oficial do RD. A tentativa vazia foi bloquead
 
 O teclado dos três banners, o menu móvel, o contato aberto pelo menu e a busca da FAQ (resultado válido e ausência de resultados) foram conferidos. As quatro páginas também passaram sem rolagem horizontal em 320 px; não foram encontrados links internos/fragmentos quebrados nem IDs duplicados.
 
-Não houve novo envio real de formulário nem mensagem de WhatsApp nesta revisão. Os resultados de envio de 16/09 abaixo são históricos e não comprovam recebimento de um contato de WhatsApp. O trabalho permanece isolado no pacote, sem publicar no servidor nem alterar o PHP da raiz.
+Após as verificações de apresentação, em 17/09/2026 às 11h09 (America/Sao_Paulo), foi realizado um envio autorizado do formulário principal na Home pelo Chrome, na versão `f66afea`. O SDK retornou “Mensagem enviada!” na própria caixa, com URL preservada. O status HTTP da conversão não foi capturado diretamente; o recebimento no Marketing e o encaminhamento ao CRM continuam pendentes de confirmação na conta. Não foi enviada mensagem de WhatsApp. Os resultados de envio de 16/09 abaixo permanecem como histórico. O trabalho permanece isolado no pacote, sem publicar no servidor nem alterar o PHP da raiz.
 
 ## Formulário RD Station atual — troca solicitada pelo usuário
 

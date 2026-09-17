@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9725,
-      "sha256": "ddbe40dc495d0fb112f04965e6cfbeba3313a5825f7081a9d49441fd226bf7e3"
+      "bytes": 10020,
+      "sha256": "17c65cc672fd1e35bd703a32ca8bea2d5387022914f244f7b6c24d73ec8169fc"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -1265,18 +1265,18 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 14580,
-      "sha256": "9fcca1ebc1abf0f023914bae2f45a4f873b87291247d95d7343d7ef9507c6645"
+      "bytes": 14919,
+      "sha256": "c9fee2516a950d5d632d7e59792f2949537e2fc443c65f8ee9b580389eeb084a"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 8088,
-      "sha256": "7522a155fe834ff52f149d7b1975ccb5d0988b045a12db1cc224ab50d1a59078"
+      "bytes": 8288,
+      "sha256": "200463fc9da4eb2464f91c1edc8aaa6bb16f407a58c9354168d02f7cdc240035"
     },
     {
       "path": "seo/RD-STATION.md",
-      "bytes": 15062,
-      "sha256": "50875c08e9bc9083feaa46dae323fcbdc6bb2d0bc778b2cad5c0912a8b02e474"
+      "bytes": 16041,
+      "sha256": "78ebca50bf5953137d345770d75b8195a0479637af82f95b9320772a5aeee09a"
     },
     {
       "path": "seo/audit-results.json",
