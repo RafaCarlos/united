@@ -13,6 +13,7 @@ META = json.loads((ROOT / 'seo/metadata.json').read_text())
 DOCS = {route: html.fromstring((D / route.strip('/') / 'index.html').read_bytes()) for route in META}
 RD_FORM_ID = 'form-vamos-conversar-5ba05329ea8c88b5c10d'
 RD_SDK = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
+RD_LOADER = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js'
 errors, warnings, pages = [], [], {}
 checked_files = set()
 
@@ -48,6 +49,37 @@ for route, doc in DOCS.items():
         check(bool(graph), f'{route}: empty structured data')
     check(len(doc.xpath('//script[@type="application/ld+json"]')) == 1, f'{route}: structured data')
     check(len(doc.xpath('//link[@rel="stylesheet"]')) == 1, f'{route}: CSS bundle count')
+    banner_whatsapp = doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]')
+    if route == '/':
+        check(not doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'),
+              'Home: obsolete preview banner label remains')
+        check(len(banner_whatsapp) == 1 and banner_whatsapp[0].tag == 'a'
+              and bool(banner_whatsapp[0].xpath('ancestor::*[contains(concat(" ",normalize-space(@class)," ")," united-preview-hero ")]')),
+              'Home: requires exactly one WhatsApp link inside the hero')
+        if len(banner_whatsapp) == 1:
+            whatsapp_url = urlsplit(banner_whatsapp[0].get('href', ''))
+            check(whatsapp_url.scheme == 'https' and whatsapp_url.netloc == 'api.whatsapp.com'
+                  and whatsapp_url.path == '/send'
+                  and parse_qs(whatsapp_url.query).get('phone') == ['5511940040658'],
+                  'Home: banner WhatsApp link must preserve the existing United number')
+    else:
+        check(not banner_whatsapp, f'{route}: banner WhatsApp link belongs on the home page only')
+    footer_contacts = doc.xpath('//footer//a[@data-footer-whatsapp]')
+    check(len(footer_contacts) == 2
+          and {a.get('data-footer-whatsapp') for a in footer_contacts} == {'parcerias', 'franquias'},
+          f'{route}: requires the two dedicated footer WhatsApp links')
+    for link in footer_contacts:
+        check(link.get('href') == 'https://wa.me/5511958575315'
+              and link.get('target') == '_blank'
+              and {'noopener', 'noreferrer'} <= set(link.get('rel', '').split())
+              and 'open-item' not in link.get('class', '').split(),
+              f'{route}: footer partnership/franchise links must open their dedicated WhatsApp directly')
+    check(len(doc.xpath('//a[contains(@href,"5511958575315")]')) == 2,
+          f'{route}: dedicated WhatsApp number must be exclusive to the two footer links')
+    general_whatsapp = doc.xpath('//*[@id="contato"]//a[contains(@href,"api.whatsapp.com/send")]')
+    check(len(general_whatsapp) == 1
+          and parse_qs(urlsplit(general_whatsapp[0].get('href', '')).query).get('phone') == ['5511940040658'],
+          f'{route}: general contact WhatsApp must preserve its existing number')
     mounts = doc.xpath('//*[@data-rd-mount]')
     containers = doc.xpath('//*[@data-rd-contact]')
     check(len(mounts) == 1 and mounts[0].get('id') == RD_FORM_ID
@@ -64,11 +96,16 @@ for route, doc in DOCS.items():
           and bool(confirmations[0].xpath('ancestor::*[@data-rd-contact]')),
           f'{route}: requires one hidden, accessible inline confirmation in the contact box')
     scripts = doc.xpath('//script[@src]')
+    loader_scripts = [s for s in scripts if urlsplit(s.get('src')).path == urlsplit(RD_LOADER).path]
     sdk_scripts = [s for s in scripts if urlsplit(s.get('src')).path.endswith('/rdstation-forms.min.js')]
     init_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-form.js']
+    whatsapp_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-whatsapp.js']
     check(len(sdk_scripts) == 1 and sdk_scripts[0].get('src') == RD_SDK,
           f'{route}: requires exactly one official RD SDK script')
+    check(len(loader_scripts) == 1 and loader_scripts[0].get('src') == RD_LOADER,
+          f'{route}: requires exactly one literal RD account loader script')
     check(len(init_scripts) == 1, f'{route}: requires exactly one RD initialization script')
+    check(len(whatsapp_scripts) == 1, f'{route}: requires exactly one maintained RD WhatsApp adapter')
     if len(sdk_scripts) == 1 and len(init_scripts) == 1:
         init_url = urlsplit(init_scripts[0].get('src'))
         check(not init_url.scheme and not init_url.netloc
@@ -100,7 +137,12 @@ for route, doc in DOCS.items():
             source_path = urljoin(route, unquote(source_url.path))
             check(not source_url.scheme and not source_url.netloc and source_path.startswith('/assets/videos/'), f'{route}: external video remains')
     for script in doc.xpath('//script[@src]'):
-        check('defer' in script.attrib, f'{route}: parser-blocking script')
+        if script.get('src') == RD_LOADER:
+            check('async' in script.attrib and 'defer' not in script.attrib,
+                  f'{route}: RD account loader must remain async')
+        else:
+            check('defer' in script.attrib and 'async' not in script.attrib,
+                  f'{route}: scripts other than the RD account loader must remain ordered and deferred')
         url = urlsplit(script.get('src'))
         if not url.netloc and not url.scheme:
             file = D / urljoin(route, url.path).lstrip('/')

@@ -18,12 +18,12 @@ Páginas: Home `/`, Live Class/Business `/cursos/`, Quem Somos `/quem-somos/`, F
 
 ## Estado aprovado
 
-- Três banners com abertura por mouse, clique e teclado no desktop; imagens amplas, sem preenchimento borrado. No celular, três artes verticais, rotação a cada seis segundos, pausa e gesto de deslizar; respeita movimento reduzido e visibilidade.
+- Três banners com abertura por mouse, clique e teclado no desktop; imagens amplas, sem preenchimento borrado. No celular, três artes verticais, rotação a cada seis segundos, pausa e gesto de deslizar; respeita movimento reduzido e visibilidade. O rótulo visual “PRÉVIA · 3 BANNERS” foi removido; o bloqueio de indexação permanece.
 - Cabeçalho transparente, Manrope local e alinhamento compartilhado. Menu móvel e Área do Aluno adaptados a telas estreitas. Business mantém seu cinza original.
 - Live Class: “Você tem muito a dizer. Fale inglês.”, persona atual, ecossistema, seis diferenciais, storytelling e personagens 3D. Jimmy atualizado na home e em Cursos.
 - OnDemand: imagem e texto fornecidos pelo usuário, tablet/celulares ampliados, reflexão alinhada ao rodapé da seção e efeito existente preservado.
 - Business e Full compactos; depoimentos organizados; rodapé com os números fornecidos pelo usuário, um selo azul ABF 2026, Reclame Aqui e “© United 2026. Todos os direitos reservados.”.
-- Contato: uma barra no celular e um botão no desktop. WhatsApp somente no bloco de contato. Cinco chamadas repetitivas no corpo foram removidas; links de exploração dos cursos continuam disponíveis. A barra se recolhe no menu, diálogo e contato final.
+- Contato: uma barra no celular e um botão no desktop. Além do bloco de contato, a Home possui um círculo discreto de WhatsApp na lateral do banner, próximo de “Quero conhecer”. Os atalhos do banner e do bloco de contato abrem o formulário oficial do RD quando disponível; o número existente `5511940040658` permanece como destino direto de reserva. O círculo pertence ao banner e sai da tela ao rolar, sem acompanhar o botão persistente. Cinco chamadas repetitivas no corpo foram removidas; links de exploração dos cursos continuam disponíveis. A barra se recolhe no menu, diálogo e contato final.
 - Atalhos laterais no desktop continuam pelo meio da home e se recolhem apenas no contato, rodapé e sobreposições. No celular ficam ocultos.
 - Vídeos com poster, reprodução inline por visibilidade e botão discreto acessível de pausa/reprodução; sem painel nativo de tela cheia.
 
@@ -39,11 +39,11 @@ python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
 python3 scripts/prepare-subdirectory.py
 python3 scripts/audit-seo-performance.py
-node --test scripts/test-rdstation-form.cjs
+node --test scripts/test-rdstation-form.cjs scripts/test-rdstation-whatsapp.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
 
-O atualizador de contato reaplica o embed RD Station e os controladores mantidos nas quatro páginas, sem duplicar o formulário. O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
+O atualizador de contato reaplica o embed RD Station e os controladores mantidos nas quatro páginas, sem duplicar o formulário. Também mantém uma inclusão literal do loader RD com `async` em cada página e o atalho da Home definido em `src/banner-whatsapp.html`. O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
 
 Requer Python, Pillow e lxml (`requirements-review.txt`). Se trocar imagens intencionalmente, atualize `scripts/inventory-images.py` antes da auditoria e confira o diff de `seo/image-inventory.json`. O inventário registra bytes, dimensões e SHA-256 de todas as imagens raster entregues, inclusive originais de referência; não representa o peso inicial da página.
 
@@ -53,7 +53,13 @@ Os geradores/exportadores legados (`build-preview.cjs`, `build-interior-preview.
 
 A integração RD Station foi iniciada em 16/09/2026. A pedido do usuário, o contato passou a usar o novo formulário oficial `form-vamos-conversar-5ba05329ea8c88b5c10d`, com o mesmo argumento `UA-42887237-1`, carregado pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. Há um único embed por página: ele fica no contato junto ao rodapé, é movido para o diálogo ao abrir e retorna ao contato ao fechar. Os formulários demonstrativos foram substituídos; o envio é feito diretamente pelo RD Station, sem acionar os controladores PHP legados em paralelo. Brasil (+55) fica fixo, sem seletor de país. A confirmação permanece na própria caixa de contato após o sucesso indicado pelo SDK, sem subpágina de agradecimento, alerta nativo ou navegação ao site antigo.
 
-**O formulário pode criar leads reais também na prévia.** O novo formulário foi testado no Chrome em 16/09/2026, às 16h36: campos obrigatórios bloquearam o envio vazio e o envio autorizado retornou sucesso indicado pelo SDK, com “Mensagem enviada!” na própria caixa e URL preservada. A conferência desse novo teste na conta Marketing ainda está pendente. O usuário confirmou o recebimento do teste do formulário anterior no Marketing; a equipe ainda verifica a integração com o CRM. Essa confirmação anterior não valida o recebimento pelo novo ID. Consulte `seo/RD-STATION.md` para configuração e resultados separados por formulário.
+Em 17/09/2026, foi acrescentado o loader RD solicitado, `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js`, com `async`, uma vez em cada HTML comercial. Ele carrega o rastreamento e as configurações da conta RD para recursos como formulários e WhatsApp; o SDK e o inicializador do formulário continuam separados e ordenados com `defer`. O controlador `src/rdstation-whatsapp.js`, também carregado com `defer` nas quatro páginas, conecta os links do banner e do contato ao popup oficial de WhatsApp. Ele oculta apenas o botão flutuante duplicado que o loader injeta, preservando formulário, eventos, rastreamento e fechamento nativos. O desenho e os campos desse popup continuam definidos na conta RD. O loader já existe em `includes/footer.php` na produção e não deve ser duplicado na integração. Caminhos exatos e limites estão em `seo/RD-STATION.md`; sua inclusão não comprova a integração com o CRM.
+
+Ainda em 17/09, “Parcerias & Convênios” e “Seja um Franqueado” passaram a ser links diretos do rodapé nas quatro páginas, exclusivamente para [WhatsApp +55 11 95857-5315](https://wa.me/5511958575315), sem abrir o popup RD. O WhatsApp geral do banner/contato/RD (`5511940040658`) e Head Office permanecem como estavam. Esta alteração não inclui teste de envio de mensagem.
+
+A revisão de 17/09 passou na auditoria estática (quatro páginas, 147 dependências), na verificação HTTP (cinco páginas, 151 URLs locais) e nos 17 testes dos controladores RD (nove do formulário principal e oito do WhatsApp). O Chrome confirmou a rolagem do círculo com o banner, a abertura/validação/fechamento do popup RD e a apresentação em desktop, notebook e celular. Essas verificações de apresentação não enviaram formulários nem mensagens de WhatsApp. Os detalhes estão em `seo/AUDITORIA.md`.
+
+**O formulário pode criar leads reais também na prévia.** O novo formulário foi testado no Chrome em 16/09/2026, às 16h36: campos obrigatórios bloquearam o envio vazio e o envio autorizado retornou sucesso indicado pelo SDK, com “Mensagem enviada!” na própria caixa e URL preservada. Em 17/09/2026, às 11h09 (America/Sao_Paulo), um novo envio autorizado na Home pelo Chrome, na versão `f66afea`, também exibiu “Mensagem enviada!” na própria caixa e preservou a URL. O status HTTP desse envio não foi capturado diretamente. A conferência dos testes do novo formulário na conta Marketing ainda está pendente. O usuário confirmou o recebimento do teste do formulário anterior no Marketing; a equipe ainda verifica a integração com o CRM. Essa confirmação anterior não valida o recebimento pelo novo ID. Consulte `seo/RD-STATION.md` para configuração e resultados separados por formulário.
 
 Consulte também `seo/INTEGRACAO.md`, `seo/AUDITORIA.md` e `seo/audit-results.json`. As auditorias históricas de arquivos e apresentação não validam o recebimento da nova integração RD Station. O PHP de produção permanece separado e sua publicação exige revisão da integração final.
 

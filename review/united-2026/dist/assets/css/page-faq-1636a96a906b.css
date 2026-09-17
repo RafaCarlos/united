@@ -191,7 +191,18 @@ img{height:auto}
 .contact-whatsapp img { display:block;width:22px;height:22px;flex-shrink:0 }
 .contact-whatsapp:hover { background:#0f6536 }
 .contact-whatsapp:focus-visible { outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px #147b43 }
-.contact-preview-open .contact-actions,.contact-section-in-view .contact-actions { visibility:hidden;pointer-events:none }
+/* This shortcut belongs to the banner and scrolls away with it. */
+.united-preview-hero > .banner-whatsapp {
+  position:absolute;right:18px;bottom:88px;z-index:9;
+  display:grid;place-items:center;width:46px;height:46px;
+  border:1px solid #ffffff70;border-radius:50%;background:#147b43;
+  box-shadow:0 4px 14px #021a4e26;text-decoration:none;
+  transition:background-color .2s;
+}
+.banner-whatsapp img { display:block;width:22px;height:22px;filter:brightness(0) invert(1) }
+.united-preview-hero > .banner-whatsapp:hover { background:#0f6536 }
+.united-preview-hero > .banner-whatsapp:focus-visible { outline:3px solid #fff;outline-offset:3px }
+.contact-preview-open .contact-actions,.contact-section-in-view .contact-actions,.rd-whatsapp-open .contact-actions { visibility:hidden;pointer-events:none }
 .contact-preview-dialog {
   --contact-gap:24px;--contact-viewport-height:100dvh;--contact-viewport-top:0px;
   position:fixed;inset:auto 0;margin:0 auto;
@@ -243,6 +254,7 @@ img{height:auto}
   .contact-preview-dialog { --contact-gap:72px }
 }
 @media(max-width:768px) {
+  .united-preview-hero > .banner-whatsapp { right:14px;bottom:18px }
   .contact-actions { right:16px;bottom:calc(16px + env(safe-area-inset-bottom));gap:8px;max-width:calc(100% - 32px) }
   .contact-launcher { min-height:50px;padding:12px 18px;font-size:14px;white-space:nowrap }
   .contact-whatsapp { min-height:50px;padding:12px 16px;font-size:14px;gap:8px }
@@ -293,6 +305,13 @@ footer .container .infos .accordeon .open-item {
   gap:12px;box-sizing:border-box;border-color:#ffffff30;
 }
 footer .container .infos .accordeon button.open-item { border:0;border-bottom:1px solid #ffffff30;background:transparent;text-align:left;font-family:inherit;cursor:pointer }
+footer .container .infos .footer-whatsapp-link {
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  width:100%;min-height:50px;padding:10px 0;box-sizing:border-box;
+  border-bottom:1px solid #ffffff30;color:#fff;font-size:15px;line-height:1.4;text-decoration:none;
+}
+footer .footer-whatsapp-link span { font-size:20px;line-height:1 }
+footer .footer-whatsapp-link:hover { color:#bbd5ee }
 footer .container .infos ul li a span { gap:10px;flex-wrap:wrap }
 footer .container .infos ul li a .logo-ra { width:120px;height:auto }
 footer .container .infos ul li a::after { flex-shrink:0;width:22px;height:22px;background-size:contain }

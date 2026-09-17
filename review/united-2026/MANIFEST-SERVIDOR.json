@@ -72,24 +72,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-782de0d34814.css",
-      "bytes": 212300,
-      "sha256": "782de0d3481428478ee8ced3a970163a9e1818c8561c07261bff5a8761692773"
+      "path": "dist/assets/css/page-cursos-4a7b0e989eaa.css",
+      "bytes": 213460,
+      "sha256": "4a7b0e989eaa25f5c4b17c822c707b54da19337614a801f42d158fbbbcb9efb4"
     },
     {
-      "path": "dist/assets/css/page-faq-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-faq-1636a96a906b.css",
+      "bytes": 207086,
+      "sha256": "1636a96a906bde44598d152f0617ea8de61f5c6939e515beaae8b46d06b37aa9"
     },
     {
-      "path": "dist/assets/css/page-home-cfaf9f745596.css",
-      "bytes": 234822,
-      "sha256": "cfaf9f74559686681ba36a986484f4a6500d2ca1fa3c2ed665c2aee0e198ab83"
+      "path": "dist/assets/css/page-home-d4de2708e751.css",
+      "bytes": 235982,
+      "sha256": "d4de2708e751d3259bd8da2f113a54f277cb9348265d94b415746085c426d659"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-quem-somos-1636a96a906b.css",
+      "bytes": 207086,
+      "sha256": "1636a96a906bde44598d152f0617ea8de61f5c6939e515beaae8b46d06b37aa9"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -978,13 +978,13 @@
     },
     {
       "path": "dist/contact-preview.css",
-      "bytes": 6378,
-      "sha256": "3187586bf3723afcb13343da32918151ace2ae740fe559432b5f4514f885307d"
+      "bytes": 7126,
+      "sha256": "76fdaab2e1bf745e73b2259fc2604f3d7ea053b2e7d52e7cdcca69a3838dc8cf"
     },
     {
       "path": "dist/contact-preview.js",
-      "bytes": 6412,
-      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
+      "bytes": 6426,
+      "sha256": "438a28d0f26fb1b6e57bb934881f6338576de89d47aef5459028bb6672a1a3f8"
     },
     {
       "path": "dist/courses-compact.css",
@@ -993,23 +993,23 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50822,
-      "sha256": "ae233a8fe6b019ea27a48bf34fa262ca5d17cb3d5eb5d4a1e7499f99382a36c3"
+      "bytes": 50999,
+      "sha256": "c63f20d0a8475e5fe0d923b2a95adb7ce755112d1676cfdb6a67c586f4f78979"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 36860,
-      "sha256": "bea20dbca21475b492fd50711f7fa2fe83f83f8753b68ac87a0525e6e8624f0d"
+      "bytes": 37037,
+      "sha256": "8abedb17efd609b045ca2a707e26a61769a05148202ca45397366eecdfcdb9da"
     },
     {
       "path": "dist/footer-refinement.css",
-      "bytes": 5886,
-      "sha256": "0dd69c59da9291921953d71d2f8a72d5d9dc99ae89e961bdd32a723953aeaef9"
+      "bytes": 6298,
+      "sha256": "db1ca9801b93837538fede269da87c11d26c2ec93d51e250738f3db5d457fe4d"
     },
     {
       "path": "dist/index.html",
-      "bytes": 47215,
-      "sha256": "1930175c983ab9099a9521e8a27666a9c6807044ab4d25be95fbc4c11414713d"
+      "bytes": 47734,
+      "sha256": "b3edfc42909cd9a254d5950bad5a78a82f260e1ec0fbb1d293a97f09caff54b8"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1048,8 +1048,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 37853,
-      "sha256": "4499206be2e7871ed25253832a027f6c178be2006d5496451c9d8aa6df07d090"
+      "bytes": 38030,
+      "sha256": "1ef0c71ae7aa40bdf390d371d6c93642ef3d129cbd0569ccfb9b3f0702cd2587"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1060,6 +1060,11 @@
       "path": "dist/rdstation-form.js",
       "bytes": 4842,
       "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
+    },
+    {
+      "path": "dist/rdstation-whatsapp.js",
+      "bytes": 4235,
+      "sha256": "04290c024671164bc62374e48c41d33d7e9f844dc3e197256489d80af1d411ac"
     },
     {
       "path": "dist/responsive-home.css",

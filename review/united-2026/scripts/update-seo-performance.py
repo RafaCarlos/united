@@ -93,10 +93,13 @@ for route,meta in META.items():
  # Same content metadata for integration into the official PHP head, without preview robots.
  fragments=[f'<title>{escape_html.escape(meta["title"])}</title>']+[html.tostring(el,encoding='unicode') for el in head.xpath('./meta[@name="description" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]')]
  (prod/('home-head.html' if route=='/' else route.strip('/')+'-head.html')).write_text('\n'.join(fragments)+'\n')
- # Load local scripts in order after parsing; remove repeated runtime tags on rerun.
+ # Keep the account loader async and the remaining scripts in order after parsing.
  for old in d.xpath('//script[contains(@src,"media-runtime.js")]'):old.getparent().remove(old)
  for script in d.xpath('//script[@src]'):
-  script.set('defer','defer')
+  if script.get('src')=='https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js':
+   script.set('async','async');script.attrib.pop('defer',None)
+  else:
+   script.set('defer','defer');script.attrib.pop('async',None)
   parsed=urlsplit(script.get('src'))
   if not parsed.scheme and not parsed.netloc:
    path=urljoin(route,parsed.path);asset=DIST/path.lstrip('/')
