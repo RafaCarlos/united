@@ -64,6 +64,22 @@ for route, doc in DOCS.items():
                   'Home: banner WhatsApp link must preserve the existing United number')
     else:
         check(not banner_whatsapp, f'{route}: banner WhatsApp link belongs on the home page only')
+    footer_contacts = doc.xpath('//footer//a[@data-footer-whatsapp]')
+    check(len(footer_contacts) == 2
+          and {a.get('data-footer-whatsapp') for a in footer_contacts} == {'parcerias', 'franquias'},
+          f'{route}: requires the two dedicated footer WhatsApp links')
+    for link in footer_contacts:
+        check(link.get('href') == 'https://wa.me/5511958575315'
+              and link.get('target') == '_blank'
+              and {'noopener', 'noreferrer'} <= set(link.get('rel', '').split())
+              and 'open-item' not in link.get('class', '').split(),
+              f'{route}: footer partnership/franchise links must open their dedicated WhatsApp directly')
+    check(len(doc.xpath('//a[contains(@href,"5511958575315")]')) == 2,
+          f'{route}: dedicated WhatsApp number must be exclusive to the two footer links')
+    general_whatsapp = doc.xpath('//*[@id="contato"]//a[contains(@href,"api.whatsapp.com/send")]')
+    check(len(general_whatsapp) == 1
+          and parse_qs(urlsplit(general_whatsapp[0].get('href', '')).query).get('phone') == ['5511940040658'],
+          f'{route}: general contact WhatsApp must preserve its existing number')
     mounts = doc.xpath('//*[@data-rd-mount]')
     containers = doc.xpath('//*[@data-rd-contact]')
     check(len(mounts) == 1 and mounts[0].get('id') == RD_FORM_ID

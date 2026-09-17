@@ -305,6 +305,13 @@ footer .container .infos .accordeon .open-item {
   gap:12px;box-sizing:border-box;border-color:#ffffff30;
 }
 footer .container .infos .accordeon button.open-item { border:0;border-bottom:1px solid #ffffff30;background:transparent;text-align:left;font-family:inherit;cursor:pointer }
+footer .container .infos .footer-whatsapp-link {
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  width:100%;min-height:50px;padding:10px 0;box-sizing:border-box;
+  border-bottom:1px solid #ffffff30;color:#fff;font-size:15px;line-height:1.4;text-decoration:none;
+}
+footer .footer-whatsapp-link span { font-size:20px;line-height:1 }
+footer .footer-whatsapp-link:hover { color:#bbd5ee }
 footer .container .infos ul li a span { gap:10px;flex-wrap:wrap }
 footer .container .infos ul li a .logo-ra { width:120px;height:auto }
 footer .container .infos ul li a::after { flex-shrink:0;width:22px;height:22px;background-size:contain }
