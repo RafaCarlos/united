@@ -16,11 +16,33 @@ As quatro páginas da prévia usam o formulário oficial fornecido pelo usuário
 
 Esses valores são configuração pública do embed, não credenciais de acesso à conta RD Station. Não há senha ou token privado a acrescentar ao repositório.
 
+## Loader da conta RD — 17/09/2026
+
+O loader solicitado foi incluído literalmente, uma única vez por página, com `async`:
+
+```html
+<script async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js"></script>
+```
+
+Para encontrá-lo no pacote, pesquisar pelo nome `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` em `dist/index.html`, `dist/cursos/index.html`, `dist/quem-somos/index.html` e `dist/faq/index.html`. O atualizador `scripts/update-contact-layout.py` mantém a inclusão sem duplicá-la.
+
+Esse loader carrega rastreamento e configurações da conta RD para recursos como formulários e WhatsApp. O formulário de contato continua com seu elemento de montagem, o SDK `rdstation-forms.min.js` e o inicializador `rdstation-form.js`, independentes do loader. O círculo da Home, definido em `src/banner-whatsapp.html`, pertence ao banner e sai da tela com a rolagem.
+
+O loader também injeta um botão flutuante de WhatsApp, que sobrepunha “Quero conhecer”. O controlador `src/rdstation-whatsapp.js`, copiado para `dist` e carregado com `defer` nas quatro páginas, oculta somente esse botão duplicado. Ao clicar no círculo do banner ou no link de WhatsApp em `#contato`, ele aciona o botão nativo e abre o formulário oficial de WhatsApp do RD. A estrutura do popup, os eventos, o rastreamento e o fechamento nativos são preservados. O desenho e os campos continuam definidos na conta RD; não houve redesenho desse formulário. Na ausência do loader ou do widget, o `href` conserva o acesso direto ao número existente `5511940040658`.
+
+O mesmo loader já está no PHP de produção, em `includes/footer.php`. Ao integrar o pacote, reaproveitar essa inclusão e evitar duplicação no HTML final. Carregar o loader ou abrir o popup de WhatsApp não comprova recebimento de lead nem criação de negociação no CRM. A integração Marketing–CRM continua sujeita à configuração e à conferência da equipe.
+
+**Validação de 17/09:** as quatro páginas mantiveram um loader com `async`, um embed e o adaptador de WhatsApp ativo. Cursos, Quem Somos e FAQ também tiveram o link do contato ligado ao adaptador; o clique no contato da FAQ abriu o popup nativo. No Chrome, clicar no círculo da Home abriu o formulário oficial, campos vazios foram bloqueados com três mensagens de erro e fechar devolveu o foco. O popup também abriu e fechou no celular sem rolagem horizontal. O formulário principal de “Quero conhecer” preservou os três campos, a validação e a apresentação vermelha.
+
+Foram conferidos desktop com largura de 1512 px, notebook em 1366 × 768 px e celular em 390 × 844 px. O círculo mede 46 × 46 px, fica posicionado no banner e sai da tela com a rolagem; “Quero conhecer” permanece disponível e o botão flutuante duplicado do RD fica oculto. O rótulo de prévia não aparece na Home.
+
+A auditoria estática verificou quatro páginas e 147 dependências, sem erros; a verificação HTTP percorreu cinco páginas e 151 URLs locais, sem falhas. Os 17 testes Node passaram: nove do formulário principal e oito do adaptador WhatsApp. A suíte do WhatsApp cobre loader antecipado/tardio, fallback, cliques modificados, fechamento, remoção do popup após conversão, reconexão, Escape e Tab. O adaptador limpa o estado quando o SDK remove o popup, para que “Quero conhecer” volte a ficar disponível; Escape aciona o fechamento nativo e Tab permanece nos controles visíveis. Não houve novo envio real de formulário nem mensagem de WhatsApp nesta revisão. Os testes de envio de 16/09 abaixo permanecem como histórico e não comprovam recebimento de um contato de WhatsApp.
+
 ## Funcionamento e manutenção
 
 Existe um único elemento de montagem por documento. Ele fica em `#contato`, junto ao rodapé, e é movido para o diálogo ao abrir o contato. Ao fechar, o mesmo elemento volta à posição original. A movimentação preserva os campos preenchidos e os eventos do formulário; não clonar o elemento, duplicar seu ID ou executar `createForm()` a cada abertura.
 
-Inicializar somente após o SDK estar disponível. O gerador SEO aplica `defer` aos scripts externos; uma chamada inline imediata após esse script pode executar cedo demais. Manter a inicialização em `src/rdstation-form.js`, carregado após o SDK, sem inserir uma segunda chamada literal nas páginas.
+Inicializar somente após o SDK estar disponível. O gerador SEO aplica `defer` ao SDK e aos controladores, preservando a ordem; o loader da conta RD mantém `async` como exceção. Uma chamada inline imediata após o SDK pode executar cedo demais. Manter a inicialização em `src/rdstation-form.js`, carregado após o SDK, sem inserir uma segunda chamada literal nas páginas.
 
 O SDK controla o formulário e seu envio. Não interceptar o submit para exibir sucesso fictício nem reativar `contactLead`, `contactForm` ou endpoints PHP antigos em paralelo. As URLs locais permanecem compatíveis com `/review/united-2026/dist/`; a URL externa do SDK deve ser preservada pelo normalizador.
 

@@ -26,7 +26,7 @@
   actions.setAttribute('aria-label', 'Fale com a United');
   actions.appendChild(launcher);
   document.body.appendChild(actions);
-  // The inline contact area already offers the form and the single WhatsApp link.
+  // The inline contact area offers the form and WhatsApp; the home banner has its own shortcut.
   const contactSection = document.getElementById('contato');
   if (contactSection && 'IntersectionObserver' in window) {
     new IntersectionObserver(function (entries) {

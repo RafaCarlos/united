@@ -4,7 +4,8 @@ from lxml import html, etree
 import json
 ROOT=Path(__file__).resolve().parents[1]
 SDK='https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
-for name in ['contact-preview.js','contact-preview.css','preview.js','rdstation-form.js','rdstation-form.css']:
+LOADER='https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js'
+for name in ['contact-preview.js','contact-preview.css','preview.js','rdstation-form.js','rdstation-form.css','rdstation-whatsapp.js']:
  (ROOT/'dist'/name).write_bytes((ROOT/'src'/name).read_bytes())
 for route in ['', 'cursos', 'quem-somos', 'faq']:
  p=ROOT/'dist'/route/'index.html';d=html.fromstring(p.read_bytes())
@@ -14,13 +15,26 @@ for route in ['', 'cursos', 'quem-somos', 'faq']:
  existing[0].getparent().replace(existing[0],html.fragment_fromstring((ROOT/'src/rdstation-form.html').read_text()))
  for old in d.xpath('//div[contains(concat(" ",normalize-space(@class)," ")," fixed-bar ")]'):
   old.getparent().remove(old)
- for old in d.xpath('//script[contains(@src,"rdstation-forms.min.js") or contains(@src,"rdstation-form.js")]'):
+ if not route:
+  for old in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'):
+   old.getparent().remove(old)
+  for old in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]'):
+   old.getparent().remove(old)
+  heroes=d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," united-preview-hero ")]')
+  if len(heroes)!=1:raise ValueError('Home: expected exactly one hero for the WhatsApp link')
+  heroes[0].append(html.fragment_fromstring((ROOT/'src/banner-whatsapp.html').read_text()))
+ for old in d.xpath('//script[contains(@src,"rdstation-forms.min.js") or contains(@src,"rdstation-form.js") or contains(@src,"rdstation-whatsapp.js")]'):
+  old.getparent().remove(old)
+ for old in d.xpath('//script[contains(@src,"ee4f0815-8266-4fb5-ba25-416836b02312-loader.js")]'):
   old.getparent().remove(old)
  contact=d.xpath('//script[contains(@src,"contact-preview.js")]')[0]
  parent=contact.getparent();position=parent.index(contact)
- parent.insert(position,etree.Element('script',src=SDK,defer='defer',id='rdstation-forms-sdk'))
- parent.insert(position+1,etree.Element('script',src='/rdstation-form.js',defer='defer'))
- # Retain the existing, real WhatsApp destination in #contato only.
+ # Keep the requested account loader literal and async; the embed remains ordered.
+ parent.insert(position,etree.Element('script',{'type':'text/javascript','src':LOADER,'async':'async'}))
+ parent.insert(position+1,etree.Element('script',src=SDK,defer='defer',id='rdstation-forms-sdk'))
+ parent.insert(position+2,etree.Element('script',src='/rdstation-form.js',defer='defer'))
+ parent.insert(position+3,etree.Element('script',src='/rdstation-whatsapp.js',defer='defer'))
+ # Retain WhatsApp in #contato and the home banner, without another footer link.
  for a in d.xpath('//footer//a[contains(@href,"whatsapp.com/")]'):
   li=a.xpath('ancestor::li[1]');node=li[0] if li else a;node.getparent().remove(node)
  p.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode',method='html'))

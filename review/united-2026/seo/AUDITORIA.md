@@ -1,5 +1,23 @@
 # SEO e desempenho — revisão de 12/09/2026
 
+## WhatsApp no banner e loader RD — 17/09/2026
+
+A Home recebeu um círculo discreto de WhatsApp na lateral do banner, próximo de “Quero conhecer”. O componente mantido em `src/banner-whatsapp.html` fica posicionado dentro do banner e sai da tela com a rolagem; não é fixo. O rótulo visual “PRÉVIA · 3 BANNERS” foi removido, preservando o `noindex,nofollow` e o robots da prévia.
+
+O loader solicitado `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` foi incluído literalmente uma vez em cada HTML comercial, com `async`. SDK e inicializador do formulário permanecem independentes, com `defer` na ordem existente. O loader já está em `includes/footer.php` no PHP de produção; sua integração final deve evitar duplicação. A inclusão carrega as configurações da conta RD e não comprova integração com o CRM.
+
+Durante a conferência no navegador, o loader injetou um botão flutuante de WhatsApp sobre “Quero conhecer”. O controlador `src/rdstation-whatsapp.js`, carregado com `defer` nas quatro páginas, oculta somente esse botão duplicado e permite abrir o formulário oficial pelo atalho do banner ou pelo link em `#contato`, acionando o botão nativo do RD. Estrutura, formulário, eventos, rastreamento e fechamento do popup são preservados; o desenho e os campos continuam definidos na conta RD. Sem loader ou widget disponível, o destino direto para `5511940040658` permanece como alternativa.
+
+A auditoria estática verificou quatro páginas e 147 dependências, com zero erros; a verificação HTTP percorreu cinco páginas e 151 URLs locais, sem falhas. Os 17 testes Node passaram: nove do formulário principal e oito do adaptador WhatsApp. O pente-fino encontrou e corrigiu o estado preso após o RD remover seu popup e acrescentou fechamento por Escape, circulação do foco com Tab e retorno ao atalho. Também corrigiu o gerador de cabeçalho para normalizar links antes de copiar às páginas internas e remover scripts repetidos em caminhos relativos; duas execuções sobre uma cópia isolada produziram páginas idênticas.
+
+No Chrome, foram conferidos desktop com largura de 1512 px, notebook em 1366 × 768 px e celular em 390 × 844 px. O círculo de WhatsApp mede 46 × 46 px e tem posicionamento absoluto dentro do banner; o rótulo de prévia não aparece na Home. Ao rolar 1039 px, o círculo saiu da área visível (posição vertical −406 px), enquanto “Quero conhecer” permaneceu disponível (693 px); o botão flutuante duplicado do RD ficou oculto.
+
+O clique no círculo abriu o popup oficial do RD. A tentativa vazia foi bloqueada com três mensagens obrigatórias e o fechamento devolveu o foco. No celular, o popup abriu e fechou sem rolagem horizontal. Cursos, Quem Somos e FAQ mantiveram, cada uma, um loader com `async`, um embed e o adaptador ativo; o link do contato da FAQ também abriu o popup. O formulário principal de “Quero conhecer” preservou seus três campos, validação e apresentação vermelha.
+
+O teclado dos três banners, o menu móvel, o contato aberto pelo menu e a busca da FAQ (resultado válido e ausência de resultados) foram conferidos. As quatro páginas também passaram sem rolagem horizontal em 320 px; não foram encontrados links internos/fragmentos quebrados nem IDs duplicados.
+
+Não houve novo envio real de formulário nem mensagem de WhatsApp nesta revisão. Os resultados de envio de 16/09 abaixo são históricos e não comprovam recebimento de um contato de WhatsApp. O trabalho permanece isolado no pacote, sem publicar no servidor nem alterar o PHP da raiz.
+
 ## Formulário RD Station atual — troca solicitada pelo usuário
 
 As quatro páginas usam agora o embed oficial `form-vamos-conversar-5ba05329ea8c88b5c10d`, fornecido em substituição ao formulário anterior, com o mesmo argumento `UA-42887237-1`. O template público respondeu HTTP 200, gera `conversion-form-form-vamos-conversar` e mantém Nome, Celular e E-mail obrigatórios, com conversão pelo endpoint `https://cta-redirect.rdstation.com/v2/conversions`.
@@ -32,7 +50,7 @@ Escopo: as quatro páginas da prévia privada. Esta revisão não significa que 
 - FAQ ampliado para 20 perguntas; revisão das condições de Full/Business, evolução e certificação opcional TOEIC. Índice, busca e abertura por link direto incluem as três novas perguntas.
 - IDs de gradientes SVG duplicados corrigidos; versões de cache de todos os scripts locais atualizadas.
 - Imagens WebP, fontes Manrope WOFF2, dimensões declaradas, imagens secundárias com carregamento adiado, banner inicial prioritário e arquivos diferentes para os recortes desktop/celular.
-- CSS reunido por página na ordem original, reduzindo 10–15 solicitações de estilos para uma por página. Scripts externos ao HTML carregam com `defer`, na ordem existente.
+- CSS reunido por página na ordem original, reduzindo 10–15 solicitações de estilos para uma por página. SDK do formulário e controladores carregam com `defer`, na ordem existente; o loader da conta RD acrescentado em 17/09 mantém `async`.
 - Vídeos locais otimizados com poster, carregamento por visibilidade, reprodução silenciosa dentro da página e pausa fora da tela. Removidos os controles nativos grandes e a abertura automática em tela cheia; um botão discreto mantém reprodução/pausa acessível. Movimento reduzido e economia de dados desativam a reprodução automática.
 
 ## Reduções verificadas nos arquivos

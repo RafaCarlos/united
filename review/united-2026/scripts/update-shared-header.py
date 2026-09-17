@@ -1,13 +1,34 @@
 """Apply only shared navigation; do not rebuild approved page sections."""
 from pathlib import Path
+from urllib.parse import urljoin, urlsplit, unquote
 import re, hashlib
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
+
+def root_header_url(match):
+ value=match.group('value')
+ parsed=urlsplit(value)
+ if not value or parsed.scheme or parsed.netloc or value=='#contato':
+  return match.group(0)
+ # The source header comes from the home page, including after portable export.
+ # Resolve its local links at the preview root before sharing them with subpages.
+ return match.group('prefix')+match.group('quote')+urljoin('/',value)+match.group('quote')
+
+def remove_asset(text, tag, attribute, filename):
+ pattern=r'<'+tag+r'\b[^>]*>'+(r'.*?</script\s*>' if tag=='script' else '')
+ def replace(match):
+  attr=re.search(r'\b'+attribute+r'\s*=\s*(["\'])(.*?)\1',match.group(0),re.S|re.I)
+  if not attr:return match.group(0)
+  parsed=urlsplit(attr.group(2))
+  return '' if not parsed.scheme and not parsed.netloc and unquote(parsed.path).rsplit('/',1)[-1]==filename else match.group(0)
+ return re.sub(pattern,replace,text,flags=re.S|re.I)
+
 home=(DIST/'index.html').read_text()
 header=re.search(r'<header\b.*?</header>',home,re.S).group()
 header=re.sub(r'^<header[^>]*>', '<header class="united-header">', header)
-header=header.replace('href="#inicio"','href="/"').replace('src="assets/','src="/assets/')
+header=header.replace('href="#inicio"','href="/"')
 header=header.replace('href="#united-full"','href="/#united-full"')
+header=re.sub(r'(?P<prefix>\b(?:href|src)\s*=\s*)(?P<quote>["\'])(?P<value>.*?)(?P=quote)',root_header_url,header,flags=re.S)
 header=header.replace('<nav>', '<nav aria-label="Menu principal">') if 'aria-label="Menu principal"' not in header else header
 header=re.sub(r'\s*<a[^>]*class="button-contato anchor".*?</a>', '', header, flags=re.S)
 header=re.sub(r'<a[^>]*class="open-menu".*?</a>|<button[^>]*class="open-menu".*?</button>', '<button type="button" class="open-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="united-mobile-menu"><span></span><span></span><span></span></button>', header, flags=re.S)
@@ -37,8 +58,8 @@ for route in ['index.html','cursos/index.html','quem-somos/index.html','faq/inde
  p=DIST/route;s=p.read_text()
  s=re.sub(r'<header\b.*?</header>',lambda _:header,s,count=1,flags=re.S)
  s=re.sub(r'<div class="menu-mobile[^\"]*".*?(?=<main\b)',lambda _:menu+'\n',s,count=1,flags=re.S)
- s=re.sub(r'<link[^>]+href="/?shared-header\.css[^\"]*"[^>]*>','',s)
- s=re.sub(r'<script[^>]+src="/?shared-header\.js[^\"]*"[^>]*></script>','',s)
+ s=remove_asset(s,'link','href','shared-header.css')
+ s=remove_asset(s,'script','src','shared-header.js')
  s=s.replace('</head>',f'<link rel="stylesheet" href="/shared-header.css?v={csshash}"></head>')
  s=s.replace('</body>',f'<script src="/shared-header.js?v={jshash}" defer></script></body>')
  p.write_text(s)

@@ -11,6 +11,18 @@ O conteúdo deste diretório prepara a integração; não modifica automaticamen
 6. Validar as quatro URLs no Search Console, enviar o sitemap e conferir a URL canônica escolhida pelo Google. Medir Lighthouse/PageSpeed na versão publicada, em mobile e desktop. Para Core Web Vitals, acompanhar o percentil 75 de usuários reais: LCP até 2,5 s, INP até 200 ms e CLS até 0,1. Não confundir uma medição de laboratório com esses dados de campo.
 7. Acompanhar evolução por página e consulta, comparando impressões, cliques orgânicos e leads. Ampliar conteúdo conforme perguntas reais dos alunos, sem repetir listas de termos em todas as seções.
 
+## Contato no banner e loader RD — 17/09/2026
+
+Preservar o círculo de WhatsApp definido em `src/banner-whatsapp.html`. Ele fica na lateral do banner da Home, próximo de “Quero conhecer”, com posicionamento absoluto dentro do banner; sai da tela ao rolar. O botão de contato continua com seu comportamento persistente. A remoção do rótulo visual “PRÉVIA · 3 BANNERS” não remove o `noindex,nofollow` nem autoriza a indexação da prévia.
+
+Manter `rdstation-whatsapp.js`, gerado a partir de `src/rdstation-whatsapp.js`, com `defer` nas quatro páginas. Ele conecta tanto o atalho do banner quanto o link em `#contato` ao formulário oficial de WhatsApp do RD, acionando o próprio botão nativo. Somente esse botão flutuante duplicado fica oculto; a estrutura do popup, o formulário, os eventos, o rastreamento e o fechamento permanecem nativos. O desenho e os campos continuam definidos na conta RD, sem redesenho local. Se o loader ou o widget não estiverem disponíveis, os links conservam o destino direto para o número existente `5511940040658`.
+
+O loader `https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` aparece literalmente uma vez em cada um dos quatro HTML comerciais, com `async`. Essa é uma exceção à aplicação de `defer`: o SDK do formulário e `rdstation-form.js` mantêm `defer` e sua ordem. O loader carrega rastreamento e configurações da conta RD; não substitui o elemento de montagem, o SDK ou o inicializador do formulário de contato.
+
+Na integração ao PHP oficial, conferir `includes/footer.php`, que já contém o mesmo loader. Manter apenas uma inclusão por página renderizada, reaproveitando a existente em produção. A presença do loader ou a abertura do popup de WhatsApp não confirma recebimento de leads nem criação de negociações no CRM; essas verificações continuam separadas. A revisão permanece no pacote, sem publicação no servidor nem alteração do PHP de produção.
+
+A verificação de 17/09 confirmou um loader com `async` e um embed por página, o adaptador de WhatsApp ativo nas quatro páginas e a abertura do popup pelo banner e pelo contato da FAQ. A abertura, a validação sem preenchimento e o fechamento foram conferidos no Chrome, inclusive em celular, sem novo envio real nem mensagem de WhatsApp. O formulário principal preservou seus três campos, validação e apresentação. A auditoria estática, a verificação HTTP e os nove testes Node passaram; isso não substitui a conferência de recebimento na conta RD.
+
 ## Reaplicar as melhorias na prévia
 
 Após qualquer gerador legado ou alteração visual em `dist`, executar, nesta ordem:

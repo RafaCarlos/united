@@ -72,24 +72,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-782de0d34814.css",
-      "bytes": 212300,
-      "sha256": "782de0d3481428478ee8ced3a970163a9e1818c8561c07261bff5a8761692773"
+      "path": "dist/assets/css/page-cursos-c77efa92627b.css",
+      "bytes": 213048,
+      "sha256": "c77efa92627b74a8fac0cc8b86815ba62c2a7efe76777138d9ecf29933188dae"
     },
     {
-      "path": "dist/assets/css/page-faq-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-faq-665c5093853f.css",
+      "bytes": 206674,
+      "sha256": "665c5093853f6d37faf18f8fcaff4ded32d70eb64f7a54604e5af43a2c3bce12"
     },
     {
-      "path": "dist/assets/css/page-home-cfaf9f745596.css",
-      "bytes": 234822,
-      "sha256": "cfaf9f74559686681ba36a986484f4a6500d2ca1fa3c2ed665c2aee0e198ab83"
+      "path": "dist/assets/css/page-home-9177922d5119.css",
+      "bytes": 235570,
+      "sha256": "9177922d511930460e3dc17841c6aa45b6f06217ff5d59501f55846c868ce2ad"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-quem-somos-665c5093853f.css",
+      "bytes": 206674,
+      "sha256": "665c5093853f6d37faf18f8fcaff4ded32d70eb64f7a54604e5af43a2c3bce12"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -978,13 +978,13 @@
     },
     {
       "path": "dist/contact-preview.css",
-      "bytes": 6378,
-      "sha256": "3187586bf3723afcb13343da32918151ace2ae740fe559432b5f4514f885307d"
+      "bytes": 7126,
+      "sha256": "76fdaab2e1bf745e73b2259fc2604f3d7ea053b2e7d52e7cdcca69a3838dc8cf"
     },
     {
       "path": "dist/contact-preview.js",
-      "bytes": 6412,
-      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
+      "bytes": 6426,
+      "sha256": "438a28d0f26fb1b6e57bb934881f6338576de89d47aef5459028bb6672a1a3f8"
     },
     {
       "path": "dist/courses-compact.css",
@@ -993,13 +993,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50822,
-      "sha256": "ae233a8fe6b019ea27a48bf34fa262ca5d17cb3d5eb5d4a1e7499f99382a36c3"
+      "bytes": 51053,
+      "sha256": "e73917e90101f47857c126bdb96eeb33889a6744957c1f01ac782a7517a90dfd"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 36860,
-      "sha256": "bea20dbca21475b492fd50711f7fa2fe83f83f8753b68ac87a0525e6e8624f0d"
+      "bytes": 37091,
+      "sha256": "b0f87ae3c4177fa4db8c0b499042e9ade5a39ade37b3f713bd3cc8021a94c4d6"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1008,8 +1008,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 47215,
-      "sha256": "1930175c983ab9099a9521e8a27666a9c6807044ab4d25be95fbc4c11414713d"
+      "bytes": 47788,
+      "sha256": "135f63477bbf7ff2d27c5f38b649e703aaa2fe75821ce4b82bf16ad5dee3c023"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1048,8 +1048,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 37853,
-      "sha256": "4499206be2e7871ed25253832a027f6c178be2006d5496451c9d8aa6df07d090"
+      "bytes": 38084,
+      "sha256": "1b4e5139babb5404a445d079b57c2f22e4fb0a858b6dbc5ad593e3709c4dd882"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1060,6 +1060,11 @@
       "path": "dist/rdstation-form.js",
       "bytes": 4842,
       "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
+    },
+    {
+      "path": "dist/rdstation-whatsapp.js",
+      "bytes": 4235,
+      "sha256": "04290c024671164bc62374e48c41d33d7e9f844dc3e197256489d80af1d411ac"
     },
     {
       "path": "dist/responsive-home.css",

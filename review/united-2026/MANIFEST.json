@@ -10,13 +10,13 @@
     },
     {
       "path": "MANIFEST-SERVIDOR.json",
-      "bytes": 39605,
-      "sha256": "9ad67894554339840c237e466e522959e14144143f574a03dd6eb8af10b6223f"
+      "bytes": 39766,
+      "sha256": "727a531e92e1fc3777997f5272d84c4fd3f8f9bb6e4988929a1e08e21ce5c4c2"
     },
     {
       "path": "README.md",
-      "bytes": 7302,
-      "sha256": "7f52f2f0ce625f16dcea01fc2f21472e3c6ed359450d5f75e862fe7679cbb519"
+      "bytes": 9321,
+      "sha256": "be3927de26a3fd448053a3259d85a555d60d996281b2f3c531cc063828d366ac"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -84,24 +84,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-782de0d34814.css",
-      "bytes": 212300,
-      "sha256": "782de0d3481428478ee8ced3a970163a9e1818c8561c07261bff5a8761692773"
+      "path": "dist/assets/css/page-cursos-c77efa92627b.css",
+      "bytes": 213048,
+      "sha256": "c77efa92627b74a8fac0cc8b86815ba62c2a7efe76777138d9ecf29933188dae"
     },
     {
-      "path": "dist/assets/css/page-faq-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-faq-665c5093853f.css",
+      "bytes": 206674,
+      "sha256": "665c5093853f6d37faf18f8fcaff4ded32d70eb64f7a54604e5af43a2c3bce12"
     },
     {
-      "path": "dist/assets/css/page-home-cfaf9f745596.css",
-      "bytes": 234822,
-      "sha256": "cfaf9f74559686681ba36a986484f4a6500d2ca1fa3c2ed665c2aee0e198ab83"
+      "path": "dist/assets/css/page-home-9177922d5119.css",
+      "bytes": 235570,
+      "sha256": "9177922d511930460e3dc17841c6aa45b6f06217ff5d59501f55846c868ce2ad"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-641b14dd4782.css",
-      "bytes": 205926,
-      "sha256": "641b14dd478263e08e808d5141f1e0459fdc304c1e1c1a71094fb2a94b3242fc"
+      "path": "dist/assets/css/page-quem-somos-665c5093853f.css",
+      "bytes": 206674,
+      "sha256": "665c5093853f6d37faf18f8fcaff4ded32d70eb64f7a54604e5af43a2c3bce12"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -990,13 +990,13 @@
     },
     {
       "path": "dist/contact-preview.css",
-      "bytes": 6378,
-      "sha256": "3187586bf3723afcb13343da32918151ace2ae740fe559432b5f4514f885307d"
+      "bytes": 7126,
+      "sha256": "76fdaab2e1bf745e73b2259fc2604f3d7ea053b2e7d52e7cdcca69a3838dc8cf"
     },
     {
       "path": "dist/contact-preview.js",
-      "bytes": 6412,
-      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
+      "bytes": 6426,
+      "sha256": "438a28d0f26fb1b6e57bb934881f6338576de89d47aef5459028bb6672a1a3f8"
     },
     {
       "path": "dist/courses-compact.css",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50822,
-      "sha256": "ae233a8fe6b019ea27a48bf34fa262ca5d17cb3d5eb5d4a1e7499f99382a36c3"
+      "bytes": 51053,
+      "sha256": "e73917e90101f47857c126bdb96eeb33889a6744957c1f01ac782a7517a90dfd"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 36860,
-      "sha256": "bea20dbca21475b492fd50711f7fa2fe83f83f8753b68ac87a0525e6e8624f0d"
+      "bytes": 37091,
+      "sha256": "b0f87ae3c4177fa4db8c0b499042e9ade5a39ade37b3f713bd3cc8021a94c4d6"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 47215,
-      "sha256": "1930175c983ab9099a9521e8a27666a9c6807044ab4d25be95fbc4c11414713d"
+      "bytes": 47788,
+      "sha256": "135f63477bbf7ff2d27c5f38b649e703aaa2fe75821ce4b82bf16ad5dee3c023"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1060,8 +1060,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 37853,
-      "sha256": "4499206be2e7871ed25253832a027f6c178be2006d5496451c9d8aa6df07d090"
+      "bytes": 38084,
+      "sha256": "1b4e5139babb5404a445d079b57c2f22e4fb0a858b6dbc5ad593e3709c4dd882"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1072,6 +1072,11 @@
       "path": "dist/rdstation-form.js",
       "bytes": 4842,
       "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
+    },
+    {
+      "path": "dist/rdstation-whatsapp.js",
+      "bytes": 4235,
+      "sha256": "04290c024671164bc62374e48c41d33d7e9f844dc3e197256489d80af1d411ac"
     },
     {
       "path": "dist/responsive-home.css",
@@ -1140,8 +1145,8 @@
     },
     {
       "path": "scripts/audit-seo-performance.py",
-      "bytes": 11549,
-      "sha256": "901d210d3ac2f91bdc893f85ddcd06a27f073ab5231d5d3ec631e8aef5515d2c"
+      "bytes": 13576,
+      "sha256": "22ef5dcd93e05603be3a5dfa828d50b29084ee84c57d33bdb3b627ec4958f946"
     },
     {
       "path": "scripts/build-interior-preview.py",
@@ -1199,14 +1204,19 @@
       "sha256": "6fe9218b2dafa95b9ea64fc95b48fbd289c3300c41b2807d453949e57c1a6d60"
     },
     {
+      "path": "scripts/test-rdstation-whatsapp.cjs",
+      "bytes": 15032,
+      "sha256": "66ac7c3cca5033c4cf7f979b3c9112325d987b6cc5fb43cd2628a72b9e0a1e19"
+    },
+    {
       "path": "scripts/update-benefits.py",
       "bytes": 1240,
       "sha256": "b0931734bf4dfd3b7a457cfb12bf92ed78fc6e973433ba9ca1181afbf9ce95f7"
     },
     {
       "path": "scripts/update-contact-layout.py",
-      "bytes": 2383,
-      "sha256": "272c0374787545131fb022eedb4f0a5780530f51a5f90c0564322021c580a1fe"
+      "bytes": 3544,
+      "sha256": "5b4a104a37fef88b602d120409410bdcd44971ce90140e6144e8e7a0a3d0f18f"
     },
     {
       "path": "scripts/update-contact-preview.cjs",
@@ -1240,13 +1250,13 @@
     },
     {
       "path": "scripts/update-seo-performance.py",
-      "bytes": 11467,
-      "sha256": "9c4cbf6ed29af8ec15e326f69626a44c2af2730a1d426cf6928481366d172b5f"
+      "bytes": 11698,
+      "sha256": "80f656f36576a97e3aa0a32904b5c0c81245c8ce78d9f313f2ae67f758793eed"
     },
     {
       "path": "scripts/update-shared-header.py",
-      "bytes": 3542,
-      "sha256": "bb1a9b5906d70f5157606f69e390e5a94653c816d96c581b1727ddf2b58f95b2"
+      "bytes": 4550,
+      "sha256": "98202ba8c14cef1b7904e0e6e0ab051d05c48c4960088c6d989f94a6335cf5ba"
     },
     {
       "path": "scripts/update-storytelling-preview.py",
@@ -1255,23 +1265,23 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 10521,
-      "sha256": "96b62765f09d8856ec890f987f8f96b9b8c3546b62549408180755530f947176"
+      "bytes": 14176,
+      "sha256": "1352c148bb5bcdc29c47620d41ec823b0088249079bd997ae97d6cbc8cd3ccaf"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 5075,
-      "sha256": "b6a65b7b424b6dbce52722dd15459878405438b6dcc02d63d9dcfe7a646c3e35"
+      "bytes": 7646,
+      "sha256": "ba8608fe250127d3fef51be9e345eb80135a17f06bc46508e549e3092662cc4e"
     },
     {
       "path": "seo/RD-STATION.md",
-      "bytes": 11291,
-      "sha256": "ad6bd316e4eb4d470bb09b93b45dd6f40dd72990ded08a76ba295d3311f80038"
+      "bytes": 15062,
+      "sha256": "50875c08e9bc9083feaa46dae323fcbdc6bb2d0bc778b2cad5c0912a8b02e474"
     },
     {
       "path": "seo/audit-results.json",
       "bytes": 2839,
-      "sha256": "a5b292a529d72eca7e1e77477323d7a30a75b6c750b32307c57b0c53df125b86"
+      "sha256": "9d46ae076223dbe8076614e7997613958f2b95123eda9c1fd11c87b382600ad8"
     },
     {
       "path": "seo/css-inputs.json",
@@ -1349,6 +1359,11 @@
       "sha256": "4f4a3627e5760ecfe27ddb4238ec33114bb92815d1833480382108eb19ea16e7"
     },
     {
+      "path": "src/banner-whatsapp.html",
+      "bytes": 398,
+      "sha256": "5ca8ad888729eff618cc55430c85e7fc261167b5b2fb210fef9fed0a29a9300c"
+    },
+    {
       "path": "src/benefits.css",
       "bytes": 5084,
       "sha256": "8d876c0408592c837dbe5eca65deae8fdf9e54969d4d2151d4344efc87979aed"
@@ -1365,13 +1380,13 @@
     },
     {
       "path": "src/contact-preview.css",
-      "bytes": 6378,
-      "sha256": "3187586bf3723afcb13343da32918151ace2ae740fe559432b5f4514f885307d"
+      "bytes": 7126,
+      "sha256": "76fdaab2e1bf745e73b2259fc2604f3d7ea053b2e7d52e7cdcca69a3838dc8cf"
     },
     {
       "path": "src/contact-preview.js",
-      "bytes": 6412,
-      "sha256": "825cf876a567ae6bb3945252595715873dc0b8c6e1240e695c9c64dca22f8bd5"
+      "bytes": 6426,
+      "sha256": "438a28d0f26fb1b6e57bb934881f6338576de89d47aef5459028bb6672a1a3f8"
     },
     {
       "path": "src/course-business-compact.html",
@@ -1457,6 +1472,11 @@
       "path": "src/rdstation-form.js",
       "bytes": 4842,
       "sha256": "c3d87204c821c8957b7e81b85422b16e51ba4b54a8ae95b62fcd8836a5636a7d"
+    },
+    {
+      "path": "src/rdstation-whatsapp.js",
+      "bytes": 4235,
+      "sha256": "04290c024671164bc62374e48c41d33d7e9f844dc3e197256489d80af1d411ac"
     },
     {
       "path": "src/reference/cursos.php",
