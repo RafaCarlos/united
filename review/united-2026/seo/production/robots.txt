@@ -1,5 +1,12 @@
+# Produção: páginas comerciais, artigos e recursos de renderização rastreáveis.
+# Publicar na raiz; um robots.txt dentro de /blog/ ou /review/ não governa o site.
 User-agent: *
 Allow: /
+Disallow: /blog/wp-admin/
+Allow: /blog/wp-admin/admin-ajax.php
+
+# URLs que precisam sair do índice devem retornar noindex ou 404/410.
+# Não bloquear /review/ aqui: o Google precisa ler a diretiva noindex do servidor.
 
 Sitemap: https://www.unitedidiomas.com/sitemap.xml
 Sitemap: https://unitedidiomas.com/blog/sitemap_index.xml

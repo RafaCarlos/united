@@ -11,7 +11,7 @@ O pedido de inglês online e ao vivo, inglês em 18 meses e conversação foi ap
 | /quem-somos/ | Escola de inglês United Idiomas \| Quem somos | Instituição, metodologia comunicativa e unidades híbridas. |
 | /faq/ | Inglês em 18 meses e conversação: dúvidas \| United Idiomas | Dúvidas sobre 18 meses, conversação, Jimmy e OnDemand opcional. |
 
-O H1 de campanha da Home foi preservado. Sua descrição e a chamada de duração tornam clara a oferta. A duração de 18 meses é apresentada como trilha; o FAQ esclarece a relação com nível inicial, frequência e dedicação. A página Cursos mantém Live Class no H1, com o contexto “Curso de inglês online e ao vivo”, e introduz o Business no primeiro parágrafo.
+O H1 da Home agora apresenta “Inglês online. Aulas ao vivo. Fale inglês.” nas três linhas do desenho existente. Sua descrição e a chamada de duração tornam clara a oferta. A duração de 18 meses é apresentada como trilha; o FAQ esclarece a relação com nível inicial, frequência e dedicação. A página Cursos mantém Live Class no H1, com o contexto “Curso de inglês online e ao vivo”, e introduz o Business no primeiro parágrafo.
 
 “Conversação em inglês” foi usada naturalmente nas explicações de prática e Jimmy. O Jimmy é apresentado como IA para conversar entre as aulas, sem atribuir correção automática de pronúncia ou avaliações não demonstradas. O OnDemand aparece como opcional na seção dedicada, no cartão, em Cursos e no FAQ.
 

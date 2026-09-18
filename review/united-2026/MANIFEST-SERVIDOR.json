@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "CORRECAO-SERVIDOR.md",
-      "bytes": 2387,
-      "sha256": "4a907ef683052e16c80e04202a64b51ed8172d9c94e4db8d0200b892739c3a24"
+      "bytes": 2871,
+      "sha256": "a0b0ec8af0e2b3218009e077a2a30b3f8a4748fc4d4bb8319f9927bac65f0103"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -993,13 +993,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51336,
-      "sha256": "8c240eb4ba95e08c0586af1fb29a5eb5a9a720d8b1a80ce054fdca427600a0e0"
+      "bytes": 51328,
+      "sha256": "bf1d1833a074fdd40108246e4a6ffb36239385d0072cddac33952cb5f6bbb9a7"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 39533,
-      "sha256": "bfec8b352253ec1fa8adf8262b869e914e14cb2ebbe9e3d97ac978b16014ba72"
+      "bytes": 39804,
+      "sha256": "868312c3919a546fedd2d7177f621adf71210b8e0a097a74c340d363e45311a4"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1009,7 +1009,7 @@
     {
       "path": "dist/index.html",
       "bytes": 48557,
-      "sha256": "c12205dce123ca383e564577a33bf774614ff4f3ff3287e56f808c45f8a18579"
+      "sha256": "65f3aaf869d7664fdcd57cf15e572d5cad36174ec6752c76fed39ed5dc1e9f49"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1048,8 +1048,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43325,
-      "sha256": "fa626bfa9d6ec8b4b644ea5e2d2ab82345934ad61c40683fe1665da89e4431cb"
+      "bytes": 43317,
+      "sha256": "b61ff314dbc7aa765d3985960d997f4d3c35344bafcec8a0a96a6f9d48534ea2"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1078,8 +1078,8 @@
     },
     {
       "path": "dist/robots.txt",
-      "bytes": 133,
-      "sha256": "a6786dcc3358d0d2857127fde6016713585b6924461ee91528621c323c0235a8"
+      "bytes": 522,
+      "sha256": "22583b2ac8b11c6a242145769bca0cf9b3a464d041d4e59a988edb14bd30e907"
     },
     {
       "path": "dist/seo-performance.css",

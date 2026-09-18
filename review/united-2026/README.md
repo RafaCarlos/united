@@ -8,23 +8,10 @@ Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do
 - Sitemap comercial com Home, Cursos, Quem Somos e FAQ. O `robots.txt` também informa o sitemap automático do blog WordPress, preservando a descoberta dos artigos.
 - Contexto de curso de inglês no título principal de Cursos, links úteis na FAQ, âncoras e links de mapa para as seis unidades já exibidas.
 - Imagem de fundo reduzida de 1.423.198 para 148.032 bytes, com dimensões/transparência preservadas. Layout, banners e formulários mantidos.
-- Exportações separadas para produção e prévia; regras opcionais de servidor, mapa de URLs antigas e pacote WordPress para revisão.
+- Entrega de produção com verificação de rastreamento, canonical, sitemap e inventário de páginas; regras de servidor, mapa de URLs antigas e pacote WordPress para integração.
 - Censo técnico dos 182 artigos do blog e 48 descrições específicas no plugin opcional (47 duplicadas + artigo IA); orientações pontuais para os 11 artigos com H1 adicionais.
 
-## Abrir uma prévia local
-
-Use a exportação de prévia, que acrescenta `noindex,nofollow` a todos os HTMLs e um robots bloqueado. Escolha uma pasta nova, **fora do repositório**:
-
-```bash
-python3 scripts/export-production.py --mode preview --output /tmp/united-preview
-python3 -m http.server 8080 --bind 127.0.0.1 --directory /tmp/united-preview/site
-```
-
-Abra `http://127.0.0.1:8080/`. Os caminhos relativos também funcionam em subpastas. O exportador exclui ferramentas de comparação e arquivos de desenvolvimento. `--force` só atualiza uma exportação anterior identificada deste pacote; não use como destino uma pasta com trabalho manual.
-
-**O formulário RD pode criar leads reais mesmo na prévia.** Não houve novos envios nesta revisão de SEO.
-
-## Preparar a produção
+## Entrega de produção
 
 ```bash
 python3 scripts/export-production.py --mode production --output /tmp/united-production
@@ -32,7 +19,11 @@ python3 scripts/export-production.py --mode production --output /tmp/united-prod
 
 `site/` contém os arquivos publicáveis. `publication/` contém instruções e o fragmento Apache opcional, que precisa ser mesclado ao servidor por Rafael. O exportador não envia arquivos e não escreve `.htaccess`. Detalhes em [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md) e [INTEGRACAO.md](seo/INTEGRACAO.md).
 
-Não publique o `robots.txt` de uma **exportação de prévia** no domínio oficial. Para uma prévia pública dentro de `/review/`, use também o `X-Robots-Tag` do fragmento Apache; o robots da raiz deve continuar permitindo o rastreamento das páginas comerciais.
+A produção sai sem rótulos de prévia e com rastreamento liberado. O robots atualizado deve ocupar **a raiz HTTP `/robots.txt`**, junto ao sitemap comercial; nenhum arquivo robots dentro de uma subpasta governa o domínio. A política permite os recursos públicos e restringe a administração do WordPress, com AJAX liberado. O gerador preserva esse arquivo como fonte, sem sobrescrever suas regras. Veja [ROBOTS-RASTREAMENTO.md](seo/ROBOTS-RASTREAMENTO.md).
+
+O modo `preview` permanece apenas como ferramenta de desenvolvimento isolada, documentada no exportador, e não é a entrega para publicação. Cópias antigas já públicas devem retornar `noindex` ou ser retiradas com 404/410 pelo responsável da hospedagem; não bloquear sua leitura no robots antes disso. Não publicar o repositório inteiro nem uma pasta `/review/` como substituto da raiz oficial.
+
+O exportador exclui comparação/debug e recusa bloqueios de rastreamento, canonical incorreto, título duplicado, sitemap incompleto e HTML fora das quatro páginas registradas. `--force` só atualiza uma exportação anterior deste pacote. **O formulário RD é real**, inclusive nos testes locais; não houve novos envios de contatos nesta revisão.
 
 ## Conteúdo para buscas e Search Console
 
@@ -49,6 +40,7 @@ python3 scripts/prepare-subdirectory.py
 python3 scripts/inventory-images.py
 python3 scripts/audit-seo-performance.py
 python3 scripts/test-production-export.py
+python3 scripts/test-production-crawl.py
 python3 scripts/test-production-redirects.py
 node --test scripts/test-rdstation-form.cjs scripts/test-rdstation-whatsapp.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
@@ -71,4 +63,4 @@ Os formulários demonstrativos já foram substituídos pelo RD. Recebimento no M
 
 O blog WordPress não está neste repositório. [seo/wordpress/](seo/wordpress/README.md) contém uma extensão opcional revisável, ainda não instalada, para os problemas verificados no HTML público. Não copie esse PHP para a raiz do site estático.
 
-[RECOMENDACOES-CONTEUDO.md](seo/RECOMENDACOES-CONTEUDO.md) separa melhorias executadas e próximos conteúdos que exigem dados reais. Depois da publicação, conferir URLs no Search Console, enviar os dois sitemaps e medir desempenho no servidor. Arquivos tecnicamente corretos não comprovam indexação nem garantem posição no Google. Resultados e limites estão em [AUDITORIA.md](seo/AUDITORIA.md).
+[PLANO-SEO-PRODUCAO.md](seo/PLANO-SEO-PRODUCAO.md) organiza publicação, conteúdo original, autoria, unidades, desempenho e medição, com responsáveis e critérios de aceite. [RECOMENDACOES-CONTEUDO.md](seo/RECOMENDACOES-CONTEUDO.md) detalha a pauta editorial. Depois da publicação, conferir URLs no Search Console, enviar os dois sitemaps e medir desempenho no servidor. Arquivos tecnicamente corretos não comprovam indexação nem garantem posição no Google. Resultados e limites estão em [AUDITORIA.md](seo/AUDITORIA.md); o estado ainda publicado está em [VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md](seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md).

@@ -1,25 +1,30 @@
-# Publicação em subpasta — instruções atualizadas em 18/09/2026
+# Entrega de produção — 18/09/2026
 
-A correção de caminhos relativos continua válida: CSS, scripts, imagens e navegação local funcionam na raiz HTTP ou numa subpasta. O repositório mantém exatamente `review/united-2026/`, sem duplicar esse caminho.
+A entrega atual é para o domínio oficial da United. Não publicar uma nova prévia em `/review/`. O caminho `review/united-2026/` é a organização do pacote no GitHub, não o endereço público final.
 
-Desde a revisão de SEO de 18/09, **dist é o artefato de produção**. Para colocar uma prévia em `https://www.unitedidiomas.com/review/united-2026/dist/`, primeiro gerar uma cópia protegida:
+## Gerar os arquivos definitivos
 
-```bash
-python3 scripts/export-production.py --mode preview --output /tmp/united-preview
-```
-
-Após revisão e backup da prévia anterior, o conteúdo de `/tmp/united-preview/site/` é o que deve ocupar a pasta `review/united-2026/dist/` do servidor. Copiar o conteúdo dessa pasta uma única vez: não criar `dist/site/` ou outro `review/united-2026/` aninhado. Não substituir o PHP da raiz. Esta documentação não executa a publicação.
-
-O exportador acrescenta `noindex,nofollow` aos HTMLs da cópia, exclui comparação/debug e não altera a fonte. Em uma prévia dentro do mesmo domínio, o `robots.txt` da subpasta não controla robôs: aplicar também o `X-Robots-Tag` de `seo/production/apache-seo.conf`, mesclando à configuração existente. Não copiar o robots bloqueado da prévia para a raiz oficial. O Google precisa poder rastrear uma URL já conhecida para ler o noindex.
-
-Para abrir localmente:
+Na pasta do pacote, com as dependências de `requirements-review.txt`:
 
 ```bash
-python3 -m http.server 8768 --bind 127.0.0.1 --directory /tmp/united-preview/site
+python3 scripts/export-production.py --mode production --output /tmp/united-production
 ```
 
-Abrir `http://127.0.0.1:8768/`. Conferir Home, Cursos, Quem Somos, FAQ e os respectivos arquivos, sem 404. Invalidar o cache da hospedagem quando houver arquivos substituídos na mesma URL. Preservar o blog e quaisquer dados fora da pasta da prévia.
+Integrar **somente o conteúdo de `site/`** à raiz HTTP correta, mantendo Home, `/cursos/`, `/quem-somos/` e `/faq/`. Não criar `/site/`, `/dist/` ou `/review/` adicionais no endereço público. O servidor precisa entregar a versão nova também quando há `index.php` anterior: Rafael deve definir a precedência e a integração sem apagar o PHP ou o blog. A cópia estática e os fragmentos `seo/production/*-head.html` são alternativas de integração; não duplicar seus metadados na mesma página.
 
-**O formulário RD pode criar leads reais na prévia.** A versão atual usa o embed `form-vamos-conversar-5ba05329ea8c88b5c10d`, o SDK oficial e o loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js`. A confirmação aparece dentro da própria caixa após o sucesso indicado pelo SDK. Recebimento no Marketing e criação de negócio no CRM precisam ser conferidos nas respectivas contas; não foram enviados leads nesta revisão de SEO.
+`robots.txt` e `sitemap.xml` devem responder na raiz do domínio. Usar os arquivos da exportação de produção. O robots permite páginas, artigos e recursos de renderização; limita a administração do WordPress e lista os dois sitemaps. Não usar o robots de uma ferramenta de desenvolvimento. Regras dentro de uma subpasta não governam o domínio.
 
-Para produção, usar `--mode production` e seguir `seo/INTEGRACAO.md` e `seo/production/INSTRUCOES-PUBLICACAO.md`. Metadados, sitemap e regras de servidor atuais estão em `seo/production/`.
+`publication/` contém instruções e o fragmento Apache para mesclagem; não é conteúdo público. Não enviar `src/`, `scripts/`, documentos internos, manifestos ou comparação visual ao servidor. O exportador não modifica hospedagem nem `.htaccess`.
+
+## Aceite no servidor
+
+- Conferir HTTP 200, título novo, canonical e ausência de noindex/rótulos de prévia nas quatro páginas. Validar imagens, CSS e JavaScript.
+- Conferir robots em www e sem www; os dois sitemaps precisam responder XML válido. O blog permanece com canonical sem www e sitemap automático.
+- Incorporar redirecionamentos pertinentes, incluindo aliases `index.html`, sem loops ou perdas de parâmetros. Rotas inexistentes retornam 404 real.
+- Retirar cópias históricas públicas quando não forem necessárias; enquanto existirem, aplicar o noindex específico do servidor, sem bloquear a leitura da regra por robots.
+- Invalidar caches dos arquivos substituídos e preservar RD, GTM, WhatsApp, Área do Aluno e WordPress.
+- Conferir as URLs no Search Console e medir desempenho real após a publicação. Arquivos corretos não confirmam indexação ou posição.
+
+O formulário oficial RD continua real e mostra sucesso na própria caixa. Recebimento no Marketing e criação no CRM são etapas diferentes; esta revisão não enviou contatos.
+
+Detalhamento: [INTEGRACAO.md](seo/INTEGRACAO.md), [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md), [ROBOTS-RASTREAMENTO.md](seo/ROBOTS-RASTREAMENTO.md) e [PLANO-SEO-PRODUCAO.md](seo/PLANO-SEO-PRODUCAO.md).

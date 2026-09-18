@@ -12,6 +12,7 @@ import tempfile
 import xml.etree.ElementTree as ET
 
 from lxml import html
+from crawl_policy import validate_production_robots
 
 
 PACKAGE = Path(__file__).resolve().parents[1]
@@ -142,6 +143,23 @@ def transform_html(site, mode):
     for route in COMMERCIAL_ROUTES:
         if route not in documents:
             raise ExportError(f'Página comercial ausente: {route}')
+    if mode == 'production':
+        unexpected = set(documents) - set(COMMERCIAL_ROUTES)
+        if unexpected:
+            raise ExportError(f'HTML fora do inventário comercial: {sorted(unexpected)}')
+        titles = set()
+        for route, document in documents.items():
+            canonical = 'https://www.unitedidiomas.com/' + route.removesuffix('index.html')
+            links = document.xpath('//link[contains(concat(" ",normalize-space(@rel)," ")," canonical ")]/@href')
+            if links != [canonical]:
+                raise ExportError(f'{route}: canonical ausente, duplicado ou incorreto.')
+            names = document.xpath('//head/title')
+            title = names[0].text_content().strip() if len(names) == 1 else ''
+            if not title or title in titles:
+                raise ExportError(f'{route}: título ausente ou duplicado.')
+            titles.add(title)
+            if document.get('lang') != 'pt-BR' or len(document.xpath('//h1')) != 1:
+                raise ExportError(f'{route}: exige lang pt-BR e um H1.')
     return documents
 
 
@@ -223,6 +241,11 @@ def configure_seo(package, site, mode):
         raise ExportError('robots.txt de produção precisa informar o sitemap oficial.')
     if 'Sitemap: https://unitedidiomas.com/blog/sitemap_index.xml' not in robots:
         raise ExportError('robots.txt de produção precisa preservar o sitemap do blog WordPress.')
+    try:
+        validate_production_robots(robots, public_paths=[
+            '/' + path.relative_to(site).as_posix() for path in site.rglob('*') if path.is_file()])
+    except ValueError as exc:
+        raise ExportError(f'robots.txt de produção inválido: {exc}') from exc
     shutil.copyfile(required[0], site / 'robots.txt')
     for file in source.glob('sitemap*.xml'):
         if file.is_symlink():
@@ -233,6 +256,8 @@ def configure_seo(package, site, mode):
             raise ExportError(f'Sitemap XML inválido: {file.name}') from exc
         if tree.tag.rsplit('}', 1)[-1] not in {'urlset', 'sitemapindex'}:
             raise ExportError(f'Raiz XML inesperada em {file.name}')
+        if file.name == 'sitemap.xml' and tree.tag != '{http://www.sitemaps.org/schemas/sitemap/0.9}urlset':
+            raise ExportError('sitemap.xml comercial exige urlset com namespace sitemaps.org.')
         locations = [node.text or '' for node in tree.iter()
                      if node.tag.rsplit('}', 1)[-1] == 'loc']
         if not locations:
@@ -242,6 +267,14 @@ def configure_seo(package, site, mode):
             if (parsed.scheme != 'https' or parsed.netloc != 'www.unitedidiomas.com'
                     or any(part in parsed.path.split('/') for part in ('review', 'comparar-contato'))):
                 raise ExportError(f'URL imprópria em {file.name}: {location}')
+        expected = {'https://www.unitedidiomas.com/' + route.removesuffix('index.html')
+                    for route in COMMERCIAL_ROUTES}
+        if file.name == 'sitemap.xml' and (set(locations) != expected or len(locations) != len(expected)):
+            raise ExportError('sitemap.xml deve conter exatamente as quatro URLs comerciais canônicas.')
+        if file.name == 'sitemap.xml':
+            direct = tree.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
+            if len(direct) != len(expected):
+                raise ExportError('sitemap.xml exige quatro entradas url/loc no namespace correto.')
         shutil.copyfile(file, site / file.name)
 
 

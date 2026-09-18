@@ -51,6 +51,8 @@ for route,meta in META.items():
   page['hasPart']=[{'@id':url+a} for _,_,a in courses]
  if route=='/':
   h=d.get_element_by_id('liveclass-intro-title');h.tag='h1'
+  inner(h,COPY['home_heading'][0]);etree.SubElement(h,'br').tail='\n'+COPY['home_heading'][1]
+  etree.SubElement(h,'br').tail='\n';etree.SubElement(h,'span').text=COPY['home_heading'][2]
   inner(d.xpath('//p[@class="liveclass-intro-description"]')[0],COPY['home_intro'])
   inner(d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-speaking ")]/p')[0],COPY['speaking_benefit'])
   inner(d.xpath('//*[@id="storytelling"]//div[@class="text"]/p')[0],COPY['storytelling'])
@@ -121,6 +123,11 @@ for route,meta in META.items():
     link=etree.SubElement(li,'a',href='#'+block.get('id'),**{'data-faq-id':block.get('id')});link.text=b.text_content()
  if route in ('/','/cursos/'):
   inner(d.xpath('//*[@id="jimmy-united-idiomas"]//div[@class="text"]/p[not(@class)]')[0],COPY['jimmy'])
+ # Link directly to the WordPress canonical host, preserving any query/fragment.
+ for link in d.xpath('//a[@href]'):
+  parsed=urlsplit(link.get('href'))
+  if parsed.netloc=='www.unitedidiomas.com' and parsed.path.rstrip('/')=='/blog':
+   link.set('href',parsed._replace(scheme='https',netloc='unitedidiomas.com',path='/blog/').geturl())
  # Old inline SVG icons reused gradient IDs. Keep each paint reference within its own SVG.
  counts=Counter(d.xpath('//*[@id]/@id'))
  for n,svg in enumerate(d.xpath('//svg')):
@@ -161,8 +168,7 @@ for route,meta in META.items():
  for link in head.xpath('./link[contains(@href,"liveclass-intro.css")]'):link.set('href','/liveclass-intro.css?v='+digest(DIST/'liveclass-intro.css'))
  p.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode',method='html'))
  print('SEO and media:',route)
-# WordPress owns its current, automatically updated sitemap. Keep both discoverable.
-# Do not disallow review URLs here: crawlers must be able to see their noindex header/meta.
-(prod/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
+# The reviewed production robots is the source of truth; never overwrite its policy here.
+# WordPress owns its automatically updated sitemap. Keep both discoverable.
 (prod/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+BASE+r+'</loc></url>\n' for r in META)+'</urlset>\n')
 for name in ('robots.txt','sitemap.xml'):(DIST/name).write_bytes((prod/name).read_bytes())

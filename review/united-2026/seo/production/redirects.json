@@ -140,6 +140,30 @@
       "from": "/faq",
       "to": "/faq/",
       "status": 301
+    },
+    {
+      "from": "/index.html",
+      "to": "/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/cursos/index.html",
+      "to": "/cursos/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/quem-somos/index.html",
+      "to": "/quem-somos/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/faq/index.html",
+      "to": "/faq/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
     }
   ],
   "needs_review": [

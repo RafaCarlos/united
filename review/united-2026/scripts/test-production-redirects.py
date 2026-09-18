@@ -32,11 +32,13 @@ for line in ACTIVE:
         conditions = []
 
 
-def redirect(url, method='GET'):
+def redirect(url, method='GET', original_request=None):
     """Small deterministic check of these literal rules, not an Apache runtime."""
     parsed = urlsplit(url)
     values = {'%{HTTP_HOST}': parsed.netloc, '%{REQUEST_URI}': unquote(parsed.path),
-              '%{REQUEST_METHOD}': method}
+              '%{REQUEST_METHOD}': method,
+              '%{THE_REQUEST}': original_request or f'{method} {parsed.path}' +
+                  (f'?{parsed.query}' if parsed.query else '') + ' HTTP/1.1'}
     for guards, pattern, target, flags in RULES:
         allowed = True
         for guard in guards:
@@ -101,6 +103,18 @@ class RedirectChecks(unittest.TestCase):
             self.assertEqual(redirect(DATA['canonical_origin'] + entry['from']),
                              DATA['canonical_origin'] + entry['to'])
         self.assertIsNone(redirect(DATA['canonical_origin'] + '/url-inexistente-teste-seo'))
+
+    def test_index_file_aliases_preserve_campaign_and_skip_internal_directory_index(self):
+        for path in ('/', '/cursos/', '/quem-somos/', '/faq/'):
+            for host in DATA['scope']['hosts']:
+                for method in ('GET', 'HEAD'):
+                    self.assertEqual(redirect(f'http://{host}{path}index.html?utm_source=organic', method),
+                                     DATA['canonical_origin'] + path + '?utm_source=organic')
+            self.assertIsNone(redirect(DATA['canonical_origin'] + path + 'index.html',
+                                      original_request=f'GET {path} HTTP/1.1'))
+            self.assertIsNone(redirect(DATA['canonical_origin'] + path + 'index.html', 'POST'))
+        for path in ('/blog/index.html', '/review/united-2026/dist/index.html', '/assets/index.html'):
+            self.assertIsNone(redirect(DATA['canonical_origin'] + path))
 
     def test_mapping_does_not_claim_closed_units_without_confirmation(self):
         self.assertEqual(DATA['retired'], [])

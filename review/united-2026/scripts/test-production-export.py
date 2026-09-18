@@ -40,11 +40,13 @@ class ProductionExportTest(unittest.TestCase):
         self.write(self.dist / 'rdstation-form.js', f'new RDStationForms("{MOUNT}", "UA-42887237-1").createForm();')
         for route in exporter.COMMERCIAL_ROUTES:
             prefix = '../' if '/' in route else ''
-            page = f'''<!DOCTYPE html><html lang="pt-BR"><head><title>United</title>
+            canonical = 'https://www.unitedidiomas.com/' + route.removesuffix('index.html')
+            page = f'''<!DOCTYPE html><html lang="pt-BR"><head><title>United {route}</title>
+              <link rel="canonical" href="{canonical}">
               <meta charset="utf-8"><meta name="robots" content="index,follow">
               <link rel="stylesheet" href="{prefix}assets/style.css">
               <script>window.dataLayer=window.dataLayer||[];</script></head><body>
-              <!-- preserve comments and inline GTM -->
+              <!-- preserve comments and inline GTM --><h1>United {route}</h1>
               <a href="{prefix}cursos/">Cursos</a><a href="{prefix}#contato">Contato</a>
               <a href="https://liveclass.app.br" target="_blank">Área do aluno</a>
               <img src="{prefix}assets/image.svg" srcset="{prefix}assets/image.svg 1x, {prefix}assets/image.svg 2x">
@@ -64,10 +66,11 @@ class ProductionExportTest(unittest.TestCase):
         self.write(self.dist / 'script.js.map', '{}')
         self.write(self.dist / 'production.php', '<?php echo "untouched"; ?>')
         self.write(self.dist / 'robots.txt', 'User-agent: *\nDisallow: /\n')
-        self.write(self.seo / 'robots.txt', 'User-agent: *\nAllow: /\nSitemap: https://www.unitedidiomas.com/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
-        self.write(self.seo / 'sitemap.xml', '''<?xml version="1.0" encoding="UTF-8"?>
-            <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            <url><loc>https://www.unitedidiomas.com/</loc></url></urlset>''')
+        self.write(self.seo / 'robots.txt', 'User-agent: *\nAllow: /\nDisallow: /blog/wp-admin/\nAllow: /blog/wp-admin/admin-ajax.php\nSitemap: https://www.unitedidiomas.com/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
+        self.write(self.seo / 'sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>'
+                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' +
+                   ''.join('<url><loc>https://www.unitedidiomas.com/' + route.removesuffix('index.html') +
+                           '</loc></url>' for route in exporter.COMMERCIAL_ROUTES) + '</urlset>')
         self.write(self.seo / 'apache-seo.conf', 'Options -Indexes\n')
         self.write(self.seo / 'INSTRUCOES-PUBLICACAO.md', '# Publicação manual\n')
 
@@ -125,6 +128,48 @@ class ProductionExportTest(unittest.TestCase):
         source = self.dist / 'cursos' / 'index.html'
         self.write(source, source.read_text().replace('index,follow', 'noindex,nofollow'))
         with self.assertRaisesRegex(exporter.ExportError, 'bloqueio de indexação'):
+            self.export()
+        self.assertFalse(self.out.exists())
+
+    def test_wrong_canonical_or_duplicate_title_cannot_ship(self):
+        source = self.dist / 'cursos/index.html'
+        original = source.read_text()
+        self.write(source, original.replace('rel="canonical" href="https://www.unitedidiomas.com/cursos/"',
+                                            'rel="canonical" href="https://www.unitedidiomas.com/"'))
+        with self.assertRaisesRegex(exporter.ExportError, 'canonical'):
+            self.export()
+        self.write(source, original.replace('<title>United cursos/index.html</title>',
+                                            '<title>United index.html</title>'))
+        with self.assertRaisesRegex(exporter.ExportError, 'título'):
+            self.export()
+        self.assertFalse(self.out.exists())
+
+    def test_partial_sitemap_cannot_ship(self):
+        source = self.seo / 'sitemap.xml'
+        self.write(source, source.read_text().replace('<url><loc>https://www.unitedidiomas.com/faq/</loc></url>', ''))
+        with self.assertRaisesRegex(exporter.ExportError, 'quatro URLs'):
+            self.export()
+        self.assertFalse(self.out.exists())
+
+    def test_page_urls_cannot_masquerade_as_a_sitemap_index(self):
+        source = self.seo / 'sitemap.xml'
+        self.write(source, source.read_text().replace('urlset', 'sitemapindex').replace('<url>', '<sitemap>').replace('</url>', '</sitemap>'))
+        with self.assertRaisesRegex(exporter.ExportError, 'urlset'):
+            self.export()
+        self.assertFalse(self.out.exists())
+
+    def test_googlebot_or_assets_block_cannot_ship(self):
+        source = self.seo / 'robots.txt'
+        original = source.read_text()
+        for rule in ('\nUser-agent: Googlebot\nDisallow: /cursos/\n', '\nDisallow: /assets/\n'):
+            self.write(source, original + rule)
+            with self.assertRaisesRegex(exporter.ExportError, 'robots.txt de produção inválido'):
+                self.export()
+        self.assertFalse(self.out.exists())
+
+    def test_unregistered_html_cannot_ship(self):
+        self.write(self.dist / 'rascunho.html', (self.dist / 'index.html').read_text())
+        with self.assertRaisesRegex(exporter.ExportError, 'fora do inventário comercial'):
             self.export()
         self.assertFalse(self.out.exists())
 
@@ -194,8 +239,8 @@ class ProductionExportTest(unittest.TestCase):
         self.write(self.seo / 'robots.txt', 'User-agent: *\nDisallow: /\n')
         with self.assertRaisesRegex(exporter.ExportError, 'bloqueia a raiz'):
             self.export()
-        self.write(self.seo / 'robots.txt', 'Sitemap: https://www.unitedidiomas.com/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
-        self.write(self.seo / 'sitemap.xml', '<urlset><url><loc>https://www.unitedidiomas.com/review/</loc></url></urlset>')
+        self.write(self.seo / 'robots.txt', 'User-agent: *\nAllow: /\nDisallow: /blog/wp-admin/\nAllow: /blog/wp-admin/admin-ajax.php\nSitemap: https://www.unitedidiomas.com/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
+        self.write(self.seo / 'sitemap.xml', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://www.unitedidiomas.com/review/</loc></url></urlset>')
         with self.assertRaisesRegex(exporter.ExportError, 'URL imprópria'):
             self.export()
 

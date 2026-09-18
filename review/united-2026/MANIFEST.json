@@ -5,18 +5,18 @@
   "files": [
     {
       "path": "CORRECAO-SERVIDOR.md",
-      "bytes": 2387,
-      "sha256": "4a907ef683052e16c80e04202a64b51ed8172d9c94e4db8d0200b892739c3a24"
+      "bytes": 2871,
+      "sha256": "a0b0ec8af0e2b3218009e077a2a30b3f8a4748fc4d4bb8319f9927bac65f0103"
     },
     {
       "path": "MANIFEST-SERVIDOR.json",
       "bytes": 40120,
-      "sha256": "c137eadf6bd0b788ae123d7763142f9d6e605b651aee43a4ad8cc450deb35ab4"
+      "sha256": "75d89180ba723fb9fcf95a9e54fa0ea18ca9aca0f86a1f0b39fd027cf0268a68"
     },
     {
       "path": "README.md",
-      "bytes": 6133,
-      "sha256": "29b3f7e28d02bb4f03f9979857c723ab085ce8ff42789f96166e7df1c43b0563"
+      "bytes": 6669,
+      "sha256": "57d92cc02f1491dc33dff2724371095072d58a6b2aee421975cf719b310605ac"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51336,
-      "sha256": "8c240eb4ba95e08c0586af1fb29a5eb5a9a720d8b1a80ce054fdca427600a0e0"
+      "bytes": 51328,
+      "sha256": "bf1d1833a074fdd40108246e4a6ffb36239385d0072cddac33952cb5f6bbb9a7"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 39533,
-      "sha256": "bfec8b352253ec1fa8adf8262b869e914e14cb2ebbe9e3d97ac978b16014ba72"
+      "bytes": 39804,
+      "sha256": "868312c3919a546fedd2d7177f621adf71210b8e0a097a74c340d363e45311a4"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1021,7 +1021,7 @@
     {
       "path": "dist/index.html",
       "bytes": 48557,
-      "sha256": "c12205dce123ca383e564577a33bf774614ff4f3ff3287e56f808c45f8a18579"
+      "sha256": "65f3aaf869d7664fdcd57cf15e572d5cad36174ec6752c76fed39ed5dc1e9f49"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1060,8 +1060,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43325,
-      "sha256": "fa626bfa9d6ec8b4b644ea5e2d2ab82345934ad61c40683fe1665da89e4431cb"
+      "bytes": 43317,
+      "sha256": "b61ff314dbc7aa765d3985960d997f4d3c35344bafcec8a0a96a6f9d48534ea2"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1090,8 +1090,8 @@
     },
     {
       "path": "dist/robots.txt",
-      "bytes": 133,
-      "sha256": "a6786dcc3358d0d2857127fde6016713585b6924461ee91528621c323c0235a8"
+      "bytes": 522,
+      "sha256": "22583b2ac8b11c6a242145769bca0cf9b3a464d041d4e59a988edb14bd30e907"
     },
     {
       "path": "dist/seo-performance.css",
@@ -1174,6 +1174,11 @@
       "sha256": "8628e2c90a0cdc20ff9c7721a13b8f7b35238b3593e015e3ed637a3b65e68b31"
     },
     {
+      "path": "scripts/crawl_policy.py",
+      "bytes": 3806,
+      "sha256": "eb65f287874499e91d702aa8c031875728d510fceef3e9ac9d131bb68865395c"
+    },
+    {
       "path": "scripts/export-github-review.py",
       "bytes": 1760,
       "sha256": "a115f9ed36754c6528b0379d9ef3afd2b0bad70474dff121aca0aa56565a42b7"
@@ -1185,8 +1190,8 @@
     },
     {
       "path": "scripts/export-production.py",
-      "bytes": 14624,
-      "sha256": "1fe89272923c5bf672d1228d37367a9721c56d9d67078e78c3a8711e948ab19e"
+      "bytes": 16881,
+      "sha256": "2d33f2b8ce3f9cfbc383449b5ec4f54ab332d759e149a6dce06d51ec147b1fe8"
     },
     {
       "path": "scripts/export-storytelling-preview.py",
@@ -1214,14 +1219,19 @@
       "sha256": "56e8e5a03dd17968e23027b0852c7213f625a33fffdc4fa9a08b45466e34b654"
     },
     {
+      "path": "scripts/test-production-crawl.py",
+      "bytes": 7566,
+      "sha256": "32df6632d4e544b8c2e08aa558fcde125c399f72286c8afad12afd37be200643"
+    },
+    {
       "path": "scripts/test-production-export.py",
-      "bytes": 11848,
-      "sha256": "491a16abf76b0fdac221a3c9ba8be1afa14c7ca5b7d1149246676992829c5b75"
+      "bytes": 14647,
+      "sha256": "2a048f550c264571888aa917c558769f8a2b20929488eeede528b06a218c5edd"
     },
     {
       "path": "scripts/test-production-redirects.py",
-      "bytes": 9623,
-      "sha256": "b51e0772f79b16c3e660b7eb0506b3416183c597627a62026ac7400a99f10ba8"
+      "bytes": 10696,
+      "sha256": "47ba737ba08bd5cb40997c777462510f7854abf3295c4b8c2fafcdd725e354c5"
     },
     {
       "path": "scripts/test-rdstation-form.cjs",
@@ -1275,8 +1285,8 @@
     },
     {
       "path": "scripts/update-seo-performance.py",
-      "bytes": 14957,
-      "sha256": "02d83f0ed33e13b0ff8a704fb8bcee897ab2489f946258e8b3f9ce8f60d54d6a"
+      "bytes": 15318,
+      "sha256": "fd98c488afb1f58cdc22978d36aac12508d1e20d2ec7cea26a5a83851f9142f0"
     },
     {
       "path": "scripts/update-shared-header.py",
@@ -1290,18 +1300,23 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 20182,
-      "sha256": "559d47870bf7ed631e69cde30a77785c5a14eb57e6e728e76c95b97dda9316ce"
+      "bytes": 22820,
+      "sha256": "2283d82ab5bc1f59bbcfa6d39f3b5796d132c982b920f28f5edcbbe05e83c0ec"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 6555,
-      "sha256": "57da573aaa39b73212976c28221aac52bc4d2294c8ae3af2099fe561880cbaeb"
+      "bytes": 6977,
+      "sha256": "a5e290c5c6f2b6d93beb4a54a7d245c82c5473ecc2f3fc55997eb2128a2041c6"
     },
     {
       "path": "seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md",
-      "bytes": 6012,
-      "sha256": "1cb1eee6230372fc9e0fc39c20c6ef698b8f893377ed0ff5a70f2d3fbb3ea220"
+      "bytes": 6090,
+      "sha256": "2d66bffa07ede58da6a2c116667fb9c0e8f3e887538c6daed5785946bc56bdb2"
+    },
+    {
+      "path": "seo/PLANO-SEO-PRODUCAO.md",
+      "bytes": 14179,
+      "sha256": "8e157b10e70f70864d7e144f8a4cde0f42c515f32196f5b3b5f2a880e658135d"
     },
     {
       "path": "seo/RD-STATION.md",
@@ -1310,8 +1325,23 @@
     },
     {
       "path": "seo/RECOMENDACOES-CONTEUDO.md",
-      "bytes": 9733,
-      "sha256": "552136c300e7f5a97c61eed9978b971de0e4484d502f6c3df55472b327b443b1"
+      "bytes": 9870,
+      "sha256": "9c27acd0b5ae12c7d62396c62c55e8226be29edc354896fe066e9419773e5b8c"
+    },
+    {
+      "path": "seo/ROBOTS-RASTREAMENTO.md",
+      "bytes": 3297,
+      "sha256": "96956db7d94cd3f7bb0a6ca784471c5458b2272bc32b3c01a9fddd3693decae6"
+    },
+    {
+      "path": "seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.json",
+      "bytes": 109573,
+      "sha256": "dbe800e7cca213a8115c13df1a1bbfc9404053c573bc142fba3b482677408963"
+    },
+    {
+      "path": "seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md",
+      "bytes": 8755,
+      "sha256": "d4835f628b3f7bfbe535aee28274cc025ebcc7d2bcda773f6c7bf676067f8b16"
     },
     {
       "path": "seo/VERIFICACAO-PUBLICA-2026-09-18.json",
@@ -1325,13 +1355,13 @@
     },
     {
       "path": "seo/audit-results.json",
-      "bytes": 2940,
-      "sha256": "f6d31b8ed0db812cb156b1721c82e357779e4ae56a0ce2a36b9cbc6c23a28b0d"
+      "bytes": 2950,
+      "sha256": "116f4fc2fae8ae028d78606a24fc1ddfd21b062c18b9aefcdbcd5795cb1e1fa5"
     },
     {
       "path": "seo/content.json",
-      "bytes": 3861,
-      "sha256": "6ba3d0ce02e80f13af7c1dab8eaeb5e41ab44fbcb00387fa767b2d4458d20ab2"
+      "bytes": 4556,
+      "sha256": "56c00100665109cf37bbf81fff0acdf2cc8369956208bdf7aba2ddca9c58a021"
     },
     {
       "path": "seo/css-inputs.json",
@@ -1360,13 +1390,13 @@
     },
     {
       "path": "seo/production/INSTRUCOES-PUBLICACAO.md",
-      "bytes": 5529,
-      "sha256": "f3ad1c44bc17df40e348e656a4f756aa221af22f0193f7b4250ef152f927cabc"
+      "bytes": 5830,
+      "sha256": "3572efebd502dc4b6fd8b7717d39e428c5fb4ec23d4dc1a6986bff1fbb4a6ae2"
     },
     {
       "path": "seo/production/apache-seo.conf",
-      "bytes": 5155,
-      "sha256": "c99c40a1e549afb47e7f0a9fa44ca8b82774804f9b92430cad53a4dbe958bb48"
+      "bytes": 5896,
+      "sha256": "da1dcd5f26d8c9d872c54c91eaad2498a48b522a662ce635c73b22025269dd0c"
     },
     {
       "path": "seo/production/cursos-head.html",
@@ -1390,13 +1420,13 @@
     },
     {
       "path": "seo/production/redirects.json",
-      "bytes": 25966,
-      "sha256": "906f16b05cfbf0e61af5343c2889ff485bd603eb38ac6c381e3c37a45131a73f"
+      "bytes": 26762,
+      "sha256": "cab4173a45f9ab32e2bf8b2eafc912a0c3acd4f159e3b2235a8013162d63bd09"
     },
     {
       "path": "seo/production/robots.txt",
-      "bytes": 133,
-      "sha256": "a6786dcc3358d0d2857127fde6016713585b6924461ee91528621c323c0235a8"
+      "bytes": 522,
+      "sha256": "22583b2ac8b11c6a242145769bca0cf9b3a464d041d4e59a988edb14bd30e907"
     },
     {
       "path": "seo/production/sitemap.xml",

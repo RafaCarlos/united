@@ -2,6 +2,20 @@
 
 A atualização parte de `main` em `933c80a`, depois da incorporação do PR anterior. O código de produção da raiz permanece separado. Esta entrega está em revisão e não foi publicada no servidor.
 
+## Pente-fino da entrega definitiva
+
+A entrega é de produção, sem rótulos visíveis de prévia, comparação/debug ou bloqueio de indexação nas páginas comerciais. O README e CORRECAO-SERVIDOR agora orientam diretamente a integração na raiz oficial. O modo de desenvolvimento continua isolado; não é o artefato entregue para publicar.
+
+- Robots atualizado: acesso a páginas, artigos e recursos públicos; somente `/blog/wp-admin/` restrito, com `admin-ajax.php` liberado. Os dois sitemaps são declarados. O gerador deixou de sobrescrever essa fonte com regras hardcoded.
+- Exportação recusa política de robots conflitante, canonical incorreto/duplicado, títulos duplicados, sitemap incompleto ou no formato errado, e HTML fora do inventário comercial. O parser valida a política restrita usada neste pacote, sem simular toda a especificação REP.
+- Quatro aliases `index.html` ganharam 301 para suas URLs canônicas. As regras usam THE_REQUEST para evitar loops de DirectoryIndex e preservam query strings; não alteram POST, blog ou cópias antigas de revisão.
+- Home com H1 “Inglês online. Aulas ao vivo. Fale inglês.” no desenho existente. Links de Blog usam diretamente o host canônico. Duas respostas do FAQ apontam para artigos públicos pertinentes, conferidos com HTTP 200 e canonical próprio.
+- Plano profissional com responsabilidades e critérios de aceite para publicação, conteúdo pedagógico original, autoria, unidades, WordPress, Search Console, desempenho e conversões. Nenhuma credencial, oferta, avaliação ou dado local foi inventado.
+
+Validação deste complemento: **18 testes do exportador, 13 de rastreamento e 9 de redirecionamentos aprovados**; Apache novamente `Syntax OK`, sem iniciar Apache. Auditoria das quatro páginas e 147 dependências sem erros. A exportação de produção passou; seu novo H1 foi conferido no navegador em 390×844 e 1366×768, e não houve excesso de largura em 320 px. Não houve envio de leads. Os testes anteriores de RD e PHP são descritos abaixo e não equivalem a nova validação de conversão ou instalação do plugin.
+
+A nova coleta pública está em [VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md](VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md): 30 GETs, sem erros de rede. O servidor ainda tinha robots 404, sitemap raiz antigo, três rótulos “PRÉVIA”, aliases index.html duplicados e o fundo de vídeo antigo. As rotas de privacidade/termos retornaram 404 e não receberam links novos. As correções do pacote só terão efeito após Rafael integrar a produção. Não foi comprovada indexação nem medida de campo de Core Web Vitals.
+
 ## Complemento de intenção de busca e conteúdo
 
 Títulos e textos revisados para inglês online e ao vivo, trilha de 18 meses e conversação em inglês. Jimmy, storytelling e OnDemand foram descritos por suas funções reais, com OnDemand opcional. Duas perguntas adicionadas ao FAQ (22 no total); índice e links gerados a partir das perguntas, sem depender de JavaScript para o texto existir. Fontes mantidas em `metadata.json` e `content.json`. A auditoria estática voltou a passar em quatro páginas/147 dependências, e duas execuções do pipeline geraram arquivos idênticos. As exportações de produção e prévia passaram. A verificação pública separada ainda mostra o site anterior ao PR; não houve publicação.

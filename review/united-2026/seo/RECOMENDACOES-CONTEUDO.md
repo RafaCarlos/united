@@ -35,7 +35,7 @@ No Perfil da Empresa, revisar categoria adequada, endereço, telefone, horários
 
 ## Prioridade 3 — blog com autoria clara e conteúdo próprio
 
-O plugin opcional em [wordpress/README.md](wordpress/README.md) prepara correções de apresentação para as amostras auditadas. A revisão de **todo o acervo** ainda deve ser feita com exportação ou acesso ao WordPress; não é correto extrapolar três artigos para todos os posts.
+O censo técnico cobre os 182 artigos do sitemap atual. O plugin opcional em [wordpress/README.md](wordpress/README.md) prepara correções de idioma/autoria e 48 descrições específicas; três artigos recebem links contextuais. Isso não equivale a uma revisão editorial integral dos 182 textos. Atualizar fatos, exercícios e autoria de todo o acervo ainda exige trabalho no WordPress com a coordenação pedagógica.
 
 | Artigo existente | Melhoria editorial concreta | Destino comercial pertinente |
 |---|---|---|

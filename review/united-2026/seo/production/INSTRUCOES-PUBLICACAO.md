@@ -1,4 +1,4 @@
-# Exportar produção e prévia sem misturar ambientes
+# Publicar a entrega de produção da United
 
 Esta revisão prepara arquivos para Rafael avaliar e integrar. O exportador não publica no servidor, não altera o PHP da raiz, não faz merge e não escreve no Git. Requer o Python com as dependências de `requirements-review.txt`.
 
@@ -16,7 +16,8 @@ O modo de produção:
 
 - exige páginas comerciais sem diretivas `noindex`, `nofollow` ou `none` e falha se alguma reaparecer na origem;
 - remove os rótulos visuais `.preview-mark` e elementos explicitamente marcados `data-preview-only` na cópia;
-- usa `robots.txt` e os arquivos `sitemap*.xml` de `seo/production/`;
+- usa `robots.txt` e os arquivos `sitemap*.xml` de `seo/production/`; valida acesso a páginas/recursos, exceção AJAX e descoberta dos dois sitemaps;
+- exige canonical correto, títulos próprios, pt-BR, um H1 e exatamente as quatro páginas do sitemap comercial em `urlset`; recusa HTML de rascunho fora do inventário;
 - exclui a rota de comparação, arquivos ocultos, mapas de código e artefatos de depuração;
 - preserva o HTML funcional, scripts RD, formulários, GTM, links de WhatsApp e Área do Aluno;
 - verifica links e recursos locais de HTML e CSS, inclusive nas rotas internas, e interrompe a exportação se um recurso faltar ou sair da raiz da cópia.
@@ -25,7 +26,7 @@ Nomes como `preview.js`, `contact-preview.js` e classes de layout que contêm `p
 
 O conteúdo de `dist` é a origem comercial. Se um gerador antigo recolocar `noindex`, corrigir o gerador e regenerar a origem antes de exportar. O exportador de produção não remove silenciosamente esse bloqueio: a recusa evita publicar um pacote cuja configuração está ambígua.
 
-## Prévia
+## Ferramenta de desenvolvimento — não é a entrega de produção
 
 Gerar uma cópia separada, também fora do repositório:
 

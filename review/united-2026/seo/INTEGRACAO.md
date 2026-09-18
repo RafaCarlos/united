@@ -2,7 +2,7 @@
 
 Esta entrega atualiza o pacote revisável no GitHub. Não publica na hospedagem, não modifica o PHP de produção da raiz e não instala nada no WordPress.
 
-## Produção e prévia são saídas diferentes
+## Entrega definitiva para o domínio oficial
 
 `dist/` contém os quatro HTML comerciais preparados para produção. Desde esta revisão, o gerador aplica `index,follow,max-image-preview:large`, remove os rótulos de prévia e mantém o robots e o sitemap comerciais. Para revisão, **exportar com `--mode preview`**, que acrescenta `noindex,nofollow` e bloqueio no robots somente na cópia exportada. Não reutilizar instruções antigas que tratavam `dist` como prévia bloqueada.
 
@@ -21,13 +21,15 @@ Publicar `site/robots.txt` e `site/sitemap.xml` na raiz oficial. As quatro URLs 
 
 O robots lista também `https://unitedidiomas.com/blog/sitemap_index.xml`, verificado com HTTP 200 em 18/09. O WordPress mantém automaticamente os seus artigos e outros sitemaps; não copiar a lista congelada de artigos para o sitemap estático. O host sem www do blog é preservado porque é o canonical atual observado. Uma migração futura do blog para www precisa de um plano próprio, não de redirecionamento global improvisado.
 
+O robots fonte agora é preservado pelo gerador e valida os recursos de renderização; a única restrição é a administração WordPress, com AJAX liberado. As quatro variantes públicas `index.html` têm regras de 301 para as URLs limpas, condicionadas à solicitação externa para evitar loop com DirectoryIndex.
+
 O antigo sitemap tinha URLs redirecionadas e 404. O novo sitemap comercial só lista as páginas atuais, sem datas de atualização fictícias. `production/redirects.json` identifica equivalentes reais para redirecionamento e casos ainda sem conteúdo equivalente. Não enviar todas as URLs antigas à Home. Páginas removidas sem substituição podem continuar retornando 404; confirmar o inventário de unidades e produtos antes de decidir 410 ou criar páginas novas.
 
 As prévias públicas em `/review/` e a comparação interna devem responder `X-Robots-Tag: noindex, nofollow` conforme o fragmento. Não bloquear esses caminhos no robots da raiz antes de o Google conseguir ler o noindex de URLs já conhecidas. Para material restrito, autenticação é a proteção de acesso; robots/noindex não são controle de acesso. Ferramentas internas são excluídas da exportação.
 
 ## Conteúdo e dados estruturados
 
-Títulos e descrições específicos, um H1 por página e canonicals absolutos são gerados de `metadata.json`. O texto principal de Cursos informa a modalidade; FAQ aponta para as seções de cursos. BreadcrumbList descreve a hierarquia das páginas internas.
+A Home explicita “Inglês online. Aulas ao vivo. Fale inglês.” no H1, mantendo o desenho aprovado. Títulos e descrições específicos, um H1 por página e canonicals absolutos são gerados de `metadata.json`. O texto principal de Cursos informa a modalidade; FAQ aponta para as seções de cursos. BreadcrumbList descreve a hierarquia das páginas internas.
 
 As seis unidades ganharam âncoras estáveis, links de mapa e dados Place com o mesmo nome, endereço e telefone exibidos. Não foram inventados CEP, coordenadas, horários, avaliações ou municípios. Completar essas informações com os responsáveis antes de criar páginas locais e dados de negócio mais detalhados. Não há promessa de rich result de FAQ/curso ou de posicionamento.
 
