@@ -11,12 +11,12 @@
     {
       "path": "MANIFEST-SERVIDOR.json",
       "bytes": 40120,
-      "sha256": "673d2ae24a56c74fa28f3a84990bfd7d558c2fd90c409be2bd799c877b7bca68"
+      "sha256": "c137eadf6bd0b788ae123d7763142f9d6e605b651aee43a4ad8cc450deb35ab4"
     },
     {
       "path": "README.md",
-      "bytes": 5590,
-      "sha256": "7e707c4c0c256e7841816ea687c043d3b7c745a65bf167feb76015426eb601fc"
+      "bytes": 6133,
+      "sha256": "29b3f7e28d02bb4f03f9979857c723ab085ce8ff42789f96166e7df1c43b0563"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51418,
-      "sha256": "20235b4f69286eedf5e7972d1ba91658767ddfb15e796d19816acf0b6f824ec0"
+      "bytes": 51336,
+      "sha256": "8c240eb4ba95e08c0586af1fb29a5eb5a9a720d8b1a80ce054fdca427600a0e0"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 37722,
-      "sha256": "7fce48d928ea630675c0967b1f777a6b16ed0c688cc6e940404fd33aaeb03853"
+      "bytes": 39533,
+      "sha256": "bfec8b352253ec1fa8adf8262b869e914e14cb2ebbe9e3d97ac978b16014ba72"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 48499,
-      "sha256": "2b2effd29b915e1446fc34f701abef739aabe4fd756ba9877894a891c3b2cf70"
+      "bytes": 48557,
+      "sha256": "c12205dce123ca383e564577a33bf774614ff4f3ff3287e56f808c45f8a18579"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1060,8 +1060,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43411,
-      "sha256": "3f27881430d23a1e1dfbeff0bd0068194e1d2495bf6ae53050339a2cd0ecb824"
+      "bytes": 43325,
+      "sha256": "fa626bfa9d6ec8b4b644ea5e2d2ab82345934ad61c40683fe1665da89e4431cb"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1275,8 +1275,8 @@
     },
     {
       "path": "scripts/update-seo-performance.py",
-      "bytes": 14466,
-      "sha256": "aecfb228a76fea7a2250f797ba248e0927c4daf0d84a17f332e5665da112698a"
+      "bytes": 14957,
+      "sha256": "02d83f0ed33e13b0ff8a704fb8bcee897ab2489f946258e8b3f9ce8f60d54d6a"
     },
     {
       "path": "scripts/update-shared-header.py",
@@ -1290,13 +1290,18 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 19201,
-      "sha256": "dda4a3da07405cf762a433168b7804574b2efe6cc4fdd32e816790ed4dec3e2b"
+      "bytes": 20182,
+      "sha256": "559d47870bf7ed631e69cde30a77785c5a14eb57e6e728e76c95b97dda9316ce"
     },
     {
       "path": "seo/INTEGRACAO.md",
       "bytes": 6555,
       "sha256": "57da573aaa39b73212976c28221aac52bc4d2294c8ae3af2099fe561880cbaeb"
+    },
+    {
+      "path": "seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md",
+      "bytes": 6012,
+      "sha256": "1cb1eee6230372fc9e0fc39c20c6ef698b8f893377ed0ff5a70f2d3fbb3ea220"
     },
     {
       "path": "seo/RD-STATION.md",
@@ -1309,9 +1314,24 @@
       "sha256": "552136c300e7f5a97c61eed9978b971de0e4484d502f6c3df55472b327b443b1"
     },
     {
+      "path": "seo/VERIFICACAO-PUBLICA-2026-09-18.json",
+      "bytes": 80828,
+      "sha256": "e56489a4bbe8ec08dbfd53fdcb35f37841e4ac0093a3612437a541d168573c3b"
+    },
+    {
+      "path": "seo/VERIFICACAO-PUBLICA-2026-09-18.md",
+      "bytes": 6846,
+      "sha256": "4f9c1387916096e3e9589b4090f39d063f75a46ae2b68fd8ee42f364f51724c1"
+    },
+    {
       "path": "seo/audit-results.json",
-      "bytes": 2942,
-      "sha256": "41c12b77494c8671830ac44e0dfc53bf3f592e1fcef899946173fa092f4535d2"
+      "bytes": 2940,
+      "sha256": "f6d31b8ed0db812cb156b1721c82e357779e4ae56a0ce2a36b9cbc6c23a28b0d"
+    },
+    {
+      "path": "seo/content.json",
+      "bytes": 3861,
+      "sha256": "6ba3d0ce02e80f13af7c1dab8eaeb5e41ab44fbcb00387fa767b2d4458d20ab2"
     },
     {
       "path": "seo/css-inputs.json",
@@ -1335,8 +1355,8 @@
     },
     {
       "path": "seo/metadata.json",
-      "bytes": 1294,
-      "sha256": "569dad2febf76deafe3a6cc7bd9dcd8e5cc132c6edc07f592ed35880a4da0350"
+      "bytes": 1282,
+      "sha256": "4565cac19a0268d7004213fda619bd6df5d2dcdc3788c9950bb7aada88c4a299"
     },
     {
       "path": "seo/production/INSTRUCOES-PUBLICACAO.md",
@@ -1350,23 +1370,23 @@
     },
     {
       "path": "seo/production/cursos-head.html",
-      "bytes": 3848,
-      "sha256": "c39901f58996cc3a24737a0e1749a063ebbdd48a3eb269a18599b52eb35fe1a2"
+      "bytes": 3852,
+      "sha256": "9ee6c919432130e4e39b1e9072c3eb4852ba129cdb211a1d4b6016013e1bb150"
     },
     {
       "path": "seo/production/faq-head.html",
-      "bytes": 2954,
-      "sha256": "db2ec1478230a0a7810db3ed493b9c878ed3b8ab1f436c17c55cf7f80200ed0e"
+      "bytes": 2946,
+      "sha256": "268dfb64394cf65a590ade2ff2292d1be63cd79e871f049a5e7d8a897e4c1186"
     },
     {
       "path": "seo/production/home-head.html",
-      "bytes": 2562,
-      "sha256": "c3129eea96c47a5ef2db2b6dff72b4007e22f6ff99decfa4d3e3881aa1f4db41"
+      "bytes": 2546,
+      "sha256": "94fdef2e4f73901ffe5b6463a73f4e07dcddf9aef1fd0e1aa5821da9f44e8daa"
     },
     {
       "path": "seo/production/quem-somos-head.html",
-      "bytes": 5932,
-      "sha256": "23005add05b415a711522edcfc987e7b2e9b9fbc5b18164048f128d6f0345480"
+      "bytes": 5904,
+      "sha256": "f1b4ec3c2f53a93dd629a0066b5e03bdfcc9ef8aff79780bac41c8bfddd77179"
     },
     {
       "path": "seo/production/redirects.json",

@@ -2,6 +2,12 @@
 
 A atualização parte de `main` em `933c80a`, depois da incorporação do PR anterior. O código de produção da raiz permanece separado. Esta entrega está em revisão e não foi publicada no servidor.
 
+## Complemento de intenção de busca e conteúdo
+
+Títulos e textos revisados para inglês online e ao vivo, trilha de 18 meses e conversação em inglês. Jimmy, storytelling e OnDemand foram descritos por suas funções reais, com OnDemand opcional. Duas perguntas adicionadas ao FAQ (22 no total); índice e links gerados a partir das perguntas, sem depender de JavaScript para o texto existir. Fontes mantidas em `metadata.json` e `content.json`. A auditoria estática voltou a passar em quatro páginas/147 dependências, e duas execuções do pipeline geraram arquivos idênticos. As exportações de produção e prévia passaram. A verificação pública separada ainda mostra o site anterior ao PR; não houve publicação.
+
+A conferência no navegador em 390×844 confirmou os textos atualizados de Home, Cursos e FAQ sem rolagem horizontal. As respostas de Jimmy e OnDemand abrem no acordeão; o formulário RD carregou, sem envio de novos contatos neste complemento.
+
 ## Correções desta entrega
 
 - Produção com indexação explícita, sem os rótulos de prévia nas quatro páginas. A exportação de prévia mantém proteção separada; a produção recusa HTML bloqueado.

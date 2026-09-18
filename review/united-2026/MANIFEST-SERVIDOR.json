@@ -993,13 +993,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51418,
-      "sha256": "20235b4f69286eedf5e7972d1ba91658767ddfb15e796d19816acf0b6f824ec0"
+      "bytes": 51336,
+      "sha256": "8c240eb4ba95e08c0586af1fb29a5eb5a9a720d8b1a80ce054fdca427600a0e0"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 37722,
-      "sha256": "7fce48d928ea630675c0967b1f777a6b16ed0c688cc6e940404fd33aaeb03853"
+      "bytes": 39533,
+      "sha256": "bfec8b352253ec1fa8adf8262b869e914e14cb2ebbe9e3d97ac978b16014ba72"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1008,8 +1008,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 48499,
-      "sha256": "2b2effd29b915e1446fc34f701abef739aabe4fd756ba9877894a891c3b2cf70"
+      "bytes": 48557,
+      "sha256": "c12205dce123ca383e564577a33bf774614ff4f3ff3287e56f808c45f8a18579"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1048,8 +1048,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43411,
-      "sha256": "3f27881430d23a1e1dfbeff0bd0068194e1d2495bf6ae53050339a2cd0ecb824"
+      "bytes": 43325,
+      "sha256": "fa626bfa9d6ec8b4b644ea5e2d2ab82345934ad61c40683fe1665da89e4431cb"
     },
     {
       "path": "dist/rdstation-form.css",

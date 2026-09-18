@@ -1,0 +1,43 @@
+{
+  "home_intro": "Inglês online e ao vivo, com professores, conversação ilimitada e recursos digitais para praticar no seu ritmo.",
+  "speaking_benefit": "Pratique conversação em inglês, troque experiências e desenvolva confiança para se comunicar em situações reais.",
+  "storytelling": "Histórias e personagens exclusivos apresentam o inglês em contexto. Com o storytelling, você acompanha situações do dia a dia e pratica o que aprende.",
+  "platform_heading": "Aprenda inglês ao vivo, com histórias e prática.",
+  "jimmy": "Pratique conversação em inglês com o Jimmy, a inteligência artificial da United disponível 24 horas por dia. Converse sobre situações do cotidiano e continue a prática entre as aulas ao vivo.",
+  "ondemand_intro": "Um recurso opcional para complementar o estudo de inglês com conteúdos sob demanda, no seu ritmo.",
+  "ondemand_benefit": "Complemente sua prática com conteúdos sob demanda. O United OnDemand é opcional; consulte as condições de acesso.",
+  "courses_intro": "O Live Class combina inglês online e ao vivo, professores e prática de conversação em uma trilha de 18 meses. Conheça também o United Business, voltado à comunicação no trabalho.",
+  "methodology": "Nossa metodologia conecta conversação em inglês, situações reais e recursos digitais. Aulas ao vivo, storytelling e prática com o Jimmy aproximam o aprendizado dos contextos em que você usa o idioma.",
+  "faq_additions": [
+    {
+      "id": "faq-escolher",
+      "question": "Como escolher o melhor curso de inglês para mim?",
+      "answer": "Compare a modalidade das aulas, a duração da trilha, as oportunidades de conversação e a flexibilidade dos horários. O melhor curso de inglês para você combina seus objetivos com uma rotina de estudos possível de manter. Conheça as propostas do Live Class e do United Business.",
+      "links": [["/cursos/#live-class", "Conheça o Live Class"], ["/cursos/#united-business", "Conheça o United Business"]]
+    },
+    {
+      "id": "faq-18-meses",
+      "question": "Como funciona o inglês em 18 meses?",
+      "answer": "O Live Class tem uma trilha educacional de 18 meses, com aulas online e ao vivo e recursos de prática entre os encontros. A evolução depende do nível inicial, da frequência e da dedicação. Consulte a equipe para entender o percurso indicado para você.",
+      "links": [["/cursos/#live-class", "Conheça a trilha Live Class"]]
+    },
+    {
+      "id": "faq-online",
+      "question": "O curso online de inglês tem aulas ao vivo?",
+      "answer": "Sim. O Live Class oferece aulas online e ao vivo, com interação entre professores e alunos e foco na conversação em inglês. A prática continua entre as aulas com o Jimmy e atividades de aprendizagem. O United OnDemand é um recurso opcional.",
+      "links": [["/cursos/#live-class", "Conheça as aulas do Live Class"]]
+    },
+    {
+      "id": "faq-jimmy-conversacao",
+      "question": "Como o Jimmy 24/7 ajuda na conversação em inglês?",
+      "answer": "O Jimmy é a inteligência artificial da United para praticar conversação em inglês a qualquer hora. Você pode conversar sobre situações do dia a dia e manter contato com o idioma entre as aulas. Essa prática complementa as aulas ao vivo com professores.",
+      "links": [["/#jimmy-united-idiomas", "Conheça o Jimmy 24/7"]]
+    },
+    {
+      "id": "faq-pratica-ondemand",
+      "question": "Como praticar inglês entre as aulas? O OnDemand está incluído?",
+      "answer": "Você pode continuar a prática com o Jimmy 24/7 e as atividades da sua trilha. O United OnDemand oferece conteúdos sob demanda como recurso opcional. Consulte a equipe para conhecer as condições de acesso e os recursos da modalidade escolhida.",
+      "links": [["/#ondemand", "Conheça o United OnDemand"]]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ from collections import Counter
 import json,re,html as escape_html
 ROOT=Path(__file__).resolve().parents[1]; DIST=ROOT/'dist'
 META=json.loads((ROOT/'seo/metadata.json').read_text())
+COPY=json.loads((ROOT/'seo/content.json').read_text())
 BASE='https://www.unitedidiomas.com'
 ORG=BASE+'/#organization'
 def digest(p):return sha256(p.read_bytes()).hexdigest()[:12]
@@ -50,14 +51,20 @@ for route,meta in META.items():
   page['hasPart']=[{'@id':url+a} for _,_,a in courses]
  if route=='/':
   h=d.get_element_by_id('liveclass-intro-title');h.tag='h1'
-  section=h.getparent()
-  for el in section.xpath('.//p'):
-   if 'Aulas online e ao vivo.' in el.text_content():inner(el,'Curso de inglês online e ao vivo, com conversação ilimitada e um ecossistema completo para transformar aprendizado em confiança.')
+  inner(d.xpath('//p[@class="liveclass-intro-description"]')[0],COPY['home_intro'])
+  inner(d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-speaking ")]/p')[0],COPY['speaking_benefit'])
+  inner(d.xpath('//*[@id="storytelling"]//div[@class="text"]/p')[0],COPY['storytelling'])
+  inner(d.xpath('//*[@id="live-class"]//div[@class="texts"]/h3')[0],COPY['platform_heading'])
+  inner(d.xpath('//p[@class="ondemand-intro"]')[0],COPY['ondemand_intro'])
+  for card in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-card ")]'):
+   if 'On Demand' in card.find('h3').text_content():inner(card.find('p'),COPY['ondemand_benefit'])
   for a in d.xpath('//a[normalize-space(text())="VEJA MAIS SOBRE O CURSO"]'):inner(a,'Conheça o curso de inglês Live Class')
  elif route=='/quem-somos/':
   h=d.xpath('//main//h1')[0];inner(h,'Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.')
   for h in d.xpath('//main//h2'):
    if '100 mil' in h.text_content():inner(h,'Mais de 150 mil alunos em nossa história. Inglês que faz parte da vida.')
+  methodology=d.xpath('//*[@id="metodologia-digital"]|//main//p[contains(text(),"Inglês real, sem decoreba")]')[0]
+  methodology.set('id','metodologia-digital');inner(methodology,COPY['methodology'])
   unit_slugs={'Cornélio Procópio':'cornelio-procopio','Ipiranga':'ipiranga','Maringá':'maringa','Osasco':'osasco','Santo Amaro':'santo-amaro','Tatuapé':'tatuape'}
   locations=[]
   for box in d.get_element_by_id('unidades-hibridas').xpath('.//div[@class="box"]'):
@@ -75,7 +82,12 @@ for route,meta in META.items():
   page['mainEntity']={'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'item':place} for i,place in enumerate(locations)]}
  elif route=='/cursos/':
   h=d.xpath('//main//h1')[0];inner(h,'')
-  context=etree.SubElement(h,'span',{'class':'course-title-context'});context.text='Curso de inglês online';context.tail=' Live Class'
+  context=etree.SubElement(h,'span',{'class':'course-title-context'});context.text='Curso de inglês online e ao vivo';context.tail=' Live Class'
+  intro=d.xpath('//*[@id="live-class"]/div[@class="top"]/div[@class="text wow fadeIn"]/p')[0]
+  inner(intro,'O ');emphasis=etree.SubElement(intro,'strong');emphasis.text='Live Class';emphasis.tail=COPY['courses_intro'].removeprefix('O Live Class')
+  for heading in d.get_element_by_id('ondemand').xpath('.//li/h2'):
+   if 'Conteúdo on-demand' in heading.text_content() or 'United OnDemand opcional' in heading.text_content():
+    inner(heading,'United OnDemand opcional: ');emphasis=etree.SubElement(heading,'strong');emphasis.text='inglês para viagens, negócios';emphasis.tail=' e temas atuais.'
   for heading in d.xpath('//main//h4'):
    if heading.text_content().strip()=='O que você irá aprender:':
     heading.tag='h3'
@@ -88,18 +100,18 @@ for route,meta in META.items():
    if h.text_content().strip()=='Iniciando na United':h.tag='h2'
   updates={4:'A metodologia combina aulas ao vivo e prática do idioma. Sua evolução depende do nível inicial, da frequência e da dedicação aos estudos.',6:'O United Full reúne o Live Class e o Master Business em uma jornada de 24 meses: uma base para a comunicação do dia a dia e a aplicação do inglês no ambiente profissional.',13:'O Business é voltado à comunicação profissional. A equipe avalia seu nível de inglês para indicar a trilha adequada.',14:'O United Business oferece a opção de certificação internacional mediante avaliação TOEIC. Consulte a equipe para conhecer as condições e o percurso recomendado.'}
   for n,text in updates.items():inner(d.get_element_by_id(f'faq-{n}-answer'),text)
-  new=[('faq-escolher','Como escolher o melhor curso de inglês para mim?','Compare a modalidade das aulas, a duração da trilha, as oportunidades de conversação e a flexibilidade dos horários. O melhor curso de inglês para você combina seus objetivos com uma rotina de estudos possível de manter. Conheça as propostas do Live Class e do United Business.'),('faq-18-meses','Como funciona o inglês em 18 meses?','O Live Class tem uma trilha educacional de 18 meses, com aulas online e ao vivo e recursos de prática entre os encontros. Consulte a equipe para entender o percurso indicado ao seu nível e a frequência de estudos prevista.'),('faq-online','O curso online de inglês tem aulas ao vivo?','Sim. O Live Class combina aulas online e ao vivo, conversação ilimitada, storytelling com personagens exclusivos e conteúdos On Demand. Com o Jimmy, a prática pode continuar mesmo depois da aula.')]
   article=d.xpath('//main//article')[0]
-  for ident,q,a in new:
+  for entry in COPY['faq_additions']:
+   ident,q,a=entry['id'],entry['question'],entry['answer']
    existing=d.xpath('//*[@id="'+ident+'"]')
    if existing:existing[0].getparent().remove(existing[0])
    block=etree.SubElement(article,'div',{'class':'question','id':ident})
    b=etree.SubElement(block,'button',{'type':'button','class':'faq-toggle','aria-expanded':'false','aria-controls':ident+'-answer','id':ident+'-question'});b.text=q
    answer=etree.SubElement(block,'div',{'class':'text','id':ident+'-answer','aria-labelledby':ident+'-question'});etree.SubElement(answer,'p').text=a
    links=etree.SubElement(answer,'p',{'class':'faq-course-links'})
-   link=etree.SubElement(links,'a',href='/cursos/#live-class');link.text='Conheça o Live Class'
-   if ident=='faq-escolher':
-    link.tail=' · ';etree.SubElement(links,'a',href='/cursos/#united-business').text='Conheça o United Business'
+   for i,(href,label) in enumerate(entry['links']):
+    link=etree.SubElement(links,'a',href=href);link.text=label
+    if i<len(entry['links'])-1:link.tail=' · '
   # Derive the question index from the actual content so new search entries stay navigable.
   indexes=d.xpath('//ul[li/a[@data-faq-id]]')
   for index in indexes:
@@ -107,6 +119,8 @@ for route,meta in META.items():
    for block in article.xpath('./div[contains(concat(" ",normalize-space(@class)," ")," question ")]'):
     b=block.find('button');li=etree.SubElement(index,'li')
     link=etree.SubElement(li,'a',href='#'+block.get('id'),**{'data-faq-id':block.get('id')});link.text=b.text_content()
+ if route in ('/','/cursos/'):
+  inner(d.xpath('//*[@id="jimmy-united-idiomas"]//div[@class="text"]/p[not(@class)]')[0],COPY['jimmy'])
  # Old inline SVG icons reused gradient IDs. Keep each paint reference within its own SVG.
  counts=Counter(d.xpath('//*[@id]/@id'))
  for n,svg in enumerate(d.xpath('//svg')):

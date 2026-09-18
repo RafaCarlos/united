@@ -34,6 +34,10 @@ python3 scripts/export-production.py --mode production --output /tmp/united-prod
 
 Não publique o `robots.txt` de uma **exportação de prévia** no domínio oficial. Para uma prévia pública dentro de `/review/`, use também o `X-Robots-Tag` do fragmento Apache; o robots da raiz deve continuar permitindo o rastreamento das páginas comerciais.
 
+## Conteúdo para buscas e Search Console
+
+Os títulos e textos destacam inglês online e ao vivo, a trilha de 18 meses, conversação, storytelling e Jimmy 24/7. O OnDemand aparece como opcional, e o FAQ tem 22 perguntas. O mapa de intenção por página, a comparação com o site publicado e as etapas do Search Console estão em [MAPA-BUSCAS-E-SEARCH-CONSOLE.md](seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md). `seo/metadata.json` e `seo/content.json` controlam essa copy; o passo final de SEO reaplica os textos após os geradores de componentes.
+
 ## Reproduzir e validar
 
 Requer Python com `lxml` e Pillow (`requirements-review.txt`) e Node para os testes RD. A entrega estática não requer build para ser servida.
