@@ -1,0 +1,2144 @@
+{
+  "checked_started_at_utc": "2026-09-18T18:45:54.409593+00:00",
+  "checked_finished_at_utc": "2026-09-18T18:45:54.875512+00:00",
+  "checked_started_at_local": "2026-09-18T15:45:54.409593-03:00",
+  "checked_finished_at_local": "2026-09-18T15:45:54.875512-03:00",
+  "timezone": "America/Sao_Paulo",
+  "artifact_commit": "9684828520c7ae75d8d4a4f056889b5e560566fc",
+  "scope": "Read-only public HTTP checks, compared with the specified local Git commit; no deployment, Git mutation, account access, real Googlebot observation or Search Console index verification.",
+  "method": {
+    "concurrency": 4,
+    "timeout_seconds": 15,
+    "user_agent": "Mozilla/5.0 (compatible; UnitedSEOReview/1.0; public read-only audit)",
+    "not_real_googlebot": true
+  },
+  "commercial_pages": [
+    {
+      "route": "/",
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/",
+        "final_url": "https://www.unitedidiomas.com/",
+        "status": 200,
+        "content_type": "text/html",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.487698+00:00"
+      },
+      "published": {
+        "title": "Inglês em 18 meses | Curso online United Idiomas",
+        "description": [
+          "Conheça o Live Class: curso de inglês online e ao vivo, com trilha de 18 meses, conversação ilimitada e horários flexíveis. Fale inglês, faça United."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [],
+        "h1": [
+          "Você tem muitoa dizer.Fale inglês."
+        ],
+        "h2": [
+          "Live Class",
+          "Jimmy 24/7",
+          "Tudo conectado para o seu inglês avançar.",
+          "Live Class",
+          "Jimmy 24/7",
+          "United OnDemand",
+          "Inglês para o seupróximo passo.",
+          "Inglês para a vida.E para a carreira.",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 11,
+          "h3": 13,
+          "h4": 6,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 1,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": true,
+          "ingles_em_18_meses": true,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": true,
+          "storytelling": true
+        },
+        "index_blocking_meta": false
+      },
+      "artifact_at_commit": {
+        "title": "Inglês em 18 meses | Curso online United Idiomas",
+        "description": [
+          "Conheça o Live Class: curso de inglês online e ao vivo, com trilha de 18 meses, conversação ilimitada e horários flexíveis. Fale inglês, faça United."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [
+          {
+            "name": "robots",
+            "content": "index,follow,max-image-preview:large"
+          }
+        ],
+        "h1": [
+          "Você tem muitoa dizer.Fale inglês."
+        ],
+        "h2": [
+          "Live Class",
+          "Jimmy 24/7",
+          "Tudo conectado para o seu inglês avançar.",
+          "Live Class",
+          "Jimmy 24/7",
+          "United OnDemand",
+          "Inglês para o seupróximo passo.",
+          "Inglês para a vida.E para a carreira.",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 11,
+          "h3": 13,
+          "h4": 6,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 1,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": true,
+          "ingles_em_18_meses": true,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": true,
+          "storytelling": true
+        },
+        "index_blocking_meta": false
+      },
+      "differences": [
+        "robots_meta"
+      ]
+    },
+    {
+      "route": "/cursos/",
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/cursos/",
+        "final_url": "https://www.unitedidiomas.com/cursos/",
+        "status": 200,
+        "content_type": "text/html",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.506342+00:00"
+      },
+      "published": {
+        "title": "Cursos de inglês online: Live Class e Business | United",
+        "description": [
+          "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/cursos/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [],
+        "h1": [
+          "Live Class"
+        ],
+        "h2": [
+          "Duração: 18 meses de aprendizado acelerado.",
+          "Flexibilidade total: agende e reagende aulas no aplicativo.",
+          "Foco na conversação: Fluência desenvolvida de forma natural.",
+          "De 1 a 5 alunos por sala",
+          "Reach 4 Series",
+          "Modalidades",
+          "Bônus: acesso à plataforma exclusiva Live Class.",
+          "Aulas 100% ao vivo, de onde você quiser!",
+          "Aulas ao vivo: Foco na conversação com interação em tempo real.",
+          "Exercícios interativos: feedback imediato",
+          "Conteúdo on-demand: inglês para viagens, negócios e temas atuais",
+          "e mais benefícios:",
+          "Jimmy 24/7",
+          "United Business",
+          "Destaques do United Business",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 18,
+          "h3": 9,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [
+          "PRÉVIA · UNITED"
+        ],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": false,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": false,
+          "storytelling": false
+        },
+        "index_blocking_meta": false
+      },
+      "artifact_at_commit": {
+        "title": "Cursos de inglês online: Live Class e Business | United",
+        "description": [
+          "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/cursos/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [
+          {
+            "name": "robots",
+            "content": "index,follow,max-image-preview:large"
+          }
+        ],
+        "h1": [
+          "Curso de inglês online Live Class"
+        ],
+        "h2": [
+          "Duração: 18 meses de aprendizado acelerado.",
+          "Flexibilidade total: agende e reagende aulas no aplicativo.",
+          "Foco na conversação: Fluência desenvolvida de forma natural.",
+          "De 1 a 5 alunos por sala",
+          "Reach 4 Series",
+          "Modalidades",
+          "Bônus: acesso à plataforma exclusiva Live Class.",
+          "Aulas 100% ao vivo, de onde você quiser!",
+          "Aulas ao vivo: Foco na conversação com interação em tempo real.",
+          "Exercícios interativos: feedback imediato",
+          "Conteúdo on-demand: inglês para viagens, negócios e temas atuais",
+          "e mais benefícios:",
+          "Jimmy 24/7",
+          "United Business",
+          "Destaques do United Business",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 18,
+          "h3": 9,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": false,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": false,
+          "storytelling": false
+        },
+        "index_blocking_meta": false
+      },
+      "differences": [
+        "robots_meta",
+        "h1",
+        "preview_labels"
+      ]
+    },
+    {
+      "route": "/quem-somos/",
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/quem-somos/",
+        "final_url": "https://www.unitedidiomas.com/quem-somos/",
+        "status": 200,
+        "content_type": "text/html",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.506298+00:00"
+      },
+      "published": {
+        "title": "Escola de inglês United Idiomas | Quem somos",
+        "description": [
+          "Conheça a United Idiomas, escola de inglês com mais de 150 mil alunos em sua história. Aulas online, metodologia interativa e unidades híbridas."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/quem-somos/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [],
+        "h1": [
+          "Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades."
+        ],
+        "h2": [
+          "Mais de 150 mil alunos em nossa história. Inglês que faz parte da vida.",
+          "Conheça nossas unidades híbridas",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 5,
+          "h3": 13,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [
+          "PRÉVIA · UNITED"
+        ],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": false,
+          "trilha_18_meses": false,
+          "conversacao": true,
+          "jimmy": false,
+          "on_demand": false,
+          "storytelling": false
+        },
+        "index_blocking_meta": false
+      },
+      "artifact_at_commit": {
+        "title": "Escola de inglês United Idiomas | Quem somos",
+        "description": [
+          "Conheça a United Idiomas, escola de inglês com mais de 150 mil alunos em sua história. Aulas online, metodologia interativa e unidades híbridas."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/quem-somos/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [
+          {
+            "name": "robots",
+            "content": "index,follow,max-image-preview:large"
+          }
+        ],
+        "h1": [
+          "Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades."
+        ],
+        "h2": [
+          "Mais de 150 mil alunos em nossa história. Inglês que faz parte da vida.",
+          "Conheça nossas unidades híbridas",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 5,
+          "h3": 13,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": false,
+          "trilha_18_meses": false,
+          "conversacao": true,
+          "jimmy": false,
+          "on_demand": false,
+          "storytelling": false
+        },
+        "index_blocking_meta": false
+      },
+      "differences": [
+        "robots_meta",
+        "preview_labels"
+      ]
+    },
+    {
+      "route": "/faq/",
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/faq/",
+        "final_url": "https://www.unitedidiomas.com/faq/",
+        "status": 200,
+        "content_type": "text/html",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.499378+00:00"
+      },
+      "published": {
+        "title": "Dúvidas sobre o curso de inglês | United Idiomas",
+        "description": [
+          "Como escolher o melhor curso de inglês para você? Tire dúvidas sobre inglês em 18 meses, aulas online, conversação e certificação na United Idiomas."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/faq/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [],
+        "h1": [
+          "Tire suas dúvidas sobre nossos cursos de inglês"
+        ],
+        "h2": [
+          "Iniciando na United",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 4,
+          "h3": 3,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [
+          "PRÉVIA · UNITED"
+        ],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": true,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": true,
+          "storytelling": true
+        },
+        "index_blocking_meta": false
+      },
+      "artifact_at_commit": {
+        "title": "Dúvidas sobre o curso de inglês | United Idiomas",
+        "description": [
+          "Como escolher o melhor curso de inglês para você? Tire dúvidas sobre inglês em 18 meses, aulas online, conversação e certificação na United Idiomas."
+        ],
+        "canonical": [
+          "https://www.unitedidiomas.com/faq/"
+        ],
+        "lang": "pt-BR",
+        "robots_meta": [
+          {
+            "name": "robots",
+            "content": "index,follow,max-image-preview:large"
+          }
+        ],
+        "h1": [
+          "Tire suas dúvidas sobre nossos cursos de inglês"
+        ],
+        "h2": [
+          "Iniciando na United",
+          "Resultados reais e comprovados.",
+          "Seja aluno da United.",
+          "Vamos conversar?"
+        ],
+        "heading_counts": {
+          "h1": 1,
+          "h2": 4,
+          "h3": 3,
+          "h4": 2,
+          "h5": 0,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 1,
+        "rd_mount_count": 1,
+        "gtm_home_container_count": 0,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": true,
+          "trilha_18_meses": true,
+          "conversacao": true,
+          "jimmy": true,
+          "on_demand": true,
+          "storytelling": true
+        },
+        "index_blocking_meta": false
+      },
+      "differences": [
+        "robots_meta",
+        "preview_labels"
+      ]
+    }
+  ],
+  "other_public_resources": [
+    {
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/robots.txt",
+        "final_url": "https://www.unitedidiomas.com/robots.txt",
+        "status": 404,
+        "content_type": "text/html; charset=UTF-8",
+        "x_robots_tag": [],
+        "error": "HTTP Error 404: Not Found",
+        "fetched_at_utc": "2026-09-18T18:45:54.556432+00:00"
+      }
+    },
+    {
+      "http": {
+        "requested_url": "https://www.unitedidiomas.com/sitemap.xml",
+        "final_url": "https://www.unitedidiomas.com/sitemap.xml",
+        "status": 200,
+        "content_type": "application/xml",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.564406+00:00"
+      },
+      "xml_type": "urlset",
+      "entry_count": 186,
+      "records": [
+        {
+          "loc": "https://www.unitedidiomas.com/",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/quero-ser-aluno",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/cursos-de-ingles-unitedidiomas",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/escola-ingles-united-idiomas",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades-united-idiomas",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/seja-um-franqueado",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/parcerias-corporativas",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-melhor-curso-de-ingles",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-curso/curso-de-ingles-para-viagem",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-curso/curso-de-ingles-para-carreira",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-curso/mentoring-ingles",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-curso/curso-de-ingles-para-certificacao-toefl",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/o-curso/curso-de-ingles-para-empreendedor",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/cursos/curso-de-ingles-online",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/cursos/curso-de-ingles-presencial-ead",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/cursos/curso-de-ingles-teens",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/cursos/curso-de-ingles-kids",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-goiania",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-chapeco",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-joacaba",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-rio-do-sul",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-cornelio-procopio",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-curitiba",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-londrina",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-maringa",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-alphaville",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-brooklyn",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-campinas",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-consolacao",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-franquias",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-interlagos",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-ipiranga",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-itaim-bibi",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-jabaquara",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-jardins",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-moema",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-morumbi",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-osasco",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-paraiso",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-pinheiros",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-pirituba",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-santo-amaro",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-santo-andre",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-sao-caetano-sul",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-tatuape",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/pdf/united-expansao.pdf",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/pdf/united-idiomas-apresentacao.pdf",
+          "lastmod": "2024-03-19T04:22:36+01:00"
+        },
+        {
+          "loc": "https://www.unitedidiomas.com/unidades/curso-de-ingles-fortaleza",
+          "lastmod": "2024-03-19T04:22:38+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/",
+          "lastmod": "2024-03-19T04:22:39+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-e-curiosidades/",
+          "lastmod": "2024-03-19T04:22:46+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-negocios/",
+          "lastmod": "2024-03-19T04:22:46+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/united-idiomas/",
+          "lastmod": "2024-03-19T04:22:48+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/materiais-ricos/",
+          "lastmod": "2024-03-19T04:22:49+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+          "lastmod": "2024-03-19T04:22:50+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/",
+          "lastmod": "2024-03-19T04:22:51+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+          "lastmod": "2024-03-19T04:22:52+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+          "lastmod": "2024-03-19T04:22:52+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+          "lastmod": "2024-03-19T04:22:54+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+          "lastmod": "2024-03-19T04:22:55+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+          "lastmod": "2024-03-19T04:22:55+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+          "lastmod": "2024-03-19T04:22:58+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+          "lastmod": "2024-03-19T04:22:59+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-natal-ingles/",
+          "lastmod": "2024-03-19T04:23:00+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/frases-uteis-compras-ingles/",
+          "lastmod": "2024-03-19T04:23:01+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/termos-ingles-profissionais-rh/",
+          "lastmod": "2024-03-19T04:23:03+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprenda-40-termos-financeiros-em-ingles/",
+          "lastmod": "2024-03-19T04:23:04+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/tudo-sobre-intercambio-australia/",
+          "lastmod": "2024-03-19T04:23:07+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/halloween-origem-vocabulario/",
+          "lastmod": "2024-03-19T04:23:07+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-canada/",
+          "lastmod": "2024-03-19T04:23:09+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-medicos-profissionais-saude/",
+          "lastmod": "2024-03-19T04:23:10+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/importancia-musica-aprendizado-ingles/",
+          "lastmod": "2024-03-19T04:23:10+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-falar-ingles-publico/",
+          "lastmod": "2024-03-19T04:23:12+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/",
+          "lastmod": "2024-03-19T04:23:14+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/ingles-para-negocios/",
+          "lastmod": "2024-03-19T04:23:16+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/2/",
+          "lastmod": "2024-03-19T04:23:17+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-para-preparar-toefl/",
+          "lastmod": "2024-03-19T04:23:19+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/beneficios-intercambio-conheca/",
+          "lastmod": "2024-03-19T04:23:19+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+          "lastmod": "2024-03-19T04:23:20+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-melhorar-escuta-ingles/",
+          "lastmod": "2024-03-19T04:23:22+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+          "lastmod": "2024-03-19T04:23:22+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saint-patricks-day-eua/",
+          "lastmod": "2024-03-19T04:23:23+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conversacao-ingles-importancia/",
+          "lastmod": "2024-03-19T04:23:25+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+          "lastmod": "2024-03-19T04:23:25+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+          "lastmod": "2024-03-19T04:23:26+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+          "lastmod": "2024-03-19T04:23:28+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+          "lastmod": "2024-03-19T04:23:29+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+          "lastmod": "2024-03-19T04:23:31+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+          "lastmod": "2024-03-19T04:23:31+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+          "lastmod": "2024-03-19T04:23:32+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+          "lastmod": "2024-03-19T04:23:34+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+          "lastmod": "2024-03-19T04:23:34+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+          "lastmod": "2024-03-19T04:23:35+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+          "lastmod": "2024-03-19T04:23:37+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+          "lastmod": "2024-03-19T04:23:37+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+          "lastmod": "2024-03-19T04:23:38+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/speak-talk-say-tell/",
+          "lastmod": "2024-03-19T04:23:41+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/",
+          "lastmod": "2024-03-19T04:23:41+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-como-se-preparar-para-um-intercambio/",
+          "lastmod": "2024-03-19T04:23:41+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+          "lastmod": "2024-03-19T04:23:43+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+          "lastmod": "2024-03-19T04:23:44+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+          "lastmod": "2024-03-19T04:23:44+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+          "lastmod": "2024-03-19T04:23:46+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+          "lastmod": "2024-03-19T04:23:47+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-secretaria-executiva/",
+          "lastmod": "2024-03-19T04:23:48+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+          "lastmod": "2024-03-19T04:23:49+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+          "lastmod": "2024-03-19T04:23:50+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+          "lastmod": "2024-03-19T04:23:51+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+          "lastmod": "2024-03-19T04:23:52+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+          "lastmod": "2024-03-19T04:23:53+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/2/",
+          "lastmod": "2024-03-19T04:23:55+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+          "lastmod": "2024-03-19T04:23:56+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+          "lastmod": "2024-03-19T04:23:56+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/ingles-para-negocios/page/2/",
+          "lastmod": "2024-03-19T04:23:59+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/3/",
+          "lastmod": "2024-03-19T04:23:59+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+          "lastmod": "2024-03-19T04:24:01+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+          "lastmod": "2024-03-19T04:24:02+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+          "lastmod": "2024-03-19T04:24:02+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+          "lastmod": "2024-03-19T04:24:04+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-vantagens-de-estudar-ingles-online/",
+          "lastmod": "2024-03-19T04:24:06+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+          "lastmod": "2024-03-19T04:24:06+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+          "lastmod": "2024-03-19T04:24:07+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+          "lastmod": "2024-03-19T04:24:09+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/labor-day/",
+          "lastmod": "2024-03-19T04:24:09+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+          "lastmod": "2024-03-19T04:24:11+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+          "lastmod": "2024-03-19T04:24:13+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+          "lastmod": "2024-03-19T04:24:14+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+          "lastmod": "2024-03-19T04:24:15+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/page/2/",
+          "lastmod": "2024-03-19T04:24:17+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-transporte-publico/",
+          "lastmod": "2024-03-19T04:24:20+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/thanksgiving-day-curiosidades/",
+          "lastmod": "2024-03-19T04:24:21+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/origem-black-friday/",
+          "lastmod": "2024-03-19T04:24:21+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/3/",
+          "lastmod": "2024-03-19T04:24:23+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+          "lastmod": "2024-03-19T04:24:24+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/ingles-para-negocios/page/3/",
+          "lastmod": "2024-03-19T04:24:25+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/4/",
+          "lastmod": "2024-03-19T04:24:27+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+          "lastmod": "2024-03-19T04:24:27+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/urafael/",
+          "lastmod": "2024-03-19T04:24:29+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+          "lastmod": "2024-03-19T04:24:30+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/beneficios-aprender-ingles-infancia/",
+          "lastmod": "2024-03-19T04:24:32+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/substantivos-coletivos-em-ingles/",
+          "lastmod": "2024-03-19T04:24:33+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dia-dos-namorados-outra-data-brasil/",
+          "lastmod": "2024-03-19T04:24:33+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-dicas-aprender-ingles-rapido/",
+          "lastmod": "2024-03-19T04:24:35+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/erros-aprendizado-ingles/",
+          "lastmod": "2024-03-19T04:24:36+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/page/3/",
+          "lastmod": "2024-03-19T04:24:36+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+          "lastmod": "2024-03-19T04:24:39+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/phrasal-verbs-o-que-sao/",
+          "lastmod": "2024-03-19T04:24:40+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-preparar-intercambio-irlanda/",
+          "lastmod": "2024-03-19T04:24:40+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+          "lastmod": "2024-03-19T04:24:42+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/expressoes-ingles-usar-restaurante/",
+          "lastmod": "2024-03-19T04:24:43+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/4/",
+          "lastmod": "2024-03-19T04:24:43+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/5/",
+          "lastmod": "2024-03-19T04:24:46+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-ingles-usado-no-halloween/",
+          "lastmod": "2024-03-19T04:24:47+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/business-english-30-termos/",
+          "lastmod": "2024-03-19T04:24:48+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sotaques-ingles-diferencas/",
+          "lastmod": "2024-03-19T04:24:49+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-funciona-cerebro-bilingue/",
+          "lastmod": "2024-03-19T04:24:50+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/page/4/",
+          "lastmod": "2024-03-19T04:24:52+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+          "lastmod": "2024-03-19T04:24:54+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-esportes-americanos-vocabulario/",
+          "lastmod": "2024-03-19T04:24:54+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/5/",
+          "lastmod": "2024-03-19T04:24:55+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/6/",
+          "lastmod": "2024-03-19T04:24:57+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/independence-day/",
+          "lastmod": "2024-03-19T04:24:58+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+          "lastmod": "2024-03-19T04:24:59+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/page/5/",
+          "lastmod": "2024-03-19T04:25:00+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/6/",
+          "lastmod": "2024-03-19T04:25:02+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/7/",
+          "lastmod": "2024-03-19T04:25:03+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+          "lastmod": "2024-03-19T04:25:05+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/united-idiomas/page/6/",
+          "lastmod": "2024-03-19T04:25:05+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/7/",
+          "lastmod": "2024-03-19T04:25:07+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/8/",
+          "lastmod": "2024-03-19T04:25:08+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/8/",
+          "lastmod": "2024-03-19T04:25:10+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/9/",
+          "lastmod": "2024-03-19T04:25:10+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/9/",
+          "lastmod": "2024-03-19T04:25:13+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/10/",
+          "lastmod": "2024-03-19T04:25:13+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/11/",
+          "lastmod": "2024-03-19T04:25:16+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+          "lastmod": "2024-03-19T04:25:16+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/10/",
+          "lastmod": "2024-03-19T04:25:17+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/12/",
+          "lastmod": "2024-03-19T04:25:20+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/11/",
+          "lastmod": "2024-03-19T04:25:20+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/13/",
+          "lastmod": "2024-03-19T04:25:23+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/categoria/dicas-e-curiosidades/page/12/",
+          "lastmod": "2024-03-19T04:25:23+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/14/",
+          "lastmod": "2024-03-19T04:25:26+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/15/",
+          "lastmod": "2024-03-19T04:25:29+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/16/",
+          "lastmod": "2024-03-19T04:25:32+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/17/",
+          "lastmod": "2024-03-19T04:25:35+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/18/",
+          "lastmod": "2024-03-19T04:25:38+01:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author/ublogadmin/page/19/",
+          "lastmod": "2024-03-19T04:25:42+01:00"
+        }
+      ]
+    },
+    {
+      "http": {
+        "requested_url": "https://unitedidiomas.com/blog/",
+        "final_url": "https://unitedidiomas.com/blog/",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "x_robots_tag": [],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.788359+00:00"
+      },
+      "page": {
+        "title": "Home (blog) | Blog United Idiomas",
+        "description": [
+          "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD."
+        ],
+        "canonical": [
+          "https://unitedidiomas.com/blog/"
+        ],
+        "lang": "pt-PT",
+        "robots_meta": [
+          {
+            "name": "robots",
+            "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+          }
+        ],
+        "h1": [
+          "",
+          "Blog"
+        ],
+        "h2": [
+          "Eventos internacionais em setembro: como aproveitar festivais e feiras usando o inglês",
+          "Como usar o inglês em viagens durante o outono europeu: dicas para quem vai à Europa entre setembro e novembro",
+          "O inglês que a IA ainda não ensina: habilidades humanas que continuam decisivas na fluência",
+          "Aprender inglês sozinho ou com acompanhamento? O que muda na velocidade e na qualidade dos resultados",
+          "Como criar uma rotina de imersão em inglês dentro de casa usando conteúdos que você já consome",
+          "Vocabulário essencial para viajantes: o que realmente usar em aeroportos, hotéis e passeios"
+        ],
+        "heading_counts": {
+          "h1": 2,
+          "h2": 6,
+          "h3": 0,
+          "h4": 0,
+          "h5": 1,
+          "h6": 0
+        },
+        "preview_labels": [],
+        "rd_loader_count": 1,
+        "rd_sdk_count": 2,
+        "rd_mount_count": 0,
+        "gtm_home_container_count": 1,
+        "requested_terms_in_server_body_text": {
+          "ingles_online_e_ao_vivo": false,
+          "ingles_em_18_meses": false,
+          "trilha_18_meses": false,
+          "conversacao": false,
+          "jimmy": false,
+          "on_demand": false,
+          "storytelling": false
+        },
+        "index_blocking_meta": false
+      }
+    },
+    {
+      "http": {
+        "requested_url": "https://unitedidiomas.com/blog/sitemap_index.xml",
+        "final_url": "https://unitedidiomas.com/blog/sitemap_index.xml",
+        "status": 200,
+        "content_type": "text/xml; charset=UTF-8",
+        "x_robots_tag": [
+          "noindex, follow"
+        ],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.642506+00:00"
+      },
+      "xml_type": "sitemapindex",
+      "entry_count": 5,
+      "records": [
+        {
+          "loc": "https://unitedidiomas.com/blog/post-sitemap.xml",
+          "lastmod": "2026-09-18T17:20:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/page-sitemap.xml",
+          "lastmod": "2022-10-02T23:31:54+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/category-sitemap.xml",
+          "lastmod": "2026-09-18T17:20:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/post_tag-sitemap.xml",
+          "lastmod": "2026-09-18T17:20:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/author-sitemap.xml",
+          "lastmod": "2022-08-09T19:43:47+00:00"
+        }
+      ]
+    },
+    {
+      "http": {
+        "requested_url": "https://unitedidiomas.com/blog/post-sitemap.xml",
+        "final_url": "https://unitedidiomas.com/blog/post-sitemap.xml",
+        "status": 200,
+        "content_type": "text/xml; charset=UTF-8",
+        "x_robots_tag": [
+          "noindex, follow"
+        ],
+        "location": null,
+        "fetched_at_utc": "2026-09-18T18:45:54.704419+00:00"
+      },
+      "xml_type": "urlset",
+      "entry_count": 182,
+      "records": [
+        {
+          "loc": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+          "lastmod": "2022-08-09T19:55:01+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+          "lastmod": "2022-08-09T19:55:11+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+          "lastmod": "2022-08-09T19:55:19+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/independence-day/",
+          "lastmod": "2022-08-09T19:55:33+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+          "lastmod": "2022-08-09T19:56:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+          "lastmod": "2022-08-09T19:56:11+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+          "lastmod": "2022-08-09T19:56:18+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+          "lastmod": "2022-08-09T19:56:26+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+          "lastmod": "2022-08-09T19:56:34+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+          "lastmod": "2022-08-09T19:56:43+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+          "lastmod": "2022-08-09T19:57:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+          "lastmod": "2022-08-09T19:57:24+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+          "lastmod": "2022-08-09T19:57:35+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+          "lastmod": "2022-08-09T19:57:43+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+          "lastmod": "2022-08-09T19:57:53+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+          "lastmod": "2022-08-09T19:58:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+          "lastmod": "2022-08-09T19:58:13+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+          "lastmod": "2022-08-09T19:58:22+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+          "lastmod": "2022-08-09T19:58:34+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+          "lastmod": "2022-08-09T19:59:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+          "lastmod": "2022-08-09T19:59:23+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+          "lastmod": "2022-08-09T19:59:34+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+          "lastmod": "2022-08-09T19:59:44+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+          "lastmod": "2022-08-09T19:59:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+          "lastmod": "2022-08-09T20:00:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+          "lastmod": "2022-08-09T20:00:12+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+          "lastmod": "2022-08-09T20:00:43+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+          "lastmod": "2022-08-09T20:00:51+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+          "lastmod": "2022-08-09T20:01:00+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+          "lastmod": "2022-08-09T20:01:10+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+          "lastmod": "2022-08-09T20:01:18+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+          "lastmod": "2022-08-09T20:01:26+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+          "lastmod": "2022-08-09T20:01:36+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-secretaria-executiva/",
+          "lastmod": "2022-08-19T09:00:35+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/labor-day/",
+          "lastmod": "2022-09-02T09:00:30+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/speak-talk-say-tell/",
+          "lastmod": "2022-09-09T09:00:12+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+          "lastmod": "2022-09-23T09:00:24+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+          "lastmod": "2022-10-14T07:00:31+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-vantagens-de-estudar-ingles-online/",
+          "lastmod": "2022-10-07T00:07:25+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-ingles-usado-no-halloween/",
+          "lastmod": "2022-10-21T07:00:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+          "lastmod": "2022-11-01T19:50:57+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+          "lastmod": "2022-11-11T07:00:09+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprenda-40-termos-financeiros-em-ingles/",
+          "lastmod": "2022-11-18T07:00:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+          "lastmod": "2022-12-09T07:00:34+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+          "lastmod": "2022-12-02T07:00:33+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+          "lastmod": "2022-11-29T21:30:35+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+          "lastmod": "2022-12-14T13:06:01+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+          "lastmod": "2022-12-16T07:00:05+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+          "lastmod": "2023-01-06T07:00:07+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saiba-como-se-preparar-para-um-intercambio/",
+          "lastmod": "2023-01-13T07:00:34+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+          "lastmod": "2023-01-20T07:00:47+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+          "lastmod": "2023-02-17T07:00:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+          "lastmod": "2023-02-03T07:00:44+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+          "lastmod": "2023-02-10T07:00:47+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conversacao-ingles-importancia/",
+          "lastmod": "2023-03-10T19:08:16+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/business-english-30-termos/",
+          "lastmod": "2023-03-10T19:08:27+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/saint-patricks-day-eua/",
+          "lastmod": "2023-03-17T07:00:24+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-melhorar-escuta-ingles/",
+          "lastmod": "2023-04-20T01:41:44+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-funciona-cerebro-bilingue/",
+          "lastmod": "2023-04-20T01:42:38+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/erros-aprendizado-ingles/",
+          "lastmod": "2023-05-15T19:06:16+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sotaques-ingles-diferencas/",
+          "lastmod": "2023-05-15T19:07:04+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/beneficios-intercambio-conheca/",
+          "lastmod": "2023-05-22T21:40:14+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-dicas-aprender-ingles-rapido/",
+          "lastmod": "2023-05-26T07:00:59+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dia-dos-namorados-outra-data-brasil/",
+          "lastmod": "2023-06-09T19:31:53+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/substantivos-coletivos-em-ingles/",
+          "lastmod": "2023-06-16T18:53:07+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/beneficios-aprender-ingles-infancia/",
+          "lastmod": "2023-06-24T02:36:40+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-falar-ingles-publico/",
+          "lastmod": "2023-07-07T21:02:45+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/importancia-musica-aprendizado-ingles/",
+          "lastmod": "2023-07-14T07:00:57+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/termos-ingles-profissionais-rh/",
+          "lastmod": "2023-07-21T07:00:10+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-esportes-americanos-vocabulario/",
+          "lastmod": "2023-08-18T21:38:20+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/expressoes-ingles-usar-restaurante/",
+          "lastmod": "2023-08-21T07:00:47+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+          "lastmod": "2023-08-25T14:24:16+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-preparar-intercambio-irlanda/",
+          "lastmod": "2023-09-08T07:00:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/phrasal-verbs-o-que-sao/",
+          "lastmod": "2023-09-15T21:34:27+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dicas-para-preparar-toefl/",
+          "lastmod": "2023-09-25T10:57:14+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-medicos-profissionais-saude/",
+          "lastmod": "2023-10-24T12:13:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-canada/",
+          "lastmod": "2023-10-24T12:13:30+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/halloween-origem-vocabulario/",
+          "lastmod": "2023-10-27T07:00:23+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/tudo-sobre-intercambio-australia/",
+          "lastmod": "2023-11-10T17:03:05+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/origem-black-friday/",
+          "lastmod": "2023-11-20T13:19:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-transporte-publico/",
+          "lastmod": "2023-12-08T07:00:25+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/frases-uteis-compras-ingles/",
+          "lastmod": "2023-12-15T07:00:13+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/thanksgiving-day-curiosidades/",
+          "lastmod": "2023-12-13T18:01:48+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-natal-ingles/",
+          "lastmod": "2023-12-22T18:37:15+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+          "lastmod": "2024-01-25T02:27:29+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+          "lastmod": "2024-01-30T12:00:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+          "lastmod": "2024-02-20T16:09:26+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+          "lastmod": "2024-02-20T16:11:51+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+          "lastmod": "2024-02-28T12:25:49+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+          "lastmod": "2024-03-14T12:22:53+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+          "lastmod": "2024-03-14T12:36:04+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+          "lastmod": "2024-03-18T07:00:46+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+          "lastmod": "2024-03-20T21:29:36+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+          "lastmod": "2024-04-12T07:00:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+          "lastmod": "2024-04-19T07:00:32+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dia-das-maes-anna-jarvis/",
+          "lastmod": "2024-05-12T07:00:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+          "lastmod": "2024-05-15T13:12:41+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sotaques-ingles/",
+          "lastmod": "2024-05-24T17:47:53+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/pratos-tipicos-canada/",
+          "lastmod": "2024-05-31T13:36:22+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/livros-ingles/",
+          "lastmod": "2024-06-17T21:34:17+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/modal-verbs/",
+          "lastmod": "2024-06-18T07:03:07+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/importancia-independence-day/",
+          "lastmod": "2024-07-04T05:00:17+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-fluente-home-office/",
+          "lastmod": "2024-07-03T13:24:40+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/treinar-ingles-series/",
+          "lastmod": "2024-07-16T06:25:13+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/remoto-presencial-united/",
+          "lastmod": "2024-08-06T14:06:33+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/entrevista-emprego-ingles/",
+          "lastmod": "2024-08-06T16:37:33+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/expandir-vocabulario-ingles/",
+          "lastmod": "2024-08-13T17:42:47+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/guia-prepositions/",
+          "lastmod": "2024-08-21T17:18:39+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-africa-do-sul/",
+          "lastmod": "2024-09-10T13:15:04+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/though-thought-tough/",
+          "lastmod": "2024-09-24T14:44:22+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+          "lastmod": "2024-09-25T06:53:20+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/principais-girias-ingles/",
+          "lastmod": "2024-10-08T11:41:56+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/palavras-frases-ingles-hoteis/",
+          "lastmod": "2024-10-14T12:10:41+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/halloween-guia-completo/",
+          "lastmod": "2024-10-31T05:14:18+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/verb-tenses/",
+          "lastmod": "2024-11-07T18:23:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/thanksgiving-day-dia-especial/",
+          "lastmod": "2024-11-26T19:55:41+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/veterans-day-importancia/",
+          "lastmod": "2024-11-26T19:58:19+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/carreiras-ingles-fluente/",
+          "lastmod": "2024-12-06T12:48:51+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/certificados-internacionais-ingles/",
+          "lastmod": "2024-12-11T14:22:05+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/natal-lingua-inglesa/",
+          "lastmod": "2024-12-17T06:26:08+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/will-going-to/",
+          "lastmod": "2025-01-08T18:40:07+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/carreira-2025-united/",
+          "lastmod": "2025-01-15T06:58:40+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/reunioes-em-ingles/",
+          "lastmod": "2025-01-29T06:52:03+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/treinar-ingles-inteligencia-artificial/",
+          "lastmod": "2025-02-11T12:12:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/carnaval-nos-eua/",
+          "lastmod": "2025-02-14T06:21:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/conjuncoes-conectivos/",
+          "lastmod": "2025-02-25T11:21:24+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-ead/",
+          "lastmod": "2025-03-11T17:14:17+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/comemoracao-st-patrick-day/",
+          "lastmod": "2025-03-20T12:10:06+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-united-carreiras/",
+          "lastmod": "2025-04-08T19:55:54+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/intercambio-como-se-preparar/",
+          "lastmod": "2025-04-08T19:58:32+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-americano-britanico-diferencas/",
+          "lastmod": "2025-04-14T12:11:20+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/erros-gramaticais-ingles/",
+          "lastmod": "2025-04-22T17:11:00+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/o-que-sao-collocations/",
+          "lastmod": "2025-05-06T17:57:59+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/e-mails-profissionais/",
+          "lastmod": "2025-05-14T12:07:22+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/soft-skills-ingles/",
+          "lastmod": "2025-05-28T18:36:08+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/nivel-profissional-ingles/",
+          "lastmod": "2025-06-13T12:11:19+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-mudar-carreira/",
+          "lastmod": "2025-06-24T16:40:33+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/sete-destinos-ingles/",
+          "lastmod": "2025-07-08T13:28:04+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/filmes-series-listening/",
+          "lastmod": "2025-07-17T12:26:42+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/treinar-ingles-intercambio/",
+          "lastmod": "2025-08-12T05:51:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-linkedin/",
+          "lastmod": "2025-08-19T05:09:38+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/phrasal-verbs-mais-usados/",
+          "lastmod": "2025-08-22T12:15:58+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/como-usar-get/",
+          "lastmod": "2025-08-25T11:57:30+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-carreira-tecnologia/",
+          "lastmod": "2025-09-02T21:21:41+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/tempos-verbais-ingles/",
+          "lastmod": "2025-09-10T12:57:56+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/cinco-motivos-hoje-united-idiomas/",
+          "lastmod": "2025-09-19T13:26:16+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprenda-20-adjetivos-ingles/",
+          "lastmod": "2025-09-30T20:31:09+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-nova-zelandia/",
+          "lastmod": "2025-10-09T05:17:32+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/negociar-salario-beneficios-ingles/",
+          "lastmod": "2025-11-18T12:14:13+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-networking/",
+          "lastmod": "2025-11-24T11:21:10+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/pais-ideal-intercambio/",
+          "lastmod": "2025-11-28T11:49:11+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/too-enough-very/",
+          "lastmod": "2025-12-03T19:12:37+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/expressoes-e-mails/",
+          "lastmod": "2025-12-08T10:37:08+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/adverbs-frequency/",
+          "lastmod": "2025-12-16T05:44:59+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/perder-nervosismo-conversar-em-ingles/",
+          "lastmod": "2025-12-23T05:50:53+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-fluente-mercado-corporativo/",
+          "lastmod": "2026-01-30T19:53:12+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/frases-ingles-restaurantes/",
+          "lastmod": "2026-01-30T19:53:21+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-ingles-rotina-corrida/",
+          "lastmod": "2026-01-30T19:53:37+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+          "lastmod": "2026-03-13T05:41:24+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-ingles-profissionais-ocupados/",
+          "lastmod": "2026-03-04T12:48:19+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-corporativo/",
+          "lastmod": "2026-03-06T05:59:42+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-liderar-reunioes/",
+          "lastmod": "2026-03-18T02:29:58+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/curso-ingles-corporativo/",
+          "lastmod": "2026-03-24T04:02:06+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/selo-excelencia-franchising-united-idiomas/",
+          "lastmod": "2026-03-19T18:49:27+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-fluente-carreira/",
+          "lastmod": "2026-03-31T12:46:25+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+          "lastmod": "2026-04-14T04:32:02+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-para-viagem/",
+          "lastmod": "2026-04-08T13:34:14+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/",
+          "lastmod": "2026-04-20T12:24:16+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-profissional-trabalho/",
+          "lastmod": "2026-05-05T04:56:09+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-viagens-internacionais/",
+          "lastmod": "2026-05-12T04:27:40+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/tempos-verbais-ingles-2/",
+          "lastmod": "2026-05-19T04:32:43+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ia-aprender-ingles/",
+          "lastmod": "2026-06-02T04:05:17+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/diferencas-ingles-paises/",
+          "lastmod": "2026-06-09T04:52:41+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aumentar-vocabulario-ingles/",
+          "lastmod": "2026-06-16T04:09:49+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-viajar-europa/",
+          "lastmod": "2026-06-29T11:19:49+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/rotina-ingles-ia/",
+          "lastmod": "2026-07-14T04:17:01+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/vocabulario-ingles-viagem/",
+          "lastmod": "2026-07-23T11:48:17+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ia-aprender-ingles-habilidades-humanas/",
+          "lastmod": "2026-08-24T04:13:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/imersao-ingles-em-casa/",
+          "lastmod": "2026-08-10T18:00:55+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/aprender-ingles-sozinho-ou-com-professor/",
+          "lastmod": "2026-08-21T11:44:57+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-viajar-europa-outono/",
+          "lastmod": "2026-09-08T04:55:08+00:00"
+        },
+        {
+          "loc": "https://unitedidiomas.com/blog/ingles-eventos-internacionais/",
+          "lastmod": "2026-09-18T17:20:03+00:00"
+        }
+      ]
+    },
+    {
+      "http": {
+        "requested_url": "https://unitedidiomas.com/robots.txt",
+        "final_url": "https://www.unitedidiomas.com/robots.txt",
+        "status": 404,
+        "content_type": "text/html; charset=UTF-8",
+        "x_robots_tag": [],
+        "error": "HTTP Error 404: Not Found",
+        "fetched_at_utc": "2026-09-18T18:45:54.689209+00:00"
+      }
+    }
+  ],
+  "artifact_production_files": {
+    "robots.txt": "User-agent: *\nAllow: /\n\nSitemap: https://www.unitedidiomas.com/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n",
+    "sitemap.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://www.unitedidiomas.com/</loc></url>\n  <url><loc>https://www.unitedidiomas.com/cursos/</loc></url>\n  <url><loc>https://www.unitedidiomas.com/quem-somos/</loc></url>\n  <url><loc>https://www.unitedidiomas.com/faq/</loc></url>\n</urlset>\n"
+  },
+  "interpretation": {
+    "commercial_pages_http_200": true,
+    "commercial_pages_noindex_observed": false,
+    "googlebot_visit_confirmed": false,
+    "google_index_status_confirmed": false,
+    "robots_404_meaning": "No crawl restrictions from this file according to Google documentation; cached rules and other access controls are not tested by this statement.",
+    "googlebot_test_not_performed": true
+  },
+  "official_references": [
+    "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
+    "https://developers.google.com/search/docs/essentials/technical"
+  ],
+  "limitations": [
+    "Read-only HTTP and source-HTML checks, not browser rendering or Search Console inspection.",
+    "Comparison is fixed to the specified commit, not subsequent uncommitted on-page edits.",
+    "Requested-term presence is lexical matching of text nodes and is not an SEO quality score or ranking prediction.",
+    "No individual recrawl of the 186 legacy root-sitemap entries in this check."
+  ]
+}

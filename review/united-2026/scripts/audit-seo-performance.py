@@ -41,16 +41,29 @@ for route, doc in DOCS.items():
     check(description == [META[route]['description']], f'{route}: missing/duplicate description')
     check(doc.get('lang') == 'pt-BR', f'{route}: language')
     check(doc.xpath('//link[@rel="canonical"]/@href') == ['https://www.unitedidiomas.com' + route], f'{route}: canonical')
-    check(doc.xpath('//meta[@name="robots"]/@content') == ['noindex,nofollow'], f'{route}: private preview indexing protection')
+    check(doc.xpath('//meta[@name="robots"]/@content') == ['index,follow,max-image-preview:large'], f'{route}: production indexing directives')
+    check(not doc.xpath('//meta[translate(@name,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz")="googlebot" and (contains(@content,"noindex") or contains(@content,"nofollow"))]'), f'{route}: Googlebot blocking directive')
+    check(not doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'), f'{route}: obsolete preview label')
     check(not doc.xpath('//meta[@name="keywords"]'), f'{route}: obsolete keyword stuffing tag')
     check(not [i for i, count in ids.items() if count > 1], f'{route}: duplicate IDs')
     for script in doc.xpath('//script[@type="application/ld+json"]'):
         graph = json.loads(script.text)['@graph']
         check(bool(graph), f'{route}: empty structured data')
+        if route != '/':
+            crumbs = [node for node in graph if node.get('@type') == 'BreadcrumbList']
+            check(len(crumbs) == 1 and crumbs[0]['itemListElement'][-1]['item'] == 'https://www.unitedidiomas.com' + route, f'{route}: breadcrumb canonical')
+        if route == '/quem-somos/':
+            places = [node for node in graph if node.get('@type') == 'Place']
+            check(len(places) == 6, 'Who we are: six existing units in structured data')
+            for place in places:
+                ident = urlsplit(place['url']).fragment
+                cards = doc.xpath('//*[@id=$id]', id=ident)
+                check(len(cards) == 1 and cards[0].find('address').text_content().strip() == place['address'], 'Unit structured data must match its visible address: ' + ident)
     check(len(doc.xpath('//script[@type="application/ld+json"]')) == 1, f'{route}: structured data')
     check(len(doc.xpath('//link[@rel="stylesheet"]')) == 1, f'{route}: CSS bundle count')
     banner_whatsapp = doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]')
     if route == '/':
+        check(len(doc.xpath('//script[not(@src) and contains(text(),"GTM-MTK74PV")]')) == 1 and len(doc.xpath('//noscript//iframe[contains(@src,"GTM-MTK74PV")]')) == 1, 'Home: preserve Rafael\'s GTM container exactly once')
         check(not doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'),
               'Home: obsolete preview banner label remains')
         check(len(banner_whatsapp) == 1 and banner_whatsapp[0].tag == 'a'
@@ -162,11 +175,16 @@ check(len(faq_search) == 1 and bool(faq_search[0].xpath('.//button[@id="btnBusca
 questions = faq.xpath('//button[contains(@class,"faq-toggle")]/@aria-controls')
 index = faq.xpath('//a[@data-faq-id]/@data-faq-id')
 check(set(q.removesuffix('-answer') for q in questions) == set(index), 'FAQ index does not cover all questions')
-check('Disallow: /' in (D / 'robots.txt').read_text(), 'private robots protection')
+robots = (D / 'robots.txt').read_text()
+check(not re.search(r'^\s*Disallow:\s*/\s*$', robots, re.M), 'production robots must not block the site')
+check('Sitemap: https://unitedidiomas.com/blog/sitemap_index.xml' in robots, 'WordPress sitemap discovery must be preserved')
+check('Sitemap: https://www.unitedidiomas.com/sitemap.xml' in robots, 'commercial sitemap discovery')
 prod = ROOT / 'seo/production'
 sitemap = etree.parse(str(prod / 'sitemap.xml'))
 check(set(sitemap.xpath('//*[local-name()="loc"]/text()')) == {'https://www.unitedidiomas.com' + r for r in META}, 'production sitemap URLs')
-check(not (D / 'sitemap.xml').exists(), 'production sitemap accidentally deployed to preview')
+check((D / 'sitemap.xml').read_bytes() == (prod / 'sitemap.xml').read_bytes(), 'production sitemap must be copied to dist')
+check((D / 'robots.txt').read_bytes() == (prod / 'robots.txt').read_bytes(), 'production robots must match dist')
+check(not sitemap.xpath('//*[local-name()="lastmod"]'), 'Do not publish fabricated last-modified dates')
 images = json.loads((ROOT / 'seo/image-optimization.json').read_text())
 videos = json.loads((ROOT / 'seo/video-optimization.json').read_text())
 fonts = json.loads((ROOT / 'seo/font-optimization.json').read_text())
@@ -193,7 +211,7 @@ for name, record in inventory['images'].items():
     with Image.open(file) as image:
         check(list(image.size) == record['dimensions'], 'image inventory geometry drift '+name)
 metrics['delivered_raster_image_inventory'] = {'files':len(inventory['images']), 'bytes':sum(r['bytes'] for r in inventory['images'].values()), 'note':'All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline.'}
-report = {'scope':'Private static preview; not a production crawl or Lighthouse score', 'pages':pages, 'local_dependencies_checked':len(checked_files), 'metrics':metrics, 'errors':errors, 'warnings':warnings,
+report = {'scope':'Production-ready static artifact, not published. Review copies require export-production.py --mode preview. Not a live crawl or Lighthouse score.', 'pages':pages, 'local_dependencies_checked':len(checked_files), 'metrics':metrics, 'errors':errors, 'warnings':warnings,
           'unmeasured':['Lighthouse/PageSpeed score: not measured in this final review; an earlier API attempt returned HTTP 429','Production Core Web Vitals and Search Console indexing','Real-device Safari behavior','Server compression, cache headers and TTFB on the official host']}
 (ROOT / 'seo/audit-results.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
 print(json.dumps({'pages':len(pages),'dependencies':len(checked_files),'errors':errors,'metrics':metrics}, ensure_ascii=False, indent=2))

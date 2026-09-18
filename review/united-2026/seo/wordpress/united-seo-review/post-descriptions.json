@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-09-18",
+  "scope": "47 descrições duplicadas do censo público de 182 posts, mais a descrição do artigo de IA já revisado; nenhuma alteração no corpo dos posts.",
+  "evidence_method": "Corpo público e headings das 47 páginas lidos em 18/09/2026; IA lido nesta mesma revisão. Tópicos abaixo são sínteses editoriais, sem HTML bruto. Não se trata de validação factual de todo o acervo.",
+  "posts": {
+    "10-costumes-brasileiros-que-estrangeiros-acham-esquisitos": {
+      "url": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+      "description": "Explore dez costumes brasileiros que podem surpreender visitantes, de hábitos à mesa às formas de cumprimentar, e reflita sobre diferenças culturais.",
+      "source_title": "10 costumes brasileiros que estrangeiros acham esquisitos | Blog United Idiomas",
+      "source_topics": [
+        "hábitos alimentares brasileiros",
+        "formas de interação",
+        "contrastes culturais percebidos por visitantes"
+      ]
+    },
+    "5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional": {
+      "url": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+      "description": "Entenda como o inglês se conecta ao desenvolvimento profissional, à rede de contatos, ao trabalho internacional e ao acesso a oportunidades de estudo.",
+      "source_title": "5 motivos que fazem o inglês alavancar sua carreira profissional | Blog United Idiomas",
+      "source_topics": [
+        "comunicação entre profissionais",
+        "contatos internacionais",
+        "oportunidades acadêmicas e de carreira"
+      ]
+    },
+    "a-comemoracao-do-carnaval-ao-redor-do-mundo": {
+      "url": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+      "description": "Viaje pelas tradições do Carnaval em diferentes países, conhecendo o Mardi Gras nos Estados Unidos, a festa de Veneza e outras celebrações pelo mundo.",
+      "source_title": "A comemoração do Carnaval ao redor do mundo | Blog United Idiomas",
+      "source_topics": [
+        "celebrações carnavalescas internacionais",
+        "festas de Nova Orleans",
+        "máscaras e tradição veneziana"
+      ]
+    },
+    "a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos": {
+      "url": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+      "description": "Veja como o inglês pode ajudar em deslocamentos, restaurantes e passeios culturais no exterior, ampliando suas possibilidades de comunicação durante a viagem.",
+      "source_title": "A importância do inglês para a viagem dos seus sonhos | Blog United Idiomas",
+      "source_topics": [
+        "comunicação durante viagens",
+        "transporte e restaurantes",
+        "autonomia em passeios culturais"
+      ]
+    },
+    "alone-vs-lonely-qual-a-diferenca": {
+      "url": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+      "description": "Entenda a diferença entre alone e lonely em inglês: estar sem companhia ou sentir solidão. Confira exemplos de frases e traduções para cada uso.",
+      "source_title": "Alone vs Lonely: qual a diferença? | Blog United Idiomas",
+      "source_topics": [
+        "ausência de companhia",
+        "sentimento de solidão",
+        "frases com tradução"
+      ]
+    },
+    "as-leis-mais-estranhas-dos-estados-unidos": {
+      "url": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+      "description": "Explore uma seleção de curiosidades sobre regras atribuídas a estados americanos e os costumes que inspiram histórias sobre leis incomuns nos EUA.",
+      "source_title": "As leis mais estranhas dos Estados Unidos | Blog United Idiomas",
+      "source_topics": [
+        "curiosidades legais por estado",
+        "costumes locais",
+        "exemplos apresentados como regras incomuns"
+      ]
+    },
+    "as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos": {
+      "url": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+      "description": "Explore seis lendas urbanas dos Estados Unidos, de Bloody Mary ao Cavaleiro sem Cabeça, e conheça histórias do folclore e da cultura popular americana.",
+      "source_title": "As seis lendas urbanas mais conhecidas dos Estados Unidos | Blog United Idiomas",
+      "source_topics": [
+        "folclore de terror americano",
+        "histórias difundidas pela internet",
+        "Bloody Mary e Sleepy Hollow"
+      ]
+    },
+    "batalha-do-boyne-saiba-mais-sobre-esse-feriado": {
+      "url": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+      "description": "Conheça a história da Batalha do Boyne e entenda a origem das celebrações de julho, o papel da Ordem de Orange e as controvérsias ligadas à data.",
+      "source_title": "Batalha do Boyne: saiba mais sobre esse feriado | Blog United Idiomas",
+      "source_topics": [
+        "confronto entre Jaime e Guilherme",
+        "tradição da Ordem de Orange",
+        "comemorações e controvérsias"
+      ]
+    },
+    "cinco-motivos-united-idiomas": {
+      "url": "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+      "description": "Conheça cinco aspectos da proposta de ensino descrita pela United: formatos de aula, acompanhamento, materiais, ferramentas digitais e experiência da escola.",
+      "source_title": "Cinco motivos para estudar na United Idiomas | Blog United Idiomas",
+      "source_topics": [
+        "formatos de estudo apresentados",
+        "acompanhamento e material",
+        "plataformas e proposta institucional"
+      ]
+    },
+    "como-a-tecnologia-pode-te-ajudar-a-aprender-ingles": {
+      "url": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+      "description": "Veja como aulas remotas, aplicativos, podcasts e conteúdos sob demanda podem integrar o estudo de inglês, com exemplos de ferramentas apresentados pela United.",
+      "source_title": "Como a tecnologia pode te ajudar a aprender inglês | Blog United Idiomas",
+      "source_topics": [
+        "recursos digitais no aprendizado",
+        "estudo remoto",
+        "exemplos de plataformas da publicação"
+      ]
+    },
+    "como-e-comemorada-a-pascoa-nos-eua-e-inglaterra": {
+      "url": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+      "description": "Conheça tradições de Páscoa nos Estados Unidos e na Inglaterra, como a caça aos ovos, e explore diferenças culturais apresentadas no artigo.",
+      "source_title": "Como é comemorada a Páscoa nos EUA e Inglaterra? | Blog United Idiomas",
+      "source_topics": [
+        "celebrações pascais americanas",
+        "costumes ingleses",
+        "brincadeiras com ovos e eventos locais"
+      ]
+    },
+    "como-se-preparar-para-uma-entrevista-de-emprego-em-ingles": {
+      "url": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+      "description": "Prepare sua entrevista de emprego em inglês com 12 dicas sobre apresentação pessoal, vocabulário da área, escuta e respostas sobre a trajetória profissional.",
+      "source_title": "Como se preparar para uma entrevista de emprego em inglês | Blog United Idiomas",
+      "source_topics": [
+        "preparação da apresentação",
+        "vocabulário profissional e escuta",
+        "ensaio de respostas e improviso"
+      ]
+    },
+    "confira-10-girias-em-ingles-e-aprenda-a-usa-las": {
+      "url": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+      "description": "Aprenda o sentido de dez gírias em inglês, como bail, chill out e slay, com traduções e frases de exemplo para reconhecer usos em conversas informais.",
+      "source_title": "Confira 10 gírias em inglês e aprenda a usá-las! | Blog United Idiomas",
+      "source_topics": [
+        "gírias do cotidiano",
+        "significados em português",
+        "exemplos de conversas informais"
+      ]
+    },
+    "confira-10-series-que-vao-melhorar-o-seu-ingles": {
+      "url": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+      "description": "Explore dez séries para praticar inglês, de Friends a The Crown, e veja como diferentes histórias e sotaques podem fazer parte da sua rotina de estudos.",
+      "source_title": "Confira 10 séries que vão melhorar o seu inglês | Blog United Idiomas",
+      "source_topics": [
+        "séries de comédia e drama",
+        "vocabulário cotidiano",
+        "contato com sotaques por meio de histórias"
+      ]
+    },
+    "conheca-10-paises-que-tem-o-ingles-como-lingua-oficial": {
+      "url": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+      "description": "Explore destinos em que o inglês faz parte da viagem, como Canadá, Austrália e Nova Zelândia, e conheça atrações culturais e naturais citadas no artigo.",
+      "source_title": "Conheça 10 países que têm o inglês como língua oficial | Blog United Idiomas",
+      "source_topics": [
+        "destinos com uso do inglês",
+        "atrações urbanas",
+        "paisagens e turismo cultural"
+      ]
+    },
+    "curso-ideal-de-ingles-porque-escolher-a-united-idiomas": {
+      "url": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+      "description": "Leia a apresentação dos formatos de curso da United neste artigo, com foco na combinação de aulas, material didático e ferramentas para estudar inglês.",
+      "source_title": "Curso ideal de inglês: porque escolher a United Idiomas | Blog United Idiomas",
+      "source_topics": [
+        "comparação de formatos da publicação",
+        "materiais didáticos",
+        "combinação de aulas e recursos digitais"
+      ]
+    },
+    "descubra-porque-a-united-idiomas-pode-transformar-sua-carreira": {
+      "url": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+      "description": "Veja como o artigo relaciona o inglês à comunicação em reuniões, eventos e negociações, além de apresentar a proposta de estudo flexível da United.",
+      "source_title": "Descubra porque a United Idiomas pode transformar sua carreira | Blog United Idiomas",
+      "source_topics": [
+        "uso do idioma em contextos profissionais",
+        "reuniões e negociações",
+        "flexibilidade apresentada pela escola"
+      ]
+    },
+    "dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria": {
+      "url": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+      "description": "Encaixe o inglês na rotina com metas, horários e atividades de leitura e lazer. Confira ideias para estudar com regularidade sem criar um plano inviável.",
+      "source_title": "Dicas de como inserir o estudo do inglês dentro da rotina diária | Blog United Idiomas",
+      "source_topics": [
+        "objetivos e organização semanal",
+        "leitura e entretenimento",
+        "disciplina compatível com a rotina"
+      ]
+    },
+    "dicas-para-melhorar-sua-escrita-em-ingles": {
+      "url": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+      "description": "Pratique sua escrita em inglês com leitura, pequenos textos e interação online. Veja também como distinguir a linguagem formal da informal ao escrever.",
+      "source_title": "Dicas para melhorar sua escrita em inglês | Blog United Idiomas",
+      "source_topics": [
+        "exercícios cotidianos de escrita",
+        "leitura como referência",
+        "adequação de registro e ferramentas"
+      ]
+    },
+    "diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao": {
+      "url": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+      "description": "Descubra como wanna, gonna e gotta aparecem no inglês informal. Veja de quais expressões surgem e confira exemplos traduzidos de uso em frases.",
+      "source_title": "Diferenças entre WANNA, GONNA e GOTTA: descubra quais são! | Blog United Idiomas",
+      "source_topics": [
+        "contrações informais",
+        "relações com want to e going to",
+        "exemplos contextualizados"
+      ]
+    },
+    "dificuldades-gramatica-ingles": {
+      "url": "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/",
+      "description": "Entenda dificuldades comuns de gramática em inglês para brasileiros, como tradução literal, tempos verbais, preposições e ordem das palavras em contexto.",
+      "source_title": "As maiores dificuldades de gramática em inglês para brasileiros e como superá-las na prática | Blog United Idiomas",
+      "source_topics": [
+        "interferência da tradução literal",
+        "aplicação de tempos e preposições",
+        "estrutura das frases"
+      ]
+    },
+    "e-possivel-aprender-ingles-depois-de-adulto": {
+      "url": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+      "description": "Quer começar o inglês na vida adulta? Veja reflexões sobre motivação, rotina e métodos de estudo, com objetivos ligados a trabalho, viagens e cultura.",
+      "source_title": "É possível aprender inglês depois de adulto? | Blog United Idiomas",
+      "source_topics": [
+        "aprendizado na idade adulta",
+        "barreiras de rotina e motivação",
+        "objetivos pessoais de estudo"
+      ]
+    },
+    "guia-basico-de-ingles-para-viajantes-aurora-boreal": {
+      "url": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+      "description": "Aprenda vocabulário em inglês ligado à aurora boreal e explore frases para pedir ajuda, tirar dúvidas e se comunicar em uma viagem para observar o fenômeno.",
+      "source_title": "Aurora Boreal: Guia básico de inglês para os viajantes. | Blog United Idiomas",
+      "source_topics": [
+        "vocabulário das luzes polares",
+        "comunicação durante a viagem",
+        "pedidos de ajuda e esclarecimento"
+      ]
+    },
+    "guia-rapido-de-ingles-para-viagens": {
+      "url": "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+      "description": "Consulte frases em inglês para aeroporto, hospedagem, restaurantes e compras. O guia reúne traduções e expressões para pedir informações durante a viagem.",
+      "source_title": "Guia rápido de inglês para viagens internacionais. | Blog United Idiomas",
+      "source_topics": [
+        "frases para serviços de viagem",
+        "traduções em português",
+        "pedidos de direção e informação"
+      ]
+    },
+    "has-ou-have-aprenda-a-utilizar": {
+      "url": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+      "description": "Aprenda a distinguir has e have conforme o sujeito da frase. Veja exemplos do verbo to have indicando posse e atuando como auxiliar em inglês.",
+      "source_title": "HAS ou HAVE? Aprenda a utilizar! | Blog United Idiomas",
+      "source_topics": [
+        "concordância com pronomes",
+        "ideia de posse",
+        "uso de have como auxiliar"
+      ]
+    },
+    "ia-aprender-ingles-habilidades-humanas": {
+      "url": "https://unitedidiomas.com/blog/ia-aprender-ingles-habilidades-humanas/",
+      "description": "Entenda como a IA pode apoiar seus estudos de inglês e por que conversação, feedback e prática com outras pessoas continuam importantes.",
+      "source_title": "O inglês que a IA ainda não ensina: habilidades humanas que continuam decisivas na fluência | Blog United Idiomas",
+      "source_topics": [
+        "tecnologia como apoio ao estudo",
+        "prática de comunicação entre pessoas",
+        "feedback e contexto de uso"
+      ]
+    },
+    "independence-day": {
+      "url": "https://unitedidiomas.com/blog/independence-day/",
+      "description": "Saiba o que representa o Independence Day nos Estados Unidos: a história da independência, o significado do 4 de julho e as tradições do feriado.",
+      "source_title": "Independence Day | Blog United Idiomas",
+      "source_topics": [
+        "separação das colônias",
+        "declaração de independência",
+        "celebrações familiares e fogos"
+      ]
+    },
+    "ingles-conversacao-profissional": {
+      "url": "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+      "description": "Organize suas ideias para conversar em inglês no trabalho. Veja como ajustar o tom, ser objetivo e evitar hábitos que dificultam a clareza da comunicação.",
+      "source_title": "Como conduzir conversas profissionais em inglês sem perder clareza ou autoridade | Blog United Idiomas",
+      "source_topics": [
+        "organização do raciocínio",
+        "adequação do tom",
+        "objetividade e prática de conversação"
+      ]
+    },
+    "ingles-corporativo": {
+      "url": "https://unitedidiomas.com/blog/ingles-corporativo/",
+      "description": "Entenda como o inglês corporativo se diferencia do estudo geral do idioma, com foco em contexto, escrita profissional, reuniões e escolhas de linguagem.",
+      "source_title": "Inglês corporativo é diferente do inglês tradicional? Entenda o que muda na prática | Blog United Idiomas",
+      "source_topics": [
+        "diferenças de abordagem do ensino",
+        "aplicação em reuniões",
+        "escrita voltada ao trabalho"
+      ]
+    },
+    "ingles-no-trabalho": {
+      "url": "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+      "description": "Veja situações em que o inglês entra na rotina profissional, de e-mails e relatórios a reuniões e liderança, e entenda a importância de comunicar ideias com clareza.",
+      "source_title": "Inglês no trabalho: em quais situações a fluência realmente faz diferença | Blog United Idiomas",
+      "source_topics": [
+        "comunicação escrita no emprego",
+        "reuniões ao vivo",
+        "interação com lideranças internacionais"
+      ]
+    },
+    "ingles-para-economistas": {
+      "url": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+      "description": "Veja como economistas usam o inglês em relatórios, análises e reuniões internacionais, além de explorar fontes de informação para praticar o vocabulário da área.",
+      "source_title": "Economistas: como usar o inglês nessa profissão? | Blog United Idiomas",
+      "source_topics": [
+        "comunicação entre economistas",
+        "relatórios e análises",
+        "leitura de fontes internacionais"
+      ]
+    },
+    "ler-em-ingles-veja-oito-livros-para-iniciar": {
+      "url": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+      "description": "Quer praticar leitura em inglês? Explore oito sugestões de livros, de Charlotte's Web a O Velho e o Mar, com resumos para escolher sua próxima leitura.",
+      "source_title": "Quer começar a ler em inglês? Veja 8 livros para iniciar | Blog United Idiomas",
+      "source_topics": [
+        "sugestões literárias variadas",
+        "resumo dos enredos",
+        "leitura como prática de vocabulário"
+      ]
+    },
+    "memorial-day-a-importancia-dessa-data-nos-eua": {
+      "url": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+      "description": "Conheça o significado do Memorial Day nos EUA, sua origem e as homenagens aos militares mortos, além da diferença em relação ao Veterans Day.",
+      "source_title": "Memorial Day: a importância dessa data nos EUA | Blog United Idiomas",
+      "source_topics": [
+        "homenagem aos militares mortos",
+        "origem do feriado",
+        "distinção do Dia dos Veteranos"
+      ]
+    },
+    "por-que-a-rainha-tem-dois-aniversarios": {
+      "url": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+      "description": "Entenda por que Elizabeth II celebrava dois aniversários e conheça a tradição britânica do Trooping the Colour, ligada às comemorações da monarquia.",
+      "source_title": "Por que a Rainha tem dois aniversários? | Blog United Idiomas",
+      "source_topics": [
+        "dupla celebração da monarca",
+        "origem histórica da tradição",
+        "desfile Trooping the Colour"
+      ]
+    },
+    "por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade": {
+      "url": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+      "description": "Conheça a proposta de ensino apresentada pela United neste artigo, com métodos de estudo, recursos digitais e formatos voltados a diferentes perfis.",
+      "source_title": "Por que a United Idiomas é a escolha certa para aprender inglês de verdade? | Blog United Idiomas",
+      "source_topics": [
+        "proposta pedagógica da publicação",
+        "recursos de estudo online",
+        "modalidades históricas da escola"
+      ]
+    },
+    "principais-girias-ingles": {
+      "url": "https://unitedidiomas.com/blog/principais-girias-ingles/",
+      "description": "Descubra o significado de gírias como dope, GOAT, hyped e mate. Confira frases com tradução e veja como essas palavras aparecem em conversas descontraídas.",
+      "source_title": "Veja algumas das principais gírias em inglês | Blog United Idiomas",
+      "source_topics": [
+        "expressões informais variadas",
+        "significados contextualizados",
+        "frases bilíngues de exemplo"
+      ]
+    },
+    "qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles": {
+      "url": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+      "description": "Explore formas de aproximar as crianças do inglês no dia a dia, com músicas, desenhos e livros, e veja ideias de atividades para tornar o contato lúdico.",
+      "source_title": "Qual a melhor forma de iniciar os filhos no inglês? | Blog United Idiomas",
+      "source_topics": [
+        "contato infantil com o idioma",
+        "canções e desenhos",
+        "livros e atividades lúdicas"
+      ]
+    },
+    "saiba-como-validar-seu-diploma-nos-eua": {
+      "url": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+      "description": "Veja os temas envolvidos na validação de diplomas nos EUA, como tradução, avaliação de formação e inglês, para orientar sua pesquisa sobre o processo.",
+      "source_title": "Saiba como validar seu diploma nos EUA | Blog United Idiomas",
+      "source_topics": [
+        "tradução de documentos",
+        "análise da formação acadêmica",
+        "proficiência e custos do processo"
+      ]
+    },
+    "saiba-mais-sobre-os-certificados-internacionais-de-ingles": {
+      "url": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+      "description": "Conheça certificados de inglês como IELTS, TOEFL, TOEIC e Cambridge e veja quais objetivos acadêmicos ou profissionais são abordados para cada exame.",
+      "source_title": "Saiba mais sobre os certificados internacionais de inglês | Blog United Idiomas",
+      "source_topics": [
+        "panorama de exames de proficiência",
+        "finalidades acadêmicas",
+        "aplicações no trabalho"
+      ]
+    },
+    "saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico": {
+      "url": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+      "description": "Compare aspectos do inglês americano e britânico, da história às diferenças de ortografia, gramática e vocabulário, com exemplos apresentados no artigo.",
+      "source_title": "Saiba quais as principais diferenças entre o inglês americano e britânico | Blog United Idiomas",
+      "source_topics": [
+        "origens das variantes",
+        "diferenças de escrita",
+        "contrastes de gramática e vocabulário"
+      ]
+    },
+    "save-the-date-conheca-a-origem-dessa-expressao": {
+      "url": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+      "description": "Saiba o que significa save the date, como esse aviso se diferencia de um convite e quais informações ajudam os convidados a se organizar para o evento.",
+      "source_title": "Save the date: conheça a origem dessa expressão | Blog United Idiomas",
+      "source_topics": [
+        "aviso prévio de celebrações",
+        "diferença para convite formal",
+        "organização e informação visual"
+      ]
+    },
+    "sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas": {
+      "url": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+      "description": "Relembre a proposta da United para iniciar os estudos em 2023, com sete tópicos sobre metodologia, professores, materiais e recursos para aprender inglês.",
+      "source_title": "Sete motivos para você começar 2023 aprendendo inglês com a United Idiomas | Blog United Idiomas",
+      "source_topics": [
+        "proposta editorial para 2023",
+        "metodologia e materiais",
+        "professores e ferramentas digitais"
+      ]
+    },
+    "trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil": {
+      "url": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+      "description": "Entenda o papel do inglês no trabalho no exterior, na adaptação ao cotidiano e nas certificações, com uma introdução aos exames TOEFL e TOEIC.",
+      "source_title": "Trabalho no exterior: entenda o nível de inglês para trabalhar fora do Brasil | Blog United Idiomas",
+      "source_topics": [
+        "comunicação profissional fora do Brasil",
+        "adaptação ao cotidiano",
+        "exames de proficiência"
+      ]
+    },
+    "veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles": {
+      "url": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+      "description": "Conheça dez áreas profissionais em que o inglês aparece no cotidiano, como tecnologia, turismo e comércio exterior, e entenda exemplos de uso do idioma.",
+      "source_title": "Veja 10 carreiras e profissões incríveis para quem é fluente em inglês | Blog United Idiomas",
+      "source_topics": [
+        "profissões com comunicação internacional",
+        "exemplos em tecnologia e turismo",
+        "áreas corporativas"
+      ]
+    },
+    "veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles": {
+      "url": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+      "description": "Veja como usar legendas em inglês para praticar escuta e leitura, ampliar o vocabulário e adaptar o estudo com filmes e vídeos ao seu nível no idioma.",
+      "source_title": "Veja motivos para começar a assistir filmes com legenda em inglês | Blog United Idiomas",
+      "source_topics": [
+        "associação entre som e escrita",
+        "vocabulário em vídeos",
+        "sugestões para diferentes níveis"
+      ]
+    },
+    "viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo": {
+      "url": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+      "description": "Organize sua primeira viagem internacional com pontos de atenção sobre roteiro, documentos, orçamento, seguro e fuso horário antes de sair do Brasil.",
+      "source_title": "Viajando pela primeira vez para outro país? Veja dicas para aproveitar ao máximo | Blog United Idiomas",
+      "source_topics": [
+        "planejamento de roteiro",
+        "documentação e orçamento",
+        "seguro e adaptação ao fuso"
+      ]
+    },
+    "vocabulario-de-ingles-para-a-area-de-marketing": {
+      "url": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+      "description": "Entenda termos em inglês usados no marketing, como branding, lead, ROI e storytelling, com explicações para acompanhar o vocabulário da área no dia a dia.",
+      "source_title": "Vocabulário de inglês para a área de Marketing | Blog United Idiomas",
+      "source_topics": [
+        "glossário de marketing",
+        "termos de publicidade digital",
+        "definições de branding e métricas"
+      ]
+    },
+    "voce-sabe-como-o-toefl-funciona": {
+      "url": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+      "description": "Conheça as modalidades do TOEFL apresentadas no artigo e as habilidades de inglês envolvidas, com uma visão geral do exame e de sua finalidade acadêmica.",
+      "source_title": "Você sabe como o TOEFL funciona? | Blog United Idiomas",
+      "source_topics": [
+        "modalidades de avaliação",
+        "leitura escrita escuta e fala",
+        "finalidade acadêmica do exame"
+      ]
+    }
+  }
+}

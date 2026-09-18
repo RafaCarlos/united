@@ -21,3 +21,11 @@ video[data-managed-video]::-webkit-media-controls,video[data-managed-video]::-we
 /* Preserve Business topic styling while correcting heading hierarchy. */
 .cursos #temas .content .text h3.business-topics-heading{font-size:2.6vw;font-weight:500;margin:0 0 2.5vh}
 @media(max-width:1024px){.cursos #temas .content .text h3.business-topics-heading{font-size:20px;margin:0 0 15px}}
+
+/* Describe the course without changing the approved Live Class headline. */
+.cursos .top h1 .course-title-context{display:block;font-size:clamp(14px,1.5vw,22px);line-height:1.4;font-weight:500;letter-spacing:.02em;text-transform:none;margin-bottom:8px}
+.quem-somos .unidades-hibridas .container .itens .item{display:flex}
+.quem-somos .unidades-hibridas .container .itens .item .box[id]{scroll-margin-top:110px;height:auto;min-height:169px;width:100%;padding-bottom:12px}
+.interior-preview .quem-somos .unidades-hibridas .container .itens .item .box a.unit-map-link{display:block;min-height:0;margin:0;font:inherit;text-decoration:underline;text-underline-offset:3px}
+.quem-somos .unidades-hibridas .container .itens .item .box a.unit-map-link::before{display:none}
+.faq-course-links a{text-decoration:underline;text-underline-offset:3px}

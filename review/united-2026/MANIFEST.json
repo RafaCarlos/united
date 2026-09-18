@@ -1,22 +1,22 @@
 {
   "source_commit": "35c43fa1cae374518b9f08f663339734b37d560c",
   "target_repository": "RafaCarlos/united",
-  "scope": "Review package only; production PHP, forms and hosting are not replaced.",
+  "scope": "Review package with production-ready static artifact and optional server/WordPress integration; root PHP and hosting unchanged.",
   "files": [
     {
       "path": "CORRECAO-SERVIDOR.md",
-      "bytes": 2797,
-      "sha256": "26f511cff126818047b7c4f8e0a440c817608a118b38179ff2620dcc953ae169"
+      "bytes": 2871,
+      "sha256": "a0b0ec8af0e2b3218009e077a2a30b3f8a4748fc4d4bb8319f9927bac65f0103"
     },
     {
       "path": "MANIFEST-SERVIDOR.json",
-      "bytes": 39766,
-      "sha256": "b17ea303cea1d9940230841430cccf4127671755688f75182cb67691680cde35"
+      "bytes": 40120,
+      "sha256": "75d89180ba723fb9fcf95a9e54fa0ea18ca9aca0f86a1f0b39fd027cf0268a68"
     },
     {
       "path": "README.md",
-      "bytes": 10020,
-      "sha256": "17c65cc672fd1e35bd703a32ca8bea2d5387022914f244f7b6c24d73ec8169fc"
+      "bytes": 6669,
+      "sha256": "57d92cc02f1491dc33dff2724371095072d58a6b2aee421975cf719b310605ac"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -84,24 +84,24 @@
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
     },
     {
-      "path": "dist/assets/css/page-cursos-4a7b0e989eaa.css",
-      "bytes": 213460,
-      "sha256": "4a7b0e989eaa25f5c4b17c822c707b54da19337614a801f42d158fbbbcb9efb4"
+      "path": "dist/assets/css/page-cursos-39cedc895fcc.css",
+      "bytes": 214300,
+      "sha256": "39cedc895fcc2fe55be1ac2373d15f1164e3f34355a7fba7444dd28764088a87"
     },
     {
-      "path": "dist/assets/css/page-faq-1636a96a906b.css",
-      "bytes": 207086,
-      "sha256": "1636a96a906bde44598d152f0617ea8de61f5c6939e515beaae8b46d06b37aa9"
+      "path": "dist/assets/css/page-faq-8e235426863c.css",
+      "bytes": 207926,
+      "sha256": "8e235426863c7bb50e8d879dfc3c2ad2a0b4136c321f4a84e1dca7f61abcac8c"
     },
     {
-      "path": "dist/assets/css/page-home-d4de2708e751.css",
-      "bytes": 235982,
-      "sha256": "d4de2708e751d3259bd8da2f113a54f277cb9348265d94b415746085c426d659"
+      "path": "dist/assets/css/page-home-b17af4329a29.css",
+      "bytes": 236822,
+      "sha256": "b17af4329a29b64053d78d1eac53424a3a4a99cb2c65ac1e46c2a29fd5e50668"
     },
     {
-      "path": "dist/assets/css/page-quem-somos-1636a96a906b.css",
-      "bytes": 207086,
-      "sha256": "1636a96a906bde44598d152f0617ea8de61f5c6939e515beaae8b46d06b37aa9"
+      "path": "dist/assets/css/page-quem-somos-8e235426863c.css",
+      "bytes": 207926,
+      "sha256": "8e235426863c7bb50e8d879dfc3c2ad2a0b4136c321f4a84e1dca7f61abcac8c"
     },
     {
       "path": "dist/assets/css/style.css",
@@ -235,8 +235,8 @@
     },
     {
       "path": "dist/assets/images/bg-united-video.webp",
-      "bytes": 1423198,
-      "sha256": "60e672bc64a842ab219cc0f47c7b8ff8ec45dcd2acab7eaca32ddc4092c7569a"
+      "bytes": 148032,
+      "sha256": "b737cae8ee5b1f0874371a566cb68823a96bfb286aa4ed393867eba7eaf23231"
     },
     {
       "path": "dist/assets/images/bg-vitrine-01-mobile.jpg",
@@ -1005,13 +1005,13 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 50999,
-      "sha256": "c63f20d0a8475e5fe0d923b2a95adb7ce755112d1676cfdb6a67c586f4f78979"
+      "bytes": 51328,
+      "sha256": "bf1d1833a074fdd40108246e4a6ffb36239385d0072cddac33952cb5f6bbb9a7"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 37037,
-      "sha256": "8abedb17efd609b045ca2a707e26a61769a05148202ca45397366eecdfcdb9da"
+      "bytes": 39804,
+      "sha256": "868312c3919a546fedd2d7177f621adf71210b8e0a097a74c340d363e45311a4"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1020,8 +1020,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 47734,
-      "sha256": "b3edfc42909cd9a254d5950bad5a78a82f260e1ec0fbb1d293a97f09caff54b8"
+      "bytes": 48557,
+      "sha256": "65f3aaf869d7664fdcd57cf15e572d5cad36174ec6752c76fed39ed5dc1e9f49"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1060,8 +1060,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 38030,
-      "sha256": "1ef0c71ae7aa40bdf390d371d6c93642ef3d129cbd0569ccfb9b3f0702cd2587"
+      "bytes": 43317,
+      "sha256": "b61ff314dbc7aa765d3985960d997f4d3c35344bafcec8a0a96a6f9d48534ea2"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1090,13 +1090,13 @@
     },
     {
       "path": "dist/robots.txt",
-      "bytes": 26,
-      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+      "bytes": 522,
+      "sha256": "22583b2ac8b11c6a242145769bca0cf9b3a464d041d4e59a988edb14bd30e907"
     },
     {
       "path": "dist/seo-performance.css",
-      "bytes": 2919,
-      "sha256": "46ad3dab80fb922c2af3b3fb9d59e013d51a032e4e42ddc5633832f43a703887"
+      "bytes": 3759,
+      "sha256": "7b8365b4f709d955186f43c63e8eee5650a4e2e9d7f6ac7b32d487b8357ee5c9"
     },
     {
       "path": "dist/shared-header.css",
@@ -1117,6 +1117,11 @@
       "path": "dist/site-refinement.js",
       "bytes": 5116,
       "sha256": "f4b8bc38ecb40cf073812edaa6a3c318b92a564e9a6bbef80b10048a0b001ad3"
+    },
+    {
+      "path": "dist/sitemap.xml",
+      "bytes": 352,
+      "sha256": "72bf365305d718410b88f2560ac9065307ed8bd0031a3127e002bfde309156aa"
     },
     {
       "path": "dist/storytelling-preview.css",
@@ -1145,8 +1150,8 @@
     },
     {
       "path": "scripts/audit-seo-performance.py",
-      "bytes": 14748,
-      "sha256": "dca358011b4f11a3091e97cf39cf2e10159ddb2972724c08797d88f7522f070c"
+      "bytes": 16771,
+      "sha256": "4db82cd60d7801c3bd2714936c5020149868f77fad4895a9ffe850b003cd8594"
     },
     {
       "path": "scripts/build-interior-preview.py",
@@ -1169,6 +1174,11 @@
       "sha256": "8628e2c90a0cdc20ff9c7721a13b8f7b35238b3593e015e3ed637a3b65e68b31"
     },
     {
+      "path": "scripts/crawl_policy.py",
+      "bytes": 3806,
+      "sha256": "eb65f287874499e91d702aa8c031875728d510fceef3e9ac9d131bb68865395c"
+    },
+    {
       "path": "scripts/export-github-review.py",
       "bytes": 1760,
       "sha256": "a115f9ed36754c6528b0379d9ef3afd2b0bad70474dff121aca0aa56565a42b7"
@@ -1177,6 +1187,11 @@
       "path": "scripts/export-html.cjs",
       "bytes": 2192,
       "sha256": "4d064b71a5ef947da556e589eef546bad7986098be72adea28d8fbbccc24148b"
+    },
+    {
+      "path": "scripts/export-production.py",
+      "bytes": 16881,
+      "sha256": "2d33f2b8ce3f9cfbc383449b5ec4f54ab332d759e149a6dce06d51ec147b1fe8"
     },
     {
       "path": "scripts/export-storytelling-preview.py",
@@ -1189,6 +1204,11 @@
       "sha256": "5e89cf2d83f21600bc32f9cfed05065132ac2951b0d7eb6b3317e006a780f17a"
     },
     {
+      "path": "scripts/optimize-heavy-media.py",
+      "bytes": 4265,
+      "sha256": "03afc7db7f8df8337cfa1a80f925d62fa9fc13718bbfabe59963f0b50b7a5425"
+    },
+    {
       "path": "scripts/optimize-static-assets.py",
       "bytes": 5741,
       "sha256": "1ac523ac83d3c1e1c911eb2a920abe911e6cb39bf240aa729ff6b8462540abc8"
@@ -1197,6 +1217,21 @@
       "path": "scripts/prepare-subdirectory.py",
       "bytes": 4888,
       "sha256": "56e8e5a03dd17968e23027b0852c7213f625a33fffdc4fa9a08b45466e34b654"
+    },
+    {
+      "path": "scripts/test-production-crawl.py",
+      "bytes": 7566,
+      "sha256": "32df6632d4e544b8c2e08aa558fcde125c399f72286c8afad12afd37be200643"
+    },
+    {
+      "path": "scripts/test-production-export.py",
+      "bytes": 14647,
+      "sha256": "2a048f550c264571888aa917c558769f8a2b20929488eeede528b06a218c5edd"
+    },
+    {
+      "path": "scripts/test-production-redirects.py",
+      "bytes": 10696,
+      "sha256": "47ba737ba08bd5cb40997c777462510f7854abf3295c4b8c2fafcdd725e354c5"
     },
     {
       "path": "scripts/test-rdstation-form.cjs",
@@ -1250,8 +1285,8 @@
     },
     {
       "path": "scripts/update-seo-performance.py",
-      "bytes": 11698,
-      "sha256": "80f656f36576a97e3aa0a32904b5c0c81245c8ce78d9f313f2ae67f758793eed"
+      "bytes": 15318,
+      "sha256": "fd98c488afb1f58cdc22978d36aac12508d1e20d2ec7cea26a5a83851f9142f0"
     },
     {
       "path": "scripts/update-shared-header.py",
@@ -1265,13 +1300,23 @@
     },
     {
       "path": "seo/AUDITORIA.md",
-      "bytes": 14919,
-      "sha256": "c9fee2516a950d5d632d7e59792f2949537e2fc443c65f8ee9b580389eeb084a"
+      "bytes": 22820,
+      "sha256": "2283d82ab5bc1f59bbcfa6d39f3b5796d132c982b920f28f5edcbbe05e83c0ec"
     },
     {
       "path": "seo/INTEGRACAO.md",
-      "bytes": 8288,
-      "sha256": "200463fc9da4eb2464f91c1edc8aaa6bb16f407a58c9354168d02f7cdc240035"
+      "bytes": 6977,
+      "sha256": "a5e290c5c6f2b6d93beb4a54a7d245c82c5473ecc2f3fc55997eb2128a2041c6"
+    },
+    {
+      "path": "seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md",
+      "bytes": 6090,
+      "sha256": "2d66bffa07ede58da6a2c116667fb9c0e8f3e887538c6daed5785946bc56bdb2"
+    },
+    {
+      "path": "seo/PLANO-SEO-PRODUCAO.md",
+      "bytes": 14179,
+      "sha256": "8e157b10e70f70864d7e144f8a4cde0f42c515f32196f5b3b5f2a880e658135d"
     },
     {
       "path": "seo/RD-STATION.md",
@@ -1279,9 +1324,44 @@
       "sha256": "78ebca50bf5953137d345770d75b8195a0479637af82f95b9320772a5aeee09a"
     },
     {
+      "path": "seo/RECOMENDACOES-CONTEUDO.md",
+      "bytes": 9870,
+      "sha256": "9c27acd0b5ae12c7d62396c62c55e8226be29edc354896fe066e9419773e5b8c"
+    },
+    {
+      "path": "seo/ROBOTS-RASTREAMENTO.md",
+      "bytes": 3297,
+      "sha256": "96956db7d94cd3f7bb0a6ca784471c5458b2272bc32b3c01a9fddd3693decae6"
+    },
+    {
+      "path": "seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.json",
+      "bytes": 109573,
+      "sha256": "dbe800e7cca213a8115c13df1a1bbfc9404053c573bc142fba3b482677408963"
+    },
+    {
+      "path": "seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md",
+      "bytes": 8755,
+      "sha256": "d4835f628b3f7bfbe535aee28274cc025ebcc7d2bcda773f6c7bf676067f8b16"
+    },
+    {
+      "path": "seo/VERIFICACAO-PUBLICA-2026-09-18.json",
+      "bytes": 80828,
+      "sha256": "e56489a4bbe8ec08dbfd53fdcb35f37841e4ac0093a3612437a541d168573c3b"
+    },
+    {
+      "path": "seo/VERIFICACAO-PUBLICA-2026-09-18.md",
+      "bytes": 6846,
+      "sha256": "4f9c1387916096e3e9589b4090f39d063f75a46ae2b68fd8ee42f364f51724c1"
+    },
+    {
       "path": "seo/audit-results.json",
-      "bytes": 2839,
-      "sha256": "9d46ae076223dbe8076614e7997613958f2b95123eda9c1fd11c87b382600ad8"
+      "bytes": 2950,
+      "sha256": "116f4fc2fae8ae028d78606a24fc1ddfd21b062c18b9aefcdbcd5795cb1e1fa5"
+    },
+    {
+      "path": "seo/content.json",
+      "bytes": 4556,
+      "sha256": "56c00100665109cf37bbf81fff0acdf2cc8369956208bdf7aba2ddca9c58a021"
     },
     {
       "path": "seo/css-inputs.json",
@@ -1295,43 +1375,58 @@
     },
     {
       "path": "seo/image-inventory.json",
-      "bytes": 40552,
-      "sha256": "a9c38ff538238edab00272a377c999e111e4d8f4c9367100f5b3799cc73ac12d"
+      "bytes": 40551,
+      "sha256": "80d2906d6390adfaa4aff78042401208b2bc5ca4310af6f403d97b913e46f86c"
     },
     {
       "path": "seo/image-optimization.json",
-      "bytes": 5321,
-      "sha256": "a01e9ade72f2982bca6f9a9bd0a5a96e4d5fe16e81b837d5243ab46f0d174842"
+      "bytes": 6088,
+      "sha256": "80406195b648020d5a6fdc2fa51dd4e5c65747c1c2c902b48099447ec590ecd0"
     },
     {
       "path": "seo/metadata.json",
-      "bytes": 1294,
-      "sha256": "569dad2febf76deafe3a6cc7bd9dcd8e5cc132c6edc07f592ed35880a4da0350"
+      "bytes": 1282,
+      "sha256": "4565cac19a0268d7004213fda619bd6df5d2dcdc3788c9950bb7aada88c4a299"
+    },
+    {
+      "path": "seo/production/INSTRUCOES-PUBLICACAO.md",
+      "bytes": 5830,
+      "sha256": "3572efebd502dc4b6fd8b7717d39e428c5fb4ec23d4dc1a6986bff1fbb4a6ae2"
+    },
+    {
+      "path": "seo/production/apache-seo.conf",
+      "bytes": 5896,
+      "sha256": "da1dcd5f26d8c9d872c54c91eaad2498a48b522a662ce635c73b22025269dd0c"
     },
     {
       "path": "seo/production/cursos-head.html",
-      "bytes": 3398,
-      "sha256": "7fecbe51f94c68f0e497a5569c611819ce4955fc398d2d971fe23409cf15b803"
+      "bytes": 3852,
+      "sha256": "9ee6c919432130e4e39b1e9072c3eb4852ba129cdb211a1d4b6016013e1bb150"
     },
     {
       "path": "seo/production/faq-head.html",
-      "bytes": 2510,
-      "sha256": "51b6bd33c24a4ee7aca55177f2de20a8f6969c18fc671e30791b6d11b6fdab86"
+      "bytes": 2946,
+      "sha256": "268dfb64394cf65a590ade2ff2292d1be63cd79e871f049a5e7d8a897e4c1186"
     },
     {
       "path": "seo/production/home-head.html",
-      "bytes": 2494,
-      "sha256": "2c4cc4d2333247da93630b3f4556db753ab0103af90a26b1f24634ea3f653507"
+      "bytes": 2546,
+      "sha256": "94fdef2e4f73901ffe5b6463a73f4e07dcddf9aef1fd0e1aa5821da9f44e8daa"
     },
     {
       "path": "seo/production/quem-somos-head.html",
-      "bytes": 2488,
-      "sha256": "d5faea0f54e8cc97d127217e9d3406cef88deaafee4c6123776fc775f658b93d"
+      "bytes": 5904,
+      "sha256": "f1b4ec3c2f53a93dd629a0066b5e03bdfcc9ef8aff79780bac41c8bfddd77179"
+    },
+    {
+      "path": "seo/production/redirects.json",
+      "bytes": 26762,
+      "sha256": "cab4173a45f9ab32e2bf8b2eafc912a0c3acd4f159e3b2235a8013162d63bd09"
     },
     {
       "path": "seo/production/robots.txt",
-      "bytes": 75,
-      "sha256": "634c6b0f8a52a4656aaec4c1ee9555eb979b5203c2829401386db04bae3ba675"
+      "bytes": 522,
+      "sha256": "22583b2ac8b11c6a242145769bca0cf9b3a464d041d4e59a988edb14bd30e907"
     },
     {
       "path": "seo/production/sitemap.xml",
@@ -1342,6 +1437,46 @@
       "path": "seo/video-optimization.json",
       "bytes": 6064,
       "sha256": "02d4f184a43c356013b9c29310d1dcd7ee56051f96a81956eb60c7257547c41c"
+    },
+    {
+      "path": "seo/wordpress/AUDITORIA-ACERVO.md",
+      "bytes": 9350,
+      "sha256": "ec24f285460b41371bff562324eac4c7b5116acb8c525fb865c29be69e11107c"
+    },
+    {
+      "path": "seo/wordpress/PLANO-HEADINGS.md",
+      "bytes": 3419,
+      "sha256": "b1e19f57ec6a1c34cb6a03d53a921c363ddf5a8436f80cad7f2daf67a6fab021"
+    },
+    {
+      "path": "seo/wordpress/README.md",
+      "bytes": 10079,
+      "sha256": "6f3207339e1d6e45314289d81c106e1145a742393d7afa2dfa65ad73054bb7f6"
+    },
+    {
+      "path": "seo/wordpress/crawl-posts-2026-09-18.json",
+      "bytes": 192623,
+      "sha256": "c1caa04d4c25c2409a78661f62f1b8f6598854617fc42fee58bef6b8381cfcbd"
+    },
+    {
+      "path": "seo/wordpress/h1-structure-2026-09-18.json",
+      "bytes": 7482,
+      "sha256": "ff2130800a93df198202111a7c72d8173fdcfa82f64e8dbccec308098f5b3958"
+    },
+    {
+      "path": "seo/wordpress/tests/test-united-seo-review.php",
+      "bytes": 11695,
+      "sha256": "602dfce3cb3f34e6aa22ddc05448b7591f031252b004552bcc0c6b6af0c9ca47"
+    },
+    {
+      "path": "seo/wordpress/united-seo-review/post-descriptions.json",
+      "bytes": 29306,
+      "sha256": "52db216c0219f310e5aea76c4a73e871cc321298c121297cd964a0926b5d4b50"
+    },
+    {
+      "path": "seo/wordpress/united-seo-review/united-seo-review.php",
+      "bytes": 8561,
+      "sha256": "604f1c6bd1b3578bd36a3e413e2f9bfa100c24673a38b63daa8b95d703466b5b"
     },
     {
       "path": "src/artwork/institucional-wide.png",
@@ -1515,8 +1650,8 @@
     },
     {
       "path": "src/seo-performance.css",
-      "bytes": 2919,
-      "sha256": "46ad3dab80fb922c2af3b3fb9d59e013d51a032e4e42ddc5633832f43a703887"
+      "bytes": 3759,
+      "sha256": "7b8365b4f709d955186f43c63e8eee5650a4e2e9d7f6ac7b32d487b8357ee5c9"
     },
     {
       "path": "src/shared-header.css",
@@ -1559,5 +1694,8 @@
       "sha256": "639db45655b9701f90bad98f47f528764ca89b9635af10a6958b96b5f7160ada"
     }
   ],
-  "revision_base_commit": "37932d0d816815d5796b8ec4e73f1b4933016697"
+  "revision_base_commit": "37932d0d816815d5796b8ec4e73f1b4933016697",
+  "upstream_base_commit": "933c80ac0d99429db104a7c7875a4b48f417383b",
+  "revision_date": "2026-09-18",
+  "artifact_mode": "production; export with --mode preview for review copies"
 }

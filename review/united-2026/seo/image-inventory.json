@@ -299,13 +299,13 @@
       "sha256": "1724c36a8ea4ce61cbb3d76bc39c3a054115a98a1830e87e30312968b2303176"
     },
     "assets/images/bg-united-video.webp": {
-      "bytes": 1423198,
+      "bytes": 148032,
       "dimensions": [
         1785,
         1514
       ],
       "format": "WEBP",
-      "sha256": "60e672bc64a842ab219cc0f47c7b8ff8ec45dcd2acab7eaca32ddc4092c7569a"
+      "sha256": "b737cae8ee5b1f0874371a566cb68823a96bfb286aa4ed393867eba7eaf23231"
     },
     "assets/images/bg-vitrine-01-mobile.jpg": {
       "bytes": 10606,
