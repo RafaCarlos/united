@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://www.unitedidiomas.com/sitemap.xml
+Sitemap: https://unitedidiomas.com/blog/sitemap_index.xml

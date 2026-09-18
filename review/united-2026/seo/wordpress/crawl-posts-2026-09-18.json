@@ -1,0 +1,4827 @@
+{
+  "audit_started_at_utc": "2026-09-18T18:33:30.052086+00:00",
+  "audit_finished_at_utc": "2026-09-18T18:33:52.575711+00:00",
+  "sitemap": "https://unitedidiomas.com/blog/post-sitemap.xml",
+  "sitemap_response": {
+    "status": 200,
+    "final_url": "https://unitedidiomas.com/blog/post-sitemap.xml",
+    "content_type": "text/xml; charset=UTF-8",
+    "x_robots_tag": [
+      "noindex, follow"
+    ],
+    "attempts": 1
+  },
+  "scope": "Public server HTML technical census of sitemap posts; not editorial review, browser rendering, Search Console or indexing confirmation. No forms sent and no WordPress changes.",
+  "method": {
+    "concurrency": 4,
+    "timeout_seconds": 12,
+    "maximum_attempts": 2,
+    "retry_only_failed_requests": true,
+    "limit": 200,
+    "allowed_hosts": [
+      "unitedidiomas.com",
+      "www.unitedidiomas.com"
+    ],
+    "max_response_bytes": 4000000
+  },
+  "sitemap_entries": 182,
+  "unique_sitemap_urls": 182,
+  "sitemap_duplicate_entries": 0,
+  "audited_posts": 182,
+  "omitted_due_to_limit": 0,
+  "summary": {
+    "http_status_counts": {
+      "200": 182
+    },
+    "posts_with_alerts": 57,
+    "alert_counts": {
+      "duplicate_description_across_posts": 47,
+      "multiple_h1": 11
+    },
+    "posts_with_retry": 0,
+    "language_counts": {
+      "pt-PT": 182
+    },
+    "h1_count_distribution": {
+      "1": 171,
+      "2": 2,
+      "3": 3,
+      "4": 1,
+      "5": 3,
+      "6": 2
+    },
+    "metadata_tag_count_distribution": {
+      "title": {
+        "1": 182
+      },
+      "description": {
+        "1": 182
+      },
+      "canonical": {
+        "1": 182
+      }
+    }
+  },
+  "duplicate_metadata_groups": {
+    "title": [],
+    "description": [
+      {
+        "value": "venha aprender inglês na united idiomas. escola com aulas presenciais e online com metodologia ead.",
+        "urls": [
+          "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+          "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+          "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+          "https://unitedidiomas.com/blog/independence-day/",
+          "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+          "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+          "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+          "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+          "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+          "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+          "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+          "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+          "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+          "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+          "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+          "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+          "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+          "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+          "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+          "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+          "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+          "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+          "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+          "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+          "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+          "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+          "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+          "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+          "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+          "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+          "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+          "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+          "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+          "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/"
+        ]
+      },
+      {
+        "value": "entre os diversos profissionais que se beneficiam com o domínio do inglês, estão os economistas, que compõem uma área sólida e conhecida por excelentes oportunidades. confira melhor nesse artigo!",
+        "urls": [
+          "https://unitedidiomas.com/blog/ingles-para-economistas/",
+          "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+          "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/"
+        ]
+      },
+      {
+        "value": "o setor de marketing — que também envolve a publicidade e a comunicação — é uma das áreas onde o inglês se tornou requisito básico para os profissionais há muito tempo, mesmo antes da chegada da internet e, posteriormente, do marketing digital.",
+        "urls": [
+          "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+          "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/"
+        ]
+      },
+      {
+        "value": "um guia rápido de inglês para viagens internacionais pode ser a solução para quem deseja viajar para o exterior, mas não domina o idioma inglês.",
+        "urls": [
+          "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+          "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/"
+        ]
+      },
+      {
+        "value": "confira em nosso blog cinco razões para escolher a united idiomas e descobrir uma nova maneira de estudar inglês!",
+        "urls": [
+          "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+          "https://unitedidiomas.com/blog/principais-girias-ingles/"
+        ]
+      },
+      {
+        "value": "descubra situações onde o inglês no trabalho impacta carreira, decisões e oportunidades. aprenda a importância do inglês no ambiente corporativo com fluência profissional",
+        "urls": [
+          "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+          "https://unitedidiomas.com/blog/ingles-corporativo/"
+        ]
+      },
+      {
+        "value": "aprenda como conduzir conversas profissionais em inglês com clareza, segurança e autoridade em ambientes corporativos.",
+        "urls": [
+          "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+          "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/"
+        ]
+      }
+    ],
+    "canonical": []
+  },
+  "posts": [
+    {
+      "url": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "As seis lendas urbanas mais conhecidas dos Estados Unidos | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba como validar seu diploma nos EUA | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/saiba-como-validar-seu-diploma-nos-eua/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Batalha do Boyne: saiba mais sobre esse feriado | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/independence-day/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/independence-day/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Independence Day | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/independence-day/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Alone vs Lonely: qual a diferença? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/alone-vs-lonely-qual-a-diferenca/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "As leis mais estranhas dos Estados Unidos | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Por que a Rainha tem dois aniversários? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/por-que-a-rainha-tem-dois-aniversarios/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Memorial Day: a importância dessa data nos EUA | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Diferenças entre WANNA, GONNA e GOTTA: descubra quais são! | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Trabalho no exterior: entenda o nível de inglês para trabalhar fora do Brasil | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "HAS ou HAVE? Aprenda a utilizar! | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/has-ou-have-aprenda-a-utilizar/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Save the date: conheça a origem dessa expressão | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como é comemorada a Páscoa nos EUA e Inglaterra? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Por que a United Idiomas é a escolha certa para aprender inglês de verdade? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Quer começar a ler em inglês? Veja 8 livros para iniciar | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Conheça 10 países que têm o inglês como língua oficial | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A comemoração do Carnaval ao redor do mundo | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como a tecnologia pode te ajudar a aprender inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Viajando pela primeira vez para outro país? Veja dicas para aproveitar ao máximo | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba mais sobre os certificados internacionais de inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Qual a melhor forma de iniciar os filhos no inglês? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja motivos para começar a assistir filmes com legenda em inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas de como inserir o estudo do inglês dentro da rotina diária | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba quais as principais diferenças entre o inglês americano e britânico | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Descubra porque a United Idiomas pode transformar sua carreira | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Confira 10 séries que vão melhorar o seu inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Curso ideal de inglês: porque escolher a United Idiomas | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância do inglês para a viagem dos seus sonhos | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como se preparar para uma entrevista de emprego em inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja 10 carreiras e profissões incríveis para quem é fluente em inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "5 motivos que fazem o inglês alavancar sua carreira profissional | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Confira 10 gírias em inglês e aprenda a usá-las! | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "É possível aprender inglês depois de adulto? | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/e-possivel-aprender-ingles-depois-de-adulto/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-secretaria-executiva/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-secretaria-executiva/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância do inglês para secretária executiva | Blog United Idiomas",
+      "description": "Para a secretária executiva, falar e escrever em inglês são duas habilidades imprescindíveis e fundamentais para se comunicar com pessoas das mais diferentes nacionalidades, descubra como o inglês ajuda na carreira de secretária executiva!",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-secretaria-executiva/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/labor-day/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/labor-day/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Labor Day: o Dia do Trabalho nos Estados Unidos | Blog United Idiomas",
+      "description": "Já conhece a história e o significado do Labor Day, o Dia do Trabalho dos Estados Unidos? Venha saber mais neste artigo.",
+      "canonical": "https://unitedidiomas.com/blog/labor-day/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/speak-talk-say-tell/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/speak-talk-say-tell/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Entenda a diferença entre Speak, Talk, Say e Tell | Blog United Idiomas",
+      "description": "Confira neste artigo o significado de cada verbo e exemplos para você se familiarizar de vez com o uso destas palavras!",
+      "canonical": "https://unitedidiomas.com/blog/speak-talk-say-tell/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Economistas: como usar o inglês nessa profissão? | Blog United Idiomas",
+      "description": "Entre os diversos profissionais que se beneficiam com o domínio do inglês, estão os economistas, que compõem uma área sólida e conhecida por excelentes oportunidades. Confira melhor nesse artigo!",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-economistas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Você sabe como o TOEFL funciona? | Blog United Idiomas",
+      "description": "Entre os diversos profissionais que se beneficiam com o domínio do inglês, estão os economistas, que compõem uma área sólida e conhecida por excelentes oportunidades. Confira melhor nesse artigo!",
+      "canonical": "https://unitedidiomas.com/blog/voce-sabe-como-o-toefl-funciona/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/cinco-vantagens-de-estudar-ingles-online/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/cinco-vantagens-de-estudar-ingles-online/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Cinco vantagens de estudar inglês online! | Blog United Idiomas",
+      "description": "Aprender inglês para se destacar no mercado de trabalho ou realizar aquela viagem dos seus sonhos pode ser mais prático e fácil do que você imagina.",
+      "canonical": "https://unitedidiomas.com/blog/cinco-vantagens-de-estudar-ingles-online/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/vocabulario-ingles-usado-no-halloween/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/vocabulario-ingles-usado-no-halloween/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Vocabulário inglês usado no Halloween | Blog United Idiomas",
+      "description": "Realizada anualmente no dia 31 de outubro e considerada uma das principais festas populares dos Estados Unidos, o Halloween (Dia das Bruxas, no Brasil) tem como principal característica as fantasias e decorações macabras, com monstros, vampiros, fantasmas e diversos outros personagens assustadores ou inusitados.",
+      "canonical": "https://unitedidiomas.com/blog/vocabulario-ingles-usado-no-halloween/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "10 costumes brasileiros que estrangeiros acham esquisitos | Blog United Idiomas",
+      "description": "Entre os diversos profissionais que se beneficiam com o domínio do inglês, estão os economistas, que compõem uma área sólida e conhecida por excelentes oportunidades. Confira melhor nesse artigo!",
+      "canonical": "https://unitedidiomas.com/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda inglês e amplie suas chances na área internacional de TI! | Blog United Idiomas",
+      "description": "Considerada um dos segmentos mais promissores da atualidade, a área de Tecnologia da Informação (TI) atrai cada vez mais olhares de profissionais que buscam ingressar no mundo da tecnologia e obter sustento por meio da programação e de outras vertentes do setor.",
+      "canonical": "https://unitedidiomas.com/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/aprenda-40-termos-financeiros-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/aprenda-40-termos-financeiros-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda 40 termos financeiros em inglês | Blog United Idiomas",
+      "description": "Para compreender o mercado financeiro, ter o domínio do inglês é um critério indispensável, já que praticamente todos os termos utilizados na economia global pertencem ao idioma internacional da comunicação.",
+      "canonical": "https://unitedidiomas.com/blog/aprenda-40-termos-financeiros-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Sete motivos para você começar 2023 aprendendo inglês com a United Idiomas | Blog United Idiomas",
+      "description": "O setor de marketing — que também envolve a publicidade e a comunicação — é uma das áreas onde o inglês se tornou requisito básico para os profissionais há muito tempo, mesmo antes da chegada da internet e, posteriormente, do marketing digital.",
+      "canonical": "https://unitedidiomas.com/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Vocabulário de inglês para a área de Marketing | Blog United Idiomas",
+      "description": "O setor de marketing — que também envolve a publicidade e a comunicação — é uma das áreas onde o inglês se tornou requisito básico para os profissionais há muito tempo, mesmo antes da chegada da internet e, posteriormente, do marketing digital.",
+      "canonical": "https://unitedidiomas.com/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Brasil ocupa a 58ª posição entre 111 países avaliados em domínio do inglês | Blog United Idiomas",
+      "description": "Dados divulgados recentemente pela instituição Education First (EF) apontam que o Brasil ocupa a 58ª posição entre 111 países avaliados no Índice de Proficiência em Inglês, relatório que analisa o estudo e nível do idioma em todo o mundo.",
+      "canonical": "https://unitedidiomas.com/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para melhorar sua escrita em inglês | Blog United Idiomas",
+      "description": "Venha aprender inglês na United Idiomas. Escola com aulas presenciais e online com metodologia EAD.",
+      "canonical": "https://unitedidiomas.com/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Conheça a metodologia da United Idiomas que já formou mais de 100 mil alunos | Blog United Idiomas",
+      "description": "Qualificação profissional para o mercado de trabalho, inglês para viagens e intercâmbios, cursos empresariais e muito mais opções de cursos pensados especialmente para atender todas as suas necessidades.",
+      "canonical": "https://unitedidiomas.com/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Comece o ano praticando inglês com sete dicas para utilizar o idioma no dia a dia | Blog United Idiomas",
+      "description": "Além das tradicionais metas de ano novo, como praticar exercícios e melhorar a alimentação, que tal aproveitar a chegada de 2023 para começar a praticar inglês para reforçar o aprendizado do idioma?",
+      "canonical": "https://unitedidiomas.com/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/saiba-como-se-preparar-para-um-intercambio/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/saiba-como-se-preparar-para-um-intercambio/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba como se preparar para um intercâmbio | Blog United Idiomas",
+      "description": "Fazer um intercâmbio permite conhecer novas culturas, adquirir conhecimento, obter experiências acadêmicas valiosas para o mercado de trabalho e muito mais benefícios para os estudantes.",
+      "canonical": "https://unitedidiomas.com/blog/saiba-como-se-preparar-para-um-intercambio/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Confira seis dicas importantes para falar melhor em inglês | Blog United Idiomas",
+      "description": "Entre as principais habilidades linguísticas que envolvem o aprendizado do inglês, a fala ocupa o primeiro lugar na lista de maiores dificuldades para muitos estudantes do idioma.",
+      "canonical": "https://unitedidiomas.com/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Vantagens de falar inglês fluentemente no mercado de trabalho | Blog United Idiomas",
+      "description": "Antes considerado um diferencial no currículo, o domínio do inglês se tornou um requisito importante para o crescimento de profissionais em praticamente todos os segmentos, garantindo inúmeras oportunidades de trabalho, aprimoramento, networking e muito mais.",
+      "canonical": "https://unitedidiomas.com/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Confira as expressões em inglês mais utilizadas pelos americanos | Blog United Idiomas",
+      "description": "Considerado o idioma internacional da comunicação, o inglês, assim como todas as outras línguas, possui certas peculiaridades em cada lugar onde é falado.",
+      "canonical": "https://unitedidiomas.com/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Valentine’s Day: conheça as diferenças em relação ao Dia dos Namorados | Blog United Idiomas",
+      "description": "Assim como no Dia dos Namorados, o Valentine’s Day também proporciona momentos românticos, declarações de amor, rosas, chocolates, cartões e muitas outras semelhanças com a nossa data.",
+      "canonical": "https://unitedidiomas.com/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conversacao-ingles-importancia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conversacao-ingles-importancia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Conversação em inglês e sua importância no aprendizado | Blog United Idiomas",
+      "description": "Confira os motivos que levam a conversação ser um dos melhores hábitos para evoluir no aprendizado do inglês, além de dicas de como melhorar nesse aspecto.",
+      "canonical": "https://unitedidiomas.com/blog/conversacao-ingles-importancia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/business-english-30-termos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/business-english-30-termos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para negócios: confira 30 termos do mundo corporativo | Blog United Idiomas",
+      "description": "Aprenda termos e expressões em inglês utilizadas no dia a dia corporativo neste artigo que a United Idiomas preparou para você.",
+      "canonical": "https://unitedidiomas.com/blog/business-english-30-termos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/saint-patricks-day-eua/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/saint-patricks-day-eua/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saint Patrick's Day nos Estados Unidos: saiba tudo sobre! | Blog United Idiomas",
+      "description": "Você sabe como é comemorado o Saint Patrick’s Day nos Estados Unidos? Confira neste artigo tudo sobre a origem da festa e a celebração norte-americana.",
+      "canonical": "https://unitedidiomas.com/blog/saint-patricks-day-eua/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-melhorar-escuta-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-melhorar-escuta-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba como melhorar suas habilidades de escuta em inglês | Blog United Idiomas",
+      "description": "Quer melhorar suas habilidades de escuta em inglês e evoluir no listening? Então confira em nosso blog dicas incríveis que a United separou para você.",
+      "canonical": "https://unitedidiomas.com/blog/como-melhorar-escuta-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-funciona-cerebro-bilingue/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-funciona-cerebro-bilingue/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como funciona o cérebro bilíngue? | Blog United Idiomas",
+      "description": "Você sabia que o cérebro bilíngue possui diferenças em relação ao cérebro de falantes de apenas um idioma? Descubra mais neste artigo!",
+      "canonical": "https://unitedidiomas.com/blog/como-funciona-cerebro-bilingue/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/erros-aprendizado-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/erros-aprendizado-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Erros que podem estar atrapalhando seu aprendizado do inglês | Blog United Idiomas",
+      "description": "Confira neste artigo da United Idiomas os cinco principais erros que podem estar impedindo você de evoluir no aprendizado do inglês.",
+      "canonical": "https://unitedidiomas.com/blog/erros-aprendizado-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/sotaques-ingles-diferencas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/sotaques-ingles-diferencas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Sotaques em inglês: veja as principais diferenças | Blog United Idiomas",
+      "description": "Veja neste artigo da United Idiomas as principais diferenças e com compreender os sotaques em inglês, como o americano, britânico e australiano.",
+      "canonical": "https://unitedidiomas.com/blog/sotaques-ingles-diferencas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/beneficios-intercambio-conheca/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/beneficios-intercambio-conheca/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Benefícios do intercâmbio: conheça os principais! | Blog United Idiomas",
+      "description": "Fazer um intercâmbio proporciona diversos benefícios para nossa formação intelectual, cultural e social - confira mais no blog da United Idiomas!",
+      "canonical": "https://unitedidiomas.com/blog/beneficios-intercambio-conheca/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/cinco-dicas-aprender-ingles-rapido/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/cinco-dicas-aprender-ingles-rapido/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como aprender inglês mais rápido: veja cinco dicas | Blog United Idiomas",
+      "description": "Se você quer acelerar seu aprendizado e aprender inglês de forma mais eficiente, confira cinco dicas que a United Idiomas separou para te ajudar.",
+      "canonical": "https://unitedidiomas.com/blog/cinco-dicas-aprender-ingles-rapido/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dia-dos-namorados-outra-data-brasil/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dia-dos-namorados-outra-data-brasil/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Entenda por que o Dia dos Namorados tem outra data no Brasil | Blog United Idiomas",
+      "description": "Afinal, por que o Dia dos Namorados é comemorado no dia 12 de junho e o Valentine’s Day em 14 de fevereiro? Descubra a diferença no blog da United Idiomas.",
+      "canonical": "https://unitedidiomas.com/blog/dia-dos-namorados-outra-data-brasil/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/substantivos-coletivos-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/substantivos-coletivos-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Quais são os substantivos coletivos em inglês? | Blog United Idiomas",
+      "description": "Assim como na língua portuguesa, os substantivos coletivos em inglês são fundamentais para o chamado discurso cotidiano, facilitando a comunicação e definindo coisas únicas que são constituídas de forma coletiva.",
+      "canonical": "https://unitedidiomas.com/blog/substantivos-coletivos-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/beneficios-aprender-ingles-infancia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/beneficios-aprender-ingles-infancia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Sete benefícios de aprender inglês na infância | Blog United Idiomas",
+      "description": "Confira no blog da United Idiomas os principais benefícios de aprender inglês na infância e como esse hábito pode transformar a vida do seu filho(a).",
+      "canonical": "https://unitedidiomas.com/blog/beneficios-aprender-ingles-infancia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dicas-falar-ingles-publico/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dicas-falar-ingles-publico/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para perder o medo de falar inglês em público | Blog United Idiomas",
+      "description": "Está com dificuldades para falar inglês em público? Calma, a United Idiomas te ajuda com essa – acesse nosso blog e confira dicas para falar sem medo.",
+      "canonical": "https://unitedidiomas.com/blog/dicas-falar-ingles-publico/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/importancia-musica-aprendizado-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/importancia-musica-aprendizado-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância da música para o aprendizado do inglês | Blog United Idiomas",
+      "description": "Você gosta de ouvir música? Sabia que esse hábito pode te ajudar – e muito – a aprender inglês de forma mais rápida e eficiente? Descubra mais no blog da United Idiomas!",
+      "canonical": "https://unitedidiomas.com/blog/importancia-musica-aprendizado-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/termos-ingles-profissionais-rh/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/termos-ingles-profissionais-rh/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Os principais termos em inglês para profissionais de RH | Blog United Idiomas",
+      "description": "Os profissionais de Recursos Humanos (RH) devem se manter antenados às principais palavras e expressões em inglês utilizadas no dia a dia. Saiba mais aqui!",
+      "canonical": "https://unitedidiomas.com/blog/termos-ingles-profissionais-rh/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conheca-esportes-americanos-vocabulario/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conheca-esportes-americanos-vocabulario/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Conheça os esportes americanos e amplie seu vocabulário | Blog United Idiomas",
+      "description": "Futebol americano, basquete, beisebol, hóquei no gelo... você conhece os principais esportes americanos e o vocabulário em inglês? Confira em nosso blog!",
+      "canonical": "https://unitedidiomas.com/blog/conheca-esportes-americanos-vocabulario/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/expressoes-ingles-usar-restaurante/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/expressoes-ingles-usar-restaurante/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Expressões em inglês para usar no restaurante | Blog United Idiomas",
+      "description": "Falar inglês em um restaurante no exterior pode ser uma tarefa complicada. Confira no blog da United Idiomas algumas expressões para te ajudar!",
+      "canonical": "https://unitedidiomas.com/blog/expressoes-ingles-usar-restaurante/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância do inglês fluente para o jornalismo | Blog United Idiomas",
+      "description": "Qual a importância do inglês fluente para o jornalismo e como ele é utilizado na profissão? Acesse o blog da United Idiomas e descubra!",
+      "canonical": "https://unitedidiomas.com/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-preparar-intercambio-irlanda/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-preparar-intercambio-irlanda/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como se preparar para um intercâmbio na Irlanda | Blog United Idiomas",
+      "description": "Está planejando realizar um intercâmbio na Irlanda? Acesse já o blog da United Idiomas e confira dicas para se preparar e aproveitar ao máximo!",
+      "canonical": "https://unitedidiomas.com/blog/como-preparar-intercambio-irlanda/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/phrasal-verbs-o-que-sao/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/phrasal-verbs-o-que-sao/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Phrasal verbs: o que são e como utilizá-los? | Blog United Idiomas",
+      "description": "Quer aprender de uma vez o que são os phrasal verbs no inglês? Acesse o blog da United Idiomas e confira mais sobre o tema.",
+      "canonical": "https://unitedidiomas.com/blog/phrasal-verbs-o-que-sao/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dicas-para-preparar-toefl/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dicas-para-preparar-toefl/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para se preparar para o TOEFL | Blog United Idiomas",
+      "description": "Quer arrasar no TOEFL e conquistar um dos principais certificados de proficiência da língua inglesa? Acesse o blog da United e confira dicas essenciais.",
+      "canonical": "https://unitedidiomas.com/blog/dicas-para-preparar-toefl/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-medicos-profissionais-saude/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-medicos-profissionais-saude/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância do inglês para médicos e profissionais da saúde | Blog United Idiomas",
+      "description": "Ter o domínio do inglês garante muitas vantagens e oportunidades para a carreira profissional de médicos e áreas da saúde. Veja mais no blog da United Idiomas!",
+      "canonical": "https://unitedidiomas.com/blog/ingles-medicos-profissionais-saude/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-canada/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/intercambio-canada/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Intercâmbio: tudo o que você precisa saber sobre o Canadá | Blog United Idiomas",
+      "description": "O Canadá é um dos países de língua inglesa que mais atraem estudantes para intercâmbio no país. Acesse já o blog da United Idiomas e confira mais sobre o tema.",
+      "canonical": "https://unitedidiomas.com/blog/intercambio-canada/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/halloween-origem-vocabulario/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/halloween-origem-vocabulario/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Halloween: origem, tradições e vocabulário em inglês | Blog United Idiomas",
+      "description": "Conhecido como o Dia das Bruxas no Brasil, o Halloween é uma celebração anual bastante tradicional nos EUA e em outros países de língua inglesa. Saiba mais!",
+      "canonical": "https://unitedidiomas.com/blog/halloween-origem-vocabulario/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/tudo-sobre-intercambio-australia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/tudo-sobre-intercambio-australia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba tudo sobre o intercâmbio na Austrália | Blog United Idiomas",
+      "description": "A Austrália é um dos países mais procurados por estudantes que desejam realizar um programa de intercâmbio – acesse o blog da United Idiomas e saiba mais!",
+      "canonical": "https://unitedidiomas.com/blog/tudo-sobre-intercambio-australia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/origem-black-friday/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/origem-black-friday/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A origem da Black Friday: saiba mais! | Blog United Idiomas",
+      "description": "Vem aí a Black Friday, dia de incríveis promoções e ofertas no comércio de todo o mundo. Descubra a origem da data no blog da United e saiba mais!",
+      "canonical": "https://unitedidiomas.com/blog/origem-black-friday/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-transporte-publico/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-transporte-publico/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para utilizar o inglês no transporte público | Blog United Idiomas",
+      "description": "Entender a utilização do inglês no transporte público é fundamental para conseguir se locomover em uma viagem ao exterior, em países de língua inglesa ou não.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-transporte-publico/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/frases-uteis-compras-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/frases-uteis-compras-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda 20 frases úteis para fazer compras em inglês | Blog United Idiomas",
+      "description": "Fazer compras em um país de língua inglesa pode ser um desafio para muita gente – acesse o blog da United Idiomas e veja frases para te ajudar nessa hora!",
+      "canonical": "https://unitedidiomas.com/blog/frases-uteis-compras-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/thanksgiving-day-curiosidades/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/thanksgiving-day-curiosidades/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Thanksgiving Day: as melhores curiosidades sobre a data! | Blog United Idiomas",
+      "description": "O Dia de Ação de Graças nos EUA, conhecido como Thanksgiving Day, é uma data repleta de curiosidades e tradições – acesse o blog da United e conheça mais!",
+      "canonical": "https://unitedidiomas.com/blog/thanksgiving-day-curiosidades/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/vocabulario-natal-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/vocabulario-natal-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Vocabulário de Natal em inglês: confira mais! | Blog United Idiomas",
+      "description": "Para celebrar o Natal e ainda aprimorar seu inglês, a United Idiomas preparou um artigo com termos e palavras que são utilizadas nesta data tão especial. Veja mais aqui!",
+      "canonical": "https://unitedidiomas.com/blog/vocabulario-natal-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "At, In e On: aprenda as prepositions of time! | Blog United Idiomas",
+      "description": "As preposições do tempo em inglês são utilizadas para se referir a um tempo ou espaço específico — saiba mais sobre o assunto aqui!",
+      "canonical": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 5,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Home-office global: como o inglês pode transformar sua carreira | Blog United Idiomas",
+      "description": "Descubra como o inglês pode transformar sua carreira profissional, abrindo as portas para o home office global.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 4,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Entrevista de emprego em inglês: como se preparar | Blog United Idiomas",
+      "description": "A vaga internacional dos sonhos bateu na sua porta, e agora?Aprenda a se preparar para a sua vaga de emprego em inglês com 5 dicas, acesse o artigo e confira:",
+      "canonical": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 2,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Comece em 2024 estudando inglês na United e decole na sua carreira! | Blog United Idiomas",
+      "description": "Com o início de um novo ano, surge a oportunidade de investir em si e impulsionar sua carreira para novos patamares, e não há maneira melhor de começar do que dominar o idioma inglês",
+      "canonical": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 3,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Saiba como é o Carnaval dos Estados Unidos | Blog United Idiomas",
+      "description": "Nos Estados Unidos, o Carnaval é tão popular quanto aqui, mas possui algumas características próprias, por exemplo: a festa é comumente conhecida como Mardi Gras.",
+      "canonical": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 5,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Pós-graduação internacional: Tudo o que você precisa saber sobre o Reino Unido! | Blog United Idiomas",
+      "description": "Pós-Graduação internacional: Tudo o que você precisa saber sobre o Reino Unido!",
+      "canonical": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 3,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dia da Mulher: Conheça 5 autoras internacionais para ler em inglês | Blog United Idiomas",
+      "description": "Conheça a história de 5 autoras internacionais para ler inglês, Jane Austen, Mary Shelley, Virginia Woolf, Emily Dickinson e as irmãs Brontë.",
+      "canonical": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 6,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Verbo to be: Entenda o que é e como usar! | Blog United Idiomas",
+      "description": "O verbo \"to be\" é utilizado para expressar o estado ou condição de algo, ou alguém. Acesse o artigo e entenda melhor.",
+      "canonical": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 5,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Guia rápido de inglês para viagens internacionais. | Blog United Idiomas",
+      "description": "Um guia rápido de inglês para viagens internacionais pode ser a solução para quem deseja viajar para o exterior, mas não domina o idioma inglês.",
+      "canonical": "https://unitedidiomas.com/blog/guia-rapido-de-ingles-para-viagens/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aurora Boreal: Guia básico de inglês para os viajantes. | Blog United Idiomas",
+      "description": "Um guia rápido de inglês para viagens internacionais pode ser a solução para quem deseja viajar para o exterior, mas não domina o idioma inglês.",
+      "canonical": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 2,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1",
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Intercâmbio: O que é preciso e como se preparar? | Blog United Idiomas",
+      "description": "Neste artigo, vamos explorar os aspectos essenciais para se preparar para um intercâmbio de sucesso, incluindo a escolha do destino, documentos necessários e a importância do inglês.",
+      "canonical": "https://unitedidiomas.com/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 6,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dia-das-maes-anna-jarvis/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dia-das-maes-anna-jarvis/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Qual a história do Dia das Mães e quem foi Anna Jarvis? | Blog United Idiomas",
+      "description": "Você conhece a história de Anna Jarvis e sua relação com o Dia das Mães? Acesse o blog da United e saiba tudo sobre!",
+      "canonical": "https://unitedidiomas.com/blog/dia-das-maes-anna-jarvis/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Intercâmbio Au Pair, o que é e como funciona? | Blog United Idiomas",
+      "description": "Intercâmbio é uma experiência única que proporciona a oportunidade de aprender uma nova língua, cultura e estilo de vida.",
+      "canonical": "https://unitedidiomas.com/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 3,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "multiple_h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/sotaques-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/sotaques-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Por que existem diferentes sotaques em inglês? | Blog United Idiomas",
+      "description": "Descubra por que existem diversos sotaques em inglês e conheça as características fonéticas dos principais sotaques, como o americano, britânico e australiano.",
+      "canonical": "https://unitedidiomas.com/blog/sotaques-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/pratos-tipicos-canada/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/pratos-tipicos-canada/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Cultura com a United: conheça pratos típicos do Canadá | Blog United Idiomas",
+      "description": "Post especial para os fãs de culinária: acesse o blog da United Idiomas e descubra quais são os pratos típicos do Canadá.",
+      "canonical": "https://unitedidiomas.com/blog/pratos-tipicos-canada/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/livros-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/livros-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Comece a ler livros em inglês com essas dicas imperdíveis! | Blog United Idiomas",
+      "description": "Ler livros em inglês é um hábito enriquecedor para seu conhecimento no idioma. Veja aqui dicas para começar hoje mesmo!",
+      "canonical": "https://unitedidiomas.com/blog/livros-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/modal-verbs/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/modal-verbs/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "O que são os modal verbs e como utilizá-los? | Blog United Idiomas",
+      "description": "Can ou could? Will ou would? Chega de dúvidas! Acesse o blog da United Idiomas e confira nosso artigo sobre os modal verbs.",
+      "canonical": "https://unitedidiomas.com/blog/modal-verbs/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/importancia-independence-day/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/importancia-independence-day/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "A importância do Independence Day para os EUA | Blog United Idiomas",
+      "description": "No dia 4 de julho, os norte-americanos celebram o Independence Day, um dos feriados mais importantes dos Estados Unidos. Aprenda tudo sobre a data aqui!",
+      "canonical": "https://unitedidiomas.com/blog/importancia-independence-day/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-fluente-home-office/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-fluente-home-office/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como o inglês fluente abre portas para o home office global | Blog United Idiomas",
+      "description": "Já imaginou trabalhar de casa para empresas estrangeiras? Veja como ter inglês fluente é fundamental para alcançar esse objetivo.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-fluente-home-office/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/treinar-ingles-series/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/treinar-ingles-series/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como treinar seu inglês assistindo séries na TV | Blog United Idiomas",
+      "description": "Quer ficar craque no inglês e ainda se divertir assistindo suas séries preferidas? A United te ensina como: acesse aqui e confira!",
+      "canonical": "https://unitedidiomas.com/blog/treinar-ingles-series/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/remoto-presencial-united/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/remoto-presencial-united/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Remoto ou presencial: na United, você escolhe! | Blog United Idiomas",
+      "description": "Seja qual for sua preferência de aprendizado — presencial, online ou uma combinação dos dois —, a United é o lugar certo! Veja mais em nosso blog.",
+      "canonical": "https://unitedidiomas.com/blog/remoto-presencial-united/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/entrevista-emprego-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/entrevista-emprego-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para arrasar na entrevista de emprego em inglês | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e veja dicas para mandar bem em uma entrevista de emprego em inglês.",
+      "canonical": "https://unitedidiomas.com/blog/entrevista-emprego-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/expandir-vocabulario-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/expandir-vocabulario-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como expandir seu vocabulário em inglês | Blog United Idiomas",
+      "description": "Quer ampliar seu vocabulário e aumentar o número de palavras conhecidas em inglês? Acesse nosso blog e confira as dicas!",
+      "canonical": "https://unitedidiomas.com/blog/expandir-vocabulario-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/guia-prepositions/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/guia-prepositions/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Guia prático de prepositions: veja aqui! | Blog United Idiomas",
+      "description": "Chega de passar sufoco com as prepositions! Acesse o blog da United Idiomas e aprenda tudo sobre como usar as preposições em inglês.",
+      "canonical": "https://unitedidiomas.com/blog/guia-prepositions/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-africa-do-sul/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/intercambio-africa-do-sul/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Intercâmbio na África do Sul: veja tudo sobre! | Blog United Idiomas",
+      "description": "A África do Sul é um país com paisagens de tirar o fôlego e uma cultura plural que encanta milhares de visitantes todos os anos. Descubra tudo no nosso blog!",
+      "canonical": "https://unitedidiomas.com/blog/intercambio-africa-do-sul/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/though-thought-tough/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/though-thought-tough/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Though, Thought, Tough, Through e Thorough: qual a diferença? | Blog United Idiomas",
+      "description": "Palavras que parecem iguais, mas não são: aprenda a diferença entre Though, Thought, Tough, Through e Thorough!",
+      "canonical": "https://unitedidiomas.com/blog/though-thought-tough/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Cinco motivos para estudar na United Idiomas | Blog United Idiomas",
+      "description": "Confira em nosso blog cinco razões para escolher a United Idiomas e descobrir uma nova maneira de estudar inglês!",
+      "canonical": "https://unitedidiomas.com/blog/cinco-motivos-united-idiomas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/principais-girias-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/principais-girias-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja algumas das principais gírias em inglês | Blog United Idiomas",
+      "description": "Confira em nosso blog cinco razões para escolher a United Idiomas e descobrir uma nova maneira de estudar inglês!",
+      "canonical": "https://unitedidiomas.com/blog/principais-girias-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/palavras-frases-ingles-hoteis/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/palavras-frases-ingles-hoteis/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Palavras e frases em inglês para utilizar em hotéis | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e aprenda frases e palavras que vão te ajudar (e muito) a se comunicar em hotéis durante suas viagens.",
+      "canonical": "https://unitedidiomas.com/blog/palavras-frases-ingles-hoteis/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/halloween-guia-completo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/halloween-guia-completo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Halloween: guia completo sobre a data! | Blog United Idiomas",
+      "description": "Conhecido como Dia das Bruxas no Brasil, o Halloween é uma das datas festivas mais aguardadas pelos norte-americanos. Conheça mais em nosso blog!",
+      "canonical": "https://unitedidiomas.com/blog/halloween-guia-completo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/verb-tenses/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/verb-tenses/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Verb Tenses: aprenda os tempos verbais em inglês | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e confira o artigo completo que preparamos para você dominar de vez os verb tenses, os tempos verbais em inglês!",
+      "canonical": "https://unitedidiomas.com/blog/verb-tenses/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/thanksgiving-day-dia-especial/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/thanksgiving-day-dia-especial/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Thanksgiving Day, um dia especial para os norte-americanos | Blog United Idiomas",
+      "description": "Saiba tudo sobre o Thanksgiving Day, o Dia de Ação de Graças, e sua importância para os norte-americanos acessando o blog da United Idiomas!",
+      "canonical": "https://unitedidiomas.com/blog/thanksgiving-day-dia-especial/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/veterans-day-importancia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/veterans-day-importancia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda tudo sobre o Veteran's Day e sua importância nos EUA | Blog United Idiomas",
+      "description": "Neste artigo, contamos tudo o que você precisa saber sobre um dos feriados mais importantes para os norte-americanos: o Veteran’s Day.",
+      "canonical": "https://unitedidiomas.com/blog/veterans-day-importancia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/carreiras-ingles-fluente/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/carreiras-ingles-fluente/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Descubra as carreiras profissionais que exigem inglês fluente | Blog United Idiomas",
+      "description": "Existem muitas carreiras nas quais o inglês fluente é um requisito obrigatório — acesse o blog da United Idiomas e confira quais são!",
+      "canonical": "https://unitedidiomas.com/blog/carreiras-ingles-fluente/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/certificados-internacionais-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/certificados-internacionais-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Quais são os principais certificados internacionais de inglês? | Blog United Idiomas",
+      "description": "Acesse o blog da United e aprenda mais sobre os principais certificados internacionais de inglês, como o TOEFL, TOEIC e muitos outros.",
+      "canonical": "https://unitedidiomas.com/blog/certificados-internacionais-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/natal-lingua-inglesa/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/natal-lingua-inglesa/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Merry Christmas! Saiba tudo sobre o Natal dos países de língua inglesa | Blog United Idiomas",
+      "description": "Quer aprender as curiosidades sobre a comemoração do Natal nos países que falam inglês? Acesse nosso blog e confira!",
+      "canonical": "https://unitedidiomas.com/blog/natal-lingua-inglesa/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/will-going-to/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/will-going-to/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Qual a diferença entre Will e Going To? Aprenda aqui! | Blog United Idiomas",
+      "description": "Momento gramática: clique aqui e aprenda de uma vez a diferença entre os termos Will e Going To.",
+      "canonical": "https://unitedidiomas.com/blog/will-going-to/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/carreira-2025-united/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/carreira-2025-united/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Transforme sua carreira profissional em 2025 com a United Idiomas | Blog United Idiomas",
+      "description": "Que tal começar 2025 dando um novo passo na sua carreira profissional? Acesse o blog da United Idiomas e descubra os motivos para estudar com a gente.",
+      "canonical": "https://unitedidiomas.com/blog/carreira-2025-united/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/reunioes-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/reunioes-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para participar de reuniões em inglês com confiança | Blog United Idiomas",
+      "description": "As melhores dicas para arrasar nas reuniões em inglês estão aqui, no blog da United Idiomas. Clique e saiba mais!",
+      "canonical": "https://unitedidiomas.com/blog/reunioes-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/treinar-ingles-inteligencia-artificial/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/treinar-ingles-inteligencia-artificial/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como treinar seu inglês utilizando a Inteligência Artificial | Blog United Idiomas",
+      "description": "As ferramentas de Inteligência Artificial (IA) são excelentes opções para estudantes praticarem o inglês. Acesse nosso blog e veja como!",
+      "canonical": "https://unitedidiomas.com/blog/treinar-ingles-inteligencia-artificial/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/carnaval-nos-eua/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/carnaval-nos-eua/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como é comemorado o Carnaval nos EUA? Descubra aqui! | Blog United Idiomas",
+      "description": "Que o Carnaval é uma das festas mais importantes no Brasil, todos sabem. Agora, chegou a hora de conferir no blog da United como a data é celebrada nos EUA.",
+      "canonical": "https://unitedidiomas.com/blog/carnaval-nos-eua/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conjuncoes-conectivos/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/conjuncoes-conectivos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "As principais conjunções e conectivos da língua inglesa | Blog United Idiomas",
+      "description": "Domine o uso de conjunções e conectivos em inglês com explicações simples e exemplos práticos traduzidos para o português.",
+      "canonical": "https://unitedidiomas.com/blog/conjuncoes-conectivos/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-ead/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-ead/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja como o inglês EAD pode ser a solução perfeita para seus estudos | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e descubra as vantagens de aprender inglês com a flexibilidade e praticidade do EAD.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-ead/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/comemoracao-st-patrick-day/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/comemoracao-st-patrick-day/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda tudo sobre a comemoração do St. Patrick’s Day | Blog United Idiomas",
+      "description": "O St. Patrick’s Day é uma data de grande importância para a Irlanda, mas também para outros países. Acesse e saiba mais!",
+      "canonical": "https://unitedidiomas.com/blog/comemoracao-st-patrick-day/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/curso-united-carreiras/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/curso-united-carreiras/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Conheça o curso da United Idiomas voltado para carreiras | Blog United Idiomas",
+      "description": "Decole na sua trajetória profissional com a United Idiomas! Acesse nosso blog e confira tudo sobre o curso exclusivo da United voltado para carreiras.",
+      "canonical": "https://unitedidiomas.com/blog/curso-united-carreiras/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-como-se-preparar/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/intercambio-como-se-preparar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Intercâmbio no exterior: saiba como se preparar! | Blog United Idiomas",
+      "description": "Quer realizar o sonho do intercâmbio? Acesse o blog da United Idiomas e veja como se preparar!",
+      "canonical": "https://unitedidiomas.com/blog/intercambio-como-se-preparar/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-americano-britanico-diferencas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-americano-britanico-diferencas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês americano x inglês britânico: conheça as diferenças! | Blog United Idiomas",
+      "description": "Sotaque, pronúncia e vocabulário: acesse o blog da United Idiomas e confira as principais diferenças entre o inglês americano e britânico.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-americano-britanico-diferencas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/erros-gramaticais-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/erros-gramaticais-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Os erros gramaticais mais comuns no inglês e como evitá-los | Blog United Idiomas",
+      "description": "No blog da United Idiomas, listamos os erros mais comuns que envolvem a gramática no inglês e dicas para não errar mais. Acesse e confira!",
+      "canonical": "https://unitedidiomas.com/blog/erros-gramaticais-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/o-que-sao-collocations/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/o-que-sao-collocations/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "O que são collocations e por que eles ajudam o inglês a soar mais natural? | Blog United Idiomas",
+      "description": "No blog da United Idiomas, contamos tudo o que você precisa saber sobre collocations e sua importância para falar inglês de forma mais natural.",
+      "canonical": "https://unitedidiomas.com/blog/o-que-sao-collocations/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/e-mails-profissionais/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/e-mails-profissionais/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como escrever e-mails profissionais em inglês: guia prático | Blog United Idiomas",
+      "description": "Com dificuldade em escrever emails profissionais em inglês? Relaxa a United de ajuda nessa! Acesse nosso blog e saiba mais.",
+      "canonical": "https://unitedidiomas.com/blog/e-mails-profissionais/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/soft-skills-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/soft-skills-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Soft skills em inglês: aprenda a falar sobre suas habilidades com confiança | Blog United Idiomas",
+      "description": "No blog da United Idiomas, te ensinamos a falar sobre suas soft skills em uma entrevista de emprego em inglês. Acesse e confira!",
+      "canonical": "https://unitedidiomas.com/blog/soft-skills-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/nivel-profissional-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/nivel-profissional-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como descobrir qual seu nível profissional de inglês | Blog United Idiomas",
+      "description": "Básico, intermediário, avançado ou fluente? Acesse o blog da United Idiomas e veja como descobrir seu nível profissional de inglês",
+      "canonical": "https://unitedidiomas.com/blog/nivel-profissional-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-mudar-carreira/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-mudar-carreira/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como o inglês ajuda você a mudar de carreira | Blog United Idiomas",
+      "description": "Descubra como o inglês pode abrir portas e facilitar sua mudança de carreira, com mais vagas, cursos e chances de trabalhar para empresas estrangeiras.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-mudar-carreira/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/sete-destinos-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/sete-destinos-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Sete destinos incríveis para estudar inglês fora do Brasil | Blog United Idiomas",
+      "description": "Que tal expandir seus horizontes? Acesse o blog da United Idiomas e confira uma lista com sete cidades para estudar inglês no exterior.",
+      "canonical": "https://unitedidiomas.com/blog/sete-destinos-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/filmes-series-listening/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/filmes-series-listening/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como usar séries e filmes para melhorar seu listening | Blog United Idiomas",
+      "description": "Estuda inglês e curte assistir filmes e séries? Acesse o blog da United Idiomas e veja como usar seu momento de diversão para treinar o idioma!",
+      "canonical": "https://unitedidiomas.com/blog/filmes-series-listening/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/treinar-ingles-intercambio/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/treinar-ingles-intercambio/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para praticar o inglês no intercâmbio além das aulas | Blog United Idiomas",
+      "description": "Quem disse que fazer intercâmbio é aprender inglês somente em sala de aula? Acesse o blog da United Idiomas e descubra mais sobre o assunto.",
+      "canonical": "https://unitedidiomas.com/blog/treinar-ingles-intercambio/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-linkedin/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-linkedin/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para LinkedIn: como deixar seu perfil mais internacional | Blog United Idiomas",
+      "description": "Descubra como criar um perfil no LinkedIn em inglês que se destaque no mercado internacional e aumente suas oportunidades de carreira.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-linkedin/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/phrasal-verbs-mais-usados/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/phrasal-verbs-mais-usados/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Os 10 phrasal verbs mais usados no dia a dia | Blog United Idiomas",
+      "description": "Os phrasal verbs são expressões compostas por um verbo seguido de uma preposição ou advérbio na língua inglesa. Acesse o blog da United e aprenda sobre o tema.",
+      "canonical": "https://unitedidiomas.com/blog/phrasal-verbs-mais-usados/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-usar-get/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/como-usar-get/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como usar get corretamente em diferentes contextos | Blog United Idiomas",
+      "description": "Entenda mais sobre o verbo “get” e como ele pode ser utilizado em diversas situações na língua inglesa.",
+      "canonical": "https://unitedidiomas.com/blog/como-usar-get/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-carreira-tecnologia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-carreira-tecnologia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como o inglês pode impulsionar sua carreira na área de tecnologia | Blog United Idiomas",
+      "description": "Descubra como o inglês pode ampliar oportunidades na tecnologia, abrir portas no mercado global e fortalecer sua carreira.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-carreira-tecnologia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/tempos-verbais-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/tempos-verbais-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Desmistificando os tempos verbais complexos em inglês: saiba mais! | Blog United Idiomas",
+      "description": "Aprenda a diferenciar os tempos verbais em inglês (verb tenses) e entenda mais sobre o tema no blog da United Idiomas.",
+      "canonical": "https://unitedidiomas.com/blog/tempos-verbais-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/cinco-motivos-hoje-united-idiomas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/cinco-motivos-hoje-united-idiomas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja cinco motivos para começar hoje mesmo seus estudos na United Idiomas | Blog United Idiomas",
+      "description": "Chega de adiar o sonho de falar inglês: acesse nosso blog e veja cinco motivos para iniciar seus estudos na United Idiomas!",
+      "canonical": "https://unitedidiomas.com/blog/cinco-motivos-hoje-united-idiomas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/aprenda-20-adjetivos-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/aprenda-20-adjetivos-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda 20 adjetivos em inglês para enriquecer seu vocabulário | Blog United Idiomas",
+      "description": "Amplie seu vocabulário com 20 adjetivos que vão deixar seu inglês ainda mais afiado: acesse o blog da United Idiomas e confira!",
+      "canonical": "https://unitedidiomas.com/blog/aprenda-20-adjetivos-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-nova-zelandia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-nova-zelandia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Estudando inglês na Nova Zelândia: o que você precisa saber | Blog United Idiomas",
+      "description": "Interessado(a) em fazer intercâmbio na Nova Zelândia para estudar inglês? Acesse o blog da United Idiomas e veja dicas indispensáveis para sua viagem.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-nova-zelandia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/negociar-salario-beneficios-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/negociar-salario-beneficios-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprenda a negociar salário e benefícios em inglês | Blog United Idiomas",
+      "description": "Frases e termos em inglês para usar na hora de negociar salário e benefícios no seu emprego: acesse o blog da United e confira!",
+      "canonical": "https://unitedidiomas.com/blog/negociar-salario-beneficios-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-networking/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-networking/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para networking: frases úteis para eventos profissionais | Blog United Idiomas",
+      "description": "Que tal afiar seu inglês profissional com as dicas que separamos para melhorar seu networking? Acesse o blog da United Idiomas e confira!",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-networking/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/pais-ideal-intercambio/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/pais-ideal-intercambio/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como escolher o país ideal para o seu intercâmbio | Blog United Idiomas",
+      "description": "Na dúvida sobre qual país escolher para realizar o sonho do intercâmbio para estudar inglês? Acesse o blog da United Idiomas e veja as principais opções.",
+      "canonical": "https://unitedidiomas.com/blog/pais-ideal-intercambio/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/too-enough-very/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/too-enough-very/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como usar too, enough e very de forma natural | Blog United Idiomas",
+      "description": "Descubra as diferenças e confira exemplos para usar as palavras too, enough e very da maneira correta.",
+      "canonical": "https://unitedidiomas.com/blog/too-enough-very/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/expressoes-e-mails/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/expressoes-e-mails/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Veja 15 expressões comuns em e-mails corporativos | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e confira 15 expressões utilizadas frequentemente em e-mails profissionais e corporativos.",
+      "canonical": "https://unitedidiomas.com/blog/expressoes-e-mails/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/adverbs-frequency/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/adverbs-frequency/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "O que são adverbs of frequency e como utilizá-los? | Blog United Idiomas",
+      "description": "Acesse o blog da United Idiomas e veja como utilizar os adverbs of frequency, com exemplos traduzidos para o português.",
+      "canonical": "https://unitedidiomas.com/blog/adverbs-frequency/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/perder-nervosismo-conversar-em-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/perder-nervosismo-conversar-em-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Dicas para perder o nervosismo na hora de conversar em inglês | Blog United Idiomas",
+      "description": "Aprenda como controlar a tensão e melhorar seu desempenho ao conversar em inglês, com dicas simples de aplicar.",
+      "canonical": "https://unitedidiomas.com/blog/perder-nervosismo-conversar-em-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-fluente-mercado-corporativo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-fluente-mercado-corporativo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "As vantagens de ter inglês fluente no mercado corporativo | Blog United Idiomas",
+      "description": "Entenda as vantagens de ter inglês fluente no mercado corporativo e como isso impacta decisões, carreira, liderança e oportunidades globais.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-fluente-mercado-corporativo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/frases-ingles-restaurantes/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/frases-ingles-restaurantes/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Frases em inglês para usar em restaurantes com confiança | Blog United Idiomas",
+      "description": "Aprenda frases e expressões em inglês para usar em restaurantes, pedir comida, entender o cardápio e se comunicar com segurança em qualquer situação.",
+      "canonical": "https://unitedidiomas.com/blog/frases-ingles-restaurantes/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/curso-ingles-rotina-corrida/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/curso-ingles-rotina-corrida/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Quer estudar inglês mas tem a rotina corrida? Conheça a United Idiomas! | Blog United Idiomas",
+      "description": "Tem pouco tempo para estudar inglês? Conheça a United Idiomas e veja como aprender com flexibilidade, foco prático e adaptação à sua rotina.",
+      "canonical": "https://unitedidiomas.com/blog/curso-ingles-rotina-corrida/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês no trabalho: em quais situações a fluência realmente faz diferença | Blog United Idiomas",
+      "description": "Descubra situações onde o inglês no trabalho impacta carreira, decisões e oportunidades. Aprenda a importância do inglês no ambiente corporativo com fluência profissional",
+      "canonical": "https://unitedidiomas.com/blog/ingles-no-trabalho/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/curso-ingles-profissionais-ocupados/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/curso-ingles-profissionais-ocupados/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Curso de inglês para profissionais ocupados: o que avaliar antes de escolher | Blog United Idiomas",
+      "description": "Veja critérios essenciais para escolher curso de inglês para profissionais ocupados. Descubra como avaliar flexibilidade, metodologia e personalização para rotina executiva.",
+      "canonical": "https://unitedidiomas.com/blog/curso-ingles-profissionais-ocupados/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-corporativo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-corporativo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês corporativo é diferente do inglês tradicional? Entenda o que muda na prática | Blog United Idiomas",
+      "description": "Descubra situações onde o inglês no trabalho impacta carreira, decisões e oportunidades. Aprenda a importância do inglês no ambiente corporativo com fluência profissional",
+      "canonical": "https://unitedidiomas.com/blog/ingles-corporativo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-liderar-reunioes/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-liderar-reunioes/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para liderar reuniões com times internacionais: o que realmente importa | Blog United Idiomas",
+      "description": "Saiba o que realmente importa para liderar reuniões em inglês com equipes internacionais e comunicar decisões com segurança no ambiente corporativo.Palavra-chave principal: inglês para liderar reuniões",
+      "canonical": "https://unitedidiomas.com/blog/ingles-liderar-reunioes/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/curso-ingles-corporativo/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/curso-ingles-corporativo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Curso de inglês corporativo: como saber se a metodologia acompanha sua rotina profissional | Blog United Idiomas",
+      "description": "Descubra como avaliar se um curso de inglês corporativo realmente acompanha sua rotina profissional e favorece a evolução no ambiente de trabalho.",
+      "canonical": "https://unitedidiomas.com/blog/curso-ingles-corporativo/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/selo-excelencia-franchising-united-idiomas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/selo-excelencia-franchising-united-idiomas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "United Idiomas recebe selo de excelência em franchising 2026 | Blog United Idiomas",
+      "description": "Entenda o que representa o Selo de Excelência em Franchising 2026 da ABF e o que esse reconhecimento diz sobre a solidez da United Idiomas.",
+      "canonical": "https://unitedidiomas.com/blog/selo-excelencia-franchising-united-idiomas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-fluente-carreira/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-fluente-carreira/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Por que profissionais com inglês fluente avançam mais rápido na carreira | Blog United Idiomas",
+      "description": "Entenda por que profissionais com inglês fluente avançam mais rápido na carreira e como o idioma impacta oportunidades e liderança.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-fluente-carreira/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como conduzir conversas profissionais em inglês sem perder clareza ou autoridade | Blog United Idiomas",
+      "description": "Aprenda como conduzir conversas profissionais em inglês com clareza, segurança e autoridade em ambientes corporativos.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-conversacao-profissional/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-viagem/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-para-viagem/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para viagem: expressões e situações que mais causam dúvida em aeroportos e hotéis | Blog United Idiomas",
+      "description": "Aprenda expressões em inglês para viagem e evite dúvidas em aeroportos e hotéis com frases práticas para situações comuns.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-para-viagem/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "As maiores dificuldades de gramática em inglês para brasileiros e como superá-las na prática | Blog United Idiomas",
+      "description": "Aprenda como conduzir conversas profissionais em inglês com clareza, segurança e autoridade em ambientes corporativos.",
+      "canonical": "https://unitedidiomas.com/blog/dificuldades-gramatica-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": [
+        "duplicate_description_across_posts"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-profissional-trabalho/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-profissional-trabalho/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "O que realmente diferencia um inglês básico de uma comunicação profissional no ambiente corporativo | Blog United Idiomas",
+      "description": "Entenda o que diferencia o inglês básico da comunicação profissional no trabalho e como evoluir para se posicionar melhor no ambiente corporativo.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-profissional-trabalho/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-viagens-internacionais/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-viagens-internacionais/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês para viagens internacionais: 10 situações comuns que confundem até quem já estudou o idioma | Blog United Idiomas",
+      "description": "Veja 10 situações comuns em viagens internacionais que confundem até quem já estudou inglês e saiba como se comunicar com mais segurança.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-viagens-internacionais/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/tempos-verbais-ingles-2/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/tempos-verbais-ingles-2/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Por que tempos verbais em inglês confundem brasileiros e como destravar esse aprendizado | Blog United Idiomas",
+      "description": "Entenda por que tempos verbais em inglês confundem brasileiros e veja como aprender de forma prática e aplicar no dia a dia.",
+      "canonical": "https://unitedidiomas.com/blog/tempos-verbais-ingles-2/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ia-aprender-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ia-aprender-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como usar IA para aprender inglês no dia a dia sem depender de aulas tradicionais | Blog United Idiomas",
+      "description": "Descubra como usar IA para aprender inglês no dia a dia com mais autonomia, prática e contato real com o idioma.",
+      "canonical": "https://unitedidiomas.com/blog/ia-aprender-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/diferencas-ingles-paises/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/diferencas-ingles-paises/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Inglês da Austrália, Índia e EUA: o que realmente muda na prática e como se adaptar | Blog United Idiomas",
+      "description": "Entenda as diferenças do inglês falado na Austrália, Índia e EUA e veja como se adaptar melhor a sotaques e expressões locais.",
+      "canonical": "https://unitedidiomas.com/blog/diferencas-ingles-paises/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/aumentar-vocabulario-ingles/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/aumentar-vocabulario-ingles/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como aumentar vocabulário em inglês sem decorar palavras soltas: o método que realmente funciona | Blog United Idiomas",
+      "description": "Descubra como aumentar o vocabulário em inglês sem decorar listas e aprenda métodos mais naturais e eficientes para fixação real.",
+      "canonical": "https://unitedidiomas.com/blog/aumentar-vocabulario-ingles/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-viajar-europa/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-viajar-europa/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Férias na Europa: como usar o inglês para se virar nos principais destinos turísticos | Blog United Idiomas",
+      "description": "Aprenda como usar inglês para viajar na Europa com mais segurança e descubra expressões úteis para os principais destinos turísticos.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-viajar-europa/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/rotina-ingles-ia/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/rotina-ingles-ia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como criar uma rotina de inglês mais inteligente com apoio de IA | Blog United Idiomas",
+      "description": "Descubra como criar uma rotina de inglês com IA para estudar de forma mais prática, personalizada e eficiente no dia a dia.",
+      "canonical": "https://unitedidiomas.com/blog/rotina-ingles-ia/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/vocabulario-ingles-viagem/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/vocabulario-ingles-viagem/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Vocabulário essencial para viajantes: o que realmente usar em aeroportos, hotéis e passeios | Blog United Idiomas",
+      "description": "Aprenda o vocabulário em inglês para viagem que faz diferença em aeroportos, hotéis e passeios turísticos internacionais.",
+      "canonical": "https://unitedidiomas.com/blog/vocabulario-ingles-viagem/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ia-aprender-ingles-habilidades-humanas/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ia-aprender-ingles-habilidades-humanas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "O inglês que a IA ainda não ensina: habilidades humanas que continuam decisivas na fluência | Blog United Idiomas",
+      "description": "inteligência artificial para aprender inglês; limites da IA no aprendizado de inglês; fluência em inglês; aprender inglês com IA; habilidades de comunicação em inglês",
+      "canonical": "https://unitedidiomas.com/blog/ia-aprender-ingles-habilidades-humanas/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/imersao-ingles-em-casa/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/imersao-ingles-em-casa/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como criar uma rotina de imersão em inglês dentro de casa usando conteúdos que você já consome | Blog United Idiomas",
+      "description": "Descubra como criar uma rotina de imersão em inglês em casa usando conteúdos que você já consome e evolua no idioma de forma natural.",
+      "canonical": "https://unitedidiomas.com/blog/imersao-ingles-em-casa/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/aprender-ingles-sozinho-ou-com-professor/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/aprender-ingles-sozinho-ou-com-professor/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Aprender inglês sozinho ou com acompanhamento? O que muda na velocidade e na qualidade dos resultados | Blog United Idiomas",
+      "description": "Compare aprender inglês sozinho ou com acompanhamento e descubra como cada método influencia a velocidade, a fluência e a qualidade do aprendizado.",
+      "canonical": "https://unitedidiomas.com/blog/aprender-ingles-sozinho-ou-com-professor/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-viajar-europa-outono/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-viajar-europa-outono/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Como usar o inglês em viagens durante o outono europeu: dicas para quem vai à Europa entre setembro e novembro | Blog United Idiomas",
+      "description": "Vai à Europa entre setembro e novembro? Veja como usar o inglês em situações práticas durante sua viagem no outono europeu.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-viajar-europa-outono/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-eventos-internacionais/",
+      "status": 200,
+      "final_url": "https://unitedidiomas.com/blog/ingles-eventos-internacionais/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": [],
+      "attempts": 1,
+      "title": "Eventos internacionais em setembro: como aproveitar festivais e feiras usando o inglês | Blog United Idiomas",
+      "description": "Saiba como usar o inglês em festivais e feiras internacionais para conversar, pedir informações, fazer networking e aproveitar melhor o evento.",
+      "canonical": "https://unitedidiomas.com/blog/ingles-eventos-internacionais/",
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "lang": "pt-PT",
+      "h1_count": 1,
+      "tag_counts": {
+        "title": 1,
+        "description": 1,
+        "canonical": 1
+      },
+      "alerts": []
+    }
+  ],
+  "limitations": [
+    "No authenticated account, WordPress write operation or form submission.",
+    "No browser JavaScript rendering, Core Web Vitals, editorial assessment of each article, Search Console access, traffic loss measurement or index-status confirmation.",
+    "Only URLs directly listed in this public post sitemap were fetched; redirects were restricted to United hosts. Pages, categories, pagination and URLs absent from the post sitemap are outside this census.",
+    "Duplicate metadata was compared after whitespace normalization and case-folding; canonical duplicate comparison ignores only the trailing slash.",
+    "Heading count flags are for semantic review, not proof of a Google ranking penalty. Meta-description length alone was not treated as a quality defect."
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "scope": "Private static preview; not a production crawl or Lighthouse score",
+  "scope": "Production-ready static artifact, not published. Review copies require export-production.py --mode preview. Not a live crawl or Lighthouse score.",
   "pages": {
     "/": {
       "title": "Inglês em 18 meses | Curso online United Idiomas",
@@ -12,7 +12,7 @@
     "/cursos/": {
       "title": "Cursos de inglês online: Live Class e Business | United",
       "description": "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina.",
-      "h1": "Live Class",
+      "h1": "Curso de inglês online Live Class",
       "images": 38,
       "videos": 3,
       "stylesheets": 1
@@ -42,9 +42,9 @@
       "reduction_percent": 87.33
     },
     "all_optimized_images": {
-      "original_bytes": 28288280,
-      "optimized_bytes": 4891248,
-      "reduction_percent": 82.71
+      "original_bytes": 30483963,
+      "optimized_bytes": 5039280,
+      "reduction_percent": 83.47
     },
     "six_previously_remote_videos": {
       "original_bytes": 211630071,
@@ -58,7 +58,7 @@
     },
     "delivered_raster_image_inventory": {
       "files": 171,
-      "bytes": 43760574,
+      "bytes": 42485408,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
     }
   },

@@ -1,8 +1,8 @@
-"""Final, repeatable pass after older preview builders. Never enable indexing on this private preview."""
+"""Build production SEO in dist. Use export-production.py --mode preview for review copies."""
 from pathlib import Path
 from lxml import html, etree
 from hashlib import sha256
-from urllib.parse import urlsplit, urljoin
+from urllib.parse import urlsplit, urljoin, urlencode
 from collections import Counter
 import json,re,html as escape_html
 ROOT=Path(__file__).resolve().parents[1]; DIST=ROOT/'dist'
@@ -29,7 +29,9 @@ prod=ROOT/'seo/production';prod.mkdir(exist_ok=True)
 for route,meta in META.items():
  p=DIST/route.strip('/')/'index.html' if route!='/' else DIST/'index.html'
  d=html.fromstring(p.read_bytes());d.set('lang','pt-BR');head=d.find('head')
- for e in head.xpath('./title|./meta[@name="description" or @name="keywords" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]'):e.getparent().remove(e)
+ for e in head.xpath('./title|./meta[@name="description" or @name="keywords" or @name="robots" or @name="googlebot" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]'):e.getparent().remove(e)
+ for e in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'):e.getparent().remove(e)
+ etree.SubElement(head,'meta',name='robots',content='index,follow,max-image-preview:large')
  title=etree.SubElement(head,'title');title.text=meta['title']
  url=BASE+route
  tags=[{'name':'description','content':meta['description']},{'property':'og:type','content':'website'},{'property':'og:locale','content':'pt_BR'},{'property':'og:site_name','content':'United Idiomas'},{'property':'og:title','content':meta['title']},{'property':'og:description','content':meta['description']},{'property':'og:url','content':url},{'property':'og:image','content':BASE+'/assets/images/logo-united-idiomas.png'},{'name':'twitter:card','content':'summary'},{'name':'twitter:title','content':meta['title']},{'name':'twitter:description','content':meta['description']}]
@@ -37,6 +39,11 @@ for route,meta in META.items():
  etree.SubElement(head,'link',rel='canonical',href=url)
  page={'@type':meta['type'],'@id':url+'#webpage','url':url,'name':meta['title'],'description':meta['description'],'inLanguage':'pt-BR','isPartOf':{'@id':BASE+'/#website'},'about':{'@id':ORG}}
  graph=[organization,{'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'United Idiomas','inLanguage':'pt-BR','publisher':{'@id':ORG}},page]
+ if route!='/':
+  page['breadcrumb']={'@id':url+'#breadcrumb'}
+  graph.append({'@type':'BreadcrumbList','@id':url+'#breadcrumb','itemListElement':[
+   {'@type':'ListItem','position':1,'name':'United Idiomas','item':BASE+'/'},
+   {'@type':'ListItem','position':2,'name':meta['name'],'item':url}]})
  if route=='/cursos/':
   courses=[('Live Class','Curso de inglês online e ao vivo com trilha educacional de 18 meses, conversação ilimitada e horários flexíveis.','#live-class'),('United Business','Curso de inglês para comunicação em reuniões, apresentações e negócios.','#united-business')]
   for name,desc,anchor in courses:graph.append({'@type':'Course','@id':url+anchor,'name':name,'description':desc,'url':url+anchor,'inLanguage':'pt-BR','provider':{'@id':ORG}})
@@ -51,7 +58,24 @@ for route,meta in META.items():
   h=d.xpath('//main//h1')[0];inner(h,'Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.')
   for h in d.xpath('//main//h2'):
    if '100 mil' in h.text_content():inner(h,'Mais de 150 mil alunos em nossa história. Inglês que faz parte da vida.')
+  unit_slugs={'Cornélio Procópio':'cornelio-procopio','Ipiranga':'ipiranga','Maringá':'maringa','Osasco':'osasco','Santo Amaro':'santo-amaro','Tatuapé':'tatuape'}
+  locations=[]
+  for box in d.get_element_by_id('unidades-hibridas').xpath('.//div[@class="box"]'):
+   name=box.find('h3').text_content().strip();ident='unidade-'+unit_slugs[name]
+   box.set('id',ident)
+   address=box.find('address').text_content().strip()
+   for old in box.xpath('.//a[@data-unit-map]'):old.getparent().remove(old)
+   phone=box.xpath('./a[contains(@href,"wa.me/")]')[0];phone.set('rel','noopener noreferrer')
+   maps='https://www.google.com/maps/search/?'+urlencode({'api':'1','query':address+', '+name+', Brasil'})
+   address_element=box.find('address');inner(address_element,'')
+   link=etree.SubElement(address_element,'a',href=maps,target='_blank',rel='noopener noreferrer',**{'class':'unit-map-link','data-unit-map':'','aria-label':'Ver endereço da unidade '+name+' no mapa: '+address});link.text=address
+   # Only data already displayed in the unit cards: no invented city, coordinates or hours.
+   location={'@type':'Place','@id':url+'#'+ident,'name':'United Idiomas — '+name,'url':url+'#'+ident,'address':address,'telephone':'+'+phone.get('href').rsplit('/',1)[-1],'hasMap':maps}
+   graph.append(location);locations.append({'@id':location['@id']})
+  page['mainEntity']={'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'item':place} for i,place in enumerate(locations)]}
  elif route=='/cursos/':
+  h=d.xpath('//main//h1')[0];inner(h,'')
+  context=etree.SubElement(h,'span',{'class':'course-title-context'});context.text='Curso de inglês online';context.tail=' Live Class'
   for heading in d.xpath('//main//h4'):
    if heading.text_content().strip()=='O que você irá aprender:':
     heading.tag='h3'
@@ -72,6 +96,10 @@ for route,meta in META.items():
    block=etree.SubElement(article,'div',{'class':'question','id':ident})
    b=etree.SubElement(block,'button',{'type':'button','class':'faq-toggle','aria-expanded':'false','aria-controls':ident+'-answer','id':ident+'-question'});b.text=q
    answer=etree.SubElement(block,'div',{'class':'text','id':ident+'-answer','aria-labelledby':ident+'-question'});etree.SubElement(answer,'p').text=a
+   links=etree.SubElement(answer,'p',{'class':'faq-course-links'})
+   link=etree.SubElement(links,'a',href='/cursos/#live-class');link.text='Conheça o Live Class'
+   if ident=='faq-escolher':
+    link.tail=' · ';etree.SubElement(links,'a',href='/cursos/#united-business').text='Conheça o United Business'
   # Derive the question index from the actual content so new search entries stay navigable.
   indexes=d.xpath('//ul[li/a[@data-faq-id]]')
   for index in indexes:
@@ -90,8 +118,8 @@ for route,meta in META.items():
      for attr,value in list(element.attrib.items()):
       if attr!='id':element.set(attr,value.replace('url(#'+old+')','url(#'+new+')') if value!='#'+old else '#'+new)
  schema=etree.SubElement(head,'script',{'type':'application/ld+json'});schema.text=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False,separators=(',',':'))
- # Same content metadata for integration into the official PHP head, without preview robots.
- fragments=[f'<title>{escape_html.escape(meta["title"])}</title>']+[html.tostring(el,encoding='unicode') for el in head.xpath('./meta[@name="description" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]')]
+ # Production metadata; the preview exporter replaces robots in its separate output.
+ fragments=[f'<title>{escape_html.escape(meta["title"])}</title>']+[html.tostring(el,encoding='unicode') for el in head.xpath('./meta[@name="robots" or @name="description" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]')]
  (prod/('home-head.html' if route=='/' else route.strip('/')+'-head.html')).write_text('\n'.join(fragments)+'\n')
  # Keep the account loader async and the remaining scripts in order after parsing.
  for old in d.xpath('//script[contains(@src,"media-runtime.js")]'):old.getparent().remove(old)
@@ -119,6 +147,8 @@ for route,meta in META.items():
  for link in head.xpath('./link[contains(@href,"liveclass-intro.css")]'):link.set('href','/liveclass-intro.css?v='+digest(DIST/'liveclass-intro.css'))
  p.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode',method='html'))
  print('SEO and media:',route)
-# These files are for the real domain only, deliberately outside the private dist output.
-(prod/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'/sitemap.xml\n')
+# WordPress owns its current, automatically updated sitemap. Keep both discoverable.
+# Do not disallow review URLs here: crawlers must be able to see their noindex header/meta.
+(prod/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'/sitemap.xml\nSitemap: https://unitedidiomas.com/blog/sitemap_index.xml\n')
 (prod/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+BASE+r+'</loc></url>\n' for r in META)+'</urlset>\n')
+for name in ('robots.txt','sitemap.xml'):(DIST/name).write_bytes((prod/name).read_bytes())

@@ -1,25 +1,25 @@
-# Correção da prévia no servidor — 15/09/2026
+# Publicação em subpasta — instruções atualizadas em 18/09/2026
 
-A correção de 15/09/2026 ajustou os caminhos de CSS, fontes, imagens, scripts e navegação para a prévia funcionar dentro de uma subpasta, preservando a apresentação aprovada. Esta revisão também inclui a integração do formulário oficial RD Station de 16/09/2026, descrita em `seo/RD-STATION.md`.
+A correção de caminhos relativos continua válida: CSS, scripts, imagens e navegação local funcionam na raiz HTTP ou numa subpasta. O repositório mantém exatamente `review/united-2026/`, sem duplicar esse caminho.
 
-## Aplicar ao teste informado
+Desde a revisão de SEO de 18/09, **dist é o artefato de produção**. Para colocar uma prévia em `https://www.unitedidiomas.com/review/united-2026/dist/`, primeiro gerar uma cópia protegida:
 
-URL: https://www.unitedidiomas.com/review/united-2026/dist/
+```bash
+python3 scripts/export-production.py --mode preview --output /tmp/united-preview
+```
 
-1. Faça uma cópia de segurança da pasta de prévia existente.
-2. Use os arquivos de `review/united-2026/dist/` desta revisão do GitHub. Se usar um ZIP desta revisão, extraia-o na raiz de arquivos do site: ele já contém esse caminho. Não extraia dentro de outra pasta `review/united-2026/dist/`, pois isso duplicaria o caminho. O ZIP anterior, apenas com a correção de caminhos de 15/09, não contém a integração RD Station.
-3. Substitua os arquivos da prévia em `review/united-2026/dist/`, incluindo HTML e assets. Não copie arquivos da prévia para a raiz PHP de produção.
-4. Limpe o cache da hospedagem/CDN para esse caminho, se houver, e recarregue a página sem cache. Os bundles CSS corrigidos já têm novos nomes de versão.
-5. Confira Home, Cursos, Quem Somos e FAQ, além do menu e das imagens. Se a hospedagem usa regras de reescrita, arquivos e diretórios estáticos existentes devem ser servidos diretamente.
+Após revisão e backup da prévia anterior, o conteúdo de `/tmp/united-preview/site/` é o que deve ocupar a pasta `review/united-2026/dist/` do servidor. Copiar o conteúdo dessa pasta uma única vez: não criar `dist/site/` ou outro `review/united-2026/` aninhado. Não substituir o PHP da raiz. Esta documentação não executa a publicação.
 
-A prévia também funciona em outra subpasta, desde que toda a estrutura de `dist` seja preservada. Para abrir localmente a partir da raiz do repositório: `python3 -m http.server 8766` e acesse `http://localhost:8766/review/united-2026/dist/`.
+O exportador acrescenta `noindex,nofollow` aos HTMLs da cópia, exclui comparação/debug e não altera a fonte. Em uma prévia dentro do mesmo domínio, o `robots.txt` da subpasta não controla robôs: aplicar também o `X-Robots-Tag` de `seo/production/apache-seo.conf`, mesclando à configuração existente. Não copiar o robots bloqueado da prévia para a raiz oficial. O Google precisa poder rastrear uma URL já conhecida para ler o noindex.
 
-## Limites preservados
+Para abrir localmente:
 
-O formulário oficial RD Station `lp-vamos-coversar-cbaf85f09c7f676d42c3` substitui os formulários demonstrativos e envia diretamente pelo RD, sem PHP legado em paralelo. Um único embed por página é movido entre o contato junto ao rodapé e o diálogo. O SDK é carregado de `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`.
+```bash
+python3 -m http.server 8768 --bind 127.0.0.1 --directory /tmp/united-preview/site
+```
 
-**Os testes do formulário na prévia podem criar leads reais.** A confirmação de recebimento exige conferir a conta RD Station; esta documentação não afirma que o teste final passou. A prévia mantém `noindex,nofollow`; o `robots.txt` bloqueado deve ficar dentro da prévia. Nunca substitua o robots de produção por esse arquivo.
+Abrir `http://127.0.0.1:8768/`. Conferir Home, Cursos, Quem Somos, FAQ e os respectivos arquivos, sem 404. Invalidar o cache da hospedagem quando houver arquivos substituídos na mesma URL. Preservar o blog e quaisquer dados fora da pasta da prévia.
 
-A integração ao site oficial ainda precisa ser revisada, mantendo o PHP de produção separado. A liberação de indexação, metadados, robots e sitemap deve seguir `seo/production/` e `seo/INTEGRACAO.md`, somente na integração final ao domínio oficial.
+**O formulário RD pode criar leads reais na prévia.** A versão atual usa o embed `form-vamos-conversar-5ba05329ea8c88b5c10d`, o SDK oficial e o loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js`. A confirmação aparece dentro da própria caixa após o sucesso indicado pelo SDK. Recebimento no Marketing e criação de negócio no CRM precisam ser conferidos nas respectivas contas; não foram enviados leads nesta revisão de SEO.
 
-Esta revisão não modifica o PHP da raiz e não contém configurações de publicação automática. Nenhuma alteração foi aplicada ao servidor por esta tarefa.
+Para produção, usar `--mode production` e seguir `seo/INTEGRACAO.md` e `seo/production/INSTRUCOES-PUBLICACAO.md`. Metadados, sitemap e regras de servidor atuais estão em `seo/production/`.

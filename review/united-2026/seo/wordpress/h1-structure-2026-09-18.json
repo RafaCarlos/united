@@ -1,0 +1,182 @@
+{
+  "reviewed_on": "2026-09-18",
+  "method": "Leitura pública dos headings e seus ancestrais DOM; nenhuma modificação no Divi, tema ou banco.",
+  "posts": [
+    {
+      "url": "https://unitedidiomas.com/blog/uso-de-preposicoes-em-ingles/",
+      "source_title": "At, In e On: aprenda as prepositions of time! | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 4,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[4]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/ingles-para-home-office-global/",
+      "source_title": "Home-office global: como o inglês pode transformar sua carreira | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 3,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/como-se-preparar-para-entrevista-em-ingles/",
+      "source_title": "Entrevista de emprego em inglês: como se preparar | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 1,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+      "source_title": "Comece em 2024 estudando inglês na United e decole na sua carreira! | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 2,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/carnaval-nos-estados-unidos-mardi-gras/",
+      "source_title": "Saiba como é o Carnaval dos Estados Unidos | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 4,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[4]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/pos-graduacao-internacional-no-reino-unido/",
+      "source_title": "Pós-graduação internacional: Tudo o que você precisa saber sobre o Reino Unido! | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 2,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+      "source_title": "Dia da Mulher: Conheça 5 autoras internacionais para ler em inglês | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 5,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[4]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[5]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/entenda-o-verbo-to-be/",
+      "source_title": "Verbo to be: Entenda o que é e como usar! | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 4,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[4]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+      "source_title": "Aurora Boreal: Guia básico de inglês para os viajantes. | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 1,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+      "source_title": "Intercâmbio: O que é preciso e como se preparar? | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 5,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[3]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[4]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[5]"
+      ]
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+      "source_title": "Intercâmbio Au Pair, o que é e como funciona? | Blog United Idiomas",
+      "status": 200,
+      "title_h1_count": 1,
+      "body_h1_count": 2,
+      "other_h1_count": 0,
+      "title_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[1]/h1"
+      ],
+      "body_h1_paths": [
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[1]",
+        "/html/body/div/div/div/div/div/div/div[1]/article/div[2]/h1[2]"
+      ]
+    }
+  ]
+}
