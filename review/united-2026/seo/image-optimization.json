@@ -199,5 +199,23 @@
     "quality": 94,
     "ssim": 0.9814274311065674,
     "source_sha256": "1f4685cdacbf7ee81a1f40ba5a222bce2a9a245d64fcac7f76e7c9cd520b1168"
+  },
+  "assets/images/bg-united-video.png": {
+    "path": "assets/images/bg-united-video.webp",
+    "before": 2195683,
+    "after": 148032,
+    "width": 1785,
+    "height": 1514,
+    "quality": 94,
+    "ssim": 0.9845534920204163,
+    "psnr_db": 46.57522360938813,
+    "ssim_black_background": 0.9845470056067397,
+    "psnr_db_black_background": 46.57522360938813,
+    "metric_method": "RGB composited on white/black; SSIM 7x7 uniform, sample covariance",
+    "alpha_exact": true,
+    "source_sha256": "b02b534ee6483f5acfa33b583d539448391c45b2dbf15bc9d6d0a6decb05736a",
+    "source_repository_path": "assets/images/bg-united-video.png",
+    "previous_webp_bytes": 1423198,
+    "previous_webp_sha256": "60e672bc64a842ab219cc0f47c7b8ff8ec45dcd2acab7eaca32ddc4092c7569a"
   }
 }

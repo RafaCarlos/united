@@ -1,4 +1,49 @@
-# SEO e desempenho — revisão de 12/09/2026
+# SEO para produção — revisão de 18/09/2026
+
+A atualização parte de `main` em `933c80a`, depois da incorporação do PR anterior. O código de produção da raiz permanece separado. Esta entrega está em revisão e não foi publicada no servidor.
+
+## Pente-fino da entrega definitiva
+
+A entrega é de produção, sem rótulos visíveis de prévia, comparação/debug ou bloqueio de indexação nas páginas comerciais. O README e CORRECAO-SERVIDOR agora orientam diretamente a integração na raiz oficial. O modo de desenvolvimento continua isolado; não é o artefato entregue para publicar.
+
+- Robots atualizado: acesso a páginas, artigos e recursos públicos; somente `/blog/wp-admin/` restrito, com `admin-ajax.php` liberado. Os dois sitemaps são declarados. O gerador deixou de sobrescrever essa fonte com regras hardcoded.
+- Exportação recusa política de robots conflitante, canonical incorreto/duplicado, títulos duplicados, sitemap incompleto ou no formato errado, e HTML fora do inventário comercial. O parser valida a política restrita usada neste pacote, sem simular toda a especificação REP.
+- Quatro aliases `index.html` ganharam 301 para suas URLs canônicas. As regras usam THE_REQUEST para evitar loops de DirectoryIndex e preservam query strings; não alteram POST, blog ou cópias antigas de revisão.
+- Home com H1 “Inglês online. Aulas ao vivo. Fale inglês.” no desenho existente. Links de Blog usam diretamente o host canônico. Duas respostas do FAQ apontam para artigos públicos pertinentes, conferidos com HTTP 200 e canonical próprio.
+- Plano profissional com responsabilidades e critérios de aceite para publicação, conteúdo pedagógico original, autoria, unidades, WordPress, Search Console, desempenho e conversões. Nenhuma credencial, oferta, avaliação ou dado local foi inventado.
+
+Validação deste complemento: **18 testes do exportador, 13 de rastreamento e 9 de redirecionamentos aprovados**; Apache novamente `Syntax OK`, sem iniciar Apache. Auditoria das quatro páginas e 147 dependências sem erros. A exportação de produção passou; seu novo H1 foi conferido no navegador em 390×844 e 1366×768, e não houve excesso de largura em 320 px. Não houve envio de leads. Os testes anteriores de RD e PHP são descritos abaixo e não equivalem a nova validação de conversão ou instalação do plugin.
+
+A nova coleta pública está em [VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md](VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md): 30 GETs, sem erros de rede. O servidor ainda tinha robots 404, sitemap raiz antigo, três rótulos “PRÉVIA”, aliases index.html duplicados e o fundo de vídeo antigo. As rotas de privacidade/termos retornaram 404 e não receberam links novos. As correções do pacote só terão efeito após Rafael integrar a produção. Não foi comprovada indexação nem medida de campo de Core Web Vitals.
+
+## Complemento de intenção de busca e conteúdo
+
+Títulos e textos revisados para inglês online e ao vivo, trilha de 18 meses e conversação em inglês. Jimmy, storytelling e OnDemand foram descritos por suas funções reais, com OnDemand opcional. Duas perguntas adicionadas ao FAQ (22 no total); índice e links gerados a partir das perguntas, sem depender de JavaScript para o texto existir. Fontes mantidas em `metadata.json` e `content.json`. A auditoria estática voltou a passar em quatro páginas/147 dependências, e duas execuções do pipeline geraram arquivos idênticos. As exportações de produção e prévia passaram. A verificação pública separada ainda mostra o site anterior ao PR; não houve publicação.
+
+A conferência no navegador em 390×844 confirmou os textos atualizados de Home, Cursos e FAQ sem rolagem horizontal. As respostas de Jimmy e OnDemand abrem no acordeão; o formulário RD carregou, sem envio de novos contatos neste complemento.
+
+## Correções desta entrega
+
+- Produção com indexação explícita, sem os rótulos de prévia nas quatro páginas. A exportação de prévia mantém proteção separada; a produção recusa HTML bloqueado.
+- Sitemap comercial válido e robots com descoberta adicional do sitemap automático do WordPress, verificado publicamente em 18/09. Excluídos os destinos antigos do sitemap comercial; redirecionamentos só onde há equivalente conhecido.
+- Títulos/descrições, canonical e um H1 por página mantidos; contexto de curso no H1, BreadcrumbList, links da FAQ para cursos e seis unidades com âncoras, mapas e dados visíveis consistentes.
+- Fundo `bg-united-video.webp`: 1.423.198 → 148.032 bytes (−89,60%). Refeito do PNG original; 1785 × 1514 px e transparência preservados. SSIM 0,98455 e PSNR 46,58 dB medidos sobre fundos branco e preto. Isso mede similaridade da imagem, não Core Web Vitals.
+- GTM acrescentado por Rafael, formulário/loader RD, WhatsApp e Área do Aluno preservados. Sem redesign, sem novo envio de lead.
+- Extensão WordPress opcional para idioma, metadados e autoria identificados no blog público, com recomendações de conteúdo e instruções de instalação separadas. Não instalada no site.
+
+## Validação e limites
+
+A auditoria estática passou nas quatro páginas, em 147 dependências locais e no inventário de 171 imagens, sem erros. As regras de servidor são um fragmento revisável: execução na hospedagem, eventuais regras conflitantes, cache/CDN e indexação real dependem da publicação e da conferência no Search Console. Não foi obtida nota Lighthouse nem medição de Core Web Vitals de usuários reais. Testes finais: 13 do exportador, 8 de redirecionamentos e 17 dos controladores RD aprovados. O Apache 2.4.67 respondeu `Syntax OK` em configuração temporária isolada, sem iniciar um servidor Apache. O pipeline de SEO/assets/caminhos foi executado duas vezes e produziu os mesmos arquivos.
+
+No navegador local, Cursos foi conferido em 1366 × 768 e 390 × 844; o título manteve o desenho do banner, com contexto legível. Os cartões das seis unidades se ajustam ao conteúdo e os endereços receberam links para o mapa; a âncora Ipiranga chegou ao cartão correto. A FAQ manteve abertura de resposta e navegação por teclado para Business. As quatro páginas foram verificadas em 320 px, sem rolagem horizontal ou rótulos de prévia. Um formulário oficial RD carregou em Cursos, sem envio de dados. As exportações de produção/prévia validaram as quatro páginas e 147 dependências; o robots bloqueado ficou só na cópia de prévia.
+
+## Cobertura técnica do blog
+
+O sitemap automático atual contém **182 artigos**. Todos responderam HTTP 200, com canonical correspondente à URL final, títulos únicos e sem noindex detectado. Foram encontrados 47 artigos com descrições repetidas, 11 com múltiplos H1 e 182 declarando pt-PT. O diagnóstico completo e as URLs estão em `wordpress/AUDITORIA-ACERVO.md` e `wordpress/crawl-posts-2026-09-18.json`. Isso é uma auditoria técnica do HTML servido, não revisão editorial integral dos textos nem confirmação de indexação do Google. O plugin inclui 48 descrições específicas (47 duplicadas e o artigo IA), além de idioma pt-BR e ajustes de autoria/metadados. Os 11 artigos com H1 adicionais têm instruções pontuais para edição no Divi, sem reescrita automática dos textos. O plugin passou no lint e em 47 verificações de contrato, em PHP 8.5.10 e 7.4.33. O mapa de 48 descrições foi conferido contra o censo: sem entradas faltantes/extra e com textos únicos. Isso não atualiza o conteúdo factual dos artigos antigos. As correções do pacote WordPress só terão efeito depois da instalação e validação no blog.
+
+# Histórico até 17/09/2026
+
+Os resultados abaixo pertencem às versões e datas indicadas. Referências a `dist` como prévia bloqueada, forms demonstrativos ou publicação futura dos antigos metadados foram substituídas pelo contrato de produção/prévia descrito acima e no README atual.
 
 ## WhatsApp no banner e loader RD — 17/09/2026
 

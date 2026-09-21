@@ -1,33 +1,33 @@
 {
-  "scope": "Private static preview; not a production crawl or Lighthouse score",
+  "scope": "Production-ready static artifact, not published. Review copies require export-production.py --mode preview. Not a live crawl or Lighthouse score.",
   "pages": {
     "/": {
-      "title": "Inglês em 18 meses | Curso online United Idiomas",
-      "description": "Conheça o Live Class: curso de inglês online e ao vivo, com trilha de 18 meses, conversação ilimitada e horários flexíveis. Fale inglês, faça United.",
-      "h1": "Você tem muitoa dizer.Fale inglês.",
+      "title": "Inglês online e ao vivo: trilha de 18 meses | United Idiomas",
+      "description": "Conheça o inglês online e ao vivo da United: trilha de 18 meses, conversação, storytelling e prática com o Jimmy, a IA disponível 24/7.",
+      "h1": "Inglês online.\nAulas ao vivo.\nFale inglês.",
       "images": 38,
       "videos": 3,
       "stylesheets": 1
     },
     "/cursos/": {
-      "title": "Cursos de inglês online: Live Class e Business | United",
-      "description": "Conheça o curso online de inglês Live Class, com trilha de 18 meses, e o United Business. Aulas ao vivo, conversação e flexibilidade para sua rotina.",
-      "h1": "Live Class",
+      "title": "Cursos de inglês: Live Class e Business | United Idiomas",
+      "description": "Compare Live Class e United Business: aulas de inglês ao vivo, trilhas de estudo e prática de conversação para o dia a dia e o contexto profissional.",
+      "h1": "Curso de inglês online e ao vivo Live Class",
       "images": 38,
       "videos": 3,
       "stylesheets": 1
     },
     "/quem-somos/": {
       "title": "Escola de inglês United Idiomas | Quem somos",
-      "description": "Conheça a United Idiomas, escola de inglês com mais de 150 mil alunos em sua história. Aulas online, metodologia interativa e unidades híbridas.",
+      "description": "Conheça a United Idiomas, sua metodologia comunicativa, os recursos de aprendizagem e as unidades híbridas que conectam pessoas ao inglês.",
       "h1": "Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.",
       "images": 27,
       "videos": 1,
       "stylesheets": 1
     },
     "/faq/": {
-      "title": "Dúvidas sobre o curso de inglês | United Idiomas",
-      "description": "Como escolher o melhor curso de inglês para você? Tire dúvidas sobre inglês em 18 meses, aulas online, conversação e certificação na United Idiomas.",
+      "title": "Inglês em 18 meses e conversação: dúvidas | United Idiomas",
+      "description": "Tire dúvidas sobre a trilha de inglês em 18 meses, aulas online e ao vivo, conversação, Jimmy 24/7 e o acesso opcional ao United OnDemand.",
       "h1": "Tire suas dúvidas sobre nossos cursos de inglês",
       "images": 18,
       "videos": 0,
@@ -42,9 +42,9 @@
       "reduction_percent": 87.33
     },
     "all_optimized_images": {
-      "original_bytes": 28288280,
-      "optimized_bytes": 4891248,
-      "reduction_percent": 82.71
+      "original_bytes": 30483963,
+      "optimized_bytes": 5039280,
+      "reduction_percent": 83.47
     },
     "six_previously_remote_videos": {
       "original_bytes": 211630071,
@@ -58,7 +58,7 @@
     },
     "delivered_raster_image_inventory": {
       "files": 171,
-      "bytes": 43760574,
+      "bytes": 42485408,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
     }
   },

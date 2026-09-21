@@ -1,0 +1,521 @@
+{
+  "version": 1,
+  "prepared_on": "2026-09-18",
+  "canonical_origin": "https://www.unitedidiomas.com",
+  "deployment": "Fragmento opcional para revisão e mesclagem no .htaccess existente; não aplicado automaticamente. Regras .htaccess da raiz; mesclar antes dos redirects legados e do front controller.",
+  "evidence": {
+    "crawl_date": "2026-09-17",
+    "commercial_urls_checked": 49,
+    "source": "Diagnostico-SEO-United-2026-09-17.md e coleta pública crawl.json; erros 504 transitórios da escola/o-melhor-curso tiveram 200 na reconferência registrada no diagnóstico."
+  },
+  "scope": {
+    "hosts": [
+      "www.unitedidiomas.com",
+      "unitedidiomas.com"
+    ],
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "excluded_prefixes": [
+      "/blog/",
+      "/review/"
+    ],
+    "query_policy": "Preservar query string (incluindo UTM); destinos com âncora usam NE para manter #.",
+    "https_policy": "URLs legadas e host sem www vão direto para HTTPS/www. Redirecionamento genérico HTTP para HTTPS no host www permanece comentado até confirmar a configuração de TLS/proxy, evitando loop."
+  },
+  "redirects": [
+    {
+      "from": "/escola-ingles-united-idiomas",
+      "to": "/quem-somos/",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A página institucional atual mantém a finalidade da apresentação da escola.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/quem-somos/"
+    },
+    {
+      "from": "/cursos-de-ingles-unitedidiomas",
+      "to": "/cursos/#live-class",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A oferta geral atual de inglês online está apresentada no Live Class.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/cursos/"
+    },
+    {
+      "from": "/o-melhor-curso-de-ingles",
+      "to": "/cursos/#live-class",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A oferta geral atual de inglês online está apresentada no Live Class.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/cursos/"
+    },
+    {
+      "from": "/cursos/curso-de-ingles-online",
+      "to": "/cursos/#live-class",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "Live Class é a oferta atual de inglês online e ao vivo.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/cursos/"
+    },
+    {
+      "from": "/unidades-united-idiomas",
+      "to": "/quem-somos/#unidades-hibridas",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "O diretório atual de unidades está em Quem Somos.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-cornelio-procopio",
+      "to": "/quem-somos/#unidade-cornelio-procopio",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-ipiranga",
+      "to": "/quem-somos/#unidade-ipiranga",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-maringa",
+      "to": "/quem-somos/#unidade-maringa",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-osasco",
+      "to": "/quem-somos/#unidade-osasco",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-santo-amaro",
+      "to": "/quem-somos/#unidade-santo-amaro",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    },
+    {
+      "from": "/unidades/curso-de-ingles-tatuape",
+      "to": "/quem-somos/#unidade-tatuape",
+      "status": 301,
+      "sitemap": "exclude-source",
+      "reason": "A mesma unidade está listada no conteúdo atual, com endereço e contato.",
+      "observed_on": "2026-09-17",
+      "observed_final": "/"
+    }
+  ],
+  "normalizations": [
+    {
+      "from": "/cursos",
+      "to": "/cursos/",
+      "status": 301
+    },
+    {
+      "from": "/quem-somos",
+      "to": "/quem-somos/",
+      "status": 301
+    },
+    {
+      "from": "/faq",
+      "to": "/faq/",
+      "status": 301
+    },
+    {
+      "from": "/index.html",
+      "to": "/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/cursos/index.html",
+      "to": "/cursos/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/quem-somos/index.html",
+      "to": "/quem-somos/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    },
+    {
+      "from": "/faq/index.html",
+      "to": "/faq/",
+      "status": 301,
+      "reason": "Consolidar o arquivo index.html na URL canônica; somente solicitação externa GET/HEAD."
+    }
+  ],
+  "needs_review": [
+    {
+      "from": "/quero-ser-aluno",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/seja-um-franqueado",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/parcerias-corporativas",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/o-curso/curso-de-ingles-para-viagem",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/o-curso/curso-de-ingles-para-viagem",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/o-curso/curso-de-ingles-para-carreira",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/o-curso/curso-de-ingles-para-carreira",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/o-curso/mentoring-ingles",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/o-curso/mentoring-ingles",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/o-curso/curso-de-ingles-para-certificacao-toefl",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/o-curso/curso-de-ingles-para-certificacao-toefl",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/o-curso/curso-de-ingles-para-empreendedor",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/o-curso/curso-de-ingles-para-empreendedor",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/cursos/curso-de-ingles-presencial-ead",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/cursos/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/cursos/curso-de-ingles-teens",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/cursos/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/cursos/curso-de-ingles-kids",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/cursos/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "Não há página atual com equivalência específica confirmada para esta intenção; revisar conteúdo e destino.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-goiania",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-goiania",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-chapeco",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-joacaba",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-joacaba",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-rio-do-sul",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-rio-do-sul",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-curitiba",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-londrina",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-alphaville",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-brooklyn",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-brooklyn",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-campinas",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-consolacao",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-franquias",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-franquias",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-interlagos",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-itaim-bibi",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-jabaquara",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-jardins",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-moema",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-morumbi",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-morumbi",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-paraiso",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-pinheiros",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-pinheiros",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-pirituba",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-pirituba",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-santo-andre",
+      "status": "needs-review",
+      "observed_http": 404,
+      "observed_final": "/unidades/curso-de-ingles-santo-andre",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-sao-caetano-sul",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    },
+    {
+      "from": "/unidades/curso-de-ingles-fortaleza",
+      "status": "needs-review",
+      "observed_http": 200,
+      "observed_final": "/",
+      "observed_on": "2026-09-17",
+      "sitemap": "exclude-until-valid-canonical",
+      "reason": "A unidade não consta nas seis unidades atuais; validar operação e eventual sucessora antes de redirecionar.",
+      "action": "Confirmar com a United: restaurar conteúdo próprio ou definir substituto equivalente; se encerrado definitivamente, responder 404/410 real. Não redirecionar automaticamente para a Home."
+    }
+  ],
+  "retired": [],
+  "retired_policy": "Nenhuma unidade/oferta foi declarada encerrada somente com base em 404. Após confirmação do responsável, mover a entrada de needs_review para retired, manter 404/410 real e excluir do sitemap.",
+  "sitemap_policy": "Somente URLs canônicas válidas, sem fragmentos, redirects, 404, comparativos ou prévias. Preservar artigos válidos do blog por seu sitemap WordPress.",
+  "apache_validation": "Testes Python verificam regras e destinos; Apache local deve validar sintaxe isoladamente. Necessária validação de integração no servidor de homologação com o .htaccess e proxy reais antes de publicar.",
+  "references": [
+    "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html",
+    "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_ne",
+    "https://httpd.apache.org/docs/2.4/mod/mod_headers.html",
+    "https://httpd.apache.org/docs/2.4/mod/mod_deflate.html"
+  ]
+}

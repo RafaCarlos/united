@@ -1,68 +1,66 @@
-# United Idiomas — revisão visual e SEO · 12/09/2026
+# United Idiomas — SEO para produção · 18/09/2026
 
-Entrega para revisão de Rafael. A prévia completa está em `dist/`; não é uma atualização automática do site oficial. No GitHub, este projeto é entregue sob `review/united-2026/`, preservando o PHP e os assets de produção na raiz.
+Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.
 
-## Abrir a prévia
+## O que mudou
 
-Desde a correção de 15/09/2026, a prévia usa caminhos relativos e funciona tanto com **dist como raiz HTTP** quanto em uma subpasta, como `/review/united-2026/dist/`. Preserve toda a estrutura de `dist` e abra por HTTP, em vez de abrir o HTML diretamente.
+- `dist/` agora representa **produção**: indexação permitida, sem rótulos de prévia nas quatro páginas, canonical, títulos/descrições próprios e dados estruturados coerentes.
+- Sitemap comercial com Home, Cursos, Quem Somos e FAQ. O `robots.txt` também informa o sitemap automático do blog WordPress, preservando a descoberta dos artigos.
+- Contexto de curso de inglês no título principal de Cursos, links úteis na FAQ, âncoras e links de mapa para as seis unidades já exibidas.
+- Imagem de fundo reduzida de 1.423.198 para 148.032 bytes, com dimensões/transparência preservadas. Layout, banners e formulários mantidos.
+- Entrega de produção com verificação de rastreamento, canonical, sitemap e inventário de páginas; regras de servidor, mapa de URLs antigas e pacote WordPress para integração.
+- Censo técnico dos 182 artigos do blog e 48 descrições específicas no plugin opcional (47 duplicadas + artigo IA); orientações pontuais para os 11 artigos com H1 adicionais.
+
+## Entrega de produção
 
 ```bash
-python3 -m http.server 8080 --directory dist
+python3 scripts/export-production.py --mode production --output /tmp/united-production
 ```
 
-Abra `http://localhost:8080/`. Para celular na mesma rede, use o IP local do computador e a porta 8080. Alternativamente, `npm ci` e `npm run dev` iniciam o Vite. Não há build necessário para a entrega estática.
+`site/` contém os arquivos publicáveis. `publication/` contém instruções e o fragmento Apache opcional, que precisa ser mesclado ao servidor por Rafael. O exportador não envia arquivos e não escreve `.htaccess`. Detalhes em [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md) e [INTEGRACAO.md](seo/INTEGRACAO.md).
 
-Para reproduzir o caminho do servidor, execute `python3 -m http.server 8766` na raiz do repositório e abra `http://localhost:8766/review/united-2026/dist/`. Consulte `CORRECAO-SERVIDOR.md` para aplicar os arquivos à prévia existente. O PHP de produção permanece separado.
+A produção sai sem rótulos de prévia e com rastreamento liberado. O robots atualizado deve ocupar **a raiz HTTP `/robots.txt`**, junto ao sitemap comercial; nenhum arquivo robots dentro de uma subpasta governa o domínio. A política permite os recursos públicos e restringe a administração do WordPress, com AJAX liberado. O gerador preserva esse arquivo como fonte, sem sobrescrever suas regras. Veja [ROBOTS-RASTREAMENTO.md](seo/ROBOTS-RASTREAMENTO.md).
 
-Páginas: Home `/`, Live Class/Business `/cursos/`, Quem Somos `/quem-somos/`, FAQ `/faq/`. Blog, unidades e serviços externos preservam seus destinos originais.
+O modo `preview` permanece apenas como ferramenta de desenvolvimento isolada, documentada no exportador, e não é a entrega para publicação. Cópias antigas já públicas devem retornar `noindex` ou ser retiradas com 404/410 pelo responsável da hospedagem; não bloquear sua leitura no robots antes disso. Não publicar o repositório inteiro nem uma pasta `/review/` como substituto da raiz oficial.
 
-## Estado aprovado
+O exportador exclui comparação/debug e recusa bloqueios de rastreamento, canonical incorreto, título duplicado, sitemap incompleto e HTML fora das quatro páginas registradas. `--force` só atualiza uma exportação anterior deste pacote. **O formulário RD é real**, inclusive nos testes locais; não houve novos envios de contatos nesta revisão.
 
-- Três banners com abertura por mouse, clique e teclado no desktop; imagens amplas, sem preenchimento borrado. No celular, três artes verticais, rotação a cada seis segundos, pausa e gesto de deslizar; respeita movimento reduzido e visibilidade. O rótulo visual “PRÉVIA · 3 BANNERS” foi removido; o bloqueio de indexação permanece.
-- Cabeçalho transparente, Manrope local e alinhamento compartilhado. Menu móvel e Área do Aluno adaptados a telas estreitas. Business mantém seu cinza original.
-- Live Class: “Você tem muito a dizer. Fale inglês.”, persona atual, ecossistema, seis diferenciais, storytelling e personagens 3D. Jimmy atualizado na home e em Cursos.
-- OnDemand: imagem e texto fornecidos pelo usuário, tablet/celulares ampliados, reflexão alinhada ao rodapé da seção e efeito existente preservado.
-- Business e Full compactos; depoimentos organizados; rodapé com os números fornecidos pelo usuário, um selo azul ABF 2026, Reclame Aqui e “© United 2026. Todos os direitos reservados.”.
-- Contato: uma barra no celular e um botão no desktop. Além do bloco de contato, a Home possui um círculo discreto de WhatsApp na lateral do banner, próximo de “Quero conhecer”. Os atalhos do banner e do bloco de contato abrem o formulário oficial do RD quando disponível; o número existente `5511940040658` permanece como destino direto de reserva. O círculo pertence ao banner e sai da tela ao rolar, sem acompanhar o botão persistente. Cinco chamadas repetitivas no corpo foram removidas; links de exploração dos cursos continuam disponíveis. A barra se recolhe no menu, diálogo e contato final.
-- Atalhos laterais no desktop continuam pelo meio da home e se recolhem apenas no contato, rodapé e sobreposições. No celular ficam ocultos.
-- Vídeos com poster, reprodução inline por visibilidade e botão discreto acessível de pausa/reprodução; sem painel nativo de tela cheia.
+## Conteúdo para buscas e Search Console
 
-## Manutenção
+Os títulos e textos destacam inglês online e ao vivo, a trilha de 18 meses, conversação, storytelling e Jimmy 24/7. O OnDemand aparece como opcional, e o FAQ tem 22 perguntas. O mapa de intenção por página, a comparação com o site publicado e as etapas do Search Console estão em [MAPA-BUSCAS-E-SEARCH-CONSOLE.md](seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md). `seo/metadata.json` e `seo/content.json` controlam essa copy; o passo final de SEO reaplica os textos após os geradores de componentes.
 
-`dist/` é o artefato final completo e o ponto de partida para integração. `src/` contém os componentes/estilos/controladores mantidos. `seo/css-inputs.json` registra a ordem do CSS por página; os bundles finais são gerados.
+## Reproduzir e validar
 
-Após editar componentes, use apenas o atualizador correspondente: `update-contact-layout.py`, `update-home-navigation.py`, `update-ondemand.py`, `update-footer-copy.py`, `update-liveclass-intro.py`, `update-courses-compact.py` ou `update-benefits.py`. Finalize:
+Requer Python com `lxml` e Pillow (`requirements-review.txt`) e Node para os testes RD. A entrega estática não requer build para ser servida.
 
 ```bash
-python3 scripts/update-contact-layout.py
 python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
 python3 scripts/prepare-subdirectory.py
+python3 scripts/inventory-images.py
 python3 scripts/audit-seo-performance.py
+python3 scripts/test-production-export.py
+python3 scripts/test-production-crawl.py
+python3 scripts/test-production-redirects.py
 node --test scripts/test-rdstation-form.cjs scripts/test-rdstation-whatsapp.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
 
-O atualizador de contato reaplica o embed RD Station e os controladores mantidos nas quatro páginas, sem duplicar o formulário. Também mantém uma inclusão literal do loader RD com `async` em cada página e o atalho da Home definido em `src/banner-whatsapp.html`. O normalizador converte os caminhos locais após os geradores e preserva as URLs externas. A última chamada é idempotente e atualiza `MANIFEST.json` e `MANIFEST-SERVIDOR.json` após a auditoria. `MANIFEST.json` cobre o pacote completo; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de correção.
+`MANIFEST.json` cobre o pacote; `MANIFEST-SERVIDOR.json` cobre `dist` e as instruções de caminhos. O inventário registra bytes, dimensões e SHA-256 das imagens, não o tráfego da primeira visita. `scripts/optimize-heavy-media.py` reproduz a compressão do fundo a partir do PNG original da raiz, sem reencodificar o WebP.
 
-Requer Python, Pillow e lxml (`requirements-review.txt`). Se trocar imagens intencionalmente, atualize `scripts/inventory-images.py` antes da auditoria e confira o diff de `seo/image-inventory.json`. O inventário registra bytes, dimensões e SHA-256 de todas as imagens raster entregues, inclusive originais de referência; não representa o peso inicial da página.
+Aplique outros atualizadores de componentes somente quando houver alterações nesses componentes. Esta revisão não reexecuta `update-contact-layout.py`: preserva o HTML do banner e o GTM que Rafael modificou em `main`. Os geradores legados de prévia não são o fluxo atual; podem restaurar conteúdo antigo. Ao reutilizá-los, revise o diff e execute a validação final acima.
 
-Os geradores/exportadores legados (`build-preview.cjs`, `build-interior-preview.py`, `export-html.cjs`, `export-storytelling-preview.py` e os antigos `check-*.cjs`) documentam etapas anteriores. Dependem de referências ou ferramentas externas e **não são o caminho de reprodução desta entrega**. Reexecutá-los pode restaurar composições antigas. O comando de compatibilidade `update-contact-preview.cjs` agora delega ao fluxo Python mantido, sem duplicar scripts de formulário.
+## Integrações preservadas
 
-## Integração e limites
+- Formulário oficial RD `form-vamos-conversar-5ba05329ea8c88b5c10d`, um embed por página, SDK oficial, retorno de sucesso na própria caixa e círculo verde; botão de envio vermelho.
+- Loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` uma vez por página, `async`; SDK e inicializador com `defer` na ordem correta.
+- WhatsApp geral `5511940040658`; Parcerias & Convênios e Seja um Franqueado exclusivamente `5511958575315`.
+- Área do Aluno: `https://liveclass.app.br`. GTM `GTM-MTK74PV` preservado na Home.
 
-A integração RD Station foi iniciada em 16/09/2026. A pedido do usuário, o contato passou a usar o novo formulário oficial `form-vamos-conversar-5ba05329ea8c88b5c10d`, com o mesmo argumento `UA-42887237-1`, carregado pelo SDK `https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js`. Há um único embed por página: ele fica no contato junto ao rodapé, é movido para o diálogo ao abrir e retorna ao contato ao fechar. Os formulários demonstrativos foram substituídos; o envio é feito diretamente pelo RD Station, sem acionar os controladores PHP legados em paralelo. Brasil (+55) fica fixo, sem seletor de país. A confirmação permanece na própria caixa de contato após o sucesso indicado pelo SDK, sem subpágina de agradecimento, alerta nativo ou navegação ao site antigo.
+Os formulários demonstrativos já foram substituídos pelo RD. Recebimento no Marketing e criação de negócio no CRM são verificações distintas; os testes desta revisão não enviam contatos. Histórico e limites em [RD-STATION.md](seo/RD-STATION.md).
 
-Em 17/09/2026, foi acrescentado o loader RD solicitado, `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js`, com `async`, uma vez em cada HTML comercial. Ele carrega o rastreamento e as configurações da conta RD para recursos como formulários e WhatsApp; o SDK e o inicializador do formulário continuam separados e ordenados com `defer`. O controlador `src/rdstation-whatsapp.js`, também carregado com `defer` nas quatro páginas, conecta os links do banner e do contato ao popup oficial de WhatsApp. Ele oculta apenas o botão flutuante duplicado que o loader injeta, preservando formulário, eventos, rastreamento e fechamento nativos. O desenho e os campos desse popup continuam definidos na conta RD. O loader já existe em `includes/footer.php` na produção e não deve ser duplicado na integração. Caminhos exatos e limites estão em `seo/RD-STATION.md`; sua inclusão não comprova a integração com o CRM.
+## Blog, publicação e acompanhamento
 
-Ainda em 17/09, “Parcerias & Convênios” e “Seja um Franqueado” passaram a ser links diretos do rodapé nas quatro páginas, exclusivamente para [WhatsApp +55 11 95857-5315](https://wa.me/5511958575315), sem abrir o popup RD. O WhatsApp geral do banner/contato/RD (`5511940040658`) e Head Office permanecem como estavam. Esta alteração não inclui teste de envio de mensagem.
+O blog WordPress não está neste repositório. [seo/wordpress/](seo/wordpress/README.md) contém uma extensão opcional revisável, ainda não instalada, para os problemas verificados no HTML público. Não copie esse PHP para a raiz do site estático.
 
-A revisão de 17/09 passou na auditoria estática (quatro páginas, 147 dependências), na verificação HTTP (cinco páginas, 151 URLs locais) e nos 17 testes dos controladores RD (nove do formulário principal e oito do WhatsApp). O Chrome confirmou a rolagem do círculo com o banner, a abertura/validação/fechamento do popup RD e a apresentação em desktop, notebook e celular. Essas verificações de apresentação não enviaram formulários nem mensagens de WhatsApp. Os detalhes estão em `seo/AUDITORIA.md`.
-
-**O formulário pode criar leads reais também na prévia.** O novo formulário foi testado no Chrome em 16/09/2026, às 16h36: campos obrigatórios bloquearam o envio vazio e o envio autorizado retornou sucesso indicado pelo SDK, com “Mensagem enviada!” na própria caixa e URL preservada. Em 17/09/2026, às 11h09 (America/Sao_Paulo), um novo envio autorizado na Home pelo Chrome, na versão `f66afea`, também exibiu “Mensagem enviada!” na própria caixa e preservou a URL. O status HTTP desse envio não foi capturado diretamente. A conferência dos testes do novo formulário na conta Marketing ainda está pendente. O usuário confirmou o recebimento do teste do formulário anterior no Marketing; a equipe ainda verifica a integração com o CRM. Essa confirmação anterior não valida o recebimento pelo novo ID. Consulte `seo/RD-STATION.md` para configuração e resultados separados por formulário.
-
-Consulte também `seo/INTEGRACAO.md`, `seo/AUDITORIA.md` e `seo/audit-results.json`. As auditorias históricas de arquivos e apresentação não validam o recebimento da nova integração RD Station. O PHP de produção permanece separado e sua publicação exige revisão da integração final.
-
-A prévia possui `noindex,nofollow` e robots bloqueado. Os metadados, robots e sitemap para o domínio oficial ficam em `seo/production/`; não copie o bloqueio da prévia para produção. `/comparar-contato/` é ferramenta interna de revisão, fora do sitemap e da integração pública.
-
-A auditoria confere arquivos e comportamento da prévia; não equivale a nota Lighthouse nem comprovação de indexação ou aumento de tráfego. Não foram medidos nesta revisão final Core Web Vitals reais, cache/TTFB do servidor oficial ou Safari em aparelho físico.
+[PLANO-SEO-PRODUCAO.md](seo/PLANO-SEO-PRODUCAO.md) organiza publicação, conteúdo original, autoria, unidades, desempenho e medição, com responsáveis e critérios de aceite. [RECOMENDACOES-CONTEUDO.md](seo/RECOMENDACOES-CONTEUDO.md) detalha a pauta editorial. Depois da publicação, conferir URLs no Search Console, enviar os dois sitemaps e medir desempenho no servidor. Arquivos tecnicamente corretos não comprovam indexação nem garantem posição no Google. Resultados e limites estão em [AUDITORIA.md](seo/AUDITORIA.md); o estado ainda publicado está em [VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md](seo/VERIFICACAO-PRODUCAO-FINAL-2026-09-18.md).
