@@ -2,6 +2,12 @@
 
 Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.
 
+## Atualização de desempenho — 22/09/2026
+
+A atualização de desempenho parte da `main` em `2e47f7b`. Inclui imagens WebP responsivas, posters menores, prioridade para a imagem inicial, redução de CSS e JavaScript próprios e regras de cache revisáveis. No celular, o WhatsApp acompanha a rolagem e permanece 12 px acima da barra “Quero conhecer”; no desktop, conserva sua posição no banner. O formulário oficial e o loader RD permanecem ativos.
+
+Resultados medidos, limitações e sequência de geração em [OTIMIZACAO-LOCAL-2026-09-22.md](seo/OTIMIZACAO-LOCAL-2026-09-22.md). A configuração de cache precisa ser integrada por Rafael na hospedagem. Os ganhos em bytes foram verificados localmente; uma nova nota PageSpeed depende da publicação e da medição do site atualizado.
+
 ## O que mudou
 
 - `dist/` agora representa **produção**: indexação permitida, sem rótulos de prévia nas quatro páginas, canonical, títulos/descrições próprios e dados estruturados coerentes.

@@ -34,3 +34,10 @@
 .rd-contact-success h3 { margin:0 0 12px!important;color:#fff!important;font:700 26px/1.25 Manrope,Arial,sans-serif!important }
 .rd-contact-success p { margin:0!important;color:#dbe7f5!important;font:400 16px/1.6 Manrope,Arial,sans-serif!important }
 .rd-contact-success:focus-visible { outline:3px solid #a7e8bc;outline-offset:4px }
+
+/* RD keeps a transparent mobile panel over the shortcut while closed.
+   Leave its native click handler intact, but let pointer events reach the page. */
+.floating-button.floating-button--close[aria-label="Fale com a United pelo WhatsApp"],
+.floating-button.floating-button--close[aria-label="Fale com a United pelo WhatsApp"] * {
+  pointer-events:none!important;
+}

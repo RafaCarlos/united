@@ -1,0 +1,66 @@
+{
+  "/": {
+    "before": {
+      "css_bytes": 236822,
+      "css_gzip9_bytes": 33509,
+      "js_bytes": 238460,
+      "js_gzip9_bytes": 66251,
+      "local_js_files": 10
+    },
+    "after": {
+      "css_bytes": 169278,
+      "css_gzip9_bytes": 29447,
+      "js_bytes": 146816,
+      "js_gzip9_bytes": 51971,
+      "local_js_files": 9
+    }
+  },
+  "/cursos/": {
+    "before": {
+      "css_bytes": 214300,
+      "css_gzip9_bytes": 28936,
+      "js_bytes": 236795,
+      "js_gzip9_bytes": 65579,
+      "local_js_files": 9
+    },
+    "after": {
+      "css_bytes": 147891,
+      "css_gzip9_bytes": 24914,
+      "js_bytes": 145151,
+      "js_gzip9_bytes": 51299,
+      "local_js_files": 8
+    }
+  },
+  "/quem-somos/": {
+    "before": {
+      "css_bytes": 207926,
+      "css_gzip9_bytes": 27723,
+      "js_bytes": 236795,
+      "js_gzip9_bytes": 65579,
+      "local_js_files": 9
+    },
+    "after": {
+      "css_bytes": 138914,
+      "css_gzip9_bytes": 23496,
+      "js_bytes": 239386,
+      "js_gzip9_bytes": 66312,
+      "local_js_files": 9
+    }
+  },
+  "/faq/": {
+    "before": {
+      "css_bytes": 207926,
+      "css_gzip9_bytes": 27723,
+      "js_bytes": 233237,
+      "js_gzip9_bytes": 64255,
+      "local_js_files": 8
+    },
+    "after": {
+      "css_bytes": 137200,
+      "css_gzip9_bytes": 23280,
+      "js_bytes": 141593,
+      "js_gzip9_bytes": 49975,
+      "local_js_files": 7
+    }
+  }
+}

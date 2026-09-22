@@ -34,7 +34,7 @@
       "stylesheets": 1
     }
   },
-  "local_dependencies_checked": 147,
+  "local_dependencies_checked": 186,
   "metrics": {
     "six_banner_assets": {
       "original_bytes": 11025845,
@@ -57,17 +57,23 @@
       "reduction_percent": 68.74
     },
     "delivered_raster_image_inventory": {
-      "files": 171,
-      "bytes": 42485408,
+      "files": 224,
+      "bytes": 47360848,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
+    },
+    "responsive_selected_assets_full_dimensions": {
+      "original_bytes": 3042425,
+      "optimized_bytes": 1891798,
+      "reduction_percent": 37.82,
+      "note": "15 selected assets vs the previous optimized/PNG versions, at full dimensions. Smaller responsive candidates can save more; this is not a whole-page transfer metric."
     }
   },
   "errors": [],
   "warnings": [],
   "unmeasured": [
-    "Lighthouse/PageSpeed score: not measured in this final review; an earlier API attempt returned HTTP 429",
-    "Production Core Web Vitals and Search Console indexing",
+    "Lighthouse/PageSpeed for this unpublished optimized build; the published-site baseline dated 2026-09-22 is documented separately",
+    "Post-release Core Web Vitals and Search Console indexing",
     "Real-device Safari behavior",
-    "Server compression, cache headers and TTFB on the official host"
+    "Hosting compression, cache headers and TTFB after integration of these local changes"
   ]
 }

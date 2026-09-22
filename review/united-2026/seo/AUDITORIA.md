@@ -1,3 +1,11 @@
+# Desempenho e WhatsApp móvel — 22/09/2026
+
+A revisão de desempenho usa a `main` em `2e47f7b`, preserva o conteúdo aprovado e concentra as alterações em `review/united-2026/`. Detalhes e baseline público em [OTIMIZACAO-LOCAL-2026-09-22.md](OTIMIZACAO-LOCAL-2026-09-22.md).
+
+Foram verificadas as quatro rotas, imagens responsivas, dependências locais, cache preparado para integração, banners, navegação, FAQ, carrossel e abertura dos formulários RD. No celular, o WhatsApp agora acompanha a rolagem, 12 px acima da barra “Quero conhecer”; essa orientação substitui o posicionamento dentro do banner descrito no histórico. Desktop mantém o atalho no banner.
+
+O rebuild final dos 277 arquivos de `dist` foi idêntico byte a byte. Passaram 19 testes de exportação, 13 de rastreamento, 14 de redirecionamento/cache, 5 de otimização de código, 22 de RD/WhatsApp e 55 verificações de comportamento DOM. Nenhum contato foi enviado nesta revisão. Não houve publicação na hospedagem; a nova nota PageSpeed e o recebimento em Marketing/CRM precisam de validação após integração.
+
 # SEO para produção — revisão de 18/09/2026
 
 A atualização parte de `main` em `933c80a`, depois da incorporação do PR anterior. O código de produção da raiz permanece separado. Esta entrega está em revisão e não foi publicada no servidor.

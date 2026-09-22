@@ -15,8 +15,8 @@ function event(type, properties = {}) {
   };
 }
 
-function setup({ early = false } = {}) {
-  const observers = [], records = [];
+function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
+  const observers = [], records = [], sizeObservers = [];
   let document, sequence = 0;
   const notify = (target, type, attributeName) => records.push({ target, type, attributeName });
   function matches(element, selector) {
@@ -50,7 +50,16 @@ function setup({ early = false } = {}) {
       this.tagName = tag.toUpperCase(); this.attributes = new Map(); this.children = [];
       this.parentNode = null; this.listeners = new Map(); this.disabled = false; this.hidden = false;
       this.visibility = 'visible'; this.focuses = 0;
-      this.style = { setProperty(name, value, priority) { this[name] = value; this[name + 'Priority'] = priority; } };
+      const styledElement = this;
+      this.style = {
+        getPropertyValue(name) { return this[name] || ''; },
+        getPropertyPriority(name) { return this[name + 'Priority'] || ''; },
+        setProperty(name, value, priority = '') {
+          if (this.getPropertyValue(name) === value && this.getPropertyPriority(name) === priority) return;
+          this[name] = value; this[name + 'Priority'] = priority;
+          notify(styledElement, 'attributes', 'style');
+        },
+      };
       this.classList = {
         contains: name => (this.getAttribute('class') || '').split(/\s+/).includes(name),
         toggle: (name, force) => {
@@ -65,6 +74,7 @@ function setup({ early = false } = {}) {
     }
     get id() { return this.getAttribute('id') || ''; }
     get isConnected() { return this === document || !!this.parentNode?.isConnected; }
+    get nextSibling() { return this.parentNode?.children[this.parentNode.children.indexOf(this) + 1] || null; }
     get tabIndex() {
       const value = this.getAttribute('tabindex');
       if (value !== null) return Number(value);
@@ -75,7 +85,14 @@ function setup({ early = false } = {}) {
     getAttribute(name) { return this.attributes.has(name) ? this.attributes.get(name) : null; }
     hasAttribute(name) { return this.attributes.has(name); }
     removeAttribute(name) { this.attributes.delete(name); notify(this, 'attributes', name); }
-    appendChild(child) { child.parentNode = this; this.children.push(child); notify(this, 'childList'); return child; }
+    appendChild(child) { child.remove(); child.parentNode = this; this.children.push(child); notify(this, 'childList'); return child; }
+    insertBefore(child, reference) {
+      if (!reference) return this.appendChild(child);
+      child.remove();
+      assert.equal(reference.parentNode, this);
+      child.parentNode = this; this.children.splice(this.children.indexOf(reference), 0, child);
+      notify(this, 'childList'); return child;
+    }
     remove() {
       const parent = this.parentNode;
       if (!parent) return;
@@ -99,6 +116,7 @@ function setup({ early = false } = {}) {
       }
       return [{}];
     }
+    getBoundingClientRect() { return {height:this.rectHeight || 0}; }
     focus() { if (this.isConnected) { document.activeElement = this; this.focuses++; } }
     addEventListener(type, callback) {
       const listeners = this.listeners.get(type) || [];
@@ -119,7 +137,10 @@ function setup({ early = false } = {}) {
   document.body = document.appendChild(new Element('body'));
   document.activeElement = document.body;
   const destination = 'https://api.whatsapp.com/send?phone=5511940040658';
-  const banner = document.body.appendChild(new Element('a', { class: 'banner-whatsapp', href: destination }));
+  const hero = document.body.appendChild(new Element('section', {class:'united-preview-hero'}));
+  const banner = hero.appendChild(new Element('a', { class: 'banner-whatsapp', href: destination }));
+  const following = hero.appendChild(new Element('p'));
+  for (const [name, values] of Object.entries(bannerStyle)) banner.style.setProperty(name, ...values);
   const contact = document.body.appendChild(new Element('section', { id: 'contato' }));
   const footer = contact.appendChild(new Element('a', { href: destination }));
   const links = [banner, footer];
@@ -143,6 +164,11 @@ function setup({ early = false } = {}) {
     observe(target, options) { this.target = target; this.options = options; this.active = true; }
     disconnect() { this.active = false; }
   }
+  class ResizeObserver {
+    constructor(callback) { this.callback = callback; sizeObservers.push(this); }
+    observe(target) { this.target = target; this.active = true; }
+    disconnect() { this.active = false; }
+  }
   function flush() {
     for (let round = 0; records.length; round++) {
       assert.ok(round < 20, 'observer callbacks must settle without a mutation loop');
@@ -162,11 +188,23 @@ function setup({ early = false } = {}) {
   const initialWidget = early ? widget() : null;
   records.length = 0;
   const rejectNetwork = () => { throw new Error('The adapter must delegate to the original native click, not send a request'); };
-  const context = vm.createContext({ document, MutationObserver,
+  const media = {matches:mobile, listeners:[], addEventListener(type, callback) { this.listeners.push(callback); }};
+  const window = {matchMedia:() => media, addEventListener() {}};
+  const context = vm.createContext({ document, window, MutationObserver, ResizeObserver,
     getComputedStyle: element => ({ visibility: element.visibility }), fetch: rejectNetwork, XMLHttpRequest: rejectNetwork,
   });
   vm.runInContext(source, context); flush();
-  return { document, links, banner, footer, destination, widget, initialWidget, flush,
+  return { document, hero, following, links, banner, footer, destination, widget, initialWidget, flush,
+    setMobile(matches) { media.matches = matches; media.listeners.forEach(callback => callback({matches})); flush(); },
+    addContactBar(height) {
+      const bar = new Element('div', {class:'contact-actions'}); bar.rectHeight = height;
+      document.body.appendChild(bar); flush(); return bar;
+    },
+    resizeBar(bar, height) {
+      bar.rectHeight = height;
+      sizeObservers.filter(observer => observer.active && observer.target === bar).forEach(observer => observer.callback());
+      flush();
+    },
     isOpen: () => document.body.classList.contains('rd-whatsapp-open'),
     key(target, key, properties = {}) { const pressed = event('keydown', { key, ...properties }); target.dispatchEvent(pressed); return pressed; },
   };
@@ -180,6 +218,97 @@ test('without an available widget the original WhatsApp destination stays usable
     assert.equal(link.hasAttribute('aria-controls'), false);
   }
   assert.equal(state.isOpen(), false);
+});
+
+test('mobile shortcut lives outside the hero while retaining fallback and native RD delegation', () => {
+  const state = setup({mobile:true});
+  assert.equal(state.banner.parentNode, state.document.body, 'hero clipping and stacking cannot affect the fixed shortcut');
+  assert.equal(state.banner.style.getPropertyValue('position'), 'fixed');
+  assert.equal(state.banner.style.getPropertyValue('z-index'), '106');
+  assert.equal(state.document.querySelectorAll('.banner-whatsapp').length, 1);
+  assert.equal(state.banner.click().defaultPrevented, false, 'direct link works before RD is ready');
+  const native = state.widget(); state.flush();
+  state.banner.click(); state.flush();
+  assert.equal(native.opens, 1); assert.equal(state.isOpen(), true);
+  native.close.click(); state.flush();
+  assert.equal(state.document.activeElement, state.banner);
+  assert.equal(state.banner.getAttribute('href'), state.destination);
+});
+
+test('viewport changes restore the same shortcut to its original desktop location without duplicate listeners', () => {
+  const state = setup({early:true}), native = state.initialWidget;
+  for (let cycle = 0; cycle < 3; cycle++) {
+    state.setMobile(true);
+    assert.equal(state.banner.parentNode, state.document.body);
+    assert.equal(state.banner.style.getPropertyValue('position'), 'fixed');
+    state.banner.click(); state.flush(); native.close.click(); state.flush();
+    state.setMobile(false);
+    assert.equal(state.banner.parentNode, state.hero);
+    assert.equal(state.banner.nextSibling, state.following);
+    assert.equal(state.banner.style.getPropertyValue('position'), 'absolute');
+    assert.equal(state.banner.style.getPropertyValue('z-index'), '9');
+    assert.equal(state.banner.listeners.get('click').length, 1);
+    assert.equal(state.document.querySelectorAll('.banner-whatsapp').length, 1);
+  }
+  assert.equal(native.opens, 3);
+  assert.equal(state.footer.parentNode.id, 'contato');
+});
+
+test('a late contact bar and height changes reserve its actual height for mobile spacing', () => {
+  const state = setup({mobile:true});
+  const bar = state.addContactBar(73);
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '73px');
+  state.resizeBar(bar, 95.4);
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '96px');
+  assert.equal(state.banner.style.getPropertyValue('position'), 'fixed');
+  assert.equal(state.banner.style.getPropertyValue('z-index'), '106');
+  state.resizeBar(bar, 95.4);
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '96px', 'unchanged measurements settle without a style loop');
+});
+
+test('banner placement repairs an early fixed override while preserving offsets and its direct destination', () => {
+  const state = setup({ bannerStyle: {
+    position: ['fixed', 'important'], 'z-index': ['99999', 'important'],
+    right: ['14px', ''], bottom: ['18px', ''], width: ['46px', ''],
+  } });
+  assert.equal(state.banner.style.getPropertyValue('position'), 'absolute');
+  assert.equal(state.banner.style.getPropertyPriority('position'), 'important');
+  assert.equal(state.banner.style.getPropertyValue('z-index'), '9');
+  assert.equal(state.banner.style.getPropertyPriority('z-index'), 'important');
+  for (const [name, value] of [['right', '14px'], ['bottom', '18px'], ['width', '46px']]) {
+    assert.equal(state.banner.style.getPropertyValue(name), value);
+  }
+  assert.equal(state.banner.click().defaultPrevented, false);
+  assert.equal(state.banner.getAttribute('href'), state.destination);
+  state.flush();
+});
+
+test('late banner style rewrites settle without changing other links or native widget behavior', () => {
+  const state = setup({ early: true }), native = state.initialWidget;
+  state.footer.style.setProperty('position', 'fixed', 'important');
+  state.footer.style.setProperty('z-index', '101', 'important');
+  native.trigger.style.setProperty('position', 'fixed', 'important');
+  native.wrapper.style.setProperty('z-index', '99999', 'important');
+  for (const position of ['fixed', '', 'relative']) {
+    state.banner.style.setProperty('position', position, 'important');
+    state.banner.style.setProperty('z-index', '99999', 'important');
+    state.banner.style.setProperty('bottom', '22px');
+    state.flush();
+    assert.equal(state.banner.style.getPropertyValue('position'), 'absolute');
+    assert.equal(state.banner.style.getPropertyValue('z-index'), '9');
+    assert.equal(state.banner.style.getPropertyValue('bottom'), '22px');
+  }
+  assert.equal(state.footer.style.getPropertyValue('position'), 'fixed');
+  assert.equal(state.footer.style.getPropertyValue('z-index'), '101');
+  assert.equal(native.trigger.style.getPropertyValue('position'), 'fixed');
+  assert.equal(native.trigger.style.getPropertyValue('display'), 'none');
+  assert.equal(native.wrapper.style.getPropertyValue('z-index'), '99999');
+  state.banner.click(); state.flush();
+  assert.equal(native.opens, 1); assert.equal(state.isOpen(), true);
+  native.close.click(); state.flush();
+  assert.equal(native.closes, 1); assert.equal(state.isOpen(), false);
+  state.banner.click(); state.flush();
+  assert.equal(native.opens, 2); assert.equal(state.isOpen(), true);
 });
 
 test('early and late loaders connect once and delegate both shortcuts to the native handler', () => {

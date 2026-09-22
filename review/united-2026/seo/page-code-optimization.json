@@ -1,0 +1,18 @@
+{
+  "source": "dist/assets/js/dist/scripts.js",
+  "output": "dist/assets/js/dist/scripts-core.js",
+  "source_sha256": "c995fbd244323e2fff379061e03e7f0834e0b456208147678b7fe613d252bdf7",
+  "output_sha256": "efd5c78d8e6400132558ac562f52f6e2f34aadccf9243653211c152f22e1501e",
+  "bytes_before": 203258,
+  "bytes_after": 110393,
+  "gzip9_before": 53619,
+  "gzip9_after": 39184,
+  "core_routes": [
+    "/",
+    "/cursos/",
+    "/faq/"
+  ],
+  "required_omission": "responsive-home.js on core routes",
+  "preserved_full_bundle_route": "/quem-somos/",
+  "esbuild": "0.25.12"
+}

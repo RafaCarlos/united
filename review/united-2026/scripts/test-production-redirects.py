@@ -72,6 +72,39 @@ def uri_pattern(header_line):
     return re.search(r'REQUEST_URI\} =~ m#(.*?)#', header_line)[1]
 
 
+def cache_policy(url, status=200, method='GET', content_type='application/octet-stream', existing=None):
+    """Evaluate this fragment's ordered regex-only Header conditions.
+
+    Deliberately rejects unsupported expressions rather than pretending to be a
+    complete Apache interpreter. --apache-syntax checks Apache's actual parser.
+    Server/CDN delivery still needs verification after Rafael merges the rules.
+    """
+    parsed = urlsplit(url)
+    values = {'REQUEST_URI': unquote(parsed.path), 'QUERY_STRING': parsed.query,
+              'REQUEST_STATUS': str(status), 'REQUEST_METHOD': method,
+              'CONTENT_TYPE': content_type}
+    current = existing
+    for line in ACTIVE:
+        if not line.startswith(('Header set Cache-Control ', 'Header setifempty Cache-Control ')):
+            continue
+        directive = re.fullmatch(r'Header (set|setifempty) Cache-Control "([^"]+)" "expr=(.+)"', line)
+        if directive is None:
+            raise AssertionError('Unsupported Header directive: ' + line)
+        action, value, expression = directive.groups()
+        allowed = True
+        for clause in expression.split(' && '):
+            term = re.fullmatch(r"(%\{[A-Z_]+\}|resp\('Cache-Control'\)) (=~|!~) m#(.*?)#(i?)", clause)
+            if term is None:
+                raise AssertionError('Unsupported Header expression: ' + clause)
+            variable, operator, pattern, flags = term.groups()
+            actual = (current or '') if variable.startswith('resp(') else values[variable[2:-1]]
+            matched = bool(re.search(pattern, actual, re.I if flags else 0))
+            allowed = allowed and (matched if operator == '=~' else not matched)
+        if allowed and (action == 'set' or current is None):
+            current = value
+    return current
+
+
 class RedirectChecks(unittest.TestCase):
     def test_each_known_legacy_url_has_one_canonical_hop(self):
         for entry in DATA['redirects']:
@@ -170,6 +203,81 @@ class RedirectChecks(unittest.TestCase):
         self.assertRegex('/assets/images/bg-united-video.webp', uri_pattern(image_line))
         self.assertRegex('/assets/fonts/Manrope-Bold.woff2', uri_pattern(image_line))
         self.assertNotRegex('/blog/foto.webp', uri_pattern(image_line))
+
+    def test_responsive_images_override_generic_week_only_with_content_hash(self):
+        for directory in ('images', 'banners'):
+            path = f'/assets/{directory}/responsive/institucional-768w-012345abcdef.webp'
+            for status in (200, 304):
+                for method in ('GET', 'HEAD'):
+                    with self.subTest(path=path, status=status, method=method):
+                        self.assertEqual(cache_policy(path, status, method),
+                                         'public, max-age=31536000, immutable')
+            for malformed in ('institucional.webp', 'institucional-768w.webp',
+                              'institucional-0w-012345abcdef.webp',
+                              'institucional-768w-012345abcde.webp',
+                              'institucional-768w-012345abcdeg.webp'):
+                self.assertEqual(cache_policy(f'/assets/{directory}/responsive/{malformed}'),
+                                 'public, max-age=604800')
+        image_manifest = json.loads((ROOT / 'seo/responsive-images.json').read_text())
+        for row in image_manifest.values():
+            for variant in row['variants']:
+                self.assertEqual(cache_policy('/' + variant['path']),
+                                 'public, max-age=31536000, immutable', variant['path'])
+
+    def test_only_exact_versioned_own_scripts_get_week_without_immutable(self):
+        for path in ('/rdstation-form.js', '/shared-header.js', '/assets/js/dist/scripts.js', '/assets/js/dist/scripts-core.js'):
+            for status in (200, 304):
+                for method in ('GET', 'HEAD'):
+                    self.assertEqual(cache_policy(path + '?v=012345abcdef', status, method),
+                                     'public, max-age=604800')
+            for query in ('', '?v=', '?v=012345abcde', '?v=012345abcdef0',
+                          '?v=012345abcdeg', '?v=012345ABCDEF', '?x=012345abcdef',
+                          '?v=012345abcdef&x=1', '?x=1&v=012345abcdef',
+                          '?v=012345abcdef&v=012345abcdef', '?v=%30012345abcde'):
+                with self.subTest(path=path, query=query):
+                    self.assertEqual(cache_policy(path + query), 'no-cache')
+        for path in ('/other.js', '/api/lead.js', '/assets/js/plugin.js',
+                     '/blog/rdstation-form.js', '/blog/assets/js/dist/scripts.js'):
+            self.assertIsNone(cache_policy(path + '?v=012345abcdef'))
+
+    def test_errors_html_fallbacks_and_mutations_do_not_get_public_asset_cache(self):
+        paths = ('/assets/css/page-home-012345abcdef.css',
+                 '/assets/images/bg-united-video.webp',
+                 '/assets/banners/responsive/institucional-768w-012345abcdef.webp',
+                 '/rdstation-form.js?v=012345abcdef',
+                 '/assets/videos/video-united.mp4')
+        for path in paths:
+            for status in (201, 206, 301, 302, 400, 403, 404, 410, 500, 503):
+                with self.subTest(path=path, status=status):
+                    self.assertNotIn('max-age=', cache_policy(path, status) or '')
+            for method in ('POST', 'PUT', 'DELETE', 'OPTIONS'):
+                self.assertNotIn('max-age=', cache_policy(path, method=method) or '')
+            for content_type in ('text/html', 'text/html; charset=UTF-8'):
+                self.assertEqual(cache_policy(path, content_type=content_type), 'no-cache')
+
+    def test_blog_php_and_existing_private_policies_are_preserved(self):
+        for path in ('/blog/', '/blog/assets/images/foto.webp',
+                     '/blog/assets/videos/video.mp4', '/blog/wp-login.php',
+                     '/api.php', '/enviar.php?v=012345abcdef'):
+            for content_type in ('application/octet-stream', 'text/html'):
+                expected = 'no-cache' if content_type == 'text/html' and not path.startswith('/blog/') else None
+                self.assertEqual(cache_policy(path, content_type=content_type), expected)
+        for path in ('/assets/images/bg-united-video.webp',
+                     '/assets/images/responsive/foto-768w-012345abcdef.webp',
+                     '/assets/css/page-home-012345abcdef.css',
+                     '/rdstation-form.js?v=012345abcdef', '/assets/videos/video.mp4'):
+            for existing in ('private', 'no-store', 'private, max-age=0',
+                             'max-age=0, no-store', 'Private, max-age=0', 'private="Set-Cookie"'):
+                self.assertEqual(cache_policy(path, existing=existing), existing)
+
+    def test_unversioned_local_video_cache_is_bounded(self):
+        for status in (200, 304):
+            for suffix in ('mp4', 'webm'):
+                self.assertEqual(cache_policy('/assets/videos/video-united.' + suffix, status),
+                                 'public, max-age=604800')
+        for path in ('/videos/video.mp4', '/blog/video.webm', '/video.php',
+                     '/assets/videos/video.mp4/other', '/assets/videos/subdir/video.mp4'):
+            self.assertIsNone(cache_policy(path))
 
 
 def apache_syntax():
