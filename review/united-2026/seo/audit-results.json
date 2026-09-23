@@ -5,7 +5,7 @@
       "title": "Inglês online e ao vivo: trilha de 18 meses | United Idiomas",
       "description": "Conheça o inglês online e ao vivo da United: trilha de 18 meses, conversação, storytelling e prática com o Jimmy, a IA disponível 24/7.",
       "h1": "Inglês online.\nAulas ao vivo.\nFale inglês.",
-      "images": 38,
+      "images": 41,
       "videos": 3,
       "stylesheets": 1
     },
@@ -34,7 +34,7 @@
       "stylesheets": 1
     }
   },
-  "local_dependencies_checked": 186,
+  "local_dependencies_checked": 194,
   "metrics": {
     "six_banner_assets": {
       "original_bytes": 11025845,
@@ -57,14 +57,14 @@
       "reduction_percent": 68.74
     },
     "delivered_raster_image_inventory": {
-      "files": 224,
-      "bytes": 47360848,
+      "files": 231,
+      "bytes": 47550875,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
     },
     "responsive_selected_assets_full_dimensions": {
       "original_bytes": 3042425,
-      "optimized_bytes": 1891798,
-      "reduction_percent": 37.82,
+      "optimized_bytes": 1793724,
+      "reduction_percent": 41.04,
       "note": "15 selected assets vs the previous optimized/PNG versions, at full dimensions. Smaller responsive candidates can save more; this is not a whole-page transfer metric."
     }
   },

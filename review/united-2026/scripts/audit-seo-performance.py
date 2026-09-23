@@ -14,6 +14,11 @@ DOCS = {route: html.fromstring((D / route.strip('/') / 'index.html').read_bytes(
 RD_FORM_ID = 'form-vamos-conversar-5ba05329ea8c88b5c10d'
 RD_SDK = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
 RD_LOADER = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js'
+BASE = 'https://www.unitedidiomas.com'
+SHARE_IMAGE = BASE + '/assets/brand/united-share-1200x630.png'
+SHARE_ALT = 'Logo da United Idiomas sobre fundo azul'
+BRAND_LOGO = {'@type': 'ImageObject', 'url': BASE + '/assets/brand/united-logo-512.png',
+              'width': 512, 'height': 512}
 errors, warnings, pages = [], [], {}
 checked_files = set()
 
@@ -32,6 +37,64 @@ def dependency(value, route, label, fragment=False):
         doc = html.fromstring(file.read_bytes())
         check(bool(doc.xpath('//*[@id=$id]', id=unquote(parsed.fragment))), f'{route}: broken fragment {value}')
 
+def brand_metadata(document, route, label):
+    expected = {
+        'og:image': SHARE_IMAGE, 'og:image:type': 'image/png',
+        'og:image:width': '1200', 'og:image:height': '630', 'og:image:alt': SHARE_ALT,
+        'twitter:card': 'summary_large_image', 'twitter:image': SHARE_IMAGE,
+        'twitter:image:alt': SHARE_ALT,
+    }
+    for key, value in expected.items():
+        attr = 'property' if key.startswith('og:') else 'name'
+        check(document.xpath(f'//meta[@{attr}=$key]/@content', key=key) == [value],
+              f'{label}: missing, duplicate or incorrect {key}')
+    icons = document.xpath('//link[contains(concat(" ",normalize-space(@rel)," ")," icon ")]')
+    check(len(icons) == 2, f'{label}: expected PNG favicon and ICO fallback only')
+    for rel, path, mime, size in [('icon', '/assets/brand/favicon-192.png', 'image/png', '192x192'),
+                                  ('shortcut icon', '/favicon.ico', 'image/x-icon', None)]:
+        links = [element for element in icons if element.get('rel') == rel]
+        check(len(links) == 1, f'{label}: missing or duplicate {rel}')
+        if len(links) == 1:
+            link = links[0]
+            check(urljoin(BASE + route, link.get('href', '')) == BASE + path
+                  and link.get('type') == mime and link.get('sizes') == size,
+                  f'{label}: incorrect {rel} path, MIME type or size')
+    scripts = document.xpath('//script[@type="application/ld+json"]')
+    check(len(scripts) == 1, f'{label}: requires one structured data graph')
+    if len(scripts) == 1:
+        graph = json.loads(scripts[0].text)['@graph']
+        organizations = [item for item in graph if item.get('@id') == BASE + '/#organization']
+        check(len(organizations) == 1 and organizations[0].get('logo') == BRAND_LOGO,
+              f'{label}: organization must use the separate opaque full-logo image')
+
+# Search/share assets are separate from the visible site's approved logo.
+for relative, dimensions in [('assets/brand/favicon-192.png', (192, 192)),
+                             ('assets/brand/united-share-1200x630.png', (1200, 630)),
+                             ('assets/brand/united-logo-512.png', (512, 512))]:
+    file = D / relative
+    check(file.is_file(), 'brand image missing: ' + relative)
+    if not file.is_file(): continue
+    checked_files.add(relative)
+    with Image.open(file) as image:
+        check(image.format == 'PNG' and image.size == dimensions,
+              'brand image format/geometry incorrect: ' + relative)
+        check(image.convert('RGBA').getchannel('A').getextrema() == (255, 255),
+              'brand image must be opaque: ' + relative)
+ico_file = D / 'favicon.ico'
+check(ico_file.is_file(), 'favicon.ico fallback missing')
+if ico_file.is_file():
+    checked_files.add('favicon.ico')
+    with Image.open(ico_file) as image:
+        check(image.format == 'ICO' and image.ico.sizes() == {(16, 16), (32, 32), (48, 48), (64, 64)},
+              'favicon.ico must contain the four approved fallback sizes')
+        for size in image.ico.sizes():
+            check(image.ico.getimage(size).convert('RGBA').getchannel('A').getextrema() == (255, 255),
+                  'favicon.ico fallback must be opaque')
+original_logo = D / 'assets/images/logo-united-idiomas.png'
+check(original_logo.is_file() and sha256(original_logo.read_bytes()).hexdigest()
+      == '3bb63a15868f16fa05c6bd58f1fd87ceb9e319e841375c520bd2ea523ff08b36',
+      'approved visible site logo must remain unchanged')
+
 for route, doc in DOCS.items():
     title = doc.xpath('string(/html/head/title)')
     description = doc.xpath('//meta[@name="description"]/@content')
@@ -46,6 +109,20 @@ for route, doc in DOCS.items():
     check(not doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'), f'{route}: obsolete preview label')
     check(not doc.xpath('//meta[@name="keywords"]'), f'{route}: obsolete keyword stuffing tag')
     check(not [i for i, count in ids.items() if count > 1], f'{route}: duplicate IDs')
+    brand_metadata(doc, route, route)
+    fragment = ROOT / 'seo/production' / ('home-head.html' if route == '/' else route.strip('/') + '-head.html')
+    check(fragment.is_file(), f'{route}: production head fragment missing')
+    if fragment.is_file():
+        brand_metadata(html.document_fromstring('<html><head>' + fragment.read_text() + '</head><body></body></html>'),
+                       route, str(fragment.relative_to(ROOT)))
+    visible_logos = doc.xpath('//body//img[contains(@src,"logo-united-idiomas.png")]')
+    check(len(visible_logos) == 3 and all(
+        urljoin(BASE + route, image.get('src', '')) == BASE + '/assets/images/logo-united-idiomas.png'
+        and image.get('width') == '258' and image.get('height') == '164'
+        and image.get('alt') == 'United Idiomas' for image in visible_logos),
+        f'{route}: preserve the three original visible logos and their geometry')
+    check(not doc.xpath('//body//*[@src and contains(@src,"/brand/")]'),
+          f'{route}: search/share brand images must not replace visible site logos')
     for script in doc.xpath('//script[@type="application/ld+json"]'):
         graph = json.loads(script.text)['@graph']
         check(bool(graph), f'{route}: empty structured data')

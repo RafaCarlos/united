@@ -1,0 +1,56 @@
+{
+  "source": "assets/images/logo-united-idiomas.png",
+  "source_sha256": "3bb63a15868f16fa05c6bd58f1fd87ceb9e319e841375c520bd2ea523ff08b36",
+  "background": "#012858",
+  "artwork": "Original logo only, centered; no tagline.",
+  "method": "Original PNG composited into separate opaque canvases; no redraw. Site logo unchanged.",
+  "renderer": "@napi-rs/canvas 0.1.100",
+  "assets": {
+    "assets/brand/favicon-192.png": {
+      "bytes": 10209,
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191",
+      "dimensions": [
+        192,
+        192
+      ]
+    },
+    "favicon.ico": {
+      "bytes": 4749,
+      "sha256": "56b7957d700e7feb92fa39b5ceb745e77c88fb52a7b80d4cff1994c4e9cb3318",
+      "dimensions": [
+        [
+          16,
+          16
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          64,
+          64
+        ]
+      ]
+    },
+    "assets/brand/united-logo-512.png": {
+      "bytes": 32940,
+      "sha256": "7d90e42e735edf7867677ee4110e7347e0cb8141a9f2664d5a1c4aabacb15d51",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    "assets/brand/united-share-1200x630.png": {
+      "bytes": 42558,
+      "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16",
+      "dimensions": [
+        1200,
+        630
+      ]
+    }
+  }
+}

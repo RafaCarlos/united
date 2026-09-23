@@ -31,10 +31,11 @@ html body header.united-header .button-area {
   display:inline-flex!important;align-items:center;justify-content:center;gap:9px;
   box-sizing:border-box;flex-shrink:0;min-height:44px;height:44px!important;
   margin:0;padding:0 18px!important;border:1px solid transparent;border-radius:8px;
-  color:#fff;background:#23824b;font-size:14px!important;font-weight:700;line-height:1;
+  color:#0b2947;background:#25d366;font-size:14px!important;font-weight:700;line-height:1;
   white-space:nowrap;text-decoration:none;transition:background .18s ease,border-color .18s ease;
 }
-html body header.united-header .button-area:hover {background:#1b6d3e}
+html body header.united-header .button-area:hover {background:#20bd5a}
+html body header.united-header .button-area::after {filter:brightness(0)}
 html body header.united-header .button-contato,
 html body header.united-header .open-menu {display:none!important}
 html body header.united-header :is(a,button):focus-visible,
@@ -58,10 +59,10 @@ html body .united-mobile-menu {display:none}
   html body header.united-header .socials {display:none!important}
   html body header.united-header .button-area {
     margin-left:auto;padding:0 13px!important;font-size:13px!important;
-    background:#ffffff0d;border-color:#ffffff55;border-radius:10px;
+    background:#25d366;border-color:transparent;border-radius:10px;
   }
   html body header.united-header .button-area::after {display:none}
-  html body header.united-header .button-area:hover {background:#ffffff1c;border-color:#ffffff99}
+  html body header.united-header .button-area:hover {background:#20bd5a;border-color:transparent}
   html body header.united-header .open-menu {
     display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:5px;
     width:44px;height:44px;flex:0 0 44px;padding:10px;margin:0;
@@ -85,7 +86,8 @@ html body .united-mobile-menu {display:none}
   }
   html body .united-mobile-menu .student-access {padding:16px;margin:8px 0 18px;border:1px solid #ffffff25;border-radius:14px;background:#ffffff06;display:flex;align-items:center;justify-content:space-between;gap:12px}
   html body .united-mobile-menu .student-access p {margin:0;font-size:14px;line-height:1.4;color:#c8d9e9}
-  html body .united-mobile-menu .button-area {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 15px;background:#fff;color:#0b2947;border-radius:9px;font-size:14px;font-weight:800;white-space:nowrap;text-decoration:none}
+  html body .united-mobile-menu .button-area {display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 15px;background:#25d366;color:#0b2947;border-radius:9px;font-size:14px;font-weight:800;white-space:nowrap;text-decoration:none}
+  html body .united-mobile-menu .button-area:hover {background:#20bd5a}
   html body .united-mobile-menu .button-area::after {display:none}
   html body .united-mobile-menu nav {padding:0}
   html body .united-mobile-menu nav>ul>li {border-bottom:1px solid #ffffff18}

@@ -117,7 +117,10 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
       return [{}];
     }
     getBoundingClientRect() { return {height:this.rectHeight || 0}; }
-    focus() { if (this.isConnected) { document.activeElement = this; this.focuses++; } }
+    focus() {
+      for (let node = this; node; node = node.parentNode) if (node.hasAttribute('inert')) return;
+      if (this.isConnected) { document.activeElement = this; this.focuses++; }
+    }
     addEventListener(type, callback) {
       const listeners = this.listeners.get(type) || [];
       listeners.push(callback); this.listeners.set(type, listeners);
@@ -150,10 +153,12 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
     const close = wrapper.appendChild(new Element('button', { class: 'rdstation-popup-js-close-button' }));
     const input = wrapper.appendChild(new Element('input'));
     const disabled = wrapper.appendChild(new Element('input')); disabled.disabled = true;
+    const student = wrapper.appendChild(new Element('a', {href:destination})); student.textContent = 'CLIQUE AQUI';
     const send = wrapper.appendChild(new Element('button'));
     const hidden = wrapper.appendChild(new Element('button')); hidden.hidden = true;
     const invisible = wrapper.appendChild(new Element('button')); invisible.visibility = 'hidden';
-    const state = { wrapper, trigger, close, input, disabled, send, hidden, invisible, opens: 0, closes: 0 };
+    const state = { wrapper, trigger, close, input, disabled, student, send, hidden, invisible, opens: 0, closes: 0, studentClicks: 0 };
+    student.addEventListener('click', () => state.studentClicks++);
     // Simulate the SDK's existing handlers, including focus and class-based close.
     trigger.addEventListener('click', () => { state.opens++; wrapper.classList.remove('floating-button--close'); input.focus(); });
     close.addEventListener('click', () => { state.closes++; wrapper.classList.add('floating-button--close'); });
@@ -324,6 +329,35 @@ test('early and late loaders connect once and delegate both shortcuts to the nat
     assert.equal(native.opens, 1, 'clicking another shortcut while open must not toggle the popup closed');
     assert.ok(state.links.every(link => link.getAttribute('aria-expanded') === 'true'));
   }
+});
+
+test('closed popup is a named inert dialog and opens before RD synchronously focuses a field', () => {
+  const state = setup({early:true}), native = state.initialWidget;
+  assert.equal(native.wrapper.getAttribute('role'), 'dialog');
+  assert.equal(native.wrapper.getAttribute('aria-label'), 'Fale com a United pelo WhatsApp');
+  assert.equal(native.wrapper.getAttribute('aria-hidden'), 'true');
+  assert.equal(native.wrapper.hasAttribute('inert'), true);
+  assert.equal(native.wrapper.hasAttribute('aria-modal'), false);
+  native.input.focus(); assert.notEqual(state.document.activeElement, native.input);
+  state.banner.click();
+  assert.equal(state.document.activeElement, native.input, 'native synchronous focus works before mutation observers run');
+  assert.equal(native.wrapper.hasAttribute('inert'), false);
+  assert.equal(native.wrapper.hasAttribute('aria-hidden'), false);
+  assert.equal(native.wrapper.getAttribute('aria-modal'), 'true');
+  state.flush(); native.close.click(); state.flush();
+  assert.equal(native.wrapper.getAttribute('role'), 'dialog');
+  assert.equal(native.wrapper.hasAttribute('inert'), true);
+  assert.equal(native.wrapper.getAttribute('aria-hidden'), 'true');
+  assert.equal(state.document.activeElement, state.banner);
+});
+
+test('RD student link gains descriptive text while preserving its URL and handler', () => {
+  const state = setup({early:true}), native = state.initialWidget;
+  assert.equal(native.student.textContent, 'Atendimento para alunos');
+  assert.equal(native.student.getAttribute('href'), state.destination);
+  state.banner.click(); state.flush(); native.student.click();
+  assert.equal(native.studentClicks, 1);
+  assert.equal(native.opens, 1, 'student navigation is not a second conversion trigger');
 });
 
 test('modified clicks and a detached native trigger preserve normal link navigation', () => {
