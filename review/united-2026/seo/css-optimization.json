@@ -194,8 +194,8 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 239181,
-    "bytes_after": 169673
+    "bytes_before": 240073,
+    "bytes_after": 170565
   },
   "/cursos/": {
     "removed_animation_classes": [
@@ -386,8 +386,8 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 215652,
-    "bytes_after": 148231
+    "bytes_before": 216319,
+    "bytes_after": 148898
   },
   "/quem-somos/": {
     "removed_animation_classes": [
@@ -584,8 +584,8 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 209278,
-    "bytes_after": 139254
+    "bytes_before": 209945,
+    "bytes_after": 139921
   },
   "/faq/": {
     "removed_animation_classes": [
@@ -794,7 +794,7 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 209278,
-    "bytes_after": 137540
+    "bytes_before": 209945,
+    "bytes_after": 138207
   }
 }

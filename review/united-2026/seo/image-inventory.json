@@ -127,6 +127,15 @@
       "format": "WEBP",
       "sha256": "5cc7cbf5a47ea4977043782f6653259e488b7f1c2a330e6a374797e1f0b608e7"
     },
+    "assets/banners/responsive/institucional-680w-a5fd462fa796.webp": {
+      "bytes": 87200,
+      "dimensions": [
+        680,
+        850
+      ],
+      "format": "WEBP",
+      "sha256": "a5fd462fa7969b81a9facbab6f486b27fbaed497cf3d5a395f9c97a9549368f6"
+    },
     "assets/banners/responsive/institucional-768w-225063309b61.webp": {
       "bytes": 103540,
       "dimensions": [
@@ -199,6 +208,15 @@
       "format": "WEBP",
       "sha256": "9ead22e6a8bbc0d1e6e09cebffd7e44c132cc8aeb1a04d6996558f59fd729d8e"
     },
+    "assets/banners/responsive/jimmy-680w-a63b892699a6.webp": {
+      "bytes": 80702,
+      "dimensions": [
+        680,
+        850
+      ],
+      "format": "WEBP",
+      "sha256": "a63b892699a6ba5d6c455d662b97b95106202e2573e0761bf31513ae9015276c"
+    },
     "assets/banners/responsive/jimmy-768w-8bce026378ce.webp": {
       "bytes": 94666,
       "dimensions": [
@@ -270,6 +288,15 @@
       ],
       "format": "WEBP",
       "sha256": "9a019fbbf868880b7dcb5149f017180b60bb690b3066d819f7ea066d3238fbfd"
+    },
+    "assets/banners/responsive/liveclass-680w-2c339c3ead01.webp": {
+      "bytes": 86642,
+      "dimensions": [
+        680,
+        850
+      ],
+      "format": "WEBP",
+      "sha256": "2c339c3ead01e634b0fd608de1850201e3aaeb596dfb76162af21a8402737875"
     },
     "assets/banners/responsive/liveclass-768w-cd84c9ef80b4.webp": {
       "bytes": 103280,
@@ -1612,122 +1639,122 @@
       "format": "JPEG",
       "sha256": "853b56a650e7b1a50d298d2c430483e2d9691c1c65a9a7a76bac9bac36afbb5e"
     },
-    "assets/images/responsive/bg-cursos-1280w-e980264675cf.webp": {
-      "bytes": 194310,
+    "assets/images/responsive/bg-cursos-1280w-06e06048758f.webp": {
+      "bytes": 167280,
       "dimensions": [
         1280,
         391
       ],
       "format": "WEBP",
-      "sha256": "e980264675cfda8b4ea82ee893d7d7d7c143569463265f1f1051243adeea73f5"
+      "sha256": "06e06048758f4338a01d0453bf16b97b010ec5387a059309ebd90a35d5c0cd1b"
     },
-    "assets/images/responsive/bg-cursos-1924w-d71b0b63dbf3.webp": {
-      "bytes": 250166,
+    "assets/images/responsive/bg-cursos-1924w-38c6bc3dd726.webp": {
+      "bytes": 211104,
       "dimensions": [
         1924,
         587
       ],
       "format": "WEBP",
-      "sha256": "d71b0b63dbf37adfc70ae0c92f7b7a14b6f621bfb725b5224576824dbabc7c8c"
+      "sha256": "38c6bc3dd7268fce6255dc91df11e5d2af7fb6e7dee5db9174d741861b09096a"
     },
-    "assets/images/responsive/bg-cursos-480w-1b42f3459d13.webp": {
-      "bytes": 34190,
+    "assets/images/responsive/bg-cursos-480w-6921bd790ef2.webp": {
+      "bytes": 30182,
       "dimensions": [
         480,
         146
       ],
       "format": "WEBP",
-      "sha256": "1b42f3459d139819406fefaef077e66070fe85a8f490f97810d24e5091f42952"
+      "sha256": "6921bd790ef2e7869ec6afaecd0085fc1362ff09abd72bfaf7e0012622d697e1"
     },
-    "assets/images/responsive/bg-cursos-768w-284711c7142b.webp": {
-      "bytes": 80486,
+    "assets/images/responsive/bg-cursos-768w-af819859a0ec.webp": {
+      "bytes": 70248,
       "dimensions": [
         768,
         234
       ],
       "format": "WEBP",
-      "sha256": "284711c7142b5cebb413dc2b5f6945c52fa793283c3b5423e8ea38b57358dff7"
+      "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
-    "assets/images/responsive/img-plataforma-01-196w-43e05c83a6cf.webp": {
-      "bytes": 5736,
+    "assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp": {
+      "bytes": 3542,
       "dimensions": [
         196,
         108
       ],
       "format": "WEBP",
-      "sha256": "43e05c83a6cf72aac0c432a709279ea072af44f459f9ade1308cf447434de8df"
+      "sha256": "51b7df6914f65c491522883895e2ff44a8c724476462f205b5c5544f7b77b909"
     },
-    "assets/images/responsive/img-plataforma-01-320w-4e9d1a4574b5.webp": {
-      "bytes": 11336,
+    "assets/images/responsive/img-plataforma-01-320w-96baf9546fb2.webp": {
+      "bytes": 6670,
       "dimensions": [
         320,
         176
       ],
       "format": "WEBP",
-      "sha256": "4e9d1a4574b53014d7d1b74c8198abcf3bbdc099c19126101949e1b4046ac2de"
+      "sha256": "96baf9546fb24ae33ba55cb7d5b1e0c5241e812342491a1dc235079e130dc675"
     },
-    "assets/images/responsive/img-plataforma-01-392w-0795e832d93c.webp": {
-      "bytes": 16110,
+    "assets/images/responsive/img-plataforma-01-392w-ce6edd6ca941.webp": {
+      "bytes": 9556,
       "dimensions": [
         392,
         215
       ],
       "format": "WEBP",
-      "sha256": "0795e832d93cbfa90ea5245d425c786ae35ddab088597ece9c383a0d70b22e2d"
+      "sha256": "ce6edd6ca9412f3eb66159d26384e2608289e2a8f44d6f7f62d70f83b31ccbcc"
     },
-    "assets/images/responsive/img-plataforma-02-196w-a692c924c950.webp": {
-      "bytes": 6346,
+    "assets/images/responsive/img-plataforma-02-196w-2dcada565d0f.webp": {
+      "bytes": 4024,
       "dimensions": [
         196,
         107
       ],
       "format": "WEBP",
-      "sha256": "a692c924c950a23c0fbc527187dec74870b62dae84449851a2a600d90739a8d5"
+      "sha256": "2dcada565d0fdb357a405657d23cdc10f7cf460b23ee64e2d03d983e3443300e"
     },
-    "assets/images/responsive/img-plataforma-02-320w-a325669b0839.webp": {
-      "bytes": 12976,
+    "assets/images/responsive/img-plataforma-02-320w-5640fcee854b.webp": {
+      "bytes": 8106,
       "dimensions": [
         320,
         175
       ],
       "format": "WEBP",
-      "sha256": "a325669b083913f8a71fcaa7e57f8bb5ef7db057fd685594e8bb992b902624b2"
+      "sha256": "5640fcee854b3cfe1a7e1a0afa8d7bb2f06a745d2c0ff5c719fc20eede96cf75"
     },
-    "assets/images/responsive/img-plataforma-02-391w-18c7853d58e4.webp": {
-      "bytes": 17852,
+    "assets/images/responsive/img-plataforma-02-391w-fffa51cc01a8.webp": {
+      "bytes": 11254,
       "dimensions": [
         391,
         214
       ],
       "format": "WEBP",
-      "sha256": "18c7853d58e4b0ae2ae1e347bce8c2065c6080f99888debcb93e80f49903b4a7"
+      "sha256": "fffa51cc01a83c03d20ce5edbc06f3a22696c471ae8b255544369ed6f056b6e2"
     },
-    "assets/images/responsive/img-plataforma-04-196w-c46368b9cce4.webp": {
-      "bytes": 6886,
+    "assets/images/responsive/img-plataforma-04-196w-491034c72d95.webp": {
+      "bytes": 4214,
       "dimensions": [
         196,
         108
       ],
       "format": "WEBP",
-      "sha256": "c46368b9cce40b1a21057ebea3e6868ddfd33d79fc95426ed742da2578de10b2"
+      "sha256": "491034c72d95a3a922d4487328d4421e68ca02a77f2904645d719339e3d94a41"
     },
-    "assets/images/responsive/img-plataforma-04-320w-a61b471498d0.webp": {
-      "bytes": 14324,
+    "assets/images/responsive/img-plataforma-04-320w-8c15ade812e0.webp": {
+      "bytes": 8034,
       "dimensions": [
         320,
         176
       ],
       "format": "WEBP",
-      "sha256": "a61b471498d0a8d5cf1d6a389a27d08c8d5ad88865a6d0b974f335d9afab749b"
+      "sha256": "8c15ade812e080a90a5cf73afbb3c7bbeac96eee4c8802cdefd7c445f23ad9a7"
     },
-    "assets/images/responsive/img-plataforma-04-388w-21b760e298ce.webp": {
-      "bytes": 20448,
+    "assets/images/responsive/img-plataforma-04-388w-cf93d66d3424.webp": {
+      "bytes": 11548,
       "dimensions": [
         388,
         214
       ],
       "format": "WEBP",
-      "sha256": "21b760e298ce3807f2e7860562223bc1d2c2b334e82d4c46295693186cc9368e"
+      "sha256": "cf93d66d342417dfaa795eb2b0427b06e143877b38ee7a871b9f9d43047e2905"
     },
     "assets/images/responsive/liveclass-conversation-2026-1024w-be0087257307.webp": {
       "bytes": 49332,
@@ -1810,50 +1837,59 @@
       "format": "WEBP",
       "sha256": "adc3bb5c7a17400f01b2c6db0e5d59a60697ae3438fb0ea3c8caf36501131ece"
     },
-    "assets/images/responsive/storytelling-characters-3d-1280w-bc4d98218136.webp": {
-      "bytes": 173804,
+    "assets/images/responsive/storytelling-characters-3d-1280w-adef93988c16.webp": {
+      "bytes": 145594,
       "dimensions": [
         1280,
         720
       ],
       "format": "WEBP",
-      "sha256": "bc4d9821813631eaccdd8abba465863a83c3002ca89b7a62997eddbc0cc3f0d6"
+      "sha256": "adef93988c16925aeeecee82777300020e45fd04d32557fbb8d9d4f229ab454c"
     },
-    "assets/images/responsive/storytelling-characters-3d-1672w-ff4061a022dc.webp": {
-      "bytes": 242796,
+    "assets/images/responsive/storytelling-characters-3d-1672w-4ab5bc90c4e7.webp": {
+      "bytes": 205836,
       "dimensions": [
         1672,
         941
       ],
       "format": "WEBP",
-      "sha256": "ff4061a022dc27f18f165bee916877f0f39ec3acd3ae73fadbb295cae4dad51a"
+      "sha256": "4ab5bc90c4e799db4a3f2cc360326af6839b569132b8dde1ed1d26ed7b514268"
     },
-    "assets/images/responsive/storytelling-characters-3d-384w-539fddfc94d6.webp": {
-      "bytes": 27718,
+    "assets/images/responsive/storytelling-characters-3d-384w-5c0203e8fb6d.webp": {
+      "bytes": 23758,
       "dimensions": [
         384,
         216
       ],
       "format": "WEBP",
-      "sha256": "539fddfc94d66b9339b1821bd700a61aa48fe87b9c9cd6beefe28c588273f0fc"
+      "sha256": "5c0203e8fb6d03f57b8b89182e9437b08f970ac19da98f6476e73651cf74923e"
     },
-    "assets/images/responsive/storytelling-characters-3d-640w-a78827a0d947.webp": {
-      "bytes": 63616,
+    "assets/images/responsive/storytelling-characters-3d-640w-ffe648f455af.webp": {
+      "bytes": 54046,
       "dimensions": [
         640,
         360
       ],
       "format": "WEBP",
-      "sha256": "a78827a0d94796dc8d4ee14e5fb877a7638cc280c1143c83a3cab51a9fef31a7"
+      "sha256": "ffe648f455af454e7ca9f6b1ed59ca78ca8e780ed82ce635d98e4feb79dda846"
     },
-    "assets/images/responsive/storytelling-characters-3d-960w-d8266be4f2b5.webp": {
-      "bytes": 113626,
+    "assets/images/responsive/storytelling-characters-3d-768w-30264b059a14.webp": {
+      "bytes": 69606,
+      "dimensions": [
+        768,
+        432
+      ],
+      "format": "WEBP",
+      "sha256": "30264b059a148023705621f0c18f2016ec2d1f1420b4610f674de11dc2c20468"
+    },
+    "assets/images/responsive/storytelling-characters-3d-960w-c12d96054570.webp": {
+      "bytes": 97900,
       "dimensions": [
         960,
         540
       ],
       "format": "WEBP",
-      "sha256": "d8266be4f2b589171cf8272a636f60fcbf45278abc02fcc41b6f0ceb743e00ee"
+      "sha256": "c12d960545702c8291a5638ffe7684a0d680272087d04be50a5f1495ca69cd31"
     },
     "assets/images/responsive/video-united-idiomas-02-poster-1280w-bdae520c6009.webp": {
       "bytes": 73482,

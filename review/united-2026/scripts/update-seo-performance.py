@@ -19,7 +19,7 @@ bundle=DIST/'assets/js/dist/scripts.js';js=bundle.read_text()
 js=re.sub(r'/\* Progressive enhancement: native controls and source URLs also work without JS\. \*/.*?\}\(window, document\)\);', '/* Video playback is maintained in /media-runtime.js. */',js,flags=re.S)
 js=js.replace(r'/^#faq-\d+$/',r'/^#faq-[a-z0-9-]+$/')
 bundle.write_text(js)
-for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-whatsapp.js','contact-preview.css']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
+for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-form.js','rdstation-whatsapp.js','contact-preview.css','preview.css','preview.js','site-polish.css']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
 # Existing CSS targets H2 in the approved campaign. Preserve its appearance after semantic H1 correction.
 for filename in ['liveclass-intro.css']:
  p=ROOT/'src'/filename;s=p.read_text();s=re.sub(r'(?<![\w,-])h2(?![\w-])',':is(h1,h2)',s);p.write_text(s);(DIST/filename).write_text(s)
@@ -30,6 +30,11 @@ prod=ROOT/'seo/production';prod.mkdir(exist_ok=True)
 for route,meta in META.items():
  p=DIST/route.strip('/')/'index.html' if route!='/' else DIST/'index.html'
  d=html.fromstring(p.read_bytes());d.set('lang','pt-BR');head=d.find('head')
+ # The final stylesheet resets these values too. Establish the page origin
+ # before its download so the UA's 8px body margin cannot become an early layout.
+ for old in head.xpath('./style[@data-united-base]'):head.remove(old)
+ base_style=etree.Element('style',{'data-united-base':''});base_style.text='html,body{margin:0;padding:0}'
+ head.insert(0,base_style)
  for e in head.xpath('./title|./meta[@name="description" or @name="keywords" or @name="robots" or @name="googlebot" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]'):e.getparent().remove(e)
  for e in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'):e.getparent().remove(e)
  etree.SubElement(head,'meta',name='robots',content='index,follow,max-image-preview:large')
@@ -50,6 +55,9 @@ for route,meta in META.items():
   for name,desc,anchor in courses:graph.append({'@type':'Course','@id':url+anchor,'name':name,'description':desc,'url':url+anchor,'inLanguage':'pt-BR','provider':{'@id':ORG}})
   page['hasPart']=[{'@id':url+a} for _,_,a in courses]
  if route=='/':
+  # These are interactive banner groups, not independently distributable articles.
+  for panel in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-panel ")]'):
+   panel.tag='div'
   # Remove inherited inline placement so CSS also works before JavaScript runs.
   for link in d.xpath('//a[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]'):
    style=';'.join(part for part in link.get('style','').split(';') if part.strip() and part.split(':',1)[0].strip().lower() not in ('position','z-index'))
@@ -132,6 +140,8 @@ for route,meta in META.items():
  if route in ('/','/cursos/'):
   inner(d.xpath('//*[@id="jimmy-united-idiomas"]//div[@class="text"]/p[not(@class)]')[0],COPY['jimmy'])
  # Link directly to the WordPress canonical host, preserving any query/fragment.
+ for icon in d.xpath('//img[contains(@src,"icon-button-whatsapp.png")]|//a[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]/img'):
+  icon.set('src','/assets/images/icon-button-whatsapp.svg');icon.set('width','22');icon.set('height','22')
  for link in d.xpath('//a[@href]'):
   parsed=urlsplit(link.get('href'))
   if parsed.netloc=='www.unitedidiomas.com' and parsed.path.rstrip('/')=='/blog':
@@ -172,12 +182,23 @@ for route,meta in META.items():
  for i,v in enumerate(videos):
   v.attrib.pop('autoplay',None);v.attrib.pop('controls',None)
   v.set('preload','none');v.set('playsinline','');v.set('webkit-playsinline','');v.set('muted','');v.set('loop','');v.set('data-managed-video','')
+  # Native lazy loading also defers below-the-fold posters in supporting browsers.
+  # Keep the first visible video on the course/institutional pages eager.
+  v.set('loading','eager' if route in ('/cursos/','/quem-somos/') and i==0 else 'lazy')
   v.set('disablepictureinpicture','');v.set('disableremoteplayback','');v.set('controlslist','nodownload nofullscreen noremoteplayback')
   if not v.get('aria-label'):v.set('aria-label',{'/cursos/':['Aulas online de inglês Live Class','Conversação e prática de inglês','Inglês para negócios'],'/quem-somos/':['Conheça a United Idiomas']}.get(route,['Cena do curso'])[i])
   # HTML source is a void tag: keep its fallback text/links as siblings, never nested.
   for source in v.findall('source'):
    for child in list(source):source.remove(child);v.append(child)
  if videos:etree.SubElement(d.find('body'),'script',src='/media-runtime.js?v='+digest(DIST/'media-runtime.js'),defer='defer')
+ # Native UI is independent of RD: do not make opening menus/contact dialogs
+ # wait for the third-party SDK. Keep the SDK ahead of its form initializer.
+ sdk=d.xpath('//script[@id="rdstation-forms-sdk"]')
+ if sdk:
+  anchor=sdk[0]
+  independent={'rdstation-whatsapp.js','contact-preview.js','site-refinement.js','shared-header.js','media-runtime.js'}
+  for script in d.xpath('//script[@src]'):
+   if Path(urlsplit(script.get('src')).path).name in independent:anchor.addprevious(script)
  for old in head.xpath('./link[contains(@href,"seo-performance.css")]'):head.remove(old)
  etree.SubElement(head,'link',rel='stylesheet',href='/seo-performance.css?v='+digest(DIST/'seo-performance.css'))
  for link in head.xpath('./link[contains(@href,"liveclass-intro.css")]'):link.set('href','/liveclass-intro.css?v='+digest(DIST/'liveclass-intro.css'))

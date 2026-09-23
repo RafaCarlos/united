@@ -40,9 +40,9 @@ for name in ("institucional", "liveclass", "jimmy"):
             "selector": "#jimmy-united-idiomas img",
         }
     SPECS[f"assets/banners/{name}.webp"] = spec(
-        f"assets/banners/{name}.png", [480, 768, 960, 1122], 90, PORTRAIT,
+        f"assets/banners/{name}.png", [480, 680, 768, 960, 1122], 90, PORTRAIT,
         contexts=contexts,
-        note="Full approved portrait, including baked-in text; no cropping.")
+        note="Full approved portrait, including baked-in text; no cropping. The 680px candidate covers a 388px slot at 1.75 DPR without jumping to 768px; text quality remains 90.")
     SPECS[f"assets/banners/{name}-wide.webp"] = spec(
         f"assets/banners/{name}-wide.png", [960, 1280, 1600, 1800], 90, WIDE,
         contexts={"hero": {"media": "(min-width:769px)", "sizes": WIDE}},
@@ -50,12 +50,12 @@ for name in ("institucional", "liveclass", "jimmy"):
 
 SPECS.update({
     "assets/images/bg-cursos.png": spec(
-        "assets/images/bg-cursos.png", [480, 768, 1280, 1924], 88, "100vw",
-        usage="css-background", note=".about-home background-size:100% auto; preserve alpha."),
+        "assets/images/bg-cursos.png", [480, 768, 1280, 1924], 75, "100vw",
+        usage="css-background", note=".about-home background-size:100% auto. Preserve alpha byte-for-byte; quality 75 validated at 768px with composited SSIM 0.9977. Fine transparency limits further lossless-alpha compression."),
     "assets/images/storytelling-characters-3d.webp": spec(
-        "assets/images/storytelling-characters-3d.png", [384, 640, 960, 1280, 1672], 88,
+        "assets/images/storytelling-characters-3d.png", [384, 640, 768, 960, 1280, 1672], 85,
         "(max-width:1024px) calc(100vw - 40px), 20.4vw",
-        note="Storytelling card becomes full width at 1024px; existing object-fit unchanged."),
+        note="Storytelling card becomes full width at 1024px; existing object-fit unchanged. The 768px candidate avoids a jump from 640px to 960px for common mobile pixel densities; quality 85 retains faces/composition with mildly softer fine texture."),
     "assets/images/liveclass-conversation-2026.webp": spec(
         "assets/images/liveclass-conversation-2026.png", [480, 768, 1024, 1536], 88,
         "(max-width:380px) 368px, (max-width:467px) 428px, (max-width:768px) calc(100vw - 40px), (max-width:1296px) 72vw, 864px",
@@ -67,9 +67,9 @@ SPECS.update({
 })
 for number, intrinsic_width in (("01", 392), ("02", 391), ("04", 388)):
     name = f"assets/images/img-plataforma-{number}.png"
-    SPECS[name] = spec(name, [196, 320, 392], 92,
+    SPECS[name] = spec(name, [196, 320, 392], 82,
                        f"{intrinsic_width}px",
-                       note="Use intrinsic width conservatively: height:100% and object-fit:cover can require more image pixels than the narrow figure width. Original PNG is at most 392px; never upscale or flatten alpha.")
+                       note="Use intrinsic width conservatively: height:100% and object-fit:cover can require more image pixels than the narrow figure width. Original PNG is at most 392px; never upscale or flatten alpha. Quality 82 validated at full width with composited SSIM at least 0.9632.")
 
 # Native <video poster> has no srcset. Use these full-size copies in static
 # HTML, with no late JS swap or duplicate poster request. The character poster

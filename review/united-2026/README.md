@@ -2,6 +2,12 @@
 
 Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.
 
+## Atualização de desempenho e cores — 23/09/2026
+
+Esta rodada parte da `main` em `97265d0` (PR #6 integrado). Evita três downloads de retratos exclusivos de desktop no mobile (~493 KB), aprimora WebP responsivo e estabilidade dos banners, corrige semântica e acessibilidade dos componentes RD e aplica o verde #25D366 aprovado aos botões WhatsApp e Área do Aluno. Texto/ícones escuros mantêm contraste; WhatsApp móvel continua 12 px acima da barra Quero conhecer. Captação RD, destinos dos links e botão vermelho de envio preservados.
+
+Resultados, validação e limites em [PAGESPEED-2026-09-23.md](seo/PAGESPEED-2026-09-23.md). O mobile e as boas práticas ainda têm pendências, incluindo a integração externa Blue e a revisão das tags; Rafael precisa integrar as regras de cache na hospedagem. As notas locais não comprovam aprovação em produção. Plano para os responsáveis em [TERCEIROS-2026-09-23.md](seo/TERCEIROS-2026-09-23.md).
+
 ## Atualização de desempenho — 22/09/2026
 
 A atualização de desempenho parte da `main` em `2e47f7b`. Inclui imagens WebP responsivas, posters menores, prioridade para a imagem inicial, redução de CSS e JavaScript próprios e regras de cache revisáveis. No celular, o WhatsApp acompanha a rolagem e permanece 12 px acima da barra “Quero conhecer”; no desktop, conserva sua posição no banner. O formulário oficial e o loader RD permanecem ativos.

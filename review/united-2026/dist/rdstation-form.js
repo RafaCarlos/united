@@ -60,8 +60,18 @@
     unavailable();
     return;
   }
+  function hideHoneypots() {
+    // These two readonly fields are RD's anti-spam controls, not visitor fields.
+    // Keep their names, types, values and successful-control status untouched.
+    mount.querySelectorAll('input[name="emP7yF13ld"][readonly], input[name="sh0uldN07ch4ng3"][readonly]').forEach(function (input) {
+      input.hidden = true;
+      input.setAttribute('aria-hidden', 'true');
+      input.tabIndex = -1;
+    });
+  }
   // Keep RD's own Brazil/+55 mask; the country picker is hidden, not recreated.
   const countryObserver = new MutationObserver(function () {
+    hideHoneypots();
     mount.querySelectorAll('.phone-input-group').forEach(function (group) {
       const defaultCountry = group.querySelector('.country-field');
       const selector = group.querySelector('.phone-country');
@@ -72,13 +82,24 @@
         if (field.data('select2') && field.select2('val') !== 'BR') field.select2('val', 'BR').trigger('change');
       }
       if (phone && phone.dataset.country !== 'BR') phone.dataset.country = 'BR';
+      // The fixed-country Select2 choice is a hidden widget control, not a URL.
+      // Keep its node and plugin handlers; only remove the non-navigation href.
+      group.querySelectorAll('.select2-container a.select2-choice').forEach(function (choice) {
+        if (/^javascript:void\(0\);?$/i.test((choice.getAttribute('href') || '').trim())) {
+          choice.removeAttribute('href');
+          choice.setAttribute('role', 'button');
+          choice.setAttribute('aria-hidden', 'true');
+          choice.tabIndex = -1;
+        }
+      });
     });
   });
-  countryObserver.observe(mount, {childList: true, subtree: true, attributes: true, attributeFilter: ['data-country', 'value']});
+  countryObserver.observe(mount, {childList: true, subtree: true, attributes: true, attributeFilter: ['data-country', 'value', 'href']});
   let timeout;
   const observer = new MutationObserver(function () {
     const rdForm = mount.querySelector('form');
     if (!rdForm) return;
+    hideHoneypots();
     // Replace the old-site destination only when this form is submitted.
     rdForm.dataset.assetAction = '';
     if (window.jQuery) window.jQuery(rdForm).data('assetAction', '');

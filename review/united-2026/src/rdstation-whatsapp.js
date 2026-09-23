@@ -70,11 +70,16 @@
   function updateState() {
     const open = !!wrapper && wrapper.isConnected && !wrapper.classList.contains('floating-button--close');
     if (wrapper) {
+      // Keep the accessible name valid even while the native panel is closed.
+      // Inert prevents its hidden controls from remaining in keyboard order.
+      wrapper.setAttribute('role', 'dialog');
       if (open) {
-        wrapper.setAttribute('role', 'dialog');
+        wrapper.removeAttribute('inert');
+        wrapper.removeAttribute('aria-hidden');
         wrapper.setAttribute('aria-modal', 'true');
       } else {
-        wrapper.removeAttribute('role');
+        wrapper.setAttribute('inert', '');
+        wrapper.setAttribute('aria-hidden', 'true');
         wrapper.removeAttribute('aria-modal');
       }
     }
@@ -88,15 +93,31 @@
       if (!trigger || !trigger.isConnected || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
       opener = link;
-      if (wrapper.classList.contains('floating-button--close')) trigger.click();
+      if (wrapper.classList.contains('floating-button--close')) {
+        // RD may focus its first field synchronously inside its click handler.
+        wrapper.removeAttribute('inert');
+        wrapper.removeAttribute('aria-hidden');
+        trigger.click();
+        updateState();
+      }
       else {
         const field = focusable().find(function (element) { return /^(INPUT|SELECT|TEXTAREA)$/.test(element.tagName); });
         if (field) field.focus({preventScroll: true});
       }
     });
   });
+  function describeStudentLink() {
+    if (!wrapper) return;
+    wrapper.querySelectorAll('a[href*="api.whatsapp.com/send"]').forEach(function (link) {
+      if (link.textContent.trim().toUpperCase() === 'CLIQUE AQUI') {
+        // Keep RD's destination, tracking and native click handlers intact.
+        link.textContent = 'Atendimento para alunos';
+      }
+    });
+  }
   function connect() {
     placements.forEach(function (watchContactBar) { watchContactBar(); });
+    describeStudentLink();
     if (wrapper && wrapper.isConnected) return;
     if (wrapper) {
       // RD removes its popup after conversion, without toggling its closed class.
@@ -113,6 +134,7 @@
     if (!candidateWrapper) return;
     trigger = candidate;
     wrapper = candidateWrapper;
+    describeStudentLink();
     // Keep RD's form, analytics and close handler; replace only its fixed shortcut.
     trigger.setAttribute('data-united-whatsapp-trigger', '');
     trigger.style.setProperty('display', 'none', 'important');

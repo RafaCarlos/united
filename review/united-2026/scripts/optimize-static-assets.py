@@ -43,6 +43,26 @@ def responsive(value,route='/'):
   family=re.sub(r'-\d+w-[a-f0-9]{12}\.webp$','',current.name)
   if Path(key).parent==current.parent and re.fullmatch(re.escape(family)+r'-\d+w-[a-f0-9]{12}\.webp',Path(key).name):return row
  return None
+def optimize_teaser_images(document,route='/'):
+ # An SVG <image> downloads even when its mobile parent is display:none.
+ # A native picture inside foreignObject selects the transparent inline image
+ # below 769px, before fetching. The SVG retains its exact crop and gradient.
+ for svg in document.xpath('//svg[contains(concat(" ",normalize-space(@class)," ")," teaser-visual ")]'):
+  for item in svg.xpath('./image[@href]'):
+   row=responsive(item.get('href'),route)
+   if not row:continue
+   if (item.get('width'),item.get('height'))!=('1122','1402'):
+    raise ValueError('Review the teaser geometry before replacing its SVG image.')
+   frame=etree.Element('foreignObject',{key:value for key,value in item.attrib.items() if key!='href'})
+   picture=etree.SubElement(frame,'picture',{'xmlns':'http://www.w3.org/1999/xhtml','data-teaser-picture':'','style':'display:block;width:100%;height:100%'})
+   etree.SubElement(picture,'source',media='(min-width:769px)',srcset='/'+row['default_path'],type='image/webp')
+   etree.SubElement(picture,'img',src=EMPTY,width='1122',height='1402',alt='',decoding='async',fetchpriority='low',style='display:block;width:100%;height:100%;max-width:none')
+   frame.tail=item.tail
+   item.getparent().replace(item,frame)
+  # Rebuilds must refresh old hashes without nesting another foreignObject.
+  for source in svg.xpath('.//picture[@data-teaser-picture]/source'):
+   row=responsive(source.get('srcset',''),route)
+   if row:source.set('srcset','/'+row['default_path'])
 # Preserve individual source styles for subsequent targeted changes; bundles are disposable output.
 for parent in [ROOT/'src',D]:
  for p in parent.rglob('*.css'):
@@ -75,6 +95,7 @@ for route in META:
  for item in d.xpath('//image[@href]'):
   row=responsive(item.get('href'),route)
   if row:item.set('href','/'+row['default_path'])
+ optimize_teaser_images(d,route)
  for img in d.xpath('//img'):
   path=local(img.get('src',''),route)
   if path and path.is_file():
