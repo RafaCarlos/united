@@ -45,6 +45,7 @@ class ProductionExportTest(unittest.TestCase):
               <link rel="canonical" href="{canonical}">
               <meta charset="utf-8"><meta name="robots" content="index,follow">
               <link rel="stylesheet" href="{prefix}assets/style.css">
+              <link rel="preload" as="image" imagesrcset="{prefix}assets/image.svg 400w, {prefix}assets/image.svg 800w" imagesizes="100vw">
               <script>window.dataLayer=window.dataLayer||[];</script></head><body>
               <!-- preserve comments and inline GTM --><h1>United {route}</h1>
               <a href="{prefix}cursos/">Cursos</a><a href="{prefix}#contato">Contato</a>
@@ -123,6 +124,14 @@ class ProductionExportTest(unittest.TestCase):
         self.assertEqual((self.out / 'site' / 'robots.txt').read_text(), 'User-agent: *\nDisallow: /\n')
         self.assertFalse((self.out / 'site' / 'sitemap.xml').exists())
         self.assertFalse((self.out / 'publication' / 'apache-seo.conf').exists())
+
+    def test_missing_responsive_preload_candidate_cannot_ship(self):
+        source = self.dist / 'index.html'
+        self.write(source, source.read_text().replace(
+            'imagesrcset="assets/image.svg 400w', 'imagesrcset="assets/missing.webp 400w'))
+        with self.assertRaises(exporter.ExportError):
+            self.export()
+        self.assertFalse(self.out.exists())
 
     def test_noindex_in_production_aborts_before_output(self):
         source = self.dist / 'cursos' / 'index.html'

@@ -1,0 +1,918 @@
+{
+  "assets/banners/institucional.webp": {
+    "source": {
+      "path": "assets/banners/institucional.png",
+      "sha256": "5ebfb1352a0d5d416262b988323699f7cbeaa05c7ac2643f9a32374b9771620f",
+      "bytes": 1829838,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/institucional.webp",
+      "bytes": 220638,
+      "sha256": "aac98ab4dff4689a65596c01c4a8b216fc4fd6166a00150f0a3ae03b3dc82a0a"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/institucional-1122w-e7e89088998e.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/institucional-480w-5cc7cbf5a47e.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 55648,
+        "sha256": "5cc7cbf5a47ea4977043782f6653259e488b7f1c2a330e6a374797e1f0b608e7",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-768w-225063309b61.webp",
+        "width": 768,
+        "height": 960,
+        "bytes": 103540,
+        "sha256": "225063309b61761b1ec5c7d0084be6392bbef76d0fd4481abf43c3e2dc5c0850",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-960w-4db1385f8dc9.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 137116,
+        "sha256": "4db1385f8dc9b2126fb08272e921b4211d6da4616cf8ea84ddc01709048cfd9b",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-1122w-e7e89088998e.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 161346,
+        "sha256": "e7e89088998e549b322844127503b428ee26f042297376a7882d9a699711a66c",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/institucional-480w-5cc7cbf5a47e.webp 480w, /assets/banners/responsive/institucional-768w-225063309b61.webp 768w, /assets/banners/responsive/institucional-960w-4db1385f8dc9.webp 960w, /assets/banners/responsive/institucional-1122w-e7e89088998e.webp 1122w",
+    "sizes": "calc(100vw - 24px)",
+    "contexts": {
+      "hero": {
+        "media": "(max-width:768px)",
+        "sizes": "calc(100vw - 24px)"
+      }
+    },
+    "note": "Full approved portrait, including baked-in text; no cropping."
+  },
+  "assets/banners/institucional-wide.webp": {
+    "source": {
+      "path": "assets/banners/institucional-wide.png",
+      "sha256": "856933135bea42452cff41a76e048b8f41e36843374bd5d098624f51d7c6758a",
+      "bytes": 1952585,
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/institucional-wide.webp",
+      "bytes": 292600,
+      "sha256": "8f4ba65efbc8636a78c69014c9ed5f0291e640dfd6a622fc5b00f7793582d771"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/institucional-wide-1774w-0fd4c74bc1a6.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/institucional-wide-960w-6798758ede57.webp",
+        "width": 960,
+        "height": 480,
+        "bytes": 105024,
+        "sha256": "6798758ede57379d846d4a3560cdc05237e70ba297b4ceecee7210a9f7673ec9",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-wide-1280w-e2f2f764c8e4.webp",
+        "width": 1280,
+        "height": 640,
+        "bytes": 153504,
+        "sha256": "e2f2f764c8e4555f8e6b7d1a65c4ad56ce673fdf2ecc9e9d72623313b338b21e",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-wide-1600w-3c3a0101d717.webp",
+        "width": 1600,
+        "height": 800,
+        "bytes": 198618,
+        "sha256": "3c3a0101d717a367aa59cc88d4f1ca59200d06f3822fb443672097725d6529d3",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/institucional-wide-1774w-0fd4c74bc1a6.webp",
+        "width": 1774,
+        "height": 887,
+        "bytes": 223660,
+        "sha256": "0fd4c74bc1a696366a966762586aed5ab027ed439208a951d4eec10584e6c096",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/institucional-wide-960w-6798758ede57.webp 960w, /assets/banners/responsive/institucional-wide-1280w-e2f2f764c8e4.webp 1280w, /assets/banners/responsive/institucional-wide-1600w-3c3a0101d717.webp 1600w, /assets/banners/responsive/institucional-wide-1774w-0fd4c74bc1a6.webp 1774w",
+    "sizes": "calc((100svh - 74px) * 2)",
+    "contexts": {
+      "hero": {
+        "media": "(min-width:769px)",
+        "sizes": "calc((100svh - 74px) * 2)"
+      }
+    },
+    "note": "Full approved wide composition; CSS controls the existing crop."
+  },
+  "assets/banners/liveclass.webp": {
+    "source": {
+      "path": "assets/banners/liveclass.png",
+      "sha256": "c699bb804a1b7583b6d952d836557e64ddbed90c85823ac3b37ecbdd12655de4",
+      "bytes": 1797164,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/liveclass.webp",
+      "bytes": 230748,
+      "sha256": "2d5434740120172370f16722610682367b22b0eda277ce4bc9736f5ccd23e0de"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/liveclass-1122w-aa84d480698c.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/liveclass-480w-9a019fbbf868.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 51536,
+        "sha256": "9a019fbbf868880b7dcb5149f017180b60bb690b3066d819f7ea066d3238fbfd",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-768w-cd84c9ef80b4.webp",
+        "width": 768,
+        "height": 960,
+        "bytes": 103280,
+        "sha256": "cd84c9ef80b49bbf0e5b5ec60614ee377b5268d9d0bd7954f3388dbcc822b351",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-960w-785deffbe40f.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 142146,
+        "sha256": "785deffbe40f970476f927448937cea1b31f257037f0dd28a078fb4b5fe242d9",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-1122w-aa84d480698c.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 178998,
+        "sha256": "aa84d480698c5985ab059ac0244fcd1a10edc2394f4e5dcfd67f443d82731fb5",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/liveclass-480w-9a019fbbf868.webp 480w, /assets/banners/responsive/liveclass-768w-cd84c9ef80b4.webp 768w, /assets/banners/responsive/liveclass-960w-785deffbe40f.webp 960w, /assets/banners/responsive/liveclass-1122w-aa84d480698c.webp 1122w",
+    "sizes": "calc(100vw - 24px)",
+    "contexts": {
+      "hero": {
+        "media": "(max-width:768px)",
+        "sizes": "calc(100vw - 24px)"
+      }
+    },
+    "note": "Full approved portrait, including baked-in text; no cropping."
+  },
+  "assets/banners/liveclass-wide.webp": {
+    "source": {
+      "path": "assets/banners/liveclass-wide.png",
+      "sha256": "4f4a3627e5760ecfe27ddb4238ec33114bb92815d1833480382108eb19ea16e7",
+      "bytes": 1632721,
+      "width": 1773,
+      "height": 887,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/liveclass-wide.webp",
+      "bytes": 150664,
+      "sha256": "ea4c2eb942b07a7e073b18bb5125e72b94afc9cfc11077e447d0f423878fd100"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/liveclass-wide-1773w-ad416c763f10.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/liveclass-wide-960w-c41b52326eaa.webp",
+        "width": 960,
+        "height": 480,
+        "bytes": 45690,
+        "sha256": "c41b52326eaad723b53bcf6593219bc6d2b2d495fb8c4d1f5ded0f2d0ecff1d1",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-wide-1280w-ea0c681aade0.webp",
+        "width": 1280,
+        "height": 640,
+        "bytes": 69726,
+        "sha256": "ea0c681aade0ebf4a533f079883768fd4f71ec246fd454da6d2a489fdaf85815",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-wide-1600w-ff46ad19ed70.webp",
+        "width": 1600,
+        "height": 800,
+        "bytes": 94194,
+        "sha256": "ff46ad19ed70b0bcfc93ffee538dcda486b9ae0e7d1c97175084e37cf2938d33",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/liveclass-wide-1773w-ad416c763f10.webp",
+        "width": 1773,
+        "height": 887,
+        "bytes": 109306,
+        "sha256": "ad416c763f108a73941fc49038cdbbc5b8368e4eec5ff6700f7219cb97b4abe7",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/liveclass-wide-960w-c41b52326eaa.webp 960w, /assets/banners/responsive/liveclass-wide-1280w-ea0c681aade0.webp 1280w, /assets/banners/responsive/liveclass-wide-1600w-ff46ad19ed70.webp 1600w, /assets/banners/responsive/liveclass-wide-1773w-ad416c763f10.webp 1773w",
+    "sizes": "calc((100svh - 74px) * 2)",
+    "contexts": {
+      "hero": {
+        "media": "(min-width:769px)",
+        "sizes": "calc((100svh - 74px) * 2)"
+      }
+    },
+    "note": "Full approved wide composition; CSS controls the existing crop."
+  },
+  "assets/banners/jimmy.webp": {
+    "source": {
+      "path": "assets/banners/jimmy.png",
+      "sha256": "0eb488bb2bb41b555588777027910c4268697fcd88abc96e7605b66b2c68b981",
+      "bytes": 1800362,
+      "width": 1122,
+      "height": 1402,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/jimmy.webp",
+      "bytes": 214822,
+      "sha256": "5f857ccb22ac921fa9a8811cafb87ae6e2f6f7ba0516c01eac5e2835e53f3f81"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/jimmy-1122w-36066de6c61b.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/jimmy-480w-9ead22e6a8bb.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 50294,
+        "sha256": "9ead22e6a8bbc0d1e6e09cebffd7e44c132cc8aeb1a04d6996558f59fd729d8e",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-768w-8bce026378ce.webp",
+        "width": 768,
+        "height": 960,
+        "bytes": 94666,
+        "sha256": "8bce026378ce7ba7e8e613cc21a98044f6307b3d83b00d623a1b9b1da13c22f0",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-960w-2eebcba9cd9a.webp",
+        "width": 960,
+        "height": 1200,
+        "bytes": 125960,
+        "sha256": "2eebcba9cd9af65389784a0ceb631bad54d3da1f675a4973c8aa15ca8562b164",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-1122w-36066de6c61b.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 153026,
+        "sha256": "36066de6c61bf7929789e09b6352becac9e44442074d5fb5eefba52e6ffcbfe2",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/jimmy-480w-9ead22e6a8bb.webp 480w, /assets/banners/responsive/jimmy-768w-8bce026378ce.webp 768w, /assets/banners/responsive/jimmy-960w-2eebcba9cd9a.webp 960w, /assets/banners/responsive/jimmy-1122w-36066de6c61b.webp 1122w",
+    "sizes": "calc(100vw - 24px)",
+    "contexts": {
+      "hero": {
+        "media": "(max-width:768px)",
+        "sizes": "calc(100vw - 24px)"
+      },
+      "body": {
+        "sizes": "(max-width:508px) calc((100vw - 90px) * 1.32), (max-width:768px) 554px, (max-width:1296px) 42vw, 554px",
+        "selector": "#jimmy-united-idiomas img"
+      }
+    },
+    "note": "Full approved portrait, including baked-in text; no cropping."
+  },
+  "assets/banners/jimmy-wide.webp": {
+    "source": {
+      "path": "assets/banners/jimmy-wide.png",
+      "sha256": "270cd2aaa63b6910102fa875dab36c9b3502b832956cf5fb20a30603fd1bd0f4",
+      "bytes": 2013175,
+      "width": 1772,
+      "height": 888,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/banners/jimmy-wide.webp",
+      "bytes": 288004,
+      "sha256": "2875281101c65bce3f1d26a023d17c384857af3f4f5e5d937f372e9250b05967"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/banners/responsive/jimmy-wide-1772w-103a4ed9d8f2.webp",
+    "variants": [
+      {
+        "path": "assets/banners/responsive/jimmy-wide-960w-ae1dadcb606a.webp",
+        "width": 960,
+        "height": 481,
+        "bytes": 93998,
+        "sha256": "ae1dadcb606a6cf467024df2ac3885e49078fa1f4d5bac6a31262161b2dc4950",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-wide-1280w-bdaa51ee29e1.webp",
+        "width": 1280,
+        "height": 641,
+        "bytes": 137802,
+        "sha256": "bdaa51ee29e1c9f32175180126e3eb58967267fbbb9c275d663bf21ab26d0db3",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-wide-1600w-c51799221461.webp",
+        "width": 1600,
+        "height": 802,
+        "bytes": 183836,
+        "sha256": "c5179922146104d41073ea445b9914a07cb35b3d97cb47627b5d293e83e4c879",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/banners/responsive/jimmy-wide-1772w-103a4ed9d8f2.webp",
+        "width": 1772,
+        "height": 888,
+        "bytes": 210658,
+        "sha256": "103a4ed9d8f207de9ae284fe8f69c414fbdc71efaa8ae1e18566892fa6cb6d3a",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/banners/responsive/jimmy-wide-960w-ae1dadcb606a.webp 960w, /assets/banners/responsive/jimmy-wide-1280w-bdaa51ee29e1.webp 1280w, /assets/banners/responsive/jimmy-wide-1600w-c51799221461.webp 1600w, /assets/banners/responsive/jimmy-wide-1772w-103a4ed9d8f2.webp 1772w",
+    "sizes": "calc((100svh - 74px) * 2)",
+    "contexts": {
+      "hero": {
+        "media": "(min-width:769px)",
+        "sizes": "calc((100svh - 74px) * 2)"
+      }
+    },
+    "note": "Full approved wide composition; CSS controls the existing crop."
+  },
+  "assets/images/bg-cursos.png": {
+    "source": {
+      "path": "assets/images/bg-cursos.png",
+      "sha256": "fbd99c4f6187b2960ffa342c658e8364324516436b67f43d16928a13422a0462",
+      "bytes": 409512,
+      "width": 1924,
+      "height": 587,
+      "mode": "RGBA"
+    },
+    "previous": {
+      "path": "assets/images/bg-cursos.png",
+      "bytes": 409512,
+      "sha256": "fbd99c4f6187b2960ffa342c658e8364324516436b67f43d16928a13422a0462"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 88,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "css-background",
+    "default_path": "assets/images/responsive/bg-cursos-1924w-d71b0b63dbf3.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/bg-cursos-480w-1b42f3459d13.webp",
+        "width": 480,
+        "height": 146,
+        "bytes": 34190,
+        "sha256": "1b42f3459d139819406fefaef077e66070fe85a8f490f97810d24e5091f42952",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/bg-cursos-768w-284711c7142b.webp",
+        "width": 768,
+        "height": 234,
+        "bytes": 80486,
+        "sha256": "284711c7142b5cebb413dc2b5f6945c52fa793283c3b5423e8ea38b57358dff7",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/bg-cursos-1280w-e980264675cf.webp",
+        "width": 1280,
+        "height": 391,
+        "bytes": 194310,
+        "sha256": "e980264675cfda8b4ea82ee893d7d7d7c143569463265f1f1051243adeea73f5",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/bg-cursos-1924w-d71b0b63dbf3.webp",
+        "width": 1924,
+        "height": 587,
+        "bytes": 250166,
+        "sha256": "d71b0b63dbf37adfc70ae0c92f7b7a14b6f621bfb725b5224576824dbabc7c8c",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/bg-cursos-480w-1b42f3459d13.webp 480w, /assets/images/responsive/bg-cursos-768w-284711c7142b.webp 768w, /assets/images/responsive/bg-cursos-1280w-e980264675cf.webp 1280w, /assets/images/responsive/bg-cursos-1924w-d71b0b63dbf3.webp 1924w",
+    "sizes": "100vw",
+    "contexts": {},
+    "note": ".about-home background-size:100% auto; preserve alpha."
+  },
+  "assets/images/storytelling-characters-3d.webp": {
+    "source": {
+      "path": "assets/images/storytelling-characters-3d.png",
+      "sha256": "cbab3c8e1fcf8590d9714dd8e120613e1b3060fc55df270a5500d40d0c48e334",
+      "bytes": 2985107,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA"
+    },
+    "previous": {
+      "path": "assets/images/storytelling-characters-3d.webp",
+      "bytes": 379716,
+      "sha256": "a7600a6691e9883f66ab013d6ce6cbf77490a549b3ea43a0b9a65828cf89fa29"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 88,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/storytelling-characters-3d-1672w-ff4061a022dc.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/storytelling-characters-3d-384w-539fddfc94d6.webp",
+        "width": 384,
+        "height": 216,
+        "bytes": 27718,
+        "sha256": "539fddfc94d66b9339b1821bd700a61aa48fe87b9c9cd6beefe28c588273f0fc",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/storytelling-characters-3d-640w-a78827a0d947.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 63616,
+        "sha256": "a78827a0d94796dc8d4ee14e5fb877a7638cc280c1143c83a3cab51a9fef31a7",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/storytelling-characters-3d-960w-d8266be4f2b5.webp",
+        "width": 960,
+        "height": 540,
+        "bytes": 113626,
+        "sha256": "d8266be4f2b589171cf8272a636f60fcbf45278abc02fcc41b6f0ceb743e00ee",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/storytelling-characters-3d-1280w-bc4d98218136.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 173804,
+        "sha256": "bc4d9821813631eaccdd8abba465863a83c3002ca89b7a62997eddbc0cc3f0d6",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/storytelling-characters-3d-1672w-ff4061a022dc.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 242796,
+        "sha256": "ff4061a022dc27f18f165bee916877f0f39ec3acd3ae73fadbb295cae4dad51a",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/storytelling-characters-3d-384w-539fddfc94d6.webp 384w, /assets/images/responsive/storytelling-characters-3d-640w-a78827a0d947.webp 640w, /assets/images/responsive/storytelling-characters-3d-960w-d8266be4f2b5.webp 960w, /assets/images/responsive/storytelling-characters-3d-1280w-bc4d98218136.webp 1280w, /assets/images/responsive/storytelling-characters-3d-1672w-ff4061a022dc.webp 1672w",
+    "sizes": "(max-width:1024px) calc(100vw - 40px), 20.4vw",
+    "contexts": {},
+    "note": "Storytelling card becomes full width at 1024px; existing object-fit unchanged."
+  },
+  "assets/images/liveclass-conversation-2026.webp": {
+    "source": {
+      "path": "assets/images/liveclass-conversation-2026.png",
+      "sha256": "d364d2f2b845c249632eeabf981cd8641348467684fb0014843510ce611eb008",
+      "bytes": 1864807,
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/images/liveclass-conversation-2026.webp",
+      "bytes": 152962,
+      "sha256": "53b0307df4fe0d6afca5cf49fe664b59281e02e7ad756c73712bb37784ae31d7"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 88,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/liveclass-conversation-2026-1536w-c6b0bbd95534.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/liveclass-conversation-2026-480w-b10bfcef8b91.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 18854,
+        "sha256": "b10bfcef8b91dab79667e901b959cba6c8022843de52fad5d734ebcacab0fadd",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/liveclass-conversation-2026-768w-b92491b6142c.webp",
+        "width": 768,
+        "height": 512,
+        "bytes": 34532,
+        "sha256": "b92491b6142c9b77a4ad4a3c271f158357825398d0bdce41a7f0377b33845f33",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/liveclass-conversation-2026-1024w-be0087257307.webp",
+        "width": 1024,
+        "height": 683,
+        "bytes": 49332,
+        "sha256": "be0087257307b28d91ee7f788f99156c1480261523888d74fa2e031587c57cec",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/liveclass-conversation-2026-1536w-c6b0bbd95534.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 87980,
+        "sha256": "c6b0bbd95534acafd99f638446bf281ee5ffc42edfdeb97475d08c7a0adf9984",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/liveclass-conversation-2026-480w-b10bfcef8b91.webp 480w, /assets/images/responsive/liveclass-conversation-2026-768w-b92491b6142c.webp 768w, /assets/images/responsive/liveclass-conversation-2026-1024w-be0087257307.webp 1024w, /assets/images/responsive/liveclass-conversation-2026-1536w-c6b0bbd95534.webp 1536w",
+    "sizes": "(max-width:380px) 368px, (max-width:467px) 428px, (max-width:768px) calc(100vw - 40px), (max-width:1296px) 72vw, 864px",
+    "contexts": {},
+    "note": "Object-fit:cover keeps a 245/285px-tall mobile box; sizes accounts for the cover crop."
+  },
+  "assets/images/ondemand-devices-2026.webp": {
+    "source": {
+      "path": "assets/images/ondemand-devices-2026.webp",
+      "sha256": "90bd9ef59a91ed2029c24a67a2cc9a146dd07e6d613fdd982854c1bd91eb564e",
+      "bytes": 127362,
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/images/ondemand-devices-2026.webp",
+      "bytes": 127362,
+      "sha256": "90bd9ef59a91ed2029c24a67a2cc9a146dd07e6d613fdd982854c1bd91eb564e"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 90,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/ondemand-devices-2026-1672w-e43a11dc8d7f.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/ondemand-devices-2026-480w-93fd3f4dca9e.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 18962,
+        "sha256": "93fd3f4dca9eae7793ea7392413c77b2c26e4342ee97944bd42e4d9cf5635d4e",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/ondemand-devices-2026-768w-adc3bb5c7a17.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 37032,
+        "sha256": "adc3bb5c7a17400f01b2c6db0e5d59a60697ae3438fb0ea3c8caf36501131ece",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/ondemand-devices-2026-1024w-0a16ebeb4ea5.webp",
+        "width": 1024,
+        "height": 576,
+        "bytes": 56672,
+        "sha256": "0a16ebeb4ea5bfc957b1fa7493894a0eeeb0a9e7f10829b895880285b4a81669",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/ondemand-devices-2026-1280w-2f2f885b83cf.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 76326,
+        "sha256": "2f2f885b83cfe262b9997b831ece342a4160c0ada3c804d13f8481c1c7885048",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/ondemand-devices-2026-1672w-e43a11dc8d7f.webp",
+        "width": 1672,
+        "height": 941,
+        "bytes": 113314,
+        "sha256": "e43a11dc8d7f74aaa40ac9abc3d2b1a97e149f043cf31720729f9adbb7e94141",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/ondemand-devices-2026-480w-93fd3f4dca9e.webp 480w, /assets/images/responsive/ondemand-devices-2026-768w-adc3bb5c7a17.webp 768w, /assets/images/responsive/ondemand-devices-2026-1024w-0a16ebeb4ea5.webp 1024w, /assets/images/responsive/ondemand-devices-2026-1280w-2f2f885b83cf.webp 1280w, /assets/images/responsive/ondemand-devices-2026-1672w-e43a11dc8d7f.webp 1672w",
+    "sizes": "(max-width:800px) calc((100vw - 40px) * 1.18), 67vw",
+    "contexts": {},
+    "note": "WebP is the available approved source; keep full artwork and current 118%/125% sizing."
+  },
+  "assets/images/img-plataforma-01.png": {
+    "source": {
+      "path": "assets/images/img-plataforma-01.png",
+      "sha256": "377a8b6ed98b057bf84cb8d93343e3686a6204840e2c60bb6330a867edef81ff",
+      "bytes": 148807,
+      "width": 392,
+      "height": 215,
+      "mode": "RGBA"
+    },
+    "previous": {
+      "path": "assets/images/img-plataforma-01.png",
+      "bytes": 148807,
+      "sha256": "377a8b6ed98b057bf84cb8d93343e3686a6204840e2c60bb6330a867edef81ff"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 92,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/img-plataforma-01-392w-0795e832d93c.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/img-plataforma-01-196w-43e05c83a6cf.webp",
+        "width": 196,
+        "height": 108,
+        "bytes": 5736,
+        "sha256": "43e05c83a6cf72aac0c432a709279ea072af44f459f9ade1308cf447434de8df",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-01-320w-4e9d1a4574b5.webp",
+        "width": 320,
+        "height": 176,
+        "bytes": 11336,
+        "sha256": "4e9d1a4574b53014d7d1b74c8198abcf3bbdc099c19126101949e1b4046ac2de",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-01-392w-0795e832d93c.webp",
+        "width": 392,
+        "height": 215,
+        "bytes": 16110,
+        "sha256": "0795e832d93cbfa90ea5245d425c786ae35ddab088597ece9c383a0d70b22e2d",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/img-plataforma-01-196w-43e05c83a6cf.webp 196w, /assets/images/responsive/img-plataforma-01-320w-4e9d1a4574b5.webp 320w, /assets/images/responsive/img-plataforma-01-392w-0795e832d93c.webp 392w",
+    "sizes": "392px",
+    "contexts": {},
+    "note": "Use intrinsic width conservatively: height:100% and object-fit:cover can require more image pixels than the narrow figure width. Original PNG is at most 392px; never upscale or flatten alpha."
+  },
+  "assets/images/img-plataforma-02.png": {
+    "source": {
+      "path": "assets/images/img-plataforma-02.png",
+      "sha256": "86b3dade821ad143179ac668cb4fdedc23fc51413b2b95800cf6d58d4c491e54",
+      "bytes": 144348,
+      "width": 391,
+      "height": 214,
+      "mode": "RGBA"
+    },
+    "previous": {
+      "path": "assets/images/img-plataforma-02.png",
+      "bytes": 144348,
+      "sha256": "86b3dade821ad143179ac668cb4fdedc23fc51413b2b95800cf6d58d4c491e54"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 92,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/img-plataforma-02-391w-18c7853d58e4.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/img-plataforma-02-196w-a692c924c950.webp",
+        "width": 196,
+        "height": 107,
+        "bytes": 6346,
+        "sha256": "a692c924c950a23c0fbc527187dec74870b62dae84449851a2a600d90739a8d5",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-02-320w-a325669b0839.webp",
+        "width": 320,
+        "height": 175,
+        "bytes": 12976,
+        "sha256": "a325669b083913f8a71fcaa7e57f8bb5ef7db057fd685594e8bb992b902624b2",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-02-391w-18c7853d58e4.webp",
+        "width": 391,
+        "height": 214,
+        "bytes": 17852,
+        "sha256": "18c7853d58e4b0ae2ae1e347bce8c2065c6080f99888debcb93e80f49903b4a7",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/img-plataforma-02-196w-a692c924c950.webp 196w, /assets/images/responsive/img-plataforma-02-320w-a325669b0839.webp 320w, /assets/images/responsive/img-plataforma-02-391w-18c7853d58e4.webp 391w",
+    "sizes": "391px",
+    "contexts": {},
+    "note": "Use intrinsic width conservatively: height:100% and object-fit:cover can require more image pixels than the narrow figure width. Original PNG is at most 392px; never upscale or flatten alpha."
+  },
+  "assets/images/img-plataforma-04.png": {
+    "source": {
+      "path": "assets/images/img-plataforma-04.png",
+      "sha256": "7c8ca6f67962b9db2aa4e9bfe544ba60fe814fdbfb56f0776afb84425c5e45de",
+      "bytes": 159968,
+      "width": 388,
+      "height": 214,
+      "mode": "RGBA"
+    },
+    "previous": {
+      "path": "assets/images/img-plataforma-04.png",
+      "bytes": 159968,
+      "sha256": "7c8ca6f67962b9db2aa4e9bfe544ba60fe814fdbfb56f0776afb84425c5e45de"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 92,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "img",
+    "default_path": "assets/images/responsive/img-plataforma-04-388w-21b760e298ce.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/img-plataforma-04-196w-c46368b9cce4.webp",
+        "width": 196,
+        "height": 108,
+        "bytes": 6886,
+        "sha256": "c46368b9cce40b1a21057ebea3e6868ddfd33d79fc95426ed742da2578de10b2",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-04-320w-a61b471498d0.webp",
+        "width": 320,
+        "height": 176,
+        "bytes": 14324,
+        "sha256": "a61b471498d0a8d5cf1d6a389a27d08c8d5ad88865a6d0b974f335d9afab749b",
+        "alpha_exact": true
+      },
+      {
+        "path": "assets/images/responsive/img-plataforma-04-388w-21b760e298ce.webp",
+        "width": 388,
+        "height": 214,
+        "bytes": 20448,
+        "sha256": "21b760e298ce3807f2e7860562223bc1d2c2b334e82d4c46295693186cc9368e",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/img-plataforma-04-196w-c46368b9cce4.webp 196w, /assets/images/responsive/img-plataforma-04-320w-a61b471498d0.webp 320w, /assets/images/responsive/img-plataforma-04-388w-21b760e298ce.webp 388w",
+    "sizes": "388px",
+    "contexts": {},
+    "note": "Use intrinsic width conservatively: height:100% and object-fit:cover can require more image pixels than the narrow figure width. Original PNG is at most 392px; never upscale or flatten alpha."
+  },
+  "assets/images/video-united-idiomas-02-poster.webp": {
+    "source": {
+      "path": "assets/images/video-united-idiomas-02-poster.webp",
+      "sha256": "cd5588e332b8b81202b5374b153396a7060a443b6fc095cdd4790e1e96284f40",
+      "bytes": 85040,
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/images/video-united-idiomas-02-poster.webp",
+      "bytes": 85040,
+      "sha256": "cd5588e332b8b81202b5374b153396a7060a443b6fc095cdd4790e1e96284f40"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 86,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "video-poster",
+    "default_path": "assets/images/responsive/video-united-idiomas-02-poster-1280w-bdae520c6009.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/video-united-idiomas-02-poster-1280w-bdae520c6009.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 73482,
+        "sha256": "bdae520c60099368bf2102e88090e7bf150023c2df2ac307142e9a49e13eff0e",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/video-united-idiomas-02-poster-1280w-bdae520c6009.webp 1280w",
+    "sizes": "(max-width:800px) calc(100vw - 88px), (max-width:1296px) 42vw, 528px",
+    "contexts": {
+      "home": {
+        "selector": ".course-compact video"
+      }
+    },
+    "note": "Same approved video frame, dimensions and full proportions. Use default_path in the native poster attribute; no responsive poster swapping. Other routes may display this video wider than the Home card."
+  },
+  "assets/images/video-united-idiomas-03-poster.webp": {
+    "source": {
+      "path": "assets/images/video-united-idiomas-03-poster.webp",
+      "sha256": "5685a7fcc27ef80454af48a4bcbaebe7f904c9a7e3477639a2018b7e8896b15f",
+      "bytes": 37234,
+      "width": 1280,
+      "height": 424,
+      "mode": "RGB"
+    },
+    "previous": {
+      "path": "assets/images/video-united-idiomas-03-poster.webp",
+      "bytes": 37234,
+      "sha256": "5685a7fcc27ef80454af48a4bcbaebe7f904c9a7e3477639a2018b7e8896b15f"
+    },
+    "encoding": {
+      "format": "webp",
+      "quality": 86,
+      "method": 6,
+      "resize": "Lanczos; proportional; no upscaling",
+      "crop": "none"
+    },
+    "usage": "video-poster",
+    "default_path": "assets/images/responsive/video-united-idiomas-03-poster-1280w-09d3e632f7fd.webp",
+    "variants": [
+      {
+        "path": "assets/images/responsive/video-united-idiomas-03-poster-1280w-09d3e632f7fd.webp",
+        "width": 1280,
+        "height": 424,
+        "bytes": 32656,
+        "sha256": "09d3e632f7fd63a9f3b069f5946a1d4e0096f27c62dec5a1258722b7541623e3",
+        "alpha_exact": true
+      }
+    ],
+    "srcset": "/assets/images/responsive/video-united-idiomas-03-poster-1280w-09d3e632f7fd.webp 1280w",
+    "sizes": "(max-width:800px) calc(100vw - 88px), (max-width:1296px) 42vw, 528px",
+    "contexts": {
+      "home": {
+        "selector": ".course-compact video"
+      }
+    },
+    "note": "Same approved video frame, dimensions and full proportions. Use default_path in the native poster attribute; no responsive poster swapping. Other routes may display this video wider than the Home card."
+  }
+}

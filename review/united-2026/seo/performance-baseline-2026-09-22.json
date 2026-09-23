@@ -1,0 +1,151 @@
+{
+  "source": "Official PageSpeed Insights browser UI; fresh independent runs",
+  "date": "2026-09-22",
+  "strategy": "mobile",
+  "lighthouse_version": "13.5.0",
+  "device": "Moto G Power emulated",
+  "network": "Slow 4G",
+  "browser": "HeadlessChromium 153.0.8010.36",
+  "load": "Initial page load, single-page session",
+  "precision": "Rounded values displayed by PageSpeed UI",
+  "api_attempt": {
+    "status": 429,
+    "reason": "Daily query quota exceeded; no API retries after 429"
+  },
+  "samples": [
+    {
+      "page": "home",
+      "run": 1,
+      "report_time": "2026-09-22T10:14:12-03:00",
+      "url": "https://www.unitedidiomas.com/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com/a5nvzutbn2?form_factor=mobile",
+      "performance": 41,
+      "fcp_seconds": 3.9,
+      "lcp_seconds": 14.7,
+      "tbt_ms": 890,
+      "cls": 0,
+      "speed_index_seconds": 6.3,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 85
+    },
+    {
+      "page": "home",
+      "run": 2,
+      "report_time": "2026-09-22T10:15:02-03:00",
+      "url": "https://www.unitedidiomas.com/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com/s99shm06pk?form_factor=mobile",
+      "performance": 44,
+      "fcp_seconds": 4.6,
+      "lcp_seconds": 12.1,
+      "tbt_ms": 670,
+      "cls": 0,
+      "speed_index_seconds": 6.2,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 85
+    },
+    {
+      "page": "home",
+      "run": 3,
+      "report_time": "2026-09-22T10:15:46-03:00",
+      "url": "https://www.unitedidiomas.com/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com/21bg21b1ly?form_factor=mobile",
+      "performance": 59,
+      "fcp_seconds": 1.2,
+      "lcp_seconds": 16.1,
+      "tbt_ms": 490,
+      "cls": 0,
+      "speed_index_seconds": 5.0,
+      "accessibility": 90,
+      "best_practices": 92,
+      "seo": 85
+    },
+    {
+      "page": "cursos",
+      "run": 1,
+      "report_time": "2026-09-22T10:15:15-03:00",
+      "url": "https://www.unitedidiomas.com/cursos/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com-cursos/9eqkje1f10?form_factor=mobile",
+      "performance": 61,
+      "fcp_seconds": 2.9,
+      "lcp_seconds": 9.0,
+      "tbt_ms": 270,
+      "cls": 0,
+      "speed_index_seconds": 5.5,
+      "accessibility": 89,
+      "best_practices": 100,
+      "seo": 85
+    },
+    {
+      "page": "cursos",
+      "run": 2,
+      "report_time": "2026-09-22T10:16:17-03:00",
+      "url": "https://www.unitedidiomas.com/cursos/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com-cursos/wfsziudon2?form_factor=mobile",
+      "performance": 89,
+      "fcp_seconds": 1.2,
+      "lcp_seconds": 3.6,
+      "tbt_ms": 60,
+      "cls": 0.001,
+      "speed_index_seconds": 3.2,
+      "accessibility": 89,
+      "best_practices": 100,
+      "seo": 85
+    },
+    {
+      "page": "cursos",
+      "run": 3,
+      "report_time": "2026-09-22T10:16:55-03:00",
+      "url": "https://www.unitedidiomas.com/cursos/",
+      "report_url": "https://pagespeed.web.dev/analysis/https-www-unitedidiomas-com-cursos/vym0aw1onj?form_factor=mobile",
+      "performance": 75,
+      "fcp_seconds": 1.2,
+      "lcp_seconds": 7.5,
+      "tbt_ms": 120,
+      "cls": 0.001,
+      "speed_index_seconds": 2.7,
+      "accessibility": 89,
+      "best_practices": 100,
+      "seo": 85
+    }
+  ],
+  "median_of_three": {
+    "home": {
+      "performance": 44,
+      "fcp_seconds": 3.9,
+      "lcp_seconds": 14.7,
+      "tbt_ms": 670,
+      "cls": 0,
+      "speed_index_seconds": 6.2
+    },
+    "cursos": {
+      "performance": 75,
+      "fcp_seconds": 1.2,
+      "lcp_seconds": 7.5,
+      "tbt_ms": 120,
+      "cls": 0.001,
+      "speed_index_seconds": 3.2
+    }
+  },
+  "field_data_28_days": {
+    "home": {
+      "lcp_seconds": 2.2,
+      "inp_ms": 428,
+      "cls": 0.04,
+      "cwv": "failed"
+    },
+    "cursos": {
+      "lcp_seconds": 4.0,
+      "inp_ms": 529,
+      "cls": 0.08,
+      "cwv": "failed"
+    }
+  },
+  "limitations": [
+    "Field metrics cover previous 28 days, not only current code.",
+    "Prior PDF used Lighthouse 13.4.1; current runs13.5.0. Score delta alone does not prove code regression.",
+    "No local after-change PageSpeed result: public service cannot crawl localhost.",
+    "Two GA4 script downloads do not establish duplicate events."
+  ]
+}

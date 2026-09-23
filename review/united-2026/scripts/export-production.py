@@ -208,10 +208,11 @@ def check_links(site, documents):
                 value = element.get(attribute)
                 if value:
                     check(value, current)
-            for candidate in element.get('srcset', '').split(','):
-                # Existing data URI fallbacks use src, while srcsets contain local images.
-                if candidate.strip():
-                    check(candidate.strip().split()[0], current)
+            for attribute in ('srcset', 'imagesrcset'):
+                for candidate in element.get(attribute, '').split(','):
+                    # Data URI fallbacks use src; responsive sets contain local images.
+                    if candidate.strip():
+                        check(candidate.strip().split()[0], current)
             for value in CSS_URL.findall(element.get('style', '')):
                 check(value, current)
         for style in document.xpath('//style'):

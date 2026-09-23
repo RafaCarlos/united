@@ -2,6 +2,59 @@
   'use strict';
   const links = Array.from(document.querySelectorAll('.banner-whatsapp, #contato a[href*="api.whatsapp.com/send"]'));
   if (!links.length) return;
+  const mobile = window.matchMedia('(max-width:768px)');
+  const placements = [];
+  // The same shortcut follows scrolling on mobile, above the contact bar. Move
+  // it outside the hero's clipping/stacking context; restore its place on desktop.
+  links.filter(function (link) { return link.classList.contains('banner-whatsapp'); }).forEach(function (link) {
+    const originalParent = link.parentNode;
+    const originalNext = link.nextSibling;
+    let actions = null;
+    let sizeObserver = null;
+    function keepBannerPlacement() {
+      [['position', mobile.matches ? 'fixed' : 'absolute'], ['z-index', mobile.matches ? '106' : '9']].forEach(function (property) {
+        if (link.style.getPropertyValue(property[0]) !== property[1] || link.style.getPropertyPriority(property[0]) !== 'important') {
+          link.style.setProperty(property[0], property[1], 'important');
+        }
+      });
+    }
+    function measureContactBar() {
+      if (!actions || !actions.isConnected) return;
+      const height = actions.getBoundingClientRect().height;
+      if (!height) return;
+      const value = Math.ceil(height) + 'px';
+      if (link.style.getPropertyValue('--whatsapp-contact-height') !== value) {
+        link.style.setProperty('--whatsapp-contact-height', value);
+      }
+    }
+    function watchContactBar() {
+      const candidate = document.querySelector('.contact-actions');
+      if (!candidate || candidate === actions) return;
+      if (sizeObserver) sizeObserver.disconnect();
+      actions = candidate;
+      if (typeof ResizeObserver !== 'undefined') {
+        sizeObserver = new ResizeObserver(measureContactBar);
+        sizeObserver.observe(actions);
+      }
+      measureContactBar();
+    }
+    function placeShortcut() {
+      if (mobile.matches) {
+        if (link.parentNode !== document.body) document.body.appendChild(link);
+      } else if (originalParent.isConnected && link.parentNode !== originalParent) {
+        originalParent.insertBefore(link, originalNext && originalNext.parentNode === originalParent ? originalNext : null);
+      }
+      keepBannerPlacement();
+      watchContactBar();
+      measureContactBar();
+    }
+    placeShortcut();
+    if (mobile.addEventListener) mobile.addEventListener('change', placeShortcut);
+    else mobile.addListener(placeShortcut);
+    window.addEventListener('resize', measureContactBar);
+    placements.push(watchContactBar);
+    new MutationObserver(keepBannerPlacement).observe(link, {attributes: true, attributeFilter: ['style']});
+  });
   let trigger = null;
   let wrapper = null;
   let stateObserver = null;
@@ -43,6 +96,7 @@
     });
   });
   function connect() {
+    placements.forEach(function (watchContactBar) { watchContactBar(); });
     if (wrapper && wrapper.isConnected) return;
     if (wrapper) {
       // RD removes its popup after conversion, without toggling its closed class.

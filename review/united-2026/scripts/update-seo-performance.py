@@ -19,7 +19,7 @@ bundle=DIST/'assets/js/dist/scripts.js';js=bundle.read_text()
 js=re.sub(r'/\* Progressive enhancement: native controls and source URLs also work without JS\. \*/.*?\}\(window, document\)\);', '/* Video playback is maintained in /media-runtime.js. */',js,flags=re.S)
 js=js.replace(r'/^#faq-\d+$/',r'/^#faq-[a-z0-9-]+$/')
 bundle.write_text(js)
-for filename in ['media-runtime.js','seo-performance.css']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
+for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-whatsapp.js','contact-preview.css']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
 # Existing CSS targets H2 in the approved campaign. Preserve its appearance after semantic H1 correction.
 for filename in ['liveclass-intro.css']:
  p=ROOT/'src'/filename;s=p.read_text();s=re.sub(r'(?<![\w,-])h2(?![\w-])',':is(h1,h2)',s);p.write_text(s);(DIST/filename).write_text(s)
@@ -50,6 +50,11 @@ for route,meta in META.items():
   for name,desc,anchor in courses:graph.append({'@type':'Course','@id':url+anchor,'name':name,'description':desc,'url':url+anchor,'inLanguage':'pt-BR','provider':{'@id':ORG}})
   page['hasPart']=[{'@id':url+a} for _,_,a in courses]
  if route=='/':
+  # Remove inherited inline placement so CSS also works before JavaScript runs.
+  for link in d.xpath('//a[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]'):
+   style=';'.join(part for part in link.get('style','').split(';') if part.strip() and part.split(':',1)[0].strip().lower() not in ('position','z-index'))
+   if style:link.set('style',style)
+   else:link.attrib.pop('style',None)
   h=d.get_element_by_id('liveclass-intro-title');h.tag='h1'
   inner(h,COPY['home_heading'][0]);etree.SubElement(h,'br').tail='\n'+COPY['home_heading'][1]
   etree.SubElement(h,'br').tail='\n';etree.SubElement(h,'span').text=COPY['home_heading'][2]
@@ -83,6 +88,9 @@ for route,meta in META.items():
    graph.append(location);locations.append({'@id':location['@id']})
   page['mainEntity']={'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i+1,'item':place} for i,place in enumerate(locations)]}
  elif route=='/cursos/':
+  # The first visible video/poster must not wait for WOW or a third-party script.
+  for banner in d.xpath('//*[@id="live-class"]/div[@class="top"]/div[contains(concat(" ",normalize-space(@class)," ")," banner ")]'):
+   banner.set('class',' '.join(c for c in banner.get('class','').split() if c not in ('wow','fadeIn','animated')))
   h=d.xpath('//main//h1')[0];inner(h,'')
   context=etree.SubElement(h,'span',{'class':'course-title-context'});context.text='Curso de inglês online e ao vivo';context.tail=' Live Class'
   intro=d.xpath('//*[@id="live-class"]/div[@class="top"]/div[@class="text wow fadeIn"]/p')[0]
@@ -144,6 +152,13 @@ for route,meta in META.items():
  (prod/('home-head.html' if route=='/' else route.strip('/')+'-head.html')).write_text('\n'.join(fragments)+'\n')
  # Keep the account loader async and the remaining scripts in order after parsing.
  for old in d.xpath('//script[contains(@src,"media-runtime.js")]'):old.getparent().remove(old)
+ if route in ('/','/cursos/','/faq/'):
+  # These routes use native review/benefit tracks and have no Slick carousel.
+  for old in d.xpath('//script[contains(@src,"responsive-home.js")]'):old.getparent().remove(old)
+  for legacy in d.xpath('//script[contains(@src,"/js/dist/scripts.js")]'):
+   legacy.set('src','/assets/js/dist/scripts-core.js')
+  if not (DIST/'assets/js/dist/scripts-core.js').is_file():
+   raise ValueError('Run scripts/optimize-page-code.py before rebuilding page metadata.')
  for script in d.xpath('//script[@src]'):
   if script.get('src')=='https://d335luupugsy2.cloudfront.net/js/loader-scripts/ee4f0815-8266-4fb5-ba25-416836b02312-loader.js':
    script.set('async','async');script.attrib.pop('defer',None)

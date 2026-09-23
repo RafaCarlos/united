@@ -109,6 +109,16 @@ for route, doc in DOCS.items():
           and bool(confirmations[0].xpath('ancestor::*[@data-rd-contact]')),
           f'{route}: requires one hidden, accessible inline confirmation in the contact box')
     scripts = doc.xpath('//script[@src]')
+    local_script_names = [urlsplit(s.get('src')).path.rsplit('/',1)[-1] for s in scripts if not urlsplit(s.get('src')).netloc]
+    if route in ('/','/cursos/','/faq/'):
+        check(local_script_names.count('scripts-core.js') == 1 and 'scripts.js' not in local_script_names and 'responsive-home.js' not in local_script_names,
+              f'{route}: expected core bundle without the unused Slick controller')
+    else:
+        check(local_script_names.count('scripts.js') == 1 and 'scripts-core.js' not in local_script_names,
+              f'{route}: methodology carousel needs the full bundle')
+    for shortcut in doc.xpath('//a[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]'):
+        check(not re.search(r'(?:^|;)\s*position\s*:', shortcut.get('style',''), re.I),
+              f'{route}: banner WhatsApp placement must come from responsive CSS, not inherited inline styles')
     loader_scripts = [s for s in scripts if urlsplit(s.get('src')).path == urlsplit(RD_LOADER).path]
     sdk_scripts = [s for s in scripts if urlsplit(s.get('src')).path.endswith('/rdstation-forms.min.js')]
     init_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-form.js']
@@ -130,11 +140,12 @@ for route, doc in DOCS.items():
               f'{route}: RD scripts require ordered deferred execution')
     check(not doc.xpath('//script[not(@src) and contains(text(), "RDStationForms")]'),
           f'{route}: inline RD initialization bypasses deferred SDK ordering')
-    for e in doc.xpath('//*[@src or @href or @poster or @srcset]'):
+    for e in doc.xpath('//*[@src or @href or @poster or @srcset or @imagesrcset]'):
         for attr in ['src', 'href', 'poster']:
             if e.get(attr): dependency(e.get(attr), route, e.tag+' '+attr, fragment=e.tag == 'a')
-        if e.get('srcset') and not e.get('srcset').startswith('data:'):
-            for item in e.get('srcset').split(','): dependency(item.strip().split()[0], route, 'srcset')
+        for attr in ['srcset','imagesrcset']:
+            if e.get(attr) and not e.get(attr).startswith('data:'):
+                for item in e.get(attr).split(','): dependency(item.strip().split()[0], route, attr)
     for img in doc.xpath('//img'):
         check('alt' in img.attrib, f'{route}: image missing alt {img.get("src")}')
         if not img.get('src', '').endswith('.svg'):
@@ -211,8 +222,14 @@ for name, record in inventory['images'].items():
     with Image.open(file) as image:
         check(list(image.size) == record['dimensions'], 'image inventory geometry drift '+name)
 metrics['delivered_raster_image_inventory'] = {'files':len(inventory['images']), 'bytes':sum(r['bytes'] for r in inventory['images'].values()), 'note':'All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline.'}
+responsive = json.loads((ROOT / 'seo/responsive-images.json').read_text())
+metrics['responsive_selected_assets_full_dimensions'] = totals([{'before':r['previous']['bytes'], 'after':(D/r['default_path']).stat().st_size} for r in responsive.values()])
+metrics['responsive_selected_assets_full_dimensions']['note'] = f'{len(responsive)} selected assets vs the previous optimized/PNG versions, at full dimensions. Smaller responsive candidates can save more; this is not a whole-page transfer metric.'
+code = json.loads((ROOT / 'seo/page-code-optimization.json').read_text())
+for field, path in [('source_sha256',code['source']),('output_sha256',code['output'])]:
+    check(sha256((ROOT/path).read_bytes()).hexdigest() == code[field], 'core JS build provenance drift: '+path)
 report = {'scope':'Production-ready static artifact, not published. Review copies require export-production.py --mode preview. Not a live crawl or Lighthouse score.', 'pages':pages, 'local_dependencies_checked':len(checked_files), 'metrics':metrics, 'errors':errors, 'warnings':warnings,
-          'unmeasured':['Lighthouse/PageSpeed score: not measured in this final review; an earlier API attempt returned HTTP 429','Production Core Web Vitals and Search Console indexing','Real-device Safari behavior','Server compression, cache headers and TTFB on the official host']}
+          'unmeasured':['Lighthouse/PageSpeed for this unpublished optimized build; the published-site baseline dated 2026-09-22 is documented separately','Post-release Core Web Vitals and Search Console indexing','Real-device Safari behavior','Hosting compression, cache headers and TTFB after integration of these local changes']}
 (ROOT / 'seo/audit-results.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
 print(json.dumps({'pages':len(pages),'dependencies':len(checked_files),'errors':errors,'metrics':metrics}, ensure_ascii=False, indent=2))
 raise SystemExit(bool(errors))

@@ -9,7 +9,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'dist'
-ATTR = re.compile(r'''(?P<prefix>\b(?:xlink:href|href|src|poster|srcset)\s*=\s*)(?P<quote>["'])(?P<value>.*?)(?P=quote)''', re.S)
+ATTR = re.compile(r'''(?P<prefix>\b(?:xlink:href|href|src|poster|srcset|imagesrcset)\s*=\s*)(?P<quote>["'])(?P<value>.*?)(?P=quote)''', re.S)
 CSS_URL = re.compile(r'''url\(\s*(?P<quote>["']?)(?P<value>[^\s)'";]+)(?P=quote)\s*\)''')
 
 
@@ -42,7 +42,7 @@ def css_urls(text, document):
 def html_urls(text, document):
     def replace(match):
         value = match.group('value')
-        if match.group('prefix').strip().startswith('srcset'):
+        if match.group('prefix').strip().startswith(('srcset','imagesrcset')):
             value = re.sub(r'(?<!\S)/(?!/)[^\s,]+', lambda m: relative_url(m.group(0), document), value)
         else:
             value = relative_url(value, document)
