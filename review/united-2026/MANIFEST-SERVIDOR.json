@@ -202,6 +202,21 @@
       "sha256": "c41b52326eaad723b53bcf6593219bc6d2b2d495fb8c4d1f5ded0f2d0ecff1d1"
     },
     {
+      "path": "dist/assets/brand/favicon-192.png",
+      "bytes": 10209,
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191"
+    },
+    {
+      "path": "dist/assets/brand/united-logo-512.png",
+      "bytes": 32940,
+      "sha256": "7d90e42e735edf7867677ee4110e7347e0cb8141a9f2664d5a1c4aabacb15d51"
+    },
+    {
+      "path": "dist/assets/brand/united-share-1200x630.png",
+      "bytes": 42558,
+      "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
+    },
+    {
       "path": "dist/assets/css/contact-forms.css",
       "bytes": 1055,
       "sha256": "1138013e5cf899f2763487a17d3d37fbe074a3a85da089dd3b845c971684990f"
@@ -1288,13 +1303,18 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51967,
-      "sha256": "fd6fb9201b5df2686b396c20741e34f66fc1cfc99bb8974e1d153ab1fc7da4b6"
+      "bytes": 52569,
+      "sha256": "19f7b675bc0248b07b0263ba28881819aa3ac9fd971b30f93e10d10abc81b46c"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 39807,
-      "sha256": "62476564d35a7f6b0a32c745166e4e6567bac26e3286d12fd46c000fb9cde7c1"
+      "bytes": 40409,
+      "sha256": "80d40864f6cec12d4c2bb0b22025124d71cdf99de9fed164356a990859cab13e"
+    },
+    {
+      "path": "dist/favicon.ico",
+      "bytes": 4749,
+      "sha256": "56b7957d700e7feb92fa39b5ceb745e77c88fb52a7b80d4cff1994c4e9cb3318"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1303,8 +1323,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 55437,
-      "sha256": "dc75e45a4530a1fb62a5dee705036bcd5a227a3b92970bfb3dd8187482b4b268"
+      "bytes": 56033,
+      "sha256": "2b207cd959c54327f6894264475ca9956f3ec656ee6771d0646c4d3d8860e301"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1343,8 +1363,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43397,
-      "sha256": "b9f52e6e894097ee0cc4fdef79964360138b70b78fd557e9c649ad5c48e3e647"
+      "bytes": 43999,
+      "sha256": "a44442dc8e0267fbb61724fd533b992606c9e21f1ecca23f4fb4b10adcedc37d"
     },
     {
       "path": "dist/rdstation-form.css",

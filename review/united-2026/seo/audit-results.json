@@ -34,7 +34,7 @@
       "stylesheets": 1
     }
   },
-  "local_dependencies_checked": 190,
+  "local_dependencies_checked": 194,
   "metrics": {
     "six_banner_assets": {
       "original_bytes": 11025845,
@@ -57,8 +57,8 @@
       "reduction_percent": 68.74
     },
     "delivered_raster_image_inventory": {
-      "files": 228,
-      "bytes": 47465168,
+      "files": 231,
+      "bytes": 47550875,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
     },
     "responsive_selected_assets_full_dimensions": {

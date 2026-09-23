@@ -10,6 +10,8 @@ META=json.loads((ROOT/'seo/metadata.json').read_text())
 COPY=json.loads((ROOT/'seo/content.json').read_text())
 BASE='https://www.unitedidiomas.com'
 ORG=BASE+'/#organization'
+SHARE_IMAGE=BASE+'/assets/brand/united-share-1200x630.png'
+SHARE_ALT='Logo da United Idiomas sobre fundo azul'
 def digest(p):return sha256(p.read_bytes()).hexdigest()[:12]
 def inner(el,text):
  for child in list(el):el.remove(child)
@@ -24,7 +26,7 @@ for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','
 for filename in ['liveclass-intro.css']:
  p=ROOT/'src'/filename;s=p.read_text();s=re.sub(r'(?<![\w,-])h2(?![\w-])',':is(h1,h2)',s);p.write_text(s);(DIST/filename).write_text(s)
 organization={'@type':'EducationalOrganization','@id':ORG,'name':'United Idiomas','url':BASE+'/',
- 'logo':{'@type':'ImageObject','url':BASE+'/assets/images/logo-united-idiomas.png'},
+ 'logo':{'@type':'ImageObject','url':BASE+'/assets/brand/united-logo-512.png','width':512,'height':512},
  'sameAs':['https://www.instagram.com/unitedidiomas/','https://www.facebook.com/unitedinstitute/','https://br.linkedin.com/company/united-institute','https://www.youtube.com/@unitedidiomas']}
 prod=ROOT/'seo/production';prod.mkdir(exist_ok=True)
 for route,meta in META.items():
@@ -35,14 +37,16 @@ for route,meta in META.items():
  for old in head.xpath('./style[@data-united-base]'):head.remove(old)
  base_style=etree.Element('style',{'data-united-base':''});base_style.text='html,body{margin:0;padding:0}'
  head.insert(0,base_style)
- for e in head.xpath('./title|./meta[@name="description" or @name="keywords" or @name="robots" or @name="googlebot" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]'):e.getparent().remove(e)
+ for e in head.xpath('./title|./meta[@name="description" or @name="keywords" or @name="robots" or @name="googlebot" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical" or contains(concat(" ",normalize-space(@rel)," ")," icon ")]|./script[@type="application/ld+json"]'):e.getparent().remove(e)
  for e in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," preview-mark ")]'):e.getparent().remove(e)
  etree.SubElement(head,'meta',name='robots',content='index,follow,max-image-preview:large')
  title=etree.SubElement(head,'title');title.text=meta['title']
  url=BASE+route
- tags=[{'name':'description','content':meta['description']},{'property':'og:type','content':'website'},{'property':'og:locale','content':'pt_BR'},{'property':'og:site_name','content':'United Idiomas'},{'property':'og:title','content':meta['title']},{'property':'og:description','content':meta['description']},{'property':'og:url','content':url},{'property':'og:image','content':BASE+'/assets/images/logo-united-idiomas.png'},{'name':'twitter:card','content':'summary'},{'name':'twitter:title','content':meta['title']},{'name':'twitter:description','content':meta['description']}]
+ tags=[{'name':'description','content':meta['description']},{'property':'og:type','content':'website'},{'property':'og:locale','content':'pt_BR'},{'property':'og:site_name','content':'United Idiomas'},{'property':'og:title','content':meta['title']},{'property':'og:description','content':meta['description']},{'property':'og:url','content':url},{'property':'og:image','content':SHARE_IMAGE},{'property':'og:image:type','content':'image/png'},{'property':'og:image:width','content':'1200'},{'property':'og:image:height','content':'630'},{'property':'og:image:alt','content':SHARE_ALT},{'name':'twitter:card','content':'summary_large_image'},{'name':'twitter:title','content':meta['title']},{'name':'twitter:description','content':meta['description']},{'name':'twitter:image','content':SHARE_IMAGE},{'name':'twitter:image:alt','content':SHARE_ALT}]
  for attrs in tags:etree.SubElement(head,'meta',attrs)
  etree.SubElement(head,'link',rel='canonical',href=url)
+ etree.SubElement(head,'link',rel='icon',href='/assets/brand/favicon-192.png',type='image/png',sizes='192x192')
+ etree.SubElement(head,'link',rel='shortcut icon',href='/favicon.ico',type='image/x-icon')
  page={'@type':meta['type'],'@id':url+'#webpage','url':url,'name':meta['title'],'description':meta['description'],'inLanguage':'pt-BR','isPartOf':{'@id':BASE+'/#website'},'about':{'@id':ORG}}
  graph=[organization,{'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'United Idiomas','inLanguage':'pt-BR','publisher':{'@id':ORG}},page]
  if route!='/':
@@ -158,7 +162,7 @@ for route,meta in META.items():
       if attr!='id':element.set(attr,value.replace('url(#'+old+')','url(#'+new+')') if value!='#'+old else '#'+new)
  schema=etree.SubElement(head,'script',{'type':'application/ld+json'});schema.text=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False,separators=(',',':'))
  # Production metadata; the preview exporter replaces robots in its separate output.
- fragments=[f'<title>{escape_html.escape(meta["title"])}</title>']+[html.tostring(el,encoding='unicode') for el in head.xpath('./meta[@name="robots" or @name="description" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical"]|./script[@type="application/ld+json"]')]
+ fragments=[f'<title>{escape_html.escape(meta["title"])}</title>']+[html.tostring(el,encoding='unicode') for el in head.xpath('./meta[@name="robots" or @name="description" or @property or starts-with(@name,"twitter:")]|./link[@rel="canonical" or contains(concat(" ",normalize-space(@rel)," ")," icon ")]|./script[@type="application/ld+json"]')]
  (prod/('home-head.html' if route=='/' else route.strip('/')+'-head.html')).write_text('\n'.join(fragments)+'\n')
  # Keep the account loader async and the remaining scripts in order after parsing.
  for old in d.xpath('//script[contains(@src,"media-runtime.js")]'):old.getparent().remove(old)

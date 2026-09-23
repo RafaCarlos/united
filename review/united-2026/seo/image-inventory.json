@@ -352,6 +352,33 @@
       "format": "WEBP",
       "sha256": "c41b52326eaad723b53bcf6593219bc6d2b2d495fb8c4d1f5ded0f2d0ecff1d1"
     },
+    "assets/brand/favicon-192.png": {
+      "bytes": 10209,
+      "dimensions": [
+        192,
+        192
+      ],
+      "format": "PNG",
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191"
+    },
+    "assets/brand/united-logo-512.png": {
+      "bytes": 32940,
+      "dimensions": [
+        512,
+        512
+      ],
+      "format": "PNG",
+      "sha256": "7d90e42e735edf7867677ee4110e7347e0cb8141a9f2664d5a1c4aabacb15d51"
+    },
+    "assets/brand/united-share-1200x630.png": {
+      "bytes": 42558,
+      "dimensions": [
+        1200,
+        630
+      ],
+      "format": "PNG",
+      "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
+    },
     "assets/images/ajax-loader.gif": {
       "bytes": 15009,
       "dimensions": [

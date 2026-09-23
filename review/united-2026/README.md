@@ -8,6 +8,8 @@ Esta rodada parte da `main` em `97265d0` (PR #6 integrado). Evita três download
 
 Resultados, validação e limites em [PAGESPEED-2026-09-23.md](seo/PAGESPEED-2026-09-23.md). O mobile e as boas práticas ainda têm pendências, incluindo a integração externa Blue e a revisão das tags; Rafael precisa integrar as regras de cache na hospedagem. As notas locais não comprovam aprovação em produção. Plano para os responsáveis em [TERCEIROS-2026-09-23.md](seo/TERCEIROS-2026-09-23.md).
 
+O complemento de marca fornece favicon e cartão de compartilhamento com fundo azul, mantendo intacta a logo dentro do site. As quatro páginas e os fragmentos de integração usam os novos metadados. Arquivos, validação e publicação em [MARCA-COMPARTILHAMENTO.md](seo/MARCA-COMPARTILHAMENTO.md).
+
 ## Atualização de desempenho — 22/09/2026
 
 A atualização de desempenho parte da `main` em `2e47f7b`. Inclui imagens WebP responsivas, posters menores, prioridade para a imagem inicial, redução de CSS e JavaScript próprios e regras de cache revisáveis. No celular, o WhatsApp acompanha a rolagem e permanece 12 px acima da barra “Quero conhecer”; no desktop, conserva sua posição no banner. O formulário oficial e o loader RD permanecem ativos.

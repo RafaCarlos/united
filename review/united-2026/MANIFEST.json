@@ -10,13 +10,13 @@
     },
     {
       "path": "MANIFEST-SERVIDOR.json",
-      "bytes": 52228,
-      "sha256": "ef7cf1a069ee7b38f5366c633939de3e8dec45cb3c3d884819861b7d815fef28"
+      "bytes": 52900,
+      "sha256": "037e18c83e692ee83d2bd5330cba3f8d0815976f8452d790cb6d6f7ae8cd2bc5"
     },
     {
       "path": "README.md",
-      "bytes": 8432,
-      "sha256": "025e72dd1a56f303589fe6f558eab3d13805dafdd74fbe69ede0fbb1c22e2e44"
+      "bytes": 8734,
+      "sha256": "182d29fce7dc7ddb69fd838470ff68d30bcac47ffc262d978ea0e1a90646e7b8"
     },
     {
       "path": "dist/assets/banners/institucional-wide.png",
@@ -212,6 +212,21 @@
       "path": "dist/assets/banners/responsive/liveclass-wide-960w-c41b52326eaa.webp",
       "bytes": 45690,
       "sha256": "c41b52326eaad723b53bcf6593219bc6d2b2d495fb8c4d1f5ded0f2d0ecff1d1"
+    },
+    {
+      "path": "dist/assets/brand/favicon-192.png",
+      "bytes": 10209,
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191"
+    },
+    {
+      "path": "dist/assets/brand/united-logo-512.png",
+      "bytes": 32940,
+      "sha256": "7d90e42e735edf7867677ee4110e7347e0cb8141a9f2664d5a1c4aabacb15d51"
+    },
+    {
+      "path": "dist/assets/brand/united-share-1200x630.png",
+      "bytes": 42558,
+      "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
     },
     {
       "path": "dist/assets/css/contact-forms.css",
@@ -1300,13 +1315,18 @@
     },
     {
       "path": "dist/cursos/index.html",
-      "bytes": 51967,
-      "sha256": "fd6fb9201b5df2686b396c20741e34f66fc1cfc99bb8974e1d153ab1fc7da4b6"
+      "bytes": 52569,
+      "sha256": "19f7b675bc0248b07b0263ba28881819aa3ac9fd971b30f93e10d10abc81b46c"
     },
     {
       "path": "dist/faq/index.html",
-      "bytes": 39807,
-      "sha256": "62476564d35a7f6b0a32c745166e4e6567bac26e3286d12fd46c000fb9cde7c1"
+      "bytes": 40409,
+      "sha256": "80d40864f6cec12d4c2bb0b22025124d71cdf99de9fed164356a990859cab13e"
+    },
+    {
+      "path": "dist/favicon.ico",
+      "bytes": 4749,
+      "sha256": "56b7957d700e7feb92fa39b5ceb745e77c88fb52a7b80d4cff1994c4e9cb3318"
     },
     {
       "path": "dist/footer-refinement.css",
@@ -1315,8 +1335,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 55437,
-      "sha256": "dc75e45a4530a1fb62a5dee705036bcd5a227a3b92970bfb3dd8187482b4b268"
+      "bytes": 56033,
+      "sha256": "2b207cd959c54327f6894264475ca9956f3ec656ee6771d0646c4d3d8860e301"
     },
     {
       "path": "dist/interior-preview.css",
@@ -1355,8 +1375,8 @@
     },
     {
       "path": "dist/quem-somos/index.html",
-      "bytes": 43397,
-      "sha256": "b9f52e6e894097ee0cc4fdef79964360138b70b78fd557e9c649ad5c48e3e647"
+      "bytes": 43999,
+      "sha256": "a44442dc8e0267fbb61724fd533b992606c9e21f1ecca23f4fb4b10adcedc37d"
     },
     {
       "path": "dist/rdstation-form.css",
@@ -1445,8 +1465,13 @@
     },
     {
       "path": "scripts/audit-seo-performance.py",
-      "bytes": 18552,
-      "sha256": "ce5b718bcd657a645ed47120fc6246033e837cc338ca958cf1281bea708c9412"
+      "bytes": 23398,
+      "sha256": "413b7dadffed9ccad44eab44d60d491065f284adbfeaf1d2198b47432f875aaa"
+    },
+    {
+      "path": "scripts/build-brand-assets.cjs",
+      "bytes": 4379,
+      "sha256": "895b94a5268cec73a71712f691f4cf84ac2b33df248c81f695c4eb898cf13613"
     },
     {
       "path": "scripts/build-interior-preview.py",
@@ -1615,8 +1640,8 @@
     },
     {
       "path": "scripts/update-seo-performance.py",
-      "bytes": 18240,
-      "sha256": "f0b9a9c9cd09069492a2eea1c134de4faefeb5fe1a701d59161445fd457fe2b7"
+      "bytes": 18961,
+      "sha256": "121230bf9403972641bc9743c4b896733caa687220b5b8eeb212803785b01a99"
     },
     {
       "path": "scripts/update-shared-header.py",
@@ -1642,6 +1667,11 @@
       "path": "seo/MAPA-BUSCAS-E-SEARCH-CONSOLE.md",
       "bytes": 6090,
       "sha256": "2d66bffa07ede58da6a2c116667fb9c0e8f3e887538c6daed5785946bc56bdb2"
+    },
+    {
+      "path": "seo/MARCA-COMPARTILHAMENTO.md",
+      "bytes": 3706,
+      "sha256": "a832e1fa639869925290ef1810447471e6b46af79de08530ca6058d908bf68bf"
     },
     {
       "path": "seo/OTIMIZACAO-LOCAL-2026-09-22.md",
@@ -1706,7 +1736,12 @@
     {
       "path": "seo/audit-results.json",
       "bytes": 3340,
-      "sha256": "04f4b050269b745cd5c3c7488172e2f68e405b254e0cc2e61ac5b99b6a08b80e"
+      "sha256": "58dcb32068ede63c77b6c4ac70215744c0a4bf7dd229bcaddfebaa7859aa9f9d"
+    },
+    {
+      "path": "seo/brand-assets.json",
+      "bytes": 1376,
+      "sha256": "4ac204eb88063734cd763dacbf235a4df0500a80728a25bce9d5909ef2611d2b"
     },
     {
       "path": "seo/content.json",
@@ -1730,8 +1765,8 @@
     },
     {
       "path": "seo/image-inventory.json",
-      "bytes": 55816,
-      "sha256": "dec1eb3f2f613251d00386a57fb1218bed4c7c8543848f59f5d09ade7f6fa5f0"
+      "bytes": 56518,
+      "sha256": "290f1a4a60fa90748451e2319a5b4f0b3f10cf235b645d9bda5b43defc817e86"
     },
     {
       "path": "seo/image-optimization.json",
@@ -1770,23 +1805,23 @@
     },
     {
       "path": "seo/production/cursos-head.html",
-      "bytes": 3852,
-      "sha256": "9ee6c919432130e4e39b1e9072c3eb4852ba129cdb211a1d4b6016013e1bb150"
+      "bytes": 4458,
+      "sha256": "5c180222afcd1777f6690d52d86525d215688fa2d90213f72c04dbb1875cba2f"
     },
     {
       "path": "seo/production/faq-head.html",
-      "bytes": 2946,
-      "sha256": "268dfb64394cf65a590ade2ff2292d1be63cd79e871f049a5e7d8a897e4c1186"
+      "bytes": 3552,
+      "sha256": "5055c7e9a33a61ac733a9ebd23279e4532a617bd1c36697281bf7e95b7ef6324"
     },
     {
       "path": "seo/production/home-head.html",
-      "bytes": 2546,
-      "sha256": "94fdef2e4f73901ffe5b6463a73f4e07dcddf9aef1fd0e1aa5821da9f44e8daa"
+      "bytes": 3152,
+      "sha256": "6e3c4878b3ec81681a69ece5317a3afdb54aa1ae65041c6da2127450e5290b33"
     },
     {
       "path": "seo/production/quem-somos-head.html",
-      "bytes": 5904,
-      "sha256": "f1b4ec3c2f53a93dd629a0066b5e03bdfcc9ef8aff79780bac41c8bfddd77179"
+      "bytes": 6510,
+      "sha256": "09a28d819d82c3cf9af27c66f72ec4aad18a89d1363e0c896dddaedc9abb7b36"
     },
     {
       "path": "seo/production/redirects.json",
