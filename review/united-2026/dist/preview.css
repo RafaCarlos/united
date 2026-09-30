@@ -53,6 +53,11 @@ form .preview-form-note{font:500 14px/1.4 Manrope,Arial,sans-serif;background:#f
  body>header nav{display:block}
  body>header .button-area{display:inline-flex}
  body>header .open-menu{display:none}
+ /* Hidden lazy images need no layout box: visibility/opacity alone lets the
+    browser download every desktop composition during the first hero paint.
+    Selecting a panel restores its picture immediately; visible side teasers
+    and the flex transition keep their existing geometry. */
+ .preview-panel:not(.active) .wide-picture,.preview-panel.active .teaser-visual{display:none}
  .preview-panel.active::before{content:"";position:absolute;left:0;right:0;top:var(--scene-start,var(--art-top));height:28px;background:linear-gradient(var(--panel-top),transparent);z-index:3;pointer-events:none}
  #banner-liveclass{--scene-start:calc(var(--art-top) - var(--art-width)*1402/1122*.02)}
  /* A single continuous image per desktop panel prevents duplicated sky/buildings. */

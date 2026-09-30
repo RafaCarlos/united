@@ -27,15 +27,30 @@
     const next = section.querySelector('[data-review-next]');
     const status = section.querySelector('.reviews-status');
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let reviewsFrame = false;
     function updateReviews() {
+      reviewsFrame = false;
       const viewport = track.getBoundingClientRect();
       const visible = cards.map(function (card, index) {
         const box = card.getBoundingClientRect();
         return box.left >= viewport.left - 8 && box.left < viewport.right - 32 ? index + 1 : null;
       }).filter(Boolean);
-      previous.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 3;
-      if (visible.length) status.textContent = (visible.length === 1 ? 'Depoimento ' + visible[0] : 'Depoimentos ' + visible[0] + ' a ' + visible[visible.length - 1]) + ' de ' + cards.length;
+      // Finish geometry reads before updating controls or the live status.
+      const scrollLeft = track.scrollLeft;
+      const atStart = scrollLeft <= 2;
+      const atEnd = scrollLeft >= track.scrollWidth - track.clientWidth - 3;
+      if (previous.disabled !== atStart) previous.disabled = atStart;
+      if (next.disabled !== atEnd) next.disabled = atEnd;
+      if (visible.length) {
+        const message = (visible.length === 1 ? 'Depoimento ' + visible[0] : 'Depoimentos ' + visible[0] + ' a ' + visible[visible.length - 1]) + ' de ' + cards.length;
+        if (status.textContent !== message) status.textContent = message;
+      }
+    }
+    function scheduleReviews() {
+      if (!reviewsFrame) {
+        reviewsFrame = true;
+        window.requestAnimationFrame(updateReviews);
+      }
     }
     function moveReviews(direction) {
       const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
@@ -45,8 +60,8 @@
     }
     previous.addEventListener('click', function () { moveReviews(-1); });
     next.addEventListener('click', function () { moveReviews(1); });
-    track.addEventListener('scroll', updateReviews, {passive:true});
-    window.addEventListener('resize', updateReviews);
+    track.addEventListener('scroll', scheduleReviews, {passive:true});
+    window.addEventListener('resize', scheduleReviews);
     section.querySelectorAll('.review-read-more').forEach(function (button) {
       button.addEventListener('click', function () {
         const expanded = button.getAttribute('aria-expanded') !== 'true';

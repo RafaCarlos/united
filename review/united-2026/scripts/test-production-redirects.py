@@ -240,6 +240,18 @@ class RedirectChecks(unittest.TestCase):
                      '/blog/rdstation-form.js', '/blog/assets/js/dist/scripts.js'):
             self.assertIsNone(cache_policy(path + '?v=012345abcdef'))
 
+    def test_release_versions_refresh_only_known_script_cache(self):
+        for version in ('2', '3', '100'):
+            self.assertEqual(cache_policy('/rdstation-form.js?v=' + version),
+                             'public, max-age=604800')
+        for query in ('?v=0', '?v=02', '?v=2&v=3', '?v=2&x=1'):
+            self.assertEqual(cache_policy('/rdstation-form.js' + query), 'no-cache')
+        for status in (404, 500):
+            self.assertEqual(cache_policy('/rdstation-form.js?v=2', status=status), 'no-cache')
+        self.assertEqual(cache_policy('/rdstation-form.js?v=2', existing='private, no-store'),
+                         'private, no-store')
+        self.assertIsNone(cache_policy('/blog/rdstation-form.js?v=2'))
+
     def test_errors_html_fallbacks_and_mutations_do_not_get_public_asset_cache(self):
         paths = ('/assets/css/page-home-012345abcdef.css',
                  '/assets/images/bg-united-video.webp',

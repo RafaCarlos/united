@@ -1,12 +1,11 @@
 /* Behavioral smoke tests for the local RD adapter; no SDK, network or lead data. */
 const assert = require('node:assert/strict');
-const { readFileSync } = require('node:fs');
-const path = require('node:path');
+const readRuntimeSource = require('./read-runtime-source.cjs');
 const { randomFillSync } = require('node:crypto');
 const { test } = require('node:test');
 const vm = require('node:vm');
 
-const source = readFileSync(path.join(__dirname, '../src/rdstation-form.js'), 'utf8');
+const source = readRuntimeSource('rdstation-form.js');
 
 class Target {
   constructor() { this.listeners = new Map(); }
@@ -80,7 +79,12 @@ function setup({ sdk = 'ready', href = 'https://preview.example/review/united-20
     observe() { this.active = true; }
     disconnect() { this.active = false; }
   }
-  const context = vm.createContext({ window, document: { querySelector: () => container }, URL,
+  const context = vm.createContext({ window, document: {
+    querySelector: () => container,
+    getElementById: () => null,
+    createElement: () => new Target(),
+    head: { appendChild(script) { script.dispatchEvent(event('error')); } },
+  }, URL,
     MutationObserver, CustomEvent: class { constructor(type) { this.type = type; } },
     btoa: value => Buffer.from(value, 'latin1').toString('base64'),
     setTimeout: callback => { const id = ++timerSequence; timers.set(id, callback); return id; },

@@ -2,6 +2,34 @@
 
 Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.
 
+## Envio para revisão — 30/09/2026
+
+O envio destas atualizações ao GitHub foi autorizado após a validação local da entrega WebP/minificada v2. A branch `codex/united-performance-v2-2026-09-30` parte da `main` em `d5929f8`, preservando as alterações incorporadas por Rafael. O escopo permanece exclusivamente em `review/united-2026/`, sem alterar PHP da raiz, fazer merge ou publicar na hospedagem.
+
+São 130 testes aprovados na rodada final e integridade dos arquivos conferida. A autorização de envio ao Git não equivale à aprovação de desempenho em produção: a meta pública de 80 e o INP móvel ainda precisam ser validados com o pacote atualizado. As seções datadas abaixo registram o histórico de trabalho local; os resultados antigos não são notas desta entrega publicada.
+
+## WebP, minificação e versão 2 — 30/09/2026
+
+As imagens PNG restantes usadas no conteúdo agora têm derivados WebP sem perda, incluindo a logo visível: pixels, transparência e dimensões são verificados contra os originais preservados. SVG, GIFs animados, favicon e imagens PNG de metadados/compartilhamento mantêm os formatos adequados. Imagens já responsivas não são reencodificadas. O conversor também cobre referências em CSS legado; arquivos não exibidos não representam economia de tráfego da Home.
+
+A entrega otimizada é gerada por `export-production.py --optimize --asset-version 2`. A etapa final minifica HTML, CSS e JavaScript na cópia `site/`, aplica `?v=2` aos recursos locais carregados e recalcula os nomes com hash dos bundles CSS. Os arquivos editáveis em `src/` e os insumos de build em `dist/` permanecem disponíveis para manutenção. Publicar a cópia otimizada, não copiar os insumos de build por cima dela.
+
+URLs externas RD/GTM, links de navegação, WhatsApp, canonical e metadados não recebem a query. A versão deve subir para 3, 4 etc. a cada nova entrega com arquivos modificados; `v=2` fixo não impede cache antigo para sempre. O HTML deve revalidar e a hospedagem/CDN deve incluir a query na chave de cache. As regras propostas continuam separadas, sem aplicação automática no servidor. Redução em bytes não comprova nota PageSpeed ou INP; a condição de desempenho mínimo 80 continua pendente de validação pública representativa.
+
+## Histórico: carregamento e validação — 29/09/2026
+
+O candidato local agora evita imagens de banners ocultos no desktop e entrega os banners WebP com qualidade 85, preservando as dimensões, o conteúdo e os recortes aprovados. Mantém também CSS crítico, formulário RD sob demanda e correções de retorno do WhatsApp da rodada anterior.
+
+Em comparação HTTPS local com Lighthouse 13.5.0 e Chrome 154, antes da revisão final de scroll, três execuções por versão e dispositivo deram medianas **83 → 84 no celular** e **98 → 99 no desktop**. Esses resultados não se repetiram no PageSpeed público da cópia temporária: foram 55/65, 60/67 e **41/68** (celular/desktop), com grande variação. Acessibilidade ficou em 100, boas práticas em 96 e navegação agêntica em 2/2. O SEO 69 dessa cópia decorre do `X-Robots-Tag: none` imposto pelo túnel; a exportação continua indexável. **Meta pública de desempenho 80 não validada: sem commit, push ou publicação desta rodada.** É preciso homologação representativa e revisão das tags antes de liberar. Detalhes, relatórios, ganho em bytes e limites em [DESEMPENHO-2026-09-29.md](seo/DESEMPENHO-2026-09-29.md).
+
+## Rodada anterior: desempenho e retorno do WhatsApp — 24/09/2026
+
+Alterações locais em validação; esta rodada ainda não foi enviada ao GitHub nem publicada. A meta solicitada é desempenho mínimo de **80 no celular e no computador**, com as demais métricas e a navegação verificadas antes do envio. A medição final do candidato ainda está pendente: não tratar as notas históricas abaixo como resultado desta versão.
+
+A Home passou a entregar CSS essencial no HTML e carregar a folha completa sem bloquear a primeira renderização, com alternativa para JavaScript desativado. O formulário principal RD carrega por intenção de contato ou proximidade da área de contato; o loader da conta RD e o GTM permanecem ativos. Os campos do popup WhatsApp usam 16 px em telas móveis/ponteiro de toque e os controladores recalculam a posição ao voltar de outro aplicativo, restaurar a página ou girar a tela. O WhatsApp acompanha a rolagem acima da barra “Quero conhecer”, agora sem a seta decorativa. A correção ainda precisa ser conferida em um iPhone físico com Safari.
+
+Arquitetura, testes, limites de medição e critérios de aceite em [DESEMPENHO-E-SAFARI-2026-09-24.md](seo/DESEMPENHO-E-SAFARI-2026-09-24.md). Esta seção descreve o estado atual; as rodadas datadas abaixo são histórico.
+
 ## Atualização de desempenho e cores — 23/09/2026
 
 Esta rodada parte da `main` em `97265d0` (PR #6 integrado). Evita três downloads de retratos exclusivos de desktop no mobile (~493 KB), aprimora WebP responsivo e estabilidade dos banners, corrige semântica e acessibilidade dos componentes RD e aplica o verde #25D366 aprovado aos botões WhatsApp e Área do Aluno. Texto/ícones escuros mantêm contraste; WhatsApp móvel continua 12 px acima da barra Quero conhecer. Captação RD, destinos dos links e botão vermelho de envio preservados.
@@ -28,10 +56,11 @@ Resultados medidos, limitações e sequência de geração em [OTIMIZACAO-LOCAL-
 ## Entrega de produção
 
 ```bash
-python3 scripts/export-production.py --mode production --output /tmp/united-production
+npm ci
+python3 scripts/export-production.py --mode production --optimize --asset-version 2 --output /tmp/united-production
 ```
 
-`site/` contém os arquivos publicáveis. `publication/` contém instruções e o fragmento Apache opcional, que precisa ser mesclado ao servidor por Rafael. O exportador não envia arquivos e não escreve `.htaccess`. Detalhes em [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md) e [INTEGRACAO.md](seo/INTEGRACAO.md).
+`site/` contém os arquivos publicáveis. `publication/` contém instruções, o relatório de minificação e o fragmento Apache opcional, que precisa ser mesclado ao servidor por Rafael. O exportador não envia arquivos e não escreve `.htaccess`. Detalhes em [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md) e [INTEGRACAO.md](seo/INTEGRACAO.md).
 
 A produção sai sem rótulos de prévia e com rastreamento liberado. O robots atualizado deve ocupar **a raiz HTTP `/robots.txt`**, junto ao sitemap comercial; nenhum arquivo robots dentro de uma subpasta governa o domínio. A política permite os recursos públicos e restringe a administração do WordPress, com AJAX liberado. O gerador preserva esse arquivo como fonte, sem sobrescrever suas regras. Veja [ROBOTS-RASTREAMENTO.md](seo/ROBOTS-RASTREAMENTO.md).
 
@@ -45,18 +74,21 @@ Os títulos e textos destacam inglês online e ao vivo, a trilha de 18 meses, co
 
 ## Reproduzir e validar
 
-Requer Python com `lxml` e Pillow (`requirements-review.txt`) e Node para os testes RD. A entrega estática não requer build para ser servida.
+Requer Python com as dependências de `requirements-review.txt` e Node para os testes RD. A nova suíte de carregamento RD usa `jsdom` 26, disponível no ambiente de testes. A entrega estática não requer build para ser servida.
 
 ```bash
+python3 scripts/optimize-remaining-images.py
 python3 scripts/update-seo-performance.py
 python3 scripts/optimize-static-assets.py
 python3 scripts/prepare-subdirectory.py
 python3 scripts/inventory-images.py
 python3 scripts/audit-seo-performance.py
+python3 scripts/test-home-critical-css.py
 python3 scripts/test-production-export.py
 python3 scripts/test-production-crawl.py
 python3 scripts/test-production-redirects.py
-node --test scripts/test-rdstation-form.cjs scripts/test-rdstation-whatsapp.cjs
+node scripts/test-finalize-delivery.cjs
+node --test scripts/test-rdstation-form.cjs scripts/test-rdstation-loading.cjs scripts/test-rdstation-whatsapp.cjs scripts/test-banner-stability.cjs
 python3 scripts/prepare-subdirectory.py --refresh-manifests
 ```
 
@@ -64,10 +96,12 @@ python3 scripts/prepare-subdirectory.py --refresh-manifests
 
 Aplique outros atualizadores de componentes somente quando houver alterações nesses componentes. Esta revisão não reexecuta `update-contact-layout.py`: preserva o HTML do banner e o GTM que Rafael modificou em `main`. Os geradores legados de prévia não são o fluxo atual; podem restaurar conteúdo antigo. Ao reutilizá-los, revise o diff e execute a validação final acima.
 
+Para reproduzir a nova compressão dos banners, execute `python3 scripts/optimize-responsive-images.py` antes de `update-seo-performance.py` e dos demais passos acima. Os testes Node que usam `UNITED_CODE_TOOLS` esperam uma pasta com `node_modules/jsdom`; `test-rdstation-loading.cjs` usa a resolução normal do Node (ou `NODE_PATH`). Não incluir dependências de teste ou `__pycache__` na entrega.
+
 ## Integrações preservadas
 
 - Formulário oficial RD `form-vamos-conversar-5ba05329ea8c88b5c10d`, um embed por página, SDK oficial, retorno de sucesso na própria caixa e círculo verde; botão de envio vermelho.
-- Loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` uma vez por página, `async`; SDK e inicializador com `defer` na ordem correta.
+- Loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` uma vez por página, `async`; adaptador local `rdstation-form.js` com `defer`, responsável por carregar e inicializar o SDK oficial sob demanda. Não reinserir um SDK remoto antecipado no HTML: isso desfaz a otimização.
 - WhatsApp geral `5511940040658`; Parcerias & Convênios e Seja um Franqueado exclusivamente `5511958575315`.
 - Área do Aluno: `https://liveclass.app.br`. GTM `GTM-MTK74PV` preservado na Home.
 

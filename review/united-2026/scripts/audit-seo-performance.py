@@ -94,6 +94,13 @@ original_logo = D / 'assets/images/logo-united-idiomas.png'
 check(original_logo.is_file() and sha256(original_logo.read_bytes()).hexdigest()
       == '3bb63a15868f16fa05c6bd58f1fd87ceb9e319e841375c520bd2ea523ff08b36',
       'approved visible site logo must remain unchanged')
+webp_logo = D / 'assets/images/logo-united-idiomas-lossless.webp'
+check(webp_logo.is_file(), 'lossless visible logo missing')
+if original_logo.is_file() and webp_logo.is_file():
+    with Image.open(original_logo) as original, Image.open(webp_logo) as delivered:
+        check(delivered.format == 'WEBP' and original.size == delivered.size
+              and original.convert('RGBA').tobytes() == delivered.convert('RGBA').tobytes(),
+              'WebP logo must preserve every approved pixel and dimension')
 
 for route, doc in DOCS.items():
     title = doc.xpath('string(/html/head/title)')
@@ -115,9 +122,9 @@ for route, doc in DOCS.items():
     if fragment.is_file():
         brand_metadata(html.document_fromstring('<html><head>' + fragment.read_text() + '</head><body></body></html>'),
                        route, str(fragment.relative_to(ROOT)))
-    visible_logos = doc.xpath('//body//img[contains(@src,"logo-united-idiomas.png")]')
+    visible_logos = doc.xpath('//body//img[contains(@src,"logo-united-idiomas-lossless.webp")]')
     check(len(visible_logos) == 3 and all(
-        urljoin(BASE + route, image.get('src', '')) == BASE + '/assets/images/logo-united-idiomas.png'
+        urljoin(BASE + route, image.get('src', '')) == BASE + '/assets/images/logo-united-idiomas-lossless.webp'
         and image.get('width') == '258' and image.get('height') == '164'
         and image.get('alt') == 'United Idiomas' for image in visible_logos),
         f'{route}: preserve the three original visible logos and their geometry')
@@ -137,7 +144,17 @@ for route, doc in DOCS.items():
                 cards = doc.xpath('//*[@id=$id]', id=ident)
                 check(len(cards) == 1 and cards[0].find('address').text_content().strip() == place['address'], 'Unit structured data must match its visible address: ' + ident)
     check(len(doc.xpath('//script[@type="application/ld+json"]')) == 1, f'{route}: structured data')
-    check(len(doc.xpath('//link[@rel="stylesheet"]')) == 1, f'{route}: CSS bundle count')
+    stylesheets = doc.xpath('/html/head/link[@rel="stylesheet"]')
+    check(len(stylesheets) == 1, f'{route}: CSS bundle count')
+    if route == '/':
+        check(len(doc.xpath('/html/head/style[@id="united-home-critical"]')) == 1,
+              'Home: critical styles must be available before rendering')
+        fallback = doc.xpath('/html/head/noscript[@data-united-home-css]/link[@rel="stylesheet"]')
+        check(len(fallback) == 1 and len(stylesheets) == 1
+              and fallback[0].get('href') == stylesheets[0].get('href')
+              and stylesheets[0].get('media') == 'print'
+              and stylesheets[0].get('onload') == "this.onload=null;this.media='all'",
+              'Home: complete async CSS needs a matching non-JavaScript fallback')
     banner_whatsapp = doc.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]')
     if route == '/':
         check(len(doc.xpath('//script[not(@src) and contains(text(),"GTM-MTK74PV")]')) == 1 and len(doc.xpath('//noscript//iframe[contains(@src,"GTM-MTK74PV")]')) == 1, 'Home: preserve Rafael\'s GTM container exactly once')
@@ -200,21 +217,21 @@ for route, doc in DOCS.items():
     sdk_scripts = [s for s in scripts if urlsplit(s.get('src')).path.endswith('/rdstation-forms.min.js')]
     init_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-form.js']
     whatsapp_scripts = [s for s in scripts if urlsplit(s.get('src')).path.split('/')[-1] == 'rdstation-whatsapp.js']
-    check(len(sdk_scripts) == 1 and sdk_scripts[0].get('src') == RD_SDK,
-          f'{route}: requires exactly one official RD SDK script')
+    check(not sdk_scripts, f'{route}: offscreen RD embed must not load its SDK before contact intent')
     check(len(loader_scripts) == 1 and loader_scripts[0].get('src') == RD_LOADER,
           f'{route}: requires exactly one literal RD account loader script')
     check(len(init_scripts) == 1, f'{route}: requires exactly one RD initialization script')
     check(len(whatsapp_scripts) == 1, f'{route}: requires exactly one maintained RD WhatsApp adapter')
-    if len(sdk_scripts) == 1 and len(init_scripts) == 1:
+    if len(init_scripts) == 1:
         init_url = urlsplit(init_scripts[0].get('src'))
         check(not init_url.scheme and not init_url.netloc
               and urljoin(route, unquote(init_url.path)) == '/rdstation-form.js',
               f'{route}: RD initialization must use the maintained local script')
-        check(scripts.index(sdk_scripts[0]) < scripts.index(init_scripts[0]),
-              f'{route}: RD SDK must precede initialization')
-        check(all('defer' in s.attrib and 'async' not in s.attrib for s in [sdk_scripts[0], init_scripts[0]]),
-              f'{route}: RD scripts require ordered deferred execution')
+        check('defer' in init_scripts[0].attrib and 'async' not in init_scripts[0].attrib,
+              f'{route}: lightweight RD adapter must run after the contact controls')
+        adapter = (D / 'rdstation-form.js').read_text()
+        check(RD_SDK in adapter and 'united:rd-form-request' in adapter,
+              f'{route}: contact intent must retain the official RD SDK')
     check(not doc.xpath('//script[not(@src) and contains(text(), "RDStationForms")]'),
           f'{route}: inline RD initialization bypasses deferred SDK ordering')
     for e in doc.xpath('//*[@src or @href or @poster or @srcset or @imagesrcset]'):

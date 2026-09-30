@@ -194,8 +194,28 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 240073,
-    "bytes_after": 170565
+    "bytes_before": 241554,
+    "bytes_after": 172046,
+    "critical": {
+      "strategy": "inline-critical-plus-complete-async-stylesheet",
+      "critical_bytes": 51896,
+      "critical_gzip9_bytes": 10427,
+      "complete_runtime_sources": [
+        "/assets/css/contact-forms.css",
+        "/contact-preview.css",
+        "/rdstation-form.css",
+        "/responsive-home.css",
+        "/shared-header.css"
+      ],
+      "scope": [
+        "header",
+        "all-hero-states",
+        "mobile-menu",
+        "first-content-section",
+        "contact-and-rd"
+      ]
+    },
+    "bytes_compacted": 167709
   },
   "/cursos/": {
     "removed_animation_classes": [
@@ -386,8 +406,9 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 216319,
-    "bytes_after": 148898
+    "bytes_before": 217415,
+    "bytes_after": 149994,
+    "bytes_compacted": 146772
   },
   "/quem-somos/": {
     "removed_animation_classes": [
@@ -584,8 +605,9 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 209945,
-    "bytes_after": 139921
+    "bytes_before": 211041,
+    "bytes_after": 141017,
+    "bytes_compacted": 138053
   },
   "/faq/": {
     "removed_animation_classes": [
@@ -794,7 +816,8 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 209945,
-    "bytes_after": 138207
+    "bytes_before": 211041,
+    "bytes_after": 139303,
+    "bytes_compacted": 136339
   }
 }

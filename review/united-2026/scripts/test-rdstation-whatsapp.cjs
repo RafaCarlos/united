@@ -1,12 +1,11 @@
 /* Behavior of the local WhatsApp adapter against the native widget's DOM contract.
  * No remote SDK, network requests or contact data are used. */
 const assert = require('node:assert/strict');
-const { readFileSync } = require('node:fs');
-const path = require('node:path');
+const readRuntimeSource = require('./read-runtime-source.cjs');
 const { test } = require('node:test');
 const vm = require('node:vm');
 
-const source = readFileSync(path.join(__dirname, '../src/rdstation-whatsapp.js'), 'utf8');
+const source = readRuntimeSource('rdstation-whatsapp.js');
 
 function event(type, properties = {}) {
   return { type, defaultPrevented: false, propagationStopped: false, ...properties,
@@ -15,8 +14,9 @@ function event(type, properties = {}) {
   };
 }
 
-function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
+function setup({ early = false, bannerStyle = {}, mobile = false, resizeObserver = true, legacyObserver = false, contactHeight = null } = {}) {
   const observers = [], records = [], sizeObservers = [];
+  const frames = new Map(), windowListeners = new Map(), viewportListeners = new Map();
   let document, sequence = 0;
   const notify = (target, type, attributeName) => records.push({ target, type, attributeName });
   function matches(element, selector) {
@@ -116,11 +116,12 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
       }
       return [{}];
     }
-    getBoundingClientRect() { return {height:this.rectHeight || 0}; }
+    getBoundingClientRect() { this.layoutReads = (this.layoutReads || 0) + 1; return {height:this.rectHeight || 0}; }
     focus() {
       for (let node = this; node; node = node.parentNode) if (node.hasAttribute('inert')) return;
       if (this.isConnected) { document.activeElement = this; this.focuses++; }
     }
+    blur() { if (document.activeElement === this) document.activeElement = document.body; }
     addEventListener(type, callback) {
       const listeners = this.listeners.get(type) || [];
       listeners.push(callback); this.listeners.set(type, listeners);
@@ -139,6 +140,7 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
   document = new Element('document');
   document.body = document.appendChild(new Element('body'));
   document.activeElement = document.body;
+  document.hidden = false;
   const destination = 'https://api.whatsapp.com/send?phone=5511940040658';
   const hero = document.body.appendChild(new Element('section', {class:'united-preview-hero'}));
   const banner = hero.appendChild(new Element('a', { class: 'banner-whatsapp', href: destination }));
@@ -147,6 +149,8 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
   const contact = document.body.appendChild(new Element('section', { id: 'contato' }));
   const footer = contact.appendChild(new Element('a', { href: destination }));
   const links = [banner, footer];
+  const initialBar = contactHeight === null ? null : document.body.appendChild(new Element('div', {class:'contact-actions'}));
+  if (initialBar) initialBar.rectHeight = contactHeight;
   function widget() {
     const wrapper = new Element('div', { class: 'floating-button floating-button--close', id: 'widget-' + ++sequence });
     const trigger = wrapper.appendChild(new Element('button', { class: 'rdstation-popup-js-floating-button', 'aria-label': 'Abrir WhatsApp' }));
@@ -171,8 +175,17 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
   }
   class ResizeObserver {
     constructor(callback) { this.callback = callback; sizeObservers.push(this); }
-    observe(target) { this.target = target; this.active = true; }
+    observe(target, options) {
+      if (legacyObserver && options) throw new TypeError('Observation options are not supported');
+      this.target = target; this.active = true;
+    }
     disconnect() { this.active = false; }
+  }
+  function deliverSize(bar, box = 'array') {
+    const size = {blockSize:bar.rectHeight, inlineSize:390};
+    const entry = {target:bar, contentRect:{height:40}};
+    if (box !== 'missing' && !legacyObserver) entry.borderBoxSize = box === 'object' ? size : [size];
+    sizeObservers.filter(observer => observer.active && observer.target === bar).forEach(observer => observer.callback([entry]));
   }
   function flush() {
     for (let round = 0; records.length; round++) {
@@ -194,20 +207,36 @@ function setup({ early = false, bannerStyle = {}, mobile = false } = {}) {
   records.length = 0;
   const rejectNetwork = () => { throw new Error('The adapter must delegate to the original native click, not send a request'); };
   const media = {matches:mobile, listeners:[], addEventListener(type, callback) { this.listeners.push(callback); }};
-  const window = {matchMedia:() => media, addEventListener() {}};
-  const context = vm.createContext({ document, window, MutationObserver, ResizeObserver,
+  function addListener(target, type, callback) {
+    if (!target.has(type)) target.set(type, []);
+    target.get(type).push(callback);
+  }
+  const window = {
+    matchMedia:() => media,
+    addEventListener(type, callback) { addListener(windowListeners, type, callback); },
+    requestAnimationFrame(callback) { const id = ++sequence; frames.set(id, callback); return id; },
+    cancelAnimationFrame(id) { frames.delete(id); },
+    visualViewport: {addEventListener(type, callback) { addListener(viewportListeners, type, callback); }},
+  };
+  const context = vm.createContext({ document, window, MutationObserver, ResizeObserver: resizeObserver ? ResizeObserver : undefined,
     getComputedStyle: element => ({ visibility: element.visibility }), fetch: rejectNetwork, XMLHttpRequest: rejectNetwork,
   });
   vm.runInContext(source, context); flush();
-  return { document, hero, following, links, banner, footer, destination, widget, initialWidget, flush,
+  if (initialBar) deliverSize(initialBar);
+  return { document, hero, following, links, banner, footer, destination, widget, initialWidget, initialBar, flush, frames,
     setMobile(matches) { media.matches = matches; media.listeners.forEach(callback => callback({matches})); flush(); },
+    setViewportSilently(matches) { media.matches = matches; },
+    windowEvent(type) { (windowListeners.get(type) || []).forEach(callback => callback(event(type))); },
+    visualResize() { (viewportListeners.get('resize') || []).forEach(callback => callback(event('resize'))); },
+    setHidden(hidden) { document.hidden = hidden; document.dispatchEvent(event('visibilitychange')); },
+    paint() { const callbacks = [...frames.values()]; frames.clear(); callbacks.forEach(callback => callback()); flush(); },
     addContactBar(height) {
       const bar = new Element('div', {class:'contact-actions'}); bar.rectHeight = height;
-      document.body.appendChild(bar); flush(); return bar;
+      document.body.appendChild(bar); flush(); deliverSize(bar); return bar;
     },
-    resizeBar(bar, height) {
+    resizeBar(bar, height, box = 'array') {
       bar.rectHeight = height;
-      sizeObservers.filter(observer => observer.active && observer.target === bar).forEach(observer => observer.callback());
+      deliverSize(bar, box);
       flush();
     },
     isOpen: () => document.body.classList.contains('rd-whatsapp-open'),
@@ -262,13 +291,143 @@ test('viewport changes restore the same shortcut to its original desktop locatio
 test('a late contact bar and height changes reserve its actual height for mobile spacing', () => {
   const state = setup({mobile:true});
   const bar = state.addContactBar(73);
+  assert.equal(bar.layoutReads || 0, 0, 'inserting the bar must not force layout');
+  state.paint();
   assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '73px');
   state.resizeBar(bar, 95.4);
+  state.paint();
   assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '96px');
   assert.equal(state.banner.style.getPropertyValue('position'), 'fixed');
   assert.equal(state.banner.style.getPropertyValue('z-index'), '106');
   state.resizeBar(bar, 95.4);
+  state.paint();
   assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '96px', 'unchanged measurements settle without a style loop');
+  assert.equal(bar.layoutReads || 0, 0, 'observer border boxes include padding without additional geometry reads');
+});
+
+test('an existing contact bar is initialized from its observer without forcing first-load layout', () => {
+  const state = setup({mobile:true, contactHeight:107});
+  assert.equal(state.initialBar.layoutReads || 0, 0);
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '107px');
+  assert.equal(state.initialBar.layoutReads || 0, 0);
+});
+
+test('resize bursts use the latest border-box height, including the older object format', () => {
+  const state = setup({mobile:true});
+  const bar = state.addContactBar(73);
+  state.resizeBar(bar, 88);
+  state.windowEvent('resize');
+  state.resizeBar(bar, 101.2, 'object');
+  assert.equal(state.frames.size, 1, 'resize observations share one pending update');
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '');
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '102px');
+  assert.equal(bar.layoutReads || 0, 0, 'use the reported border box, never the smaller content rectangle');
+});
+
+test('older observer entries and browsers without ResizeObserver measure once per frame', () => {
+  for (const resizeObserver of [true, false]) {
+    const state = setup({mobile:true, resizeObserver});
+    const bar = state.addContactBar(73);
+    state.resizeBar(bar, 94, 'missing');
+    state.windowEvent('resize'); state.windowEvent('resize');
+    assert.equal(bar.layoutReads || 0, 0);
+    assert.equal(state.frames.size, 1);
+    state.paint();
+    assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '94px');
+    assert.equal(bar.layoutReads, 1);
+  }
+});
+
+test('an older ResizeObserver rejecting border-box options retains safe-area resize fallback', () => {
+  const state = setup({mobile:true, legacyObserver:true});
+  const bar = state.addContactBar(73);
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '73px');
+  bar.rectHeight = 104;
+  state.windowEvent('resize'); state.windowEvent('resize');
+  assert.equal(bar.layoutReads, 1, 'resize waits until the next frame');
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '104px');
+  assert.equal(bar.layoutReads, 2);
+});
+
+test('a replaced contact bar cannot apply the detached bar height', () => {
+  const state = setup({mobile:true});
+  const oldBar = state.addContactBar(73);
+  oldBar.remove();
+  const bar = state.addContactBar(103);
+  state.resizeBar(oldBar, 150);
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '103px');
+  assert.equal(bar.layoutReads || 0, 0);
+});
+
+test('returning from WhatsApp remeasures the bar and orientation even without a resize event', () => {
+  const state = setup({mobile:true, early:true}), native = state.initialWidget;
+  const bar = state.addContactBar(73);
+  state.paint();
+  state.banner.click(); state.flush();
+  native.input.value = 'Preserve this draft';
+  state.setHidden(true);
+  assert.notEqual(state.document.activeElement, native.input, 'suspended input does not keep its keyboard focus');
+  assert.equal(native.input.value, 'Preserve this draft');
+  assert.equal(native.closes, 0, 'switching apps must not discard or close an unfinished form');
+  bar.rectHeight = 96;
+  state.setViewportSilently(false);
+  state.setHidden(false); state.windowEvent('pageshow'); state.visualResize();
+  assert.equal(state.frames.size, 1, 'return signals share one measurement frame');
+  state.paint();
+  assert.equal(state.banner.parentNode, state.hero);
+  assert.equal(state.banner.style.getPropertyValue('position'), 'absolute');
+  assert.equal(bar.layoutReads || 0, 0, 'repositioning does not force a synchronous layout read');
+  state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '96px');
+  native.close.click(); state.flush();
+  assert.equal(state.isOpen(), false);
+  assert.equal(state.document.activeElement, state.banner);
+  state.setViewportSilently(true); state.windowEvent('pageshow'); state.paint();
+  assert.equal(state.banner.parentNode, state.document.body);
+  assert.equal(state.banner.style.getPropertyValue('position'), 'fixed');
+  assert.equal(state.document.querySelectorAll('.banner-whatsapp').length, 1);
+});
+
+test('suspended viewport frames cannot prevent recovery after bfcache and popup removal', () => {
+  const state = setup({mobile:true, early:true}), native = state.initialWidget;
+  state.banner.click(); state.flush();
+  state.visualResize(); assert.equal(state.frames.size, 1);
+  state.setHidden(true); assert.equal(state.frames.size, 0);
+  native.wrapper.remove();
+  state.setHidden(false); state.windowEvent('pageshow'); state.paint();
+  assert.equal(state.isOpen(), false);
+  assert.equal(state.banner.hasAttribute('aria-controls'), false);
+  assert.equal(state.banner.hasAttribute('aria-expanded'), false);
+  assert.equal(state.banner.click().defaultPrevented, false);
+  assert.equal(state.banner.getAttribute('href'), state.destination);
+});
+
+test('bfcache return recovers a lost viewport-frame ticket without a visibility event', () => {
+  const state = setup({mobile:true});
+  const bar = state.addContactBar(73);
+  state.paint();
+  state.visualResize();assert.equal(state.frames.size,1);
+  state.frames.clear();bar.rectHeight=104;
+  state.windowEvent('pageshow');state.paint();state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'),'104px');
+  assert.equal(state.banner.parentNode,state.document.body);
+  assert.equal(state.banner.click().defaultPrevented,false);
+});
+
+test('bfcache also recovers a discarded contact measurement frame', () => {
+  const state = setup({mobile:true, resizeObserver:false});
+  const bar = state.addContactBar(73);
+  assert.equal(state.frames.size, 1);
+  state.frames.clear();
+  bar.rectHeight = 104;
+  state.windowEvent('pageshow'); state.paint(); state.paint();
+  assert.equal(state.banner.style.getPropertyValue('--whatsapp-contact-height'), '104px');
+  assert.equal(bar.layoutReads, 1);
 });
 
 test('banner placement repairs an early fixed override while preserving offsets and its direct destination', () => {

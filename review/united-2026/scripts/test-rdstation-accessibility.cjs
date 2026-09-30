@@ -1,10 +1,10 @@
 /* Real DOM accessibility contracts; no remote SDK, requests or lead submissions. */
 const assert = require('node:assert/strict');
-const {readFileSync} = require('node:fs');
+const readRuntimeSource = require('./read-runtime-source.cjs');
 const path = require('node:path');
 const {test} = require('node:test');
 const {JSDOM} = require(path.join(process.env.UNITED_CODE_TOOLS || '/private/tmp/united-code-tools', 'node_modules/jsdom'));
-const source = readFileSync(path.join(__dirname, '../src/rdstation-form.js'), 'utf8');
+const source = readRuntimeSource('rdstation-form.js');
 
 async function setup() {
   const dom = new JSDOM(`<section data-rd-contact>

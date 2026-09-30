@@ -18,7 +18,7 @@
   const launcher = document.createElement('button');
   launcher.type = 'button';
   launcher.className = 'contact-launcher';
-  launcher.innerHTML = 'Quero conhecer <span aria-hidden="true">↗</span>';
+  launcher.textContent = 'Quero conhecer';
   launcher.setAttribute('data-contact-open', '');
   const actions = document.createElement('div');
   actions.className = 'contact-actions';
@@ -65,6 +65,7 @@
   }
   function openDialog(trigger) {
     if (dialog.open) return;
+    form.dispatchEvent(new CustomEvent('united:rd-form-request', {bubbles:true}));
     const mobileMenu = document.querySelector('.menu-mobile');
     opener = trigger.closest('.menu-mobile') ? document.querySelector('.open-menu') : trigger;
     if (mobileMenu) mobileMenu.classList.remove('open');
@@ -87,8 +88,9 @@
   dialog.querySelector('.contact-dialog-close').addEventListener('click', function () { dialog.close(); });
   let backdropPress = false;
   function outsidePanel(event) {
+    if (event.target !== dialog) return false;
     const rect = dialog.getBoundingClientRect();
-    return event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom);
+    return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
   }
   dialog.addEventListener('pointerdown', function (event) { backdropPress = outsidePanel(event); });
   dialog.addEventListener('click', function (event) {
