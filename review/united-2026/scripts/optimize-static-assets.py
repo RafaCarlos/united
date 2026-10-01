@@ -14,6 +14,8 @@ RESPONSIVE_PATHS={path:row for key,row in RESPONSIVE.items()
  for path in [key,row['source']['path'],*[v['path'] for v in row['variants']]]}
 CODE_SPEC=importlib.util.spec_from_file_location('page_code',ROOT/'scripts/optimize-page-code.py')
 PAGE_CODE=importlib.util.module_from_spec(CODE_SPEC);CODE_SPEC.loader.exec_module(PAGE_CODE)
+CRITICAL_SPEC=importlib.util.spec_from_file_location('home_critical_css',ROOT/'scripts/home-critical-css.py')
+HOME_CRITICAL=importlib.util.module_from_spec(CRITICAL_SPEC);CRITICAL_SPEC.loader.exec_module(HOME_CRITICAL)
 css_report={}
 EMPTY='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
 def hashfile(p):return sha256(p.read_bytes()).hexdigest()[:12]
@@ -56,13 +58,18 @@ def optimize_teaser_images(document,route='/'):
    frame=etree.Element('foreignObject',{key:value for key,value in item.attrib.items() if key!='href'})
    picture=etree.SubElement(frame,'picture',{'xmlns':'http://www.w3.org/1999/xhtml','data-teaser-picture':'','style':'display:block;width:100%;height:100%'})
    etree.SubElement(picture,'source',media='(min-width:769px)',srcset='/'+row['default_path'],type='image/webp')
-   etree.SubElement(picture,'img',src=EMPTY,width='1122',height='1402',alt='',decoding='async',fetchpriority='low',style='display:block;width:100%;height:100%;max-width:none')
+   etree.SubElement(picture,'img',src=EMPTY,width='1122',height='1402',alt='',decoding='async',fetchpriority='low',loading='lazy',style='display:block;width:100%;height:100%;max-width:none')
    frame.tail=item.tail
    item.getparent().replace(item,frame)
   # Rebuilds must refresh old hashes without nesting another foreignObject.
   for source in svg.xpath('.//picture[@data-teaser-picture]/source'):
    row=responsive(source.get('srcset',''),route)
    if row:source.set('srcset','/'+row['default_path'])
+  # The active desktop panel hides this duplicate portrait with display:none.
+  # Native lazy loading skips it until it becomes a visible side teaser, while
+  # the two visible teasers still load normally. Apply on rebuilds as well.
+  for img in svg.xpath('.//picture[@data-teaser-picture]/img'):
+   img.set('loading','lazy')
 # Preserve individual source styles for subsequent targeted changes; bundles are disposable output.
 for parent in [ROOT/'src',D]:
  for p in parent.rglob('*.css'):
@@ -162,10 +169,20 @@ for route in META:
    chunks.append('@media(max-width:'+str(width)+'px){.about-home{background-image:url("'+variants[densities[min(1,len(densities)-1)]]+'");background-image:image-set('+candidates+')}}')
  used_classes={c for value in d.xpath('//@class') for c in value.split()}
  combined,css_report[route]=PAGE_CODE.optimize_animations('\n'.join(chunks),used_classes)
+ critical=None
+ if route=='/':
+  # Extract before removing source-boundary comments: runtime-created contact
+  # and RD markup must keep the complete CSS of their reviewed source files.
+  critical,critical_report=HOME_CRITICAL.extract_critical_css(combined,d)
+  css_report[route]['critical']=critical_report
+ combined=HOME_CRITICAL.compact_css(combined)
+ css_report[route]['bytes_compacted']=len(combined.encode())
  digest=sha256(combined.encode()).hexdigest()[:12]
  bundle=D/'assets/css'/('page-'+('home' if route=='/' else route.strip('/'))+'-'+digest+'.css');bundle.write_text(combined)
  for e in links:head.remove(e)
- etree.SubElement(head,'link',rel='stylesheet',href='/'+str(bundle.relative_to(D)))
+ bundle_href='/'+str(bundle.relative_to(D))
+ if critical is not None:HOME_CRITICAL.attach_home_styles(head,critical,bundle_href)
+ else:etree.SubElement(head,'link',rel='stylesheet',href=bundle_href)
  p.write_text('<!doctype html>\n'+html.tostring(d,encoding='unicode',method='html'))
  print(route,'CSS',len(styles),'→1; images/media/font optimized')
 inputs_path.write_text(json.dumps(inputs,indent=2)+'\n')

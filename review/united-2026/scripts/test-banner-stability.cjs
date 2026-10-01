@@ -4,19 +4,21 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const {JSDOM} = require(path.join(process.env.UNITED_CODE_TOOLS || '/private/tmp/united-code-tools', 'node_modules/jsdom'));
+const readRuntimeSource = require('./read-runtime-source.cjs');
 const root = path.resolve(__dirname, '..');
-const source = fs.readFileSync(path.join(root, 'src/preview.js'), 'utf8');
+const source = readRuntimeSource('preview.js');
 
 function fixture({width=1440, height=900, reduced=false}={}) {
   const dom = new JSDOM(fs.readFileSync(path.join(root, 'dist/index.html'), 'utf8'), {
     url:'https://www.unitedidiomas.com/', runScripts:'outside-only', pretendToBeVisual:true,
   });
   const w=dom.window, d=w.document, frames=new Map(), timers=new Map(), viewportListeners=[];
-  let reads=0, sequence=0;
+  let reads=0, sequence=0, visualHeight=height, hidden=false;
   Object.defineProperty(d.documentElement, 'clientWidth', {get(){ reads++; return width; }});
   Object.defineProperty(w, 'innerWidth', {get(){ return width; }});
   Object.defineProperty(w, 'innerHeight', {get(){ return height; }});
-  Object.defineProperty(w, 'visualViewport', {value:{get height(){return height;}, addEventListener(type, callback){viewportListeners.push(callback);}}});
+  Object.defineProperty(d, 'hidden', {get(){return hidden;}});
+  Object.defineProperty(w, 'visualViewport', {value:{get height(){return visualHeight;}, addEventListener(type, callback){viewportListeners.push(callback);}}});
   w.matchMedia = query => ({get matches(){return query.includes('reduced-motion') ? reduced : width<=768;}, addEventListener(){}, addListener(){}});
   w.requestAnimationFrame = callback => {const id=++sequence; frames.set(id,callback); return id;};
   w.cancelAnimationFrame = id => frames.delete(id);
@@ -31,7 +33,11 @@ function fixture({width=1440, height=900, reduced=false}={}) {
     active(){return panels.findIndex(panel => panel.classList.contains('active'));},
     hover(index){const e=new w.Event('pointerenter'); Object.defineProperty(e,'pointerType',{value:'mouse'}); panels[index].dispatchEvent(e);},
     key(index,key){panels[index].dispatchEvent(new w.KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));},
-    resize(nextWidth,nextHeight){width=nextWidth;height=nextHeight;w.dispatchEvent(new w.Event('resize'));viewportListeners.forEach(callback=>callback());},
+    resize(nextWidth,nextHeight){width=nextWidth;height=nextHeight;visualHeight=height;w.dispatchEvent(new w.Event('resize'));viewportListeners.forEach(callback=>callback());},
+    visualResize(nextHeight){visualHeight=nextHeight;viewportListeners.forEach(callback=>callback());},
+    setViewportSilently(nextWidth,nextHeight){width=nextWidth;height=nextHeight;visualHeight=height;},
+    setHidden(value){hidden=value;d.dispatchEvent(new w.Event('visibilitychange'));},
+    pageshow(){w.dispatchEvent(new w.PageTransitionEvent('pageshow',{persisted:true}));},
     paint(){const callbacks=[...frames.values()];frames.clear();callbacks.forEach(callback=>callback());},
     nextSlide(){const [id,timer]=[...timers.entries()][0];assert.equal(timer.delay,6000);timers.delete(id);timer.callback();},
     close(){w.close();},
@@ -97,5 +103,47 @@ test('reduced motion retains manual keyboard access without automatic transition
     assert.equal(f.d.querySelector('.preview-playback').disabled,true);
     f.key(0,'ArrowRight');assert.equal(f.active(),1);
     assert.equal(f.panels[1].getAttribute('aria-expanded'),'true');
+  } finally {f.close();}
+});
+
+test('visual viewport zoom or keyboard changes do not resize the desktop hero composition',()=>{
+  const f=fixture({width:844,height:390});
+  try {
+    const before=f.d.documentElement.style.cssText;
+    f.visualResize(180);f.paint();
+    assert.equal(f.d.documentElement.style.cssText,before);
+    assert.equal(f.d.documentElement.style.getPropertyValue('--preview-hero-height'),'370px');
+  } finally {f.close();}
+});
+
+test('Safari app return recovers orientation and autoplay without a resize event',()=>{
+  const f=fixture({width:390,height:844});
+  try {
+    f.visualResize(350);assert.equal(f.frames.size,1);
+    f.setHidden(true);
+    assert.equal(f.frames.size,0,'a suspended frame does not block future viewport measurements');
+    assert.equal(f.timers.size,0);
+    f.setViewportSilently(844,390);
+    f.setHidden(false);f.pageshow();
+    assert.equal(f.frames.size,1);
+    f.paint();
+    assert.equal(f.d.documentElement.style.getPropertyValue('--preview-hero-width'),'768px');
+    assert.equal(f.d.documentElement.style.getPropertyValue('--preview-hero-height'),'370px');
+    assert.equal(f.timers.size,0,'landscape desktop mode does not restart mobile autoplay');
+    f.setHidden(true);f.setViewportSilently(390,844);f.setHidden(false);f.pageshow();f.paint();
+    assert.equal(f.d.body.classList.contains('preview-compact-header'),false);
+    assert.equal(f.timers.size,1,'portrait returns to a single mobile autoplay timer');
+    f.nextSlide();assert.equal(f.active(),1);
+  } finally {f.close();}
+});
+
+test('bfcache pageshow replaces a lost animation-frame ticket even without a visibility event',()=>{
+  const f=fixture({width:1024,height:768});
+  try {
+    f.resize(1280,720);assert.equal(f.frames.size,1);
+    f.frames.clear();
+    f.setViewportSilently(1440,900);f.pageshow();f.paint();
+    assert.equal(f.d.documentElement.style.getPropertyValue('--preview-hero-width'),'1364px');
+    assert.equal(f.d.documentElement.style.getPropertyValue('--preview-hero-height'),'880px');
   } finally {f.close();}
 });

@@ -8,6 +8,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import tempfile
 import xml.etree.ElementTree as ET
 
@@ -279,7 +280,26 @@ def configure_seo(package, site, mode):
         shutil.copyfile(file, site / file.name)
 
 
-def export_site(package, output, mode, force=False):
+def optimize_delivery(site, asset_version):
+    """Minify only the isolated copy; leave editable/provenance inputs intact."""
+    if not re.fullmatch(r'[1-9][0-9]{0,8}', str(asset_version)):
+        raise ExportError('A versão dos recursos deve ser um inteiro positivo de até nove dígitos, como 2.')
+    node = shutil.which('node')
+    if not node:
+        raise ExportError('--optimize requer Node e as dependências de package.json.')
+    try:
+        result = subprocess.run(
+            [node, str(PACKAGE / 'scripts/finalize-delivery.cjs'),
+             '--site', str(site), '--version', str(asset_version)],
+            capture_output=True, text=True, check=True)
+        return json.loads(result.stdout)
+    except (subprocess.CalledProcessError, ValueError) as exc:
+        details = getattr(exc, 'stderr', '') or str(exc)
+        raise ExportError('Minificação recusada; a exportação anterior foi preservada: '
+                          + details[-3000:]) from exc
+
+
+def export_site(package, output, mode, force=False, optimize=False, asset_version='2'):
     if mode not in {'production', 'preview'}:
         raise ExportError('Informe explicitamente production ou preview.')
     package = package.resolve()
@@ -296,9 +316,16 @@ def export_site(package, output, mode, force=False):
         copy_dist(source, site)
         documents = transform_html(site, mode)
         configure_seo(package, site, mode)
+        optimization = optimize_delivery(site, asset_version) if optimize else None
+        if optimization is not None:
+            documents = {file.relative_to(site).as_posix(): html.document_fromstring(file.read_bytes())
+                         for file in sorted(site.rglob('*.html'))}
         dependencies = check_links(site, documents)
         publication = staging / 'publication'
         publication.mkdir()
+        if optimization is not None:
+            (publication / 'asset-optimization.json').write_text(
+                json.dumps(optimization, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         instructions = package / 'seo' / 'production' / 'INSTRUCOES-PUBLICACAO.md'
         if instructions.is_file():
             shutil.copyfile(instructions, publication / instructions.name)
@@ -309,6 +336,7 @@ def export_site(package, output, mode, force=False):
                     raise ExportError('O fragmento Apache não pode ser um link simbólico.')
                 shutil.copyfile(apache, publication / apache.name)
         report = {'format': FORMAT, 'source_package': str(package), 'mode': mode,
+                  'optimized': optimize, 'asset_version': str(asset_version) if optimize else None,
                   'pages': sorted(documents), 'local_dependencies_checked': dependencies,
                   'files': [{'path': file.relative_to(staging).as_posix(),
                              'sha256': sha256(file.read_bytes()).hexdigest()}
@@ -331,6 +359,7 @@ def export_site(package, output, mode, force=False):
         if backup:
             shutil.rmtree(backup)
         return {'output': str(output), 'site': str(output / 'site'), 'mode': mode,
+                'optimized': optimize, 'asset_version': str(asset_version) if optimize else None,
                 'pages': len(documents), 'files': len(report['files']),
                 'local_dependencies_checked': dependencies}
     finally:
@@ -345,9 +374,14 @@ def main():
                         help='Pasta fora do repositório. O conteúdo publicável ficará em site/.')
     parser.add_argument('--force', action='store_true',
                         help='Substitui somente uma exportação anterior deste mesmo pacote.')
+    parser.add_argument('--optimize', action='store_true',
+                        help='Minifica HTML/CSS/JS e versiona recursos apenas na cópia exportada.')
+    parser.add_argument('--asset-version', default='2',
+                        help='Versão numérica do cache com --optimize; padrão: 2. Incremente a cada publicação.')
     args = parser.parse_args()
     try:
-        print(json.dumps(export_site(PACKAGE, args.output, args.mode, args.force), ensure_ascii=False))
+        print(json.dumps(export_site(PACKAGE, args.output, args.mode, args.force,
+                                    args.optimize, args.asset_version), ensure_ascii=False))
     except (ExportError, OSError) as exc:
         parser.exit(1, f'Exportação recusada: {exc}\n')
 

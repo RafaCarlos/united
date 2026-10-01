@@ -2,11 +2,21 @@
 
 Esta entrega atualiza o pacote revisável no GitHub. Não publica na hospedagem, não modifica o PHP de produção da raiz e não instala nada no WordPress.
 
+Em 30/09, o usuário autorizou o envio ao Git da entrega WebP/minificada v2 após 130 testes locais aprovados. A branch de revisão parte da `main` em `d5929f8`. A meta pública de desempenho 80 e a validação em Safari físico continuam pendentes antes da liberação de produção; as notas e restrições de envio registradas nas rodadas anteriores abaixo são históricas.
+
+## Atualização local de 24/09/2026 — antes de integrar
+
+A rodada de 24/09 está em validação local e ainda não foi enviada ao GitHub. O envio depende da revisão final solicitada pelo usuário: meta mínima de 80 em desempenho mobile e desktop, demais métricas verificadas e navegação funcional. As notas do candidato final ainda estão pendentes. Consulte [DESEMPENHO-E-SAFARI-2026-09-24.md](DESEMPENHO-E-SAFARI-2026-09-24.md) para distinguir medições locais das públicas e acompanhar os critérios de aceite.
+
+Na Home, preservar o bloco `style#united-home-critical`, o link da folha completa com `media="print"` e seu `onload` que troca para `all`, e a alternativa `noscript`. O CSS completo continua começando a baixar durante a leitura do HTML; não depende de temporizador ou clique. Ele conserva todas as regras e a ordem da cascata. A extração crítica contempla cabeçalho, estados dos banners, menu móvel, primeira seção e formulários que podem abrir antes de a folha completa terminar. Exportar os arquivos juntos, sem inserir novamente o bundle completo como CSS bloqueante.
+
+O SDK do formulário incorporado passou a ser solicitado pelo adaptador local quando necessário; as instruções atuais estão abaixo. O loader da conta RD continua `async` e o GTM continua no HTML, sem adiamento artificial. Os ajustes para Safari preservam o zoom manual e incluem campos WhatsApp com 16 px, restauração de layout e reposicionamento acima da barra de contato. Ainda falta validar o retorno do aplicativo WhatsApp no Safari de um iPhone físico.
+
 ## Entrega definitiva para o domínio oficial
 
 `dist/` contém os quatro HTML comerciais preparados para produção. Desde esta revisão, o gerador aplica `index,follow,max-image-preview:large`, remove os rótulos de prévia e mantém o robots e o sitemap comerciais. Para revisão, **exportar com `--mode preview`**, que acrescenta `noindex,nofollow` e bloqueio no robots somente na cópia exportada. Não reutilizar instruções antigas que tratavam `dist` como prévia bloqueada.
 
-Exportar com `scripts/export-production.py --mode production --output /tmp/united-production`. A saída `site/` é o conteúdo estático; `publication/` contém instruções separadas. Nenhum modo altera o servidor. Para integrar ao PHP em vez de publicar os HTMLs, usar `production/*-head.html` e aplicar o conteúdo da página correspondente sem duplicar títulos, canonical ou JSON-LD.
+Após `npm ci`, exportar com `python3 scripts/export-production.py --mode production --optimize --asset-version 2 --output /tmp/united-production`. A saída `site/` é o conteúdo estático minificado, com recursos locais `?v=2`; `publication/` contém instruções e relatório de tamanhos separados. Nenhum modo altera o servidor. A cada entrega posterior modificada, incrementar a versão. Preservar a query na chave de cache da hospedagem/CDN e revalidar HTML. Para integrar ao PHP em vez de publicar os HTMLs, usar os recursos e estilos da Home exportada e `production/*-head.html` como referência de metadados, sem duplicar títulos, canonical ou JSON-LD; não misturar os URLs de scripts/CSS antigos com os da cópia minificada.
 
 Antes da publicação, Rafael deve conferir o documento-raiz e preservar `/blog/`, uploads e regras PHP existentes. Fazer backup da configuração atual e mesclar o fragmento `production/apache-seo.conf`; não substituir cegamente `.htaccess`. O fragmento documenta módulos, precedência e a condição de HTTPS atrás de proxy. Regras de cache/compressão dependem da hospedagem.
 
@@ -35,7 +45,9 @@ As seis unidades ganharam âncoras estáveis, links de mapa e dados Place com o 
 
 ## RD Station e medição
 
-Preservar um único embed `form-vamos-conversar-5ba05329ea8c88b5c10d`, o SDK oficial e `rdstation-form.js`, nessa ordem com `defer`. Preservar o loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` uma vez por página, `async`, e `rdstation-whatsapp.js`. O PHP legado já inclui esse loader; não duplicá-lo quando integrar.
+Preservar um único elemento de montagem `form-vamos-conversar-5ba05329ea8c88b5c10d` e `rdstation-form.js` com `defer`. Desde 24/09, o adaptador carrega o SDK oficial e chama `createForm()` uma única vez por intenção de contato, proximidade de 300 px, foco ou link direto `#contato`. Não adicionar novamente a tag remota do SDK ao HTML inicial. Se outro integrador já disponibilizar `RDStationForms`, o adaptador mantém compatibilidade e inicializa imediatamente, mas esse cenário perde o adiamento do embed.
+
+Preservar o evento `united:rd-form-request` que `contact-preview.js` envia ao elemento `[data-rd-contact]` antes de abrir o diálogo. O estado de carregamento e a alternativa de erro ficam no mesmo elemento; fechar e reabrir não cria outra instância. Preservar o loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js` uma vez por página, `async`, e `rdstation-whatsapp.js`. O PHP legado já inclui esse loader; não duplicá-lo quando integrar. O carregamento por demanda vale apenas para o formulário incorporado, não para o loader da conta ou o popup de WhatsApp.
 
 A confirmação de envio continua dentro da caixa, depois do sucesso indicado pelo SDK. Não reativar forms demonstrativos, endpoints PHP paralelos ou página de obrigado. O WhatsApp geral continua `5511940040658`; os dois links exclusivos do rodapé continuam `5511958575315`. O GTM adicionado por Rafael na Home foi preservado. Esta revisão não decide quais eventos ou tags devem ser ativados na conta GTM/RD.
 

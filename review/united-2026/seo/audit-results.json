@@ -42,9 +42,9 @@
       "reduction_percent": 87.33
     },
     "all_optimized_images": {
-      "original_bytes": 30483963,
-      "optimized_bytes": 5039280,
-      "reduction_percent": 83.47
+      "original_bytes": 32870871,
+      "optimized_bytes": 6398556,
+      "reduction_percent": 80.53
     },
     "six_previously_remote_videos": {
       "original_bytes": 211630071,
@@ -57,14 +57,14 @@
       "reduction_percent": 68.74
     },
     "delivered_raster_image_inventory": {
-      "files": 231,
-      "bytes": 47550875,
+      "files": 299,
+      "bytes": 48153959,
       "note": "All stored raster assets, including reference/unused originals; not initial page transfer size or a compression baseline."
     },
     "responsive_selected_assets_full_dimensions": {
       "original_bytes": 3042425,
-      "optimized_bytes": 1793724,
-      "reduction_percent": 41.04,
+      "optimized_bytes": 1543840,
+      "reduction_percent": 49.26,
       "note": "15 selected assets vs the previous optimized/PNG versions, at full dimensions. Smaller responsive candidates can save more; this is not a whole-page transfer metric."
     }
   },

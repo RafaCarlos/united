@@ -217,5 +217,1311 @@
     "source_repository_path": "assets/images/bg-united-video.png",
     "previous_webp_bytes": 1423198,
     "previous_webp_sha256": "60e672bc64a842ab219cc0f47c7b8ff8ec45dcd2acab7eaca32ddc4092c7569a"
+  },
+  "assets/images/arrow-down.png": {
+    "path": "assets/images/arrow-down-lossless.webp",
+    "before": 3758,
+    "after": 3318,
+    "width": 27,
+    "height": 31,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "4ff762fcd5fecd2af22c42f6f7b52c1415f6d71fed85ef3b13c243217c27ea62",
+    "sha256": "2ac5598efa3ca5900da6cec99d1b56abfe92486cf891493278ca46893c76499f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/arrow-right-gray.png": {
+    "path": "assets/images/arrow-right-gray-lossless.webp",
+    "before": 3891,
+    "after": 3388,
+    "width": 13,
+    "height": 21,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "96ce04468ed20591bab6ad760de40972360d176133881a2f8cf6b7d1f7ac0f07",
+    "sha256": "4d76f7ca75fc51de18049006ff1071d6598fe4c1c37722ebda4da2dfde635278",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/arrow-right-short-blue.png": {
+    "path": "assets/images/arrow-right-short-blue-lossless.webp",
+    "before": 3769,
+    "after": 3322,
+    "width": 20,
+    "height": 18,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "962321f2dc3d1df926f2c61da5b05c24edccad2cc918624d63ee38b55c4e675f",
+    "sha256": "9d47732b10fe53546d6ceec49c13fd84b1bc477934e5004824d517fa856328ed",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/arrow-right-short.png": {
+    "path": "assets/images/arrow-right-short-lossless.webp",
+    "before": 3640,
+    "after": 3280,
+    "width": 13,
+    "height": 12,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "04202a68fa09cacb80480e105ad76968cdd4d78de9fafd57ed976e4d2a1c08dd",
+    "sha256": "89e5455c6c8a0b5094b3a89e7b6058b97363e3fb9422985f0e0aba78f5deb918",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css",
+      "inline-css:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/arrow-right-short2.png": {
+    "path": "assets/images/arrow-right-short2-lossless.webp",
+    "before": 3723,
+    "after": 3290,
+    "width": 31,
+    "height": 27,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "61eee7baaa0917d1eed72da7eee479cde4d8a66b7aa9ffae65b6ed8013b1d144",
+    "sha256": "8cab0b3e64bb7d76546c10eb19a022c8fa20dca55c42773c8b1e52517efe2adc",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/arrow-right.png": {
+    "path": "assets/images/arrow-right-lossless.webp",
+    "before": 3654,
+    "after": 3296,
+    "width": 13,
+    "height": 21,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "dfcf4bfb6354bc2bfa682fc195a32bc2cf4e9b24537278e5dcd58da9e8639089",
+    "sha256": "104adc36663d5dabd956685c5b441595e5a48062b081b74e0c67225e51fbf459",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-apresentacao.png": {
+    "path": "assets/images/bg-apresentacao-lossless.webp",
+    "before": 300407,
+    "after": 179076,
+    "width": 1561,
+    "height": 730,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "3d46274a5dc63b04a3815861fe24157a4a6b79eeddf5f01c560b79338e2efdd9",
+    "sha256": "8a6e0cbff021c4483d1ee2464194541f0c0e3e32e7573609f6ba643634f2c2ce",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-bar.png": {
+    "path": "assets/images/bg-bar-lossless.webp",
+    "before": 26644,
+    "after": 11382,
+    "width": 1920,
+    "height": 140,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "4569b08e83ea388e77ef43223795a8423b4fa20af5284d08f75a2bb685d95dec",
+    "sha256": "537499fc28faa13a5d9cd78f275cff9056c75982e46fbd671590fc16e1756b0a",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-contato.png": {
+    "path": "assets/images/bg-contato-lossless.webp",
+    "before": 39357,
+    "after": 15416,
+    "width": 1924,
+    "height": 776,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "77c65a0df1180a68706a278d9066130b7b1625755c4140ea3b86247875e017d5",
+    "sha256": "7f82f890315dfc9aad4e046ca13a2427ee1296ab1cd7d64ce1ca3d97fc74188f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-ia-blue.png": {
+    "path": "assets/images/bg-ia-blue-lossless.webp",
+    "before": 191810,
+    "after": 100364,
+    "width": 1751,
+    "height": 561,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "4bb57f0849cc0c735b32b45a1a16a42787eeeb3c52ddd9b8a5e26e2293c9e37d",
+    "sha256": "2ef92ea97785b9b1c4eb6298f6a439fa28a6ac1356e27ac4ee1922b2b8d1d601",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-ia.png": {
+    "path": "assets/images/bg-ia-lossless.webp",
+    "before": 206313,
+    "after": 109382,
+    "width": 1751,
+    "height": 561,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "8b066cc5ce18b814a091697d2d0a17ad33d1d110b0eff6f9bea5831bc4d7b437",
+    "sha256": "92f2ad92e46b546c24169d8fc6fd8a9a3f3eaaeae80f44e1b2372439092d40dd",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-mb.png": {
+    "path": "assets/images/bg-mb-lossless.webp",
+    "before": 238146,
+    "after": 102184,
+    "width": 1723,
+    "height": 1937,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "02d7bfa4dccdf32f6fc973ccc47a828578aaaae397e731fd607f12e8761fab23",
+    "sha256": "0e136b68cb863de754777ca448b915b0da635a37b88f845e1d8967b22e5b54b0",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-quem-somos.png": {
+    "path": "assets/images/bg-quem-somos-lossless.webp",
+    "before": 199819,
+    "after": 80264,
+    "width": 1697,
+    "height": 1754,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "02aeea54b4ab83ffd845a78d2269d94f90e6a3f73e3865678f10379f6e1e5609",
+    "sha256": "93475052d0b4b074e2877133d66e25c739aead8e17a54d6bed10080297823816",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-unidades-hibridas.png": {
+    "path": "assets/images/bg-unidades-hibridas-lossless.webp",
+    "before": 259300,
+    "after": 172062,
+    "width": 1611,
+    "height": 739,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "ce6c2fa2dab244dcab1c5ac208a80c1f352bf9c681c3ae3398eb0daea56f6ac8",
+    "sha256": "364791c26ba207f282750a9b96bb51a60f932b039e0d8f9bf63d0b22f2bcdcd5",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-vitrine-01-mobile.jpg": {
+    "path": "assets/images/bg-vitrine-01-mobile-lossless.webp",
+    "before": 10606,
+    "after": 10432,
+    "width": 168,
+    "height": 217,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "cff8add0553997922f751921ab231283bb48ad433343a990ed52e98ecb37b33d",
+    "sha256": "035f464f262c2435dbd042eaf6daf62892ded7c1efb8002917c5dc30344b9322",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-vitrine-02-mobile.jpg": {
+    "path": "assets/images/bg-vitrine-02-mobile-lossless.webp",
+    "before": 15045,
+    "after": 9684,
+    "width": 168,
+    "height": 217,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "74b5f0c64b197a119b3acc7e0dff7be9fa7a87b3e75ce71360c45d23fa5f636b",
+    "sha256": "77ee3bb59276f9a0f13c779aaf3ffefd53c6507cdd44b7133e9350d467099f68",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/bg-vitrine-03-mobile.jpg": {
+    "path": "assets/images/bg-vitrine-03-mobile-lossless.webp",
+    "before": 16257,
+    "after": 11872,
+    "width": 168,
+    "height": 217,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "db71629a1df874ec0022e7e237d117cc7c2981df58b75731f302dce38099ba22",
+    "sha256": "4dc31a19b5792f2c9e12de1eaf6c6c5b6dc5044ca094fd138f8f7c4b20956b28",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/caret-down-fill.png": {
+    "path": "assets/images/caret-down-fill-lossless.webp",
+    "before": 3705,
+    "after": 3304,
+    "width": 24,
+    "height": 15,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "c26a2d45c1296881e0f0da1d2818842404984d1c7224df8851b5d4cd662581a6",
+    "sha256": "c4c8be2fba2031a0e03262d11c501994e9996f5a9c1d237ed7c2b70031d1a539",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/check-lg.png": {
+    "path": "assets/images/check-lg-lossless.webp",
+    "before": 382,
+    "after": 202,
+    "width": 32,
+    "height": 26,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "23f4fcdf8f131b6f8841894d931b3498eda97c78a801a7d4c7162ad35ac53ca6",
+    "sha256": "d974061102c46ce3f96019479534a4b4c07bafff5532ed901c2a12abe845ab92",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/close.png": {
+    "path": "assets/images/close-lossless.webp",
+    "before": 3884,
+    "after": 3390,
+    "width": 44,
+    "height": 44,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "6951cf3244ea78a05b28c84c53dfc64856de7aab4ac232333073b97db22e52eb",
+    "sha256": "c392b238893f21a6bc5878b3f1be499abf752a975bb2f698f526ace8e2643292",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css",
+      "inline-css:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/geo-alt-fill.png": {
+    "path": "assets/images/geo-alt-fill-lossless.webp",
+    "before": 695,
+    "after": 330,
+    "width": 48,
+    "height": 48,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "a66436b1778802e2827ea2de5c961a0cd0b1009a05f4fec1a479d91550899712",
+    "sha256": "699eccb0d4f11fd34f4f6f75c8b37b4c08c4dc474f11f9d63ea4f34cf240ce0e",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-beneficio-curso-01.png": {
+    "path": "assets/images/icon-beneficio-curso-01-lossless.webp",
+    "before": 732,
+    "after": 324,
+    "width": 32,
+    "height": 31,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "323b4d370308b34a66623f444a6a479defc1f44d1d0e10e70213af2c7131fa8a",
+    "sha256": "72b204ab0339e6147464edf9657f0f22b17c75f185033d317c988aa17bb87c99",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-beneficio-curso-02.png": {
+    "path": "assets/images/icon-beneficio-curso-02-lossless.webp",
+    "before": 511,
+    "after": 210,
+    "width": 41,
+    "height": 40,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "164695844cde91098ac976da4ce7820263340d040ac5c85262f8470dd5c2195d",
+    "sha256": "c4a9b6dbb918cc05a4e3bbd0c2daca9042f09769cc2c98b9d4f847ffa9359fc9",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-button-whatsapp-g.png": {
+    "path": "assets/images/icon-button-whatsapp-g-lossless.webp",
+    "before": 610,
+    "after": 250,
+    "width": 16,
+    "height": 16,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "0936cb24a22c06b794168e8ae72dc64d75a1eb2f9769a70d63a80974f6e0d41f",
+    "sha256": "6c65d69171419116b53252e8fb8a8f6a77eb820f0dca0d172d7320d3c6cc4f25",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-01.png": {
+    "path": "assets/images/icon-destaque-curso-01-lossless.webp",
+    "before": 977,
+    "after": 530,
+    "width": 48,
+    "height": 48,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "2ace0c0294a2f8fb4665ce4123ed6070c6d193e603300d56192ea2a25eed1adf",
+    "sha256": "b08c12f91b0e53067df444e0fb200e08062a3449b72dc6c68919c78a45dbaedc",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-02.png": {
+    "path": "assets/images/icon-destaque-curso-02-lossless.webp",
+    "before": 423,
+    "after": 178,
+    "width": 41,
+    "height": 38,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "72f10c891e97baed9ad984fb2e8b7bb3ee54af23da291c8a297a11ce0fdc402e",
+    "sha256": "a545f1bf1792f2b4ff05b9afa1d760c4be33983b7d94b7b3459b945eaea2d6d1",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-03.png": {
+    "path": "assets/images/icon-destaque-curso-03-lossless.webp",
+    "before": 472,
+    "after": 202,
+    "width": 40,
+    "height": 40,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "b1ba63f20ac02a20ff09d3914c8ad0c47b403a42b5d39eeb4b4ba7edd738a4f7",
+    "sha256": "7c361149d5f7bd122b6562fc4e5731a7278bf14cc2d4884f265966b67bc310af",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-04.png": {
+    "path": "assets/images/icon-destaque-curso-04-lossless.webp",
+    "before": 243,
+    "after": 112,
+    "width": 32,
+    "height": 32,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "d7fe0fb686775a551a21c3cb75741fe72ec170a4ed30cbf23dd6489766e52093",
+    "sha256": "7b0f44ea93e10885b84fb265c475021f566b004b5523990a1c795fb03a05fc64",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-05.png": {
+    "path": "assets/images/icon-destaque-curso-05-lossless.webp",
+    "before": 376,
+    "after": 162,
+    "width": 38,
+    "height": 38,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "5138c16c78fddf932b0397ea5ee4cf0c4f05d479709553f1732efb03ab53c122",
+    "sha256": "6cb891e1b4314ea4bf86b03952cb169823be66118722ac43148fa903a89892bc",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-destaque-curso-06.png": {
+    "path": "assets/images/icon-destaque-curso-06-lossless.webp",
+    "before": 470,
+    "after": 242,
+    "width": 32,
+    "height": 32,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "839aae9c73e9d3ad4de69dc27438f9a125323bca1b6c92ba1dd2d7d97d3019f9",
+    "sha256": "d5cf6e3d5a38e4da52b316cf8d932bd33f1574eb34fdd629a57d4d2663d9edab",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-footer-facebook.png": {
+    "path": "assets/images/icon-footer-facebook-lossless.webp",
+    "before": 319,
+    "after": 156,
+    "width": 16,
+    "height": 16,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "2d97267a4f66b23a7ec271ad99ecefb703c9afa981850a2e2596a3ef9fc5f860",
+    "sha256": "3be8e89cb101e29ca506f41f9f0f5ef14887f1020893d95f57d2d4dcbfb60a76",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-footer-instagram.png": {
+    "path": "assets/images/icon-footer-instagram-lossless.webp",
+    "before": 400,
+    "after": 158,
+    "width": 16,
+    "height": 16,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "df501dafba8c36f44d3a058d24bd666edcf5f6467201ed264d0ba906f8b0a340",
+    "sha256": "fc941b4ec9b1eb11a1152ff65227a02cb915c9c5389e6f33a170d5bfb0f4c5a5",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-footer-linkedin.png": {
+    "path": "assets/images/icon-footer-linkedin-lossless.webp",
+    "before": 273,
+    "after": 120,
+    "width": 16,
+    "height": 16,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "987d92137063b1e9f807d331172f43dea70915bbf4e82394114cd06914daa0bf",
+    "sha256": "51f2c647006fd13f4b0e47d0f65cba547f5d766ecf6c25d6d43e2ebbc1dc55a6",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-footer-youtube.png": {
+    "path": "assets/images/icon-footer-youtube-lossless.webp",
+    "before": 281,
+    "after": 128,
+    "width": 16,
+    "height": 16,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "ca3c46eab5725deaa7adb1122ef298fe9930faaf1bf56dc004b00f00dce6852d",
+    "sha256": "c973443ce112dfb87512908e6a5d347ed9898c01cce88961554b664c3888900f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-header-facebook.png": {
+    "path": "assets/images/icon-header-facebook-lossless.webp",
+    "before": 389,
+    "after": 180,
+    "width": 15,
+    "height": 25,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "fc905aa015837ae1ca6ce6e76d3c8d048fc7f45d49200d21b0dfb2dad51d5574",
+    "sha256": "6135f0b6fec91bd60449b000b052f21c17cae6a017b6206c92461966940b9590",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-header-instagram.png": {
+    "path": "assets/images/icon-header-instagram-lossless.webp",
+    "before": 517,
+    "after": 224,
+    "width": 24,
+    "height": 24,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "524e7df18c20e22ebab1e748395010be28b07a25ebd66bda1ac950ca98be6564",
+    "sha256": "b1955a2b22ee2bf99e211668af23e2d893899991b594d2d0075c385e5e96f1c3",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-header-linkedin.png": {
+    "path": "assets/images/icon-header-linkedin-lossless.webp",
+    "before": 491,
+    "after": 224,
+    "width": 25,
+    "height": 24,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "0d23edc5f064d0d9a31d9f2e02189eecc2364fa89705f0865c7216db8fa2d61d",
+    "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-info-curso-01.png": {
+    "path": "assets/images/icon-info-curso-01-lossless.webp",
+    "before": 963,
+    "after": 414,
+    "width": 48,
+    "height": 48,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "a2304ea67fdcc29756746f4b97f17e6fcd559386ef175ba0cd5f36db7f0b481e",
+    "sha256": "a33186afdb8ab98251f52b2e2c29a03a6fb620d50627f9701af9acd940cdb7e8",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-info-curso-02.png": {
+    "path": "assets/images/icon-info-curso-02-lossless.webp",
+    "before": 5009,
+    "after": 3816,
+    "width": 53,
+    "height": 41,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "ceb5ca35b5b0b860e1993d5cd4725f42d9707f0923eff9b31483f64ef048786a",
+    "sha256": "6dcc38167304b2d1553d6d3101e8a1b2be1baec177b7463a20b793c26ea2a213",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-info-curso-03.png": {
+    "path": "assets/images/icon-info-curso-03-lossless.webp",
+    "before": 416,
+    "after": 182,
+    "width": 38,
+    "height": 38,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "c8490bc8b5694ce718a2c5b1ee660b49885115cd73a0f61f8f3ce6434625ca38",
+    "sha256": "a03147391c2949d8cfddf1db58e31572bec8240e405dab9dc7223ad6ae8cce72",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-lateral-01.png": {
+    "path": "assets/images/icon-lateral-01-lossless.webp",
+    "before": 411,
+    "after": 202,
+    "width": 26,
+    "height": 25,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "abe035c4ce0e15bc97ba9943199bcfed27e4ddba6946ccf71dcf55cbb74218ea",
+    "sha256": "0a1abcb707dfcc67652c38859d10d81f2da6d13234735846170f517ebb00a31a",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-lateral-02.png": {
+    "path": "assets/images/icon-lateral-02-lossless.webp",
+    "before": 323,
+    "after": 136,
+    "width": 26,
+    "height": 23,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "8d9b160a982d558aa6c3843aeeccb623f9f478d0fcd6d28cb40eb4890c7f20d9",
+    "sha256": "bff5a793a6f2487e816e7666cfb498184cee3638c3839e339f9f1a3ca1b578cf",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-lateral-03.png": {
+    "path": "assets/images/icon-lateral-03-lossless.webp",
+    "before": 478,
+    "after": 244,
+    "width": 26,
+    "height": 26,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "71735f5d6d87626a1db730d2d2fe6abb9b4beda30382d44bf03f70d2dc8e9d09",
+    "sha256": "969f740f146384b7a53987b1359b8a1496b1cbd1378abca83b699ad74f415824",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-lateral-04.png": {
+    "path": "assets/images/icon-lateral-04-lossless.webp",
+    "before": 274,
+    "after": 138,
+    "width": 25,
+    "height": 25,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "9ecd0c4f52a66d0e7c0532af56373cbe76e9b0802880023b41dec960f920c9b1",
+    "sha256": "6649d40e7c1b8dfbb0ab8dc359e227655d82bd169d8f89e0966b29d7b827c1c7",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-lateral-05.png": {
+    "path": "assets/images/icon-lateral-05-lossless.webp",
+    "before": 551,
+    "after": 244,
+    "width": 26,
+    "height": 26,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "6322bf65360057622b114c8de7400b5dbd7c422dd3bd26a5ec45b2a83cf1cea1",
+    "sha256": "6ae7ba3195b72f2c2b323b97f0dcc48088f00b9e66bbe630c7e08307613e28e7",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-plataforma-01.png": {
+    "path": "assets/images/icon-plataforma-01-lossless.webp",
+    "before": 526,
+    "after": 230,
+    "width": 29,
+    "height": 29,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "0417e18f6bbf6e30e0c01acb831a09245a33355fa1ecd417d31f42577ae2645e",
+    "sha256": "3cebcb430e0a24e2ef91d2c1e49046526fdca91c50ee64b9cdf9de937d880a18",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-plataforma-02.png": {
+    "path": "assets/images/icon-plataforma-02-lossless.webp",
+    "before": 398,
+    "after": 174,
+    "width": 14,
+    "height": 21,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "0ef71ab02963c1ed0b3da6fc4b0c8e2fd9a784f7cf911086f837f8cd56d709b8",
+    "sha256": "884faa391dfb5d405ad6a0f9a51974bd52b97e2cd994a69f121318d78fdf114b",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-plataforma-03.png": {
+    "path": "assets/images/icon-plataforma-03-lossless.webp",
+    "before": 685,
+    "after": 276,
+    "width": 23,
+    "height": 22,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "a656491e9e50ded1ac249748d7dd24270f7d72852797142985b937e56108dc8d",
+    "sha256": "94b8ad2841ce88d2f7839a0bff7fb415045e591e29575a9b165a17c06fb7001f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-plataforma-04.png": {
+    "path": "assets/images/icon-plataforma-04-lossless.webp",
+    "before": 566,
+    "after": 226,
+    "width": 26,
+    "height": 26,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "59b0fb99611bc9c5419fcbadc57fbcf26f5f3109d8d90a4ad515b161a5bad75c",
+    "sha256": "e1e865eefc6c80832510b9bce6a55c44767a0b6ff5829a81c911da4a8158826b",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-quem-somos.png": {
+    "path": "assets/images/icon-quem-somos-lossless.webp",
+    "before": 647,
+    "after": 308,
+    "width": 41,
+    "height": 41,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "6c1aa1d066a3a283a3395173e7f62f917a14f293aaaf7ee9ff78a5d50e741db9",
+    "sha256": "81e9b39897738859ba5e213deae8814d897a8d7826871d1700ef525441439670",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-unidade-google-maps.png": {
+    "path": "assets/images/icon-unidade-google-maps-lossless.webp",
+    "before": 3830,
+    "after": 3366,
+    "width": 20,
+    "height": 27,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "863a982eddacbd6d24ee8febe00b982bc1b7b8d59e4c42f54be2007f57d643f4",
+    "sha256": "69823326b978723280d4ba6026d3925c0c9eb0b5017847ba954e788bafddf714",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-unidade-whatsapp.png": {
+    "path": "assets/images/icon-unidade-whatsapp-lossless.webp",
+    "before": 934,
+    "after": 386,
+    "width": 26,
+    "height": 26,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "80209e481645dd984daa3899bbacd8b0e539b7abe68eecd369e8c28a3cda3165",
+    "sha256": "03c48de602c71e81a4d62974fc1f63c80fdacda1408d82e3f75c37578ac9a4d9",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-business-01.png": {
+    "path": "assets/images/icon-vitrine-business-01-lossless.webp",
+    "before": 847,
+    "after": 416,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "ff7a941d09842a7f93af853a7a08aa1f720938fba239cb07be04db41850f53af",
+    "sha256": "e06499f57621b4218485b58c7f1000bb460d77f9842ce10d3dfe880dc498922e",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-business-02.png": {
+    "path": "assets/images/icon-vitrine-business-02-lossless.webp",
+    "before": 572,
+    "after": 224,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "6ea95da2da3a1d52801a2135a73dcf5fcd390b89522232a887a2f20fadf49c97",
+    "sha256": "3c18fcddf5e6e05f414fc3fc7133e75712e2d7fe73442be40ecce0c0da20d08a",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-business-03.png": {
+    "path": "assets/images/icon-vitrine-business-03-lossless.webp",
+    "before": 625,
+    "after": 304,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "e73282f6d25bb571bb9b73ca03d46b3a711411092b352b066fe58b3c81ce5dc3",
+    "sha256": "3bdaaa9ab52175a71bec75411cef8736af089960b4841954e097deb9a3a132e2",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-business-04.png": {
+    "path": "assets/images/icon-vitrine-business-04-lossless.webp",
+    "before": 650,
+    "after": 278,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "e36ad7a506eb3bf3fcab2d35120921865573ee2250cacadca3ae064798c95fa4",
+    "sha256": "f3c49a688fd692335bd512f009ed1c8051901c374d111d19d076fac40a13f28f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-live-class-01.png": {
+    "path": "assets/images/icon-vitrine-live-class-01-lossless.webp",
+    "before": 425,
+    "after": 162,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "cee5c82704ac145b29466a0f3930086d64d1b4bfdf3927a3d0384133021b4762",
+    "sha256": "d2ff4cb9c89b014be4922e66e7c3f52f4cb64a8452c9c317a4c776ed43a5d147",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-live-class-02.png": {
+    "path": "assets/images/icon-vitrine-live-class-02-lossless.webp",
+    "before": 576,
+    "after": 240,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "c9b0048f7756f23d2e1f5b1f0e1e88ead7849f2497ac9df03101be85487f68a3",
+    "sha256": "28df370344c2763603c0900b893f4cff2b6f94a76edd74f4ff4c4e2810ea7da1",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-live-class-03.png": {
+    "path": "assets/images/icon-vitrine-live-class-03-lossless.webp",
+    "before": 450,
+    "after": 174,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "4f2a2c2151ed38358cd250ed681b56b785bd8f47425e53bfb86f8c4f6125110b",
+    "sha256": "104381039423dbfa255d1c1031d9644d8b97c959f3a94cba3e35afbcbc23f144",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/icon-vitrine-live-class-04.png": {
+    "path": "assets/images/icon-vitrine-live-class-04-lossless.webp",
+    "before": 556,
+    "after": 218,
+    "width": 60,
+    "height": 60,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "cb73474890213f571ad4a2e017aa3773a5acb11780b55ac7e15368733bac22df",
+    "sha256": "514e26248a5193f83066705872eca11bab9060a45c32d8e4e0bd5caed8f0240a",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/img-tema-03.png": {
+    "path": "assets/images/img-tema-03-lossless.webp",
+    "before": 379075,
+    "after": 237534,
+    "width": 640,
+    "height": 426,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "99d053a766796700b5ee7f1d6cf4d38e08dc6bbef7675767a813b050c3804de9",
+    "sha256": "cd77ced0118c875d795bebf679aa08b9ac7062e7c2cd5db19ee704ffd4df78ab",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/img-tema-04.png": {
+    "path": "assets/images/img-tema-04-lossless.webp",
+    "before": 362488,
+    "after": 221958,
+    "width": 627,
+    "height": 418,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "7f93ab85c2fcef0aae197059a9dec78398b2625f28ca77e61e37689b5d08bc2f",
+    "sha256": "00e796c5bd72ff8f2d4fa82c86ac6f607c91a0db4e706831eafc8c3d8c0cfa49",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/logo-reclame-aqui.png": {
+    "path": "assets/images/logo-reclame-aqui-lossless.webp",
+    "before": 9518,
+    "after": 6406,
+    "width": 261,
+    "height": 45,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "12add0c57df144a7d9d33d656da10ac269d64a74e2a4e82ac6faec66cb1ab8f1",
+    "sha256": "5b77680b4dfc1fd7fe2107f08b637acbfe29c56ec527438a79e954861933049d",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/logo-united-idiomas.png": {
+    "path": "assets/images/logo-united-idiomas-lossless.webp",
+    "before": 5890,
+    "after": 2682,
+    "width": 258,
+    "height": 164,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "3bb63a15868f16fa05c6bd58f1fd87ceb9e319e841375c520bd2ea523ff08b36",
+    "sha256": "e2fab39da931b1cf625140e30c5a73ca817c6d66c60bec3d49d50ea28190220f",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/search.png": {
+    "path": "assets/images/search-lossless.webp",
+    "before": 579,
+    "after": 290,
+    "width": 34,
+    "height": 34,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "febf2334b4b90632620634a1cc61f5e2d4e0a5208c46f632ad1ae377bb063e50",
+    "sha256": "36a344350e2ebe722454f95fa0cdc41cf203c9a08d9bcea598b8d84f29ec5c66",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/selo-abf-2026-azul.png": {
+    "path": "assets/images/selo-abf-2026-azul-lossless.webp",
+    "before": 14697,
+    "after": 9912,
+    "width": 130,
+    "height": 130,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "c22a032afdde8e81abfb9540c2e674722bd03185811822c63e297b7cac8858a5",
+    "sha256": "a67008c409c10abdbce6901c81dd624c20b8bb0207c52b79fe8f4b19790c8757",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/selo-reclame-aqui.png": {
+    "path": "assets/images/selo-reclame-aqui-lossless.webp",
+    "before": 51345,
+    "after": 35342,
+    "width": 565,
+    "height": 119,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "1bbe40c04996c6d99fbe32a8dbeee3bdc01dff75408098512ecce01aef1aff54",
+    "sha256": "7798c5907f8d9e3d92dc24ada5e84f4270d8a0cc01e8de7076bbb98578077a29",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
+  },
+  "assets/images/telephone-fill.png": {
+    "path": "assets/images/telephone-fill-lossless.webp",
+    "before": 315,
+    "after": 156,
+    "width": 21,
+    "height": 22,
+    "lossless": true,
+    "rgba_pixels_exact": true,
+    "alpha_exact": true,
+    "source_sha256": "ec5f6313b837e6d97a7935a8669a76e2b3df7875f605954075d63b650e83d3ef",
+    "sha256": "49efef6817b0e3cd052c300c9ccfc090124790dbed9b9461d2083ef3ae389a9e",
+    "generator": "optimize-remaining-images.py",
+    "references": [
+      "css-declaration:assets/css/page-cursos-ae96efb2220c.css",
+      "css-declaration:assets/css/page-faq-7286a427df08.css",
+      "css-declaration:assets/css/page-home-50d3c10bf680.css",
+      "css-declaration:assets/css/page-quem-somos-5b4aa5d9b061.css",
+      "html-image:cursos/index.html",
+      "html-image:faq/index.html",
+      "html-image:index.html",
+      "html-image:quem-somos/index.html"
+    ],
+    "usage_note": "Static reference inventory; CSS can be unused or overridden. Not measured page transfer."
   }
 }

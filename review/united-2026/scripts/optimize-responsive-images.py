@@ -40,13 +40,13 @@ for name in ("institucional", "liveclass", "jimmy"):
             "selector": "#jimmy-united-idiomas img",
         }
     SPECS[f"assets/banners/{name}.webp"] = spec(
-        f"assets/banners/{name}.png", [480, 680, 768, 960, 1122], 90, PORTRAIT,
+        f"assets/banners/{name}.png", [480, 680, 768, 960, 1122], 85, PORTRAIT,
         contexts=contexts,
-        note="Full approved portrait, including baked-in text; no cropping. The 680px candidate covers a 388px slot at 1.75 DPR without jumping to 768px; text quality remains 90.")
+        note="Full approved portrait, including baked-in text; no cropping. The 680px candidate covers a 388px slot at 1.75 DPR without jumping to 768px. Quality 85 visually checked against 90 at mobile display size; dimensions and source artwork unchanged.")
     SPECS[f"assets/banners/{name}-wide.webp"] = spec(
-        f"assets/banners/{name}-wide.png", [960, 1280, 1600, 1800], 90, WIDE,
+        f"assets/banners/{name}-wide.png", [960, 1280, 1600, 1800], 85, WIDE,
         contexts={"hero": {"media": "(min-width:769px)", "sizes": WIDE}},
-        note="Full approved wide composition; CSS controls the existing crop.")
+        note="Full approved wide composition; CSS controls the existing crop. Quality 85 reduces bytes without changing dimensions, composition or text.")
 
 SPECS.update({
     "assets/images/bg-cursos.png": spec(

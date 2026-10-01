@@ -41,3 +41,13 @@
 .floating-button.floating-button--close[aria-label="Fale com a United pelo WhatsApp"] * {
   pointer-events:none!important;
 }
+/* The native WhatsApp popup is separate from the embedded form above. Keep
+   its editable controls legible without Safari's small-input focus zoom.
+   Do not restrict the viewport: manual pinch zoom remains available. */
+@media (max-width:768px), (pointer:coarse) {
+  .floating-button[aria-label="Fale com a United pelo WhatsApp"] input:not([type="hidden"]),
+  .floating-button[aria-label="Fale com a United pelo WhatsApp"] select,
+  .floating-button[aria-label="Fale com a United pelo WhatsApp"] textarea {
+    font-size:16px!important;
+  }
+}

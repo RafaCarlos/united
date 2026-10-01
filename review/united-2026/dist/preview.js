@@ -10,7 +10,9 @@
  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
  const mobile=window.matchMedia('(max-width:768px)');
  function readViewport(){
-  return {width:document.documentElement.clientWidth||window.innerWidth,height:window.visualViewport?window.visualViewport.height:window.innerHeight};
+  // Hero geometry follows the layout viewport. Safari's visual viewport also
+  // shrinks during input zoom/pinch zoom; using it would resize the artwork.
+  return {width:document.documentElement.clientWidth||window.innerWidth,height:window.innerHeight};
  }
  // Read before changing banner classes. Selecting a banner uses these cached
  // dimensions, avoiding a forced layout after each set of DOM writes.
@@ -47,12 +49,26 @@
   document.body.classList.toggle('preview-compact-header',width<1120);
  }
  function scheduleFit(){
-  if(fitFrame!==null)return;
+  if(document.hidden||fitFrame!==null)return;
   fitFrame=window.requestAnimationFrame(function(){
    fitFrame=null;
-   viewport=readViewport();
+   if(document.hidden)return;
+   const next=readViewport();
+   if(!next.width||!next.height)return;
+   viewport=next;
    fit();
   });
+ }
+ function restoreViewport(){scheduleFit();updateAutomatic();}
+ function pageRestored(){
+  if(fitFrame!==null){window.cancelAnimationFrame(fitFrame);fitFrame=null;}
+  restoreViewport();
+ }
+ function visibilityChanged(){
+  // Safari can suspend a queued frame while opening WhatsApp. Clear that
+  // ticket so a bfcache/app return always measures the current orientation.
+  if(document.hidden&&fitFrame!==null){window.cancelAnimationFrame(fitFrame);fitFrame=null;}
+  restoreViewport();
  }
  function select(index){
   active=(index+panels.length)%panels.length;
@@ -92,7 +108,9 @@
  // schedule redundant fits. Coalesce both viewport notifications per frame.
  window.addEventListener('resize',scheduleFit);
  window.addEventListener('resize',updateAutomatic);
- document.addEventListener('visibilitychange',updateAutomatic);
+ window.addEventListener('pageshow',pageRestored);
+ window.addEventListener('orientationchange',restoreViewport);
+ document.addEventListener('visibilitychange',visibilityChanged);
  if(playback)playback.addEventListener('click',function(){autoPaused=!autoPaused;updateAutomatic();});
  if(reducedMotion.addEventListener)reducedMotion.addEventListener('change',updateAutomatic);else reducedMotion.addListener(updateAutomatic);
  if('IntersectionObserver'in window)new IntersectionObserver(function(entries){heroVisible=entries[0].isIntersecting&&entries[0].intersectionRatio>=.25;updateAutomatic();},{threshold:[0,.25]}).observe(hero);

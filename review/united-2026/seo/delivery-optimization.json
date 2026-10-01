@@ -1,0 +1,437 @@
+{
+  "format": "united-delivery-optimization-v1",
+  "assetVersion": "2",
+  "assetReferences": 623,
+  "minifiers": {
+    "esbuild": "0.25.12",
+    "htmlMinifierTerser": "7.2.0",
+    "postcss": "8.5.28"
+  },
+  "types": {
+    "html": {
+      "files": 4,
+      "bytesBefore": 245555,
+      "bytesAfter": 214619,
+      "gzipBefore": 52026,
+      "gzipAfter": 49336
+    },
+    "css": {
+      "files": 22,
+      "bytesBefore": 830753,
+      "bytesAfter": 810782,
+      "gzipBefore": 139163,
+      "gzipAfter": 134368
+    },
+    "js": {
+      "files": 11,
+      "bytesBefore": 361039,
+      "bytesAfter": 320500,
+      "gzipBefore": 109323,
+      "gzipAfter": 104129
+    }
+  },
+  "files": [
+    {
+      "pathBefore": "assets/css/contact-forms.css",
+      "pathAfter": "assets/css/contact-forms.css",
+      "type": "css",
+      "bytesBefore": 1055,
+      "bytesAfter": 788,
+      "gzipBefore": 455,
+      "gzipAfter": 376,
+      "sha256": "63d69d8c7a7fb65e0edb56a4aee072cf13cb4daa047e30aa1b6802f808a50be1"
+    },
+    {
+      "pathBefore": "assets/css/page-cursos-6ab95bac48cf.css",
+      "pathAfter": "assets/css/page-cursos-5cd214d240bd.css",
+      "type": "css",
+      "bytesBefore": 146432,
+      "bytesAfter": 144504,
+      "gzipBefore": 23789,
+      "gzipAfter": 23272,
+      "sha256": "5cd214d240bd3794546395a83a642833de0941bcdba3cc248026f487b5bd0efb"
+    },
+    {
+      "pathBefore": "assets/css/page-faq-98cd895c8922.css",
+      "pathAfter": "assets/css/page-faq-4f1c8330d946.css",
+      "type": "css",
+      "bytesBefore": 135999,
+      "bytesAfter": 134324,
+      "gzipBefore": 22230,
+      "gzipAfter": 21768,
+      "sha256": "4f1c8330d9467e6d5404f8af60592ea02487e4d30161f897b464a3d6c2744f30"
+    },
+    {
+      "pathBefore": "assets/css/page-home-217294d5b3be.css",
+      "pathAfter": "assets/css/page-home-37cd9aa7059b.css",
+      "type": "css",
+      "bytesBefore": 167314,
+      "bytesAfter": 162761,
+      "gzipBefore": 28046,
+      "gzipAfter": 27003,
+      "sha256": "37cd9aa7059bccfd41e874b81e6ff606aa4fbf366d11f4d7cdca137559110083"
+    },
+    {
+      "pathBefore": "assets/css/page-quem-somos-341b46618319.css",
+      "pathAfter": "assets/css/page-quem-somos-4ebdf33b05e3.css",
+      "type": "css",
+      "bytesBefore": 137713,
+      "bytesAfter": 135946,
+      "gzipBefore": 22452,
+      "gzipAfter": 21989,
+      "sha256": "4ebdf33b05e3e25932c5124bc0e421909035d5048a7e59583c752744ee33a2d2"
+    },
+    {
+      "pathBefore": "assets/css/style.css",
+      "pathAfter": "assets/css/style.css",
+      "type": "css",
+      "bytesBefore": 162800,
+      "bytesAfter": 157970,
+      "gzipBefore": 18860,
+      "gzipAfter": 18752,
+      "sha256": "9b709d34379e89ee4f22d8e01c3e629f767cdc5736c015d3440966b14a58a0f6"
+    },
+    {
+      "pathBefore": "benefits.css",
+      "pathAfter": "benefits.css",
+      "type": "css",
+      "bytesBefore": 5084,
+      "bytesAfter": 4899,
+      "gzipBefore": 1612,
+      "gzipAfter": 1538,
+      "sha256": "6e7434fc08c401975d7596f2c3081250baf9b48daf18ac1da7edaadf3cfbab5f"
+    },
+    {
+      "pathBefore": "contact-preview.css",
+      "pathAfter": "contact-preview.css",
+      "type": "css",
+      "bytesBefore": 7807,
+      "bytesAfter": 6988,
+      "gzipBefore": 2136,
+      "gzipAfter": 1848,
+      "sha256": "1b825c3e0f8a49895b5fcbb3fb6787f46f65805e14cf10fd0f819f0fca62126f"
+    },
+    {
+      "pathBefore": "courses-compact.css",
+      "pathAfter": "courses-compact.css",
+      "type": "css",
+      "bytesBefore": 3976,
+      "bytesAfter": 3736,
+      "gzipBefore": 1212,
+      "gzipAfter": 1134,
+      "sha256": "ac6a11d017da1c172c930054604c2d861e04b592d3c88cc3b711c6033a878f2d"
+    },
+    {
+      "pathBefore": "footer-refinement.css",
+      "pathAfter": "footer-refinement.css",
+      "type": "css",
+      "bytesBefore": 6298,
+      "bytesAfter": 5893,
+      "gzipBefore": 1856,
+      "gzipAfter": 1736,
+      "sha256": "cf45ecdbd877eb507b8fca5c77004c5a66a8113578e155453ecbc720e3ce69bf"
+    },
+    {
+      "pathBefore": "interior-preview.css",
+      "pathAfter": "interior-preview.css",
+      "type": "css",
+      "bytesBefore": 3562,
+      "bytesAfter": 3408,
+      "gzipBefore": 1125,
+      "gzipAfter": 1085,
+      "sha256": "6369c00cc4b8c0b90b8ec2c14bf2f5e75424334ab03f48ac4340815ae6cadee7"
+    },
+    {
+      "pathBefore": "jimmy-current.css",
+      "pathAfter": "jimmy-current.css",
+      "type": "css",
+      "bytesBefore": 2672,
+      "bytesAfter": 2579,
+      "gzipBefore": 996,
+      "gzipAfter": 931,
+      "sha256": "701879e63737c0d0108802ff7c61e2ed6dd1c5f60ff80b178f32c7073b326edd"
+    },
+    {
+      "pathBefore": "liveclass-intro.css",
+      "pathAfter": "liveclass-intro.css",
+      "type": "css",
+      "bytesBefore": 3648,
+      "bytesAfter": 3534,
+      "gzipBefore": 1234,
+      "gzipAfter": 1173,
+      "sha256": "21f0445fc4635440a54fac13ec2bd2598a51977a47d402e68f27210cd8185054"
+    },
+    {
+      "pathBefore": "ondemand-current.css",
+      "pathAfter": "ondemand-current.css",
+      "type": "css",
+      "bytesBefore": 2548,
+      "bytesAfter": 2371,
+      "gzipBefore": 862,
+      "gzipAfter": 777,
+      "sha256": "f22875cd59c9dadf643d6298704d8bb32b4ce03eea14c2789f379d674ef38fd8"
+    },
+    {
+      "pathBefore": "preview.css",
+      "pathAfter": "preview.css",
+      "type": "css",
+      "bytesBefore": 12758,
+      "bytesAfter": 12178,
+      "gzipBefore": 3566,
+      "gzipAfter": 3237,
+      "sha256": "5f76fba755bfb3f6ba2f9ac5322b14d7b354e19dc7669b07dee229160266567f"
+    },
+    {
+      "pathBefore": "rdstation-form.css",
+      "pathAfter": "rdstation-form.css",
+      "type": "css",
+      "bytesBefore": 4809,
+      "bytesAfter": 4101,
+      "gzipBefore": 1331,
+      "gzipAfter": 985,
+      "sha256": "88b3a70f000a086fbc5874cf28efd9fd7a2f76dae52e55f44b8cc218f6e16f6f"
+    },
+    {
+      "pathBefore": "responsive-home.css",
+      "pathAfter": "responsive-home.css",
+      "type": "css",
+      "bytesBefore": 1969,
+      "bytesAfter": 1815,
+      "gzipBefore": 613,
+      "gzipAfter": 553,
+      "sha256": "e3cc3bc585b4a4144037143b2719bdd0cf3b7a0b0edb6a9bb454efe8f987d421"
+    },
+    {
+      "pathBefore": "seo-performance.css",
+      "pathAfter": "seo-performance.css",
+      "type": "css",
+      "bytesBefore": 3759,
+      "bytesAfter": 3527,
+      "gzipBefore": 1200,
+      "gzipAfter": 1070,
+      "sha256": "9343c6b19520028b8e14c8a509c7224c43340cb0d3184f03857dd01481c6c4d4"
+    },
+    {
+      "pathBefore": "shared-header.css",
+      "pathAfter": "shared-header.css",
+      "type": "css",
+      "bytesBefore": 8169,
+      "bytesAfter": 7800,
+      "gzipBefore": 1879,
+      "gzipAfter": 1779,
+      "sha256": "6c1ca7121b1086203099e552d972c97a746f703ae624baed4e06e743cfffab78"
+    },
+    {
+      "pathBefore": "site-polish.css",
+      "pathAfter": "site-polish.css",
+      "type": "css",
+      "bytesBefore": 9099,
+      "bytesAfter": 8907,
+      "gzipBefore": 2387,
+      "gzipAfter": 2306,
+      "sha256": "7f6933c84d526c09ed012c351efba759de88ca8c96c8f02700d1dcc2dfe046dc"
+    },
+    {
+      "pathBefore": "storytelling-preview.css",
+      "pathAfter": "storytelling-preview.css",
+      "type": "css",
+      "bytesBefore": 2226,
+      "bytesAfter": 2055,
+      "gzipBefore": 811,
+      "gzipAfter": 731,
+      "sha256": "98a72e39b035c83ea31ba11ed1dc560949cd505b1b3a74182a73ec43c7ee6b59"
+    },
+    {
+      "pathBefore": "theme.css",
+      "pathAfter": "theme.css",
+      "type": "css",
+      "bytesBefore": 1056,
+      "bytesAfter": 698,
+      "gzipBefore": 511,
+      "gzipAfter": 325,
+      "sha256": "6dcf40dbab64e0a77ed0e325107d236f90d0789ef84d07d638de8a16547200cb"
+    },
+    {
+      "pathBefore": "assets/js/dist/scripts-core.js",
+      "pathAfter": "assets/js/dist/scripts-core.js",
+      "type": "js",
+      "bytesBefore": 110393,
+      "bytesAfter": 111137,
+      "gzipBefore": 39390,
+      "gzipAfter": 39426,
+      "sha256": "4fa14d5012fc27544feacdefdf1a28e08e7462552d7c4c882178620b7a51b2ca"
+    },
+    {
+      "pathBefore": "assets/js/dist/scripts.js",
+      "pathAfter": "assets/js/dist/scripts.js",
+      "type": "js",
+      "bytesBefore": 203258,
+      "bytesAfter": 172783,
+      "gzipBefore": 53711,
+      "gzipAfter": 51878,
+      "sha256": "8c6ac9e5b9e433d43b133f98f59015e6f61473269d4c9f8187badb93c151249c"
+    },
+    {
+      "pathBefore": "benefits.js",
+      "pathAfter": "benefits.js",
+      "type": "js",
+      "bytesBefore": 1665,
+      "bytesAfter": 1430,
+      "gzipBefore": 671,
+      "gzipAfter": 621,
+      "sha256": "918018aebc2fcf6b5c33f209d5a95db8f183aaff7309ebd727b41a2371545fca"
+    },
+    {
+      "pathBefore": "contact-preview.js",
+      "pathAfter": "contact-preview.js",
+      "type": "js",
+      "bytesBefore": 6493,
+      "bytesAfter": 5456,
+      "gzipBefore": 2200,
+      "gzipAfter": 1879,
+      "sha256": "b1332d3cb25219ee02628e7ac681ff7835858a13b3b7e067ca22635368119c2f"
+    },
+    {
+      "pathBefore": "media-runtime.js",
+      "pathAfter": "media-runtime.js",
+      "type": "js",
+      "bytesBefore": 3558,
+      "bytesAfter": 3119,
+      "gzipBefore": 1315,
+      "gzipAfter": 1181,
+      "sha256": "f80b543dec654d643d5725897e9a60574d6c244aee02043b152b2f19fbd7af85"
+    },
+    {
+      "pathBefore": "preview.js",
+      "pathAfter": "preview.js",
+      "type": "js",
+      "bytesBefore": 7069,
+      "bytesAfter": 5833,
+      "gzipBefore": 2631,
+      "gzipAfter": 2049,
+      "sha256": "a285316aaa9e28a6fd09c1ef44a1c8c04842622c05c014d8657ec5fe5929b1c2"
+    },
+    {
+      "pathBefore": "rdstation-form.js",
+      "pathAfter": "rdstation-form.js",
+      "type": "js",
+      "bytesBefore": 8120,
+      "bytesAfter": 5746,
+      "gzipBefore": 2603,
+      "gzipAfter": 1891,
+      "sha256": "cf7a738f3a5185a8cbea155865c05acef11749c25a4dd1c15e62a9ca5172006c"
+    },
+    {
+      "pathBefore": "rdstation-whatsapp.js",
+      "pathAfter": "rdstation-whatsapp.js",
+      "type": "js",
+      "bytesBefore": 11110,
+      "bytesAfter": 7610,
+      "gzipBefore": 3397,
+      "gzipAfter": 2400,
+      "sha256": "54522b9dfbd5599f7ad1242fc4ec608a7d7d3cfd2a66a1fa93a8ec3d74664fe9"
+    },
+    {
+      "pathBefore": "responsive-home.js",
+      "pathAfter": "responsive-home.js",
+      "type": "js",
+      "bytesBefore": 1370,
+      "bytesAfter": 1275,
+      "gzipBefore": 576,
+      "gzipAfter": 554,
+      "sha256": "ff86e8ea2c8bc77708c859d23b535b435f4056a903bcad616d585874ad3378af"
+    },
+    {
+      "pathBefore": "shared-header.js",
+      "pathAfter": "shared-header.js",
+      "type": "js",
+      "bytesBefore": 2353,
+      "bytesAfter": 1836,
+      "gzipBefore": 925,
+      "gzipAfter": 735,
+      "sha256": "6275bb5eb660c431cd8cb6c4b2249d7d04fe4dce64e1c14678a38725c263d5d7"
+    },
+    {
+      "pathBefore": "site-refinement.js",
+      "pathAfter": "site-refinement.js",
+      "type": "js",
+      "bytesBefore": 5650,
+      "bytesAfter": 4275,
+      "gzipBefore": 1904,
+      "gzipAfter": 1515,
+      "sha256": "71bea2f7ce82b0d67a8eeb19a2d6585b41724e13bc47cd6f839a80e139962cf2"
+    },
+    {
+      "pathBefore": "cursos/index.html",
+      "pathAfter": "cursos/index.html",
+      "type": "html",
+      "bytesBefore": 52740,
+      "bytesAfter": 40859,
+      "gzipBefore": 10150,
+      "gzipAfter": 9362,
+      "sha256": "21fba8826a6958e2d11197c817cf4de4cbc1e75e663a3867d3e412b66dd8a5ef"
+    },
+    {
+      "pathBefore": "faq/index.html",
+      "pathAfter": "faq/index.html",
+      "type": "html",
+      "bytesBefore": 40440,
+      "bytesAfter": 36972,
+      "gzipBefore": 9384,
+      "gzipAfter": 9011,
+      "sha256": "7d38945c8cc9b4b4223662a3b882cf77fc10b8f6eb5b7dcb62451f2a358b8c0d"
+    },
+    {
+      "pathBefore": "index.html",
+      "pathAfter": "index.html",
+      "type": "html",
+      "bytesBefore": 108275,
+      "bytesAfter": 101122,
+      "gzipBefore": 23295,
+      "gzipAfter": 22376,
+      "sha256": "397f48e5b65db75f1922159d2de06b8a4ac191deee1a5f1f7f91f808392cca20"
+    },
+    {
+      "pathBefore": "quem-somos/index.html",
+      "pathAfter": "quem-somos/index.html",
+      "type": "html",
+      "bytesBefore": 44100,
+      "bytesAfter": 35666,
+      "gzipBefore": 9197,
+      "gzipAfter": 8587,
+      "sha256": "0ec528146d6d48dfd6d3024fbae21b72e617255161a5648a6226f47e27cceaed"
+    }
+  ],
+  "renamed": [
+    {
+      "from": "assets/css/page-cursos-6ab95bac48cf.css",
+      "to": "assets/css/page-cursos-5cd214d240bd.css"
+    },
+    {
+      "from": "assets/css/page-faq-98cd895c8922.css",
+      "to": "assets/css/page-faq-4f1c8330d946.css"
+    },
+    {
+      "from": "assets/css/page-home-217294d5b3be.css",
+      "to": "assets/css/page-home-37cd9aa7059b.css"
+    },
+    {
+      "from": "assets/css/page-quem-somos-341b46618319.css",
+      "to": "assets/css/page-quem-somos-4ebdf33b05e3.css"
+    }
+  ],
+  "validation": {
+    "runtime_tests_on_minified_js": 60,
+    "export_tests": 22,
+    "minification_tests": 5,
+    "critical_css_tests": 15,
+    "cache_redirect_tests": 15,
+    "crawl_tests": 13,
+    "failed": 0,
+    "lossless_images_verified": 68,
+    "browser": "Chrome desktop and 390px viewport; four pages, menu, FAQ, RD form and WhatsApp popup; no leads submitted; not physical iPhone validation"
+  },
+  "scope": "Local optimized export only. Aggregate file sizes include unused/build-reference assets; not measured network transfer or PageSpeed score.",
+  "git_push": false,
+  "production_deploy": false
+}

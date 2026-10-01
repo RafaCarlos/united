@@ -1,5 +1,21 @@
 # Formulário RD Station — configuração e validação
 
+## Estado atual — 24/09/2026
+
+A versão local carrega o SDK do formulário incorporado por demanda e mantém o loader da conta RD com `async`, além do GTM. Esta rodada ainda está em validação, sem envio ao GitHub, publicação no servidor ou novos envios reais de leads. O histórico datado abaixo registra os testes anteriores; ele não comprova recebimento de contatos pela versão atual.
+
+`rdstation-form.js` permanece no HTML com `defer`. Ele solicita o SDK oficial uma única vez quando recebe `united:rd-form-request` no elemento `[data-rd-contact]`, quando o formulário se aproxima a 300 px da área visível, recebe foco ou a URL aponta para `#contato`. `contact-preview.js` emite esse evento antes de mover o mesmo formulário para o diálogo. Não existe espera artificial por segundos nem diferenciação para ferramentas de desempenho. Navegadores sem `IntersectionObserver` e integrações com SDK já disponível inicializam imediatamente.
+
+O carregamento tem estados `idle`, `loading`, `ready` e `error`; o limite de 20 segundos começa na solicitação e cobre SDK e template. Erro de rede, exportação ausente ou exceção do SDK mostram a alternativa de recarregar. Uma resposta tardia pode recuperar o formulário. Abrir, fechar ou reabrir durante o carregamento não duplica scripts nem embeds. Nenhum desses estados significa envio de lead: a confirmação continua vinculada ao retorno do SDK após uma submissão.
+
+O loader `ee4f0815-8266-4fb5-ba25-416836b02312-loader.js`, o popup oficial de WhatsApp, a atribuição e as tags existentes foram preservados. O carregamento sob demanda do formulário principal não é aplicado ao loader nem ao popup. A URL oficial do SDK está legível em `src/rdstation-form.js`; não reinserir uma tag remota antecipada no HTML, pois isso desfaz a otimização.
+
+Para o problema relatado no Safari do iPhone, os campos editáveis do popup WhatsApp passaram de 14 px observados para 16 px, confirmados no navegador de teste. A escala manual da página continua disponível. Os controladores também restauram medidas e posição após `pageshow`, mudança de visibilidade, orientação e viewport, mantendo o atalho 12 px acima da barra “Quero conhecer”. O texto desse botão perdeu apenas a seta decorativa. **O retorno do WhatsApp ainda precisa ser validado em um iPhone físico com Safari**; teste automatizado ou viewport móvel no computador não substitui essa conferência.
+
+Os testes de carregamento em `scripts/test-rdstation-loading.cjs` complementam os testes anteriores do adaptador, sem rede externa nem submissões reais. A rodada completa de RD e banners passou em 49 testes. Evidências, limitações de desempenho e critérios de aceite estão em [DESEMPENHO-E-SAFARI-2026-09-24.md](DESEMPENHO-E-SAFARI-2026-09-24.md).
+
+## Histórico e configuração mantida
+
 As quatro páginas da prévia usam o formulário oficial fornecido pelo usuário. A integração foi iniciada em 16/09/2026 e posteriormente recebeu o novo ID `form-vamos-conversar-5ba05329ea8c88b5c10d`, por solicitação do usuário, mantendo `UA-42887237-1`. O envio é feito diretamente pelo RD Station; os formulários demonstrativos anteriores foram removidos e os controladores PHP legados não participam desse envio. O formulário de busca da FAQ continua independente.
 
 ## Configuração pública
@@ -42,7 +58,7 @@ A auditoria estática verificou quatro páginas e 147 dependências, sem erros; 
 
 Existe um único elemento de montagem por documento. Ele fica em `#contato`, junto ao rodapé, e é movido para o diálogo ao abrir o contato. Ao fechar, o mesmo elemento volta à posição original. A movimentação preserva os campos preenchidos e os eventos do formulário; não clonar o elemento, duplicar seu ID ou executar `createForm()` a cada abertura.
 
-Inicializar somente após o SDK estar disponível. O gerador SEO aplica `defer` ao SDK e aos controladores, preservando a ordem; o loader da conta RD mantém `async` como exceção. Uma chamada inline imediata após o SDK pode executar cedo demais. Manter a inicialização em `src/rdstation-form.js`, carregado após o SDK, sem inserir uma segunda chamada literal nas páginas.
+Inicializar somente após o SDK estar disponível. Até 23/09, o gerador SEO aplicava `defer` ao SDK remoto e ao adaptador, nessa ordem. **Desde 24/09, prevalece o carregamento por demanda descrito no início deste documento:** somente o adaptador local continua com `defer`; ele carrega o SDK e espera sua disponibilidade antes de criar o formulário. O loader da conta RD mantém `async`. Não inserir outra chamada inline ou uma segunda inicialização nas páginas.
 
 O SDK controla o formulário e seu envio. Não interceptar o submit para exibir sucesso fictício nem reativar `contactLead`, `contactForm` ou endpoints PHP antigos em paralelo. As URLs locais permanecem compatíveis com `/review/united-2026/dist/`; a URL externa do SDK deve ser preservada pelo normalizador.
 
@@ -50,7 +66,7 @@ O retorno de sucesso permanece na própria caixa de contato. Para cada tentativa
 
 O seletor de país está oculto por solicitação do usuário. Brasil (`BR`, +55) permanece fixo, com a máscara oficial do RD. Digitar DDD e número; não duplicar o código +55.
 
-Para reaplicar a integração e atualizar os artefatos, seguir a sequência de manutenção do `README.md`, começando por `scripts/update-contact-layout.py` e terminando pela auditoria e atualização dos manifestos.
+Para reaplicar a integração e atualizar os artefatos, seguir a sequência atual de manutenção do `README.md`, terminando pela auditoria e atualização dos manifestos. A sequência histórica começava por `scripts/update-contact-layout.py`; não executar esse gerador de componentes automaticamente sobre a rodada atual, pois pode restaurar HTML anterior. O passo final `update-seo-performance.py` mantém o contrato de carregamento por demanda.
 
 ## Verificação e confirmação de recebimento
 

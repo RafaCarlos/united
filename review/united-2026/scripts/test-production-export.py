@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from lxml import html
 
@@ -259,6 +260,49 @@ class ProductionExportTest(unittest.TestCase):
         self.assertEqual(process.returncode, 2)
         self.assertIn('--mode', process.stderr)
         self.assertFalse(self.out.exists())
+
+    def test_optimized_delivery_versions_assets_without_changing_sources_or_destinations(self):
+        before = self.snapshot()
+        result = exporter.export_site(self.package, self.out, 'production',
+                                      optimize=True, asset_version='2')
+        self.assertTrue(result['optimized'])
+        self.assertEqual(result['asset_version'], '2')
+        self.assertEqual(self.snapshot(), before)
+        site = self.out / 'site'
+        for route in exporter.COMMERCIAL_ROUTES:
+            document = html.document_fromstring((site / route).read_bytes())
+            prefix = '../' if '/' in route else ''
+            self.assertEqual(document.xpath('//link[@rel="canonical"]/@href'),
+                             ['https://www.unitedidiomas.com/' + route.removesuffix('index.html')])
+            self.assertEqual(document.xpath('//script[contains(@src,"rdstation-form.js")]/@src'),
+                             [prefix + 'rdstation-form.js?v=2'])
+            self.assertEqual(document.xpath('//script[contains(@src,"loader-scripts")]/@src'), [LOADER])
+            self.assertEqual(document.xpath('//script[@id="rdstation-forms-sdk"]/@src'), [SDK])
+            self.assertEqual(document.xpath('//a[@class="banner-whatsapp"]/@href'),
+                             ['https://api.whatsapp.com/send?phone=5511940040658'])
+            self.assertIn(prefix + 'cursos/', document.xpath('//a/@href'))
+            self.assertEqual(document.xpath('//*[@id=$mount]/@id', mount=MOUNT), [MOUNT])
+            self.assertTrue(document.xpath('//script[contains(@src,"rdstation-form.js") and @defer]'))
+        self.assertTrue((self.out / 'publication/asset-optimization.json').is_file())
+        self.assertEqual((site / 'robots.txt').read_bytes(), (self.seo / 'robots.txt').read_bytes())
+
+    def test_minifier_failure_leaves_previous_delivery_and_sources_intact(self):
+        self.export()
+        before = self.snapshot()
+        delivered = (self.out / 'site/index.html').read_bytes()
+        with patch.object(exporter, 'optimize_delivery', side_effect=exporter.ExportError('Minificação recusada')):
+            with self.assertRaisesRegex(exporter.ExportError, 'Minificação recusada'):
+                exporter.export_site(self.package, self.out, 'production', force=True, optimize=True)
+        self.assertEqual(self.snapshot(), before)
+        self.assertEqual((self.out / 'site/index.html').read_bytes(), delivered)
+
+    def test_invalid_asset_version_is_rejected_before_replacing_delivery(self):
+        self.export()
+        delivered = (self.out / 'site/index.html').read_bytes()
+        with self.assertRaisesRegex(exporter.ExportError, 'inteiro positivo'):
+            exporter.export_site(self.package, self.out, 'production', force=True,
+                                 optimize=True, asset_version='2&v=1')
+        self.assertEqual((self.out / 'site/index.html').read_bytes(), delivered)
 
 
 if __name__ == '__main__':

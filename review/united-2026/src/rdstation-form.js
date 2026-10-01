@@ -7,8 +7,14 @@
   const status = container.querySelector('[data-rd-status]');
   const error = container.querySelector('[data-rd-error]');
   const success = container.querySelector('[data-rd-success]');
+  const SDK_URL = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
   const attempts = new Map();
   let completed = false;
+  let requested = false;
+  let created = false;
+  let timeout;
+  let visibilityObserver = null;
+  container.dataset.rdLoadState = 'idle';
   function showConfirmation() {
     const originalUrl = attempts.get(window.location.hash);
     if (!originalUrl || completed) return;
@@ -53,12 +59,9 @@
   });
   function unavailable() {
     if (mount.querySelector('form')) return;
+    container.dataset.rdLoadState = 'error';
     status.hidden = true;
     error.hidden = false;
-  }
-  if (typeof window.RDStationForms !== 'function') {
-    unavailable();
-    return;
   }
   function hideHoneypots() {
     // These two readonly fields are RD's anti-spam controls, not visitor fields.
@@ -94,8 +97,6 @@
       });
     });
   });
-  countryObserver.observe(mount, {childList: true, subtree: true, attributes: true, attributeFilter: ['data-country', 'value', 'href']});
-  let timeout;
   const observer = new MutationObserver(function () {
     const rdForm = mount.querySelector('form');
     if (!rdForm) return;
@@ -108,19 +109,73 @@
     rdForm.addEventListener('submit', prepareConfirmation, true);
     status.hidden = true;
     error.hidden = true;
+    container.dataset.rdLoadState = 'ready';
     clearTimeout(timeout);
     observer.disconnect();
     container.dispatchEvent(new CustomEvent('united:rd-form-ready', {bubbles: true}));
   });
-  observer.observe(mount, {childList: true, subtree: true});
-  timeout = setTimeout(unavailable, 20000);
-  try {
-    // Keep the official RD form's fields, validation, captcha and submission flow.
-    new window.RDStationForms('form-vamos-conversar-5ba05329ea8c88b5c10d', 'UA-42887237-1').createForm();
-  } catch (exception) {
-    clearTimeout(timeout);
-    observer.disconnect();
-    countryObserver.disconnect();
-    unavailable();
+  function createForm() {
+    if (created) return;
+    if (typeof window.RDStationForms !== 'function') {
+      clearTimeout(timeout);
+      unavailable();
+      return;
+    }
+    created = true;
+    countryObserver.observe(mount, {childList: true, subtree: true, attributes: true, attributeFilter: ['data-country', 'value', 'href']});
+    observer.observe(mount, {childList: true, subtree: true});
+    try {
+      // Keep the official RD form's fields, validation, captcha and submission flow.
+      new window.RDStationForms('form-vamos-conversar-5ba05329ea8c88b5c10d', 'UA-42887237-1').createForm();
+    } catch (exception) {
+      clearTimeout(timeout);
+      observer.disconnect();
+      countryObserver.disconnect();
+      unavailable();
+    }
+  }
+  function requestForm() {
+    if (requested) return;
+    requested = true;
+    if (visibilityObserver) visibilityObserver.disconnect();
+    container.dataset.rdLoadState = 'loading';
+    status.hidden = false;
+    error.hidden = true;
+    // Count SDK and template loading together, starting at the actual request.
+    timeout = setTimeout(unavailable, 20000);
+    if (typeof window.RDStationForms === 'function') {
+      createForm();
+      return;
+    }
+    let script = document.getElementById('rdstation-forms-sdk');
+    const existing = Boolean(script);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = 'rdstation-forms-sdk';
+      script.src = SDK_URL;
+      script.async = true;
+    }
+    script.addEventListener('load', createForm, {once: true});
+    script.addEventListener('error', function () {
+      clearTimeout(timeout);
+      unavailable();
+    }, {once: true});
+    if (!existing) document.head.appendChild(script);
+  }
+  // The account loader and its attribution/WhatsApp tracking stay independent.
+  // Only the offscreen embedded form waits for an actual navigation intent.
+  container.addEventListener('united:rd-form-request', requestForm);
+  container.addEventListener('focusin', requestForm);
+  function requestHashTarget() {
+    if (window.location.hash === '#contato') requestForm();
+  }
+  window.addEventListener('hashchange', requestHashTarget);
+  if (typeof window.RDStationForms === 'function' || window.location.hash === '#contato' || typeof window.IntersectionObserver !== 'function') {
+    requestForm();
+  } else {
+    visibilityObserver = new window.IntersectionObserver(function (entries) {
+      if (entries.some(function (entry) { return entry.isIntersecting; })) requestForm();
+    }, {rootMargin: '300px'});
+    visibilityObserver.observe(container);
   }
 })();

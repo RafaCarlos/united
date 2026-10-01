@@ -21,7 +21,7 @@ bundle=DIST/'assets/js/dist/scripts.js';js=bundle.read_text()
 js=re.sub(r'/\* Progressive enhancement: native controls and source URLs also work without JS\. \*/.*?\}\(window, document\)\);', '/* Video playback is maintained in /media-runtime.js. */',js,flags=re.S)
 js=js.replace(r'/^#faq-\d+$/',r'/^#faq-[a-z0-9-]+$/')
 bundle.write_text(js)
-for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-form.js','rdstation-whatsapp.js','contact-preview.css','preview.css','preview.js','site-polish.css']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
+for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-form.js','rdstation-whatsapp.js','contact-preview.css','contact-preview.js','preview.css','preview.js','site-polish.css','site-refinement.js']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
 # Existing CSS targets H2 in the approved campaign. Preserve its appearance after semantic H1 correction.
 for filename in ['liveclass-intro.css']:
  p=ROOT/'src'/filename;s=p.read_text();s=re.sub(r'(?<![\w,-])h2(?![\w-])',':is(h1,h2)',s);p.write_text(s);(DIST/filename).write_text(s)
@@ -195,11 +195,14 @@ for route,meta in META.items():
   for source in v.findall('source'):
    for child in list(source):source.remove(child);v.append(child)
  if videos:etree.SubElement(d.find('body'),'script',src='/media-runtime.js?v='+digest(DIST/'media-runtime.js'),defer='defer')
- # Native UI is independent of RD: do not make opening menus/contact dialogs
- # wait for the third-party SDK. Keep the SDK ahead of its form initializer.
- sdk=d.xpath('//script[@id="rdstation-forms-sdk"]')
- if sdk:
-  anchor=sdk[0]
+ # The adapter requests the official form SDK on contact intent/proximity.
+ # Keep the account loader (WhatsApp and attribution) eager and unchanged.
+ for sdk in d.xpath('//script[@id="rdstation-forms-sdk" or contains(@src,"/rdstation-forms/stable/rdstation-forms.min.js")]'):
+  sdk.getparent().remove(sdk)
+ # Native UI and the lightweight RD adapter run before media enhancement.
+ initializers=d.xpath('//script[contains(@src,"rdstation-form.js")]')
+ if initializers:
+  anchor=initializers[0]
   independent={'rdstation-whatsapp.js','contact-preview.js','site-refinement.js','shared-header.js','media-runtime.js'}
   for script in d.xpath('//script[@src]'):
    if Path(urlsplit(script.get('src')).path).name in independent:anchor.addprevious(script)

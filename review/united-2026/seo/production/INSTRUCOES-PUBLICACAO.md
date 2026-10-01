@@ -1,16 +1,19 @@
 # Publicar a entrega de produção da United
 
-Esta revisão prepara arquivos para Rafael avaliar e integrar. O exportador não publica no servidor, não altera o PHP da raiz, não faz merge e não escreve no Git. Requer o Python com as dependências de `requirements-review.txt`.
+Esta revisão prepara arquivos para Rafael avaliar e integrar. O exportador não publica no servidor, não altera o PHP da raiz, não faz merge e não escreve no Git. Requer o Python com as dependências de `requirements-review.txt` e Node com as dependências fixadas em `package-lock.json`.
 
 ## Produção
 
 Na pasta `review/united-2026`, gerar uma cópia fora do repositório:
 
 ```bash
-python scripts/export-production.py --mode production --output /private/tmp/united-production-2026-09-18
+npm ci
+python scripts/export-production.py --mode production --optimize --asset-version 2 --output /private/tmp/united-production-v2
 ```
 
-O conteúdo para integração fica em `/private/tmp/united-production-2026-09-18/site/`. A pasta `publication/` contém estas instruções e, quando disponível, `apache-seo.conf`; ela não deve ser copiada para a raiz pública. O arquivo `.united-export.json` registra o modo e os hashes da exportação e também fica fora da raiz pública.
+O conteúdo para integração fica em `/private/tmp/united-production-v2/site/`. A pasta `publication/` contém estas instruções, `asset-optimization.json` com tamanhos antes/depois e, quando disponível, `apache-seo.conf`; ela não deve ser copiada para a raiz pública. O arquivo `.united-export.json` registra o modo, a versão e os hashes da exportação e também fica fora da raiz pública.
+
+`--optimize` minifica HTML/CSS/JavaScript e aplica `?v=2` aos recursos locais na cópia exportada. Não modifica URLs de RD/GTM, links de contato/navegação, canonical ou metadados. Na próxima entrega modificada, usar `--asset-version 3`, depois 4 etc.; manter o mesmo número pode reaproveitar arquivos antigos. Garantir revalidação do HTML e que a hospedagem/CDN considere a query; caches que a ignorem exigem ajuste ou invalidação pelo responsável. CSS com hash conserva nomes derivados do conteúdo final. Não sobrescrever os arquivos otimizados com cópias de `dist` após exportar.
 
 O modo de produção:
 
