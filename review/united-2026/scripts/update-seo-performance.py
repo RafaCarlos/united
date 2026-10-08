@@ -21,11 +21,11 @@ bundle=DIST/'assets/js/dist/scripts.js';js=bundle.read_text()
 js=re.sub(r'/\* Progressive enhancement: native controls and source URLs also work without JS\. \*/.*?\}\(window, document\)\);', '/* Video playback is maintained in /media-runtime.js. */',js,flags=re.S)
 js=js.replace(r'/^#faq-\d+$/',r'/^#faq-[a-z0-9-]+$/')
 bundle.write_text(js)
-for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-form.js','rdstation-whatsapp.js','contact-preview.css','contact-preview.js','preview.css','preview.js','site-polish.css','site-refinement.js']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
+for filename in ['media-runtime.js','seo-performance.css','rdstation-form.css','rdstation-form.js','rdstation-whatsapp.js','contact-preview.css','contact-preview.js','preview.css','preview.js','site-polish.css','footer-refinement.css','site-refinement.js']:(DIST/filename).write_bytes((ROOT/'src'/filename).read_bytes())
 # Existing CSS targets H2 in the approved campaign. Preserve its appearance after semantic H1 correction.
 for filename in ['liveclass-intro.css']:
  p=ROOT/'src'/filename;s=p.read_text();s=re.sub(r'(?<![\w,-])h2(?![\w-])',':is(h1,h2)',s);p.write_text(s);(DIST/filename).write_text(s)
-organization={'@type':'EducationalOrganization','@id':ORG,'name':'United Idiomas','url':BASE+'/',
+organization={'@type':'EducationalOrganization','@id':ORG,'name':'United Idiomas','alternateName':'United','url':BASE+'/',
  'logo':{'@type':'ImageObject','url':BASE+'/assets/brand/united-logo-512.png','width':512,'height':512},
  'sameAs':['https://www.instagram.com/unitedidiomas/','https://www.facebook.com/unitedinstitute/','https://br.linkedin.com/company/united-institute','https://www.youtube.com/@unitedidiomas']}
 prod=ROOT/'seo/production';prod.mkdir(exist_ok=True)
@@ -48,14 +48,14 @@ for route,meta in META.items():
  etree.SubElement(head,'link',rel='icon',href='/assets/brand/favicon-192.png',type='image/png',sizes='192x192')
  etree.SubElement(head,'link',rel='shortcut icon',href='/favicon.ico',type='image/x-icon')
  page={'@type':meta['type'],'@id':url+'#webpage','url':url,'name':meta['title'],'description':meta['description'],'inLanguage':'pt-BR','isPartOf':{'@id':BASE+'/#website'},'about':{'@id':ORG}}
- graph=[organization,{'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'United Idiomas','inLanguage':'pt-BR','publisher':{'@id':ORG}},page]
+ graph=[organization,{'@type':'WebSite','@id':BASE+'/#website','url':BASE+'/','name':'United Idiomas','alternateName':'United','inLanguage':'pt-BR','publisher':{'@id':ORG}},page]
  if route!='/':
   page['breadcrumb']={'@id':url+'#breadcrumb'}
   graph.append({'@type':'BreadcrumbList','@id':url+'#breadcrumb','itemListElement':[
    {'@type':'ListItem','position':1,'name':'United Idiomas','item':BASE+'/'},
    {'@type':'ListItem','position':2,'name':meta['name'],'item':url}]})
  if route=='/cursos/':
-  courses=[('Live Class','Curso de inglês online e ao vivo com trilha educacional de 18 meses, conversação ilimitada e horários flexíveis.','#live-class'),('United Business','Curso de inglês para comunicação em reuniões, apresentações e negócios.','#united-business')]
+  courses=[('Live Class',COPY['courses_intro'].split(' Conheça também')[0],'#live-class'),('United Business','Curso de inglês para comunicação em reuniões, apresentações e negócios.','#united-business')]
   for name,desc,anchor in courses:graph.append({'@type':'Course','@id':url+anchor,'name':name,'description':desc,'url':url+anchor,'inLanguage':'pt-BR','provider':{'@id':ORG}})
   page['hasPart']=[{'@id':url+a} for _,_,a in courses]
  if route=='/':
@@ -71,15 +71,20 @@ for route,meta in META.items():
   inner(h,COPY['home_heading'][0]);etree.SubElement(h,'br').tail='\n'+COPY['home_heading'][1]
   etree.SubElement(h,'br').tail='\n';etree.SubElement(h,'span').text=COPY['home_heading'][2]
   inner(d.xpath('//p[@class="liveclass-intro-description"]')[0],COPY['home_intro'])
+  inner(d.xpath('//p[@class="benefits-intro"]')[0],COPY['benefits_intro'])
+  inner(d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-duration ")]/p')[0],COPY['duration_benefit'])
   inner(d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-speaking ")]/p')[0],COPY['speaking_benefit'])
   inner(d.xpath('//*[@id="storytelling"]//div[@class="text"]/p')[0],COPY['storytelling'])
   inner(d.xpath('//*[@id="live-class"]//div[@class="texts"]/h3')[0],COPY['platform_heading'])
   inner(d.xpath('//p[@class="ondemand-intro"]')[0],COPY['ondemand_intro'])
+  inner(d.xpath('//p[@class="ondemand-intro"]/following-sibling::p[1]')[0],COPY['ondemand_body'])
   for card in d.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," benefit-card ")]'):
-   if 'On Demand' in card.find('h3').text_content():inner(card.find('p'),COPY['ondemand_benefit'])
+   if any(name in card.find('h3').text_content() for name in ('On Demand','OnDemand')):
+    inner(card.find('h3'),'United OnDemand.');inner(card.find('p'),COPY['ondemand_benefit'])
   for a in d.xpath('//a[normalize-space(text())="VEJA MAIS SOBRE O CURSO"]'):inner(a,'Conheça o curso de inglês Live Class')
  elif route=='/quem-somos/':
   h=d.xpath('//main//h1')[0];inner(h,'Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.')
+  inner(h.getparent().find('p'),COPY['about_intro'])
   for h in d.xpath('//main//h2'):
    if '100 mil' in h.text_content():inner(h,'Mais de 150 mil alunos em nossa história. Inglês que faz parte da vida.')
   methodology=d.xpath('//*[@id="metodologia-digital"]|//main//p[contains(text(),"Inglês real, sem decoreba")]')[0]
@@ -107,21 +112,29 @@ for route,meta in META.items():
   context=etree.SubElement(h,'span',{'class':'course-title-context'});context.text='Curso de inglês online e ao vivo';context.tail=' Live Class'
   intro=d.xpath('//*[@id="live-class"]/div[@class="top"]/div[@class="text wow fadeIn"]/p')[0]
   inner(intro,'O ');emphasis=etree.SubElement(intro,'strong');emphasis.text='Live Class';emphasis.tail=COPY['courses_intro'].removeprefix('O Live Class')
+  for heading in d.get_element_by_id('live-class').xpath('.//h2'):
+   if 'Aulas 100% ao vivo' in heading.text_content():inner(heading,'Aulas de inglês ao vivo com professores')
+   if any(label in heading.text_content() for label in ('Bônus:','Incluído no curso:')) and 'plataforma' in heading.text_content():
+    inner(heading,'Incluído no curso: ');emphasis=etree.SubElement(heading,'strong');emphasis.text='acesso à plataforma Live Class.'
   for heading in d.get_element_by_id('ondemand').xpath('.//li/h2'):
    if 'Conteúdo on-demand' in heading.text_content() or 'United OnDemand opcional' in heading.text_content():
-    inner(heading,'United OnDemand opcional: ');emphasis=etree.SubElement(heading,'strong');emphasis.text='inglês para viagens, negócios';emphasis.tail=' e temas atuais.'
+    inner(heading,'United OnDemand opcional: ');emphasis=etree.SubElement(heading,'strong');emphasis.text='atividades e exercícios interativos';emphasis.tail=' para ampliar sua prática.'
   for heading in d.xpath('//main//h4'):
    if heading.text_content().strip()=='O que você irá aprender:':
     heading.tag='h3'
     heading.set('class', (heading.get('class','')+' business-topics-heading').strip())
   for el in d.xpath('//main//p'):
-   if 'melhor Master Business' in el.text_content():inner(el,'Um curso de inglês para reuniões, apresentações, negociações e outros desafios profissionais.')
+   if any(label in el.text_content() for label in ('melhor Master Business','melhor United Business')):inner(el,'Um curso de inglês para reuniões, apresentações, negociações e outros desafios profissionais.')
  elif route=='/faq/':
   inner(d.xpath('//main//h1')[0],'Tire suas dúvidas sobre nossos cursos de inglês')
   for h in d.xpath('//main//h3'):
    if h.text_content().strip()=='Iniciando na United':h.tag='h2'
-  updates={4:'A metodologia combina aulas ao vivo e prática do idioma. Sua evolução depende do nível inicial, da frequência e da dedicação aos estudos.',6:'O United Full reúne o Live Class e o Master Business em uma jornada de 24 meses: uma base para a comunicação do dia a dia e a aplicação do inglês no ambiente profissional.',13:'O Business é voltado à comunicação profissional. A equipe avalia seu nível de inglês para indicar a trilha adequada.',14:'O United Business oferece a opção de certificação internacional mediante avaliação TOEIC. Consulte a equipe para conhecer as condições e o percurso recomendado.'}
+  updates={4:'A metodologia combina aulas ao vivo e prática do idioma. Sua evolução depende do nível inicial, da frequência e da dedicação aos estudos.',6:'O United Full reúne o Live Class e o United Business em uma jornada de 24 meses: uma base para a comunicação do dia a dia e a aplicação do inglês no ambiente profissional.',13:'O Business é voltado à comunicação profissional. A equipe avalia seu nível de inglês para indicar a trilha adequada.',14:'O United Business oferece a opção de certificação internacional mediante avaliação TOEIC. Consulte a equipe para conhecer as condições e o percurso recomendado.'}
   for n,text in updates.items():inner(d.get_element_by_id(f'faq-{n}-answer'),text)
+  for entry in COPY['faq_updates']:
+   inner(d.get_element_by_id(entry['id']+'-question'),entry['question'])
+   answer=d.get_element_by_id(entry['id']+'-answer');inner(answer,'')
+   etree.SubElement(answer,'p').text=entry['answer']
   article=d.xpath('//main//article')[0]
   for entry in COPY['faq_additions']:
    ident,q,a=entry['id'],entry['question'],entry['answer']
@@ -143,6 +156,15 @@ for route,meta in META.items():
     link=etree.SubElement(li,'a',href='#'+block.get('id'),**{'data-faq-id':block.get('id')});link.text=b.text_content()
  if route in ('/','/cursos/'):
   inner(d.xpath('//*[@id="jimmy-united-idiomas"]//div[@class="text"]/p[not(@class)]')[0],COPY['jimmy'])
+ for paragraph in d.xpath('//footer//div[@class="reach-details"]/div[1]/p'):
+  inner(paragraph,COPY['reach_ecosystem'])
+ # Keep public course labels consistent without changing URLs or archived references.
+ for element in d.xpath('//body//*[not(self::script or self::style or ancestor::script or ancestor::style)]'):
+  for slot in ('text','tail'):
+   value=getattr(element,slot)
+   if value:setattr(element,slot,value.replace('Master Business United','United Business').replace('Master Business','United Business'))
+ for link in d.xpath('//a[normalize-space(.)="Full" or normalize-space(.)="Business"]'):
+  inner(link,'United '+link.text_content().strip())
  # Link directly to the WordPress canonical host, preserving any query/fragment.
  for icon in d.xpath('//img[contains(@src,"icon-button-whatsapp.png")]|//a[contains(concat(" ",normalize-space(@class)," ")," banner-whatsapp ")]/img'):
   icon.set('src','/assets/images/icon-button-whatsapp.svg');icon.set('width','22');icon.set('height','22')

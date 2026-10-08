@@ -2,6 +2,18 @@
 
 Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.
 
+## Revisão de conteúdo e estabilidade — 08/10/2026
+
+Esta revisão parte da `main` em `6ec9ce9`, após a integração do PR #8. Atualiza textos, títulos, descrições e dados estruturados das quatro páginas, deixando explícitos o curso de inglês online e ao vivo, a trilha de 18 meses e a conversação ilimitada com professores e Jimmy no Live Class. OnDemand permanece opcional. A comunicação usa United; a identificação institucional e os dados estruturados preservam United Idiomas, com United como nome alternativo. O CSS evita transições de geometria na chegada da folha completa; animações de cor e opacidade permanecem.
+
+O envio ao Git foi autorizado em 08/10 após a conferência funcional. Passaram 100 testes automatizados (45 de RD/WhatsApp/carregamento, 15 de CSS crítico, 22 de exportação, 13 de rastreamento e 5 de minificação). A auditoria estática conferiu quatro páginas e 194 dependências, sem erros. A exportação otimizada v3 foi validada e testada no navegador, incluindo abertura do contato nas quatro páginas a 390 px, sem rolagem horizontal.
+
+Um envio autorizado na Home retornou “Mensagem enviada!” pelo fluxo oficial do RD, na própria caixa e sem redirecionar. O formulário WhatsApp encaminhou ao número geral correto; nenhuma mensagem foi enviada pelo WhatsApp. Recebimento no RD Marketing e encaminhamento ao CRM ainda exigem confirmação na conta. Detalhes e limites em [AUDITORIA.md](seo/AUDITORIA.md).
+
+As últimas medições de laboratório são de 06/10: medianas 72 mobile e 96 desktop; boas práticas 73; SEO, acessibilidade e navegação agêntica 100. Não são um novo PageSpeed desta revisão final. A meta mobile 80, o INP de campo, Blue/duplicidades de tags, Safari em iPhone físico e cache/compressão na hospedagem continuam pendentes. Este envio permite revisão por Rafael e não aprova nem executa publicação.
+
+Gerar esta entrega com `--asset-version 3`, para não reutilizar o cache da v2 já publicada. Os resultados datados abaixo são histórico.
+
 ## Envio para revisão — 30/09/2026
 
 O envio destas atualizações ao GitHub foi autorizado após a validação local da entrega WebP/minificada v2. A branch `codex/united-performance-v2-2026-09-30` parte da `main` em `d5929f8`, preservando as alterações incorporadas por Rafael. O escopo permanece exclusivamente em `review/united-2026/`, sem alterar PHP da raiz, fazer merge ou publicar na hospedagem.
@@ -57,7 +69,7 @@ Resultados medidos, limitações e sequência de geração em [OTIMIZACAO-LOCAL-
 
 ```bash
 npm ci
-python3 scripts/export-production.py --mode production --optimize --asset-version 2 --output /tmp/united-production
+python3 scripts/export-production.py --mode production --optimize --asset-version 3 --output /tmp/united-production-v3
 ```
 
 `site/` contém os arquivos publicáveis. `publication/` contém instruções, o relatório de minificação e o fragmento Apache opcional, que precisa ser mesclado ao servidor por Rafael. O exportador não envia arquivos e não escreve `.htaccess`. Detalhes em [INSTRUCOES-PUBLICACAO.md](seo/production/INSTRUCOES-PUBLICACAO.md) e [INTEGRACAO.md](seo/INTEGRACAO.md).
@@ -66,7 +78,7 @@ A produção sai sem rótulos de prévia e com rastreamento liberado. O robots a
 
 O modo `preview` permanece apenas como ferramenta de desenvolvimento isolada, documentada no exportador, e não é a entrega para publicação. Cópias antigas já públicas devem retornar `noindex` ou ser retiradas com 404/410 pelo responsável da hospedagem; não bloquear sua leitura no robots antes disso. Não publicar o repositório inteiro nem uma pasta `/review/` como substituto da raiz oficial.
 
-O exportador exclui comparação/debug e recusa bloqueios de rastreamento, canonical incorreto, título duplicado, sitemap incompleto e HTML fora das quatro páginas registradas. `--force` só atualiza uma exportação anterior deste pacote. **O formulário RD é real**, inclusive nos testes locais; não houve novos envios de contatos nesta revisão.
+O exportador exclui comparação/debug e recusa bloqueios de rastreamento, canonical incorreto, título duplicado, sitemap incompleto e HTML fora das quatro páginas registradas. `--force` só atualiza uma exportação anterior deste pacote. **O formulário RD é real**, inclusive nos testes locais; os envios autorizados de 08/10 estão descritos no início deste documento.
 
 ## Conteúdo para buscas e Search Console
 
@@ -105,7 +117,7 @@ Para reproduzir a nova compressão dos banners, execute `python3 scripts/optimiz
 - WhatsApp geral `5511940040658`; Parcerias & Convênios e Seja um Franqueado exclusivamente `5511958575315`.
 - Área do Aluno: `https://liveclass.app.br`. GTM `GTM-MTK74PV` preservado na Home.
 
-Os formulários demonstrativos já foram substituídos pelo RD. Recebimento no Marketing e criação de negócio no CRM são verificações distintas; os testes desta revisão não enviam contatos. Histórico e limites em [RD-STATION.md](seo/RD-STATION.md).
+Os formulários demonstrativos já foram substituídos pelo RD. Recebimento no Marketing e criação de negócio no CRM são verificações distintas. Os testes automatizados não enviam contatos; os testes autorizados no navegador em 08/10 constam de [AUDITORIA.md](seo/AUDITORIA.md). Histórico da integração em [RD-STATION.md](seo/RD-STATION.md).
 
 ## Blog, publicação e acompanhamento
 

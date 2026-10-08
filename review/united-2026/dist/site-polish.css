@@ -24,6 +24,10 @@ body{background-color:#fff}
 .review-card figcaption{border-top:1px solid #e7ecf2;padding-top:16px;margin-top:auto;font-size:15px;line-height:1.5;font-weight:800;color:var(--united-blue-primary)}
 .review-source{font-size:13px;font-weight:400;color:#65758b;display:block;margin-top:3px}
 .reviews-status{display:block;color:#5b6b81;font-size:13px;line-height:1.5;margin-top:10px}
+/* The legacy transition:all must not animate layout when async styles arrive. */
+.reviews-controls button,.review-read-more,.review-source,
+.course-compact .course-more,.plataforma .content .texts .center>a.button,
+#contato .container .text>a{transition:color .15s ease,background-color .15s ease,opacity .15s ease}
 
 #contato{background:#fff;padding:48px 24px;scroll-margin-top:28px}
 #contato .container{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:64px;max-width:1120px;width:100%;margin:0 auto;padding:0}
