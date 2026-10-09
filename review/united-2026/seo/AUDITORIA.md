@@ -1,3 +1,19 @@
+# Revisão de conteúdo, SEO e contato — 08/10/2026
+
+Revisão para Rafael sobre `main` em `6ec9ce9`, restrita a `review/united-2026/`, sem publicação. Textos aprovados para Live Class, professores e Jimmy, OnDemand opcional, United Business e United Full; metadados e dados estruturados coerentes nas quatro páginas. United é o nome comercial usado no texto; United Idiomas permanece na identificação institucional, com nome alternativo United nos dados de organização/site.
+
+Validação desta rodada: 100 testes aprovados (9 formulário, 24 WhatsApp, 12 carregamento RD, 15 CSS crítico, 22 exportação, 13 rastreamento, 5 minificação). Auditoria estática: quatro páginas e 194 dependências, sem erros. Exportação de produção otimizada com `--asset-version 3`: quatro páginas, 193 dependências locais, indexação permitida e recursos minificados. Os arquivos extras locais de comparação, cópias duplicadas de CSS e caches Python não compõem a entrega ao Git.
+
+No navegador, o SDK oficial carregou um formulário em cada uma das quatro páginas. Campos vazios foram bloqueados. Um envio com os dados de teste previamente autorizados retornou “Mensagem enviada!” dentro da caixa na Home, mantendo a URL. O formulário oficial do WhatsApp bloqueou campos vazios e, no teste autorizado preenchido, abriu `web.whatsapp.com/send` para `+5511940040658`. Nenhuma mensagem foi enviada no WhatsApp. Parcerias & Convênios e Seja um Franqueado preservam exclusivamente `5511958575315`; Área do Aluno preserva `https://liveclass.app.br`.
+
+Em viewport de 390 × 844, as quatro páginas e seus diálogos não excederam a largura disponível. Após o encaminhamento para WhatsApp, o atalho móvel permaneceu fixo acima de Quero conhecer e a navegação por âncora continuou funcionando. Isso não substitui teste de troca de aplicativo no Safari de um iPhone físico.
+
+O retorno visual do SDK e o encaminhamento ao WhatsApp foram observados; não foi capturada a resposta HTTP da conversão nem confirmada sua entrada na conta RD. Marketing e CRM continuam sendo verificações separadas. Os scripts RD e o loader não foram trocados nesta revisão.
+
+Limites de desempenho: as últimas três execuções por dispositivo, de 06/10, deram medianas 72 mobile e 96 desktop, boas práticas 73 e SEO/acessibilidade/navegação agêntica 100. São medições locais anteriores ao fechamento editorial, não notas PageSpeed desta entrega publicada. Meta mobile 80, INP de campo, correção da tag Blue, duplicidades de medição, Safari físico e configuração de cache/compressão na hospedagem continuam pendentes. O usuário autorizou o Git para revisão após a checagem funcional; não houve autorização nem execução de merge ou publicação no servidor.
+
+Os registros datados abaixo são históricos e não substituem o estado desta revisão.
+
 # Desempenho e WhatsApp móvel — 22/09/2026
 
 A revisão de desempenho usa a `main` em `2e47f7b`, preserva o conteúdo aprovado e concentra as alterações em `review/united-2026/`. Detalhes e baseline público em [OTIMIZACAO-LOCAL-2026-09-22.md](OTIMIZACAO-LOCAL-2026-09-22.md).

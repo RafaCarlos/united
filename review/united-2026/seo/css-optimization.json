@@ -194,8 +194,8 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 241554,
-    "bytes_after": 172046,
+    "bytes_before": 242228,
+    "bytes_after": 172720,
     "critical": {
       "strategy": "inline-critical-plus-complete-async-stylesheet",
       "critical_bytes": 51896,
@@ -215,7 +215,7 @@
         "contact-and-rd"
       ]
     },
-    "bytes_compacted": 167709
+    "bytes_compacted": 168220
   },
   "/cursos/": {
     "removed_animation_classes": [
@@ -406,9 +406,9 @@
       "zoomOutRight",
       "zoomOutUp"
     ],
-    "bytes_before": 217415,
-    "bytes_after": 149994,
-    "bytes_compacted": 146772
+    "bytes_before": 218089,
+    "bytes_after": 150668,
+    "bytes_compacted": 147283
   },
   "/quem-somos/": {
     "removed_animation_classes": [
@@ -605,9 +605,9 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 211041,
-    "bytes_after": 141017,
-    "bytes_compacted": 138053
+    "bytes_before": 211715,
+    "bytes_after": 141691,
+    "bytes_compacted": 138564
   },
   "/faq/": {
     "removed_animation_classes": [
@@ -816,8 +816,8 @@
       "zoomOutUp",
       "zoomPlat"
     ],
-    "bytes_before": 211041,
-    "bytes_after": 139303,
-    "bytes_compacted": 136339
+    "bytes_before": 211715,
+    "bytes_after": 139977,
+    "bytes_compacted": 136850
   }
 }

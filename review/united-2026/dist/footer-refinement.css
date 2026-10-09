@@ -43,6 +43,12 @@ footer .reach-details h4 { margin:0 0 8px;font-size:1.0625rem;line-height:1.4;fo
 footer .reach-details p { margin:0;font-size:1rem;line-height:1.65;color:#d9e6f3 }
 footer .reach-details a { display:inline-flex;align-items:center;gap:14px;min-height:44px;margin-top:6px;font-size:.875rem;font-weight:800;color:#fff;text-decoration:underline;text-underline-offset:4px }
 footer .reach-details a:hover { color:#bbd5ee }
+/* Preserve hover feedback without animating size, spacing or text metrics. */
+footer .container .infos ul li a,
+footer .container .infos .accordeon .open-item,
+footer .container .infos .footer-whatsapp-link,
+footer .container .infos .accordeon .content a,
+footer .reach-details a { transition:color .15s ease,background-color .15s ease,opacity .15s ease }
 footer .bar {
   height:auto;min-height:180px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:36px;
   padding:36px max(32px,calc((100vw - 1200px)/2)) 92px;background:#f4f7fb;

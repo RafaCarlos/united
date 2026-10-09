@@ -2,16 +2,16 @@
   "scope": "Production-ready static artifact, not published. Review copies require export-production.py --mode preview. Not a live crawl or Lighthouse score.",
   "pages": {
     "/": {
-      "title": "Inglês online e ao vivo: trilha de 18 meses | United Idiomas",
-      "description": "Conheça o inglês online e ao vivo da United: trilha de 18 meses, conversação, storytelling e prática com o Jimmy, a IA disponível 24/7.",
-      "h1": "Inglês online.\nAulas ao vivo.\nFale inglês.",
+      "title": "Curso de inglês online e ao vivo | United Idiomas",
+      "description": "Curso de inglês online e ao vivo da United: trilha de 18 meses e conversação ilimitada com professores e Jimmy, nossa IA para praticar em tempo real.",
+      "h1": "Curso de inglês\nonline e\nao vivo.",
       "images": 41,
       "videos": 3,
       "stylesheets": 1
     },
     "/cursos/": {
       "title": "Cursos de inglês: Live Class e Business | United Idiomas",
-      "description": "Compare Live Class e United Business: aulas de inglês ao vivo, trilhas de estudo e prática de conversação para o dia a dia e o contexto profissional.",
+      "description": "Conheça o Live Class, com aulas de inglês online ao vivo e conversação ilimitada com professores e Jimmy, e o United Business para a comunicação profissional.",
       "h1": "Curso de inglês online e ao vivo Live Class",
       "images": 38,
       "videos": 3,
@@ -19,15 +19,15 @@
     },
     "/quem-somos/": {
       "title": "Escola de inglês United Idiomas | Quem somos",
-      "description": "Conheça a United Idiomas, sua metodologia comunicativa, os recursos de aprendizagem e as unidades híbridas que conectam pessoas ao inglês.",
+      "description": "Conheça a United Idiomas, escola de inglês com aulas online ao vivo, metodologia comunicativa, recursos digitais e unidades presenciais ou híbridas selecionadas.",
       "h1": "Há mais de 17 anos, uma escola de inglês que conecta pessoas e oportunidades.",
       "images": 27,
       "videos": 1,
       "stylesheets": 1
     },
     "/faq/": {
-      "title": "Inglês em 18 meses e conversação: dúvidas | United Idiomas",
-      "description": "Tire dúvidas sobre a trilha de inglês em 18 meses, aulas online e ao vivo, conversação, Jimmy 24/7 e o acesso opcional ao United OnDemand.",
+      "title": "Curso de inglês online: dúvidas sobre o Live Class | United",
+      "description": "Tire dúvidas sobre o curso de inglês online Live Class: aulas ao vivo, agendamento, turmas, conversação ilimitada com professores e Jimmy e OnDemand opcional.",
       "h1": "Tire suas dúvidas sobre nossos cursos de inglês",
       "images": 18,
       "videos": 0,

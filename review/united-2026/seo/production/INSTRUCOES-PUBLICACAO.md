@@ -8,12 +8,12 @@ Na pasta `review/united-2026`, gerar uma cópia fora do repositório:
 
 ```bash
 npm ci
-python scripts/export-production.py --mode production --optimize --asset-version 2 --output /private/tmp/united-production-v2
+python scripts/export-production.py --mode production --optimize --asset-version 3 --output /private/tmp/united-production-v3
 ```
 
 O conteúdo para integração fica em `/private/tmp/united-production-v2/site/`. A pasta `publication/` contém estas instruções, `asset-optimization.json` com tamanhos antes/depois e, quando disponível, `apache-seo.conf`; ela não deve ser copiada para a raiz pública. O arquivo `.united-export.json` registra o modo, a versão e os hashes da exportação e também fica fora da raiz pública.
 
-`--optimize` minifica HTML/CSS/JavaScript e aplica `?v=2` aos recursos locais na cópia exportada. Não modifica URLs de RD/GTM, links de contato/navegação, canonical ou metadados. Na próxima entrega modificada, usar `--asset-version 3`, depois 4 etc.; manter o mesmo número pode reaproveitar arquivos antigos. Garantir revalidação do HTML e que a hospedagem/CDN considere a query; caches que a ignorem exigem ajuste ou invalidação pelo responsável. CSS com hash conserva nomes derivados do conteúdo final. Não sobrescrever os arquivos otimizados com cópias de `dist` após exportar.
+`--optimize` minifica HTML/CSS/JavaScript e aplica `?v=3` aos recursos locais na cópia exportada desta revisão de 08/10. Não modifica URLs de RD/GTM, links de contato/navegação, canonical ou metadados. Na próxima entrega modificada, usar `--asset-version 4`, depois 5 etc.; manter o mesmo número pode reaproveitar arquivos antigos. Garantir revalidação do HTML e que a hospedagem/CDN considere a query; caches que a ignorem exigem ajuste ou invalidação pelo responsável. CSS com hash conserva nomes derivados do conteúdo final. Não sobrescrever os arquivos otimizados com cópias de `dist` após exportar.
 
 O modo de produção:
 

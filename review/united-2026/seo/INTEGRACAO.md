@@ -2,7 +2,13 @@
 
 Esta entrega atualiza o pacote revisável no GitHub. Não publica na hospedagem, não modifica o PHP de produção da raiz e não instala nada no WordPress.
 
-Em 30/09, o usuário autorizou o envio ao Git da entrega WebP/minificada v2 após 130 testes locais aprovados. A branch de revisão parte da `main` em `d5929f8`. A meta pública de desempenho 80 e a validação em Safari físico continuam pendentes antes da liberação de produção; as notas e restrições de envio registradas nas rodadas anteriores abaixo são históricas.
+## Revisão atual — 08/10/2026
+
+A branch `codex/united-seo-2026-10-08` parte de `main` em `6ec9ce9`, preservando o PR #8 integrado por Rafael. O usuário autorizou o envio ao Git após a validação de contato e WhatsApp. Textos e metadados das quatro páginas foram revisados, e transições de geometria foram removidas para estabilizar o carregamento. A entrega atual usa a versão de recursos **3**; as referências à v2 nas seções datadas são históricas.
+
+Os testes de 08/10 confirmaram abertura do formulário nas quatro páginas, bloqueio de campos vazios, retorno de sucesso do SDK na Home e encaminhamento do popup WhatsApp ao número correto. Marketing/CRM precisam de confirmação na conta. As pendências de desempenho e tags continuam documentadas no README; envio ao Git não equivale a publicação ou aprovação da meta 80.
+
+Em 30/09, o usuário autorizou o envio ao Git da entrega WebP/minificada v2 após 130 testes locais aprovados. A branch de revisão partia da `main` em `d5929f8`. As notas e restrições de envio registradas nas rodadas anteriores abaixo são históricas.
 
 ## Atualização local de 24/09/2026 — antes de integrar
 
@@ -16,7 +22,7 @@ O SDK do formulário incorporado passou a ser solicitado pelo adaptador local qu
 
 `dist/` contém os quatro HTML comerciais preparados para produção. Desde esta revisão, o gerador aplica `index,follow,max-image-preview:large`, remove os rótulos de prévia e mantém o robots e o sitemap comerciais. Para revisão, **exportar com `--mode preview`**, que acrescenta `noindex,nofollow` e bloqueio no robots somente na cópia exportada. Não reutilizar instruções antigas que tratavam `dist` como prévia bloqueada.
 
-Após `npm ci`, exportar com `python3 scripts/export-production.py --mode production --optimize --asset-version 2 --output /tmp/united-production`. A saída `site/` é o conteúdo estático minificado, com recursos locais `?v=2`; `publication/` contém instruções e relatório de tamanhos separados. Nenhum modo altera o servidor. A cada entrega posterior modificada, incrementar a versão. Preservar a query na chave de cache da hospedagem/CDN e revalidar HTML. Para integrar ao PHP em vez de publicar os HTMLs, usar os recursos e estilos da Home exportada e `production/*-head.html` como referência de metadados, sem duplicar títulos, canonical ou JSON-LD; não misturar os URLs de scripts/CSS antigos com os da cópia minificada.
+Após `npm ci`, exportar com `python3 scripts/export-production.py --mode production --optimize --asset-version 3 --output /tmp/united-production-v3`. A saída `site/` é o conteúdo estático minificado, com recursos locais `?v=3`; `publication/` contém instruções e relatório de tamanhos separados. Nenhum modo altera o servidor. A cada entrega posterior modificada, incrementar a versão. Preservar a query na chave de cache da hospedagem/CDN e revalidar HTML. Para integrar ao PHP em vez de publicar os HTMLs, usar os recursos e estilos da Home exportada e `production/*-head.html` como referência de metadados, sem duplicar títulos, canonical ou JSON-LD; não misturar os URLs de scripts/CSS antigos com os da cópia minificada.
 
 Antes da publicação, Rafael deve conferir o documento-raiz e preservar `/blog/`, uploads e regras PHP existentes. Fazer backup da configuração atual e mesclar o fragmento `production/apache-seo.conf`; não substituir cegamente `.htaccess`. O fragmento documenta módulos, precedência e a condição de HTTPS atrás de proxy. Regras de cache/compressão dependem da hospedagem.
 
@@ -39,7 +45,7 @@ As prévias públicas em `/review/` e a comparação interna devem responder `X-
 
 ## Conteúdo e dados estruturados
 
-A Home explicita “Inglês online. Aulas ao vivo. Fale inglês.” no H1, mantendo o desenho aprovado. Títulos e descrições específicos, um H1 por página e canonicals absolutos são gerados de `metadata.json`. O texto principal de Cursos informa a modalidade; FAQ aponta para as seções de cursos. BreadcrumbList descreve a hierarquia das páginas internas.
+A Home explicita “Curso de inglês online e ao vivo.” no H1, mantendo o desenho aprovado. Títulos e descrições específicos, um H1 por página e canonicals absolutos são gerados de `metadata.json`. O texto principal de Cursos informa a modalidade; FAQ aponta para as seções de cursos. BreadcrumbList descreve a hierarquia das páginas internas.
 
 As seis unidades ganharam âncoras estáveis, links de mapa e dados Place com o mesmo nome, endereço e telefone exibidos. Não foram inventados CEP, coordenadas, horários, avaliações ou municípios. Completar essas informações com os responsáveis antes de criar páginas locais e dados de negócio mais detalhados. Não há promessa de rich result de FAQ/curso ou de posicionamento.
 
@@ -51,7 +57,7 @@ Preservar o evento `united:rd-form-request` que `contact-preview.js` envia ao el
 
 A confirmação de envio continua dentro da caixa, depois do sucesso indicado pelo SDK. Não reativar forms demonstrativos, endpoints PHP paralelos ou página de obrigado. O WhatsApp geral continua `5511940040658`; os dois links exclusivos do rodapé continuam `5511958575315`. O GTM adicionado por Rafael na Home foi preservado. Esta revisão não decide quais eventos ou tags devem ser ativados na conta GTM/RD.
 
-Validar uma conversão autorizada após a publicação, conferir Marketing e depois o gatilho Marketing → CRM. Nenhum lead foi enviado nos testes de SEO. Instalar a extensão opcional do blog somente pelo fluxo WordPress descrito em `wordpress/README.md`; ela não modifica o RD nem publica conteúdo novo.
+Validar uma conversão autorizada após a publicação, conferir Marketing e depois o gatilho Marketing → CRM. Os testes funcionais autorizados de 08/10 retornaram sucesso do SDK e encaminhamento ao WhatsApp, sem acesso à conta para confirmar recebimento. Instalar a extensão opcional do blog somente pelo fluxo WordPress descrito em `wordpress/README.md`; ela não modifica o RD nem publica conteúdo novo.
 
 ## Aceite após publicação
 
