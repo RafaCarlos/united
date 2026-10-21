@@ -1,0 +1,23 @@
+{
+  "id": "editorial-substituir-slug",
+  "slug": "substituir-slug",
+  "title": "Título claro do novo artigo",
+  "seoTitle": "",
+  "excerpt": "Substitua por um resumo fiel de uma ou duas frases, explicando o que o leitor encontrará.",
+  "date": "2026-10-21",
+  "modified": "2026-10-21",
+  "status": "draft",
+  "topic": "aprendizado",
+  "authors": [{ "name": "Redação United", "url": "https://www.unitedidiomas.com/quem-somos/" }],
+  "bodyFile": "substituir-slug.html",
+  "localImage": {
+    "large": "assets/substituir-slug.webp",
+    "thumb": "assets/substituir-slug-640.webp",
+    "width": 1200,
+    "height": 675,
+    "thumbWidth": 640,
+    "thumbHeight": 360
+  },
+  "featuredImage": { "alt": "Descreva o que aparece na imagem, sem repetir palavras-chave artificialmente." },
+  "imageCaption": ""
+}

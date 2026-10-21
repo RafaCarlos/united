@@ -1,0 +1,165 @@
+[
+  {
+    "key": "cenas",
+    "label": "Histórias em cena",
+    "unit": "REACH 4 SERIES · VIVA A HISTÓRIA",
+    "title": "Você se envolve com a história. E encontra seu lugar na conversa.",
+    "text": "Encontros com amigos, momentos da rotina e desafios no trabalho. Os personagens dão contexto ao inglês e conectam cada unidade a situações que você pode viver.",
+    "skills": [
+      "Histórias conectadas",
+      "Inglês em contexto",
+      "Conversação"
+    ],
+    "scenes": [
+      [
+        "historia-amigos",
+        "ENCONTROS",
+        "Uma história aproxima. Uma conversa conecta.",
+        "Quatro personagens da United conversam em uma sala com vista para Nova York"
+      ],
+      [
+        "historia-rotina-parque",
+        "ROTINA EM MOVIMENTO",
+        "Seu dia também conta uma história.",
+        "Dean corre pelo parque com os prédios de Nova York ao fundo"
+      ],
+      [
+        "historia-escritorio",
+        "SITUAÇÕES DO DIA A DIA",
+        "Ideias que ganham voz.",
+        "Personagens da United trocam ideias junto a um computador no escritório"
+      ]
+    ]
+  },
+  {
+    "key": "mundo",
+    "label": "Pelo mundo",
+    "unit": "REACH 4 SERIES · NOVOS HORIZONTES",
+    "title": "Novos lugares. Novas pessoas. Mais histórias para contar.",
+    "text": "Uma chegada a Nova York, uma ligação entre cidades e encontros pelo caminho. As histórias conectam lugares e pessoas para você praticar apresentações, perguntas e conversas em inglês.",
+    "skills": [
+      "Lugares e culturas",
+      "Apresentações",
+      "Conversação"
+    ],
+    "scenes": [
+      [
+        "historia-nova-york",
+        "NOVOS LUGARES",
+        "O mundo entra na conversa.",
+        "Personagens conversam em um apartamento com vista para Nova York"
+      ],
+      [
+        "historia-ligacao",
+        "CONEXÕES",
+        "Uma ligação aproxima.",
+        "Personagens conversam por telefone entre Nova York e o Rio de Janeiro"
+      ],
+      [
+        "historia-carona",
+        "ENCONTROS PELO CAMINHO",
+        "Todo encontro tem uma história.",
+        "Dois personagens conversam ao lado de um carro com a cidade ao fundo"
+      ]
+    ]
+  },
+  {
+    "key": "encontro",
+    "label": "Um encontro",
+    "unit": "REACH 4 SERIES · PLANOS QUE CONECTAM",
+    "title": "Um convite, uma resposta. E a conversa ganha novos caminhos.",
+    "text": "Combinar um horário, fazer um convite e escolher o que pedir no restaurante. Acompanhe os personagens e veja como expressar preferências, sugerir planos e responder em inglês.",
+    "skills": [
+      "Convites e horários",
+      "Preferências",
+      "Diálogos"
+    ],
+    "scenes": [
+      [
+        "historia-restaurante",
+        "À MESA",
+        "Seu pedido também é uma conversa.",
+        "Personagens escolhem o jantar e conversam com o garçom"
+      ],
+      [
+        "historia-porta",
+        "HORA DO ENCONTRO",
+        "Um convite para continuar a história.",
+        "Uma personagem abre a porta para receber o amigo"
+      ],
+      [
+        "historia-convite-noturno",
+        "UM CONVITE POR TELEFONE",
+        "A conversa começa antes do encontro.",
+        "Dois personagens conversam por telefone à noite, em seus apartamentos"
+      ]
+    ]
+  },
+  {
+    "key": "cotidiano",
+    "label": "Dia a dia",
+    "unit": "REACH 4 SERIES · O INGLÊS NA SUA ROTINA",
+    "title": "Grandes histórias começam nas conversas de todo dia.",
+    "text": "No mercado, no escritório ou ao enviar uma carta: o inglês aparece em situações próximas da sua rotina. Os personagens conectam vocabulário e diálogo para você compreender, perguntar e se expressar.",
+    "skills": [
+      "Vocabulário em uso",
+      "Rotina e trabalho",
+      "Compreensão"
+    ],
+    "scenes": [
+      [
+        "historia-mercado",
+        "NA ROTINA",
+        "Inglês para as escolhas do dia.",
+        "Personagens conversam enquanto fazem compras no mercado"
+      ],
+      [
+        "historia-colegas",
+        "NO TRABALHO",
+        "Troque ideias. Conte com alguém.",
+        "Dois colegas conversam em um escritório com iluminação azul"
+      ],
+      [
+        "historia-correio-cena",
+        "ENCONTROS DO COTIDIANO",
+        "Até uma carta abre uma conversa.",
+        "Três personagens conversam no correio, dois deles segurando envelopes"
+      ]
+    ]
+  },
+  {
+    "key": "paris",
+    "label": "Em Paris",
+    "unit": "UNIT 14 · LEAVING FOR PARIS",
+    "title": "Uma viagem em família. Novas descobertas em cada conversa.",
+    "text": "Da despedida à chegada ao hotel, até um passeio por Paris. Acompanhe a família e pratique o inglês para falar sobre planos, pedir informações e compreender o que acontece durante a viagem.",
+    "skills": [
+      "Viagens e planos",
+      "Perguntas e respostas",
+      "Compreensão"
+    ],
+    "scenes": [
+      [
+        "historia-paris-passeio",
+        "NOVAS DESCOBERTAS",
+        "Cada lugar abre uma conversa.",
+        "Família e guia conversam perto da Torre Eiffel durante um passeio em Paris",
+        "left"
+      ],
+      [
+        "historia-paris-partida",
+        "ANTES DE PARTIR",
+        "Novos planos começam aqui.",
+        "Família com malas se despede de uma amiga antes da viagem",
+        "left"
+      ],
+      [
+        "historia-paris-hotel",
+        "A CHEGADA",
+        "Seu inglês acompanha a viagem.",
+        "Família chega à recepção de um hotel em Paris com suas malas",
+        "left"
+      ]
+    ]
+  }
+]

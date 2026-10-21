@@ -1,0 +1,79 @@
+{
+  "id": "united-release",
+  "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
+  "title": "United: aulas ao vivo, tecnologia e 18 anos de histórias com o inglês",
+  "seoTitle": "United: inglês online, aulas ao vivo e tecnologia própria",
+  "excerpt": "Conheça a trajetória da United: 150 mil alunos, selos da ABF e um curso de inglês online que conecta aulas ao vivo, conversação ilimitada e inteligência artificial.",
+  "date": "2026-10-11",
+  "dateIsDraftDate": true,
+  "type": "release",
+  "topic": "united",
+  "author": "Redação United",
+  "authors": [
+    {
+      "name": "Redação United",
+      "url": "https://www.unitedidiomas.com/quem-somos/"
+    }
+  ],
+  "status": "local-draft",
+  "bodyFile": "united-release.html",
+  "proposedCanonicalUrl": "https://unitedidiomas.com/blog/united-ingles-online-aulas-ao-vivo-tecnologia/",
+  "sourceNotes": {
+    "purpose": "Informações de apuração para revisão editorial; não renderizar sourceNotes no corpo do artigo.",
+    "verifiedOn": "2026-10-11",
+    "institutionalNumbers": {
+      "origin": "Informações expressamente fornecidas pelo usuário nesta conversa e presentes na página institucional local aprovada.",
+      "values": {
+        "studentsOverBrandHistory": 150000,
+        "experienceYears": 18,
+        "liveClassesPerYear": 100000,
+        "teachers": "+100",
+        "countries": "+20",
+        "teacherRating": "5 estrelas, avaliação dos professores pelos alunos"
+      },
+      "scope": "Atribuídos à United. Não representam estatísticas auditadas de forma independente. 150 mil é o acumulado histórico, não alunos ativos. Cinco estrelas refere-se à avaliação de professores; não é nota agregada do Google, Reclame Aqui ou plataforma de terceiros.",
+      "headquarters": "São Paulo; presença principalmente digital com unidades presenciais no Brasil.",
+      "liveClassesUpdate": {
+        "confirmedOn": "2026-10-12",
+        "origin": "Contagem corrigida e informada pelo usuário nesta conversa.",
+        "value": 100000,
+        "period": "por ano",
+        "scope": "Aulas ao vivo realizadas na plataforma própria da United."
+      }
+    },
+    "product": {
+      "origin": "Confirmações diretas do usuário e conteúdo da proposta local aprovada.",
+      "liveClass": "Trilha de 18 meses, aulas ao vivo, conversação ilimitada com professores e com Jimmy, plataforma própria e material didático com histórias e exercícios.",
+      "jimmy": "Conversação com inteligência artificial em tempo real, disponível 24 horas por dia.",
+      "certification": "Usuário confirmou realização opcional de TOEFL ao final do Live Class, com custo adicional. Não foi atribuída modalidade ao benefício, nem prometido certificado automático ou aceitação universal. A modalidade deve ser consultada com a equipe.",
+      "onDemand": "Produto opcional distinto; não foi incorporado ao benefício padrão do Live Class neste artigo.",
+      "progress": "18 meses descreve a trilha, não uma garantia de fluência, pontuação TOEFL ou nível C1."
+    },
+    "awards": [
+      {
+        "name": "Selo de Excelência em Franchising ABF 2025",
+        "url": "https://abf.com.br/selo-de-excelencia-em-franchising-2025/",
+        "finding": "Lista oficial inclui UNITED INSTITUTE | Pleno | Educação."
+      },
+      {
+        "name": "Selo de Excelência em Franchising ABF 2026",
+        "url": "https://abf.com.br/selo-excelencia-em-franchising-2026/",
+        "finding": "Lista oficial inclui UNITED INSTITUTE | Pleno | Educação. O artigo oficial explica avaliação baseada na percepção dos franqueados."
+      }
+    ],
+    "testimonial": {
+      "name": "Edson Junior",
+      "quote": "As aulas são excelentes e tenho a facilidade de adequar os horários à minha rotina.",
+      "wordCount": 15,
+      "url": "https://www.unitedidiomas.com/quem-somos/",
+      "finding": "Citação curta transcrita de depoimento publicado pela United. Link de avaliação original indicado pela página retornou erro na ferramenta; não foi afirmada verificação independente da autoria ou de nota agregada."
+    },
+    "omittedUnverifiedDetails": [
+      "Troféus recebidos em capitais brasileiras: sem nomes, categorias e fontes verificáveis; não incluídos.",
+      "Não se atribuiu Prêmio ABF Destaque Franchising ou Selo ESG à United. A fonte confirma Selo de Excelência em Franchising.",
+      "Não foram inventados índices de satisfação, taxa de aprovação no TOEFL, taxa de crescimento ou falas de executivos.",
+      "Não se empregou 'plataforma revolucionária' como fato comparativo; a inovação é demonstrada por recursos concretos."
+    ],
+    "publication": "Proposta local para leitura e validação. A data deve ser confirmada na publicação efetiva. Sem publicação no site ou Git."
+  }
+}

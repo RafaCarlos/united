@@ -1,0 +1,187 @@
+/* Preserve the live site's native RD WhatsApp capture and attribution flow. */
+(function () {
+  'use strict';
+  if (window.UnitedRDWhatsAppBridge) return;
+  window.UnitedRDWhatsAppBridge = true;
+
+  const COMMERCIAL_PHONE = '5511940040658';
+  const TRIGGER_SELECTOR = '.rdstation-popup-js-floating-button[aria-label="Abrir WhatsApp"]';
+  const EXCLUDED_SELECTOR = '.floating-button, .united-contact-alternative';
+  let trigger = null;
+  let wrapper = null;
+  let stateObserver = null;
+  let opener = null;
+  let wasOpen = false;
+  const linked = new Map();
+  const keyboardBound = new WeakSet();
+
+  function isCommercialLink(link) {
+    if (!link || !link.matches('a[href]') || link.closest(EXCLUDED_SELECTOR)) return false;
+    try {
+      const url = new URL(link.getAttribute('href'), window.location.href);
+      if (!/^https?:$/.test(url.protocol)) return false;
+      let phone = '';
+      if (url.hostname === 'wa.me') phone = url.pathname.replace(/^\//, '').replace(/\/$/, '');
+      else if (/^(?:api|web|www)\.whatsapp\.com$/.test(url.hostname) && /^\/send\/?$/.test(url.pathname)) phone = url.searchParams.get('phone') || '';
+      return phone.replace(/\D/g, '') === COMMERCIAL_PHONE;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function commercialLinks() {
+    return Array.from(document.querySelectorAll('a[href]')).filter(isCommercialLink);
+  }
+
+  function visible(element) {
+    return element && element.isConnected && element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden';
+  }
+
+  function focusable() {
+    return wrapper ? Array.from(wrapper.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')).filter(function (element) {
+      return element.tabIndex >= 0 && !element.disabled && !element.hidden && visible(element);
+    }) : [];
+  }
+
+  function restoreLink(link, previous) {
+    Object.keys(previous).forEach(function (name) {
+      if (previous[name] === null) link.removeAttribute(name);
+      else link.setAttribute(name, previous[name]);
+    });
+  }
+
+  function updateLinks(open) {
+    linked.forEach(function (previous, link) {
+      if (!wrapper || !wrapper.isConnected || !isCommercialLink(link)) {
+        restoreLink(link, previous);
+        linked.delete(link);
+      }
+    });
+    if (!wrapper || !wrapper.isConnected) return;
+    commercialLinks().forEach(function (link) {
+      if (!linked.has(link)) {
+        const previous = {};
+        ['aria-haspopup', 'aria-controls', 'aria-expanded'].forEach(function (name) { previous[name] = link.getAttribute(name); });
+        linked.set(link, previous);
+      }
+      link.setAttribute('aria-haspopup', 'dialog');
+      if (wrapper.id) link.setAttribute('aria-controls', wrapper.id);
+      else link.removeAttribute('aria-controls');
+      link.setAttribute('aria-expanded', String(open));
+    });
+  }
+
+  function updateState() {
+    if (!window.document || !document.body) return;
+    const open = Boolean(wrapper && wrapper.isConnected && !wrapper.classList.contains('floating-button--close'));
+    if (wrapper) {
+      wrapper.setAttribute('role', 'dialog');
+      if (open) {
+        wrapper.removeAttribute('inert');
+        wrapper.removeAttribute('aria-hidden');
+        wrapper.setAttribute('aria-modal', 'true');
+      } else {
+        wrapper.setAttribute('inert', '');
+        wrapper.setAttribute('aria-hidden', 'true');
+        wrapper.removeAttribute('aria-modal');
+      }
+    }
+    document.body.classList.toggle('rd-whatsapp-open', open);
+    updateLinks(open);
+    if (!open && wasOpen && visible(opener)) opener.focus({preventScroll: true});
+    wasOpen = open;
+  }
+
+  function describeStudentLink() {
+    if (!wrapper) return;
+    wrapper.querySelectorAll('a[href]').forEach(function (link) {
+      if (/(?:wa\.me|whatsapp\.com)/.test(link.href) && link.textContent.trim().toUpperCase() === 'CLIQUE AQUI') {
+        // Keep the RD destination, conversion fields and native listeners intact.
+        link.textContent = 'Atendimento para alunos';
+      }
+    });
+  }
+
+  function connect() {
+    if (!window.document || !document.body) return;
+    if (wrapper && wrapper.isConnected && trigger && trigger.isConnected) {
+      describeStudentLink();
+      updateLinks(wasOpen);
+      return;
+    }
+    if (wrapper) {
+      if (stateObserver) stateObserver.disconnect();
+      wrapper = null;
+      trigger = null;
+      updateState();
+    }
+    const candidate = document.querySelector(TRIGGER_SELECTOR);
+    const candidateWrapper = candidate && candidate.closest('.floating-button');
+    if (!candidateWrapper || !commercialLinks().length) return;
+    trigger = candidate;
+    wrapper = candidateWrapper;
+    describeStudentLink();
+    // Use the approved site's shortcuts without moving or resizing them.
+    // The native RD button still opens its own form and keeps its own handlers.
+    trigger.setAttribute('data-united-whatsapp-trigger', '');
+    trigger.style.setProperty('display', 'none', 'important');
+    trigger.setAttribute('aria-hidden', 'true');
+    trigger.tabIndex = -1;
+    wrapper.setAttribute('aria-label', 'Fale com a United pelo WhatsApp');
+    if (!keyboardBound.has(wrapper)) wrapper.addEventListener('keydown', function (event) {
+      if (event.defaultPrevented || !wrapper || wrapper.classList.contains('floating-button--close')) return;
+      if (event.key === 'Escape') {
+        const close = wrapper.querySelector('.rdstation-popup-js-close-button');
+        if (close) {
+          event.preventDefault();
+          event.stopPropagation();
+          close.click();
+        }
+      } else if (event.key === 'Tab') {
+        const fields = focusable();
+        const first = fields[0], last = fields[fields.length - 1];
+        if (first && ((event.shiftKey && document.activeElement === first) || (!event.shiftKey && document.activeElement === last))) {
+          event.preventDefault();
+          (event.shiftKey ? last : first).focus();
+        }
+      }
+    });
+    keyboardBound.add(wrapper);
+    stateObserver = new MutationObserver(updateState);
+    stateObserver.observe(wrapper, {attributes: true, attributeFilter: ['class']});
+    updateState();
+  }
+
+  document.addEventListener('click', function (event) {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!isCommercialLink(link)) return;
+    connect();
+    // Blocked/late third-party scripts leave the original WhatsApp URL usable.
+    if (!trigger || !trigger.isConnected || !wrapper || !wrapper.isConnected) return;
+    event.preventDefault();
+    opener = link;
+    if (wrapper.classList.contains('floating-button--close')) {
+      wrapper.removeAttribute('inert');
+      wrapper.removeAttribute('aria-hidden');
+      trigger.click();
+      updateState();
+    } else {
+      const field = focusable().find(function (element) { return /^(INPUT|SELECT|TEXTAREA)$/.test(element.tagName); });
+      if (field) field.focus({preventScroll: true});
+    }
+  });
+
+  new MutationObserver(connect).observe(document.body, {childList: true, subtree: true});
+  connect();
+  window.addEventListener('pageshow', connect);
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      const field = document.activeElement;
+      if (wrapper && field && wrapper.contains(field) && /^(INPUT|SELECT|TEXTAREA)$/.test(field.tagName)) field.blur();
+    } else {
+      connect();
+      if (wrapper) updateState();
+    }
+  });
+})();

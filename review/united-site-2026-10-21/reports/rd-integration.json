@@ -1,0 +1,31 @@
+{
+  "updatedOn": "2026-10-21",
+  "scope": "Integração RD preservada a partir do DOM do site oficial",
+  "formId": "form-vamos-conversar-5ba05329ea8c88b5c10d",
+  "formSdk": "https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js",
+  "accountLoaderId": "ee4f0815-8266-4fb5-ba25-416836b02312",
+  "googleTagManagerId": "GTM-MTK74PV",
+  "productionOnlyHosts": [
+    "unitedidiomas.com",
+    "www.unitedidiomas.com"
+  ],
+  "disabledOnNoindex": true,
+  "deduplication": true,
+  "whatsapp": "Usa popup nativo sem mover CTA; mantém fallback, alunos, unidades e parcerias.",
+  "realSubmission": {
+    "status": "rd_success_callback_observed",
+    "completedAt": "2026-10-21T15:53:31.352971+00:00",
+    "successfulSubmissions": 1,
+    "visibleConfirmation": "Mensagem enviada!",
+    "rdComplete": true,
+    "phoneMaskValidationObserved": true,
+    "evidence": "rd-native/integration-parity.json",
+    "whatsappSecondSubmission": false,
+    "note": "Envio real autorizado pelo usuário, executado na nova Home pelo responsável pela revisão. A confirmação observada é do SDK; lista/CRM e automações não foram inspecionados."
+  },
+  "crmHumanVerification": {
+    "status": "pending",
+    "note": "A confirmação do recebimento, dos campos e das automações no CRM depende da equipe United/agência."
+  },
+  "nativeSdkMayLoadItsOwnResourcesInPreview": true
+}

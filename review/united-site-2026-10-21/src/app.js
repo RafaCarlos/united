@@ -1,0 +1,88 @@
+'use strict';
+// Resolve dynamic media from this script, independent of the page's final route.
+const unitedAssetBase = new URL('assets/', document.currentScript.src);
+const $ = (selector, root=document) => root.querySelector(selector);
+const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
+const menuButton = $('.menu-button');
+const mobileMenu = $('#mobile-menu');
+menuButton.addEventListener('click', () => {
+  if(mobileMenu.open){mobileMenu.close();return;}
+  menuButton.setAttribute('aria-expanded','true');
+  openDialog(mobileMenu);
+});
+$$('a', mobileMenu).forEach(link => link.addEventListener('click', () => mobileMenu.close()));
+mobileMenu.addEventListener('close',()=>menuButton.setAttribute('aria-expanded','false'));
+mobileMenu.addEventListener('keydown',event=>{
+  if(event.key!=='Tab')return;
+  const controls=$$('a[href],button:not([disabled])',mobileMenu);
+  const first=controls[0],last=controls[controls.length-1];
+  if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+  else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+});
+function setStory(button){
+  const key=button.dataset.story;
+  $$('[data-story]').forEach(tab=>{const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;});
+  $$('[data-story-panel]').forEach(panel=>{
+    const selected=panel.dataset.storyPanel===key;
+    panel.hidden=!selected;
+    if(selected)$$('img',panel).forEach(img=>{img.loading='eager';});
+  });
+}
+$$('[data-story]').forEach(button=>button.addEventListener('click',()=>setStory(button)));
+
+const platforms={trilha:{image:'plataforma-trilha.webp',title:'Uma próxima etapa. Sempre à vista.',alt:'Tela Total Practice com a trilha de exercícios'},pratica:{image:'plataforma-pratica.webp',title:'Escute, escolha e pratique.',alt:'Exercício de escuta Bubble com palavras e pontuação'},aulas:{image:'plataforma-aulas.webp',title:'Organize os encontros com o seu inglês.',alt:'Tela da plataforma para agendar e consultar aulas'}};
+function setPlatform(button){const item=platforms[button.dataset.platform];$$('[data-platform]').forEach(tab=>{const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;});$('#platform-panel').setAttribute('aria-labelledby',button.id);$('#platform-img').src=new URL(item.image,unitedAssetBase).href;$('#platform-img').alt=item.alt;$('#platform-caption-title').textContent=item.title;}
+$$('[data-platform]').forEach(button=>button.addEventListener('click',()=>setPlatform(button)));
+$$('[role=tablist]').forEach(list=>list.addEventListener('keydown',event=>{
+  if(!['ArrowRight','ArrowLeft','ArrowDown','ArrowUp','Home','End'].includes(event.key))return;
+  const tabs=$$('[role=tab]',list);const index=tabs.indexOf(document.activeElement);if(index<0)return;
+  event.preventDefault();let next;if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else next=(index+(['ArrowRight','ArrowDown'].includes(event.key)?1:-1)+tabs.length)%tabs.length;
+  tabs[next].focus();tabs[next].click();
+}));
+const videoDialog=$('#video-dialog'),video=$('#promo-video');
+const videoStatus=$('#video-status');
+let lastFocus=null;
+function openDialog(dialog){lastFocus=document.activeElement;dialog.showModal();document.body.classList.add('modal-open');$('.dialog-close',dialog).focus();}
+function setVideoStatus(message){videoStatus.textContent=message;}
+video.addEventListener('playing',()=>setVideoStatus('Vídeo de apresentação do Live Class.'));
+video.addEventListener('waiting',()=>setVideoStatus('Carregando o vídeo…'));
+video.addEventListener('error',()=>setVideoStatus('Não foi possível carregar o vídeo. Feche e tente abrir novamente.'));
+$$('[data-video]').forEach(button=>button.addEventListener('click',()=>{
+  openDialog(videoDialog);
+  setVideoStatus('Carregando o vídeo…');
+  if(!video.getAttribute('src')||video.error){
+    video.src=new URL('promo-liveclass-web-v5.mp4',unitedAssetBase).href;
+    video.load();
+  }
+  if(video.ended)video.currentTime=0;
+  video.play().catch(error=>{
+    if(!videoDialog.open||error.name==='AbortError')return;
+    setVideoStatus(error.name==='NotAllowedError'?'Toque no play do vídeo para começar.':'Não foi possível iniciar o vídeo. Use o play para tentar novamente.');
+  });
+}));
+$$('dialog').forEach(dialog=>{
+  $('.dialog-close',dialog).addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});
+  dialog.addEventListener('close',()=>{if(dialog===videoDialog)video.pause();document.body.classList.remove('modal-open');if(lastFocus?.isConnected)lastFocus.focus({preventScroll:true});});
+});
+matchMedia('(min-width:1024px)').addEventListener('change',event=>{if(event.matches&&mobileMenu.open)mobileMenu.close();});
+window.addEventListener('pageshow',()=>{if(!$$('dialog[open]').length)document.body.classList.remove('modal-open');});
+
+// CEFR references are exploratory: these colors do not assign books to levels.
+const learningLevels={
+  a1:{letter:'A1',kicker:'A1 · O COMEÇO DA CONVERSA',title:'Primeiros passos.',description:'Apresentar-se, fazer perguntas pessoais e usar expressões básicas, com apoio de quem conversa.',examples:['Dizer seu nome, de onde você é e perguntar sobre outra pessoa.','Fazer um pedido simples em um café, com ajuda se necessário.']},
+  a2:{letter:'A2',kicker:'A2 · O INGLÊS NA SUA ROTINA',title:'Comunicação cotidiana.',description:'Trocar informações sobre rotina, compras, família e trabalho em conversas simples.',examples:['Falar sobre sua rotina e combinar um horário com outra pessoa.','Pedir informações simples sobre um produto ou um trajeto.']},
+  b1:{letter:'B1',kicker:'B1 · MAIS ESPAÇO PARA SE EXPRESSAR',title:'Mais autonomia.',description:'Lidar com situações comuns em viagens, contar experiências e explicar opiniões sobre assuntos conhecidos.',examples:['Explicar um problema em uma reserva durante uma viagem.','Contar uma experiência e dizer por que gostou dela.']},
+  b2:{letter:'B2',kicker:'B2 · IDEIAS QUE GANHAM PROFUNDIDADE',title:'Conversas mais completas.',description:'Conversar com maior espontaneidade, compreender ideias complexas e defender pontos de vista com argumentos.',examples:['Participar de uma discussão e explicar vantagens e desvantagens de uma proposta.','Conversar com espontaneidade sobre temas familiares e de seu interesse.']},
+  c1:{letter:'C1',kicker:'C1 · FLUÊNCIA COM PRECISÃO',title:'Comunicação avançada.',description:'Expressar-se com fluência e precisão e usar o inglês em contextos profissionais e acadêmicos.',examples:['Apresentar um assunto complexo e responder a perguntas com precisão.','Adaptar o modo de falar a uma reunião profissional ou discussão acadêmica.']}
+};
+const learningLevelTabs=$$('[data-level]');
+learningLevelTabs.forEach((button,index)=>button.addEventListener('click',()=>{
+  const level=learningLevels[button.dataset.level],journey=$('.level-journey');
+  learningLevelTabs.forEach(tab=>{const selected=tab===button;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;});
+  journey.dataset.selectedLevel=button.dataset.level;journey.style.setProperty('--level-progress',(index/(learningLevelTabs.length-1)*100)+'%');
+  $('#level-stage').setAttribute('aria-labelledby',button.id);
+  $('#level-stage-letter').textContent=level.letter;$('#level-stage-position').textContent=String(index+1).padStart(2,'0')+' / 05';
+  $('#level-stage-kicker').textContent=level.kicker;$('#level-stage-title').textContent=level.title;$('#level-stage-description').textContent=level.description;
+  $('#level-stage-examples').replaceChildren(...level.examples.map(example=>{const item=document.createElement('li');item.textContent=example;return item;}));
+}));

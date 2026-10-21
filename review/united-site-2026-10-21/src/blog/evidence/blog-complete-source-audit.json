@@ -1,0 +1,2218 @@
+{
+  "target": "src",
+  "auditedAt": "2026-10-21T16:07:22.601Z",
+  "counts": {
+    "navigationPages": 213,
+    "imported": 184,
+    "localArticles": 2,
+    "archivePages": 21,
+    "archiveCards": 185,
+    "featuredArticles": 1,
+    "distinctArchivedReaders": 186,
+    "originalWords": 137719,
+    "renderedWords": 137719,
+    "originalImages": 361,
+    "bodyImages": 182,
+    "duplicateCoversRemoved": 179,
+    "originalTables": 16,
+    "renderedTables": 16
+  },
+  "errors": [],
+  "warnings": [],
+  "articles": [
+    {
+      "slug": "ingles-para-reunioes",
+      "imported": true,
+      "sourceWords": 849,
+      "outputWords": 849,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-estudar-trabalhar-exterior",
+      "imported": true,
+      "sourceWords": 698,
+      "outputWords": 698,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-eventos-internacionais",
+      "imported": true,
+      "sourceWords": 712,
+      "outputWords": 712,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-viajar-europa-outono",
+      "imported": true,
+      "sourceWords": 819,
+      "outputWords": 819,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ia-aprender-ingles-habilidades-humanas",
+      "imported": true,
+      "sourceWords": 643,
+      "outputWords": 643,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "aprender-ingles-sozinho-ou-com-professor",
+      "imported": true,
+      "sourceWords": 782,
+      "outputWords": 782,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "imersao-ingles-em-casa",
+      "imported": true,
+      "sourceWords": 825,
+      "outputWords": 825,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "vocabulario-ingles-viagem",
+      "imported": true,
+      "sourceWords": 811,
+      "outputWords": 811,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "rotina-ingles-ia",
+      "imported": true,
+      "sourceWords": 908,
+      "outputWords": 908,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-viajar-europa",
+      "imported": true,
+      "sourceWords": 864,
+      "outputWords": 864,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "aumentar-vocabulario-ingles",
+      "imported": true,
+      "sourceWords": 938,
+      "outputWords": 938,
+      "sourceImages": 2,
+      "outputImages": 2,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "diferencas-ingles-paises",
+      "imported": true,
+      "sourceWords": 881,
+      "outputWords": 881,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ia-aprender-ingles",
+      "imported": true,
+      "sourceWords": 914,
+      "outputWords": 914,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "tempos-verbais-ingles-2",
+      "imported": true,
+      "sourceWords": 842,
+      "outputWords": 842,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-viagens-internacionais",
+      "imported": true,
+      "sourceWords": 780,
+      "outputWords": 780,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-profissional-trabalho",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dificuldades-gramatica-ingles",
+      "imported": true,
+      "sourceWords": 776,
+      "outputWords": 776,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-conversacao-profissional",
+      "imported": true,
+      "sourceWords": 709,
+      "outputWords": 709,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-viagem",
+      "imported": true,
+      "sourceWords": 769,
+      "outputWords": 769,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-fluente-carreira",
+      "imported": true,
+      "sourceWords": 673,
+      "outputWords": 673,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "curso-ingles-corporativo",
+      "imported": true,
+      "sourceWords": 825,
+      "outputWords": 825,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "selo-excelencia-franchising-united-idiomas",
+      "imported": true,
+      "sourceWords": 872,
+      "outputWords": 872,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-liderar-reunioes",
+      "imported": true,
+      "sourceWords": 788,
+      "outputWords": 788,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-no-trabalho",
+      "imported": true,
+      "sourceWords": 807,
+      "outputWords": 807,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-corporativo",
+      "imported": true,
+      "sourceWords": 841,
+      "outputWords": 841,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "curso-ingles-profissionais-ocupados",
+      "imported": true,
+      "sourceWords": 741,
+      "outputWords": 741,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "frases-ingles-restaurantes",
+      "imported": true,
+      "sourceWords": 791,
+      "outputWords": 791,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-fluente-mercado-corporativo",
+      "imported": true,
+      "sourceWords": 749,
+      "outputWords": 749,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "curso-ingles-rotina-corrida",
+      "imported": true,
+      "sourceWords": 727,
+      "outputWords": 727,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "perder-nervosismo-conversar-em-ingles",
+      "imported": true,
+      "sourceWords": 698,
+      "outputWords": 698,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "adverbs-frequency",
+      "imported": true,
+      "sourceWords": 782,
+      "outputWords": 782,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "expressoes-e-mails",
+      "imported": true,
+      "sourceWords": 770,
+      "outputWords": 770,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "too-enough-very",
+      "imported": true,
+      "sourceWords": 750,
+      "outputWords": 750,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "pais-ideal-intercambio",
+      "imported": true,
+      "sourceWords": 735,
+      "outputWords": 735,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-networking",
+      "imported": true,
+      "sourceWords": 741,
+      "outputWords": 741,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "negociar-salario-beneficios-ingles",
+      "imported": true,
+      "sourceWords": 718,
+      "outputWords": 718,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-nova-zelandia",
+      "imported": true,
+      "sourceWords": 781,
+      "outputWords": 781,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "aprenda-20-adjetivos-ingles",
+      "imported": true,
+      "sourceWords": 748,
+      "outputWords": 748,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "cinco-motivos-hoje-united-idiomas",
+      "imported": true,
+      "sourceWords": 638,
+      "outputWords": 638,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "tempos-verbais-ingles",
+      "imported": true,
+      "sourceWords": 798,
+      "outputWords": 798,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-carreira-tecnologia",
+      "imported": true,
+      "sourceWords": 775,
+      "outputWords": 775,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-usar-get",
+      "imported": true,
+      "sourceWords": 824,
+      "outputWords": 824,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-linkedin",
+      "imported": true,
+      "sourceWords": 746,
+      "outputWords": 746,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "treinar-ingles-intercambio",
+      "imported": true,
+      "sourceWords": 735,
+      "outputWords": 735,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "filmes-series-listening",
+      "imported": true,
+      "sourceWords": 708,
+      "outputWords": 708,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "sete-destinos-ingles",
+      "imported": true,
+      "sourceWords": 732,
+      "outputWords": 732,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-mudar-carreira",
+      "imported": true,
+      "sourceWords": 714,
+      "outputWords": 714,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "phrasal-verbs-mais-usados",
+      "imported": true,
+      "sourceWords": 742,
+      "outputWords": 742,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "nivel-profissional-ingles",
+      "imported": true,
+      "sourceWords": 844,
+      "outputWords": 844,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "soft-skills-ingles",
+      "imported": true,
+      "sourceWords": 846,
+      "outputWords": 846,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "e-mails-profissionais",
+      "imported": true,
+      "sourceWords": 855,
+      "outputWords": 855,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "o-que-sao-collocations",
+      "imported": true,
+      "sourceWords": 746,
+      "outputWords": 746,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "erros-gramaticais-ingles",
+      "imported": true,
+      "sourceWords": 719,
+      "outputWords": 719,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-americano-britanico-diferencas",
+      "imported": true,
+      "sourceWords": 628,
+      "outputWords": 628,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 1,
+      "textParity": true
+    },
+    {
+      "slug": "curso-united-carreiras",
+      "imported": true,
+      "sourceWords": 795,
+      "outputWords": 795,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "intercambio-como-se-preparar",
+      "imported": true,
+      "sourceWords": 709,
+      "outputWords": 709,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "comemoracao-st-patrick-day",
+      "imported": true,
+      "sourceWords": 728,
+      "outputWords": 728,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-ead",
+      "imported": true,
+      "sourceWords": 693,
+      "outputWords": 693,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "conjuncoes-conectivos",
+      "imported": true,
+      "sourceWords": 683,
+      "outputWords": 683,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "carnaval-nos-eua",
+      "imported": true,
+      "sourceWords": 725,
+      "outputWords": 725,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "treinar-ingles-inteligencia-artificial",
+      "imported": true,
+      "sourceWords": 720,
+      "outputWords": 720,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "reunioes-em-ingles",
+      "imported": true,
+      "sourceWords": 746,
+      "outputWords": 746,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "carreira-2025-united",
+      "imported": true,
+      "sourceWords": 734,
+      "outputWords": 734,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "will-going-to",
+      "imported": true,
+      "sourceWords": 723,
+      "outputWords": 723,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "natal-lingua-inglesa",
+      "imported": true,
+      "sourceWords": 748,
+      "outputWords": 748,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "certificados-internacionais-ingles",
+      "imported": true,
+      "sourceWords": 759,
+      "outputWords": 759,
+      "sourceImages": 2,
+      "outputImages": 2,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "carreiras-ingles-fluente",
+      "imported": true,
+      "sourceWords": 725,
+      "outputWords": 725,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "thanksgiving-day-dia-especial",
+      "imported": true,
+      "sourceWords": 840,
+      "outputWords": 840,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "veterans-day-importancia",
+      "imported": true,
+      "sourceWords": 728,
+      "outputWords": 728,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "verb-tenses",
+      "imported": true,
+      "sourceWords": 990,
+      "outputWords": 990,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "halloween-guia-completo",
+      "imported": true,
+      "sourceWords": 797,
+      "outputWords": 797,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "palavras-frases-ingles-hoteis",
+      "imported": true,
+      "sourceWords": 737,
+      "outputWords": 737,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "principais-girias-ingles",
+      "imported": true,
+      "sourceWords": 771,
+      "outputWords": 771,
+      "sourceImages": 2,
+      "outputImages": 2,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "cinco-motivos-united-idiomas",
+      "imported": true,
+      "sourceWords": 778,
+      "outputWords": 778,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "though-thought-tough",
+      "imported": true,
+      "sourceWords": 709,
+      "outputWords": 709,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "intercambio-africa-do-sul",
+      "imported": true,
+      "sourceWords": 758,
+      "outputWords": 758,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "guia-prepositions",
+      "imported": true,
+      "sourceWords": 700,
+      "outputWords": 700,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "expandir-vocabulario-ingles",
+      "imported": true,
+      "sourceWords": 721,
+      "outputWords": 721,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "entrevista-emprego-ingles",
+      "imported": true,
+      "sourceWords": 794,
+      "outputWords": 794,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "remoto-presencial-united",
+      "imported": true,
+      "sourceWords": 698,
+      "outputWords": 698,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "treinar-ingles-series",
+      "imported": true,
+      "sourceWords": 704,
+      "outputWords": 704,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "importancia-independence-day",
+      "imported": true,
+      "sourceWords": 702,
+      "outputWords": 702,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-fluente-home-office",
+      "imported": true,
+      "sourceWords": 708,
+      "outputWords": 708,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "modal-verbs",
+      "imported": true,
+      "sourceWords": 718,
+      "outputWords": 718,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "livros-ingles",
+      "imported": true,
+      "sourceWords": 774,
+      "outputWords": 774,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "pratos-tipicos-canada",
+      "imported": true,
+      "sourceWords": 734,
+      "outputWords": 734,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "sotaques-ingles",
+      "imported": true,
+      "sourceWords": 712,
+      "outputWords": 712,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "intercambio-au-pair-o-que-e-e-como-funciona",
+      "imported": true,
+      "sourceWords": 731,
+      "outputWords": 731,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dia-das-maes-anna-jarvis",
+      "imported": true,
+      "sourceWords": 700,
+      "outputWords": 700,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "intercambio-o-que-e-preciso-e-como-se-preparar",
+      "imported": true,
+      "sourceWords": 901,
+      "outputWords": 901,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "guia-basico-de-ingles-para-viajantes-aurora-boreal",
+      "imported": true,
+      "sourceWords": 682,
+      "outputWords": 682,
+      "sourceImages": 3,
+      "outputImages": 3,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "guia-rapido-de-ingles-para-viagens",
+      "imported": true,
+      "sourceWords": 825,
+      "outputWords": 825,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 3,
+      "textParity": true
+    },
+    {
+      "slug": "entenda-o-verbo-to-be",
+      "imported": true,
+      "sourceWords": 689,
+      "outputWords": 689,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 1,
+      "textParity": true
+    },
+    {
+      "slug": "pos-graduacao-internacional-no-reino-unido",
+      "imported": true,
+      "sourceWords": 886,
+      "outputWords": 886,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "conheca-5-autoras-internacionais-para-ler-em-ingles",
+      "imported": true,
+      "sourceWords": 1042,
+      "outputWords": 1042,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-se-preparar-para-entrevista-em-ingles",
+      "imported": true,
+      "sourceWords": 814,
+      "outputWords": 814,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "estude-ingles-na-united-e-decole-sua-carreira",
+      "imported": true,
+      "sourceWords": 735,
+      "outputWords": 735,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-home-office-global",
+      "imported": true,
+      "sourceWords": 897,
+      "outputWords": 897,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "uso-de-preposicoes-em-ingles",
+      "imported": true,
+      "sourceWords": 736,
+      "outputWords": 736,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "carnaval-nos-estados-unidos-mardi-gras",
+      "imported": true,
+      "sourceWords": 1018,
+      "outputWords": 1018,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "vocabulario-natal-ingles",
+      "imported": true,
+      "sourceWords": 699,
+      "outputWords": 699,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "frases-uteis-compras-ingles",
+      "imported": true,
+      "sourceWords": 774,
+      "outputWords": 774,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-transporte-publico",
+      "imported": true,
+      "sourceWords": 791,
+      "outputWords": 791,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "thanksgiving-day-curiosidades",
+      "imported": true,
+      "sourceWords": 697,
+      "outputWords": 697,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "origem-black-friday",
+      "imported": true,
+      "sourceWords": 751,
+      "outputWords": 751,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "tudo-sobre-intercambio-australia",
+      "imported": true,
+      "sourceWords": 711,
+      "outputWords": 711,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "halloween-origem-vocabulario",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-medicos-profissionais-saude",
+      "imported": true,
+      "sourceWords": 702,
+      "outputWords": 702,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "intercambio-canada",
+      "imported": true,
+      "sourceWords": 764,
+      "outputWords": 764,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dicas-para-preparar-toefl",
+      "imported": true,
+      "sourceWords": 717,
+      "outputWords": 717,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "phrasal-verbs-o-que-sao",
+      "imported": true,
+      "sourceWords": 795,
+      "outputWords": 795,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-preparar-intercambio-irlanda",
+      "imported": true,
+      "sourceWords": 794,
+      "outputWords": 794,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "a-importancia-do-ingles-fluente-para-o-jornalismo",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "expressoes-ingles-usar-restaurante",
+      "imported": true,
+      "sourceWords": 713,
+      "outputWords": 713,
+      "sourceImages": 2,
+      "outputImages": 2,
+      "tables": 2,
+      "textParity": true
+    },
+    {
+      "slug": "conheca-esportes-americanos-vocabulario",
+      "imported": true,
+      "sourceWords": 921,
+      "outputWords": 921,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "termos-ingles-profissionais-rh",
+      "imported": true,
+      "sourceWords": 700,
+      "outputWords": 700,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "importancia-musica-aprendizado-ingles",
+      "imported": true,
+      "sourceWords": 718,
+      "outputWords": 718,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dicas-falar-ingles-publico",
+      "imported": true,
+      "sourceWords": 697,
+      "outputWords": 697,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "beneficios-aprender-ingles-infancia",
+      "imported": true,
+      "sourceWords": 737,
+      "outputWords": 737,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "substantivos-coletivos-em-ingles",
+      "imported": true,
+      "sourceWords": 757,
+      "outputWords": 757,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dia-dos-namorados-outra-data-brasil",
+      "imported": true,
+      "sourceWords": 757,
+      "outputWords": 757,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "cinco-dicas-aprender-ingles-rapido",
+      "imported": true,
+      "sourceWords": 727,
+      "outputWords": 727,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "beneficios-intercambio-conheca",
+      "imported": true,
+      "sourceWords": 721,
+      "outputWords": 721,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "erros-aprendizado-ingles",
+      "imported": true,
+      "sourceWords": 724,
+      "outputWords": 724,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "sotaques-ingles-diferencas",
+      "imported": true,
+      "sourceWords": 721,
+      "outputWords": 721,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-melhorar-escuta-ingles",
+      "imported": true,
+      "sourceWords": 792,
+      "outputWords": 792,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-funciona-cerebro-bilingue",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "saint-patricks-day-eua",
+      "imported": true,
+      "sourceWords": 747,
+      "outputWords": 747,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "conversacao-ingles-importancia",
+      "imported": true,
+      "sourceWords": 696,
+      "outputWords": 696,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "business-english-30-termos",
+      "imported": true,
+      "sourceWords": 705,
+      "outputWords": 705,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho",
+      "imported": true,
+      "sourceWords": 737,
+      "outputWords": 737,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados",
+      "imported": true,
+      "sourceWords": 741,
+      "outputWords": 741,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos",
+      "imported": true,
+      "sourceWords": 716,
+      "outputWords": 716,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "confira-seis-dicas-importantes-para-falar-melhor-em-ingles",
+      "imported": true,
+      "sourceWords": 729,
+      "outputWords": 729,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "saiba-como-se-preparar-para-um-intercambio",
+      "imported": true,
+      "sourceWords": 708,
+      "outputWords": 708,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia",
+      "imported": true,
+      "sourceWords": 811,
+      "outputWords": 811,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos",
+      "imported": true,
+      "sourceWords": 735,
+      "outputWords": 735,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas",
+      "imported": true,
+      "sourceWords": 699,
+      "outputWords": 699,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "vocabulario-de-ingles-para-a-area-de-marketing",
+      "imported": true,
+      "sourceWords": 735,
+      "outputWords": 735,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles",
+      "imported": true,
+      "sourceWords": 697,
+      "outputWords": 697,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "aprenda-40-termos-financeiros-em-ingles",
+      "imported": true,
+      "sourceWords": 563,
+      "outputWords": 563,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti",
+      "imported": true,
+      "sourceWords": 822,
+      "outputWords": 822,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "10-costumes-brasileiros-que-estrangeiros-acham-esquisitos",
+      "imported": true,
+      "sourceWords": 797,
+      "outputWords": 797,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "vocabulario-ingles-usado-no-halloween",
+      "imported": true,
+      "sourceWords": 750,
+      "outputWords": 750,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "voce-sabe-como-o-toefl-funciona",
+      "imported": true,
+      "sourceWords": 732,
+      "outputWords": 732,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "cinco-vantagens-de-estudar-ingles-online",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-economistas",
+      "imported": true,
+      "sourceWords": 710,
+      "outputWords": 710,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "speak-talk-say-tell",
+      "imported": true,
+      "sourceWords": 712,
+      "outputWords": 712,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "labor-day",
+      "imported": true,
+      "sourceWords": 720,
+      "outputWords": 720,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ingles-para-secretaria-executiva",
+      "imported": true,
+      "sourceWords": 727,
+      "outputWords": 727,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dicas-para-melhorar-sua-escrita-em-ingles",
+      "imported": true,
+      "sourceWords": 749,
+      "outputWords": 749,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos",
+      "imported": true,
+      "sourceWords": 726,
+      "outputWords": 726,
+      "sourceImages": 5,
+      "outputImages": 4,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "saiba-como-validar-seu-diploma-nos-eua",
+      "imported": true,
+      "sourceWords": 696,
+      "outputWords": 696,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "batalha-do-boyne-saiba-mais-sobre-esse-feriado",
+      "imported": true,
+      "sourceWords": 708,
+      "outputWords": 708,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "independence-day",
+      "imported": true,
+      "sourceWords": 734,
+      "outputWords": 734,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "alone-vs-lonely-qual-a-diferenca",
+      "imported": true,
+      "sourceWords": 519,
+      "outputWords": 519,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "as-leis-mais-estranhas-dos-estados-unidos",
+      "imported": true,
+      "sourceWords": 547,
+      "outputWords": 547,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "por-que-a-rainha-tem-dois-aniversarios",
+      "imported": true,
+      "sourceWords": 725,
+      "outputWords": 725,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "memorial-day-a-importancia-dessa-data-nos-eua",
+      "imported": true,
+      "sourceWords": 729,
+      "outputWords": 729,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao",
+      "imported": true,
+      "sourceWords": 555,
+      "outputWords": 555,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil",
+      "imported": true,
+      "sourceWords": 740,
+      "outputWords": 740,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "has-ou-have-aprenda-a-utilizar",
+      "imported": true,
+      "sourceWords": 523,
+      "outputWords": 523,
+      "sourceImages": 1,
+      "outputImages": 0,
+      "tables": 1,
+      "textParity": true
+    },
+    {
+      "slug": "save-the-date-conheca-a-origem-dessa-expressao",
+      "imported": true,
+      "sourceWords": 717,
+      "outputWords": 717,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-e-comemorada-a-pascoa-nos-eua-e-inglaterra",
+      "imported": true,
+      "sourceWords": 707,
+      "outputWords": 707,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade",
+      "imported": true,
+      "sourceWords": 753,
+      "outputWords": 753,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "ler-em-ingles-veja-oito-livros-para-iniciar",
+      "imported": true,
+      "sourceWords": 710,
+      "outputWords": 710,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "conheca-10-paises-que-tem-o-ingles-como-lingua-oficial",
+      "imported": true,
+      "sourceWords": 767,
+      "outputWords": 767,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "a-comemoracao-do-carnaval-ao-redor-do-mundo",
+      "imported": true,
+      "sourceWords": 759,
+      "outputWords": 759,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-a-tecnologia-pode-te-ajudar-a-aprender-ingles",
+      "imported": true,
+      "sourceWords": 588,
+      "outputWords": 588,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo",
+      "imported": true,
+      "sourceWords": 729,
+      "outputWords": 729,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "saiba-mais-sobre-os-certificados-internacionais-de-ingles",
+      "imported": true,
+      "sourceWords": 820,
+      "outputWords": 820,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles",
+      "imported": true,
+      "sourceWords": 709,
+      "outputWords": 709,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles",
+      "imported": true,
+      "sourceWords": 787,
+      "outputWords": 787,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria",
+      "imported": true,
+      "sourceWords": 703,
+      "outputWords": 703,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico",
+      "imported": true,
+      "sourceWords": 714,
+      "outputWords": 714,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 8,
+      "textParity": true
+    },
+    {
+      "slug": "descubra-porque-a-united-idiomas-pode-transformar-sua-carreira",
+      "imported": true,
+      "sourceWords": 705,
+      "outputWords": 705,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "confira-10-series-que-vao-melhorar-o-seu-ingles",
+      "imported": true,
+      "sourceWords": 850,
+      "outputWords": 850,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "curso-ideal-de-ingles-porque-escolher-a-united-idiomas",
+      "imported": true,
+      "sourceWords": 701,
+      "outputWords": 701,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos",
+      "imported": true,
+      "sourceWords": 698,
+      "outputWords": 698,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "como-se-preparar-para-uma-entrevista-de-emprego-em-ingles",
+      "imported": true,
+      "sourceWords": 820,
+      "outputWords": 820,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles",
+      "imported": true,
+      "sourceWords": 730,
+      "outputWords": 730,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional",
+      "imported": true,
+      "sourceWords": 697,
+      "outputWords": 697,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "confira-10-girias-em-ingles-e-aprenda-a-usa-las",
+      "imported": true,
+      "sourceWords": 751,
+      "outputWords": 751,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "e-possivel-aprender-ingles-depois-de-adulto",
+      "imported": true,
+      "sourceWords": 645,
+      "outputWords": 645,
+      "sourceImages": 2,
+      "outputImages": 1,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
+      "imported": false,
+      "sourceWords": 816,
+      "outputWords": 816,
+      "sourceImages": 0,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    },
+    {
+      "slug": "united-valor-o-globo-live-class-2",
+      "imported": false,
+      "sourceWords": 254,
+      "outputWords": 254,
+      "sourceImages": 0,
+      "outputImages": 0,
+      "tables": 0,
+      "textParity": true
+    }
+  ],
+  "archives": [
+    {
+      "file": "blog/index.html",
+      "page": 1,
+      "cards": 9,
+      "slugs": [
+        "united-ingles-online-aulas-ao-vivo-tecnologia",
+        "ingles-para-reunioes",
+        "ingles-estudar-trabalhar-exterior",
+        "ingles-eventos-internacionais",
+        "ingles-viajar-europa-outono",
+        "ia-aprender-ingles-habilidades-humanas",
+        "aprender-ingles-sozinho-ou-com-professor",
+        "imersao-ingles-em-casa",
+        "vocabulario-ingles-viagem"
+      ]
+    },
+    {
+      "file": "blog/pagina/2/index.html",
+      "page": 2,
+      "cards": 9,
+      "slugs": [
+        "rotina-ingles-ia",
+        "ingles-viajar-europa",
+        "aumentar-vocabulario-ingles",
+        "diferencas-ingles-paises",
+        "ia-aprender-ingles",
+        "tempos-verbais-ingles-2",
+        "ingles-viagens-internacionais",
+        "ingles-profissional-trabalho",
+        "dificuldades-gramatica-ingles"
+      ]
+    },
+    {
+      "file": "blog/pagina/3/index.html",
+      "page": 3,
+      "cards": 9,
+      "slugs": [
+        "ingles-conversacao-profissional",
+        "ingles-para-viagem",
+        "ingles-fluente-carreira",
+        "curso-ingles-corporativo",
+        "selo-excelencia-franchising-united-idiomas",
+        "ingles-liderar-reunioes",
+        "ingles-no-trabalho",
+        "ingles-corporativo",
+        "curso-ingles-profissionais-ocupados"
+      ]
+    },
+    {
+      "file": "blog/pagina/4/index.html",
+      "page": 4,
+      "cards": 9,
+      "slugs": [
+        "frases-ingles-restaurantes",
+        "ingles-fluente-mercado-corporativo",
+        "curso-ingles-rotina-corrida",
+        "perder-nervosismo-conversar-em-ingles",
+        "adverbs-frequency",
+        "expressoes-e-mails",
+        "too-enough-very",
+        "pais-ideal-intercambio",
+        "ingles-para-networking"
+      ]
+    },
+    {
+      "file": "blog/pagina/5/index.html",
+      "page": 5,
+      "cards": 9,
+      "slugs": [
+        "negociar-salario-beneficios-ingles",
+        "ingles-nova-zelandia",
+        "aprenda-20-adjetivos-ingles",
+        "cinco-motivos-hoje-united-idiomas",
+        "tempos-verbais-ingles",
+        "ingles-carreira-tecnologia",
+        "como-usar-get",
+        "ingles-para-linkedin",
+        "treinar-ingles-intercambio"
+      ]
+    },
+    {
+      "file": "blog/pagina/6/index.html",
+      "page": 6,
+      "cards": 9,
+      "slugs": [
+        "filmes-series-listening",
+        "sete-destinos-ingles",
+        "ingles-mudar-carreira",
+        "phrasal-verbs-mais-usados",
+        "nivel-profissional-ingles",
+        "soft-skills-ingles",
+        "e-mails-profissionais",
+        "o-que-sao-collocations",
+        "erros-gramaticais-ingles"
+      ]
+    },
+    {
+      "file": "blog/pagina/7/index.html",
+      "page": 7,
+      "cards": 9,
+      "slugs": [
+        "ingles-americano-britanico-diferencas",
+        "curso-united-carreiras",
+        "intercambio-como-se-preparar",
+        "comemoracao-st-patrick-day",
+        "ingles-ead",
+        "conjuncoes-conectivos",
+        "carnaval-nos-eua",
+        "treinar-ingles-inteligencia-artificial",
+        "reunioes-em-ingles"
+      ]
+    },
+    {
+      "file": "blog/pagina/8/index.html",
+      "page": 8,
+      "cards": 9,
+      "slugs": [
+        "carreira-2025-united",
+        "will-going-to",
+        "natal-lingua-inglesa",
+        "certificados-internacionais-ingles",
+        "carreiras-ingles-fluente",
+        "thanksgiving-day-dia-especial",
+        "veterans-day-importancia",
+        "verb-tenses",
+        "halloween-guia-completo"
+      ]
+    },
+    {
+      "file": "blog/pagina/9/index.html",
+      "page": 9,
+      "cards": 9,
+      "slugs": [
+        "palavras-frases-ingles-hoteis",
+        "principais-girias-ingles",
+        "cinco-motivos-united-idiomas",
+        "though-thought-tough",
+        "intercambio-africa-do-sul",
+        "guia-prepositions",
+        "expandir-vocabulario-ingles",
+        "entrevista-emprego-ingles",
+        "remoto-presencial-united"
+      ]
+    },
+    {
+      "file": "blog/pagina/10/index.html",
+      "page": 10,
+      "cards": 9,
+      "slugs": [
+        "treinar-ingles-series",
+        "importancia-independence-day",
+        "ingles-fluente-home-office",
+        "modal-verbs",
+        "livros-ingles",
+        "pratos-tipicos-canada",
+        "sotaques-ingles",
+        "intercambio-au-pair-o-que-e-e-como-funciona",
+        "dia-das-maes-anna-jarvis"
+      ]
+    },
+    {
+      "file": "blog/pagina/11/index.html",
+      "page": 11,
+      "cards": 9,
+      "slugs": [
+        "intercambio-o-que-e-preciso-e-como-se-preparar",
+        "guia-basico-de-ingles-para-viajantes-aurora-boreal",
+        "guia-rapido-de-ingles-para-viagens",
+        "entenda-o-verbo-to-be",
+        "pos-graduacao-internacional-no-reino-unido",
+        "conheca-5-autoras-internacionais-para-ler-em-ingles",
+        "como-se-preparar-para-entrevista-em-ingles",
+        "estude-ingles-na-united-e-decole-sua-carreira",
+        "ingles-para-home-office-global"
+      ]
+    },
+    {
+      "file": "blog/pagina/12/index.html",
+      "page": 12,
+      "cards": 9,
+      "slugs": [
+        "uso-de-preposicoes-em-ingles",
+        "carnaval-nos-estados-unidos-mardi-gras",
+        "vocabulario-natal-ingles",
+        "frases-uteis-compras-ingles",
+        "ingles-transporte-publico",
+        "thanksgiving-day-curiosidades",
+        "origem-black-friday",
+        "tudo-sobre-intercambio-australia",
+        "halloween-origem-vocabulario"
+      ]
+    },
+    {
+      "file": "blog/pagina/13/index.html",
+      "page": 13,
+      "cards": 9,
+      "slugs": [
+        "ingles-medicos-profissionais-saude",
+        "intercambio-canada",
+        "dicas-para-preparar-toefl",
+        "phrasal-verbs-o-que-sao",
+        "como-preparar-intercambio-irlanda",
+        "a-importancia-do-ingles-fluente-para-o-jornalismo",
+        "expressoes-ingles-usar-restaurante",
+        "conheca-esportes-americanos-vocabulario",
+        "termos-ingles-profissionais-rh"
+      ]
+    },
+    {
+      "file": "blog/pagina/14/index.html",
+      "page": 14,
+      "cards": 9,
+      "slugs": [
+        "importancia-musica-aprendizado-ingles",
+        "dicas-falar-ingles-publico",
+        "beneficios-aprender-ingles-infancia",
+        "substantivos-coletivos-em-ingles",
+        "dia-dos-namorados-outra-data-brasil",
+        "cinco-dicas-aprender-ingles-rapido",
+        "beneficios-intercambio-conheca",
+        "erros-aprendizado-ingles",
+        "sotaques-ingles-diferencas"
+      ]
+    },
+    {
+      "file": "blog/pagina/15/index.html",
+      "page": 15,
+      "cards": 9,
+      "slugs": [
+        "como-melhorar-escuta-ingles",
+        "como-funciona-cerebro-bilingue",
+        "saint-patricks-day-eua",
+        "conversacao-ingles-importancia",
+        "business-english-30-termos",
+        "vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho",
+        "valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados",
+        "confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos",
+        "confira-seis-dicas-importantes-para-falar-melhor-em-ingles"
+      ]
+    },
+    {
+      "file": "blog/pagina/16/index.html",
+      "page": 16,
+      "cards": 9,
+      "slugs": [
+        "saiba-como-se-preparar-para-um-intercambio",
+        "comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia",
+        "conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos",
+        "sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas",
+        "vocabulario-de-ingles-para-a-area-de-marketing",
+        "brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles",
+        "aprenda-40-termos-financeiros-em-ingles",
+        "aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti",
+        "10-costumes-brasileiros-que-estrangeiros-acham-esquisitos"
+      ]
+    },
+    {
+      "file": "blog/pagina/17/index.html",
+      "page": 17,
+      "cards": 9,
+      "slugs": [
+        "vocabulario-ingles-usado-no-halloween",
+        "voce-sabe-como-o-toefl-funciona",
+        "cinco-vantagens-de-estudar-ingles-online",
+        "ingles-para-economistas",
+        "speak-talk-say-tell",
+        "labor-day",
+        "ingles-para-secretaria-executiva",
+        "dicas-para-melhorar-sua-escrita-em-ingles",
+        "as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos"
+      ]
+    },
+    {
+      "file": "blog/pagina/18/index.html",
+      "page": 18,
+      "cards": 9,
+      "slugs": [
+        "saiba-como-validar-seu-diploma-nos-eua",
+        "batalha-do-boyne-saiba-mais-sobre-esse-feriado",
+        "independence-day",
+        "alone-vs-lonely-qual-a-diferenca",
+        "as-leis-mais-estranhas-dos-estados-unidos",
+        "por-que-a-rainha-tem-dois-aniversarios",
+        "memorial-day-a-importancia-dessa-data-nos-eua",
+        "diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao",
+        "trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil"
+      ]
+    },
+    {
+      "file": "blog/pagina/19/index.html",
+      "page": 19,
+      "cards": 9,
+      "slugs": [
+        "has-ou-have-aprenda-a-utilizar",
+        "save-the-date-conheca-a-origem-dessa-expressao",
+        "como-e-comemorada-a-pascoa-nos-eua-e-inglaterra",
+        "por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade",
+        "ler-em-ingles-veja-oito-livros-para-iniciar",
+        "conheca-10-paises-que-tem-o-ingles-como-lingua-oficial",
+        "a-comemoracao-do-carnaval-ao-redor-do-mundo",
+        "como-a-tecnologia-pode-te-ajudar-a-aprender-ingles",
+        "viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo"
+      ]
+    },
+    {
+      "file": "blog/pagina/20/index.html",
+      "page": 20,
+      "cards": 9,
+      "slugs": [
+        "saiba-mais-sobre-os-certificados-internacionais-de-ingles",
+        "qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles",
+        "veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles",
+        "dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria",
+        "saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico",
+        "descubra-porque-a-united-idiomas-pode-transformar-sua-carreira",
+        "confira-10-series-que-vao-melhorar-o-seu-ingles",
+        "curso-ideal-de-ingles-porque-escolher-a-united-idiomas",
+        "a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos"
+      ]
+    },
+    {
+      "file": "blog/pagina/21/index.html",
+      "page": 21,
+      "cards": 5,
+      "slugs": [
+        "como-se-preparar-para-uma-entrevista-de-emprego-em-ingles",
+        "veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles",
+        "5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional",
+        "confira-10-girias-em-ingles-e-aprenda-a-usa-las",
+        "e-possivel-aprender-ingles-depois-de-adulto"
+      ]
+    }
+  ]
+}

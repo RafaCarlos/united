@@ -1,0 +1,9 @@
+# UNITED — integrar ao robots.txt existente; não substituir o arquivo inteiro.
+# Não publicar src/robots.txt ou preview/robots.txt: bloqueiam a prévia local.
+# Preservar regras de administração/WordPress e as linhas Sitemap existentes.
+# Validar grupos específicos de Googlebot, Bingbot e OAI-SearchBot, além de *.
+# As páginas públicas, CSS, JS e imagens precisam poder ser rastreados.
+# Não alterar a política de GPTBot (treinamento) para liberar busca.
+# Conferir firewall/CDN e ausência de X-Robots-Tag: noindex em produção.
+# Adicionar a linha abaixo somente quando o sitemap do candidato responder 200.
+Sitemap: https://www.unitedidiomas.com/sitemap-united-pages.xml

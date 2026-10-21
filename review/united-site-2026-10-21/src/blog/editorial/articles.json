@@ -1,0 +1,29 @@
+[
+  {
+    "id": "united-midia-2026-10",
+    "slug": "united-valor-o-globo-live-class-2",
+    "title": "United no Valor e em O Globo: conheça a Live Class 2.0",
+    "seoTitle": "United no Valor e em O Globo: Live Class 2.0",
+    "excerpt": "Publicações de 20 de outubro apresentam a proposta da United: aulas ao vivo, conversação, inteligência artificial e histórias que conectam o inglês à vida real.",
+    "date": "2026-10-21",
+    "modified": "2026-10-21",
+    "status": "local-draft",
+    "topic": "united",
+    "type": "news",
+    "authors": [{"name": "Redação United", "url": "https://www.unitedidiomas.com/quem-somos/"}],
+    "bodyFile": "united-valor-o-globo-live-class-2.html",
+    "localImage": {"large": "../assets/sala-liveclass.webp", "thumb": "../assets/sala-liveclass-720.webp", "width": 1400, "height": 788, "thumbWidth": 720, "thumbHeight": 405},
+    "featuredImage": {"alt": "Sala United Class com participantes em vídeo e atividades de inglês integradas à aula"},
+    "imageCaption": "Tela de apresentação da United Class: interação em vídeo e atividades de inglês no mesmo ambiente.",
+    "sourceNotes": {
+      "verifiedOn": "2026-10-21",
+      "verification": "As duas páginas foram lidas no navegador. Título, crédito DINO e data 20/10/2026 às 17h14 confirmados. Os portais identificam a distribuição como conteúdo de marca. A notícia local registra a publicação sem atribuir recomendação editorial aos veículos.",
+      "sources": [
+        "https://valor.globo.com/patrocinado/dino/noticia/2026/10/20/ensino-de-ingles-integra-aulas-ao-vivo-ia-e-storytelling-1.ghtml",
+        "https://oglobo.globo.com/patrocinado/dino/noticia/2026/10/20/ensino-de-ingles-integra-aulas-ao-vivo-ia-e-storytelling-1.ghtml"
+      ],
+      "institutionalNumbers": "Mais de 100 professores e 100.000 aulas ao vivo por ano são informações da United confirmadas pelo usuário. O texto externo cita mais de 100 mil em 2026; a notícia local preserva a formulação anual aprovada pelo usuário.",
+      "image": "Material da United fornecido pelo usuário e já utilizado na prévia. Não é uma fotografia extraída dos portais."
+    }
+  }
+]

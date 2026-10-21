@@ -1,0 +1,71 @@
+'use strict';
+const menuButton = document.querySelector('.menu-button');
+const mobileMenu = document.querySelector('#mobile-menu');
+menuButton.addEventListener('click',()=>{
+  if(mobileMenu.open){mobileMenu.close();return;}
+  mobileMenu.showModal();
+  menuButton.setAttribute('aria-expanded','true');
+  document.body.classList.add('modal-open');
+  mobileMenu.querySelector('.dialog-close').focus();
+});
+mobileMenu.querySelector('.dialog-close').addEventListener('click',()=>mobileMenu.close());
+mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>mobileMenu.close()));
+mobileMenu.addEventListener('close',()=>{
+  menuButton.setAttribute('aria-expanded','false');
+  document.body.classList.remove('modal-open');
+  menuButton.focus({preventScroll:true});
+});
+mobileMenu.addEventListener('keydown',event=>{
+  if(event.key!=='Tab')return;
+  const controls=[...mobileMenu.querySelectorAll('a[href],button:not([disabled])')];
+  const first=controls[0],last=controls[controls.length-1];
+  if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+  else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+});
+matchMedia('(min-width:1024px)').addEventListener('change',event=>{if(event.matches&&mobileMenu.open)mobileMenu.close();});
+
+// Manual explorers: tabs support keyboard navigation and never advance on their own.
+function setupFullTabs(selector) {
+  const list = document.querySelector(selector);
+  if (!list) return null;
+  const tabs = [...list.querySelectorAll('[role="tab"]')];
+  function select(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const active = i === index;
+      tab.setAttribute('aria-selected', String(active));
+      tab.tabIndex = active ? 0 : -1;
+      document.getElementById(tab.getAttribute('aria-controls')).hidden = !active;
+    });
+    if (focus) tabs[index].focus({preventScroll: true});
+  }
+  tabs.forEach((tab, index) => tab.addEventListener('click', () => select(index)));
+  list.addEventListener('keydown', event => {
+    const vertical = list.getAttribute('aria-orientation') === 'vertical';
+    const next = vertical ? 'ArrowDown' : 'ArrowRight';
+    const previous = vertical ? 'ArrowUp' : 'ArrowLeft';
+    if (![next, previous, 'Home', 'End'].includes(event.key)) return;
+    const current = tabs.indexOf(document.activeElement);
+    if (current < 0) return;
+    event.preventDefault();
+    const index = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 :
+      (current + (event.key === next ? 1 : -1) + tabs.length) % tabs.length;
+    select(index, true);
+  });
+  return {select, list};
+}
+const experiences = setupFullTabs('.experience-tabs');
+const objectives = setupFullTabs('.fit-tabs');
+function orientObjectiveTabs() {
+  if (objectives) objectives.list.setAttribute('aria-orientation', matchMedia('(max-width:780px)').matches ? 'horizontal' : 'vertical');
+}
+orientObjectiveTabs();
+matchMedia('(max-width:780px)').addEventListener('change', orientObjectiveTabs);
+document.querySelectorAll('[data-experience-next]').forEach(button => {
+  button.addEventListener('click', () => {
+    if (!experiences) return;
+    const index = Number(button.dataset.experienceNext);
+    experiences.select(index, true);
+    // Keep the navigation visible when moving forward from the bottom of a panel.
+    experiences.list.scrollIntoView({behavior:'instant', block:'start'});
+  });
+});

@@ -1,0 +1,89 @@
+{
+  "source": "Snapshot editorial do FAQ legado da United utilizado nesta proposta; arquivo de origem não integra a entrega.",
+  "sourceQuestionCount": 22,
+  "totalQuestions": 23,
+  "existingIdsPreserved": true,
+  "groups": [
+    {
+      "id": "escolha-do-curso",
+      "label": "Escolha do curso",
+      "questions": [
+        "faq-escolher",
+        "faq-1",
+        "faq-6",
+        "faq-13"
+      ]
+    },
+    {
+      "id": "live-class",
+      "label": "Live Class",
+      "questions": [
+        "faq-online",
+        "faq-18-meses",
+        "faq-17",
+        "faq-3"
+      ]
+    },
+    {
+      "id": "aulas-e-rotina",
+      "label": "Aulas e rotina",
+      "questions": [
+        "faq-2",
+        "faq-8",
+        "faq-12",
+        "faq-15",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "materiais-e-pratica",
+      "label": "Materiais e prática",
+      "questions": [
+        "faq-5",
+        "faq-9",
+        "faq-11",
+        "faq-jimmy-conversacao",
+        "faq-pratica-ondemand"
+      ]
+    },
+    {
+      "id": "aprendizado-e-evolucao",
+      "label": "Aprendizado e evolução",
+      "questions": [
+        "faq-4",
+        "faq-7",
+        "faq-16"
+      ]
+    },
+    {
+      "id": "certificacoes",
+      "label": "Certificações",
+      "questions": [
+        "faq-toefl",
+        "faq-14"
+      ]
+    }
+  ],
+  "adjustments": [
+    {
+      "id": "faq-5",
+      "reason": "Retirada a generalização de todas as estruturas do inglês; contexto profissional vinculado ao Business."
+    },
+    {
+      "id": "faq-6",
+      "reason": "Explicita a divisão aprovada 18 meses Live Class + 6 meses Business."
+    },
+    {
+      "id": "faq-10",
+      "reason": "Mantém opção presencial mediante consulta aos formatos e horários da unidade."
+    },
+    {
+      "id": "faq-toefl",
+      "reason": "Nova pergunta baseada na confirmação do usuário: TOEFL opcional com custo adicional ao final do Live Class."
+    }
+  ],
+  "qa": {
+    "leadSubmitted": false,
+    "published": false
+  }
+}
