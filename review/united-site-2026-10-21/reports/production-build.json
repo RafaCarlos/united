@@ -1,0 +1,4420 @@
+{
+  "origin": "https://www.unitedidiomas.com",
+  "pages": 213,
+  "files": 837,
+  "bytes": 41378252,
+  "editorialApproval": [
+    {
+      "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
+      "status": "local-draft",
+      "explicitlyApproved": true
+    },
+    {
+      "slug": "united-valor-o-globo-live-class-2",
+      "status": "local-draft",
+      "explicitlyApproved": true
+    }
+  ],
+  "routes": {
+    "index.html": "/cursos/live-class/",
+    "business/index.html": "/cursos/business/",
+    "full/index.html": "/cursos/full/",
+    "quem-somos/index.html": "/quem-somos/",
+    "home/index.html": "/",
+    "faq/index.html": "/faq/",
+    "blog/index.html": "/blog/",
+    "blog/pagina/2/index.html": "/blog/pagina/2/",
+    "blog/pagina/3/index.html": "/blog/pagina/3/",
+    "blog/pagina/4/index.html": "/blog/pagina/4/",
+    "blog/pagina/5/index.html": "/blog/pagina/5/",
+    "blog/pagina/6/index.html": "/blog/pagina/6/",
+    "blog/pagina/7/index.html": "/blog/pagina/7/",
+    "blog/pagina/8/index.html": "/blog/pagina/8/",
+    "blog/pagina/9/index.html": "/blog/pagina/9/",
+    "blog/pagina/10/index.html": "/blog/pagina/10/",
+    "blog/pagina/11/index.html": "/blog/pagina/11/",
+    "blog/pagina/12/index.html": "/blog/pagina/12/",
+    "blog/pagina/13/index.html": "/blog/pagina/13/",
+    "blog/pagina/14/index.html": "/blog/pagina/14/",
+    "blog/pagina/15/index.html": "/blog/pagina/15/",
+    "blog/pagina/16/index.html": "/blog/pagina/16/",
+    "blog/pagina/17/index.html": "/blog/pagina/17/",
+    "blog/pagina/18/index.html": "/blog/pagina/18/",
+    "blog/pagina/19/index.html": "/blog/pagina/19/",
+    "blog/pagina/20/index.html": "/blog/pagina/20/",
+    "blog/pagina/21/index.html": "/blog/pagina/21/",
+    "blog/united-valor-o-globo-live-class-2/index.html": "/blog/united-valor-o-globo-live-class-2/",
+    "blog/united-ingles-online-aulas-ao-vivo-tecnologia/index.html": "/blog/united-ingles-online-aulas-ao-vivo-tecnologia/",
+    "blog/ingles-para-reunioes/index.html": "/blog/ingles-para-reunioes/",
+    "blog/ingles-estudar-trabalhar-exterior/index.html": "/blog/ingles-estudar-trabalhar-exterior/",
+    "blog/ingles-eventos-internacionais/index.html": "/blog/ingles-eventos-internacionais/",
+    "blog/ingles-viajar-europa-outono/index.html": "/blog/ingles-viajar-europa-outono/",
+    "blog/ia-aprender-ingles-habilidades-humanas/index.html": "/blog/ia-aprender-ingles-habilidades-humanas/",
+    "blog/aprender-ingles-sozinho-ou-com-professor/index.html": "/blog/aprender-ingles-sozinho-ou-com-professor/",
+    "blog/imersao-ingles-em-casa/index.html": "/blog/imersao-ingles-em-casa/",
+    "blog/vocabulario-ingles-viagem/index.html": "/blog/vocabulario-ingles-viagem/",
+    "blog/rotina-ingles-ia/index.html": "/blog/rotina-ingles-ia/",
+    "blog/ingles-viajar-europa/index.html": "/blog/ingles-viajar-europa/",
+    "blog/aumentar-vocabulario-ingles/index.html": "/blog/aumentar-vocabulario-ingles/",
+    "blog/diferencas-ingles-paises/index.html": "/blog/diferencas-ingles-paises/",
+    "blog/ia-aprender-ingles/index.html": "/blog/ia-aprender-ingles/",
+    "blog/tempos-verbais-ingles-2/index.html": "/blog/tempos-verbais-ingles-2/",
+    "blog/ingles-viagens-internacionais/index.html": "/blog/ingles-viagens-internacionais/",
+    "blog/ingles-profissional-trabalho/index.html": "/blog/ingles-profissional-trabalho/",
+    "blog/dificuldades-gramatica-ingles/index.html": "/blog/dificuldades-gramatica-ingles/",
+    "blog/ingles-conversacao-profissional/index.html": "/blog/ingles-conversacao-profissional/",
+    "blog/ingles-para-viagem/index.html": "/blog/ingles-para-viagem/",
+    "blog/ingles-fluente-carreira/index.html": "/blog/ingles-fluente-carreira/",
+    "blog/curso-ingles-corporativo/index.html": "/blog/curso-ingles-corporativo/",
+    "blog/selo-excelencia-franchising-united-idiomas/index.html": "/blog/selo-excelencia-franchising-united-idiomas/",
+    "blog/ingles-liderar-reunioes/index.html": "/blog/ingles-liderar-reunioes/",
+    "blog/ingles-no-trabalho/index.html": "/blog/ingles-no-trabalho/",
+    "blog/ingles-corporativo/index.html": "/blog/ingles-corporativo/",
+    "blog/curso-ingles-profissionais-ocupados/index.html": "/blog/curso-ingles-profissionais-ocupados/",
+    "blog/frases-ingles-restaurantes/index.html": "/blog/frases-ingles-restaurantes/",
+    "blog/ingles-fluente-mercado-corporativo/index.html": "/blog/ingles-fluente-mercado-corporativo/",
+    "blog/curso-ingles-rotina-corrida/index.html": "/blog/curso-ingles-rotina-corrida/",
+    "blog/perder-nervosismo-conversar-em-ingles/index.html": "/blog/perder-nervosismo-conversar-em-ingles/",
+    "blog/adverbs-frequency/index.html": "/blog/adverbs-frequency/",
+    "blog/expressoes-e-mails/index.html": "/blog/expressoes-e-mails/",
+    "blog/too-enough-very/index.html": "/blog/too-enough-very/",
+    "blog/pais-ideal-intercambio/index.html": "/blog/pais-ideal-intercambio/",
+    "blog/ingles-para-networking/index.html": "/blog/ingles-para-networking/",
+    "blog/negociar-salario-beneficios-ingles/index.html": "/blog/negociar-salario-beneficios-ingles/",
+    "blog/ingles-nova-zelandia/index.html": "/blog/ingles-nova-zelandia/",
+    "blog/aprenda-20-adjetivos-ingles/index.html": "/blog/aprenda-20-adjetivos-ingles/",
+    "blog/cinco-motivos-hoje-united-idiomas/index.html": "/blog/cinco-motivos-hoje-united-idiomas/",
+    "blog/tempos-verbais-ingles/index.html": "/blog/tempos-verbais-ingles/",
+    "blog/ingles-carreira-tecnologia/index.html": "/blog/ingles-carreira-tecnologia/",
+    "blog/como-usar-get/index.html": "/blog/como-usar-get/",
+    "blog/ingles-para-linkedin/index.html": "/blog/ingles-para-linkedin/",
+    "blog/treinar-ingles-intercambio/index.html": "/blog/treinar-ingles-intercambio/",
+    "blog/filmes-series-listening/index.html": "/blog/filmes-series-listening/",
+    "blog/sete-destinos-ingles/index.html": "/blog/sete-destinos-ingles/",
+    "blog/ingles-mudar-carreira/index.html": "/blog/ingles-mudar-carreira/",
+    "blog/phrasal-verbs-mais-usados/index.html": "/blog/phrasal-verbs-mais-usados/",
+    "blog/nivel-profissional-ingles/index.html": "/blog/nivel-profissional-ingles/",
+    "blog/soft-skills-ingles/index.html": "/blog/soft-skills-ingles/",
+    "blog/e-mails-profissionais/index.html": "/blog/e-mails-profissionais/",
+    "blog/o-que-sao-collocations/index.html": "/blog/o-que-sao-collocations/",
+    "blog/erros-gramaticais-ingles/index.html": "/blog/erros-gramaticais-ingles/",
+    "blog/ingles-americano-britanico-diferencas/index.html": "/blog/ingles-americano-britanico-diferencas/",
+    "blog/curso-united-carreiras/index.html": "/blog/curso-united-carreiras/",
+    "blog/intercambio-como-se-preparar/index.html": "/blog/intercambio-como-se-preparar/",
+    "blog/comemoracao-st-patrick-day/index.html": "/blog/comemoracao-st-patrick-day/",
+    "blog/ingles-ead/index.html": "/blog/ingles-ead/",
+    "blog/conjuncoes-conectivos/index.html": "/blog/conjuncoes-conectivos/",
+    "blog/carnaval-nos-eua/index.html": "/blog/carnaval-nos-eua/",
+    "blog/treinar-ingles-inteligencia-artificial/index.html": "/blog/treinar-ingles-inteligencia-artificial/",
+    "blog/reunioes-em-ingles/index.html": "/blog/reunioes-em-ingles/",
+    "blog/carreira-2025-united/index.html": "/blog/carreira-2025-united/",
+    "blog/will-going-to/index.html": "/blog/will-going-to/",
+    "blog/natal-lingua-inglesa/index.html": "/blog/natal-lingua-inglesa/",
+    "blog/certificados-internacionais-ingles/index.html": "/blog/certificados-internacionais-ingles/",
+    "blog/carreiras-ingles-fluente/index.html": "/blog/carreiras-ingles-fluente/",
+    "blog/thanksgiving-day-dia-especial/index.html": "/blog/thanksgiving-day-dia-especial/",
+    "blog/veterans-day-importancia/index.html": "/blog/veterans-day-importancia/",
+    "blog/verb-tenses/index.html": "/blog/verb-tenses/",
+    "blog/halloween-guia-completo/index.html": "/blog/halloween-guia-completo/",
+    "blog/palavras-frases-ingles-hoteis/index.html": "/blog/palavras-frases-ingles-hoteis/",
+    "blog/principais-girias-ingles/index.html": "/blog/principais-girias-ingles/",
+    "blog/cinco-motivos-united-idiomas/index.html": "/blog/cinco-motivos-united-idiomas/",
+    "blog/though-thought-tough/index.html": "/blog/though-thought-tough/",
+    "blog/intercambio-africa-do-sul/index.html": "/blog/intercambio-africa-do-sul/",
+    "blog/guia-prepositions/index.html": "/blog/guia-prepositions/",
+    "blog/expandir-vocabulario-ingles/index.html": "/blog/expandir-vocabulario-ingles/",
+    "blog/entrevista-emprego-ingles/index.html": "/blog/entrevista-emprego-ingles/",
+    "blog/remoto-presencial-united/index.html": "/blog/remoto-presencial-united/",
+    "blog/treinar-ingles-series/index.html": "/blog/treinar-ingles-series/",
+    "blog/importancia-independence-day/index.html": "/blog/importancia-independence-day/",
+    "blog/ingles-fluente-home-office/index.html": "/blog/ingles-fluente-home-office/",
+    "blog/modal-verbs/index.html": "/blog/modal-verbs/",
+    "blog/livros-ingles/index.html": "/blog/livros-ingles/",
+    "blog/pratos-tipicos-canada/index.html": "/blog/pratos-tipicos-canada/",
+    "blog/sotaques-ingles/index.html": "/blog/sotaques-ingles/",
+    "blog/intercambio-au-pair-o-que-e-e-como-funciona/index.html": "/blog/intercambio-au-pair-o-que-e-e-como-funciona/",
+    "blog/dia-das-maes-anna-jarvis/index.html": "/blog/dia-das-maes-anna-jarvis/",
+    "blog/intercambio-o-que-e-preciso-e-como-se-preparar/index.html": "/blog/intercambio-o-que-e-preciso-e-como-se-preparar/",
+    "blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/index.html": "/blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/",
+    "blog/guia-rapido-de-ingles-para-viagens/index.html": "/blog/guia-rapido-de-ingles-para-viagens/",
+    "blog/entenda-o-verbo-to-be/index.html": "/blog/entenda-o-verbo-to-be/",
+    "blog/pos-graduacao-internacional-no-reino-unido/index.html": "/blog/pos-graduacao-internacional-no-reino-unido/",
+    "blog/conheca-5-autoras-internacionais-para-ler-em-ingles/index.html": "/blog/conheca-5-autoras-internacionais-para-ler-em-ingles/",
+    "blog/como-se-preparar-para-entrevista-em-ingles/index.html": "/blog/como-se-preparar-para-entrevista-em-ingles/",
+    "blog/estude-ingles-na-united-e-decole-sua-carreira/index.html": "/blog/estude-ingles-na-united-e-decole-sua-carreira/",
+    "blog/ingles-para-home-office-global/index.html": "/blog/ingles-para-home-office-global/",
+    "blog/uso-de-preposicoes-em-ingles/index.html": "/blog/uso-de-preposicoes-em-ingles/",
+    "blog/carnaval-nos-estados-unidos-mardi-gras/index.html": "/blog/carnaval-nos-estados-unidos-mardi-gras/",
+    "blog/vocabulario-natal-ingles/index.html": "/blog/vocabulario-natal-ingles/",
+    "blog/frases-uteis-compras-ingles/index.html": "/blog/frases-uteis-compras-ingles/",
+    "blog/ingles-transporte-publico/index.html": "/blog/ingles-transporte-publico/",
+    "blog/thanksgiving-day-curiosidades/index.html": "/blog/thanksgiving-day-curiosidades/",
+    "blog/origem-black-friday/index.html": "/blog/origem-black-friday/",
+    "blog/tudo-sobre-intercambio-australia/index.html": "/blog/tudo-sobre-intercambio-australia/",
+    "blog/halloween-origem-vocabulario/index.html": "/blog/halloween-origem-vocabulario/",
+    "blog/ingles-medicos-profissionais-saude/index.html": "/blog/ingles-medicos-profissionais-saude/",
+    "blog/intercambio-canada/index.html": "/blog/intercambio-canada/",
+    "blog/dicas-para-preparar-toefl/index.html": "/blog/dicas-para-preparar-toefl/",
+    "blog/phrasal-verbs-o-que-sao/index.html": "/blog/phrasal-verbs-o-que-sao/",
+    "blog/como-preparar-intercambio-irlanda/index.html": "/blog/como-preparar-intercambio-irlanda/",
+    "blog/a-importancia-do-ingles-fluente-para-o-jornalismo/index.html": "/blog/a-importancia-do-ingles-fluente-para-o-jornalismo/",
+    "blog/expressoes-ingles-usar-restaurante/index.html": "/blog/expressoes-ingles-usar-restaurante/",
+    "blog/conheca-esportes-americanos-vocabulario/index.html": "/blog/conheca-esportes-americanos-vocabulario/",
+    "blog/termos-ingles-profissionais-rh/index.html": "/blog/termos-ingles-profissionais-rh/",
+    "blog/importancia-musica-aprendizado-ingles/index.html": "/blog/importancia-musica-aprendizado-ingles/",
+    "blog/dicas-falar-ingles-publico/index.html": "/blog/dicas-falar-ingles-publico/",
+    "blog/beneficios-aprender-ingles-infancia/index.html": "/blog/beneficios-aprender-ingles-infancia/",
+    "blog/substantivos-coletivos-em-ingles/index.html": "/blog/substantivos-coletivos-em-ingles/",
+    "blog/dia-dos-namorados-outra-data-brasil/index.html": "/blog/dia-dos-namorados-outra-data-brasil/",
+    "blog/cinco-dicas-aprender-ingles-rapido/index.html": "/blog/cinco-dicas-aprender-ingles-rapido/",
+    "blog/beneficios-intercambio-conheca/index.html": "/blog/beneficios-intercambio-conheca/",
+    "blog/erros-aprendizado-ingles/index.html": "/blog/erros-aprendizado-ingles/",
+    "blog/sotaques-ingles-diferencas/index.html": "/blog/sotaques-ingles-diferencas/",
+    "blog/como-melhorar-escuta-ingles/index.html": "/blog/como-melhorar-escuta-ingles/",
+    "blog/como-funciona-cerebro-bilingue/index.html": "/blog/como-funciona-cerebro-bilingue/",
+    "blog/saint-patricks-day-eua/index.html": "/blog/saint-patricks-day-eua/",
+    "blog/conversacao-ingles-importancia/index.html": "/blog/conversacao-ingles-importancia/",
+    "blog/business-english-30-termos/index.html": "/blog/business-english-30-termos/",
+    "blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/index.html": "/blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/",
+    "blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/index.html": "/blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/",
+    "blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/index.html": "/blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/",
+    "blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/index.html": "/blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/",
+    "blog/saiba-como-se-preparar-para-um-intercambio/index.html": "/blog/saiba-como-se-preparar-para-um-intercambio/",
+    "blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/index.html": "/blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/",
+    "blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/index.html": "/blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/",
+    "blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/index.html": "/blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/",
+    "blog/vocabulario-de-ingles-para-a-area-de-marketing/index.html": "/blog/vocabulario-de-ingles-para-a-area-de-marketing/",
+    "blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/index.html": "/blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/",
+    "blog/aprenda-40-termos-financeiros-em-ingles/index.html": "/blog/aprenda-40-termos-financeiros-em-ingles/",
+    "blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/index.html": "/blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/",
+    "blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/index.html": "/blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/",
+    "blog/vocabulario-ingles-usado-no-halloween/index.html": "/blog/vocabulario-ingles-usado-no-halloween/",
+    "blog/voce-sabe-como-o-toefl-funciona/index.html": "/blog/voce-sabe-como-o-toefl-funciona/",
+    "blog/cinco-vantagens-de-estudar-ingles-online/index.html": "/blog/cinco-vantagens-de-estudar-ingles-online/",
+    "blog/ingles-para-economistas/index.html": "/blog/ingles-para-economistas/",
+    "blog/speak-talk-say-tell/index.html": "/blog/speak-talk-say-tell/",
+    "blog/labor-day/index.html": "/blog/labor-day/",
+    "blog/ingles-para-secretaria-executiva/index.html": "/blog/ingles-para-secretaria-executiva/",
+    "blog/dicas-para-melhorar-sua-escrita-em-ingles/index.html": "/blog/dicas-para-melhorar-sua-escrita-em-ingles/",
+    "blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/index.html": "/blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/",
+    "blog/saiba-como-validar-seu-diploma-nos-eua/index.html": "/blog/saiba-como-validar-seu-diploma-nos-eua/",
+    "blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/index.html": "/blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/",
+    "blog/independence-day/index.html": "/blog/independence-day/",
+    "blog/alone-vs-lonely-qual-a-diferenca/index.html": "/blog/alone-vs-lonely-qual-a-diferenca/",
+    "blog/as-leis-mais-estranhas-dos-estados-unidos/index.html": "/blog/as-leis-mais-estranhas-dos-estados-unidos/",
+    "blog/por-que-a-rainha-tem-dois-aniversarios/index.html": "/blog/por-que-a-rainha-tem-dois-aniversarios/",
+    "blog/memorial-day-a-importancia-dessa-data-nos-eua/index.html": "/blog/memorial-day-a-importancia-dessa-data-nos-eua/",
+    "blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/index.html": "/blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/",
+    "blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/index.html": "/blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/",
+    "blog/has-ou-have-aprenda-a-utilizar/index.html": "/blog/has-ou-have-aprenda-a-utilizar/",
+    "blog/save-the-date-conheca-a-origem-dessa-expressao/index.html": "/blog/save-the-date-conheca-a-origem-dessa-expressao/",
+    "blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/index.html": "/blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/",
+    "blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/index.html": "/blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/",
+    "blog/ler-em-ingles-veja-oito-livros-para-iniciar/index.html": "/blog/ler-em-ingles-veja-oito-livros-para-iniciar/",
+    "blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/index.html": "/blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/",
+    "blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/index.html": "/blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/",
+    "blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/index.html": "/blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/",
+    "blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/index.html": "/blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/",
+    "blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/index.html": "/blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/",
+    "blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/index.html": "/blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/",
+    "blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/index.html": "/blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/",
+    "blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/index.html": "/blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/",
+    "blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/index.html": "/blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/",
+    "blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/index.html": "/blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/",
+    "blog/confira-10-series-que-vao-melhorar-o-seu-ingles/index.html": "/blog/confira-10-series-que-vao-melhorar-o-seu-ingles/",
+    "blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/index.html": "/blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/",
+    "blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/index.html": "/blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/",
+    "blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/index.html": "/blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/",
+    "blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/index.html": "/blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/",
+    "blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/index.html": "/blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/",
+    "blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/index.html": "/blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/",
+    "blog/e-possivel-aprender-ingles-depois-de-adulto/index.html": "/blog/e-possivel-aprender-ingles-depois-de-adulto/"
+  },
+  "inventory": [
+    {
+      "file": "app.js",
+      "bytes": 7627,
+      "sha256": "6238b19182ae6545fc8a4988c4575d98918dbf278b291950cd847827e2008a8d"
+    },
+    {
+      "file": "assets/aula-restaurante-united-v32-1040.webp",
+      "bytes": 79430,
+      "sha256": "2fc302f569c097989f59622cd2a51393e7aea6750f244d896cd5f89e7c10df97"
+    },
+    {
+      "file": "assets/aula-restaurante-united-v32-1672.webp",
+      "bytes": 142790,
+      "sha256": "fc1396e11990a384d3a437edc6617ca7781d6ff5b1d32616f5fea69bc71996d9"
+    },
+    {
+      "file": "assets/aula-restaurante-united-v32-640.webp",
+      "bytes": 40060,
+      "sha256": "51ee63c821a7c64d8400bf16c59cc9340139dd5cb11240c534b524a2ca739865"
+    },
+    {
+      "file": "assets/aula-united-class-unit25-1040.webp",
+      "bytes": 73826,
+      "sha256": "f6c83bc26260a252147d020c3882991e2e26af95e0649ea4529e36c33e53a694"
+    },
+    {
+      "file": "assets/aula-united-class-unit25-640.webp",
+      "bytes": 35794,
+      "sha256": "f3e12abd9d68dfacf4630a6602789203ecdd27b68b241531769ed30b504b0a56"
+    },
+    {
+      "file": "assets/brand/united-logo-512.png",
+      "bytes": 32940,
+      "sha256": "7d90e42e735edf7867677ee4110e7347e0cb8141a9f2664d5a1c4aabacb15d51"
+    },
+    {
+      "file": "assets/brand/united-share-1200x630.png",
+      "bytes": 42558,
+      "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
+    },
+    {
+      "file": "assets/capa-times-square-v2-1672.webp",
+      "bytes": 214242,
+      "sha256": "0a2e5405f3b7030eee48560b1092a81988f9ceb60e84bf330b7ac113f288b169"
+    },
+    {
+      "file": "assets/capa-times-square-v2-960.webp",
+      "bytes": 95350,
+      "sha256": "d736b74ba035291dd4996be35777675a2e5353eeb23ac44e66ff7b72bde6225f"
+    },
+    {
+      "file": "assets/exercicio-escuta-720.webp",
+      "bytes": 30918,
+      "sha256": "5f040137a4a1747afcbf73d325512873467f0788ac7133cd66510acfbda58beb"
+    },
+    {
+      "file": "assets/exercicio-escuta.webp",
+      "bytes": 70800,
+      "sha256": "d5da79711a22b7991cef6e278af59d138465da72c0f1275437d12c7c1573b683"
+    },
+    {
+      "file": "assets/exercicio-estruturas-720.webp",
+      "bytes": 20654,
+      "sha256": "068eae5c0849f93d7624685eec01576e8520dad2c5331916c0b5697dc6f609c2"
+    },
+    {
+      "file": "assets/exercicio-estruturas.webp",
+      "bytes": 48818,
+      "sha256": "8c40caa07d7a55adf5ac91f581f84e22cc5aaaa9bc777805b8c616c7b2c6a84b"
+    },
+    {
+      "file": "assets/exercicio-vocabulario-720.webp",
+      "bytes": 44100,
+      "sha256": "66045055fae234e046570b3ecab8df034aaf1d81f9685bb970fe32f1030f9b2e"
+    },
+    {
+      "file": "assets/exercicio-vocabulario.webp",
+      "bytes": 100740,
+      "sha256": "3b206766392cd13583c41eb396c178045672d68b68f12ecad3f07b82db2aae9e"
+    },
+    {
+      "file": "assets/favicon.png",
+      "bytes": 10209,
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191"
+    },
+    {
+      "file": "assets/historia-amigos-1280.webp",
+      "bytes": 94466,
+      "sha256": "53f10845424e3d6c699f6ef9a9b2f39a1ddeae6ef097c1bef1db3452c61917fe"
+    },
+    {
+      "file": "assets/historia-amigos-720.webp",
+      "bytes": 39994,
+      "sha256": "28e0844e82b3d86a786d114e6ac22cd1b9c909b0f022d1ede4df285e17553b31"
+    },
+    {
+      "file": "assets/historia-carona-480.webp",
+      "bytes": 20920,
+      "sha256": "42fcfcbbd95eeda2cc2b3e607147808b4572e43c84a06dc6881496ea3beb9f30"
+    },
+    {
+      "file": "assets/historia-carona-900.webp",
+      "bytes": 58182,
+      "sha256": "8f99961e930c6484eb0dee81c67a9c525e42ffeb69bbcda361451d48b5cdf2e6"
+    },
+    {
+      "file": "assets/historia-colegas-480.webp",
+      "bytes": 19302,
+      "sha256": "f7414aa1268863466c686adb6d2741676f72856e230aa6ace053ea2796197f8f"
+    },
+    {
+      "file": "assets/historia-colegas-900.webp",
+      "bytes": 54440,
+      "sha256": "e9794cba56b7c7841e22d008d7013699fe9b26c0d4ce964a8662f7e69a45f352"
+    },
+    {
+      "file": "assets/historia-convite-noturno-480.webp",
+      "bytes": 29116,
+      "sha256": "2ab0cac0fada2b4a9f46517270af98bdf13d4e6620980689b7b7c63215dd8a80"
+    },
+    {
+      "file": "assets/historia-convite-noturno-900.webp",
+      "bytes": 68554,
+      "sha256": "9211c3e9a4e5dce3fb8d879668c95dce1ef8b4aa8d5df3f2811213669724d805"
+    },
+    {
+      "file": "assets/historia-correio-cena-480.webp",
+      "bytes": 28458,
+      "sha256": "eca083e47c21677e0fab2aed8cac214527b123bd35f584b4153d5bb0ed8bcfa1"
+    },
+    {
+      "file": "assets/historia-correio-cena-900.webp",
+      "bytes": 70526,
+      "sha256": "17e821dc70eb12812476a94797a3961278740ad2ccaf8b84bdadac73c1db5b04"
+    },
+    {
+      "file": "assets/historia-escritorio-480.webp",
+      "bytes": 22576,
+      "sha256": "945edf32fab31ed7f9209eaca90fe385e4f36b84a339871c72b2bb27dc312145"
+    },
+    {
+      "file": "assets/historia-escritorio-900.webp",
+      "bytes": 56236,
+      "sha256": "a7fc4270acf19bc2ae746222a14a76676a74a05cad32e9ec006ff7d408b12bb2"
+    },
+    {
+      "file": "assets/historia-ligacao-480.webp",
+      "bytes": 26094,
+      "sha256": "bf77eb6db47b9b7dc35fec21101a848d3dfaa189a5bff656ae474dc8eec02e14"
+    },
+    {
+      "file": "assets/historia-ligacao-900.webp",
+      "bytes": 58270,
+      "sha256": "e817ef4a2ea31649c74c579c013c7620417a59a8dafd034f477309165d4c63f5"
+    },
+    {
+      "file": "assets/historia-mercado-1280.webp",
+      "bytes": 143352,
+      "sha256": "11b68405f4eb7b0d8bdb4e8a91318660b9acf9a8fb1312a367ddb9d075bf9e29"
+    },
+    {
+      "file": "assets/historia-mercado-720.webp",
+      "bytes": 64544,
+      "sha256": "53c813e5580a67835b839c41a67cb01687d441c2fd1ca95b0fb6c282c580d373"
+    },
+    {
+      "file": "assets/historia-nova-york-1280.webp",
+      "bytes": 64092,
+      "sha256": "04112cf2f47bd2fac395a7585cd5dd7d3e4041f200380b0e1ba3f995d6cbd522"
+    },
+    {
+      "file": "assets/historia-nova-york-720.webp",
+      "bytes": 31996,
+      "sha256": "1740c0644a930370928b7aff43aec30e2bc3c8b10e2efc22d06ed793c56835ec"
+    },
+    {
+      "file": "assets/historia-paris-hotel-480.webp",
+      "bytes": 18390,
+      "sha256": "35757c8d59aac590e6707237f4967b6094c5ed88f939bbf71546eba98be9c81a"
+    },
+    {
+      "file": "assets/historia-paris-hotel-900.webp",
+      "bytes": 47084,
+      "sha256": "40e5f7359833e644709067cf933518eec51b84700e88d885cd523af197b1265e"
+    },
+    {
+      "file": "assets/historia-paris-partida-480.webp",
+      "bytes": 19890,
+      "sha256": "94eab3307df74968d5c02923cbd3c2c2447444abed4b7541b099d1ec564520dd"
+    },
+    {
+      "file": "assets/historia-paris-partida-900.webp",
+      "bytes": 50666,
+      "sha256": "15535accf3c652d7db07d02eb9512c4b2a48919bfcbd631bd9d0afc0199e93bb"
+    },
+    {
+      "file": "assets/historia-paris-passeio-1280.webp",
+      "bytes": 114340,
+      "sha256": "812c4ad73be4e2ff5adaab89d0aaf947f34fb5f80abf3ca7156075f378ee5719"
+    },
+    {
+      "file": "assets/historia-paris-passeio-720.webp",
+      "bytes": 48102,
+      "sha256": "35b97112612eeadc492fcfaf1a56e96f8a6d5214f1707df751194068d2c33bb7"
+    },
+    {
+      "file": "assets/historia-porta-480.webp",
+      "bytes": 12460,
+      "sha256": "6885f5847d80f2eb6326b217a38b8ea6a41b76c4c4e3080e7ef4cc040f6d1895"
+    },
+    {
+      "file": "assets/historia-porta-900.webp",
+      "bytes": 31366,
+      "sha256": "7f3084b5a64b6f402dbd28dd9cc1376505332a9316271e0cebdadbabe1e97a9d"
+    },
+    {
+      "file": "assets/historia-restaurante-1280.webp",
+      "bytes": 72874,
+      "sha256": "5c24e9f3897a9170a8b6fbb5fbc4d0418d2ad4afe72a3f021038f3a51d209e69"
+    },
+    {
+      "file": "assets/historia-restaurante-480.webp",
+      "bytes": 19816,
+      "sha256": "0247d3bd28e66fbe504c2fabca529bea0480a96bc69827aa88da7c6b4e83a906"
+    },
+    {
+      "file": "assets/historia-restaurante-900.webp",
+      "bytes": 46660,
+      "sha256": "e9bc41d248e63ac5cf9a48826239ae28c16d589eee5f25fab530fdb57533f569"
+    },
+    {
+      "file": "assets/historia-rotina-parque-480.webp",
+      "bytes": 46698,
+      "sha256": "61393bbed7c5f97810b229c6cb497e21fc8d46e8c4e874c3a37583360ecb260e"
+    },
+    {
+      "file": "assets/historia-rotina-parque-900.webp",
+      "bytes": 124878,
+      "sha256": "ac92a99db89d8b5e1a58fc7a0368265957e2040508b2f8b88039f87c170174e6"
+    },
+    {
+      "file": "assets/icon-menu-facebook.webp",
+      "bytes": 180,
+      "sha256": "6135f0b6fec91bd60449b000b052f21c17cae6a017b6206c92461966940b9590"
+    },
+    {
+      "file": "assets/icon-menu-instagram.webp",
+      "bytes": 224,
+      "sha256": "b1955a2b22ee2bf99e211668af23e2d893899991b594d2d0075c385e5e96f1c3"
+    },
+    {
+      "file": "assets/icon-menu-linkedin.webp",
+      "bytes": 224,
+      "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
+    },
+    {
+      "file": "assets/jimmy-united-recepcao.webp",
+      "bytes": 97132,
+      "sha256": "1269450df8e74a4a42f2269d109069e5255cf8866b9ca3a5e77675d259a74d9b"
+    },
+    {
+      "file": "assets/logo-united.webp",
+      "bytes": 2682,
+      "sha256": "e2fab39da931b1cf625140e30c5a73ca817c6d66c60bec3d49d50ea28190220f"
+    },
+    {
+      "file": "assets/Manrope-Bold.woff2",
+      "bytes": 29668,
+      "sha256": "463623e40543c45621d316fc249757b3d284001adfa3f11273516fa4c0d64dd1"
+    },
+    {
+      "file": "assets/Manrope-Regular.woff2",
+      "bytes": 30916,
+      "sha256": "5cca0236653a6a33a1e6983ce9f02214e8cc05dfc5ebde2c7e4b56c35f9521c2"
+    },
+    {
+      "file": "assets/plataforma-aulas.webp",
+      "bytes": 20448,
+      "sha256": "eb40ffb950d6a02beb2d009780addd69cf0f7d0f30bf98b034c189b30ccc3936"
+    },
+    {
+      "file": "assets/plataforma-pratica.webp",
+      "bytes": 22604,
+      "sha256": "2fa22c757e56c1ad4b35a7fac7d40353fa6d931e8cf0d8499686015add03a4c0"
+    },
+    {
+      "file": "assets/plataforma-trilha.webp",
+      "bytes": 24638,
+      "sha256": "39df2f2510d55a3d54a05cbea6009c6b0590542bb1cfdee6d9dbcaf8d2f8c1ec"
+    },
+    {
+      "file": "assets/poster-promo.webp",
+      "bytes": 65330,
+      "sha256": "de90995b28adee9f0cad21a8ba8cf42edebdfff593eb8dadc4c2410746c69372"
+    },
+    {
+      "file": "assets/professores/equipe-mosaico-v42-1440.webp",
+      "bytes": 147870,
+      "sha256": "5fa507fe3e10f5a596fa7474a07cbbeb2ac0213e6a8df6cf30998ae5305b1806"
+    },
+    {
+      "file": "assets/professores/equipe-mosaico-v42-640.webp",
+      "bytes": 49642,
+      "sha256": "0f7a896dbf64520dbf6a61e0a1b26903778aa361b46ebff03543b2596fbada97"
+    },
+    {
+      "file": "assets/professores/equipe-mosaico-v42-960.webp",
+      "bytes": 87180,
+      "sha256": "ecf00f988e6dcfc43fa70c2381d6844e655a9237ba2c6d8c870fa46ec1da43cc"
+    },
+    {
+      "file": "assets/promo-liveclass-web-v5.mp4",
+      "bytes": 6720631,
+      "sha256": "ffbae48e22231359b26ac6373dcf1d4df597942da63070bea60419d1a4ee708d"
+    },
+    {
+      "file": "assets/rafael-perfil-ilustrativo-128.webp",
+      "bytes": 2130,
+      "sha256": "e4cd4af0ed9ca537da75a6977d2d3713db728f7ba379eba96e69f922714ea429"
+    },
+    {
+      "file": "assets/sala-conversacao-unit22-v32-1280.webp",
+      "bytes": 99948,
+      "sha256": "35ecefa8c67d6f93a725e3a38a5e624a3140907b712d7b3a259a5a5e8ad18b32"
+    },
+    {
+      "file": "assets/sala-conversacao-unit22-v32-720.webp",
+      "bytes": 45132,
+      "sha256": "746ad23c2655fdc22bf938b6ba1654ae3cf302a3a7320c39700e7804d1b131b0"
+    },
+    {
+      "file": "assets/sala-liveclass-720.webp",
+      "bytes": 38110,
+      "sha256": "d005aec79f0c6539c47f875da26b5021b9ab9ed1d2b8ebd4c8cd381716a25ae4"
+    },
+    {
+      "file": "assets/sala-liveclass.webp",
+      "bytes": 99452,
+      "sha256": "3fda4777ec71a4bfe4f9d4564332448b142704dfe05c0bcc4444389acec75229"
+    },
+    {
+      "file": "assets/sala-united-editorial-v32-720.webp",
+      "bytes": 43368,
+      "sha256": "27b10a569108e4bf0c46f005a14f84767ef2ea1e15717efda7adc37a5465e6de"
+    },
+    {
+      "file": "assets/sala-united-editorial-v32.webp",
+      "bytes": 109532,
+      "sha256": "495fd2d7eb5dd8f6226044c2d13b53cbd81faa9905ca1933f3076643723c46b6"
+    },
+    {
+      "file": "blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/index.html",
+      "bytes": 24655,
+      "sha256": "854ccf46a6bb415367dd1e175d2bb7a12a4933e4d34607aa0e145915c70e7a99"
+    },
+    {
+      "file": "blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/index.html",
+      "bytes": 24839,
+      "sha256": "88b9777d3f32d3f1dd8a6079ce0fa47b3ff84b199b8b64e6fe60dccfb0241f4c"
+    },
+    {
+      "file": "blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/index.html",
+      "bytes": 24233,
+      "sha256": "94eac78c0b68548660b047caed6940e6ff4505bf24a2b258c7f9b8a5e719b9aa"
+    },
+    {
+      "file": "blog/a-importancia-do-ingles-fluente-para-o-jornalismo/index.html",
+      "bytes": 24911,
+      "sha256": "457052e7d3f7634443dad6db9f6d3d69eb1d2969a753cc147c74890c6e1979f5"
+    },
+    {
+      "file": "blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/index.html",
+      "bytes": 24372,
+      "sha256": "3681db7416b215658cad50c0aaf4b7dbb4a4845555297aafefa9e82489274a8c"
+    },
+    {
+      "file": "blog/adverbs-frequency/index.html",
+      "bytes": 24212,
+      "sha256": "633b5e63f6274cb07dee852a101797ad7a2327dab4211913f6abc0c94d2cc4f5"
+    },
+    {
+      "file": "blog/alone-vs-lonely-qual-a-diferenca/index.html",
+      "bytes": 22303,
+      "sha256": "b54629c749eab9db17ab5f1be16bdb4ed96decee1b0e1ddda242a99a6b0d729d"
+    },
+    {
+      "file": "blog/aprenda-20-adjetivos-ingles/index.html",
+      "bytes": 26151,
+      "sha256": "77abb559e1cd3b83b589402a3d7baf51e559c577d6e1b0ef6a5934c1723a0dd3"
+    },
+    {
+      "file": "blog/aprenda-40-termos-financeiros-em-ingles/index.html",
+      "bytes": 22665,
+      "sha256": "f4b0079373d18b5ff44224081d3eed4342d7077351300f93a2dda869d0a18149"
+    },
+    {
+      "file": "blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/index.html",
+      "bytes": 24638,
+      "sha256": "bae254365a6c052fa7ff5268660cdd79184cb71f7f299df52a8b5d75b4de5ad9"
+    },
+    {
+      "file": "blog/aprender-ingles-sozinho-ou-com-professor/index.html",
+      "bytes": 26510,
+      "sha256": "1a7ab43a0be42016769c7239a9f4ebabf288d70d1cc77d8118a9366550883047"
+    },
+    {
+      "file": "blog/as-leis-mais-estranhas-dos-estados-unidos/index.html",
+      "bytes": 23873,
+      "sha256": "550ce4c624d7d5b1a4a8c11cab3e3b5279b252b965c96f3b03cb8723fd6774e0"
+    },
+    {
+      "file": "blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/index.html",
+      "bytes": 25562,
+      "sha256": "fe9256f4ada3eefcf6023c332de6dfd1c7cd7c17b4557989d7bf0d6baad03853"
+    },
+    {
+      "file": "blog/assets/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos-640.webp",
+      "bytes": 25994,
+      "sha256": "ca289d0e460010aa17dd3594f8481fd3fba56542087980425e570fd782bbdece"
+    },
+    {
+      "file": "blog/assets/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos.webp",
+      "bytes": 60206,
+      "sha256": "0f854c9fc66aa400ae2735ff9f1caee18bcd3c4520785b4769cfa5be4e67f323"
+    },
+    {
+      "file": "blog/assets/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional-640.webp",
+      "bytes": 19114,
+      "sha256": "f7392126cbdce3d7b47de8cd2c0f08634d9ffe7042c711b77a230e320fb292b5"
+    },
+    {
+      "file": "blog/assets/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional.webp",
+      "bytes": 41272,
+      "sha256": "d721e4ace1a907bd23405937a4577c9c9234926861282aa1572fc24e23b8ea8b"
+    },
+    {
+      "file": "blog/assets/a-comemoracao-do-carnaval-ao-redor-do-mundo-640.webp",
+      "bytes": 25138,
+      "sha256": "8eda480bcdb61bfe21aea1bf8544ec4caee6a3d63944b0a9b80feb6df578eb76"
+    },
+    {
+      "file": "blog/assets/a-comemoracao-do-carnaval-ao-redor-do-mundo.webp",
+      "bytes": 42312,
+      "sha256": "60297b7372eb13e62d1cf939b1666779dc258256a9315e435fcdced8eb90bd85"
+    },
+    {
+      "file": "blog/assets/a-importancia-do-ingles-fluente-para-o-jornalismo-640.webp",
+      "bytes": 25766,
+      "sha256": "84098080de438df9bab1c3339a7f86525a7b497b347306b795834d628b9e8c52"
+    },
+    {
+      "file": "blog/assets/a-importancia-do-ingles-fluente-para-o-jornalismo.webp",
+      "bytes": 54066,
+      "sha256": "4b5020022f27fbff00a67aceed27f0bc220fef12a978818e6a0b7b0ba4d0a97d"
+    },
+    {
+      "file": "blog/assets/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos-640.webp",
+      "bytes": 35366,
+      "sha256": "5ce8b3bb2487ba5b5d5546d0cebfe8c8fbcaba7827c50870c844d8175d4105ae"
+    },
+    {
+      "file": "blog/assets/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos.webp",
+      "bytes": 77158,
+      "sha256": "0cd5ffd2f987fc3cac68b896dfcf5825be48f50e17bc0c266cf7676bf7c80d46"
+    },
+    {
+      "file": "blog/assets/adverbs-frequency-640.webp",
+      "bytes": 30570,
+      "sha256": "ccd524a3fde65b9a363bc34d13789fad268af66deab55c8d9626ff89d90c18ff"
+    },
+    {
+      "file": "blog/assets/adverbs-frequency.webp",
+      "bytes": 69600,
+      "sha256": "70afb0563fd6b2341b2db56f6414fffddf4b7477e41c89e670f0d78d9e5a83f6"
+    },
+    {
+      "file": "blog/assets/alone-vs-lonely-qual-a-diferenca-640.webp",
+      "bytes": 15546,
+      "sha256": "e3c2ec10b7b536266c61f586120d4652ed46211aba9ca2aabdb441b7e7e524e0"
+    },
+    {
+      "file": "blog/assets/alone-vs-lonely-qual-a-diferenca.webp",
+      "bytes": 38194,
+      "sha256": "f985fe616b96cbe072ba8d36ce792b5378bfe0bfcb69537871879669ecb82788"
+    },
+    {
+      "file": "blog/assets/aprenda-20-adjetivos-ingles-640.webp",
+      "bytes": 27748,
+      "sha256": "b9876c6374c7550becb618775de6edc08e96ecdea4ac5a6b402c8525e85dd90a"
+    },
+    {
+      "file": "blog/assets/aprenda-20-adjetivos-ingles.webp",
+      "bytes": 61724,
+      "sha256": "7256348b82827d92a9ceef8502810b24f526b5925960e0b76df49799a7a2527a"
+    },
+    {
+      "file": "blog/assets/aprenda-40-termos-financeiros-em-ingles-640.webp",
+      "bytes": 14022,
+      "sha256": "7b490abd3e0ee562e7a5382310efe1766a7bdb47f73f6c906cfa58de645bc122"
+    },
+    {
+      "file": "blog/assets/aprenda-40-termos-financeiros-em-ingles.webp",
+      "bytes": 32320,
+      "sha256": "b6feb02817b757589e6d2d1f4bc589265dd791db9a330df5ec6b0d25899c63c6"
+    },
+    {
+      "file": "blog/assets/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti-640.webp",
+      "bytes": 21012,
+      "sha256": "b9ac636726b57fbda4c52a229be3534783dcb612140d4a6bed71f1dd09e54173"
+    },
+    {
+      "file": "blog/assets/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti.webp",
+      "bytes": 47866,
+      "sha256": "3bc97b69748d7f5213615b1f81157cf5a7659500092f1031440d45d20a995246"
+    },
+    {
+      "file": "blog/assets/aprender-ingles-sozinho-ou-com-professor-640.webp",
+      "bytes": 41474,
+      "sha256": "f0f0d55f46f43f93328f793c4acbf5f9111e641c1cecd117654ae30bdbd8bf72"
+    },
+    {
+      "file": "blog/assets/aprender-ingles-sozinho-ou-com-professor.webp",
+      "bytes": 115100,
+      "sha256": "550f1996e7657234e48047b5915d09e954466e7dc3491eb1a0be3c920a67ae92"
+    },
+    {
+      "file": "blog/assets/as-leis-mais-estranhas-dos-estados-unidos-640.webp",
+      "bytes": 12040,
+      "sha256": "23717176a5a28a5197ac8c612bd7cc66adf567b56d44d96953932f2088ed3c1a"
+    },
+    {
+      "file": "blog/assets/as-leis-mais-estranhas-dos-estados-unidos.webp",
+      "bytes": 24306,
+      "sha256": "076345a3d33b98597c0f2e15b224a7f5bfad0c935e9d4a91bcecc03170431aca"
+    },
+    {
+      "file": "blog/assets/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos-640.webp",
+      "bytes": 43870,
+      "sha256": "330202abd66e663e8a38f0efba0338313552eb6e8e9918fc0ed3e3afcdc2d890"
+    },
+    {
+      "file": "blog/assets/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos.webp",
+      "bytes": 233236,
+      "sha256": "bb558500460d7ffc5c4a35c507266a15f1fcd2380f534750133eede4be7b6a48"
+    },
+    {
+      "file": "blog/assets/aumentar-vocabulario-ingles-640.webp",
+      "bytes": 22908,
+      "sha256": "04719bdfd1e5ac14a3a1ac60cc4799c4dcbf3afd4d18a718ac42986ae1803379"
+    },
+    {
+      "file": "blog/assets/aumentar-vocabulario-ingles.webp",
+      "bytes": 50522,
+      "sha256": "be7c1a25e1e7b8369c88c77bec7051fb868e861d4e338287e7d1c1293093a9da"
+    },
+    {
+      "file": "blog/assets/batalha-do-boyne-saiba-mais-sobre-esse-feriado-640.webp",
+      "bytes": 40212,
+      "sha256": "91926b0a547717a7df8c970fa7c48847086969a20d1f01eee19ef3b77f012c01"
+    },
+    {
+      "file": "blog/assets/batalha-do-boyne-saiba-mais-sobre-esse-feriado.webp",
+      "bytes": 86970,
+      "sha256": "a32df6301aa0e394a30a036dd4042d970e2fc100a26c405dcf3c17047ed334ee"
+    },
+    {
+      "file": "blog/assets/beneficios-aprender-ingles-infancia-640.webp",
+      "bytes": 23948,
+      "sha256": "2e2ed1ef1f68d1e267d1cbe9f7536ff3589433b0363a06d230f1223de76bd372"
+    },
+    {
+      "file": "blog/assets/beneficios-aprender-ingles-infancia.webp",
+      "bytes": 54266,
+      "sha256": "abfeb8223f8991b6dba0c7d7a8ed44fe2f96d32eaa7fc2fe4d3e57c0ccd89092"
+    },
+    {
+      "file": "blog/assets/beneficios-intercambio-conheca-640.webp",
+      "bytes": 34206,
+      "sha256": "c7ce80ec3add94b44f2ad0210ed5259e2c016a0c1b91eab9ad24636fea4b69be"
+    },
+    {
+      "file": "blog/assets/beneficios-intercambio-conheca.webp",
+      "bytes": 75876,
+      "sha256": "d9a8cf00843e6fa6c62c9342eb53290648d773870899a516b7c4046c9f6b4b67"
+    },
+    {
+      "file": "blog/assets/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles-640.webp",
+      "bytes": 31306,
+      "sha256": "581a1b11fd51e3e64207a81980aacb4d9097598a5a638b93a30627cc89dfb805"
+    },
+    {
+      "file": "blog/assets/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles.webp",
+      "bytes": 75980,
+      "sha256": "53781058f254e76220930134fa6069425f42e9a7c78bee8c6da55e31cf70fdfa"
+    },
+    {
+      "file": "blog/assets/business-english-30-termos-640.webp",
+      "bytes": 34888,
+      "sha256": "0f7359fac92a1aa946b850c711b771983420cafaedd912a6dd41021fd27c5193"
+    },
+    {
+      "file": "blog/assets/business-english-30-termos.webp",
+      "bytes": 78324,
+      "sha256": "fc65ce6a9cc5849c9f2305addaa81e0437add31d8055729b33e71df49b652c0a"
+    },
+    {
+      "file": "blog/assets/carnaval-nos-estados-unidos-mardi-gras-640.webp",
+      "bytes": 49018,
+      "sha256": "335ceee4efb26c925c68b09765612e8829309e2362c1413edb18fade01a355ad"
+    },
+    {
+      "file": "blog/assets/carnaval-nos-estados-unidos-mardi-gras.webp",
+      "bytes": 108198,
+      "sha256": "877065d5f90079612303a32c8cae04a5c3329b9e1db93908c1c12c09ef4486e6"
+    },
+    {
+      "file": "blog/assets/carnaval-nos-eua-640.webp",
+      "bytes": 49500,
+      "sha256": "aa9efb8b3aede1a1e05753270718294a888c97c246af2fcfd40784ef88e1ddbe"
+    },
+    {
+      "file": "blog/assets/carnaval-nos-eua.webp",
+      "bytes": 114260,
+      "sha256": "995e7ab5c16a01a1564e221e3ae554bb8ec8f07c44cf7fc0ec3f088b885c4c4f"
+    },
+    {
+      "file": "blog/assets/carreira-2025-united-640.webp",
+      "bytes": 36742,
+      "sha256": "78c218d7607996e955c822cf3059d650e7bb57d471410f72f31c1a65b4415d8c"
+    },
+    {
+      "file": "blog/assets/carreira-2025-united.webp",
+      "bytes": 60044,
+      "sha256": "f7d805cad0fd64116ba7683fd41c1de53f9b4aca546e9e3121f38b238fd564b8"
+    },
+    {
+      "file": "blog/assets/carreiras-ingles-fluente-640.webp",
+      "bytes": 9298,
+      "sha256": "1bb0c73df3e69e2b8e9db8a2474ee0c982de690d89cd0c972ee5ae05e65870cd"
+    },
+    {
+      "file": "blog/assets/carreiras-ingles-fluente.webp",
+      "bytes": 9298,
+      "sha256": "1bb0c73df3e69e2b8e9db8a2474ee0c982de690d89cd0c972ee5ae05e65870cd"
+    },
+    {
+      "file": "blog/assets/certificados-internacionais-ingles-640.webp",
+      "bytes": 11184,
+      "sha256": "bdf84c0e7f59c39134ccf224f31609ba7db49022d4b3fdc5bc25b67ff7b84a48"
+    },
+    {
+      "file": "blog/assets/certificados-internacionais-ingles.webp",
+      "bytes": 18236,
+      "sha256": "0e5f21d5f055afe81fc8632e605b4997b55cee38712c0454683e0d1c959ca734"
+    },
+    {
+      "file": "blog/assets/cinco-dicas-aprender-ingles-rapido-640.webp",
+      "bytes": 14662,
+      "sha256": "70166ffe269db1f75ee55cbfa63f7e3657f4b77ab3470dd438857e036fa0cd9f"
+    },
+    {
+      "file": "blog/assets/cinco-dicas-aprender-ingles-rapido.webp",
+      "bytes": 38206,
+      "sha256": "17af94b4cf2e8fe7e9460ff86b6a87f0b04fd9d56adc28a4a5d256596a0e0053"
+    },
+    {
+      "file": "blog/assets/cinco-motivos-hoje-united-idiomas-640.webp",
+      "bytes": 29110,
+      "sha256": "ca349f4f52b4a6a08b702ab5f96fedab135b3cecc3afef8e518f8be344838c0e"
+    },
+    {
+      "file": "blog/assets/cinco-motivos-hoje-united-idiomas.webp",
+      "bytes": 67338,
+      "sha256": "9855c41c961a558aea35e1cfb51f95a31cf0f94b9bff3d3e9daac77bec056ccc"
+    },
+    {
+      "file": "blog/assets/cinco-vantagens-de-estudar-ingles-online-640.webp",
+      "bytes": 27614,
+      "sha256": "3373c9e142892af68775d9bd890abdae60e79ec59091b7430782f00e3ff2ef60"
+    },
+    {
+      "file": "blog/assets/cinco-vantagens-de-estudar-ingles-online.webp",
+      "bytes": 61550,
+      "sha256": "7d6fce099869dce37e743e6be548ac04b941067c0bbd22b7cad481d0ac1a63d5"
+    },
+    {
+      "file": "blog/assets/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia-640.webp",
+      "bytes": 22604,
+      "sha256": "8779ad5fcb3045c7a55fbf6aaf5b233a1965aa074f9e2bfc8def011fafcb924a"
+    },
+    {
+      "file": "blog/assets/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia.webp",
+      "bytes": 50710,
+      "sha256": "b7ed54ec9d57d3d09206cb5ea02b2f9faec4be02121e12bcc27a7ab94a8175bf"
+    },
+    {
+      "file": "blog/assets/comemoracao-st-patrick-day-640.webp",
+      "bytes": 28902,
+      "sha256": "1c277e9572a14ccf0dc629f2215a04ff4cba50a2e176b2d4ce3e2818fdb857f0"
+    },
+    {
+      "file": "blog/assets/comemoracao-st-patrick-day.webp",
+      "bytes": 30590,
+      "sha256": "fc8247c8faab4f4c79481b1b9dcc1dcfbbde82796510e1cdbd82b8b6b3aac685"
+    },
+    {
+      "file": "blog/assets/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra-640.webp",
+      "bytes": 15006,
+      "sha256": "00cf0abdc60a9c6fe7b8a586a1b40c25823c4deac7a59eefd576e2c16378c2be"
+    },
+    {
+      "file": "blog/assets/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra.webp",
+      "bytes": 30824,
+      "sha256": "ac4f87f2ee4db7474b25ce27516cdd439a31b53c3dc6c3c5227bb9a59379fd42"
+    },
+    {
+      "file": "blog/assets/como-funciona-cerebro-bilingue-640.webp",
+      "bytes": 18416,
+      "sha256": "7b93d810b033542829f6e2236961c868b2cbd54dd3695b2ced63739e8d88503b"
+    },
+    {
+      "file": "blog/assets/como-funciona-cerebro-bilingue.webp",
+      "bytes": 44284,
+      "sha256": "465ed31e064729a554f4216c0a4e4f1ea76301348687a25d2d51e4c6ec421837"
+    },
+    {
+      "file": "blog/assets/como-melhorar-escuta-ingles-640.webp",
+      "bytes": 29854,
+      "sha256": "3779c364129e1963710bc41d446bbf5305b1037146a9f9825904ff144a1c3865"
+    },
+    {
+      "file": "blog/assets/como-melhorar-escuta-ingles.webp",
+      "bytes": 68328,
+      "sha256": "81a6d1f14b1a1a6c1b9f1e7fcda3ab55d63416f2fca078371adb4f720af64add"
+    },
+    {
+      "file": "blog/assets/como-preparar-intercambio-irlanda-640.webp",
+      "bytes": 13824,
+      "sha256": "5d97af1d655b64dfc5d745c6b257c81a8f7f7d459b5a2a44cdde3bef576eb56b"
+    },
+    {
+      "file": "blog/assets/como-preparar-intercambio-irlanda.webp",
+      "bytes": 28900,
+      "sha256": "90394a78d547d587c0e94cdb34f1adc5b276306c2b7950c8c4fc66dd35a4462f"
+    },
+    {
+      "file": "blog/assets/como-se-preparar-para-entrevista-em-ingles-640.webp",
+      "bytes": 21122,
+      "sha256": "16261186286d3988facd874f9ce5bcd06df9b51cb424f896dd6e0e742002b4f9"
+    },
+    {
+      "file": "blog/assets/como-se-preparar-para-entrevista-em-ingles.webp",
+      "bytes": 46644,
+      "sha256": "0291f9b21cc075e826d4ac6125b0281c359702f38f94011619393cc87ad0f407"
+    },
+    {
+      "file": "blog/assets/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles-640.webp",
+      "bytes": 22038,
+      "sha256": "91e18d3e761fe7e2826b0b54923c57f3c87c1576ac8b13e69a0af9e1e900547e"
+    },
+    {
+      "file": "blog/assets/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles.webp",
+      "bytes": 46910,
+      "sha256": "291432252ef75a05991e80f09a680836633d32593dea5f2087f0909fc2b93ed1"
+    },
+    {
+      "file": "blog/assets/como-usar-get-640.webp",
+      "bytes": 34572,
+      "sha256": "93dfe0ce00ee23093da7b8c33ce66bc0f4efd3587f197edda0dc4aa855408632"
+    },
+    {
+      "file": "blog/assets/como-usar-get.webp",
+      "bytes": 79770,
+      "sha256": "f3e466b936ab7c2cfea3dac44ec5e6718bd3383ee97dbb99e2ac407366d43481"
+    },
+    {
+      "file": "blog/assets/confira-10-girias-em-ingles-e-aprenda-a-usa-las-640.webp",
+      "bytes": 26238,
+      "sha256": "c5d11e8e68792d9b561a20b5ee582f85c15fcf81d0397929f18030c7958a2342"
+    },
+    {
+      "file": "blog/assets/confira-10-girias-em-ingles-e-aprenda-a-usa-las.webp",
+      "bytes": 58476,
+      "sha256": "93fca3f322d2a33d1d1910cf46b97482f3e7f2fe11a895ec21814bca8825cf29"
+    },
+    {
+      "file": "blog/assets/confira-10-series-que-vao-melhorar-o-seu-ingles-640.webp",
+      "bytes": 8528,
+      "sha256": "e0168d18c16d9764fdcb04ecfbe2e266c0b5eab51345fe002776ac78dac73d83"
+    },
+    {
+      "file": "blog/assets/confira-10-series-que-vao-melhorar-o-seu-ingles.webp",
+      "bytes": 17862,
+      "sha256": "ac7628391eea7abbefa55366487ff68e18b8ac87437bdbaf0c247859f9923a7e"
+    },
+    {
+      "file": "blog/assets/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos-640.webp",
+      "bytes": 50006,
+      "sha256": "1846cc71d9f7200ad60c3e12414de5dee553ec0f85d49daf30b2adb26fb1c8bf"
+    },
+    {
+      "file": "blog/assets/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos.webp",
+      "bytes": 119534,
+      "sha256": "32f382f61e92f0bb988e770cac322c2afd3c62461366516326a19fb9f6a2429c"
+    },
+    {
+      "file": "blog/assets/confira-seis-dicas-importantes-para-falar-melhor-em-ingles-640.webp",
+      "bytes": 29522,
+      "sha256": "e01ab69c53372bf60217cb78952587963a44a908da2ac84e7d85ca651232b2d1"
+    },
+    {
+      "file": "blog/assets/confira-seis-dicas-importantes-para-falar-melhor-em-ingles.webp",
+      "bytes": 73284,
+      "sha256": "ce3afcd02e0d89a5eb910f69950a63a9470698f4de1054e5a45db106aa0a8b0a"
+    },
+    {
+      "file": "blog/assets/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial-640.webp",
+      "bytes": 51048,
+      "sha256": "0261701c7e0a450beaae9ce49c29c38eb6ed48c18f3f50cf5bd48044e928b4a9"
+    },
+    {
+      "file": "blog/assets/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial.webp",
+      "bytes": 100476,
+      "sha256": "ba60ca2173613e69a4f3ac805e1e409b1a9f1d62b56be53bd9dd4bde5eafc8ea"
+    },
+    {
+      "file": "blog/assets/conheca-5-autoras-internacionais-para-ler-em-ingles-640.webp",
+      "bytes": 29226,
+      "sha256": "0d04d9a0c205b90084b3c128e23ebe2fe301c54e4c8f6bd5b26cd2be063c4c9c"
+    },
+    {
+      "file": "blog/assets/conheca-5-autoras-internacionais-para-ler-em-ingles.webp",
+      "bytes": 65974,
+      "sha256": "df3cf811e4c7139523e0c639cbb8701ea837ae7002950f9b088d8d2ac684af8a"
+    },
+    {
+      "file": "blog/assets/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos-640.webp",
+      "bytes": 24608,
+      "sha256": "ca0820d2faa3585c24b93801037ce77b6301768c9cf182b69af2b534db8aa0f2"
+    },
+    {
+      "file": "blog/assets/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos.webp",
+      "bytes": 54696,
+      "sha256": "507f164962f7700bd7392f100489c196099bbf2110cbc60e0c996e724fc23398"
+    },
+    {
+      "file": "blog/assets/conheca-esportes-americanos-vocabulario-640.webp",
+      "bytes": 27770,
+      "sha256": "81b944b23e92d0d69fadec846b883c66ffd3af8fc79c6b3e04d573fad5a8825b"
+    },
+    {
+      "file": "blog/assets/conheca-esportes-americanos-vocabulario.webp",
+      "bytes": 65400,
+      "sha256": "887c8293622cea16673cf4a3208b5b4c70f6b020ba7171bd89e9c9537cd16d9c"
+    },
+    {
+      "file": "blog/assets/conjuncoes-conectivos-640.webp",
+      "bytes": 14504,
+      "sha256": "0e88a94d52508099e838ce8a049502970992d84477b841ccdb20d5c6f272b449"
+    },
+    {
+      "file": "blog/assets/conjuncoes-conectivos.webp",
+      "bytes": 17818,
+      "sha256": "d5f23fdf59d0b95f7f18f0b3e27f1d53ecec64aad1d8a31af5f1390a88f719c4"
+    },
+    {
+      "file": "blog/assets/conversacao-ingles-importancia-640.webp",
+      "bytes": 26924,
+      "sha256": "07aaa2a17343946bcd82e3346ef1fdd63f478b794a7375c93407fed4ed059edd"
+    },
+    {
+      "file": "blog/assets/conversacao-ingles-importancia.webp",
+      "bytes": 64486,
+      "sha256": "2ef8a5285196c7b0485b799ef0f77c09f31480b1e4e2c59afbd9013fe055d37a"
+    },
+    {
+      "file": "blog/assets/curso-ideal-de-ingles-porque-escolher-a-united-idiomas-640.webp",
+      "bytes": 27706,
+      "sha256": "e1b9ea88168f50255915d1763af8c54f032a1c4768bff1026c7cbd7eff20963e"
+    },
+    {
+      "file": "blog/assets/curso-ideal-de-ingles-porque-escolher-a-united-idiomas.webp",
+      "bytes": 66078,
+      "sha256": "118e58b1eefe4b1fc8a69f5442ab31af49815e50c26c9d928d697af63715cb0f"
+    },
+    {
+      "file": "blog/assets/curso-ingles-corporativo-640.webp",
+      "bytes": 23044,
+      "sha256": "b52121fdbefff00e10c7f72455139dac3f0a0933df6ba6a00ebd1c887c0716a6"
+    },
+    {
+      "file": "blog/assets/curso-ingles-corporativo.webp",
+      "bytes": 54814,
+      "sha256": "6e4634e3a838b3ff99606a29a8f84bf59071e499215c8a9ec3473f867eed1ef3"
+    },
+    {
+      "file": "blog/assets/curso-ingles-profissionais-ocupados-640.webp",
+      "bytes": 18100,
+      "sha256": "1f5b8896cb3708049c4e7e6911d680b88a8b7ccdbc0058969c1f98413d9cd389"
+    },
+    {
+      "file": "blog/assets/curso-ingles-profissionais-ocupados.webp",
+      "bytes": 43548,
+      "sha256": "ab59bf0eeaa7395fefa9a379de7190b3657c5ab24a0fcfb9899b2eb6325c43a1"
+    },
+    {
+      "file": "blog/assets/curso-ingles-rotina-corrida-640.webp",
+      "bytes": 20876,
+      "sha256": "0ce28d5d6e6e4ebb3f5d624745194133a76b810c6a5e21af2b8e152752461fac"
+    },
+    {
+      "file": "blog/assets/curso-ingles-rotina-corrida.webp",
+      "bytes": 51978,
+      "sha256": "195bfdbfaaf18ce93f94d3a7edba2e8bfb416b5a9de5caf54e3a8d1ae18aee78"
+    },
+    {
+      "file": "blog/assets/curso-united-carreiras-640.webp",
+      "bytes": 18504,
+      "sha256": "6fbc34ec842f146b7dbf9bd45a09ae288c71bac6e555368c8468022019a3fd2d"
+    },
+    {
+      "file": "blog/assets/curso-united-carreiras.webp",
+      "bytes": 18504,
+      "sha256": "6fbc34ec842f146b7dbf9bd45a09ae288c71bac6e555368c8468022019a3fd2d"
+    },
+    {
+      "file": "blog/assets/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira-640.webp",
+      "bytes": 23262,
+      "sha256": "91682a33849c396828333a7befc7466f7f4236dd083f96ca1754f3152cfcb870"
+    },
+    {
+      "file": "blog/assets/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira.webp",
+      "bytes": 55292,
+      "sha256": "a596e3ecbd52ad972c66f5a08806942dcd99d06214252efee3ee270b4e703fd5"
+    },
+    {
+      "file": "blog/assets/dia-das-maes-anna-jarvis-640.webp",
+      "bytes": 10760,
+      "sha256": "d42a4aab5a4f1221cf06037d2b389a4946f7eee4c852ebb436c964228f69e921"
+    },
+    {
+      "file": "blog/assets/dia-das-maes-anna-jarvis.webp",
+      "bytes": 23678,
+      "sha256": "a470ce532267a56a5e1cfeba8ac640e10782b3f036bfc57d7254473cf63ff6f7"
+    },
+    {
+      "file": "blog/assets/dia-dos-namorados-outra-data-brasil-640.webp",
+      "bytes": 34474,
+      "sha256": "8e44cf8f0a1a4e1d7c60ecac306e669a4fdd874ee738e148d2d4e2b60d9451e0"
+    },
+    {
+      "file": "blog/assets/dia-dos-namorados-outra-data-brasil.webp",
+      "bytes": 93802,
+      "sha256": "d0b72499b611d602158bb485698b05cdd52ca89cb49eebb673ad9ac2090d8bd5"
+    },
+    {
+      "file": "blog/assets/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria-640.webp",
+      "bytes": 26414,
+      "sha256": "a7c9f4e9321d77c32662fdfcb7c8f6a40b8c56aa6645dfe5aec864b1e7cc036a"
+    },
+    {
+      "file": "blog/assets/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria.webp",
+      "bytes": 61574,
+      "sha256": "d217f8d27ada0e8648242c53a26b98e0f9aeb0234349ff9cb3d9ab7a840a1524"
+    },
+    {
+      "file": "blog/assets/dicas-falar-ingles-publico-640.webp",
+      "bytes": 27386,
+      "sha256": "8a5659ab2d4c6642d522c482640d7cf956050b5926146d36da352edee8b28870"
+    },
+    {
+      "file": "blog/assets/dicas-falar-ingles-publico.webp",
+      "bytes": 70330,
+      "sha256": "f8e64679c12abb1f6bc9dfd810086e53aaf2e407c6b93cc681dba33c18b0eca7"
+    },
+    {
+      "file": "blog/assets/dicas-para-melhorar-sua-escrita-em-ingles-640.webp",
+      "bytes": 25446,
+      "sha256": "8c654ff9ff61610ee81f9d05b7401b685fdd280381900cf76d64dd1e73719471"
+    },
+    {
+      "file": "blog/assets/dicas-para-melhorar-sua-escrita-em-ingles.webp",
+      "bytes": 47746,
+      "sha256": "3c2c2fd6ab25162984f31adf985759f3f71a10dd7aa8d4e68b945bcabbe8daf6"
+    },
+    {
+      "file": "blog/assets/dicas-para-preparar-toefl-640.webp",
+      "bytes": 23358,
+      "sha256": "6afc9f140686f79266f9dbdca289fc225793ed23cb4c140ae5c48507f8b7f254"
+    },
+    {
+      "file": "blog/assets/dicas-para-preparar-toefl.webp",
+      "bytes": 52938,
+      "sha256": "ac33766960b76c3f55fb27d6c647a9c4bdbff950e7165ce50f3ed5dd07eb6aae"
+    },
+    {
+      "file": "blog/assets/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao-640.webp",
+      "bytes": 10064,
+      "sha256": "a03b3f9e101bf660e9e44e0eb3ed8527720d720a2e0dd639dd9dfbc0c682a8fb"
+    },
+    {
+      "file": "blog/assets/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao.webp",
+      "bytes": 22414,
+      "sha256": "e1d58dc64caa4fa8ebac0777578fd903d692fee2bfe635f44b6ad94b0be85381"
+    },
+    {
+      "file": "blog/assets/diferencas-ingles-paises-640.webp",
+      "bytes": 33742,
+      "sha256": "0b61d2b38c384bad276cae1c7f40ae357582abf01b60687fb4596371d5db8e43"
+    },
+    {
+      "file": "blog/assets/diferencas-ingles-paises.webp",
+      "bytes": 89082,
+      "sha256": "ff35350d275e159647c83bd7c9f3aeb1ee1dd6c9a5d1d2f0f5456de59c35da57"
+    },
+    {
+      "file": "blog/assets/dificuldades-gramatica-ingles-640.webp",
+      "bytes": 22840,
+      "sha256": "f549f60fb1b7c088a2cb6103f3e1561f12fcd6e125d0f83ee6d99a36bf328669"
+    },
+    {
+      "file": "blog/assets/dificuldades-gramatica-ingles.webp",
+      "bytes": 58530,
+      "sha256": "82095f1c2327df5aa52de47882a4825cd4b4912e6df6eb19efee0a3583cc0042"
+    },
+    {
+      "file": "blog/assets/e-mails-profissionais-640.webp",
+      "bytes": 30634,
+      "sha256": "acd013a7924082a43d3d38a5550a23bd2651bfa6565394a4a8b3a94a22f6a857"
+    },
+    {
+      "file": "blog/assets/e-mails-profissionais.webp",
+      "bytes": 72734,
+      "sha256": "1c0037f9f0577fddfb369bd6337187c33103d2591d9f5d1628e0e22a0239e493"
+    },
+    {
+      "file": "blog/assets/e-possivel-aprender-ingles-depois-de-adulto-640.webp",
+      "bytes": 16140,
+      "sha256": "7df0b652028be9f786701ea8f1c5a6104f5154ed1702861f2346b76111fcbcfa"
+    },
+    {
+      "file": "blog/assets/e-possivel-aprender-ingles-depois-de-adulto.webp",
+      "bytes": 37440,
+      "sha256": "5e7cb37fae8e33f7cc39c2f61bf77d8431e7e1adcf401e243d632f401adcd79d"
+    },
+    {
+      "file": "blog/assets/entenda-o-verbo-to-be-640.webp",
+      "bytes": 13534,
+      "sha256": "bc61e5cf18225c8f3e0927ff4c30df462557dc778c6c43e38fe42b4841ed8d37"
+    },
+    {
+      "file": "blog/assets/entenda-o-verbo-to-be.webp",
+      "bytes": 39332,
+      "sha256": "97eb4238465d849e4d6b387146b877143ef2d2bce44c321df94324918401e227"
+    },
+    {
+      "file": "blog/assets/entrevista-emprego-ingles-640.webp",
+      "bytes": 22014,
+      "sha256": "9d9204c29a786b32625f389665cba697d503b21333bcdfbd9e5fdb970a5dc2c3"
+    },
+    {
+      "file": "blog/assets/entrevista-emprego-ingles.webp",
+      "bytes": 49884,
+      "sha256": "1e4916766eba8f7a9d02ed7fa89071f41a66f099b3cd4518f0bb25d8f8587b1c"
+    },
+    {
+      "file": "blog/assets/erros-aprendizado-ingles-640.webp",
+      "bytes": 28912,
+      "sha256": "90dea4572bd46dab5561ca3e1f135372da6a96c0d5fa6bbda0b06edea0f52721"
+    },
+    {
+      "file": "blog/assets/erros-aprendizado-ingles.webp",
+      "bytes": 66252,
+      "sha256": "df625465d9a8d32f34092e543d0cab132e3b73f313bdd0b1e5fb9ed96ded1ce8"
+    },
+    {
+      "file": "blog/assets/erros-gramaticais-ingles-640.webp",
+      "bytes": 17966,
+      "sha256": "2969b319ab96952b5a357aa5e956c76695c773178a3cdde5ffed026b5008c91c"
+    },
+    {
+      "file": "blog/assets/erros-gramaticais-ingles.webp",
+      "bytes": 13188,
+      "sha256": "7fbf96ebfba9c401e22fa42d3fa25cae7ebbc3a261de7c9dae954c82e4abb720"
+    },
+    {
+      "file": "blog/assets/estude-ingles-na-united-e-decole-sua-carreira-640.webp",
+      "bytes": 24528,
+      "sha256": "907cebc7aa6fcab15eb9e0986ab705bb84cff9ed0749eace262628026216d988"
+    },
+    {
+      "file": "blog/assets/estude-ingles-na-united-e-decole-sua-carreira.webp",
+      "bytes": 61322,
+      "sha256": "1205a4a19237a0559839a3669ad682b7e33eabc51f67833bf0e20673dbedd0ea"
+    },
+    {
+      "file": "blog/assets/expandir-vocabulario-ingles-640.webp",
+      "bytes": 22438,
+      "sha256": "b56da1e7cce915c0d5fb8aa008f57449d4d4fa8fa07bc1ba5579ae11e3867070"
+    },
+    {
+      "file": "blog/assets/expandir-vocabulario-ingles.webp",
+      "bytes": 54916,
+      "sha256": "aaccae309b7bc937c39e8ea663384d2fd48855be496daae8c2a41095b3630a54"
+    },
+    {
+      "file": "blog/assets/expressoes-e-mails-640.webp",
+      "bytes": 14660,
+      "sha256": "4cdf38b7914469c346304588a3d0d97eacf2755cb46ca72368f0b74731dab439"
+    },
+    {
+      "file": "blog/assets/expressoes-e-mails.webp",
+      "bytes": 33798,
+      "sha256": "2392679ecdd511b3fba2b364e28f90c9bb6d6461aa2bd5c354673cf000a11b0c"
+    },
+    {
+      "file": "blog/assets/expressoes-ingles-usar-restaurante-640.webp",
+      "bytes": 35090,
+      "sha256": "cf4e100281002d10da5c829f0a384520e6cca17ac999896980bfc7f219869fbb"
+    },
+    {
+      "file": "blog/assets/expressoes-ingles-usar-restaurante.webp",
+      "bytes": 78570,
+      "sha256": "babc100f67f044a843cfb8ae41b8ccf242538859807686952f908b33f67552dc"
+    },
+    {
+      "file": "blog/assets/filmes-series-listening-640.webp",
+      "bytes": 20998,
+      "sha256": "0adf1dd73db719441e3d2aece6ce35e2b8c2641b74a7c8a000e96a96c4bc608e"
+    },
+    {
+      "file": "blog/assets/filmes-series-listening.webp",
+      "bytes": 50744,
+      "sha256": "1dd3517e0736908572acdf2fe5912b39541cae5103ac9250515bb0f4027972c8"
+    },
+    {
+      "file": "blog/assets/frases-ingles-restaurantes-640.webp",
+      "bytes": 29002,
+      "sha256": "e7d6e58a84403c20f85981aacc4a5ccbdd47ac7c51ad6da47dbf8eda7d4bbd82"
+    },
+    {
+      "file": "blog/assets/frases-ingles-restaurantes.webp",
+      "bytes": 65196,
+      "sha256": "901621dba56c4ea9d33d37fdd49b04c27a150a955691e682d00e9b5325d06a0b"
+    },
+    {
+      "file": "blog/assets/frases-uteis-compras-ingles-640.webp",
+      "bytes": 19910,
+      "sha256": "f4dad8de0fd6cfd6c20e42553778515b31eba9d0ddcff6b40e0bbef98e570f16"
+    },
+    {
+      "file": "blog/assets/frases-uteis-compras-ingles.webp",
+      "bytes": 47448,
+      "sha256": "f04f672c703814b8a0162084b42aec7dd2f4c85f63d18010ced6a81df581c5db"
+    },
+    {
+      "file": "blog/assets/guia-basico-de-ingles-para-viajantes-aurora-boreal-640.webp",
+      "bytes": 13636,
+      "sha256": "e1752bd0f6327bf080c4d33e6c5525500f910f4048b01f9d6bec1da814626d5a"
+    },
+    {
+      "file": "blog/assets/guia-basico-de-ingles-para-viajantes-aurora-boreal.webp",
+      "bytes": 32148,
+      "sha256": "ea9591150c9a5cb94fde291e5d5e6ba83ececbd6e101b1c329ba57d03afb0b99"
+    },
+    {
+      "file": "blog/assets/guia-prepositions-640.webp",
+      "bytes": 32750,
+      "sha256": "5901c1cf6c10aeeb83c553840175bc05a085efd0e41b46f068b6bf124688a35d"
+    },
+    {
+      "file": "blog/assets/guia-prepositions.webp",
+      "bytes": 74430,
+      "sha256": "7172d1a1267e7816aee901cfd6b88fd07ceb76f91327eef12cb14bcad17a913b"
+    },
+    {
+      "file": "blog/assets/halloween-guia-completo-640.webp",
+      "bytes": 43382,
+      "sha256": "49b2ae56bd979bef58c33ff74429dfbc1657a4bb1d19972ceee30ad1e3a6e335"
+    },
+    {
+      "file": "blog/assets/halloween-guia-completo.webp",
+      "bytes": 110030,
+      "sha256": "6fa4eda21327a8f5e1c0a0983c17ab0382ea30919a550ebe6b0baf46e146b1da"
+    },
+    {
+      "file": "blog/assets/halloween-origem-vocabulario-640.webp",
+      "bytes": 40786,
+      "sha256": "2f988f6b633ec57d45926beb5e0f7f2e3e515c9f62177fc664ef67379298e24f"
+    },
+    {
+      "file": "blog/assets/halloween-origem-vocabulario.webp",
+      "bytes": 85286,
+      "sha256": "42282a55b7ee3fce7773615f3831c137ee4162a0daa0c92375e885f67bddcf7c"
+    },
+    {
+      "file": "blog/assets/has-ou-have-aprenda-a-utilizar-640.webp",
+      "bytes": 12754,
+      "sha256": "0f14d9bc559db4125dbfea4afe2ebeada28d3eab12a64ed331545a9802502ab7"
+    },
+    {
+      "file": "blog/assets/has-ou-have-aprenda-a-utilizar.webp",
+      "bytes": 25670,
+      "sha256": "ffdf371429964e69022edad1607af23636391c5e2b333fb0fbb0b385c669724c"
+    },
+    {
+      "file": "blog/assets/ia-aprender-ingles-640.webp",
+      "bytes": 25744,
+      "sha256": "5021a0bd224331b02d9cb2f22e6156799830810fd2de84ddaeb1bf034f6822f5"
+    },
+    {
+      "file": "blog/assets/ia-aprender-ingles-habilidades-humanas-640.webp",
+      "bytes": 15290,
+      "sha256": "30def65c80eca00ae0cced4821eb920697195ef9fd7077577512cd17144958ae"
+    },
+    {
+      "file": "blog/assets/ia-aprender-ingles-habilidades-humanas.webp",
+      "bytes": 39588,
+      "sha256": "c5a4bd22a7476ef9ba4864334fdb57614d2d92d70e4488a973f5a572ba0ece85"
+    },
+    {
+      "file": "blog/assets/ia-aprender-ingles.webp",
+      "bytes": 56850,
+      "sha256": "cac53a918520a1446fa8aa0e6829a98b99c9a6a671cd737a2460fefa2da74319"
+    },
+    {
+      "file": "blog/assets/imersao-ingles-em-casa-640.webp",
+      "bytes": 13288,
+      "sha256": "7f1107cbc9673133a6d968ae9eabbd8f62abd5368a1067f9d1bf8fcf893da125"
+    },
+    {
+      "file": "blog/assets/imersao-ingles-em-casa.webp",
+      "bytes": 32096,
+      "sha256": "750ade173f44857c06d6681775fd3436df7ddc9db8800f8607da7f04db0c0dff"
+    },
+    {
+      "file": "blog/assets/importancia-independence-day-640.webp",
+      "bytes": 20650,
+      "sha256": "30af5aa3dba8db12d3ddc0a487fd35ea78d5c1cb3cf54a2095c41dcccccb27b0"
+    },
+    {
+      "file": "blog/assets/importancia-independence-day.webp",
+      "bytes": 43516,
+      "sha256": "bda84659db5f41db6a667899d808f9925510d16b95e33770596a39f99bfa5ece"
+    },
+    {
+      "file": "blog/assets/importancia-musica-aprendizado-ingles-640.webp",
+      "bytes": 24778,
+      "sha256": "16f63d997e3133ea424dd9ba5ad70163fca81ff1dd65949643b818838f8662ef"
+    },
+    {
+      "file": "blog/assets/importancia-musica-aprendizado-ingles.webp",
+      "bytes": 58682,
+      "sha256": "589e268bad613b6e92ea1d5e5d825343a83ad83425be5b28fba929a417f781f0"
+    },
+    {
+      "file": "blog/assets/independence-day-640.webp",
+      "bytes": 26864,
+      "sha256": "718ec7ad42305a967979499ef0617b00328df17f41f2677becb78cadc1e6f509"
+    },
+    {
+      "file": "blog/assets/independence-day.webp",
+      "bytes": 56450,
+      "sha256": "c4926561e6762e0e6a1849070eed8fd0f5f695e03833cef963b4ac31c2ef95a1"
+    },
+    {
+      "file": "blog/assets/ingles-americano-britanico-diferencas-640.webp",
+      "bytes": 30648,
+      "sha256": "e9dbd5d09ac153476a7753b06aaaffb18f9d7819ee94d69ce30989eaede56c82"
+    },
+    {
+      "file": "blog/assets/ingles-americano-britanico-diferencas.webp",
+      "bytes": 45324,
+      "sha256": "ab532d99799e7996cdd4948af21ac27dbeaa0f92da4b92c9d2e04a5e636adbc4"
+    },
+    {
+      "file": "blog/assets/ingles-carreira-tecnologia-640.webp",
+      "bytes": 23292,
+      "sha256": "fe91fa8ff98a641910fffc43aaff15875b5def4a430b24420de2c62ae93f4354"
+    },
+    {
+      "file": "blog/assets/ingles-carreira-tecnologia.webp",
+      "bytes": 45906,
+      "sha256": "55256dcccf89e2027465f0f5dc3a8b6d949b783372fac322bca20b2e613b6cfc"
+    },
+    {
+      "file": "blog/assets/ingles-conversacao-profissional-640.webp",
+      "bytes": 10584,
+      "sha256": "e340897b033668b7f09feabea552f50f32a058b14dd0d9e398268a80e0c07b64"
+    },
+    {
+      "file": "blog/assets/ingles-conversacao-profissional.webp",
+      "bytes": 22694,
+      "sha256": "e6c98aeed50aefa5c3f9d01c9d95c5a6e73a38006ee588d430f67b583a03c613"
+    },
+    {
+      "file": "blog/assets/ingles-corporativo-640.webp",
+      "bytes": 31324,
+      "sha256": "ebb58b0f0f1f081be51ac08c1e213f6e5c249c4e94ce3b30482f17d01d2d542c"
+    },
+    {
+      "file": "blog/assets/ingles-corporativo.webp",
+      "bytes": 69172,
+      "sha256": "1cd971a846a357cc5102d4be06322e0314341395cdda9b23ef6bca30c715a45e"
+    },
+    {
+      "file": "blog/assets/ingles-ead-640.webp",
+      "bytes": 25576,
+      "sha256": "e32bbc1d3f0e44022a83acb4b1b3f8e2fdc23580a7b4f9dfe7fd1748ad63022a"
+    },
+    {
+      "file": "blog/assets/ingles-ead.webp",
+      "bytes": 50506,
+      "sha256": "af03f8413a8c7ccc88d156325d84db33d2093603415c9cddb5aeb2716985a93f"
+    },
+    {
+      "file": "blog/assets/ingles-estudar-trabalhar-exterior-640.webp",
+      "bytes": 28742,
+      "sha256": "a11cd4acbeb79e1bff55d630c90c86cd595a947abda5610e209ab47f1e96a7a0"
+    },
+    {
+      "file": "blog/assets/ingles-estudar-trabalhar-exterior.webp",
+      "bytes": 46420,
+      "sha256": "3829585c5c77eda59ee0e1cd9155266121b16b664c3b3962d82654134106520b"
+    },
+    {
+      "file": "blog/assets/ingles-eventos-internacionais-640.webp",
+      "bytes": 64408,
+      "sha256": "ab8cea2acd934418ba3e2b8f416189f0249ef4e678df81a9665276b8e1871f9e"
+    },
+    {
+      "file": "blog/assets/ingles-eventos-internacionais.webp",
+      "bytes": 116496,
+      "sha256": "0e01dbec2922ea4616ea86810e38444292cd1d26173620ff3c727768a9f069c5"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-carreira-640.webp",
+      "bytes": 28060,
+      "sha256": "5e78b13fe408e5f7a6c867b6c93cd08cb805fd57115c87a9ad42b06fbe82e451"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-carreira.webp",
+      "bytes": 58082,
+      "sha256": "f00a32e0d37c0e6614728b242b585a43004d5882758cb262d207692dacb99817"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-home-office-640.webp",
+      "bytes": 24368,
+      "sha256": "932ac1704cc10cdaa7f2819060947e8a2db11fb9c4bb7599854391a8f85ff6e8"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-home-office.webp",
+      "bytes": 64986,
+      "sha256": "35bbd40fa0409c0a79e7acb66980aea78059dc9a0f7e6d40706d1a6d683ad43b"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-mercado-corporativo-640.webp",
+      "bytes": 34148,
+      "sha256": "6d9d38fb971c63582dd339742ad884b0020e45609fb3f22c3dac3e5d61980830"
+    },
+    {
+      "file": "blog/assets/ingles-fluente-mercado-corporativo.webp",
+      "bytes": 82466,
+      "sha256": "3294044c294b31c99a7eeb52594600ebadf4282a6410d966494310ec11e34db4"
+    },
+    {
+      "file": "blog/assets/ingles-liderar-reunioes-640.webp",
+      "bytes": 16456,
+      "sha256": "62a8a0a9fab374d7bb311dec456e9c3a029636fcf26448c684eb7f1e8cc9e4c9"
+    },
+    {
+      "file": "blog/assets/ingles-liderar-reunioes.webp",
+      "bytes": 36880,
+      "sha256": "0a9dfadffae7454844591552407a88801ae8b99fdb2cfaceb0975bc03ee30684"
+    },
+    {
+      "file": "blog/assets/ingles-medicos-profissionais-saude-640.webp",
+      "bytes": 26206,
+      "sha256": "6b2bb2fe3aac2bb0a12fc5f7f25fcdb25cb51b0928b894a9cd9ff9fc88b8fd5a"
+    },
+    {
+      "file": "blog/assets/ingles-medicos-profissionais-saude.webp",
+      "bytes": 57444,
+      "sha256": "6af0b336c1a6cc98c335a6dd8ab93ede0fd70784666fb347f4de9fca7fc7169e"
+    },
+    {
+      "file": "blog/assets/ingles-mudar-carreira-640.webp",
+      "bytes": 21822,
+      "sha256": "96ab73c31d5a6735fd7d0d5649dec4d76cd2f92a10b6bb65d848d53e2afdeba7"
+    },
+    {
+      "file": "blog/assets/ingles-mudar-carreira.webp",
+      "bytes": 46772,
+      "sha256": "5c27951faab3b34159e568bd83006049a0c1778cd9d6f62bfdc2cb038d97a6b2"
+    },
+    {
+      "file": "blog/assets/ingles-no-trabalho-640.webp",
+      "bytes": 14638,
+      "sha256": "3260988c94925f1ab7f4c4a5ffe019263956e0351f0ac536ca61419ea29d1b87"
+    },
+    {
+      "file": "blog/assets/ingles-no-trabalho.webp",
+      "bytes": 30842,
+      "sha256": "9a4da180ad051a42a45c977d1fa92246081d46867543aee5183633d2bc9f5d2d"
+    },
+    {
+      "file": "blog/assets/ingles-nova-zelandia-640.webp",
+      "bytes": 55284,
+      "sha256": "e6b006f6ed37c1f2fed42f314b2f85ec5d7bb9b13477bf7b9a5d4495c531774c"
+    },
+    {
+      "file": "blog/assets/ingles-nova-zelandia.webp",
+      "bytes": 95682,
+      "sha256": "7fa3a92ce8b573f118695869dd8c68732a9fa0cb5638f930ddf2db024d2cdb98"
+    },
+    {
+      "file": "blog/assets/ingles-para-economistas-640.webp",
+      "bytes": 15890,
+      "sha256": "87d2c9b849885a0ae47adeafc0cc89ab0b96dee0f8c4134ce04393e8cda6d3ba"
+    },
+    {
+      "file": "blog/assets/ingles-para-economistas.webp",
+      "bytes": 32380,
+      "sha256": "ba9bc89256b6d1dec79f147bbeb516ff519a69d7d31cabe15920dec5d155aa65"
+    },
+    {
+      "file": "blog/assets/ingles-para-home-office-global-640.webp",
+      "bytes": 32234,
+      "sha256": "25f1382f0c44afcd217c33e6c730cffbe7c103e08d302e5eba050078743a80a0"
+    },
+    {
+      "file": "blog/assets/ingles-para-home-office-global.webp",
+      "bytes": 76428,
+      "sha256": "977420ace015e2789e2c01a271730a105a2e043ff1335b2cedaf66b8be623ec0"
+    },
+    {
+      "file": "blog/assets/ingles-para-linkedin-640.webp",
+      "bytes": 27790,
+      "sha256": "aee507b7a70143ad0f60c220c3bf1757340bb0a2c2f0a24108947383cd53cb20"
+    },
+    {
+      "file": "blog/assets/ingles-para-linkedin.webp",
+      "bytes": 64566,
+      "sha256": "b1f38667fe7b5acc2f3ce25fe3bd02cd2d71ddc76e3b10036b07f15b9af6535f"
+    },
+    {
+      "file": "blog/assets/ingles-para-networking-640.webp",
+      "bytes": 41132,
+      "sha256": "f324d859b1126148d17b91a0a099e86da56cfc72eea44e160690accd5dd572e0"
+    },
+    {
+      "file": "blog/assets/ingles-para-networking.webp",
+      "bytes": 99084,
+      "sha256": "444cbdf2d46c4400db14b728e10f9feff4497e5f5442987c802573110c8e6a78"
+    },
+    {
+      "file": "blog/assets/ingles-para-reunioes-640.webp",
+      "bytes": 18286,
+      "sha256": "e8c85158ce1a69d9fcc9aea42fa76b845badd7d62a5bd26f123a3483f98685d4"
+    },
+    {
+      "file": "blog/assets/ingles-para-reunioes.webp",
+      "bytes": 40864,
+      "sha256": "0d2503f989279b380af0b4fe42b6656c8253e2ace5a6eee48afcd461397479e1"
+    },
+    {
+      "file": "blog/assets/ingles-para-secretaria-executiva-640.webp",
+      "bytes": 23746,
+      "sha256": "fe19dcbce1d78a10577a20135d643b8d4b99b2003a5fa42b6baa7afeef04e468"
+    },
+    {
+      "file": "blog/assets/ingles-para-secretaria-executiva.webp",
+      "bytes": 44396,
+      "sha256": "052603a0dcd5e2e3c036611f3ee7d79a1ad9b6adc6f93398c6a5bacfdf478f9b"
+    },
+    {
+      "file": "blog/assets/ingles-para-viagem-640.webp",
+      "bytes": 21922,
+      "sha256": "5bf4961d160d5ecbc95de25e3e755f49cb22933de515ef4acd3cbc05f0e90d54"
+    },
+    {
+      "file": "blog/assets/ingles-para-viagem.webp",
+      "bytes": 44440,
+      "sha256": "cb049b0f55031bb79de97650a819fa168677fa6e0955434e35523ee57feff711"
+    },
+    {
+      "file": "blog/assets/ingles-profissional-trabalho-640.webp",
+      "bytes": 29188,
+      "sha256": "42013101a14adb81960b4a030459ec1453a788ecd86f693b0701a8763d0a4068"
+    },
+    {
+      "file": "blog/assets/ingles-profissional-trabalho.webp",
+      "bytes": 71390,
+      "sha256": "cda1e32ce86b923e9348721b413b6ed358881e2653f1f84e92a8621cf2335feb"
+    },
+    {
+      "file": "blog/assets/ingles-transporte-publico-640.webp",
+      "bytes": 47962,
+      "sha256": "6fa75835ae1e8d15f6fb9d6958b0660a261662887af14ee2a499c3c8c6522f03"
+    },
+    {
+      "file": "blog/assets/ingles-transporte-publico.webp",
+      "bytes": 113844,
+      "sha256": "3a3724bf65e91da3ecf20f31d3f8dcb0f688247cc31d8804b888cc23ef315bcc"
+    },
+    {
+      "file": "blog/assets/ingles-viagens-internacionais-640.webp",
+      "bytes": 29734,
+      "sha256": "cf9d4d4fd27b21cde12bbf2d2d099f33d43cd3ce7b571e6ae5af68f2fd45d14e"
+    },
+    {
+      "file": "blog/assets/ingles-viagens-internacionais.webp",
+      "bytes": 61278,
+      "sha256": "9b54ac85fcc5c6589c40fbb888f5ef61b2f695ccc33d71960793cc46676e26b6"
+    },
+    {
+      "file": "blog/assets/ingles-viajar-europa-640.webp",
+      "bytes": 15328,
+      "sha256": "784823f2fcb3038885603f92a3b6f1d47692be5ea8d7cd33dc80736352314a64"
+    },
+    {
+      "file": "blog/assets/ingles-viajar-europa-outono-640.webp",
+      "bytes": 79960,
+      "sha256": "0791d67a0b6b66fb3c69f48bd123e52ee1836b3f96c5a2a283e3bde19bcd3b73"
+    },
+    {
+      "file": "blog/assets/ingles-viajar-europa-outono.webp",
+      "bytes": 153520,
+      "sha256": "ef6312947f647a2b025b41400db90d6899d91210c9cf3ad89bde6aeb5349f0e2"
+    },
+    {
+      "file": "blog/assets/ingles-viajar-europa.webp",
+      "bytes": 32786,
+      "sha256": "4a499d1867cdb8fb7be5dcd05408390c59de98e8f5fca4b7f201696149a837cd"
+    },
+    {
+      "file": "blog/assets/inline-191bcef496b062d4-640.webp",
+      "bytes": 5508,
+      "sha256": "1a5b726c30043b5b3669b8c518535285ca141e4b8555bb0ef9327279126957db"
+    },
+    {
+      "file": "blog/assets/inline-191bcef496b062d4.webp",
+      "bytes": 11636,
+      "sha256": "5280e0408984aa0e962ad809e6b473b89b1d47ea98871ee30f5802535d6a3d73"
+    },
+    {
+      "file": "blog/assets/inline-20314494edac0d59-640.webp",
+      "bytes": 10810,
+      "sha256": "08fbedff82a341a191592da02d5799a7c529da02e605b337807d48da2b7cff0b"
+    },
+    {
+      "file": "blog/assets/inline-20314494edac0d59.webp",
+      "bytes": 18526,
+      "sha256": "37cabaa8274967cb46e0ba26e46d983f13e1d7e956799528148c62fa35903674"
+    },
+    {
+      "file": "blog/assets/inline-4a988154de4ae332-640.webp",
+      "bytes": 33956,
+      "sha256": "74fcb7e2f7f63d3f0e176182b6221a15c13049bf743b3c4eb68f507efef101e0"
+    },
+    {
+      "file": "blog/assets/inline-4a988154de4ae332.webp",
+      "bytes": 57134,
+      "sha256": "751aa4c61893f94313ef121fb425ca8a367b3075ffb7561ee66641933214c6ab"
+    },
+    {
+      "file": "blog/assets/inline-4b87bbd472146b15-640.webp",
+      "bytes": 25572,
+      "sha256": "a3b4f2505a3e707f7dd704915ed6e28146f5767ac37604c539df09ebcd3ffdea"
+    },
+    {
+      "file": "blog/assets/inline-4b87bbd472146b15.webp",
+      "bytes": 48998,
+      "sha256": "2cf2fbc4c9bf3155b98c85358bfcaa03854b5edc6ab8f1750145e91e51d10a84"
+    },
+    {
+      "file": "blog/assets/inline-6fe5e5b653ab46e7-640.webp",
+      "bytes": 11832,
+      "sha256": "5d4fd9905daa6d1b107d9dc028e5dec8f1efbf5a306964577db813a86c74c85c"
+    },
+    {
+      "file": "blog/assets/inline-6fe5e5b653ab46e7.webp",
+      "bytes": 30806,
+      "sha256": "d47b8c0b4eedcb6abd95bead93894755021a3221d81f322733cf407c3c754e14"
+    },
+    {
+      "file": "blog/assets/inline-77defe2fd443b807-640.webp",
+      "bytes": 18574,
+      "sha256": "ffd9d49c6745d9bd8b354cea318a6472a0d642d0a5a180e5ec2f8016b4f1c161"
+    },
+    {
+      "file": "blog/assets/inline-77defe2fd443b807.webp",
+      "bytes": 36438,
+      "sha256": "3f3fcb2a3ee6ff4d98cb4181c16227f13c21e82113935a9496c8365d72187733"
+    },
+    {
+      "file": "blog/assets/inline-946fd129258a8620-640.webp",
+      "bytes": 19424,
+      "sha256": "943235b2730d35c65e650f620f98d79aba672e14332d594fa1eaac470f0df8b9"
+    },
+    {
+      "file": "blog/assets/inline-946fd129258a8620.webp",
+      "bytes": 27238,
+      "sha256": "b56595dad2f2037505621b44ca98ddf43e37e043bde2caadaa29f085fec52f20"
+    },
+    {
+      "file": "blog/assets/inline-a87a026bf210ca5a-640.webp",
+      "bytes": 17566,
+      "sha256": "3dd0190a0b2f7e50f680d0ca8af65c6076370cd4b0466ee6ada8e21669d33847"
+    },
+    {
+      "file": "blog/assets/inline-a87a026bf210ca5a.webp",
+      "bytes": 30176,
+      "sha256": "53c1b3d78f88f3f28bb2fa5a6784810a461cf8401e42b9e7cf495c5d58221e19"
+    },
+    {
+      "file": "blog/assets/inline-c3be0380859236f9-640.webp",
+      "bytes": 18518,
+      "sha256": "be4dfeec1c61de91f92536d47764bb7fa9f8ffa36fc86f761ef4c4551848ded1"
+    },
+    {
+      "file": "blog/assets/inline-c3be0380859236f9.webp",
+      "bytes": 19094,
+      "sha256": "4b61a15f6645e354b578e0fce140ae2411c6e252a0a2e246b0b5f40acf6b9bb9"
+    },
+    {
+      "file": "blog/assets/inline-c8db53209d26cdfe-640.webp",
+      "bytes": 18380,
+      "sha256": "5ce043b07aeecf567f832e408215a9206a0b79bbfa8aaa6f7299c299464051f5"
+    },
+    {
+      "file": "blog/assets/inline-c8db53209d26cdfe.webp",
+      "bytes": 26538,
+      "sha256": "27234f1dca4c36310bfbb13ecdea00d740ec363736174f6f2548820847a520fb"
+    },
+    {
+      "file": "blog/assets/inline-cdc6c2083c2d98ec-640.webp",
+      "bytes": 34560,
+      "sha256": "c5ecb031371208fa63ded00efc530993c67c9e19aa6324473808be814dfbfcad"
+    },
+    {
+      "file": "blog/assets/inline-cdc6c2083c2d98ec.webp",
+      "bytes": 78066,
+      "sha256": "72cb3286005145762881f163c5402e4c7d03d7da10d28c4f48066df00d3d7b1c"
+    },
+    {
+      "file": "blog/assets/inline-d2eab94be63697b8-640.webp",
+      "bytes": 42256,
+      "sha256": "fcfff03eecd6fd1380e518f4305d117687a0410676841dc236934756f10c5a60"
+    },
+    {
+      "file": "blog/assets/inline-d2eab94be63697b8.webp",
+      "bytes": 51922,
+      "sha256": "ac4418d55858cb2a64967349e5a8946de6aa090a340ed0d3539ba9a0d68e9ae2"
+    },
+    {
+      "file": "blog/assets/inline-ecb085c0cc1330ae-640.webp",
+      "bytes": 9208,
+      "sha256": "da6a4e12d305b9732c3f619a07c9ea46cae650f8ba6b2f694b865264871a49f1"
+    },
+    {
+      "file": "blog/assets/inline-ecb085c0cc1330ae.webp",
+      "bytes": 21672,
+      "sha256": "6532c09026d54b172796787c2eefe46f4e96f67d55ba99637693b1f4f94d56ec"
+    },
+    {
+      "file": "blog/assets/inline-f709f71adc6a4168-640.webp",
+      "bytes": 18802,
+      "sha256": "cc93d18253f9d76fb35fdd36f90f1047215e654ab93e7e867fecf49de403b57c"
+    },
+    {
+      "file": "blog/assets/inline-f709f71adc6a4168.webp",
+      "bytes": 25404,
+      "sha256": "8f1422af30b02891665244baef6b4adab75ba32e5207fabfcfa78e09f31e2c82"
+    },
+    {
+      "file": "blog/assets/inline-f73327200b84f38f-640.webp",
+      "bytes": 56812,
+      "sha256": "5638f7f08ad12cd730219212bd241be4a8492780583a42863806c7e5339bcb59"
+    },
+    {
+      "file": "blog/assets/inline-f73327200b84f38f.webp",
+      "bytes": 121844,
+      "sha256": "7b2486d00bc6703f0b32db0acbc063da47351c6c616d65dd1d4b023bbc8a39d1"
+    },
+    {
+      "file": "blog/assets/inline-fb2aab3cdd7a7542-640.webp",
+      "bytes": 33984,
+      "sha256": "c11dfe9dd0baed8722a9a38a402a3d3d37bac686c7beb0968ebbaba388c4e1c3"
+    },
+    {
+      "file": "blog/assets/inline-fb2aab3cdd7a7542.webp",
+      "bytes": 60672,
+      "sha256": "b0be91100709e30d72fc149df629afd852f20f22cb51300aae7e2bfea5a9c881"
+    },
+    {
+      "file": "blog/assets/inline-fdb41db0cd40c7ab-640.webp",
+      "bytes": 15062,
+      "sha256": "b2e72dfcbcc641bc99755010b1e1b3ac4063ad2cf1fa88625cee49a3727f96af"
+    },
+    {
+      "file": "blog/assets/inline-fdb41db0cd40c7ab.webp",
+      "bytes": 26274,
+      "sha256": "2670c6a4b30b8a6bf714a79e2561aff1aedcf56b5e14aa715dd13de1c0f1bfb7"
+    },
+    {
+      "file": "blog/assets/intercambio-africa-do-sul-640.webp",
+      "bytes": 9304,
+      "sha256": "956fcb94031e029725e5cc78f215cddef589abf6d9e065b1924dd214d859e0c6"
+    },
+    {
+      "file": "blog/assets/intercambio-africa-do-sul.webp",
+      "bytes": 21306,
+      "sha256": "2c8f9a994a7da3597949db7b10ee7a962d0fa6d3e4741aa0185ec265e991bb83"
+    },
+    {
+      "file": "blog/assets/intercambio-au-pair-o-que-e-e-como-funciona-640.webp",
+      "bytes": 25446,
+      "sha256": "16a9d41d9b380cdfc8f384ed747c8a35293a0d351fe4a8d5adb0988d9429b43b"
+    },
+    {
+      "file": "blog/assets/intercambio-au-pair-o-que-e-e-como-funciona.webp",
+      "bytes": 57976,
+      "sha256": "bdf9d8370a1b8789bd527e2f0c86b2f69493e13066c39a33bd2c0758445ff07e"
+    },
+    {
+      "file": "blog/assets/intercambio-canada-640.webp",
+      "bytes": 19380,
+      "sha256": "4dea84b7fc4b435c91dea86cb74762abbf5111b5aef5e8e40b48bc9b77b3c692"
+    },
+    {
+      "file": "blog/assets/intercambio-canada.webp",
+      "bytes": 49550,
+      "sha256": "8a909aa23049d000b9f616b47a7986d4c03fd8f965f31b11e6007e667fa165d5"
+    },
+    {
+      "file": "blog/assets/intercambio-como-se-preparar-640.webp",
+      "bytes": 36722,
+      "sha256": "4b2eeadc20602ef1a4e600c7db58081c205f1fb99f01e2bca8997877b157ff2e"
+    },
+    {
+      "file": "blog/assets/intercambio-como-se-preparar.webp",
+      "bytes": 82500,
+      "sha256": "e1f736752c85ed0a95d3fc8296f3a00cf33af6d40d62a9b8b0e8710ff7bff548"
+    },
+    {
+      "file": "blog/assets/intercambio-o-que-e-preciso-e-como-se-preparar-640.webp",
+      "bytes": 25172,
+      "sha256": "cc0c38269be4ffa77ed8f743684a498aff285b915035f659195697107db2213a"
+    },
+    {
+      "file": "blog/assets/intercambio-o-que-e-preciso-e-como-se-preparar.webp",
+      "bytes": 54950,
+      "sha256": "6959e2912f622d1ceb58404b793e24da1627a1aae76c4e6b775886893b2d1348"
+    },
+    {
+      "file": "blog/assets/labor-day-640.webp",
+      "bytes": 29130,
+      "sha256": "dc95f4d18557b4cadd2ecdb72183c4375fec27fe7762e44485a1d0900e664e44"
+    },
+    {
+      "file": "blog/assets/labor-day.webp",
+      "bytes": 79742,
+      "sha256": "49f667162b2848a9a43ff7b7ded2870b3273e5c81ef693518148d19ee930eaf1"
+    },
+    {
+      "file": "blog/assets/ler-em-ingles-veja-oito-livros-para-iniciar-640.webp",
+      "bytes": 11016,
+      "sha256": "eae6cfa7382bebd8907dd434f879bc91fb5fc83dfcc73fc6d2a25d58bdfa353f"
+    },
+    {
+      "file": "blog/assets/ler-em-ingles-veja-oito-livros-para-iniciar.webp",
+      "bytes": 22830,
+      "sha256": "5aebcb0c3b0f6cad17f7cdeed29a804e502fdaba23c9cc839bf4b13671ce77f5"
+    },
+    {
+      "file": "blog/assets/livros-ingles-640.webp",
+      "bytes": 20788,
+      "sha256": "bbde96a733cdf27f7e28f8bc8b0a97a2ee263da538ca0242e3b4e30ae3083b15"
+    },
+    {
+      "file": "blog/assets/livros-ingles.webp",
+      "bytes": 49966,
+      "sha256": "0e94d7c774956feffa07de18ab39b7885a3daeda948d586837b1e8150cf265fa"
+    },
+    {
+      "file": "blog/assets/memorial-day-a-importancia-dessa-data-nos-eua-640.webp",
+      "bytes": 35556,
+      "sha256": "f361507b0a29021c825f58b3af28f4e963e788b12c431671e1f3e267624d94a6"
+    },
+    {
+      "file": "blog/assets/memorial-day-a-importancia-dessa-data-nos-eua.webp",
+      "bytes": 41862,
+      "sha256": "c4b1a75deb0726d0238510e71d5b67481ae33cecbcc3a00e7d28753710d6fd89"
+    },
+    {
+      "file": "blog/assets/modal-verbs-640.webp",
+      "bytes": 24028,
+      "sha256": "2cce0037a95f000e94ca9134c8580a281a25870ee0dd5f30360e96a83ac66182"
+    },
+    {
+      "file": "blog/assets/modal-verbs.webp",
+      "bytes": 54042,
+      "sha256": "5e57dc483abb17e1b5817c1c09ca6989e88e265c7aa0a6d3cb1c1edc311e222f"
+    },
+    {
+      "file": "blog/assets/natal-lingua-inglesa-640.webp",
+      "bytes": 54060,
+      "sha256": "16e74e04b3db4baf061059be30a6a01a09e258c423aaa989bb0290e94b6b52e4"
+    },
+    {
+      "file": "blog/assets/natal-lingua-inglesa.webp",
+      "bytes": 88852,
+      "sha256": "2f2488d35aab7186731777273e062d487e41b01c83e661ae3094441f892b8e8d"
+    },
+    {
+      "file": "blog/assets/negociar-salario-beneficios-ingles-640.webp",
+      "bytes": 16222,
+      "sha256": "1c3749f535fdf6841b878f74c1f389e1287c28f482183711a74f601cb598022d"
+    },
+    {
+      "file": "blog/assets/negociar-salario-beneficios-ingles.webp",
+      "bytes": 35786,
+      "sha256": "dc979d830eda021b6749a927f28cc09216d981fdb1033f5eddf29cb84a1821f7"
+    },
+    {
+      "file": "blog/assets/nivel-profissional-ingles-640.webp",
+      "bytes": 29826,
+      "sha256": "0dce21d2927a9540bbae44074b3a9643aff561704dfa085c32267627892cd870"
+    },
+    {
+      "file": "blog/assets/nivel-profissional-ingles.webp",
+      "bytes": 74194,
+      "sha256": "32c1b08849714b964dbc4de93612e0af5698d19cb322cf31fe8f5b504ba663de"
+    },
+    {
+      "file": "blog/assets/o-que-sao-collocations-640.webp",
+      "bytes": 34852,
+      "sha256": "1bde34dd12205527f14d9bf5fd88744d6c5bceef3d8273fcb753a3a25398b995"
+    },
+    {
+      "file": "blog/assets/o-que-sao-collocations.webp",
+      "bytes": 82494,
+      "sha256": "480dd25d77b40e9479fc866dde0342b26ea8d87b080b28d337bded85da948ec6"
+    },
+    {
+      "file": "blog/assets/origem-black-friday-640.webp",
+      "bytes": 16876,
+      "sha256": "4c350ecf5cff7a50ae311aec900c2e71b11b30df15cf342f5ef115090c534065"
+    },
+    {
+      "file": "blog/assets/origem-black-friday.webp",
+      "bytes": 37698,
+      "sha256": "10d3f032c3f1e79732f7be14b18c283cf78103f32f86297a7ff8fd557e65be36"
+    },
+    {
+      "file": "blog/assets/pais-ideal-intercambio-640.webp",
+      "bytes": 27200,
+      "sha256": "a53e99c41b8eaad8ea2f0735d4915dd237afd0fa316334e4bfebdec3937592a5"
+    },
+    {
+      "file": "blog/assets/pais-ideal-intercambio.webp",
+      "bytes": 59768,
+      "sha256": "00db9db4419601c246a5571bbd22235eeed79c5ab601a916c2fd16cc37074808"
+    },
+    {
+      "file": "blog/assets/palavras-frases-ingles-hoteis-640.webp",
+      "bytes": 25832,
+      "sha256": "6a37a969dab89211258ea121d8bec78a1a9193421828818ccba3e392cf789ef2"
+    },
+    {
+      "file": "blog/assets/palavras-frases-ingles-hoteis.webp",
+      "bytes": 18728,
+      "sha256": "0c7da359db03a6dbb6db8a16fa912182f46d41bac6c21950265a8d57527e2bbf"
+    },
+    {
+      "file": "blog/assets/perder-nervosismo-conversar-em-ingles-640.webp",
+      "bytes": 18744,
+      "sha256": "3efaa920dea5bf923164127089997b7dba93896a68f93fcc862c96ab64aae5cf"
+    },
+    {
+      "file": "blog/assets/perder-nervosismo-conversar-em-ingles.webp",
+      "bytes": 43760,
+      "sha256": "15bbf6c65aba25aed86b593f32df5af8ba9fef64f6fa87d804b8128f662372db"
+    },
+    {
+      "file": "blog/assets/phrasal-verbs-mais-usados-640.webp",
+      "bytes": 29106,
+      "sha256": "5ed08649b8cef836206e92834529125a435fa1fb951d4b9f37366e34fad6184e"
+    },
+    {
+      "file": "blog/assets/phrasal-verbs-mais-usados.webp",
+      "bytes": 71578,
+      "sha256": "7431c4cea047d73d5c733c8578c965cc00064043e46e9363883b3ecfa0923696"
+    },
+    {
+      "file": "blog/assets/phrasal-verbs-o-que-sao-640.webp",
+      "bytes": 12600,
+      "sha256": "e364451a4257175e4b5eeaeb079b8d51215f55a9751daffd3165291ae388b3e2"
+    },
+    {
+      "file": "blog/assets/phrasal-verbs-o-que-sao.webp",
+      "bytes": 25086,
+      "sha256": "2212d35cf863b10cb0388fbd692574c8d633b0aaaea2facbf22fe6e2b42a1024"
+    },
+    {
+      "file": "blog/assets/por-que-a-rainha-tem-dois-aniversarios-640.webp",
+      "bytes": 32004,
+      "sha256": "e394b93ba37c012077f4b05306eb2c05d410a890e54f1b035254dc2f9dbb4102"
+    },
+    {
+      "file": "blog/assets/por-que-a-rainha-tem-dois-aniversarios.webp",
+      "bytes": 72318,
+      "sha256": "6d3d18ee215fdc917fe47670c3b848073086f40cf62c636f7929650be4e5d9a6"
+    },
+    {
+      "file": "blog/assets/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade-640.webp",
+      "bytes": 24860,
+      "sha256": "3044ab1bf7c6476b567974cb8cfead4d624ed1433fe64ddd3bdc5d61ceffd595"
+    },
+    {
+      "file": "blog/assets/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade.webp",
+      "bytes": 41666,
+      "sha256": "0f8001e695168d62150925bc890acd1725e8b5bb9d17a6942d5953506616727e"
+    },
+    {
+      "file": "blog/assets/pos-graduacao-internacional-no-reino-unido-640.webp",
+      "bytes": 43552,
+      "sha256": "8a6fa7f26530e167416091165a8a746a01b0794a49cc6c5c8e6e8e22c0350368"
+    },
+    {
+      "file": "blog/assets/pos-graduacao-internacional-no-reino-unido.webp",
+      "bytes": 117166,
+      "sha256": "04b5bd7f06e5d8f6a9aed2251e2a2fbb0692df1c54bd5a1f471086bd9ef8cd18"
+    },
+    {
+      "file": "blog/assets/pratos-tipicos-canada-640.webp",
+      "bytes": 35720,
+      "sha256": "1ad83ea7fae540dd2e2d4d1f1587eb8f95617f9dd85f67911a948b148b1f3f31"
+    },
+    {
+      "file": "blog/assets/pratos-tipicos-canada.webp",
+      "bytes": 82192,
+      "sha256": "e83c633c9a75223eb604a8c6d1f43e0371130c08e710f21e8769708bfd4b520c"
+    },
+    {
+      "file": "blog/assets/principais-girias-ingles-640.webp",
+      "bytes": 36452,
+      "sha256": "e6666c8bf10c7e893f3cf155613eea819099f72f391bc9b08ba9b48979333c1e"
+    },
+    {
+      "file": "blog/assets/principais-girias-ingles.webp",
+      "bytes": 80294,
+      "sha256": "357bc834271d092e5d898c67fcc3ff0cb2dff3517fe5301a6aabf70592fd3b47"
+    },
+    {
+      "file": "blog/assets/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles-640.webp",
+      "bytes": 59356,
+      "sha256": "5b231d59bf6a60f0fb2ab74ebca6e7876698bebfec77d8b7b688e0260e858d3f"
+    },
+    {
+      "file": "blog/assets/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles.webp",
+      "bytes": 138312,
+      "sha256": "2ff7f84d18e958a80052be8b9e24142a9389f2eb9ce5155531e124e7e8fee908"
+    },
+    {
+      "file": "blog/assets/remoto-presencial-united-640.webp",
+      "bytes": 19314,
+      "sha256": "a5c52346961b8e68830a301c330a7f410d765046a0800e4ec005425fe70f53d0"
+    },
+    {
+      "file": "blog/assets/remoto-presencial-united.webp",
+      "bytes": 39314,
+      "sha256": "45af895e9f80afc1223556f46dfb74c99cbfa9245dbac28fd44d69d28d3fb40e"
+    },
+    {
+      "file": "blog/assets/reunioes-em-ingles-640.webp",
+      "bytes": 53882,
+      "sha256": "7eae8dea32d785c19cee229bd58db69f03c3d53c80ed9af6a4897f910c9f2233"
+    },
+    {
+      "file": "blog/assets/reunioes-em-ingles.webp",
+      "bytes": 84612,
+      "sha256": "77e896c1ea4ac3ff43a907d1149545f58aa4c490da4abff7b1d44bc5c32faf44"
+    },
+    {
+      "file": "blog/assets/rotina-ingles-ia-640.webp",
+      "bytes": 11000,
+      "sha256": "0cbd5a66940eadac3a1a111073582458f08f93b5ab99ba114c1d547c9ae83e1e"
+    },
+    {
+      "file": "blog/assets/rotina-ingles-ia.webp",
+      "bytes": 23932,
+      "sha256": "081e1a413699a6fc678efdb54d986af7d06a5fc9b9dd787355b87de3370cc0e2"
+    },
+    {
+      "file": "blog/assets/saiba-como-se-preparar-para-um-intercambio-640.webp",
+      "bytes": 30464,
+      "sha256": "6a39ffc0d4f9cd35946b891f2e9eef5683a12d12f19172e81708ced4b603d35f"
+    },
+    {
+      "file": "blog/assets/saiba-como-se-preparar-para-um-intercambio.webp",
+      "bytes": 66540,
+      "sha256": "e407c077c496044f9ffc9cf6cfb53cc90ed4931d7982f1aa3bef9c4829f7eb0d"
+    },
+    {
+      "file": "blog/assets/saiba-como-validar-seu-diploma-nos-eua-640.webp",
+      "bytes": 27674,
+      "sha256": "0f585516d054af6cdf24079829b864e792f9c65904e44d32eaa0adabce7f361f"
+    },
+    {
+      "file": "blog/assets/saiba-como-validar-seu-diploma-nos-eua.webp",
+      "bytes": 61600,
+      "sha256": "b900f3e1913d72938a72a337e3b651514880f16b0d30f120ba79520875fdbb06"
+    },
+    {
+      "file": "blog/assets/saiba-mais-sobre-os-certificados-internacionais-de-ingles-640.webp",
+      "bytes": 34618,
+      "sha256": "8e3639c46e245e2835f0d04f2d29b5a780e8d361e2b9b908059756b33aec0cf0"
+    },
+    {
+      "file": "blog/assets/saiba-mais-sobre-os-certificados-internacionais-de-ingles.webp",
+      "bytes": 71114,
+      "sha256": "b1e247fe39b357dc60bff0766eb5a0e8880a7d89ce6aa2176c58c3e9a1800260"
+    },
+    {
+      "file": "blog/assets/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico-640.webp",
+      "bytes": 23174,
+      "sha256": "20da422837e3b51cb43dd9396a147dca883f96a80277a91aaee1f6540d76547d"
+    },
+    {
+      "file": "blog/assets/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico.webp",
+      "bytes": 44106,
+      "sha256": "63833e4004c5295c1fda8534c7f312c6d7b5c57006286743a540558cad1ea2dd"
+    },
+    {
+      "file": "blog/assets/saint-patricks-day-eua-640.webp",
+      "bytes": 51378,
+      "sha256": "0cba372d9651445886f6334deca591b4c0ed2f9bcf730c7fe6db357861a52ca5"
+    },
+    {
+      "file": "blog/assets/saint-patricks-day-eua.webp",
+      "bytes": 132572,
+      "sha256": "a5e3a55e46dc7b6c7de0fa0914720b8c192b1c45ef77684f6a5f573cb01d7bc8"
+    },
+    {
+      "file": "blog/assets/save-the-date-conheca-a-origem-dessa-expressao-640.webp",
+      "bytes": 16570,
+      "sha256": "3366caae3e6d50c3c210748831b66aa5f882460ade49b1d6dd3a3c8460e52565"
+    },
+    {
+      "file": "blog/assets/save-the-date-conheca-a-origem-dessa-expressao.webp",
+      "bytes": 32198,
+      "sha256": "47f9c139c08d70acbe4b5aaff7c1d389078ba0cb29781281bae3d80a45d4d2c7"
+    },
+    {
+      "file": "blog/assets/selo-excelencia-franchising-united-idiomas-640.webp",
+      "bytes": 13462,
+      "sha256": "b340505a5520113dee6e44beccad17bf9a7c4a03691665b6c8a9485930aa8e30"
+    },
+    {
+      "file": "blog/assets/selo-excelencia-franchising-united-idiomas.webp",
+      "bytes": 25146,
+      "sha256": "e9df14ebdd291e587a13f95f543f1c927ccd7c6d960c5a62322832a9899fce4b"
+    },
+    {
+      "file": "blog/assets/sete-destinos-ingles-640.webp",
+      "bytes": 21066,
+      "sha256": "360f28b108756471a80640257c2f85a7884b165be5f02bb876eabb2964b6b6ac"
+    },
+    {
+      "file": "blog/assets/sete-destinos-ingles.webp",
+      "bytes": 45142,
+      "sha256": "d563825dfabd187bb324bbd22dc8fb2a19950fe9235ad84bc95c95bba557135d"
+    },
+    {
+      "file": "blog/assets/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas-640.webp",
+      "bytes": 43204,
+      "sha256": "4b197d213b12aa732aebb920608f454914e6d869013b417d8472207e00a24f71"
+    },
+    {
+      "file": "blog/assets/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas.webp",
+      "bytes": 120108,
+      "sha256": "71b94771aca3c513aaa3daccc288eae3bd72571824e78238a697aa57195f4a83"
+    },
+    {
+      "file": "blog/assets/soft-skills-ingles-640.webp",
+      "bytes": 12404,
+      "sha256": "862a361a9695fec75b3c8ed00ab851073bbea599fe346dcf70176553f825e9e7"
+    },
+    {
+      "file": "blog/assets/soft-skills-ingles.webp",
+      "bytes": 12404,
+      "sha256": "862a361a9695fec75b3c8ed00ab851073bbea599fe346dcf70176553f825e9e7"
+    },
+    {
+      "file": "blog/assets/sotaques-ingles-640.webp",
+      "bytes": 16378,
+      "sha256": "45651bd90c374f43b93ecfe6ca534e3108c2d4d498ad170c3dcc6dc237aa50d4"
+    },
+    {
+      "file": "blog/assets/sotaques-ingles-diferencas-640.webp",
+      "bytes": 30952,
+      "sha256": "d44efa01178133f6514ee6450ca79e7a43eb11e9bc48c95c12faf574ef4ef761"
+    },
+    {
+      "file": "blog/assets/sotaques-ingles-diferencas.webp",
+      "bytes": 116618,
+      "sha256": "899e9614598ad4a531b872ac4661c28776618340971aac435385a0419d6bd4d6"
+    },
+    {
+      "file": "blog/assets/sotaques-ingles.webp",
+      "bytes": 48940,
+      "sha256": "9d701c6aa111bcae838ee7543d39ad6deacadf49ef0b0be8384740cf8703ceba"
+    },
+    {
+      "file": "blog/assets/speak-talk-say-tell-640.webp",
+      "bytes": 19980,
+      "sha256": "27f27155ada7fa51e967ca1a514c7acea4e6c4d61e616bbf3aeec2d0d18bb926"
+    },
+    {
+      "file": "blog/assets/speak-talk-say-tell.webp",
+      "bytes": 45622,
+      "sha256": "54498c2f371a1b9250a54974cae473699d5657006f0fe826cec1f7fc9c4fe7f9"
+    },
+    {
+      "file": "blog/assets/substantivos-coletivos-em-ingles-640.webp",
+      "bytes": 83908,
+      "sha256": "02d5595e6ba9d560364057004d9974ce49cd892610ee7d63f7da1d74cb5f50b2"
+    },
+    {
+      "file": "blog/assets/substantivos-coletivos-em-ingles.webp",
+      "bytes": 193794,
+      "sha256": "f9ed95f1bc6c2a6ffccba78455776959763d622397f1279caef0c9ece1c41439"
+    },
+    {
+      "file": "blog/assets/tempos-verbais-ingles-2-640.webp",
+      "bytes": 20238,
+      "sha256": "324094d25e9f3182bb8e8597ae7899335ea518e2c87f4c7cc5745b249977cf0c"
+    },
+    {
+      "file": "blog/assets/tempos-verbais-ingles-2.webp",
+      "bytes": 44018,
+      "sha256": "a24527492421211c3d6b6ae1f509c5654f5d9bb41effae3afd7de6e8499c5f7e"
+    },
+    {
+      "file": "blog/assets/tempos-verbais-ingles-640.webp",
+      "bytes": 19918,
+      "sha256": "55ed33559e504661ab44913c65f8a035f8b84a2c26a447b9b43e3797f2e01aca"
+    },
+    {
+      "file": "blog/assets/tempos-verbais-ingles.webp",
+      "bytes": 44700,
+      "sha256": "e0dd9adba34e5904a0b7f4c1e7b6e31f380129da1b175b26987811c2d8a53c58"
+    },
+    {
+      "file": "blog/assets/termos-ingles-profissionais-rh-640.webp",
+      "bytes": 18836,
+      "sha256": "8431c983956a2dc1973e7e119979ac315293207ee421e93a686c39224672b42b"
+    },
+    {
+      "file": "blog/assets/termos-ingles-profissionais-rh.webp",
+      "bytes": 43366,
+      "sha256": "ab276d82f8c395f2881fa53cfa45cdaaf373c06745e01308f1e88362f5fec94c"
+    },
+    {
+      "file": "blog/assets/thanksgiving-day-curiosidades-640.webp",
+      "bytes": 42314,
+      "sha256": "55ea03637133ff18721e276e93a705238082bed7a6da8380f260370429b6639f"
+    },
+    {
+      "file": "blog/assets/thanksgiving-day-curiosidades.webp",
+      "bytes": 94814,
+      "sha256": "41fc004632d63fdd798d9062749d1101eca00c6f1a70ff8b08170429368b2a5a"
+    },
+    {
+      "file": "blog/assets/thanksgiving-day-dia-especial-640.webp",
+      "bytes": 12836,
+      "sha256": "3548806153ff9ccebf211744dbafe1316c229c72901d9c111c1d0ed12fed4382"
+    },
+    {
+      "file": "blog/assets/thanksgiving-day-dia-especial.webp",
+      "bytes": 29360,
+      "sha256": "ec9a7cbe015cd81cac10f310ec9c3f70bd7f2319581cfd9a9e6aa914eef005b5"
+    },
+    {
+      "file": "blog/assets/though-thought-tough-640.webp",
+      "bytes": 9522,
+      "sha256": "8fb690512a4405c27af339450c67806a292fa8d422322ad20e13d0a2dbf96c74"
+    },
+    {
+      "file": "blog/assets/though-thought-tough.webp",
+      "bytes": 22816,
+      "sha256": "2b1d784f7af0bd4a867e239cbf46fd4866f4ab82f9e423f27d4fa953ad4eafe1"
+    },
+    {
+      "file": "blog/assets/too-enough-very-640.webp",
+      "bytes": 20676,
+      "sha256": "5586dd4db41892a32ca1c2932d67e20fea09607a94f2e684d862629973caa72b"
+    },
+    {
+      "file": "blog/assets/too-enough-very.webp",
+      "bytes": 44070,
+      "sha256": "1618200d83a204865f600fb39dda239a93a5e4118e60b8201912378cc3e55dee"
+    },
+    {
+      "file": "blog/assets/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil-640.webp",
+      "bytes": 16396,
+      "sha256": "c91c2262be11f9f01d6c55cd06bf2c0b8c2fbe4511751365ae60273241ea87ed"
+    },
+    {
+      "file": "blog/assets/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil.webp",
+      "bytes": 34218,
+      "sha256": "eb8dfb6d4da075f1ba825ffe880161b354a86b7f3c50d308a0c9cc384822e28f"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-inteligencia-artificial-640.webp",
+      "bytes": 38298,
+      "sha256": "60146a7616d28bbd787e4dbc15f44bdb58babb2476f71199bfa4c91d1fbdf7ef"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-inteligencia-artificial.webp",
+      "bytes": 60836,
+      "sha256": "ee64091fe81b1a016602334a0e01ddc7b8871c1fa45f86f9654467e92736cda2"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-intercambio-640.webp",
+      "bytes": 56006,
+      "sha256": "12323c26135b1c70c5a5988f7e59df984e0e3791edefd13daeebc1f15f5687f2"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-intercambio.webp",
+      "bytes": 126466,
+      "sha256": "f4334b7f168f2870882a705c399bc088e0be6835a0ec57ba9df2c243ec522b33"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-series-640.webp",
+      "bytes": 21252,
+      "sha256": "08c6037f89d3c165c711377eab811df8b8ed1a7ecee7b7dd03b3693999915b5c"
+    },
+    {
+      "file": "blog/assets/treinar-ingles-series.webp",
+      "bytes": 48034,
+      "sha256": "00dbbeba7e6e9bb1be69e57c924d720abb14997f55d61cd622c6f24351ba8538"
+    },
+    {
+      "file": "blog/assets/tudo-sobre-intercambio-australia-640.webp",
+      "bytes": 41276,
+      "sha256": "9073e72b3bce1d14d7ea40183bea767dd5a24be123f837340bedd4562d4e563c"
+    },
+    {
+      "file": "blog/assets/tudo-sobre-intercambio-australia.webp",
+      "bytes": 99982,
+      "sha256": "be4722204e5f6d91d58ee2c1424b575b7d2ee61a1939b29c23b5c3afde0ed611"
+    },
+    {
+      "file": "blog/assets/uso-de-preposicoes-em-ingles-640.webp",
+      "bytes": 34832,
+      "sha256": "4f8a1ba536ff6237acfaeb9d1c924cf7bb4590588590aa8c646c732049965812"
+    },
+    {
+      "file": "blog/assets/uso-de-preposicoes-em-ingles.webp",
+      "bytes": 85040,
+      "sha256": "2a5cd71e26d101dbcf53c41c0a8aa17de4b290cd734aaf2cb04d7c70975034fb"
+    },
+    {
+      "file": "blog/assets/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados-640.webp",
+      "bytes": 27060,
+      "sha256": "f97a2af182ebfb70d125621e19fa39eadd9a7c62c5c4398ff9cd59547e3f2f25"
+    },
+    {
+      "file": "blog/assets/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados.webp",
+      "bytes": 27060,
+      "sha256": "f97a2af182ebfb70d125621e19fa39eadd9a7c62c5c4398ff9cd59547e3f2f25"
+    },
+    {
+      "file": "blog/assets/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho-640.webp",
+      "bytes": 30084,
+      "sha256": "4234d05285abce27d1ff42f60ae4de96399c25c7f4f922522106b1955345009f"
+    },
+    {
+      "file": "blog/assets/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho.webp",
+      "bytes": 30084,
+      "sha256": "4234d05285abce27d1ff42f60ae4de96399c25c7f4f922522106b1955345009f"
+    },
+    {
+      "file": "blog/assets/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles-640.webp",
+      "bytes": 43980,
+      "sha256": "a82aef4c65943d817d6b0612224ba2be9f3bb1963d1181f54fc2fcebba6c32cb"
+    },
+    {
+      "file": "blog/assets/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles.webp",
+      "bytes": 92962,
+      "sha256": "f32e14c0870ed8951015ac3d21019d7f3d15b8cc4a4fc42fbe5062194e3edc3e"
+    },
+    {
+      "file": "blog/assets/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles-640.webp",
+      "bytes": 24574,
+      "sha256": "4ee7cfa98be88b7e7bef1622403acffaee4ab7d12ba2cffc4a740ea561764f7b"
+    },
+    {
+      "file": "blog/assets/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles.webp",
+      "bytes": 55002,
+      "sha256": "94d275dd1e151d52e918219257b09d6c52d2cd5d2628a3f480af0f0ce53c04ce"
+    },
+    {
+      "file": "blog/assets/verb-tenses-640.webp",
+      "bytes": 11842,
+      "sha256": "169d9525e9cd4486acf8498291316aa4dde4b8b4ef2e2aa73da6f456d3043681"
+    },
+    {
+      "file": "blog/assets/verb-tenses.webp",
+      "bytes": 29124,
+      "sha256": "c4cb8946a7cd599462af146e3a0fd6a7917ba5258d233e5266dcc45cc3a067cd"
+    },
+    {
+      "file": "blog/assets/veterans-day-importancia-640.webp",
+      "bytes": 41882,
+      "sha256": "ef307718059ffe684216e253569a61ce9b7b298bc588ddd262cf74b113f11200"
+    },
+    {
+      "file": "blog/assets/veterans-day-importancia.webp",
+      "bytes": 90110,
+      "sha256": "525e9d7c3b8c30582a0561c970efadd522dccaafb902e466e48949e8b7e09de9"
+    },
+    {
+      "file": "blog/assets/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo-640.webp",
+      "bytes": 25150,
+      "sha256": "bb02f3ea6ca56d3a0c2fe947265139747a12f4e73595d0ff0026250fce8227f6"
+    },
+    {
+      "file": "blog/assets/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo.webp",
+      "bytes": 50850,
+      "sha256": "1c8877352bfd104ee1fdf4901585aa311e989be3456cefc431adb4f880a033f8"
+    },
+    {
+      "file": "blog/assets/vocabulario-de-ingles-para-a-area-de-marketing-640.webp",
+      "bytes": 66964,
+      "sha256": "f5da3be8c9a42cf8cce6fcb1615f8f50ceca29c734993f33f15bde61e65c6930"
+    },
+    {
+      "file": "blog/assets/vocabulario-de-ingles-para-a-area-de-marketing.webp",
+      "bytes": 149846,
+      "sha256": "0a48ad5ca1fed5ab6a1ecdb972157fc2047ceee6b5ecaf65303ce085d0efe73a"
+    },
+    {
+      "file": "blog/assets/vocabulario-ingles-usado-no-halloween-640.webp",
+      "bytes": 12140,
+      "sha256": "5cad03dec18d45d1fbdf5e73a7c686bce4c014ed3a59500c57e5562deb414fbb"
+    },
+    {
+      "file": "blog/assets/vocabulario-ingles-usado-no-halloween.webp",
+      "bytes": 28200,
+      "sha256": "24fe867e7fd75c6867f3df12067efc3f15c5667cdd6dd59e1d064a2cecc823e1"
+    },
+    {
+      "file": "blog/assets/vocabulario-ingles-viagem-640.webp",
+      "bytes": 26214,
+      "sha256": "00f55e1665e7497183b760991db6c5d8871547c74182e10b85343fb69603a181"
+    },
+    {
+      "file": "blog/assets/vocabulario-ingles-viagem.webp",
+      "bytes": 30882,
+      "sha256": "60ad8993c4e9f8a4238a8047d59091bfd1e390b963a6e5b9efb5de94855a4026"
+    },
+    {
+      "file": "blog/assets/vocabulario-natal-ingles-640.webp",
+      "bytes": 22568,
+      "sha256": "b0aa388ed5a2a8deca8cd7fd989523249a7ee4481ec8fc0f88dc00e07e6724ea"
+    },
+    {
+      "file": "blog/assets/vocabulario-natal-ingles.webp",
+      "bytes": 52406,
+      "sha256": "78ecbd6591f612512cd471dfa3003c6f8af06de9aa03fdaec3defd20c3090d19"
+    },
+    {
+      "file": "blog/assets/voce-sabe-como-o-toefl-funciona-640.webp",
+      "bytes": 21830,
+      "sha256": "c979f11e5200c6fe5a77715a90a969fae87587941439df05a5366a06d7a37dee"
+    },
+    {
+      "file": "blog/assets/voce-sabe-como-o-toefl-funciona.webp",
+      "bytes": 49474,
+      "sha256": "77f81d76623a265b6193041b27615fdd65c8cfc00d541b8bbfb6375dc3941689"
+    },
+    {
+      "file": "blog/assets/will-going-to-640.webp",
+      "bytes": 15340,
+      "sha256": "ead5796d64f2847e5393e50b2b56c98f8c687867aa05aabfa161a5c300c59b2e"
+    },
+    {
+      "file": "blog/assets/will-going-to.webp",
+      "bytes": 27470,
+      "sha256": "d853c0ae2859a8b2927696517835fcaa3cf0000e6b6e73d64729795bdc62a4fc"
+    },
+    {
+      "file": "blog/aumentar-vocabulario-ingles/index.html",
+      "bytes": 27227,
+      "sha256": "45c42a366d456f0fa0b563a83b6549b5790ab513a08207711b681ffb851a1055"
+    },
+    {
+      "file": "blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/index.html",
+      "bytes": 23932,
+      "sha256": "321763eb0b448a21d433fd637bbc1ca55b28290c246fefe649c4c07f9ae5dff7"
+    },
+    {
+      "file": "blog/beneficios-aprender-ingles-infancia/index.html",
+      "bytes": 24893,
+      "sha256": "949b2f69efed139e8372312c04789a6d0ad55e7a82d3dca58fd4a7dfd63c753c"
+    },
+    {
+      "file": "blog/beneficios-intercambio-conheca/index.html",
+      "bytes": 24260,
+      "sha256": "169e444bdcd6a7207d3dea22613a91705c89808e2c12ef720eeed1f745f991bb"
+    },
+    {
+      "file": "blog/blog.css",
+      "bytes": 16228,
+      "sha256": "1e5c9f61b19d5623f83b605b8cba37dc20776be72756c9c6fa4109fae2c3cd74"
+    },
+    {
+      "file": "blog/blog.js",
+      "bytes": 11348,
+      "sha256": "17822014471b8caaf398630ee768a8f5adb42c70efed59bbc1c6ecd8d2db7838"
+    },
+    {
+      "file": "blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/index.html",
+      "bytes": 24558,
+      "sha256": "80a22ac0b2eb00c223172b8cb542f8595d3b2e80727b72dad6ec49cac19ee10d"
+    },
+    {
+      "file": "blog/business-english-30-termos/index.html",
+      "bytes": 24243,
+      "sha256": "ca5d5b78bbb9644b0341323ff81650ccb4a08d5d32017b51374f5df392adcd85"
+    },
+    {
+      "file": "blog/carnaval-nos-estados-unidos-mardi-gras/index.html",
+      "bytes": 26928,
+      "sha256": "73afc4a61a19b49556fe3b89e5fbf4275f515761eabed2666d29d0ad38f77de6"
+    },
+    {
+      "file": "blog/carnaval-nos-eua/index.html",
+      "bytes": 23530,
+      "sha256": "656a97cc14eac39c30ca20577b8477b59947a1f59a8421d799d7fc4d1a07d6a8"
+    },
+    {
+      "file": "blog/carreira-2025-united/index.html",
+      "bytes": 23948,
+      "sha256": "8070afa1d43c18da1f2421f4a4664124323e127cbfd11a32ead536b1566904b4"
+    },
+    {
+      "file": "blog/carreiras-ingles-fluente/index.html",
+      "bytes": 24707,
+      "sha256": "89371b46ce66b857b6bcdc13c666f3d7207c481b14567517de43440ab0200aeb"
+    },
+    {
+      "file": "blog/certificados-internacionais-ingles/index.html",
+      "bytes": 25525,
+      "sha256": "3ab6cefec2615d16ec54b8b82b43c051c6633430006023ca5fcc44847191d14d"
+    },
+    {
+      "file": "blog/cinco-dicas-aprender-ingles-rapido/index.html",
+      "bytes": 24235,
+      "sha256": "b152bd02035a58f4a346785645017ccfac430213d382876995a21c912feba9cc"
+    },
+    {
+      "file": "blog/cinco-motivos-hoje-united-idiomas/index.html",
+      "bytes": 23655,
+      "sha256": "86f60c753c1ae5e764edb683055362bf2044714387dced6f1a256eac899566de"
+    },
+    {
+      "file": "blog/cinco-motivos-united-idiomas/index.html",
+      "bytes": 24436,
+      "sha256": "f7fcab61f53ec679a77fd16e4dc0bbc4b3a1e4baaa74d8e832cf5e980e6dc524"
+    },
+    {
+      "file": "blog/cinco-vantagens-de-estudar-ingles-online/index.html",
+      "bytes": 23286,
+      "sha256": "c0bb48617ba85b927a1ef1d1f710cb87e4b8ab3575c3e2959920d66ec7f4cbf5"
+    },
+    {
+      "file": "blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/index.html",
+      "bytes": 25847,
+      "sha256": "991e50b94cfc13bf8db75ef1665ce61cdfaf86ffbe6f39d32cb2b51660f92d6e"
+    },
+    {
+      "file": "blog/comemoracao-st-patrick-day/index.html",
+      "bytes": 24331,
+      "sha256": "f20e9d8f26951e5a04bbad5661bbfe3a0738d145b7882f9f3106af11b1562205"
+    },
+    {
+      "file": "blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/index.html",
+      "bytes": 23253,
+      "sha256": "5f9a5c057fea223155285ca591dff73c8bb517edd8b5fb47374f0cd294ed8c15"
+    },
+    {
+      "file": "blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/index.html",
+      "bytes": 24117,
+      "sha256": "62dc6cbf70ad615628af49a8a1b28902182de7746d47ed90ccd305ab4338c064"
+    },
+    {
+      "file": "blog/como-funciona-cerebro-bilingue/index.html",
+      "bytes": 24288,
+      "sha256": "1641bca22e3f95c1598ca463642af9521e8cdcc5e03ed55463e916109b61b60f"
+    },
+    {
+      "file": "blog/como-melhorar-escuta-ingles/index.html",
+      "bytes": 24467,
+      "sha256": "a6dbc31117bfaf4b0fcf34f3b1f2d1cc88e91fb56c443d466f70fc3f614c0737"
+    },
+    {
+      "file": "blog/como-preparar-intercambio-irlanda/index.html",
+      "bytes": 24653,
+      "sha256": "cd663fbde770da335a3bb623c41f4a329c8dd438d3d75e260d5e768fe824f847"
+    },
+    {
+      "file": "blog/como-se-preparar-para-entrevista-em-ingles/index.html",
+      "bytes": 24933,
+      "sha256": "4cda8a672de85f30e7554bda58ffdc85bc3ad64f98e7f4095a4813d26df7d93e"
+    },
+    {
+      "file": "blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/index.html",
+      "bytes": 26306,
+      "sha256": "7f050565736e8fbdea7d88ca9c3563f347122420ef23a7b63cc7ce8e88461ff3"
+    },
+    {
+      "file": "blog/como-usar-get/index.html",
+      "bytes": 25456,
+      "sha256": "9967bf550b2f5ddf203c70e0de16b61def6758ccb85f23791e79244e134ebe04"
+    },
+    {
+      "file": "blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/index.html",
+      "bytes": 23823,
+      "sha256": "9b7091bbda25a2147dd3b33903de6373416ce6ad652687d952fc003f1d40f810"
+    },
+    {
+      "file": "blog/confira-10-series-que-vao-melhorar-o-seu-ingles/index.html",
+      "bytes": 26540,
+      "sha256": "67cc648b213e1bfff1e2e03ff729b67bb439911da4af8dbc55b071d0558e764b"
+    },
+    {
+      "file": "blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/index.html",
+      "bytes": 24824,
+      "sha256": "296b04c69aeb8ede9cba0f6643a628090abbf9b1fe4021d681162c4c6692dd64"
+    },
+    {
+      "file": "blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/index.html",
+      "bytes": 24388,
+      "sha256": "7b4da14a88e6d5daf1997dbf5adcb2fe60db628ed75a551d9533f17c5fae4698"
+    },
+    {
+      "file": "blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/index.html",
+      "bytes": 25091,
+      "sha256": "2b82db94faba94dff602333b4800d55265fb9c686a8876af86cf1b0dfb690ac8"
+    },
+    {
+      "file": "blog/conheca-5-autoras-internacionais-para-ler-em-ingles/index.html",
+      "bytes": 26419,
+      "sha256": "dc66de24ca07d235feca32367c78a90b644b707963aa90c15747a3960528a166"
+    },
+    {
+      "file": "blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/index.html",
+      "bytes": 24938,
+      "sha256": "0922301fcf605429da9fd77eb9e20fd73758e0a8eaf641b30893b911b4a00044"
+    },
+    {
+      "file": "blog/conheca-esportes-americanos-vocabulario/index.html",
+      "bytes": 26175,
+      "sha256": "860ff086f26b87d5fadfbbb1afafa69fa9fae331ce448c88e86008d7bd7fc195"
+    },
+    {
+      "file": "blog/conjuncoes-conectivos/index.html",
+      "bytes": 23856,
+      "sha256": "31332bb422608161ab9c7a4e7a4120736fb7cfdbb6e87e826efc6b66b1846d98"
+    },
+    {
+      "file": "blog/conversacao-ingles-importancia/index.html",
+      "bytes": 24521,
+      "sha256": "a9b75e77e04ded612cad0f68e05d251af88db20bdaccb521857af0ed7beabc96"
+    },
+    {
+      "file": "blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/index.html",
+      "bytes": 23948,
+      "sha256": "7f7bb1029027f2e906d358475e5fa5d047bb09736f9c46f29b7b7503877e2bd7"
+    },
+    {
+      "file": "blog/curso-ingles-corporativo/index.html",
+      "bytes": 25017,
+      "sha256": "4c6308771556c4aed5c8d75179ed1afaff171436460c2b58fc03e7974dd0b852"
+    },
+    {
+      "file": "blog/curso-ingles-profissionais-ocupados/index.html",
+      "bytes": 25523,
+      "sha256": "dd3cc0af842a868d8cd824376fbd0a22de34fc82f4a9e89c14b85298e25d5b6c"
+    },
+    {
+      "file": "blog/curso-ingles-rotina-corrida/index.html",
+      "bytes": 24589,
+      "sha256": "5f9de9760ba44613668a23d150abd145924545ecea37d024e96222deddea33e3"
+    },
+    {
+      "file": "blog/curso-united-carreiras/index.html",
+      "bytes": 24146,
+      "sha256": "6605bbe8245ea2ab7de8577813facc94b5299ec7168e71ecbe826ecc2df77a01"
+    },
+    {
+      "file": "blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/index.html",
+      "bytes": 24582,
+      "sha256": "b7ecb4b12db61032fe1d16262845e147750dc0a944208d8dce2be92068843507"
+    },
+    {
+      "file": "blog/dia-das-maes-anna-jarvis/index.html",
+      "bytes": 22996,
+      "sha256": "a4c3680322db4ea95c4a20c6c03a30983e1c356435bd860a57da122253195024"
+    },
+    {
+      "file": "blog/dia-dos-namorados-outra-data-brasil/index.html",
+      "bytes": 23874,
+      "sha256": "417fcb2b3fb4b056fdc970871ea3b7b0b16f330bb74274ba6258b3b4df885daf"
+    },
+    {
+      "file": "blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/index.html",
+      "bytes": 25021,
+      "sha256": "8bb03fa4b1901a64129c645f69ccc4b1190e678236f51e21572f440a91297a1d"
+    },
+    {
+      "file": "blog/dicas-falar-ingles-publico/index.html",
+      "bytes": 24002,
+      "sha256": "d7027708ca339719d1c58b6c6bd416acaa19b664676a8a9e79c45025b0af7004"
+    },
+    {
+      "file": "blog/dicas-para-melhorar-sua-escrita-em-ingles/index.html",
+      "bytes": 25024,
+      "sha256": "6af5da1fd6a5dcda603be2564a978f29606d884f1e054f8b04ca628de9021def"
+    },
+    {
+      "file": "blog/dicas-para-preparar-toefl/index.html",
+      "bytes": 24357,
+      "sha256": "7137fa21824edd259ddafe1d8a5ce03cdb421d4d23518b72ff7373fd2d0b1ef8"
+    },
+    {
+      "file": "blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/index.html",
+      "bytes": 23426,
+      "sha256": "6da55fd508540ce1fabae41eab3a2e5ffef77f6819420809776484850df78d1f"
+    },
+    {
+      "file": "blog/diferencas-ingles-paises/index.html",
+      "bytes": 26667,
+      "sha256": "18b427b3bfb78471e247e36f33f5e2e2dd40278faf93d7aef3ec300bee9f7251"
+    },
+    {
+      "file": "blog/dificuldades-gramatica-ingles/index.html",
+      "bytes": 24849,
+      "sha256": "c20fca9574e0a16a4890da25da8f2615c53b136141dba198b223c14052d18c2c"
+    },
+    {
+      "file": "blog/e-mails-profissionais/index.html",
+      "bytes": 24914,
+      "sha256": "94aacc79ad7c82b2123d4c2781d4561c3ab7bfaa7443d0da1ca3c553be22bc0f"
+    },
+    {
+      "file": "blog/e-possivel-aprender-ingles-depois-de-adulto/index.html",
+      "bytes": 23504,
+      "sha256": "7d89103144dc15683879ab90bbea85405f4f07a65b2dd70e567a17a1e3e79f06"
+    },
+    {
+      "file": "blog/entenda-o-verbo-to-be/index.html",
+      "bytes": 23586,
+      "sha256": "d56bcdf86ccbc1491153ad66eeaf7c1df86705a8714826e2add215b6b761ab84"
+    },
+    {
+      "file": "blog/entrevista-emprego-ingles/index.html",
+      "bytes": 24981,
+      "sha256": "68ddb27fa42913156f175ccb29fbef9d9a12daa85daa65d45d8ecbd799c3a462"
+    },
+    {
+      "file": "blog/erros-aprendizado-ingles/index.html",
+      "bytes": 24596,
+      "sha256": "d94357af67da3b4ae4b3a6d5c21b9519c2cab125ba8acd0d2d6b8e2f682300f1"
+    },
+    {
+      "file": "blog/erros-gramaticais-ingles/index.html",
+      "bytes": 24760,
+      "sha256": "9b3308ab1ff7a93d23e334395d66dc066015b78f88d37f8d5c8331d0053a6e34"
+    },
+    {
+      "file": "blog/estude-ingles-na-united-e-decole-sua-carreira/index.html",
+      "bytes": 25485,
+      "sha256": "bd8f6cf72604bc561040549488d2599c6b979e965ca2a9c6e1bcfb6bbe36549c"
+    },
+    {
+      "file": "blog/expandir-vocabulario-ingles/index.html",
+      "bytes": 24282,
+      "sha256": "f6d8127eab9c6e6c2c3952be374db698d21cf744f607bc2d34876fd9f63d89e3"
+    },
+    {
+      "file": "blog/expressoes-e-mails/index.html",
+      "bytes": 26028,
+      "sha256": "33c3f037adb557e1eaf601c7c75eb58d9c6538b3fe32531887c2c199ba5f5bd3"
+    },
+    {
+      "file": "blog/expressoes-ingles-usar-restaurante/index.html",
+      "bytes": 25212,
+      "sha256": "e2ff74376c38b05d0e6660ff47ae1fd205636e907c465cd395e7879ebaac8924"
+    },
+    {
+      "file": "blog/filmes-series-listening/index.html",
+      "bytes": 23881,
+      "sha256": "c600bd73c6af28fa7eda878b0f8e6225792f13ec495275fc53a4658235730d63"
+    },
+    {
+      "file": "blog/frases-ingles-restaurantes/index.html",
+      "bytes": 26329,
+      "sha256": "bda6144587182d29dea18f03ebef5aae563c2a1958b55851d53026dd8ff40d6f"
+    },
+    {
+      "file": "blog/frases-uteis-compras-ingles/index.html",
+      "bytes": 25393,
+      "sha256": "1ff9724d77799ab8ab42d42ddee7ddbaad845063dc3717d785ef92658c120843"
+    },
+    {
+      "file": "blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/index.html",
+      "bytes": 24518,
+      "sha256": "bcc5dc8641198cc9f268a7254ba8be2fca9442d2813e6409e6f65ed862166c9b"
+    },
+    {
+      "file": "blog/guia-prepositions/index.html",
+      "bytes": 23840,
+      "sha256": "db319a2ede4b00f245da9a5bd8f26b658333d355c715def065b3ded34ea0d052"
+    },
+    {
+      "file": "blog/guia-rapido-de-ingles-para-viagens/index.html",
+      "bytes": 25523,
+      "sha256": "b46d4a856ab908eb7adf31f771b4dfaefc188efcd028c48c56b427321c48be6b"
+    },
+    {
+      "file": "blog/halloween-guia-completo/index.html",
+      "bytes": 24099,
+      "sha256": "5f37e3f70d36b1f8ce52b03fed967757d74e3cf6ec4cd0564f666c90d7066503"
+    },
+    {
+      "file": "blog/halloween-origem-vocabulario/index.html",
+      "bytes": 23836,
+      "sha256": "ce436b6d220e979a568b05381ba31a505deb3ed44b0375adc9a28c0f612de994"
+    },
+    {
+      "file": "blog/has-ou-have-aprenda-a-utilizar/index.html",
+      "bytes": 22443,
+      "sha256": "8ab3ccb85e3371ebef4fb36936bc93989dc7d74cf0081ed37d762c14d83150c9"
+    },
+    {
+      "file": "blog/ia-aprender-ingles-habilidades-humanas/index.html",
+      "bytes": 25034,
+      "sha256": "67c92cf5fc0f0cfa1fca7c04ef4aeb2f1c58236bef6562fc60c1d6782624af0e"
+    },
+    {
+      "file": "blog/ia-aprender-ingles/index.html",
+      "bytes": 26286,
+      "sha256": "5f0bc1a357c359d283c3105cea35f32feb244f49996f5c72fd9283157fa4c861"
+    },
+    {
+      "file": "blog/imersao-ingles-em-casa/index.html",
+      "bytes": 25883,
+      "sha256": "208127e2fa04d8f200aecf7841545efbf9c015612d43cf57a18c7383037700d0"
+    },
+    {
+      "file": "blog/importancia-independence-day/index.html",
+      "bytes": 23679,
+      "sha256": "21c7ab620fb7e076021ec418470001b7c45763e0526e5a502dfe9ec60910519a"
+    },
+    {
+      "file": "blog/importancia-musica-aprendizado-ingles/index.html",
+      "bytes": 24414,
+      "sha256": "99f281d65a95634a27b2fe78e4367dd27a75ea6b2674e5c55efd97902090da40"
+    },
+    {
+      "file": "blog/independence-day/index.html",
+      "bytes": 23524,
+      "sha256": "a894964ffc0dc0cbfccd8d766b116c2aac97592106e2fda2ce0a724af7f18208"
+    },
+    {
+      "file": "blog/index.html",
+      "bytes": 26353,
+      "sha256": "7ea30ebf509d6c4b7319d93898ec497d3e421e1ec4eb4a9b9c64e38e83155de8"
+    },
+    {
+      "file": "blog/ingles-americano-britanico-diferencas/index.html",
+      "bytes": 24128,
+      "sha256": "18c1a8ac092bcdc1d1ab00cf465f0d6ed36f17d0ecaa569c5c8f381ea2b1e3b7"
+    },
+    {
+      "file": "blog/ingles-carreira-tecnologia/index.html",
+      "bytes": 24900,
+      "sha256": "fb6bf63aba1694c3089fa27e8999b2927ad7734c2465247657125a89697745ba"
+    },
+    {
+      "file": "blog/ingles-conversacao-profissional/index.html",
+      "bytes": 24128,
+      "sha256": "359f5fe413bc9155096cdd10e0d296916074e3778df911d1f304addd997d4fc1"
+    },
+    {
+      "file": "blog/ingles-corporativo/index.html",
+      "bytes": 25747,
+      "sha256": "e3f40a1b7b218aefabf8355b311d1b5a681a0b9594654b1da513e304b6b34cc3"
+    },
+    {
+      "file": "blog/ingles-ead/index.html",
+      "bytes": 23755,
+      "sha256": "10bfb856ac7d868c4e68265f4daa3022ddc3bbbb73391868d3c40d750e4501be"
+    },
+    {
+      "file": "blog/ingles-estudar-trabalhar-exterior/index.html",
+      "bytes": 24871,
+      "sha256": "5aafd15d808c9f0a4fe0de23b8fdb3ccf0aadf4d6d735b37d9e582ea81747997"
+    },
+    {
+      "file": "blog/ingles-eventos-internacionais/index.html",
+      "bytes": 25052,
+      "sha256": "5e2d27fd39bbff7fae4aa400621b8d4453a375681de55378ec4ad981ca5e4b31"
+    },
+    {
+      "file": "blog/ingles-fluente-carreira/index.html",
+      "bytes": 24093,
+      "sha256": "65b67aa2695ae61c4cfa97933c36c4107c7c7317dcb3658beaac5ab2cbb81d7c"
+    },
+    {
+      "file": "blog/ingles-fluente-home-office/index.html",
+      "bytes": 24433,
+      "sha256": "391de55d6e9d08469f2b798d3ed552bac02d71a53e85e0d29fbcc81ac6a222bc"
+    },
+    {
+      "file": "blog/ingles-fluente-mercado-corporativo/index.html",
+      "bytes": 24679,
+      "sha256": "4a7ee29ec8a52781ddb18f7c092504257ee8001fe86623dd997dacadbf45376a"
+    },
+    {
+      "file": "blog/ingles-liderar-reunioes/index.html",
+      "bytes": 24991,
+      "sha256": "ae39e48256c4f41abc9235935fa75d16058f29658373a5712ed6e28f16890d3a"
+    },
+    {
+      "file": "blog/ingles-medicos-profissionais-saude/index.html",
+      "bytes": 25035,
+      "sha256": "7d390abeb6f96d38df781a8929a09e1d0bd6b2c242404434e224ba3dbaa92053"
+    },
+    {
+      "file": "blog/ingles-mudar-carreira/index.html",
+      "bytes": 23842,
+      "sha256": "d5bf12b8f75ef9675437a3a8112621689f03d78b1dee316836426b78f1dfbd6a"
+    },
+    {
+      "file": "blog/ingles-no-trabalho/index.html",
+      "bytes": 25376,
+      "sha256": "16d6f31f9c9c815ca2e6f76293c0676306f82b0c55159218e750bd3f3bbc2e20"
+    },
+    {
+      "file": "blog/ingles-nova-zelandia/index.html",
+      "bytes": 24404,
+      "sha256": "22606ab50e8576b591ddcbe1e384f0724d9f759932cb48f2bee5019bc26e4fdd"
+    },
+    {
+      "file": "blog/ingles-para-economistas/index.html",
+      "bytes": 23887,
+      "sha256": "50c990e733dfff7d43bce681b624986245aec3ed64c83a2c24ad8f70650ef7d2"
+    },
+    {
+      "file": "blog/ingles-para-home-office-global/index.html",
+      "bytes": 26021,
+      "sha256": "625251c4c73780f26116669bec800e6418e4cb545ad3f497c30c02b464e5632e"
+    },
+    {
+      "file": "blog/ingles-para-linkedin/index.html",
+      "bytes": 24754,
+      "sha256": "1a223acb43e24cca523916da554d76a387fe432e1bfcefbf03334bf90c9b8ba4"
+    },
+    {
+      "file": "blog/ingles-para-networking/index.html",
+      "bytes": 24408,
+      "sha256": "f40df60037db84f7ec8328b76f6eb30c5d5125337f3885082e6f4029e346f787"
+    },
+    {
+      "file": "blog/ingles-para-reunioes/index.html",
+      "bytes": 25697,
+      "sha256": "0dccc26830da540555d6b391163f9dddb6ba67b7c98aa649bf5278f01e0506a2"
+    },
+    {
+      "file": "blog/ingles-para-secretaria-executiva/index.html",
+      "bytes": 24333,
+      "sha256": "b7f6b630b06a1c318300485c934abca22de1d08acc948a70ef11f0293788b989"
+    },
+    {
+      "file": "blog/ingles-para-viagem/index.html",
+      "bytes": 24399,
+      "sha256": "f6181579e263fb17497dfe671a752db13b10db1ee58e073534c88cc21c424417"
+    },
+    {
+      "file": "blog/ingles-profissional-trabalho/index.html",
+      "bytes": 24155,
+      "sha256": "39c1f277eb10793667b83a778842e94a84f904a96ca9ad80b2299d59dd0e773c"
+    },
+    {
+      "file": "blog/ingles-transporte-publico/index.html",
+      "bytes": 25001,
+      "sha256": "bdee9471a0623f5cc060d03de5807ef4779351d9c46ec0da825711d26d625193"
+    },
+    {
+      "file": "blog/ingles-viagens-internacionais/index.html",
+      "bytes": 24772,
+      "sha256": "79ad695437612de50a8158cae5282141c63ef1fe896eccb1dc04fb5483421e10"
+    },
+    {
+      "file": "blog/ingles-viajar-europa-outono/index.html",
+      "bytes": 25987,
+      "sha256": "a745bef0634046e7b29eba089f6f67537f67a7642860028f8083eeb463a3823f"
+    },
+    {
+      "file": "blog/ingles-viajar-europa/index.html",
+      "bytes": 26340,
+      "sha256": "911c3704edd468a582693f52165fe15e79f65d3a205a1452e4d7bc7f28921b0f"
+    },
+    {
+      "file": "blog/intercambio-africa-do-sul/index.html",
+      "bytes": 24131,
+      "sha256": "1ad8061804f1c46c9a6666757788eefe954c3aacf47625d8182daa09f20543c6"
+    },
+    {
+      "file": "blog/intercambio-au-pair-o-que-e-e-como-funciona/index.html",
+      "bytes": 24718,
+      "sha256": "3acfd02ab884614fbd54745f176d48d789eefe062b52f27982e88ac0f9dbb27b"
+    },
+    {
+      "file": "blog/intercambio-canada/index.html",
+      "bytes": 24532,
+      "sha256": "21546c22780d1d1c2a768c12aca3ec03b13a1b2d16568edf6cb30c57df61004b"
+    },
+    {
+      "file": "blog/intercambio-como-se-preparar/index.html",
+      "bytes": 24207,
+      "sha256": "ec30e4effcbdbd3fddbcd3f35e6a325dbe870a604bc588f764b9aadfbfaa6878"
+    },
+    {
+      "file": "blog/intercambio-o-que-e-preciso-e-como-se-preparar/index.html",
+      "bytes": 27293,
+      "sha256": "6ef3fafebbd6a97ae7a99bbe2a0e4cb372ce67db2314d84f70c3fc31e6c014a5"
+    },
+    {
+      "file": "blog/labor-day/index.html",
+      "bytes": 22814,
+      "sha256": "2ba9741ba28355f471ac7dc13fb7f6d9f0ce3412c5ac3d92f5c23d5e03a1626b"
+    },
+    {
+      "file": "blog/ler-em-ingles-veja-oito-livros-para-iniciar/index.html",
+      "bytes": 24901,
+      "sha256": "fe2d08a072d63b6ad166590942a5ec1c7af5832c47087486cfb5d4447a1d447a"
+    },
+    {
+      "file": "blog/livros-ingles/index.html",
+      "bytes": 24396,
+      "sha256": "9c31394c147deee8e09682916f136b18078f224130d199a992ad919c657a2ee0"
+    },
+    {
+      "file": "blog/memorial-day-a-importancia-dessa-data-nos-eua/index.html",
+      "bytes": 23550,
+      "sha256": "d793456d5d439041b5d13b42b7b7ea8b4346a4280e77846ac0f899f017e974da"
+    },
+    {
+      "file": "blog/modal-verbs/index.html",
+      "bytes": 24059,
+      "sha256": "37ab1122b496f08ffe2908b84a1029a182494de539abbee3494ba813ad78970d"
+    },
+    {
+      "file": "blog/natal-lingua-inglesa/index.html",
+      "bytes": 23499,
+      "sha256": "848a8f39d57b4599d77edf7b3547b2b0f86f8f27cb2d443d4428925f76ec7635"
+    },
+    {
+      "file": "blog/negociar-salario-beneficios-ingles/index.html",
+      "bytes": 25232,
+      "sha256": "653ac26a693e65751c152cafad23eeb500be57c5da19200260216e610cd21d8c"
+    },
+    {
+      "file": "blog/nivel-profissional-ingles/index.html",
+      "bytes": 24509,
+      "sha256": "1d2734931cd49cd18f91c7221645c6c3c94e3e8298ef0f641b2f0dfd9c396a2f"
+    },
+    {
+      "file": "blog/o-que-sao-collocations/index.html",
+      "bytes": 24740,
+      "sha256": "d5061e77a6da3c60d526e649d334c84209bf67e6bc696aec9751b55b486a0077"
+    },
+    {
+      "file": "blog/origem-black-friday/index.html",
+      "bytes": 23530,
+      "sha256": "6407f6cc0e5d97870bbb4c696d96e2a25028e69e4e28902ecbdacb85395bb8d5"
+    },
+    {
+      "file": "blog/pagina/10/index.html",
+      "bytes": 23966,
+      "sha256": "538419e5179cc87c3d6f0231bb1c37eb475913021345fce4d9c2584d681608ab"
+    },
+    {
+      "file": "blog/pagina/11/index.html",
+      "bytes": 25302,
+      "sha256": "3b523e172096927b82a8626ce6e24f0b187412e5d6fa072da292d6d1a39d8eab"
+    },
+    {
+      "file": "blog/pagina/12/index.html",
+      "bytes": 24512,
+      "sha256": "9a6e1f3e927099a7344b0923280a9e0a9cd0860cc900f26162e653d860da750e"
+    },
+    {
+      "file": "blog/pagina/13/index.html",
+      "bytes": 24798,
+      "sha256": "3568a057cffb5cef9f41d85adc2cd61f68ffb368b47c4faccfeac1c7773f1bf9"
+    },
+    {
+      "file": "blog/pagina/14/index.html",
+      "bytes": 24818,
+      "sha256": "bc8547e81d88e44e22aa9946b817af58c77cee548e5bf58833b00ce122160e6f"
+    },
+    {
+      "file": "blog/pagina/15/index.html",
+      "bytes": 25637,
+      "sha256": "3673d399bbd8b61e30ee803fc0ece50d01342baf5ed7f01ab085b3ae8d3bf62c"
+    },
+    {
+      "file": "blog/pagina/16/index.html",
+      "bytes": 26720,
+      "sha256": "8dc41f56cc3584dba246f24fac871fd86c9f03f35626c65ed572e6b1613fd467"
+    },
+    {
+      "file": "blog/pagina/17/index.html",
+      "bytes": 24744,
+      "sha256": "633306e5b306fd3fb846d4ebae11e24fe3614023290656b26690b820040cff93"
+    },
+    {
+      "file": "blog/pagina/18/index.html",
+      "bytes": 25070,
+      "sha256": "04a507ee02eca98ef3ae19b35e606d8a4711e0244e356cf539916e8466380ad0"
+    },
+    {
+      "file": "blog/pagina/19/index.html",
+      "bytes": 25857,
+      "sha256": "533e01da1b87e928d0505b0f326905a68a6b647cfda5256ffae41ec9383cce34"
+    },
+    {
+      "file": "blog/pagina/2/index.html",
+      "bytes": 24956,
+      "sha256": "80d06452403f618576443a5d312cde529fa52f8e9d63e89377afb9ee9acefd29"
+    },
+    {
+      "file": "blog/pagina/20/index.html",
+      "bytes": 26535,
+      "sha256": "d3fa115aafeaba1ca6c6b3b64e3435060ed94c3dc6d353444a76a9273c31b3f4"
+    },
+    {
+      "file": "blog/pagina/21/index.html",
+      "bytes": 20397,
+      "sha256": "307f5b2e6aac13821c5377a34bb0fc8637e8a4e07c4470f0e22f67990af3a7aa"
+    },
+    {
+      "file": "blog/pagina/3/index.html",
+      "bytes": 24784,
+      "sha256": "87cfa6861a3ef442935bbdbe549e34aac804fdaddd539163086ea5cbde24dae8"
+    },
+    {
+      "file": "blog/pagina/4/index.html",
+      "bytes": 24292,
+      "sha256": "f13b6da668a9af669b315459f84b741cffd790080b918c07947451859dec837e"
+    },
+    {
+      "file": "blog/pagina/5/index.html",
+      "bytes": 24390,
+      "sha256": "2a759174349654f50dff4ee56a2a7666e6760a23adbd620b8855d7a0da49973a"
+    },
+    {
+      "file": "blog/pagina/6/index.html",
+      "bytes": 24180,
+      "sha256": "a48f44ea6a64ef1309a4677889a4fe3a4e83536ed4d8547a3561ef92ba80006e"
+    },
+    {
+      "file": "blog/pagina/7/index.html",
+      "bytes": 24200,
+      "sha256": "eb99cae1acb7687069141f9ef3fc9b3f1d9f520d3111270f910c2cb2de0d02f5"
+    },
+    {
+      "file": "blog/pagina/8/index.html",
+      "bytes": 24071,
+      "sha256": "9b19fa630d0fa0abb0dbf19a7989aeb9f646dd5b28de46f3de0f00e211da5046"
+    },
+    {
+      "file": "blog/pagina/9/index.html",
+      "bytes": 24099,
+      "sha256": "dc7069bd3795fc050ea643e0d90bd72506dcc916f7c7a5a322e4ac6592703469"
+    },
+    {
+      "file": "blog/pais-ideal-intercambio/index.html",
+      "bytes": 24461,
+      "sha256": "5afe882594342a68cf1ffdf2c32519f7f379bd4639c183ed8e9499c73d92519d"
+    },
+    {
+      "file": "blog/palavras-frases-ingles-hoteis/index.html",
+      "bytes": 24396,
+      "sha256": "d86559496612d6f41cdbc793897d3f7760eaa81f5b46170244a47dbb516c0a0a"
+    },
+    {
+      "file": "blog/perder-nervosismo-conversar-em-ingles/index.html",
+      "bytes": 24116,
+      "sha256": "95dab084f93e4925b09cb5f40bea84327d400258c5d23e29fc6914780f890c2e"
+    },
+    {
+      "file": "blog/phrasal-verbs-mais-usados/index.html",
+      "bytes": 24849,
+      "sha256": "8e78cfb6af13599863f3b94062c679570d22676a3da6482ddb0706863578c069"
+    },
+    {
+      "file": "blog/phrasal-verbs-o-que-sao/index.html",
+      "bytes": 25104,
+      "sha256": "5175ad3a7945964e91ddcfb21d1cf465ec8eb7be628ec0f50eacc4bb6e2f4f56"
+    },
+    {
+      "file": "blog/por-que-a-rainha-tem-dois-aniversarios/index.html",
+      "bytes": 23840,
+      "sha256": "fcdccbd01bdcad0a77afa9c7a65ea32f09da98e7bc22f36e0b9f7a1a8b95388c"
+    },
+    {
+      "file": "blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/index.html",
+      "bytes": 24949,
+      "sha256": "362db8386160e25c4c0e8e5aac6830adda391952dfd42f1eaa145b93784de2ca"
+    },
+    {
+      "file": "blog/pos-graduacao-internacional-no-reino-unido/index.html",
+      "bytes": 26703,
+      "sha256": "8b59265e3144792630c49ea74ae0c3b7cf0875905c016b6d1a3da0784e470b17"
+    },
+    {
+      "file": "blog/pratos-tipicos-canada/index.html",
+      "bytes": 23864,
+      "sha256": "fa18f2103a3a26254db1a0f204d71321f58fe56a34815bd0db68961e0424e2d2"
+    },
+    {
+      "file": "blog/principais-girias-ingles/index.html",
+      "bytes": 24615,
+      "sha256": "feee52acd58033afb29f8d00babcceb8f202a275b495660413776d4171fb37b6"
+    },
+    {
+      "file": "blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/index.html",
+      "bytes": 24484,
+      "sha256": "609e53c5c32bb74a9aada610e8e6b577af248050f1d0761cfbf53d137ce3814c"
+    },
+    {
+      "file": "blog/remoto-presencial-united/index.html",
+      "bytes": 23990,
+      "sha256": "8dafc54f6b18414c4a74ac15e1f1ac6308beb24b73896cc33d9c3a2a81cc31b8"
+    },
+    {
+      "file": "blog/reunioes-em-ingles/index.html",
+      "bytes": 24847,
+      "sha256": "0ac9eb8541e91669c5a469ac3be36862b7e4fe65fb6e010844e87614b7d01093"
+    },
+    {
+      "file": "blog/rotina-ingles-ia/index.html",
+      "bytes": 26839,
+      "sha256": "f09edadfdcacdaf236f962de428aacb3bd958b407e387a5e8e541cad22f06373"
+    },
+    {
+      "file": "blog/saiba-como-se-preparar-para-um-intercambio/index.html",
+      "bytes": 24240,
+      "sha256": "60bf1009dbcdeed968a8f7358c61a48315b83862e86835d9d2c5ba6a6d404865"
+    },
+    {
+      "file": "blog/saiba-como-validar-seu-diploma-nos-eua/index.html",
+      "bytes": 24068,
+      "sha256": "3b249ef6078859bc90dfdf79abe2d030fa06a169a71c2c5493b6d7044b116150"
+    },
+    {
+      "file": "blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/index.html",
+      "bytes": 25884,
+      "sha256": "1d9629c8fae1120d9b855f442fa9721f29912002bcf6f25ff5ab3d3feb0193a0"
+    },
+    {
+      "file": "blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/index.html",
+      "bytes": 28547,
+      "sha256": "648c3181a6a24815648bd13a33bd3d15fc5cdbfc08e53a15d32e8efabb9c6957"
+    },
+    {
+      "file": "blog/saint-patricks-day-eua/index.html",
+      "bytes": 23842,
+      "sha256": "771aacd5977202a7baa0deb1145725b253a32ae55182b0e8193a9be11b3360cf"
+    },
+    {
+      "file": "blog/save-the-date-conheca-a-origem-dessa-expressao/index.html",
+      "bytes": 24052,
+      "sha256": "5d0aaab6ebf1a0ef13990e04fee37a7e35a49a74ef0002904e366d666190fbaa"
+    },
+    {
+      "file": "blog/search-index.json",
+      "bytes": 746280,
+      "sha256": "a27a0c2f705a7879def7a8a7ecc8f33c846ae3ea6faa7eb1475360b4bc74585e"
+    },
+    {
+      "file": "blog/selo-excelencia-franchising-united-idiomas/index.html",
+      "bytes": 25099,
+      "sha256": "1ad031b8805e9df9951bd49fd888e10abc07b3a9b088e2d6449895834e985717"
+    },
+    {
+      "file": "blog/sete-destinos-ingles/index.html",
+      "bytes": 24300,
+      "sha256": "b8d7622bc9e6efff048ea67701ec9c528f2a1ed10095db0e1e3db45c2143c918"
+    },
+    {
+      "file": "blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/index.html",
+      "bytes": 24185,
+      "sha256": "224e7e7a09a6f26aa37e90e3af634877aa5a6c870ca10b951286eb0fa483b2cc"
+    },
+    {
+      "file": "blog/soft-skills-ingles/index.html",
+      "bytes": 25094,
+      "sha256": "98ec177db938647a71133a1a8da55fbc8ed9198742987450ab692269e78c61da"
+    },
+    {
+      "file": "blog/sotaques-ingles-diferencas/index.html",
+      "bytes": 24304,
+      "sha256": "56a956f0656bf426fc780a751b5f551662e4d8955fd7f3b98c00637ae098b8dc"
+    },
+    {
+      "file": "blog/sotaques-ingles/index.html",
+      "bytes": 23800,
+      "sha256": "2d3627608a302a0297f0a4398932f979f6e552eb63508ded6b2fc1f31573c615"
+    },
+    {
+      "file": "blog/speak-talk-say-tell/index.html",
+      "bytes": 23559,
+      "sha256": "7ad5651c7d6eade54582b5eabd9c9380c3274d2c655723c8eb59c5bb1a7bab12"
+    },
+    {
+      "file": "blog/substantivos-coletivos-em-ingles/index.html",
+      "bytes": 24797,
+      "sha256": "0cb86c54b77727593917001b0cd32bd0b3a7ee847e32f9a3e01f026353e17d17"
+    },
+    {
+      "file": "blog/tempos-verbais-ingles-2/index.html",
+      "bytes": 24780,
+      "sha256": "29f1ca298c64946252af5da625b653dbe5e7dbf76fc3b7377f919547496ebe68"
+    },
+    {
+      "file": "blog/tempos-verbais-ingles/index.html",
+      "bytes": 25601,
+      "sha256": "68bd061ac7ab19f4ec23aafc1eba46524fb60f4936217289192296e2ee15da22"
+    },
+    {
+      "file": "blog/termos-ingles-profissionais-rh/index.html",
+      "bytes": 24193,
+      "sha256": "e20c90ca8c1c8263add7f9515eff631538092d34230a057e593b608c1025aeb9"
+    },
+    {
+      "file": "blog/thanksgiving-day-curiosidades/index.html",
+      "bytes": 24225,
+      "sha256": "06d67c7d1b3e84a5542b3a4a5caecccc0270ddef2f55fb3f66e34489c07620ef"
+    },
+    {
+      "file": "blog/thanksgiving-day-dia-especial/index.html",
+      "bytes": 25101,
+      "sha256": "5569c7f8b4f1b7db1f68416c8881c9a5b274ecf71c4eefcd81fe104090746f6c"
+    },
+    {
+      "file": "blog/though-thought-tough/index.html",
+      "bytes": 23864,
+      "sha256": "2e2b828f187766d7d22a2c25429328d1044c9eab484187307d0da85a1fe374f9"
+    },
+    {
+      "file": "blog/too-enough-very/index.html",
+      "bytes": 23985,
+      "sha256": "8ce30f75cb759e3a0f1a58273fe19911cca5477c7834b4ad61950497379c1e42"
+    },
+    {
+      "file": "blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/index.html",
+      "bytes": 24775,
+      "sha256": "d09d6c621e3a8e55c540f516de89524ff690c125d218ced98540f420f414ab18"
+    },
+    {
+      "file": "blog/treinar-ingles-inteligencia-artificial/index.html",
+      "bytes": 24958,
+      "sha256": "7de90055132d3e131c51335e05e4ef479c2362d901fb59598a172e8a2ef24bd7"
+    },
+    {
+      "file": "blog/treinar-ingles-intercambio/index.html",
+      "bytes": 23876,
+      "sha256": "f4dd33954bfc0ee5e757b55229ece33a19b695b90267a69fea1874d26e7970b9"
+    },
+    {
+      "file": "blog/treinar-ingles-series/index.html",
+      "bytes": 23967,
+      "sha256": "d64543768e7c859735e217fa2ebc714fbac3e4726a1add7282abc83f678b4ee9"
+    },
+    {
+      "file": "blog/tudo-sobre-intercambio-australia/index.html",
+      "bytes": 24152,
+      "sha256": "6116b1fe9b3a2e251c7227a4523633140eea46f558479dde8f8e546e421122fa"
+    },
+    {
+      "file": "blog/united-ingles-online-aulas-ao-vivo-tecnologia/index.html",
+      "bytes": 24692,
+      "sha256": "b3fbdf411f69eb6e766dbfb5317b9d2304a5154700c6ad31b5f5239d996e898a"
+    },
+    {
+      "file": "blog/united-valor-o-globo-live-class-2/index.html",
+      "bytes": 20430,
+      "sha256": "c0cd7404ba66cdef718fded60ff794622c446ccce5fb2e40f5e2caa8792cfe22"
+    },
+    {
+      "file": "blog/uso-de-preposicoes-em-ingles/index.html",
+      "bytes": 24765,
+      "sha256": "f4166aef776dfaacbc1365bd2ecc8ec7fb8cf1106923d733f929fa1442dc208e"
+    },
+    {
+      "file": "blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/index.html",
+      "bytes": 24549,
+      "sha256": "38382da592a3520468810df93b43ad97faca15b5f441bb9e7daa473ac0b24115"
+    },
+    {
+      "file": "blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/index.html",
+      "bytes": 25658,
+      "sha256": "89530fe62ca2248bd8a63f9a8b4a9af0deb858676b759f84ad525b0178ce1e51"
+    },
+    {
+      "file": "blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/index.html",
+      "bytes": 25447,
+      "sha256": "00ea6a303127dcba2b3c28bf4d7295f7fdadc3a1d8429be6cf5ef7f884076921"
+    },
+    {
+      "file": "blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/index.html",
+      "bytes": 25660,
+      "sha256": "2cd832280bf6e04fbbcc24ffe89006c470cd304c40293aca09ae1af1da2bff3c"
+    },
+    {
+      "file": "blog/verb-tenses/index.html",
+      "bytes": 27482,
+      "sha256": "9d271bf1ee0fd2bafa8c7970bc7ff1962c2e682151d3045bb505bf703413e5b4"
+    },
+    {
+      "file": "blog/veterans-day-importancia/index.html",
+      "bytes": 24184,
+      "sha256": "16413c10492d155ca799205fe66e648fd2cfd29901732bc6c744e28a63d6bee6"
+    },
+    {
+      "file": "blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/index.html",
+      "bytes": 25609,
+      "sha256": "cf6409b4717b07eefcb7e0dede8160fd89147b10727d89ad91627e9d2a0a9b57"
+    },
+    {
+      "file": "blog/vocabulario-de-ingles-para-a-area-de-marketing/index.html",
+      "bytes": 24118,
+      "sha256": "b7d72eb2e9fc212189581f091965daae6ed18d3ae2f64796111d2e609c89a6a2"
+    },
+    {
+      "file": "blog/vocabulario-ingles-usado-no-halloween/index.html",
+      "bytes": 24041,
+      "sha256": "20ea4d528ec4d1f02a309bba7dfd5b304c85d414732a2822b5275f3249b3a7f6"
+    },
+    {
+      "file": "blog/vocabulario-ingles-viagem/index.html",
+      "bytes": 25895,
+      "sha256": "3f7c2b217096b7e39b122b062f25a3f74b94a1f70842fb6e16b3d28e0ea50dd4"
+    },
+    {
+      "file": "blog/vocabulario-natal-ingles/index.html",
+      "bytes": 23871,
+      "sha256": "a257a6148251f9d96e9000e34e81e97b2dc536e9f4232ba0d3fcb0b6713c1f52"
+    },
+    {
+      "file": "blog/voce-sabe-como-o-toefl-funciona/index.html",
+      "bytes": 23155,
+      "sha256": "f3022cc8c960e93788dd3373ab5e084280d73478fc97d5ebd5b32bedb0c3ffcd"
+    },
+    {
+      "file": "blog/will-going-to/index.html",
+      "bytes": 24018,
+      "sha256": "4c8b12ae98c7f9b9deba5c22d7b7fa73deb3c7c5d4a61fe865ddd5d4cde456f0"
+    },
+    {
+      "file": "business/assets/business-networking.webp",
+      "bytes": 77018,
+      "sha256": "c591e82ac6d18333e2a9cc46f1be939264905313686710a21739a45b5f788d42"
+    },
+    {
+      "file": "business/assets/business-ny-hero-1660.webp",
+      "bytes": 86608,
+      "sha256": "dfd841f9f2a068b05a6def999394670f21764a65149383f819d60092380137df"
+    },
+    {
+      "file": "business/assets/business-ny-hero-960.webp",
+      "bytes": 45938,
+      "sha256": "28c794a0628603fe2a4bc9c4435157c3a9f874abfcd9732536f174c7898e1085"
+    },
+    {
+      "file": "business/assets/business-ny-networking-1000.webp",
+      "bytes": 72254,
+      "sha256": "8b8e2f48460c1ba8ab808ea74d4e63124211c5df725a6a23ea68f0b91717f5d9"
+    },
+    {
+      "file": "business/assets/business-ny-networking-640.webp",
+      "bytes": 39776,
+      "sha256": "adc706612ad95972d498be250660b5a55eb72ffa63a48b027c5384d0952b1df5"
+    },
+    {
+      "file": "business/business.css",
+      "bytes": 21341,
+      "sha256": "e219fdc0b3bdbc0d69da5908b6345768ee9914147b90d776b77cb91837a8426b"
+    },
+    {
+      "file": "business/business.js",
+      "bytes": 3877,
+      "sha256": "aae2428f1fc3473b812f0287cb6d36ba7797190050ff6be6a46eb5ce55c3dd2e"
+    },
+    {
+      "file": "cursos/business/index.html",
+      "bytes": 41461,
+      "sha256": "805b9b62135b13cfefc497e6864c46c8d648450bd79d059d529b7e4a309ae87c"
+    },
+    {
+      "file": "contact-form.css",
+      "bytes": 8776,
+      "sha256": "1174d73c4b12ae4570fa256fd8b2e283180e9412a5ec9d7960a7f992a3ac435a"
+    },
+    {
+      "file": "contact-form.js",
+      "bytes": 15828,
+      "sha256": "453b0d3e5340d641136dbc982c24a48d023e411f340d64d0354f1698808449e9"
+    },
+    {
+      "file": "desktop-refinements.css",
+      "bytes": 6474,
+      "sha256": "d650c0f186dc754e7e9351574aa092b9fed23203defce5351b77d7ac5cb22ce4"
+    },
+    {
+      "file": "faq/faq.css",
+      "bytes": 8951,
+      "sha256": "37f6cb2c7f3b7301201dd389af5d44c9f8dcbbf8656db3a9da446b369714cfe6"
+    },
+    {
+      "file": "faq/faq.js",
+      "bytes": 2732,
+      "sha256": "dd2d28464d18d72a02e08fdf3d3e10cbfb7b6c17a3283c438adc2d4fc50c3142"
+    },
+    {
+      "file": "faq/index.html",
+      "bytes": 32328,
+      "sha256": "eff4e396fd32b49ca5072e96c7a96b59874110661f1671be75627e21f3c56fbc"
+    },
+    {
+      "file": "footer.css",
+      "bytes": 3429,
+      "sha256": "5b450e279fb95ce8528f409240faac1b819b3eeb845df727495eb19dffd78dbd"
+    },
+    {
+      "file": "full/assets/full-hero-1660.webp",
+      "bytes": 99402,
+      "sha256": "86522dee38e3f122787cbd35233bb13d0ab3a94a09d89e2e22a4331f1c4777bc"
+    },
+    {
+      "file": "full/assets/full-hero-960.webp",
+      "bytes": 51006,
+      "sha256": "bcf35641c686326d40cfe904c1b956f116c4b17057058b3559357942ccaa19c1"
+    },
+    {
+      "file": "full/assets/jimmy-united-v50-480.webp",
+      "bytes": 45786,
+      "sha256": "0f1c0279c5cee47dda83a3b3980317287ba5147cf3ead1aebf75e4343a741a91"
+    },
+    {
+      "file": "full/assets/jimmy-united-v50-940.webp",
+      "bytes": 109620,
+      "sha256": "2c29529d14e051293d161201ed59eccec205c13f88e7347f4a0e4f78a3dc3953"
+    },
+    {
+      "file": "full/full.css",
+      "bytes": 14434,
+      "sha256": "3f273d48fcee416ecf896999f6c7c3ec716ee32db96dc810e53c2476b029e1ed"
+    },
+    {
+      "file": "full/full.js",
+      "bytes": 2923,
+      "sha256": "a9dab6977fae6236555379f5fcf300d369d1ed3a139ad2fb03e5e1de13b2023c"
+    },
+    {
+      "file": "cursos/full/index.html",
+      "bytes": 26584,
+      "sha256": "70b5eea0dd080b9d82231ad9f31e6cf7095aa19a69fa4632057c22e6d9b572e1"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-1122w-575731c80e66.webp",
+      "bytes": 124208,
+      "sha256": "575731c80e66c34f3504cb837cec8d09d1cb1695cd1fc4aa10fd655d6eab0b44"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-480w-b153370dd58f.webp",
+      "bytes": 44594,
+      "sha256": "b153370dd58f5479a0d549ffbbe86cdd5949e492f4db309fd2925d401fd99c22"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-680w-8e755268a744.webp",
+      "bytes": 68030,
+      "sha256": "8e755268a74485ff995d61a7ae07647113d1458fd934f07363d7421758a66966"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-768w-6df0128d92a6.webp",
+      "bytes": 79260,
+      "sha256": "6df0128d92a6285129d3eaa8777e91072611a1a34c950babfefca56509daa813"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-960w-7dfd0c76c1cb.webp",
+      "bytes": 104228,
+      "sha256": "7dfd0c76c1cb78a7f4202d72bf0daba7813b639521aa010b9870c50f5efe3314"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-wide-1280w-3c603e914bfa.webp",
+      "bytes": 122148,
+      "sha256": "3c603e914bfaf1381d9faa7be4cb6ac6c783a0f7a42de3f1f40154c000bbd27e"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-wide-1600w-b71412aad2f8.webp",
+      "bytes": 155282,
+      "sha256": "b71412aad2f8b400e0887eb0344e27d03f44ea32e828cc6e060d553645d8307d"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-wide-1774w-304164492bf4.webp",
+      "bytes": 178472,
+      "sha256": "304164492bf48c853fd67dedf2b365c3da33643557c8ecb619f92bb3cbe95ade"
+    },
+    {
+      "file": "home/assets/banners/responsive/institucional-wide-960w-464d6d7e37c0.webp",
+      "bytes": 83104,
+      "sha256": "464d6d7e37c0f5d92900d22c3c69b618aa36b831d6d243a6235f95a85b4732dc"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-1122w-f4f8d230c086.webp",
+      "bytes": 109750,
+      "sha256": "f4f8d230c086b030be2af0f09143971f64e43d3d662b96efad0b7784ab15f6dd"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-480w-e90aeb71c915.webp",
+      "bytes": 38626,
+      "sha256": "e90aeb71c9150b6ef0eaa8cdd59912beca8bdaa3f0821ea0ff9a1baa5bea98a6"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-680w-79d575a8ea95.webp",
+      "bytes": 59440,
+      "sha256": "79d575a8ea956d27e5d47930941f2293bad4ccd854a4226eb08d1472105e8d26"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-768w-5dd7b9334f43.webp",
+      "bytes": 69244,
+      "sha256": "5dd7b9334f4392a86d9771b5b81017d0cc52a06448dce208a3cca04962fd5513"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-960w-ea57b18e9e7d.webp",
+      "bytes": 90662,
+      "sha256": "ea57b18e9e7d8faaf564a2bdd6fc52ce5ebb79aea11e1db944483bc71983a5a1"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-wide-1280w-1d752f6fa14a.webp",
+      "bytes": 105266,
+      "sha256": "1d752f6fa14a766bbc3131c93a725ca8fac8af8e21d9b2bbd8f772478ec7a996"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-wide-1600w-121bec39a8a4.webp",
+      "bytes": 139870,
+      "sha256": "121bec39a8a40c0ec0a2bb685a8488ac61cd40bc658282f0679af8b152d9a569"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-wide-1772w-e6c2d58d9561.webp",
+      "bytes": 155498,
+      "sha256": "e6c2d58d9561ebb5e271fd8b766c288be6bd6715dac2d80480988f08a02b9267"
+    },
+    {
+      "file": "home/assets/banners/responsive/jimmy-wide-960w-04d82993e81f.webp",
+      "bytes": 72254,
+      "sha256": "04d82993e81f6f1452cc7c59302061f49dde517c638506b860ce662d15987d21"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-1122w-57ed5cf5b7d5.webp",
+      "bytes": 135982,
+      "sha256": "57ed5cf5b7d5e424c8c3be95c28ce377b940874d4b5b353a81c85f32e32a5b68"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-480w-b0dab934c446.webp",
+      "bytes": 40444,
+      "sha256": "b0dab934c446f7b6b5db7f62086f99342cd02c75bbee9fb035c15cc1d6edb986"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-680w-fe5ba2b1c28c.webp",
+      "bytes": 69470,
+      "sha256": "fe5ba2b1c28c4a4a83ceb96b7e2d8773f52b1d504a9a2fb867c52fc25d7a6923"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-768w-c1dcc88bd539.webp",
+      "bytes": 82770,
+      "sha256": "c1dcc88bd539ef37a8a2d93d06f7ea56af5c01901f8d9b26ca447bd4c5a0453b"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-960w-d78af94f2d80.webp",
+      "bytes": 109262,
+      "sha256": "d78af94f2d80e9621de780e5ecb614bca258f5d7dc73c00291375ad9c50f19ca"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-wide-1280w-9bff75045dcd.webp",
+      "bytes": 53494,
+      "sha256": "9bff75045dcd595c4bb7887023efafaffcd4cc631ee95fe33766226c42653fc8"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-wide-1600w-21dc6e96862c.webp",
+      "bytes": 71490,
+      "sha256": "21dc6e96862cf15640a35456679037f320575612e9f9dedd353526ac8b16ad1d"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-wide-1773w-e82c7e734cb7.webp",
+      "bytes": 83200,
+      "sha256": "e82c7e734cb7c478417602793756f61e9c527fd13205fb879641ab9189966dd6"
+    },
+    {
+      "file": "home/assets/banners/responsive/liveclass-wide-960w-22b77c3a1aef.webp",
+      "bytes": 35876,
+      "sha256": "22b77c3a1aef6f8f650a0b7b9a075906ccdb16b2ca1755895ec5e19c10991de5"
+    },
+    {
+      "file": "home/assets/brand/favicon-192.png",
+      "bytes": 10209,
+      "sha256": "6daff5ed0f9f64ed554c1014faea55a5d50b63dd3430769825084f8dd42e1191"
+    },
+    {
+      "file": "home/assets/css/page-home-7953de7a456f.css",
+      "bytes": 160013,
+      "sha256": "db21825331475d4b6f8c89a52f14c609216bd2a22dd4b20614e540327616f52c"
+    },
+    {
+      "file": "home/assets/images/ajax-loader.gif",
+      "bytes": 15009,
+      "sha256": "b7ee86c5179ac0466b609c8300ffb289a645280319390ff94fb06bb0b6cf84ca"
+    },
+    {
+      "file": "home/assets/images/ajax-loader2.gif",
+      "bytes": 15269,
+      "sha256": "c402942c3dfd4853ed0afa5ef9014eef5c382fe1529993dde1b92f46cc99f3bc"
+    },
+    {
+      "file": "home/assets/images/arrow-right-gray-lossless.webp",
+      "bytes": 3388,
+      "sha256": "4d76f7ca75fc51de18049006ff1071d6598fe4c1c37722ebda4da2dfde635278"
+    },
+    {
+      "file": "home/assets/images/arrow-right-lossless.webp",
+      "bytes": 3296,
+      "sha256": "104adc36663d5dabd956685c5b441595e5a48062b081b74e0c67225e51fbf459"
+    },
+    {
+      "file": "home/assets/images/arrow-right-short-lossless.webp",
+      "bytes": 3280,
+      "sha256": "89e5455c6c8a0b5094b3a89e7b6058b97363e3fb9422985f0e0aba78f5deb918"
+    },
+    {
+      "file": "home/assets/images/bg-apresentacao-web-q95.webp",
+      "bytes": 71868,
+      "sha256": "8385ea85831a7cdc6eabf36c3b43cca8ecc02940aea20026e5a88b3d293e1a2a"
+    },
+    {
+      "file": "home/assets/images/bg-banner-mb-web-q95.webp",
+      "bytes": 43874,
+      "sha256": "3f124070791ea53975e8898503ceba9f38bace857192c198e1cf6fdc416065e0"
+    },
+    {
+      "file": "home/assets/images/bg-bar-lossless.webp",
+      "bytes": 11382,
+      "sha256": "537499fc28faa13a5d9cd78f275cff9056c75982e46fbd671590fc16e1756b0a"
+    },
+    {
+      "file": "home/assets/images/bg-contato-lossless.webp",
+      "bytes": 15416,
+      "sha256": "7f82f890315dfc9aad4e046ca13a2427ee1296ab1cd7d64ce1ca3d97fc74188f"
+    },
+    {
+      "file": "home/assets/images/bg-ia-blue-lossless.webp",
+      "bytes": 100364,
+      "sha256": "2ef92ea97785b9b1c4eb6298f6a439fa28a6ac1356e27ac4ee1922b2b8d1d601"
+    },
+    {
+      "file": "home/assets/images/bg-ia-lossless.webp",
+      "bytes": 109382,
+      "sha256": "92f2ad92e46b546c24169d8fc6fd8a9a3f3eaaeae80f44e1b2372439092d40dd"
+    },
+    {
+      "file": "home/assets/images/bg-mb-lossless.webp",
+      "bytes": 102184,
+      "sha256": "0e136b68cb863de754777ca448b915b0da635a37b88f845e1d8967b22e5b54b0"
+    },
+    {
+      "file": "home/assets/images/bg-quem-somos-lossless.webp",
+      "bytes": 80264,
+      "sha256": "93475052d0b4b074e2877133d66e25c739aead8e17a54d6bed10080297823816"
+    },
+    {
+      "file": "home/assets/images/bg-unidades-hibridas-web-q95.webp",
+      "bytes": 41274,
+      "sha256": "5d26c127629d32c63c7d77d95541155771452ef198bea4825779b9727e90ccd3"
+    },
+    {
+      "file": "home/assets/images/bg-united-video.webp",
+      "bytes": 148032,
+      "sha256": "b737cae8ee5b1f0874371a566cb68823a96bfb286aa4ed393867eba7eaf23231"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-01-mobile-lossless.webp",
+      "bytes": 10432,
+      "sha256": "035f464f262c2435dbd042eaf6daf62892ded7c1efb8002917c5dc30344b9322"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-01.webp",
+      "bytes": 155388,
+      "sha256": "b88b728336ca11a249a0e293335a9b4969cf4d121d048f892e05fafca7c9c90e"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-02-mobile-lossless.webp",
+      "bytes": 9684,
+      "sha256": "77ee3bb59276f9a0f13c779aaf3ffefd53c6507cdd44b7133e9350d467099f68"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-02.webp",
+      "bytes": 194910,
+      "sha256": "45a370a17c9b61dfbb32efd5650853774db6f62f341d3d9ecd6d01bc195cf82f"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-03-mobile-lossless.webp",
+      "bytes": 11872,
+      "sha256": "4dc31a19b5792f2c9e12de1eaf6c6c5b6dc5044ca094fd138f8f7c4b20956b28"
+    },
+    {
+      "file": "home/assets/images/bg-vitrine-03.webp",
+      "bytes": 250020,
+      "sha256": "525977f0113b050920af34b784590eec48c1f67996b815964f0eb6755c052352"
+    },
+    {
+      "file": "home/assets/images/caret-down-fill-lossless.webp",
+      "bytes": 3304,
+      "sha256": "c4c8be2fba2031a0e03262d11c501994e9996f5a9c1d237ed7c2b70031d1a539"
+    },
+    {
+      "file": "home/assets/images/check-lg-lossless.webp",
+      "bytes": 202,
+      "sha256": "d974061102c46ce3f96019479534a4b4c07bafff5532ed901c2a12abe845ab92"
+    },
+    {
+      "file": "home/assets/images/close-lossless.webp",
+      "bytes": 3390,
+      "sha256": "c392b238893f21a6bc5878b3f1be499abf752a975bb2f698f526ace8e2643292"
+    },
+    {
+      "file": "home/assets/images/icon-button-whatsapp-g-lossless.webp",
+      "bytes": 250,
+      "sha256": "6c65d69171419116b53252e8fb8a8f6a77eb820f0dca0d172d7320d3c6cc4f25"
+    },
+    {
+      "file": "home/assets/images/icon-button-whatsapp.svg",
+      "bytes": 1271,
+      "sha256": "11e456224fa1d3024d6d5599346ddca92460abc96b9ba783d334254db76104c6"
+    },
+    {
+      "file": "home/assets/images/icon-plataforma-01-lossless.webp",
+      "bytes": 230,
+      "sha256": "3cebcb430e0a24e2ef91d2c1e49046526fdca91c50ee64b9cdf9de937d880a18"
+    },
+    {
+      "file": "home/assets/images/icon-plataforma-02-lossless.webp",
+      "bytes": 174,
+      "sha256": "884faa391dfb5d405ad6a0f9a51974bd52b97e2cd994a69f121318d78fdf114b"
+    },
+    {
+      "file": "home/assets/images/icon-plataforma-03-lossless.webp",
+      "bytes": 276,
+      "sha256": "94b8ad2841ce88d2f7839a0bff7fb415045e591e29575a9b165a17c06fb7001f"
+    },
+    {
+      "file": "home/assets/images/icon-plataforma-04-lossless.webp",
+      "bytes": 226,
+      "sha256": "e1e865eefc6c80832510b9bce6a55c44767a0b6ff5829a81c911da4a8158826b"
+    },
+    {
+      "file": "home/assets/images/icon-unidade-google-maps-lossless.webp",
+      "bytes": 3366,
+      "sha256": "69823326b978723280d4ba6026d3925c0c9eb0b5017847ba954e788bafddf714"
+    },
+    {
+      "file": "home/assets/images/icon-unidade-whatsapp-lossless.webp",
+      "bytes": 386,
+      "sha256": "03c48de602c71e81a4d62974fc1f63c80fdacda1408d82e3f75c37578ac9a4d9"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-business-01-lossless.webp",
+      "bytes": 416,
+      "sha256": "e06499f57621b4218485b58c7f1000bb460d77f9842ce10d3dfe880dc498922e"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-business-02-lossless.webp",
+      "bytes": 224,
+      "sha256": "3c18fcddf5e6e05f414fc3fc7133e75712e2d7fe73442be40ecce0c0da20d08a"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-business-03-lossless.webp",
+      "bytes": 304,
+      "sha256": "3bdaaa9ab52175a71bec75411cef8736af089960b4841954e097deb9a3a132e2"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-business-04-lossless.webp",
+      "bytes": 278,
+      "sha256": "f3c49a688fd692335bd512f009ed1c8051901c374d111d19d076fac40a13f28f"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-live-class-01-lossless.webp",
+      "bytes": 162,
+      "sha256": "d2ff4cb9c89b014be4922e66e7c3f52f4cb64a8452c9c317a4c776ed43a5d147"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-live-class-02-lossless.webp",
+      "bytes": 240,
+      "sha256": "28df370344c2763603c0900b893f4cff2b6f94a76edd74f4ff4c4e2810ea7da1"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-live-class-03-lossless.webp",
+      "bytes": 174,
+      "sha256": "104381039423dbfa255d1c1031d9644d8b97c959f3a94cba3e35afbcbc23f144"
+    },
+    {
+      "file": "home/assets/images/icon-vitrine-live-class-04-lossless.webp",
+      "bytes": 218,
+      "sha256": "514e26248a5193f83066705872eca11bab9060a45c32d8e4e0bd5caed8f0240a"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-01-lossless.webp",
+      "bytes": 75622,
+      "sha256": "10ca6aea9c19cc8db0f030f7b2b24e2842cb18311d91dc5d4ec69256de6c7435"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-02-lossless.webp",
+      "bytes": 77278,
+      "sha256": "c81d7d7b880c918b6a6b42d2b64f14b137ec5c2d8af0f7d8b40754af9ca82489"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-03-lossless.webp",
+      "bytes": 32560,
+      "sha256": "45168f0eee352151d0eeba4cad6836a59c569f29aeaf449212d24539dcc9fa01"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-04-lossless.webp",
+      "bytes": 40730,
+      "sha256": "2508ddc72ab4d057fd4041399fb683a9a8d8451ad3276c7bfabc2d022546b848"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-05-lossless.webp",
+      "bytes": 46958,
+      "sha256": "d99fbec552c417a2fcc41e1575166e0f8b18fa7b76afcb3b3ec4cf23520acd0d"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-06-lossless.webp",
+      "bytes": 102472,
+      "sha256": "1ffe16e50aef7eb0d9ae4b1061780b0b0ef4469eacf5e5a53b75e6d8c1818a14"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-07-lossless.webp",
+      "bytes": 52064,
+      "sha256": "8d1dfb148abcd50277a5ed488eff8a5365ce09ec90441bc8e1ff3aeec8371ba8"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-08-lossless.webp",
+      "bytes": 47186,
+      "sha256": "10c2fa976cd645eea22106fcb3489ff4257a546579cda5385983b574479ebbf1"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-09-lossless.webp",
+      "bytes": 70778,
+      "sha256": "f78583f7a6734ad902ce9487e6cfe64a53eb67a0da2cdbd3b510632f575075e6"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-10-lossless.webp",
+      "bytes": 91814,
+      "sha256": "0e9ac877ee9eb37ea4af71f3ea35cfef2de7bcc21d23d1c4f68c2d6065f011c0"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-11-lossless.webp",
+      "bytes": 49034,
+      "sha256": "8c2b1e5912722e95c7944f649656ea7229716dbb57b378ffb104372dc405ec15"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-12-lossless.webp",
+      "bytes": 71960,
+      "sha256": "363626cba459253f365cf763e1082766a86c608d438bf5e66471f0516205fb6c"
+    },
+    {
+      "file": "home/assets/images/img-avaliacao-13-lossless.webp",
+      "bytes": 44480,
+      "sha256": "aa1a1ac2352956d50a2aa062a3ea4d77f645419d181e8e700b333722f1ea4791"
+    },
+    {
+      "file": "home/assets/images/img-unidades.webp",
+      "bytes": 55164,
+      "sha256": "31dbfea3e3b9c068c7d432be974036c0178129a86ef00cb2fd08e097e6ca4f6e"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-cursos-1280w-06e06048758f.webp",
+      "bytes": 167280,
+      "sha256": "06e06048758f4338a01d0453bf16b97b010ec5387a059309ebd90a35d5c0cd1b"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-cursos-1924w-38c6bc3dd726.webp",
+      "bytes": 211104,
+      "sha256": "38c6bc3dd7268fce6255dc91df11e5d2af7fb6e7dee5db9174d741861b09096a"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-cursos-480w-6921bd790ef2.webp",
+      "bytes": 30182,
+      "sha256": "6921bd790ef2e7869ec6afaecd0085fc1362ff09abd72bfaf7e0012622d697e1"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-cursos-768w-af819859a0ec.webp",
+      "bytes": 70248,
+      "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
+      "bytes": 3542,
+      "sha256": "51b7df6914f65c491522883895e2ff44a8c724476462f205b5c5544f7b77b909"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-01-320w-96baf9546fb2.webp",
+      "bytes": 6670,
+      "sha256": "96baf9546fb24ae33ba55cb7d5b1e0c5241e812342491a1dc235079e130dc675"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-01-392w-ce6edd6ca941.webp",
+      "bytes": 9556,
+      "sha256": "ce6edd6ca9412f3eb66159d26384e2608289e2a8f44d6f7f62d70f83b31ccbcc"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-02-196w-2dcada565d0f.webp",
+      "bytes": 4024,
+      "sha256": "2dcada565d0fdb357a405657d23cdc10f7cf460b23ee64e2d03d983e3443300e"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-02-320w-5640fcee854b.webp",
+      "bytes": 8106,
+      "sha256": "5640fcee854b3cfe1a7e1a0afa8d7bb2f06a745d2c0ff5c719fc20eede96cf75"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-02-391w-fffa51cc01a8.webp",
+      "bytes": 11254,
+      "sha256": "fffa51cc01a83c03d20ce5edbc06f3a22696c471ae8b255544369ed6f056b6e2"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-04-196w-491034c72d95.webp",
+      "bytes": 4214,
+      "sha256": "491034c72d95a3a922d4487328d4421e68ca02a77f2904645d719339e3d94a41"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-04-320w-8c15ade812e0.webp",
+      "bytes": 8034,
+      "sha256": "8c15ade812e080a90a5cf73afbb3c7bbeac96eee4c8802cdefd7c445f23ad9a7"
+    },
+    {
+      "file": "home/assets/images/responsive/img-plataforma-04-388w-cf93d66d3424.webp",
+      "bytes": 11548,
+      "sha256": "cf93d66d342417dfaa795eb2b0427b06e143877b38ee7a871b9f9d43047e2905"
+    },
+    {
+      "file": "home/assets/images/responsive/liveclass-conversation-2026-1024w-be0087257307.webp",
+      "bytes": 49332,
+      "sha256": "be0087257307b28d91ee7f788f99156c1480261523888d74fa2e031587c57cec"
+    },
+    {
+      "file": "home/assets/images/responsive/liveclass-conversation-2026-1536w-c6b0bbd95534.webp",
+      "bytes": 87980,
+      "sha256": "c6b0bbd95534acafd99f638446bf281ee5ffc42edfdeb97475d08c7a0adf9984"
+    },
+    {
+      "file": "home/assets/images/responsive/liveclass-conversation-2026-480w-b10bfcef8b91.webp",
+      "bytes": 18854,
+      "sha256": "b10bfcef8b91dab79667e901b959cba6c8022843de52fad5d734ebcacab0fadd"
+    },
+    {
+      "file": "home/assets/images/responsive/liveclass-conversation-2026-768w-b92491b6142c.webp",
+      "bytes": 34532,
+      "sha256": "b92491b6142c9b77a4ad4a3c271f158357825398d0bdce41a7f0377b33845f33"
+    },
+    {
+      "file": "home/assets/images/responsive/ondemand-tablet-celular-v40-1024.webp",
+      "bytes": 39046,
+      "sha256": "cb2a99247659ed547536e4f34d22c02bdbbf9b028bc6338a22a14a589e78da8f"
+    },
+    {
+      "file": "home/assets/images/responsive/ondemand-tablet-celular-v40-1280.webp",
+      "bytes": 53998,
+      "sha256": "9b94135505f9515939e2e60a53dad2777dacb82e4f5f5b628b6dcfeab44d66f3"
+    },
+    {
+      "file": "home/assets/images/responsive/ondemand-tablet-celular-v40-1672.webp",
+      "bytes": 76164,
+      "sha256": "6aaa7a6c1f91c0733f491011eaa6af4aac1ce97a1a77457d3fc512f2676ea9a9"
+    },
+    {
+      "file": "home/assets/images/responsive/ondemand-tablet-celular-v40-480.webp",
+      "bytes": 12620,
+      "sha256": "3fa2dd8d2e1f040ba6b3e608c92e3237049763fa80791d8fe70c63ec164a00b2"
+    },
+    {
+      "file": "home/assets/images/responsive/ondemand-tablet-celular-v40-768.webp",
+      "bytes": 25516,
+      "sha256": "93619cc8af69de4768988e025797fbed8ecf5b5415ba4873a84af7708eba01f1"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-1280w-adef93988c16.webp",
+      "bytes": 145594,
+      "sha256": "adef93988c16925aeeecee82777300020e45fd04d32557fbb8d9d4f229ab454c"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-1672w-4ab5bc90c4e7.webp",
+      "bytes": 205836,
+      "sha256": "4ab5bc90c4e799db4a3f2cc360326af6839b569132b8dde1ed1d26ed7b514268"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-384w-5c0203e8fb6d.webp",
+      "bytes": 23758,
+      "sha256": "5c0203e8fb6d03f57b8b89182e9437b08f970ac19da98f6476e73651cf74923e"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-640w-ffe648f455af.webp",
+      "bytes": 54046,
+      "sha256": "ffe648f455af454e7ca9f6b1ed59ca78ca8e780ed82ce635d98e4feb79dda846"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-768w-30264b059a14.webp",
+      "bytes": 69606,
+      "sha256": "30264b059a148023705621f0c18f2016ec2d1f1420b4610f674de11dc2c20468"
+    },
+    {
+      "file": "home/assets/images/responsive/storytelling-characters-3d-960w-c12d96054570.webp",
+      "bytes": 97900,
+      "sha256": "c12d960545702c8291a5638ffe7684a0d680272087d04be50a5f1495ca69cd31"
+    },
+    {
+      "file": "home/assets/images/search-lossless.webp",
+      "bytes": 290,
+      "sha256": "36a344350e2ebe722454f95fa0cdc41cf203c9a08d9bcea598b8d84f29ec5c66"
+    },
+    {
+      "file": "home/assets/images/telephone-fill-lossless.webp",
+      "bytes": 156,
+      "sha256": "49efef6817b0e3cd052c300c9ccfc090124790dbed9b9461d2083ef3ae389a9e"
+    },
+    {
+      "file": "home/assets/images/united-characters-loop-poster.webp",
+      "bytes": 55250,
+      "sha256": "e3f08e1600f8f4be965097dde3201f46c1e42e4aa908e35a7601a4c913ef7de9"
+    },
+    {
+      "file": "home/assets/videos/united-characters-loop-web.mp4",
+      "bytes": 442407,
+      "sha256": "e0f468d159f97668d026886d39b7f48965bb2ab60580ac2f57a03bf97805b606"
+    },
+    {
+      "file": "home/benefits.js",
+      "bytes": 1429,
+      "sha256": "0941b278bf515f4d1b79518d3768cea50eadf96ce9eb40ec895c13f6c4f86c94"
+    },
+    {
+      "file": "home/favicon.ico",
+      "bytes": 4749,
+      "sha256": "56b7957d700e7feb92fa39b5ceb745e77c88fb52a7b80d4cff1994c4e9cb3318"
+    },
+    {
+      "file": "home/home-local.css",
+      "bytes": 18875,
+      "sha256": "efd7f178aed720cde3adcae9bca909a2cbefa3d648ac8ac75210c87d6774c21c"
+    },
+    {
+      "file": "index.html",
+      "bytes": 99230,
+      "sha256": "c14196103317fb1b9f8302786ac8784662a5418838ef17aef9e0878f446254c2"
+    },
+    {
+      "file": "home/media-runtime.js",
+      "bytes": 3106,
+      "sha256": "aaffd17e33351f6325b4940e82b1360a51947ab76d4a1dbd4af2eb8df3576d21"
+    },
+    {
+      "file": "home/preview.js",
+      "bytes": 7779,
+      "sha256": "ed32b9545c3d1e617cc45e36daddfa34844da251100b9b056dd0ad6f9d45d92e"
+    },
+    {
+      "file": "home/site-refinement.js",
+      "bytes": 3389,
+      "sha256": "14642bda227f19ca80e8b3e8383bae9c3fc3ae8d6246346efe7741f2c6ae7368"
+    },
+    {
+      "file": "cursos/live-class/index.html",
+      "bytes": 50387,
+      "sha256": "7018b4d5d820a323afa5d9fb50161cde3fd4f71233dc39ee9170017de7fb4cfb"
+    },
+    {
+      "file": "interface-refinements.css",
+      "bytes": 9075,
+      "sha256": "a4a692d1d97e22f6cb31c1fd3606ae78285f44d2e3b87f55ba121f28a10e97f0"
+    },
+    {
+      "file": "live-focus.css",
+      "bytes": 4359,
+      "sha256": "9055b08fcb3de322ef8a0ca0ee5b4aef0e1192ac70cb239c34f2c9231aeac1ba"
+    },
+    {
+      "file": "practice-demo.css",
+      "bytes": 7914,
+      "sha256": "04055ac80030703225fb37191958478619fa1e5fd44e69ec3ba727bc7b7661f5"
+    },
+    {
+      "file": "practice-demo.js",
+      "bytes": 5150,
+      "sha256": "36c5cdd081d8f0aac70e9e4df23eb47683ab3342805543a01a8f128aa6fc062a"
+    },
+    {
+      "file": "quem-somos/assets/abf-2025.webp",
+      "bytes": 15174,
+      "sha256": "58fe9cc745fd324d2bc60dcfeaddab0c13e2774c8fdd7e893d516a4024f0e668"
+    },
+    {
+      "file": "quem-somos/assets/abf-2026.webp",
+      "bytes": 9912,
+      "sha256": "a67008c409c10abdbce6901c81dd624c20b8bb0207c52b79fe8f4b19790c8757"
+    },
+    {
+      "file": "quem-somos/authority.css",
+      "bytes": 22121,
+      "sha256": "75f542e966f905a08775c205a0503ca2930d7dcd715e231bee213443a065d1a1"
+    },
+    {
+      "file": "quem-somos/authority.js",
+      "bytes": 1264,
+      "sha256": "a4ebbba026652606e993c1f7fa51e6feb170cc5d205c56f25949b3df0e634e25"
+    },
+    {
+      "file": "quem-somos/index.html",
+      "bytes": 30124,
+      "sha256": "d7be6f6edbbe7aeb4863de1759abbf9ebe839c8265ace4d5fe0aaa2c05072d6b"
+    },
+    {
+      "file": "rdstation-account.js",
+      "bytes": 1319,
+      "sha256": "c77201b1ea7a4b1aca26f9a16547f340fa3b0d5d19aa69c609755a69edd10732"
+    },
+    {
+      "file": "rdstation-whatsapp.js",
+      "bytes": 5822,
+      "sha256": "3cc6200820356cd62023b78f4cb8dbe2c402428a1af7073a16162acdd8a29c34"
+    },
+    {
+      "file": "site-navigation.css",
+      "bytes": 7716,
+      "sha256": "69e90aa994445529283f9cfd4604fd515249f757fbe954513f0fa56c696ddcec"
+    },
+    {
+      "file": "site-navigation.js",
+      "bytes": 1271,
+      "sha256": "ba8f8e32e068c7ef27626d71a61878f16a70142d015b949d2a7d2009f30283b4"
+    },
+    {
+      "file": "student-stories.css",
+      "bytes": 5182,
+      "sha256": "3bfaa4ce113266b175506ea3cc8e6f8107bdcd0c6d27065ffcea7306344fdbca"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 45284,
+      "sha256": "b5c1776b6d78b7a02dfab4ae70b3ea2eae194505de07f751f432e1c638fae5c6"
+    },
+    {
+      "file": "teachers.css",
+      "bytes": 1555,
+      "sha256": "a94705bdac95668af3c224cc6a70cdedd830de9dceba9164cf8a3c1746437fce"
+    }
+  ]
+}

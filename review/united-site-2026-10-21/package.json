@@ -1,0 +1,34 @@
+{
+  "name": "united-site-pronto-2026-10-21",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Fonte editável e candidato de produção United — revisão de 21/10/2026",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "blog:novo": "node tools/new-article.mjs",
+    "blog:render": "node src/tools/render-blog.mjs && python3 src/tools/render-site-chrome.py --blog-only",
+    "build:preview": "node tools/build-minified.mjs --source src --output preview --report reports/preview-build.json --replace",
+    "build": "npm run blog:render && npm run build:preview && node tools/build-production.mjs && npm run validate && npm run audit:seo && npm run manifest",
+    "validate": "node tools/validate-release.mjs",
+    "test:blog": "node src/tools/test-blog-search.mjs",
+    "test:site": "node src/tools/test-site-interactions.mjs",
+    "audit:blog": "node src/tools/audit-blog-complete.mjs",
+    "audit:seo": "npm run audit:seo:preview && npm run audit:seo:production",
+    "audit:seo:preview": "node tools/audit-seo.mjs --source src --target preview --mode preview --config release.config.json --report reports/seo-preview.json",
+    "audit:seo:production": "node tools/audit-seo.mjs --source src --target dist --mode production --config release.config.json --report reports/seo-production.json",
+    "preview": "python3 tools/serve.py --directory preview --port 8791",
+    "preview:production": "python3 tools/serve.py --directory dist --port 8792",
+    "check:publication": "node tools/check-publication.mjs",
+    "review": "npm run blog:render && npm run build:preview && npm run audit:seo:preview",
+    "test:rd": "node src/tools/test-rd-account.mjs && node src/tools/test-rd-parity.mjs",
+    "manifest": "node tools/write-manifest.mjs"
+  },
+  "devDependencies": {
+    "clean-css": "5.3.3",
+    "html-minifier-terser": "7.2.0",
+    "jsdom": "26.1.0",
+    "terser": "5.51.2"
+  }
+}

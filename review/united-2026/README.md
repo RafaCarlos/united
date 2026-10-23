@@ -1,3 +1,5 @@
+> **Entrega atual:** [site completo revisado em 21/10/2026](../united-site-2026-10-21/). Esta pasta conserva a versão anterior; não misturar os dois processos de build.
+
 # United Idiomas — SEO para produção · 18/09/2026
 
 Pacote para Rafael revisar em `review/united-2026/`. Esta atualização parte do código incorporado à `main` em `933c80a`, mantém o Google Tag Manager e a integração RD, e não substitui o PHP da raiz nem publica no servidor.

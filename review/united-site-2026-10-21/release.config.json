@@ -1,0 +1,15 @@
+{
+  "origin": "https://www.unitedidiomas.com",
+  "routes": {
+    "home/index.html": "/",
+    "index.html": "/cursos/live-class/",
+    "business/index.html": "/cursos/business/",
+    "full/index.html": "/cursos/full/",
+    "quem-somos/index.html": "/quem-somos/",
+    "faq/index.html": "/faq/"
+  },
+  "approvedEditorialSlugs": [
+    "united-ingles-online-aulas-ao-vivo-tecnologia",
+    "united-valor-o-globo-live-class-2"
+  ]
+}

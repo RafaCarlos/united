@@ -1,0 +1,40 @@
+.student-stories{--story-ink:#0c2c47;--story-green:#146547;color:var(--story-ink);scroll-margin-top:128px}
+.teacher-showcase .student-stories{margin-top:44px;padding-top:38px;border-top:1px solid #d5e1e7}
+.student-stories-heading{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:end;margin-bottom:26px}
+.student-stories-heading h3{margin:0;font-size:clamp(27px,2.8vw,37px);font-weight:800;line-height:1.16;letter-spacing:-.04em;color:var(--story-ink)}
+.student-stories-heading .eyebrow{margin-bottom:12px}
+.student-stories-heading>p{max-width:46ch;margin:0;color:#536879;font-size:15px;line-height:1.8}
+.student-stories-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.student-story{position:relative;display:flex;flex-direction:column;min-width:0;margin:0;padding:28px;border:1px solid #dbe5e9;border-radius:20px;background:linear-gradient(135deg,#fff,#f8fbfb);box-shadow:0 6px 22px #17324904}
+.student-story .student-story-theme{margin:0 0 22px;color:var(--story-green);font-size:11px;font-weight:800;letter-spacing:.07em;line-height:1.6;text-transform:uppercase}
+.student-story blockquote{position:relative;margin:0 0 28px;padding:0;color:var(--story-ink);font-size:19px;font-weight:600;line-height:1.58;letter-spacing:-.025em}
+.student-story blockquote::before{content:'“';display:block;height:37px;margin-bottom:6px;color:#159869;font-size:62px;font-weight:800;line-height:1}
+.student-story blockquote p{margin:0;color:inherit;font:inherit}
+.student-story figcaption{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:20px;border-top:1px solid #dce7e9}
+.student-story-initial{display:grid;place-items:center;flex:0 0 37px;width:37px;height:37px;border-radius:50%;background:#e8f2ed;color:#136044;font-size:13px;font-weight:800;line-height:1}
+.student-story-attribution{display:flex;flex-direction:column;gap:4px;min-width:0}
+.student-story-attribution strong{font-size:14px;font-weight:800;line-height:1.4;color:var(--story-ink)}
+.student-story-attribution span{font-size:11px;line-height:1.6;color:#536879}
+.student-story-featured{background:linear-gradient(135deg,#103a51,#092b41);border-color:#163f53;box-shadow:none}
+.student-story-featured .student-story-theme,.student-story-featured blockquote::before{color:#8eddb6}
+.student-story-featured blockquote,.student-story-featured .student-story-attribution strong{color:#fff}
+.student-story-featured figcaption{border-top-color:#ffffff24}
+.student-story-featured .student-story-initial{background:#ffffff14;color:#c4f3d9}
+.student-story-featured .student-story-attribution span{color:#c3d7df}
+.student-stories-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:18px}
+.student-stories-footer p{margin:0;color:#536879;font-size:12px;line-height:1.7}
+.student-stories-footer a{flex-shrink:0;display:inline-flex;align-items:center;min-height:44px;color:#115c43;text-decoration:underline;text-underline-offset:4px;font-size:13px;font-weight:700}
+.student-stories a:focus-visible,.student-stories summary:focus-visible{outline:3px solid #168957;outline-offset:5px}
+.student-stories-more{margin-top:22px;border:1px solid #dbe5e9;border-radius:16px;background:#f7faf9}
+.student-stories-more>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:16px 22px;cursor:pointer;list-style:none;color:#124a3a;font-size:14px;font-weight:800}
+.student-stories-more>summary::-webkit-details-marker{display:none}
+.student-stories-more>summary::after{content:'+';display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;border:1px solid #c3d9ce;border-radius:50%;font-size:21px;font-weight:400;line-height:1}
+.student-stories-more[open]>summary::after{content:'−'}
+.student-stories-more[open]>summary{border-bottom:1px solid #dbe5e9}
+.student-stories-more .student-stories-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:20px}
+.student-stories-more .student-story{padding:24px}
+.student-stories-more .student-story blockquote{font-size:18px;font-weight:500}
+.student-stories-more .student-story figcaption{padding-top:14px}
+@media(hover:hover){.student-stories-more>summary:hover{background:#edf5f0;border-radius:16px}.student-stories-footer a:hover{color:#0a3b2a}}
+@media(max-width:1000px){.student-story{padding:23px}.student-story blockquote{font-size:17px}.student-stories-heading{gap:24px}}
+@media(max-width:780px){.teacher-showcase .student-stories{margin-top:30px;padding-top:28px}.student-stories-heading{grid-template-columns:1fr;gap:16px;margin-bottom:22px}.student-stories-heading h3{font-size:29px}.student-stories-heading>p{max-width:none}.student-stories-grid{grid-template-columns:1fr;gap:16px}.student-story{padding:25px}.student-story blockquote{font-size:19px;line-height:1.55;margin-bottom:23px}.student-story .student-story-theme{margin-bottom:16px}.student-story figcaption{padding-top:17px}.student-stories-footer{display:block;margin-top:16px}.student-stories-footer a{margin-top:6px}.student-stories-more .student-stories-grid{grid-template-columns:1fr;padding:14px}.student-stories-more .student-story{padding:22px}.student-stories-more>summary{padding:16px 18px}}

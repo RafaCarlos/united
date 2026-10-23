@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "pages": 213,
+  "checkedReferences": 18534,
+  "errors": [],
+  "legacyProductionPaths": [
+    "/blog/ingles-para-negocios/",
+    "/cursos-de-ingles-unitedidiomas",
+    "/o-curso/curso-de-ingles-para-carreira",
+    "/o-curso/curso-de-ingles-para-certificacao-toefl",
+    "/o-curso/curso-de-ingles-para-empreendedor",
+    "/o-curso/curso-de-ingles-para-viagem",
+    "/o-melhor-curso-de-ingles"
+  ],
+  "longDescriptions": 149,
+  "notes": [
+    "Long editorial descriptions retained rather than truncating sentences.",
+    "This automated validator does not submit leads. The separately authorized real test is recorded in reports/rd-integration.json. Production server/redirects/consent/analytics require integration verification."
+  ]
+}

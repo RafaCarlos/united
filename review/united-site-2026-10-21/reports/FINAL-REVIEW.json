@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-21",
+  "status": "Local candidate validated; not deployed",
+  "pages": 213,
+  "blogArticles": 186,
+  "archivePages": 21,
+  "responsive": {
+    "viewportWidths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "pageViewportChecks": 35,
+    "horizontalOverflow": 0,
+    "headerAlignment": "consistent across checked main routes"
+  },
+  "liveClass": {
+    "stories": {
+      "images": 15,
+      "uniqueScenes": 15,
+      "replaced": [
+        "restaurant thumbnail in tab01 -> park",
+        "carpool thumbnail in tab03 -> night phone call",
+        "office thumbnail in tab04 -> post office"
+      ]
+    },
+    "classroom": "Unit22 At the Mall in Live Class; Unit25 in Full; restaurant in interactive demo",
+    "finalDesktopAndMobileVisualReview": true
+  },
+  "navigation": {
+    "productionRoutesReviewed": [
+      "/",
+      "/cursos/live-class/",
+      "/blog/",
+      "/blog/united-valor-o-globo-live-class-2/"
+    ],
+    "productionReferencesValidated": 18534,
+    "errors": 0
+  },
+  "images": {
+    "contentFormat": "WebP",
+    "exceptions": "SVG, small legacy GIF, logos/social/favicon PNG where appropriate",
+    "formatOptimizationSavedBytes": 475937,
+    "savingScope": "16 optimized assets only; not a whole-site performance score",
+    "responsiveSourcesAndLazyLoading": true
+  },
+  "seo": {
+    "preview": "noindex",
+    "production": "indexable candidate",
+    "sitemap": "sitemap-united-pages.xml",
+    "robots": "merge publication/robots-snippet.txt with existing production rules",
+    "auditErrors": 0,
+    "observations": "207 nonblocking observations for original long titles/descriptions; editorial text preserved"
+  },
+  "forms": {
+    "rdEmbedID": "form-vamos-conversar-5ba05329ea8c88b5c10d",
+    "mobileDialogReviewed": true,
+    "simulatedBehaviorTests": "passed",
+    "realLeadSubmitted": true,
+    "realSubmissionCount": 1,
+    "rdSuccessCallbackObserved": true,
+    "crmReceipt": "not_inspected",
+    "evidence": "rd-integration.json"
+  },
+  "publicationIntegrationRemaining": [
+    "Align www/non-www blog redirect with release.config.json",
+    "Merge robots and sitemap into existing WordPress/server configuration",
+    "Verify existing RD/GTM loaders remain deduplicated on the final host; confirm CRM receipt and automations in the account",
+    "Verify cache/compression and measure PageSpeed/Core Web Vitals on final hosting"
+  ],
+  "blogWorkflow": "Publish full site including current blog; agency maintains one current source and deploys changed files after review. Editorial ZIP is not a CMS or permission to overwrite newer files.",
+  "sourceImagesProvenance": "Three story assets were derived with built-in imagegen from supplied course artwork; prompt summaries and hashes are recorded in the source project evidence/historias-unicas-2026-10-21.json.",
+  "gitDelivery": {
+    "baseCommit": "1c35b38",
+    "branch": "codex/site-completo-seo-rd-20261021",
+    "deploymentPerformed": false,
+    "tests": [
+      "build",
+      "test:site",
+      "test:rd",
+      "test:blog",
+      "audit:blog"
+    ],
+    "automatedTestsSubmittedLeads": false
+  }
+}

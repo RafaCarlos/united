@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-21",
+  "officialURL": "https://www.unitedidiomas.com/",
+  "officialVersionEvidence": [
+    {
+      "file": "rdstation-form.js",
+      "sha256": "ca14423c39a1c9a0b0ea815196c32ca120252f9e8a4d4efd78166dc778dedba7"
+    },
+    {
+      "file": "rdstation-whatsapp.js",
+      "sha256": "efc2a84bc927cfbc6aea6498ae181dc44e62d1e8d7ecc20288678d8405d6b353"
+    }
+  ],
+  "formId": "form-vamos-conversar-5ba05329ea8c88b5c10d",
+  "nativeRDForm": true,
+  "rdAccount": "ee4f0815-8266-4fb5-ba25-416836b02312",
+  "gtmContainer": "GTM-MTK74PV",
+  "whatsappNativePopupObserved": true,
+  "contactAndWhatsAppSubmissionRemainOwnedByRD": true,
+  "productionOnlyAccountLoader": true,
+  "nativeSdkMayLoadItsOwnResourcesInPreview": true,
+  "realSubmissionStatus": "rd_success_callback_observed",
+  "crmReceipt": "not_checked",
+  "realTestCompletedAt": "2026-10-21T15:53:31.352971+00:00",
+  "realTestName": "Teste do novo site — desconsiderar",
+  "successfulSubmissions": 1,
+  "localPhoneValidationObserved": true,
+  "successVisible": true,
+  "rdComplete": "true",
+  "whatsAppLiveSubmission": "not_performed_to_avoid_duplicate_test_lead"
+}

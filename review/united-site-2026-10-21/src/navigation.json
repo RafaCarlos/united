@@ -1,0 +1,1101 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "key": "live",
+      "prefix": ""
+    },
+    {
+      "file": "business/index.html",
+      "key": "business",
+      "prefix": "../"
+    },
+    {
+      "file": "full/index.html",
+      "key": "full",
+      "prefix": "../"
+    },
+    {
+      "file": "quem-somos/index.html",
+      "key": "about",
+      "prefix": "../"
+    },
+    {
+      "file": "home/index.html",
+      "key": "home",
+      "prefix": "../"
+    },
+    {
+      "file": "faq/index.html",
+      "key": "faq",
+      "prefix": "../"
+    },
+    {
+      "file": "blog/index.html",
+      "key": "blog",
+      "prefix": "../"
+    },
+    {
+      "file": "blog/pagina/2/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/3/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/4/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/5/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/6/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/7/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/8/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/9/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/10/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/11/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/12/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/13/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/14/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/15/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/16/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/17/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/18/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/19/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/20/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/pagina/21/index.html",
+      "key": "blog",
+      "prefix": "../../../"
+    },
+    {
+      "file": "blog/united-valor-o-globo-live-class-2/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/united-ingles-online-aulas-ao-vivo-tecnologia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-reunioes/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-estudar-trabalhar-exterior/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-eventos-internacionais/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-viajar-europa-outono/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ia-aprender-ingles-habilidades-humanas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/aprender-ingles-sozinho-ou-com-professor/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/imersao-ingles-em-casa/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/vocabulario-ingles-viagem/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/rotina-ingles-ia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-viajar-europa/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/aumentar-vocabulario-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/diferencas-ingles-paises/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ia-aprender-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/tempos-verbais-ingles-2/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-viagens-internacionais/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-profissional-trabalho/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dificuldades-gramatica-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-conversacao-profissional/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-viagem/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-fluente-carreira/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/curso-ingles-corporativo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/selo-excelencia-franchising-united-idiomas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-liderar-reunioes/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-no-trabalho/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-corporativo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/curso-ingles-profissionais-ocupados/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/frases-ingles-restaurantes/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-fluente-mercado-corporativo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/curso-ingles-rotina-corrida/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/perder-nervosismo-conversar-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/adverbs-frequency/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/expressoes-e-mails/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/too-enough-very/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/pais-ideal-intercambio/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-networking/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/negociar-salario-beneficios-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-nova-zelandia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/aprenda-20-adjetivos-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/cinco-motivos-hoje-united-idiomas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/tempos-verbais-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-carreira-tecnologia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-usar-get/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-linkedin/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/treinar-ingles-intercambio/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/filmes-series-listening/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/sete-destinos-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-mudar-carreira/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/phrasal-verbs-mais-usados/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/nivel-profissional-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/soft-skills-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/e-mails-profissionais/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/o-que-sao-collocations/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/erros-gramaticais-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-americano-britanico-diferencas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/curso-united-carreiras/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/intercambio-como-se-preparar/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/comemoracao-st-patrick-day/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-ead/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conjuncoes-conectivos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/carnaval-nos-eua/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/treinar-ingles-inteligencia-artificial/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/reunioes-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/carreira-2025-united/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/will-going-to/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/natal-lingua-inglesa/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/certificados-internacionais-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/carreiras-ingles-fluente/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/thanksgiving-day-dia-especial/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/veterans-day-importancia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/verb-tenses/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/halloween-guia-completo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/palavras-frases-ingles-hoteis/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/principais-girias-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/cinco-motivos-united-idiomas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/though-thought-tough/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/intercambio-africa-do-sul/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/guia-prepositions/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/expandir-vocabulario-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/entrevista-emprego-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/remoto-presencial-united/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/treinar-ingles-series/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/importancia-independence-day/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-fluente-home-office/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/modal-verbs/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/livros-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/pratos-tipicos-canada/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/sotaques-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/intercambio-au-pair-o-que-e-e-como-funciona/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dia-das-maes-anna-jarvis/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/intercambio-o-que-e-preciso-e-como-se-preparar/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/guia-rapido-de-ingles-para-viagens/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/entenda-o-verbo-to-be/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/pos-graduacao-internacional-no-reino-unido/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conheca-5-autoras-internacionais-para-ler-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-se-preparar-para-entrevista-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/estude-ingles-na-united-e-decole-sua-carreira/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-home-office-global/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/uso-de-preposicoes-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/carnaval-nos-estados-unidos-mardi-gras/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/vocabulario-natal-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/frases-uteis-compras-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-transporte-publico/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/thanksgiving-day-curiosidades/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/origem-black-friday/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/tudo-sobre-intercambio-australia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/halloween-origem-vocabulario/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-medicos-profissionais-saude/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/intercambio-canada/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dicas-para-preparar-toefl/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/phrasal-verbs-o-que-sao/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-preparar-intercambio-irlanda/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/a-importancia-do-ingles-fluente-para-o-jornalismo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/expressoes-ingles-usar-restaurante/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conheca-esportes-americanos-vocabulario/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/termos-ingles-profissionais-rh/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/importancia-musica-aprendizado-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dicas-falar-ingles-publico/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/beneficios-aprender-ingles-infancia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/substantivos-coletivos-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dia-dos-namorados-outra-data-brasil/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/cinco-dicas-aprender-ingles-rapido/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/beneficios-intercambio-conheca/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/erros-aprendizado-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/sotaques-ingles-diferencas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-melhorar-escuta-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-funciona-cerebro-bilingue/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/saint-patricks-day-eua/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conversacao-ingles-importancia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/business-english-30-termos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/saiba-como-se-preparar-para-um-intercambio/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/vocabulario-de-ingles-para-a-area-de-marketing/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/aprenda-40-termos-financeiros-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/vocabulario-ingles-usado-no-halloween/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/voce-sabe-como-o-toefl-funciona/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/cinco-vantagens-de-estudar-ingles-online/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-economistas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/speak-talk-say-tell/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/labor-day/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ingles-para-secretaria-executiva/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dicas-para-melhorar-sua-escrita-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/saiba-como-validar-seu-diploma-nos-eua/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/independence-day/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/alone-vs-lonely-qual-a-diferenca/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/as-leis-mais-estranhas-dos-estados-unidos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/por-que-a-rainha-tem-dois-aniversarios/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/memorial-day-a-importancia-dessa-data-nos-eua/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/has-ou-have-aprenda-a-utilizar/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/save-the-date-conheca-a-origem-dessa-expressao/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/ler-em-ingles-veja-oito-livros-para-iniciar/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/confira-10-series-que-vao-melhorar-o-seu-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    },
+    {
+      "file": "blog/e-possivel-aprender-ingles-depois-de-adulto/index.html",
+      "key": "blog",
+      "prefix": "../../"
+    }
+  ],
+  "routes": {
+    "home": "home/",
+    "about": "quem-somos/",
+    "live": "./",
+    "business": "business/",
+    "full": "full/",
+    "faq": "faq/",
+    "blog": "blog/"
+  },
+  "courses": [
+    {
+      "key": "live",
+      "label": "Live Class",
+      "description": "Inglês online e ao vivo"
+    },
+    {
+      "key": "business",
+      "label": "United Business",
+      "description": "Inglês para negócios"
+    },
+    {
+      "key": "full",
+      "label": "United Full",
+      "description": "Live Class + Business"
+    }
+  ],
+  "faq": "faq/",
+  "blog": "blog/",
+  "student": "https://liveclass.app.br",
+  "whatsapp": "https://wa.me/5511940040658",
+  "partnerships": "https://wa.me/5511958575315",
+  "headOffice": "tel:+551130782346"
+}
