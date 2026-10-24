@@ -1,0 +1,17 @@
+{
+  "scope": "Plugin PHP syntax only; does not assert runtime compatibility with every WordPress/plugin combination",
+  "method": "PHP token_get_all with TOKEN_PARSE via WordPress Playground, without executing the plugin",
+  "checks": [
+    {
+      "php": "7.4.33",
+      "files": 11,
+      "errors": []
+    },
+    {
+      "php": "8.3.33",
+      "files": 11,
+      "errors": []
+    }
+  ],
+  "pluginVersion": "1.0.2"
+}

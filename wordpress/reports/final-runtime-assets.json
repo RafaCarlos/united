@@ -1,0 +1,73 @@
+{
+  "pluginVersion": "1.0.2",
+  "environment": "Separate disposable WordPress Playground instance",
+  "assets": [
+    {
+      "path": "/wp-content/plugins/united-blog/assets/css/blog.min.css",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 22005
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/css/footer.min.css",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 4425
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/css/site-navigation.min.css",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 9484
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/css/wordpress.min.css",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 5152
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/images/logo-united.webp",
+      "version": null,
+      "status": 200,
+      "bytes": 2682
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/images/icon-menu-facebook.webp",
+      "version": null,
+      "status": 200,
+      "bytes": 180
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/images/icon-menu-instagram.webp",
+      "version": null,
+      "status": 200,
+      "bytes": 224
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/images/icon-menu-linkedin.webp",
+      "version": null,
+      "status": 200,
+      "bytes": 224
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/images/blog-default.webp",
+      "version": null,
+      "status": 200,
+      "bytes": 38110
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/js/site-navigation.min.js",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 1153
+    },
+    {
+      "path": "/wp-content/plugins/united-blog/assets/js/wordpress.min.js",
+      "version": "1.0.2",
+      "status": 200,
+      "bytes": 1406
+    }
+  ],
+  "externalFormsSubmitted": 0
+}

@@ -1,0 +1,61 @@
+{
+  "wordpress": "7.1.3",
+  "php": "8.3.33",
+  "environment": "Disposable local WordPress Playground, SQLite; not production Divi",
+  "checks": [
+    {
+      "name": "Installation preserves current presentation until enabled",
+      "passed": true
+    },
+    {
+      "name": "Anonymous preview parameter does not enable the layout",
+      "passed": true
+    },
+    {
+      "name": "Authenticated admin preview renders new layout with noindex and no-cache",
+      "passed": true
+    },
+    {
+      "name": "Published native posts render without duplication across featured and grid",
+      "passed": true
+    },
+    {
+      "name": "Native pagination, category and full-text search work without JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Article content, unique table-of-contents IDs and one H1",
+      "passed": true
+    },
+    {
+      "name": "Password, private and draft content stay protected; REST/feed and pages keep WP routing",
+      "passed": true
+    },
+    {
+      "name": "Existing content remains unchanged; importer creates only two drafts and is idempotent",
+      "passed": true
+    },
+    {
+      "name": "Importer rejects unprivileged execution and forged admin POST",
+      "passed": true
+    },
+    {
+      "name": "Core SEO fallback has a single canonical, description and Article graph",
+      "passed": true
+    },
+    {
+      "name": "Campaign parameters do not pollute canonical or Open Graph URL",
+      "passed": true
+    },
+    {
+      "name": "Repeated cover is removed or retained once with its authored caption",
+      "passed": true
+    },
+    {
+      "name": "Publishing another native post updates listing and search immediately",
+      "passed": true
+    }
+  ],
+  "externalFormsSubmitted": 0,
+  "pluginVersion": "1.0.2"
+}

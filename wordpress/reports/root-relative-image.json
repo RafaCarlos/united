@@ -1,0 +1,15 @@
+{
+  "scope": "Isolated image URL regression: origin, port, path, query and fragment",
+  "checks": [
+    {
+      "php": "7.4",
+      "passed": true,
+      "cases": 5
+    },
+    {
+      "php": "8.3",
+      "passed": true,
+      "cases": 5
+    }
+  ]
+}
