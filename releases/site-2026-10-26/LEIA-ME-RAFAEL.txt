@@ -1,0 +1,45 @@
+UNITED — ATUALIZAÇÃO DO SITE PRINCIPAL — 26/10/2026
+Pacote pronto para o Rafael publicar. Ainda não aplicado à hospedagem.
+
+O QUE MUDA
+- “Quero conhecer” volta ao vermelho #df1649, com hover #c3133f e texto branco.
+- WhatsApp mantém o verde #25d366. Menu, Área do aluno e demais elementos preservados.
+- Três imagens ganham variantes menores em WebP: painel da Home, Jimmy no Live Class e cena de negociação do Business. O navegador escolhe a resolução adequada; os originais continuam como fallback para telas de maior densidade.
+- Layout, textos, URLs, formulários e mecanismo de envio RD Station permanecem iguais.
+
+INSTALAÇÃO
+1. Confirmar o diretório que atende https://www.unitedidiomas.com/. Fazer backup dos sete arquivos existentes listados no MANIFEST.json. Esta entrega inclui uma cópia pública capturada em 26/10/2026 às 14h28 (São Paulo); se houve alterações depois, preservar também a versão mais recente.
+2. Subir primeiro os nove WebP e contact-form.css da pasta publicar/, respeitando os caminhos. Os diretórios home/assets, business/assets e assets são necessários mesmo com as páginas publicadas na raiz e em /cursos/.
+3. Em seguida substituir os seis index.html: raiz, cursos/live-class, cursos/business, cursos/full, quem-somos e faq. Copiar o CONTEÚDO de publicar/ para a raiz pública, não a pasta publicar/ inteira.
+4. Invalidar o cache das seis páginas e de /contact-form.css no CDN/proxy/hospedagem. O HTML passa a pedir contact-form.css?v=4b9c86645440. As novas imagens têm hash no nome.
+5. Conferir as seis URLs em desktop e celular. O botão fixo “Quero conhecer” deve ficar vermelho e abrir o formulário; WhatsApp deve seguir verde. Conferir Nome, Celular e Email, sem disparar um novo lead de teste desnecessariamente.
+
+ESCOPO DA ENTREGA
+publicar/ contém exatamente 16 arquivos: 6 HTML, 1 CSS e 9 WebP.
+Não subir rollback/, conferencia/ ou manutencao/ ao diretório público.
+Não substituir /blog/, wp-admin, wp-content, banco de dados, arquivos PHP, .htaccess, robots.txt ou sitemap. O blog WordPress publicado continua independente. Não usar uma cópia antiga completa de dist/ por cima da hospedagem.
+
+DESEMPENHO E SEO CONFERIDOS
+Na amostra pública de cinco páginas principais, 201 recursos responderam HTTP 200; 166 eram WebP, além de dois GIF pequenos legados e um SVG. As fotos renderizadas dessa amostra não usavam JPG/PNG. Ícones e imagens de compartilhamento podem manter outros formatos por compatibilidade.
+HTML e os 29 CSS/JS consultados foram entregues com gzip. As imagens verificadas têm dimensões declaradas, os heróis mantêm prioridade e os vídeos permanecem com preload="none".
+As nove variantes economizam de 20,7% a 76,5% em relação ao arquivo original quando selecionadas. A economia total da página varia por resolução/densidade e imagem exibida; telas maiores podem escolher o original.
+Build, 18.546 referências, validação SEO técnica e testes de interação/RD passaram. As seis páginas desta entrega não apresentaram erros ou alertas na auditoria SEO. Canonicals, indexação e dados estruturados foram preservados.
+Não foi medido PageSpeed/Lighthouse ou Core Web Vitals de usuários reais nesta revisão. Não houve alteração na configuração da hospedagem nem novo envio de lead.
+
+CACHE — AJUSTE PARA A HOSPEDAGEM
+As respostas verificadas têm compressão e sinais de cache/proxy, mas não trouxeram Cache-Control/Expires explícitos para o navegador. Rafael deve integrar a política ao servidor/CDN existente, sem substituir a configuração atual às cegas.
+- Imagens com hash no nome: cache público de até 1 ano e immutable é apropriado, desde que os arquivos sejam imutáveis e uma alteração gere outro nome.
+- Outros assets: usar prazo compatível com o versionamento e confirmar que o CDN respeita a query string; não aplicar immutable indiscriminadamente a URLs mutáveis.
+- HTML: permitir revalidação para que revisões apareçam rapidamente.
+- Não aplicar cache público a POST, respostas pessoais, login, wp-admin, formulários ou endpoints do RD Station. Preservar as regras específicas do WordPress.
+Esse ajuste de cache é uma recomendação para o responsável pela hospedagem; não está aplicado por este ZIP.
+
+REVERSÃO
+Restaurar apenas os sete arquivos de rollback/ nos mesmos caminhos e limpar seus caches. As nove imagens novas podem permanecer no servidor sem uso. O rollback não afeta WordPress, banco ou conteúdo do blog.
+
+MANUTENÇÃO NO GIT
+Base: branch codex/blog-wordpress-20261024, commit f1a32f3d0921a4750adad63767ca958b2bd4b9b3.
+O CSS vermelho já está nessa branch. As três alterações de srcset/sizes desta revisão estão em manutencao/imagens-responsivas-fonte.patch. Para incorporar em outro checkout compatível: revisar e testar git apply --check antes de aplicar; copiar também os nove WebP novos de publicar/ para os mesmos caminhos dentro de review/united-site-2026-10-21/src/. Depois executar npm run build, npm run test:site e npm run test:rd na pasta review/united-site-2026-10-21.
+O build completo contém uma versão estática histórica do blog: ela não deve substituir o WordPress em produção. Esta entrega foi selecionada para evitar essa sobreposição.
+
+Os hashes SHA-256 dos arquivos estão no MANIFEST.json. Os resultados e o inventário HTTP ficam em conferencia/.

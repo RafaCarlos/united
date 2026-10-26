@@ -1,8 +1,8 @@
 {
   "origin": "https://www.unitedidiomas.com",
   "pages": 213,
-  "files": 837,
-  "bytes": 41378369,
+  "files": 846,
+  "bytes": 41806689,
   "editorialApproval": [
     {
       "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
@@ -485,6 +485,21 @@
       "file": "assets/icon-menu-linkedin.webp",
       "bytes": 224,
       "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
+    },
+    {
+      "file": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "bytes": 29786,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "file": "assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "bytes": 40064,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "file": "assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "bytes": 71910,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
     },
     {
       "file": "assets/jimmy-united-recepcao.webp",
@@ -3612,6 +3627,21 @@
       "sha256": "799beee91c3b4c01f1f53c810645a54d9dc74684d4e5debbdfab9d29894639fa"
     },
     {
+      "file": "business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "bytes": 25236,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "file": "business/assets/business-networking-640w-27b483b92662.webp",
+      "bytes": 46398,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "file": "business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "bytes": 61058,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
+    },
+    {
       "file": "business/assets/business-networking.webp",
       "bytes": 77018,
       "sha256": "c591e82ac6d18333e2a9cc46f1be939264905313686710a21739a45b5f788d42"
@@ -3648,8 +3678,8 @@
     },
     {
       "file": "cursos/business/index.html",
-      "bytes": 41461,
-      "sha256": "c6b62da9469e11a67d242355b56ca2c95e3fa65976d0213fc16a14c30f0cfc2b"
+      "bytes": 41707,
+      "sha256": "670a247b7d238bb78a3829f0a76589ceb3abc3cbf9746fd55027a30b39de0eaa"
     },
     {
       "file": "contact-form.css",
@@ -4157,6 +4187,21 @@
       "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
     {
+      "file": "home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "bytes": 50426,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "bytes": 67642,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "file": "home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "bytes": 34736,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
       "file": "home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
       "bytes": 3542,
       "sha256": "51b7df6914f65c491522883895e2ff44a8c724476462f205b5c5544f7b77b909"
@@ -4313,8 +4358,8 @@
     },
     {
       "file": "index.html",
-      "bytes": 99230,
-      "sha256": "4148df5695bc11d324a143791239c72c2c51fdb2867ec775bcffb761c8199471"
+      "bytes": 99573,
+      "sha256": "0618dc20f7d47e81bef00ec6009e21878058267517e7f566f48e3b9053a8ebd5"
     },
     {
       "file": "home/media-runtime.js",
@@ -4333,8 +4378,8 @@
     },
     {
       "file": "cursos/live-class/index.html",
-      "bytes": 50387,
-      "sha256": "258fe4dbc4ec718e62701c13b56b0707e780f74bb7f261e93ac4ce4dc53c651c"
+      "bytes": 50862,
+      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
     },
     {
       "file": "interface-refinements.css",

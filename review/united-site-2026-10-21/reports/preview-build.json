@@ -577,6 +577,27 @@
       "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
     },
     {
+      "name": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "sourceBytes": 29786,
+      "outputBytes": 29786,
+      "gzipBytes": 29814,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "name": "assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "sourceBytes": 40064,
+      "outputBytes": 40064,
+      "gzipBytes": 40097,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "name": "assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "sourceBytes": 71910,
+      "outputBytes": 71910,
+      "gzipBytes": 71953,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
+    },
+    {
       "name": "assets/jimmy-united-recepcao.webp",
       "sourceBytes": 97132,
       "outputBytes": 97132,
@@ -4952,6 +4973,27 @@
       "sha256": "b224d84ba5a29f8491e32dd51afe5a4e93fca77df32e7afbee779eeda99cf28c"
     },
     {
+      "name": "business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "sourceBytes": 25236,
+      "outputBytes": 25236,
+      "gzipBytes": 25264,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "name": "business/assets/business-networking-640w-27b483b92662.webp",
+      "sourceBytes": 46398,
+      "outputBytes": 46398,
+      "gzipBytes": 46431,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "name": "business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "sourceBytes": 61058,
+      "outputBytes": 61058,
+      "gzipBytes": 61096,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
+    },
+    {
       "name": "business/assets/business-networking.webp",
       "sourceBytes": 77018,
       "outputBytes": 77018,
@@ -5002,10 +5044,10 @@
     },
     {
       "name": "business/index.html",
-      "sourceBytes": 41315,
-      "outputBytes": 41240,
-      "gzipBytes": 9623,
-      "sha256": "2780e369f3d9410b14853696f71dedefbe8b85a45c5bd4c57f72e6f7ac367abc"
+      "sourceBytes": 41521,
+      "outputBytes": 41446,
+      "gzipBytes": 9713,
+      "sha256": "64e051a536d3473fed05c5fcfd2fe8a49bea692dda83b1727c224112099abc17"
     },
     {
       "name": "contact-form.css",
@@ -5715,6 +5757,27 @@
       "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
     {
+      "name": "home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "sourceBytes": 50426,
+      "outputBytes": 50426,
+      "gzipBytes": 50233,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "name": "home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "sourceBytes": 67642,
+      "outputBytes": 67642,
+      "gzipBytes": 67245,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "name": "home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "sourceBytes": 34736,
+      "outputBytes": 34736,
+      "gzipBytes": 34658,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
       "name": "home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
       "sourceBytes": 3542,
       "outputBytes": 3542,
@@ -5933,10 +5996,10 @@
     },
     {
       "name": "home/index.html",
-      "sourceBytes": 98515,
-      "outputBytes": 98411,
-      "gzipBytes": 22014,
-      "sha256": "206b64fa1a8b8854c9d706c036b3d34a8369e282211a58cb1fb2f05def096666"
+      "sourceBytes": 98834,
+      "outputBytes": 98730,
+      "gzipBytes": 22094,
+      "sha256": "aab03bc73e87dc589e2600e3c7a3c2eb3e950ef4ddb3b73c3cf5b1cbf5414532"
     },
     {
       "name": "home/media-runtime.js",
@@ -5961,10 +6024,10 @@
     },
     {
       "name": "index.html",
-      "sourceBytes": 50894,
-      "outputBytes": 50008,
-      "gzipBytes": 13012,
-      "sha256": "ba023d4f0e3b1b551ebcd3bd3f1835bac67d70a18abc083735c48e7a32c520b4"
+      "sourceBytes": 51365,
+      "outputBytes": 50479,
+      "gzipBytes": 13172,
+      "sha256": "7dcea8de49309e0a9681050d25e73151346cac439d078e98ba1db511cc8a76ae"
     },
     {
       "name": "interface-refinements.css",

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "scope": "Git review payload; excludes this manifest, preview and dependencies",
-  "fileCount": 1911,
+  "fileCount": 1929,
   "files": [
     {
       "file": ".gitignore",
@@ -10,18 +10,18 @@
     },
     {
       "file": "PUBLICAR.md",
-      "bytes": 5413,
-      "sha256": "fbd1f5aca39f6776902465fdfbd95198903bb1b693a421acfdb25003024166d4"
+      "bytes": 6568,
+      "sha256": "bc5f97b3782fddfeffde983f8c5702a1377cbc2e3c7cda9b6bcc824871db22b6"
     },
     {
       "file": "README.md",
-      "bytes": 8604,
-      "sha256": "76497a743136f0276c9cc92e6376eda42fd18e04420710e8b114f10e1fa34b60"
+      "bytes": 7922,
+      "sha256": "eb185fb07eac6fc6b7d633f82086b3c970dd234c8e47e331d82cad6c75d2348e"
     },
     {
       "file": "dist/.united-release.json",
-      "bytes": 43004,
-      "sha256": "bc8a7bd59b01bf7638b335e68e86e678be47aa62fcf46d6c4dac4b8920a19432"
+      "bytes": 43564,
+      "sha256": "224777bc7446349ef5cb7ae0e87dbad9ba6fecf2ae0527aa2362b3601c689c58"
     },
     {
       "file": "dist/app.js",
@@ -287,6 +287,21 @@
       "file": "dist/assets/icon-menu-linkedin.webp",
       "bytes": 224,
       "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
+    },
+    {
+      "file": "dist/assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "bytes": 29786,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "file": "dist/assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "bytes": 40064,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "file": "dist/assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "bytes": 71910,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
     },
     {
       "file": "dist/assets/jimmy-united-recepcao.webp",
@@ -3404,6 +3419,21 @@
       "sha256": "799beee91c3b4c01f1f53c810645a54d9dc74684d4e5debbdfab9d29894639fa"
     },
     {
+      "file": "dist/business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "bytes": 25236,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "file": "dist/business/assets/business-networking-640w-27b483b92662.webp",
+      "bytes": 46398,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "file": "dist/business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "bytes": 61058,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
+    },
+    {
       "file": "dist/business/assets/business-networking.webp",
       "bytes": 77018,
       "sha256": "c591e82ac6d18333e2a9cc46f1be939264905313686710a21739a45b5f788d42"
@@ -3450,8 +3480,8 @@
     },
     {
       "file": "dist/cursos/business/index.html",
-      "bytes": 41461,
-      "sha256": "c6b62da9469e11a67d242355b56ca2c95e3fa65976d0213fc16a14c30f0cfc2b"
+      "bytes": 41707,
+      "sha256": "670a247b7d238bb78a3829f0a76589ceb3abc3cbf9746fd55027a30b39de0eaa"
     },
     {
       "file": "dist/cursos/full/index.html",
@@ -3460,8 +3490,8 @@
     },
     {
       "file": "dist/cursos/live-class/index.html",
-      "bytes": 50387,
-      "sha256": "258fe4dbc4ec718e62701c13b56b0707e780f74bb7f261e93ac4ce4dc53c651c"
+      "bytes": 50862,
+      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
     },
     {
       "file": "dist/desktop-refinements.css",
@@ -3954,6 +3984,21 @@
       "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
     {
+      "file": "dist/home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "bytes": 50426,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "file": "dist/home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "bytes": 67642,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "file": "dist/home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "bytes": 34736,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
       "file": "dist/home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
       "bytes": 3542,
       "sha256": "51b7df6914f65c491522883895e2ff44a8c724476462f205b5c5544f7b77b909"
@@ -4125,8 +4170,8 @@
     },
     {
       "file": "dist/index.html",
-      "bytes": 99230,
-      "sha256": "4148df5695bc11d324a143791239c72c2c51fdb2867ec775bcffb761c8199471"
+      "bytes": 99573,
+      "sha256": "0618dc20f7d47e81bef00ec6009e21878058267517e7f566f48e3b9053a8ebd5"
     },
     {
       "file": "dist/interface-refinements.css",
@@ -4270,13 +4315,13 @@
     },
     {
       "file": "reports/preview-build.json",
-      "bytes": 216093,
-      "sha256": "f9e4717ebf5dc76e95bf9f477175417274d583777bdb1fe5423d1188747b1695"
+      "bytes": 218390,
+      "sha256": "47aeea62ffd84cfadb3dd5bdbaa3d4e2579ad027b1f017c8b5712b2fcd26c0d7"
     },
     {
       "file": "reports/production-build.json",
-      "bytes": 175045,
-      "sha256": "2a57938a110cef2001ca4df09144a3cd51d6fb5c6a28b44d7bcc06420bd299b1"
+      "bytes": 176802,
+      "sha256": "caff8dc9a223b74ec3d33e030c0dac1f2fc4320d92e6898b3dff98c4152a1d6b"
     },
     {
       "file": "reports/rd-integration.json",
@@ -4291,17 +4336,17 @@
     {
       "file": "reports/seo-preview.json",
       "bytes": 242058,
-      "sha256": "c5d438e5eb7dcfa2e297ff0f0764ec365bfe9a1fcb4c6fe82d1a890241a1b884"
+      "sha256": "e795942b616c1c54b5f7742571caa777b8429ba8a4ddc97079d8766ac7cbcadb"
     },
     {
       "file": "reports/seo-production.json",
       "bytes": 246345,
-      "sha256": "bd17836619d2311db388c25a457e185eb013a80cbc1fad97e721dd726721d6a1"
+      "sha256": "723cbb4aff8234daa418ff6ad269ae6b7035d5257a087c3d29c848292dd94673"
     },
     {
       "file": "reports/validation.json",
       "bytes": 756,
-      "sha256": "f9bb85506d567ea8cdf8e91e6abed49399aefdc86df9db96d6efa566c9adbcbb"
+      "sha256": "7e164b094a696dec63f604c4d17c4f2e8627bc0b8179ea2b96606d5cbd84e422"
     },
     {
       "file": "src/app.js",
@@ -4567,6 +4612,21 @@
       "file": "src/assets/icon-menu-linkedin.webp",
       "bytes": 224,
       "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
+    },
+    {
+      "file": "src/assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "bytes": 29786,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "file": "src/assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "bytes": 40064,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "file": "src/assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "bytes": 71910,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
     },
     {
       "file": "src/assets/jimmy-united-recepcao.webp",
@@ -8629,6 +8689,21 @@
       "sha256": "e4146ca9191d85832c7962140f1b801d27456b9538a221a4b1ad7123a52b4b04"
     },
     {
+      "file": "src/business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "bytes": 25236,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "file": "src/business/assets/business-networking-640w-27b483b92662.webp",
+      "bytes": 46398,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "file": "src/business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "bytes": 61058,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
+    },
+    {
       "file": "src/business/assets/business-networking.webp",
       "bytes": 77018,
       "sha256": "c591e82ac6d18333e2a9cc46f1be939264905313686710a21739a45b5f788d42"
@@ -8665,8 +8740,8 @@
     },
     {
       "file": "src/business/index.html",
-      "bytes": 41315,
-      "sha256": "7fe4e2675aadaf849e0a3205d9b9da44f9975c29bcdde64bd6e129500fee5cf4"
+      "bytes": 41521,
+      "sha256": "42100b1773efa0c7c414bfa9629561641f561e83cbe32af7cc507f139924bd92"
     },
     {
       "file": "src/contact-form.css",
@@ -9179,6 +9254,21 @@
       "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
     {
+      "file": "src/home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "bytes": 50426,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "file": "src/home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "bytes": 67642,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "file": "src/home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "bytes": 34736,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
       "file": "src/home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
       "bytes": 3542,
       "sha256": "51b7df6914f65c491522883895e2ff44a8c724476462f205b5c5544f7b77b909"
@@ -9335,8 +9425,8 @@
     },
     {
       "file": "src/home/index.html",
-      "bytes": 98515,
-      "sha256": "2449b99655a60f95930dcb4ce68153bcd96435fffbe3dfd06567a96dbe90fe1a"
+      "bytes": 98834,
+      "sha256": "18ffebdceef61fc23e7992a19c2a1825d6fd0a29b7e33d3c999d079afa6717ea"
     },
     {
       "file": "src/home/media-runtime.js",
@@ -9355,8 +9445,8 @@
     },
     {
       "file": "src/index.html",
-      "bytes": 50894,
-      "sha256": "d37c401f24183930f3386652f551cd5f6cf56dbab8c3f35751e5c05d216e53d0"
+      "bytes": 51365,
+      "sha256": "a1b3404cceb47d6603d42eced01be4e806eecafe7712093113dacbb86fae6de5"
     },
     {
       "file": "src/interface-refinements.css",

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "pagesInThisDelivery": [
+    "index.html",
+    "cursos/live-class/index.html",
+    "cursos/business/index.html",
+    "cursos/full/index.html",
+    "quem-somos/index.html",
+    "faq/index.html"
+  ],
+  "errors": [],
+  "warnings": [],
+  "note": "Auditoria técnica estática. Não é nota de PageSpeed nem garantia de ranking. O blog WordPress está fora desta entrega."
+}

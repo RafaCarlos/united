@@ -1,0 +1,190 @@
+{
+  "checks": [
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/cursos/full/",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/quem-somos/",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/faq/",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "viewport": [
+        1280,
+        800
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/cursos/live-class/",
+      "viewport": [
+        1280,
+        800
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/cursos/business/",
+      "viewport": [
+        1280,
+        800
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/cursos/full/",
+      "viewport": [
+        1280,
+        800
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/quem-somos/",
+      "viewport": [
+        1280,
+        800
+      ]
+    },
+    {
+      "cta": [
+        {
+          "color": "rgb(37, 211, 102)",
+          "text": ""
+        },
+        {
+          "color": "rgb(223, 22, 73)",
+          "text": "Quero conhecer"
+        }
+      ],
+      "overflow": false,
+      "path": "/faq/",
+      "viewport": [
+        1280,
+        800
+      ]
+    }
+  ],
+  "additionalMobileChecks": {
+    "routes": [
+      "/",
+      "/cursos/live-class/",
+      "/cursos/business/"
+    ],
+    "viewport": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false,
+    "ctaColor": "#df1649"
+  },
+  "contact": {
+    "opened": true,
+    "closed": true,
+    "fields": [
+      "Nome",
+      "Celular",
+      "Email"
+    ],
+    "leadsSubmitted": 0
+  },
+  "businessImage": {
+    "selected": "business-networking-400w-164f78d7f3f6.webp",
+    "loaded": true,
+    "renderedWidth": 348
+  }
+}
