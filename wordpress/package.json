@@ -1,0 +1,23 @@
+{
+  "name": "united-blog-wordpress-integration",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "description": "Asset build and disposable WordPress integration tests for the UNITED blog plugin",
+  "scripts": {
+    "build:assets": "node tools/build-assets.mjs",
+    "test:server": "node tests/playground-server.mjs",
+    "test": "node tests/integration.mjs",
+    "test:image-urls": "node tests/root-relative-image.mjs",
+    "lint:php": "node tests/lint-php.mjs 7.4",
+    "lint:php:current": "node tests/lint-php.mjs 8.3"
+  },
+  "engines": {
+    "node": ">=24.18.0"
+  },
+  "devDependencies": {
+    "@wp-playground/cli": "3.1.60",
+    "clean-css": "5.3.3",
+    "terser": "5.51.2"
+  }
+}

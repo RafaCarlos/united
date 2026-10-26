@@ -1,0 +1,36 @@
+{
+  "build": "passed",
+  "validation": "213 pages / 18546 references / 0 errors",
+  "test:site": "passed",
+  "test:rd": "passed",
+  "leadsSubmittedThisRevision": 0,
+  "runtimeTestMethod": "jsdom local fixtures, zero external requests",
+  "visualCheck": "CUA browser, 390x844 and 1280x800, six commercial routes, CTA #df1649, no horizontal overflow",
+  "contact": "Home dialog opened/closed with Nome, Celular, Email; no new lead sent",
+  "scopeComparisonAgainstPublicBackup": [
+    {
+      "page": "index.html",
+      "onlyExpectedChanges": true
+    },
+    {
+      "page": "cursos/live-class/index.html",
+      "onlyExpectedChanges": true
+    },
+    {
+      "page": "cursos/business/index.html",
+      "onlyExpectedChanges": true
+    },
+    {
+      "page": "cursos/full/index.html",
+      "onlyExpectedChanges": true
+    },
+    {
+      "page": "quem-somos/index.html",
+      "onlyExpectedChanges": true
+    },
+    {
+      "page": "faq/index.html",
+      "onlyExpectedChanges": true
+    }
+  ]
+}

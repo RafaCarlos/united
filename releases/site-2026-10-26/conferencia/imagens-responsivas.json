@@ -1,0 +1,200 @@
+{
+  "method": "Pillow Lanczos resize, WebP quality=88 method=6 exact=True; originals unchanged",
+  "images": [
+    {
+      "page": "home/index.html",
+      "original": "home/assets/images/bg-united-video.webp",
+      "src": "assets/images/bg-united-video.webp?v=3",
+      "output": "home/assets/images/responsive",
+      "widths": [
+        960,
+        1280,
+        1600
+      ],
+      "sizes": "(max-width: 1024px) 1px, min(93vw, 1785px)",
+      "originalBytes": 148032,
+      "originalDimensions": [
+        1785,
+        1514
+      ],
+      "originalMode": "RGBA",
+      "originalSHA256": "b737cae8ee5b1f0874371a566cb68823a96bfb286aa4ed393867eba7eaf23231",
+      "variants": [
+        {
+          "path": "home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+          "dimensions": [
+            960,
+            814
+          ],
+          "bytes": 34736,
+          "savingBytes": 113296,
+          "savingPercent": 76.5,
+          "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 41.34
+        },
+        {
+          "path": "home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+          "dimensions": [
+            1280,
+            1086
+          ],
+          "bytes": 50426,
+          "savingBytes": 97606,
+          "savingPercent": 65.9,
+          "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 42.3
+        },
+        {
+          "path": "home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+          "dimensions": [
+            1600,
+            1357
+          ],
+          "bytes": 67642,
+          "savingBytes": 80390,
+          "savingPercent": 54.3,
+          "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 42.88
+        }
+      ],
+      "srcset": "assets/images/responsive/bg-united-video-960w-c287430eac05.webp 960w, assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp 1280w, assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp 1600w, assets/images/bg-united-video.webp?v=3 1785w",
+      "originalTag": "<img src=\"assets/images/bg-united-video.webp?v=3\" alt=\"\" loading=\"lazy\" decoding=\"async\" width=\"1785\" height=\"1514\">",
+      "updatedTag": "<img src=\"assets/images/bg-united-video.webp?v=3\" alt=\"\" loading=\"lazy\" decoding=\"async\" width=\"1785\" height=\"1514\" sizes=\"(max-width: 1024px) 1px, min(93vw, 1785px)\" srcset=\"assets/images/responsive/bg-united-video-960w-c287430eac05.webp 960w, assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp 1280w, assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp 1600w, assets/images/bg-united-video.webp?v=3 1785w\">",
+      "pageBeforeSHA256": "2449b99655a60f95930dcb4ce68153bcd96435fffbe3dfd06567a96dbe90fe1a",
+      "pageAfterSHA256": "18ffebdceef61fc23e7992a19c2a1825d6fd0a29b7e33d3c999d079afa6717ea"
+    },
+    {
+      "page": "index.html",
+      "original": "assets/jimmy-united-recepcao.webp",
+      "src": "assets/jimmy-united-recepcao.webp",
+      "output": "assets",
+      "widths": [
+        320,
+        400,
+        640
+      ],
+      "sizes": "(max-width: 390px) max(287px, calc(100vw - 32px)), (max-width: 780px) min(370px, calc(100vw - 40px)), (max-width: 1100px) and (max-height: 820px) 311px, (max-width: 1100px) min(333px, calc(47.5vw - 43.7px)), (max-height: 820px) 327px, 350px",
+      "originalBytes": 97132,
+      "originalDimensions": [
+        800,
+        1423
+      ],
+      "originalMode": "RGB",
+      "originalSHA256": "1269450df8e74a4a42f2269d109069e5255cf8866b9ca3a5e77675d259a74d9b",
+      "variants": [
+        {
+          "path": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+          "dimensions": [
+            320,
+            569
+          ],
+          "bytes": 29786,
+          "savingBytes": 67346,
+          "savingPercent": 69.3,
+          "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 38.43
+        },
+        {
+          "path": "assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+          "dimensions": [
+            400,
+            712
+          ],
+          "bytes": 40064,
+          "savingBytes": 57068,
+          "savingPercent": 58.8,
+          "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 39.24
+        },
+        {
+          "path": "assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+          "dimensions": [
+            640,
+            1138
+          ],
+          "bytes": 71910,
+          "savingBytes": 25222,
+          "savingPercent": 26,
+          "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 41.24
+        }
+      ],
+      "srcset": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp 320w, assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp 400w, assets/jimmy-united-recepcao-640w-e12e22f557e2.webp 640w, assets/jimmy-united-recepcao.webp 800w",
+      "originalTag": "<img src=\"assets/jimmy-united-recepcao.webp\" width=\"800\" height=\"1423\" loading=\"lazy\" alt=\"Jimmy na recepção United, parceiro de conversação em inglês com inteligência artificial\">",
+      "updatedTag": "<img src=\"assets/jimmy-united-recepcao.webp\" width=\"800\" height=\"1423\" loading=\"lazy\" alt=\"Jimmy na recepção United, parceiro de conversação em inglês com inteligência artificial\" sizes=\"(max-width: 390px) max(287px, calc(100vw - 32px)), (max-width: 780px) min(370px, calc(100vw - 40px)), (max-width: 1100px) and (max-height: 820px) 311px, (max-width: 1100px) min(333px, calc(47.5vw - 43.7px)), (max-height: 820px) 327px, 350px\" srcset=\"assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp 320w, assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp 400w, assets/jimmy-united-recepcao-640w-e12e22f557e2.webp 640w, assets/jimmy-united-recepcao.webp 800w\">",
+      "pageBeforeSHA256": "d37c401f24183930f3386652f551cd5f6cf56dbab8c3f35751e5c05d216e53d0",
+      "pageAfterSHA256": "a1b3404cceb47d6603d42eced01be4e806eecafe7712093113dacbb86fae6de5"
+    },
+    {
+      "page": "business/index.html",
+      "original": "business/assets/business-networking.webp",
+      "src": "assets/business-networking.webp?v=1",
+      "output": "business/assets",
+      "widths": [
+        400,
+        640,
+        800
+      ],
+      "sizes": "(max-width: 780px) max(353px, calc(100vw - 42px)), 1000px",
+      "originalBytes": 77018,
+      "originalDimensions": [
+        1000,
+        667
+      ],
+      "originalMode": "RGB",
+      "originalSHA256": "c591e82ac6d18333e2a9cc46f1be939264905313686710a21739a45b5f788d42",
+      "variants": [
+        {
+          "path": "business/assets/business-networking-400w-164f78d7f3f6.webp",
+          "dimensions": [
+            400,
+            267
+          ],
+          "bytes": 25236,
+          "savingBytes": 51782,
+          "savingPercent": 67.2,
+          "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 38.3
+        },
+        {
+          "path": "business/assets/business-networking-640w-27b483b92662.webp",
+          "dimensions": [
+            640,
+            427
+          ],
+          "bytes": 46398,
+          "savingBytes": 30620,
+          "savingPercent": 39.8,
+          "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 39.79
+        },
+        {
+          "path": "business/assets/business-networking-800w-d32e3d92edaf.webp",
+          "dimensions": [
+            800,
+            534
+          ],
+          "bytes": 61058,
+          "savingBytes": 15960,
+          "savingPercent": 20.7,
+          "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47",
+          "alphaPreserved": true,
+          "psnrVersusResizedOriginalDb": 40.35
+        }
+      ],
+      "srcset": "assets/business-networking-400w-164f78d7f3f6.webp 400w, assets/business-networking-640w-27b483b92662.webp 640w, assets/business-networking-800w-d32e3d92edaf.webp 800w, assets/business-networking.webp?v=1 1000w",
+      "originalTag": "<img src=\"assets/business-networking.webp?v=1\" width=\"1000\" height=\"667\" sizes=\"(max-width: 780px) calc(100vw - 40px), (max-width: 1240px) 42vw, 487px\" loading=\"lazy\" decoding=\"async\" alt=\"Cena ilustrativa de profissionais conversando sobre uma proposta de negócios\">",
+      "updatedTag": "<img src=\"assets/business-networking.webp?v=1\" width=\"1000\" height=\"667\" sizes=\"(max-width: 780px) max(353px, calc(100vw - 42px)), 1000px\" loading=\"lazy\" decoding=\"async\" alt=\"Cena ilustrativa de profissionais conversando sobre uma proposta de negócios\" srcset=\"assets/business-networking-400w-164f78d7f3f6.webp 400w, assets/business-networking-640w-27b483b92662.webp 640w, assets/business-networking-800w-d32e3d92edaf.webp 800w, assets/business-networking.webp?v=1 1000w\">",
+      "pageBeforeSHA256": "7fe4e2675aadaf849e0a3205d9b9da44f9975c29bcdde64bd6e129500fee5cf4",
+      "pageAfterSHA256": "42100b1773efa0c7c414bfa9629561641f561e83cbe32af7cc507f139924bd92"
+    }
+  ]
+}

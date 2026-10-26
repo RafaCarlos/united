@@ -1,0 +1,15 @@
+{
+  "pluginZip": "United-Blog-WordPress-2026-10-24.zip",
+  "bytes": 382911,
+  "sha256": "bc09f298af9b8a01afa93887662a092047f57ca4625832dd1ee1e14cf7308fcb",
+  "pluginFiles": 44,
+  "commercialSitemapUrls": [
+    "https://www.unitedidiomas.com/cursos/live-class/",
+    "https://www.unitedidiomas.com/cursos/business/",
+    "https://www.unitedidiomas.com/cursos/full/",
+    "https://www.unitedidiomas.com/quem-somos/",
+    "https://www.unitedidiomas.com/",
+    "https://www.unitedidiomas.com/faq/"
+  ],
+  "blogSitemap": "Use the existing WordPress/SEO-plugin sitemap; no static article inventory."
+}

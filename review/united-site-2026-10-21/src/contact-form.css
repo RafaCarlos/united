@@ -1,13 +1,18 @@
-/* Contact actions share the recognizable WhatsApp green across the journey. */
+/* The journey CTA retains United red; only WhatsApp uses WhatsApp green. */
 body .contact-actions .contact-launcher,
-body .floating-contact .floating-cta,
+body .floating-contact .floating-cta {
+  background:#df1649;color:#fff;
+  transition:background-color .2s ease,box-shadow .2s ease;
+}
+body .contact-actions .contact-launcher:hover,
+body .floating-contact .floating-cta:hover {
+  background:#c3133f;color:#fff;
+}
 body .floating-contact .whatsapp-float,
 body > .banner-whatsapp {
   background:#25d366;color:#0b2947;
   transition:background-color .2s ease,box-shadow .2s ease;
 }
-body .contact-actions .contact-launcher:hover,
-body .floating-contact .floating-cta:hover,
 body .floating-contact .whatsapp-float:hover,
 body > .banner-whatsapp:hover {
   background:#20bd5a;color:#0b2947;

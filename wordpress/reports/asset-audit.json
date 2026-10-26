@@ -1,0 +1,13 @@
+{
+  "pluginVersion": "1.0.2",
+  "rasterImages": 7,
+  "allBundledRasterWebP": true,
+  "imageBytes": 250404,
+  "largestImageBytes": 109532,
+  "sourceCssJsBytes": 89495,
+  "minifiedCssJsBytes": 70658,
+  "notes": [
+    "Existing WordPress uploads are preserved, not converted by this plugin.",
+    "Server cache/compression and real Core Web Vitals require production validation."
+  ]
+}

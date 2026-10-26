@@ -577,6 +577,27 @@
       "sha256": "845725cbc3918a415b8872217a8cc9a833cb2379f9814c6e9fb9174779119345"
     },
     {
+      "name": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "sourceBytes": 29786,
+      "outputBytes": 29786,
+      "gzipBytes": 29814,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "name": "assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "sourceBytes": 40064,
+      "outputBytes": 40064,
+      "gzipBytes": 40097,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "name": "assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "sourceBytes": 71910,
+      "outputBytes": 71910,
+      "gzipBytes": 71953,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
+    },
+    {
       "name": "assets/jimmy-united-recepcao.webp",
       "sourceBytes": 97132,
       "outputBytes": 97132,
@@ -713,92 +734,92 @@
       "name": "blog/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos/index.html",
       "sourceBytes": 24509,
       "outputBytes": 24645,
-      "gzipBytes": 7365,
-      "sha256": "bd76032092e0df00fb0a76daed0002b944abf4a7a8f96e4d4b865aec90865347"
+      "gzipBytes": 7360,
+      "sha256": "10ad595c2f3d8512e032b99e39e34806cc52b8bbb41785f61c933bb5c0e2f0a4"
     },
     {
       "name": "blog/5-motivos-que-fazem-o-ingles-alavancar-sua-carreira-profissional/index.html",
       "sourceBytes": 24733,
       "outputBytes": 24869,
-      "gzipBytes": 7173,
-      "sha256": "0e0ce4c34f9d190310726a0c6021d6e8090df7a14455f715d8b5a3143c6b133d"
+      "gzipBytes": 7172,
+      "sha256": "c69fb35ef3ae44cb50874b6e16bc7b6da1bd5cfb307b525384eda89ccd1628e1"
     },
     {
       "name": "blog/a-comemoracao-do-carnaval-ao-redor-do-mundo/index.html",
       "sourceBytes": 24091,
       "outputBytes": 24227,
-      "gzipBytes": 7297,
-      "sha256": "f4519acaaaecbd38ff20f64c157abb66ce1f3c12c65461c2a5f1b6158b5651ab"
+      "gzipBytes": 7298,
+      "sha256": "d50847cfb4435665273cf889a082fe9a1aef39bd31d8543fff4f1d38486e0a98"
     },
     {
       "name": "blog/a-importancia-do-ingles-fluente-para-o-jornalismo/index.html",
       "sourceBytes": 24760,
       "outputBytes": 24895,
-      "gzipBytes": 7181,
-      "sha256": "c8793cc55045218d19ca842d227c0289dc1b7743948ab8acc91c94ca8a0dfcb0"
+      "gzipBytes": 7180,
+      "sha256": "162b707a4cbbfd15c9fc546ecc8e9de41ed7c730d4861a26b9e7f3bdf33e9bfc"
     },
     {
       "name": "blog/a-importancia-do-ingles-para-a-viagem-dos-seus-sonhos/index.html",
       "sourceBytes": 24236,
       "outputBytes": 24372,
-      "gzipBytes": 6960,
-      "sha256": "42ac979809b9b22265928cd9faf774bfa181a33f9cdde4822821baef7c24a917"
+      "gzipBytes": 6959,
+      "sha256": "e71c2b5aabadad71b8c3674f6aa4012bf6a58847e86a3d9f12325acaea2a9be7"
     },
     {
       "name": "blog/adverbs-frequency/index.html",
       "sourceBytes": 24069,
       "outputBytes": 24199,
-      "gzipBytes": 7262,
-      "sha256": "41a6d7ab9c09ebf3f9dde4671204a3054fea5d681dcb8247ccbe3bc6e01dc7e9"
+      "gzipBytes": 7259,
+      "sha256": "453458a316378298bccfc2fc49727fc189c675ba6952deff6c6b3b68b3a6c692"
     },
     {
       "name": "blog/alone-vs-lonely-qual-a-diferenca/index.html",
       "sourceBytes": 22154,
       "outputBytes": 22290,
-      "gzipBytes": 6574,
-      "sha256": "21a6203c8e197bfe6d834011bb9b2d66672dcf199eaa6b65cdcacf43650f0851"
+      "gzipBytes": 6576,
+      "sha256": "828b5b3af6595c8aab8f85430c1e960e1ffce34e40479bdfe868752d7f1ff5de"
     },
     {
       "name": "blog/aprenda-20-adjetivos-ingles/index.html",
       "sourceBytes": 26003,
       "outputBytes": 26138,
-      "gzipBytes": 7595,
-      "sha256": "628b1d46ab23d98b0afc39ea0406a4f1603451c77ce16458beda7552c0a256a4"
+      "gzipBytes": 7594,
+      "sha256": "a17fb914a8c4f7ea36b1c2d5c2e1b5d1888a15b2df0e5bf50b9addc76b54c252"
     },
     {
       "name": "blog/aprenda-40-termos-financeiros-em-ingles/index.html",
       "sourceBytes": 22522,
       "outputBytes": 22658,
-      "gzipBytes": 6668,
-      "sha256": "431e6d6cdea1a01997bcc79e45ef21eb7a917ebacac09fa89b5fa25bcc4205bd"
+      "gzipBytes": 6665,
+      "sha256": "9fbb4fcb72cb6272dba873ea33b8568f23b418d3f46704a1ec937d2c82350413"
     },
     {
       "name": "blog/aprenda-ingles-e-amplie-suas-chances-na-area-internacional-de-ti/index.html",
       "sourceBytes": 24499,
       "outputBytes": 24634,
-      "gzipBytes": 7073,
-      "sha256": "7b16ba9909ab20fc64dfcabb36bbd0cc25bb6607a992bfbb98e5b295597182af"
+      "gzipBytes": 7071,
+      "sha256": "ad1f8b0263880373a4e0a0ae94c5ff70230d37b09c0dd0f0461ebe192c712d79"
     },
     {
       "name": "blog/aprender-ingles-sozinho-ou-com-professor/index.html",
       "sourceBytes": 26391,
       "outputBytes": 26520,
       "gzipBytes": 7467,
-      "sha256": "49ce851e01a3a013cb23432081bb71649402edf5923cd2a3938447f51f05cc9a"
+      "sha256": "05471461b3f647b3b74f43dfdbb5767c2c211c6c194733ef2f240b0747006cc0"
     },
     {
       "name": "blog/as-leis-mais-estranhas-dos-estados-unidos/index.html",
       "sourceBytes": 23721,
       "outputBytes": 23857,
-      "gzipBytes": 6934,
-      "sha256": "2a79264f8ee74729434433e247ea57bcc5e763a3c6dc2efe38655ba1c59b817b"
+      "gzipBytes": 6935,
+      "sha256": "d27e43ebd31909dd16dd2aa3fdcae1ed40d45c43ef4a320c56607ef9072a86be"
     },
     {
       "name": "blog/as-seis-lendas-urbanas-mais-conhecidas-dos-estados-unidos/index.html",
       "sourceBytes": 25383,
       "outputBytes": 25519,
-      "gzipBytes": 7351,
-      "sha256": "9ac5d782ad4236d3960864b6fc9994e8aeedafbabd8a33d6a8cf70566fa2b993"
+      "gzipBytes": 7346,
+      "sha256": "f7fbaf120f8881723bfe2487f44906bf635113dbcf8707ae311d8c4bb341a695"
     },
     {
       "name": "blog/assets/10-costumes-brasileiros-que-estrangeiros-acham-esquisitos-640.webp",
@@ -3576,29 +3597,29 @@
       "name": "blog/aumentar-vocabulario-ingles/index.html",
       "sourceBytes": 27088,
       "outputBytes": 27218,
-      "gzipBytes": 7892,
-      "sha256": "de018f51b20792e668c52aa3e6635faec3a804fb3d4afc7b6a39c235ece8f4ce"
+      "gzipBytes": 7889,
+      "sha256": "aae197cef2ca8866ca31dbe094f3155dfde0d3cd78b11aeeaf9fba83c4712feb"
     },
     {
       "name": "blog/batalha-do-boyne-saiba-mais-sobre-esse-feriado/index.html",
       "sourceBytes": 23790,
       "outputBytes": 23926,
-      "gzipBytes": 6999,
-      "sha256": "a0268d77f839dae95beddc417d0884887f14b38f0e9bd03d4746f3dbb6efde9b"
+      "gzipBytes": 6998,
+      "sha256": "fb078ce2f332794b2fc6e15b39a76519fae447c3d923ed201fed564909c947a5"
     },
     {
       "name": "blog/beneficios-aprender-ingles-infancia/index.html",
       "sourceBytes": 24743,
       "outputBytes": 24877,
-      "gzipBytes": 7220,
-      "sha256": "371e31e6e76a01d42a2cdf0878741cd037f419b8f2c6aeb8b83dcf29f7ba80d1"
+      "gzipBytes": 7218,
+      "sha256": "7bc6c3bf57d751a347fb51a5f9ee7bd4cad70d45cb5e2eebc11881b788185caf"
     },
     {
       "name": "blog/beneficios-intercambio-conheca/index.html",
       "sourceBytes": 24109,
       "outputBytes": 24244,
-      "gzipBytes": 7099,
-      "sha256": "ba91e3650464ed444a20887879c6c36f8290006c0203e8e19ec1379375fb82f1"
+      "gzipBytes": 7098,
+      "sha256": "035b7156a84b75fba64c94d97b1dfb50b7f5277373dcf83772f747c6bb5f755d"
     },
     {
       "name": "blog/blog.css",
@@ -3618,1079 +3639,1079 @@
       "name": "blog/brasil-ocupa-a-58a-posicao-entre-111-paises-avaliados-em-dominio-do-ingles/index.html",
       "sourceBytes": 24418,
       "outputBytes": 24554,
-      "gzipBytes": 7012,
-      "sha256": "1eb88d7487684ce0fd48d5f8e1168b2107ca5e2c930b062900c73aaf915cfb3e"
+      "gzipBytes": 7011,
+      "sha256": "d590c5262360211267d574542d6ef4a05e160e86b50b05b54478bfdb0a0e6380"
     },
     {
       "name": "blog/business-english-30-termos/index.html",
       "sourceBytes": 24109,
       "outputBytes": 24245,
-      "gzipBytes": 7167,
-      "sha256": "13a025d264b7ccda1b7f613cbb92467ed327646081e153bd5a5222a991979206"
+      "gzipBytes": 7166,
+      "sha256": "007b4ff40a5329850addd581001f83808d7bed715413de7a78f523bc0da0eb4b"
     },
     {
       "name": "blog/carnaval-nos-estados-unidos-mardi-gras/index.html",
       "sourceBytes": 26791,
       "outputBytes": 26927,
-      "gzipBytes": 7934,
-      "sha256": "75ba4c8843a9471a0f2a2deb0ad025dc57c77d7fd666f4f4d6f293757250ce6f"
+      "gzipBytes": 7931,
+      "sha256": "cc0ad7f2fb441e8f1d713e37bfe51bd608fd82683bb9aabdbee04d0fdfaaa579"
     },
     {
       "name": "blog/carnaval-nos-eua/index.html",
       "sourceBytes": 23383,
       "outputBytes": 23517,
-      "gzipBytes": 7092,
-      "sha256": "52d68f807d11323fad17cab91ce8ed510ccddc684be527d41773813c4da6d00f"
+      "gzipBytes": 7093,
+      "sha256": "40da24fda85bb1fb21ea5efc9aacae5bc0d17a7b1fda30f993beac605bc88e67"
     },
     {
       "name": "blog/carreira-2025-united/index.html",
       "sourceBytes": 23847,
       "outputBytes": 23980,
-      "gzipBytes": 7046,
-      "sha256": "32f89b0ab7f124cdc1164b24231c02e27cfb706f9132a3c3508276f73d2e3a39"
+      "gzipBytes": 7044,
+      "sha256": "7bbde5110f432a1f9e4af86855fbe95ee3c949e1c2e2ac2a395a62de591278cd"
     },
     {
       "name": "blog/carreiras-ingles-fluente/index.html",
       "sourceBytes": 24568,
       "outputBytes": 24702,
-      "gzipBytes": 7172,
-      "sha256": "d19b5d5f8360178a833df1547c79c28d7b143bbc4f6cb20eaa75ad203c4e2d67"
+      "gzipBytes": 7173,
+      "sha256": "5c764853b1f7edbeebac89fc137891b59bc3be383742a6d6408c5f4dfa1b667c"
     },
     {
       "name": "blog/certificados-internacionais-ingles/index.html",
       "sourceBytes": 25366,
       "outputBytes": 25500,
-      "gzipBytes": 7342,
-      "sha256": "cd2e25c3236e2453a5cae2625c22a5d626d6402348ff0e671b1307b3f338a7ba"
+      "gzipBytes": 7341,
+      "sha256": "6b065e27fb48a1ef7b9ce513e7f9b3ae2fe282469b5c3ad37f0cf41b041735dd"
     },
     {
       "name": "blog/cinco-dicas-aprender-ingles-rapido/index.html",
       "sourceBytes": 24084,
       "outputBytes": 24219,
-      "gzipBytes": 7093,
-      "sha256": "15d2c9bc6bd238adcfb8e215eb96fadd2a604e9a890fe3a5c4a52706c4222c90"
+      "gzipBytes": 7092,
+      "sha256": "f3e406f2781f722955e6ed120f9eccdf6fa146bebd1935da5e772b6855c06e23"
     },
     {
       "name": "blog/cinco-motivos-hoje-united-idiomas/index.html",
       "sourceBytes": 23562,
       "outputBytes": 23690,
-      "gzipBytes": 6863,
-      "sha256": "63642e942638f9167dbaa36f0cb08eb01d9f051688a27b0202a4540ef0253342"
+      "gzipBytes": 6864,
+      "sha256": "029182d95041b42c5bec243a556397a22c64aba162f94fb2a15aa6327881d82a"
     },
     {
       "name": "blog/cinco-motivos-united-idiomas/index.html",
       "sourceBytes": 24337,
       "outputBytes": 24468,
-      "gzipBytes": 7251,
-      "sha256": "bb9389b531eb6f3b74688d3ce8e63d4139d773acedf8bcca764eca2c2578da63"
+      "gzipBytes": 7249,
+      "sha256": "78aae1d24b4ae0e51f49893b205594d8005b72903375fc44b46bfe5305f62648"
     },
     {
       "name": "blog/cinco-vantagens-de-estudar-ingles-online/index.html",
       "sourceBytes": 23143,
       "outputBytes": 23279,
-      "gzipBytes": 6809,
-      "sha256": "0e53a4b47a1be68ec4e041113e6d306a1de83e8b34251602a65cd8e7b9ecb76f"
+      "gzipBytes": 6807,
+      "sha256": "f691011a2773558906dad5a47fcf65127e89a61cbda2287bd9d3ea91510ae347"
     },
     {
       "name": "blog/comece-o-ano-praticando-ingles-com-sete-dicas-para-utilizar-o-idioma-no-dia-a-dia/index.html",
       "sourceBytes": 25696,
       "outputBytes": 25831,
-      "gzipBytes": 7337,
-      "sha256": "65ae989c2e77a72b0f26e159f6a7319c15d7553ccf46028b607183d485851d22"
+      "gzipBytes": 7336,
+      "sha256": "d91d8c991e956a4dba8a0fd3cf7449f718fbf69c5e91d36054943928f8277803"
     },
     {
       "name": "blog/comemoracao-st-patrick-day/index.html",
       "sourceBytes": 24187,
       "outputBytes": 24318,
-      "gzipBytes": 7230,
-      "sha256": "bd2c7806f5e582f7ab07bd0857c2da57b5d320931b930e0eed6b733fb000193d"
+      "gzipBytes": 7229,
+      "sha256": "100cd69aa5bc7b6762c225f36930e0034e10a01caa871fd5833b1ae4c75ab814"
     },
     {
       "name": "blog/como-a-tecnologia-pode-te-ajudar-a-aprender-ingles/index.html",
       "sourceBytes": 23101,
       "outputBytes": 23237,
-      "gzipBytes": 6649,
-      "sha256": "0707afa7f995e5b2d08ee4155868833160612d6c1f1c20e3e521c884dc30ebcf"
+      "gzipBytes": 6651,
+      "sha256": "5b458b24a84febfef7c2355533e2ce192ce8dff458ef7c1fcad11d6d3e5ac428"
     },
     {
       "name": "blog/como-e-comemorada-a-pascoa-nos-eua-e-inglaterra/index.html",
       "sourceBytes": 23962,
       "outputBytes": 24098,
-      "gzipBytes": 7063,
-      "sha256": "e0f3266dd99c51055ab9955eddd3d18249df1098d21d1b36eac38fb3e301d93c"
+      "gzipBytes": 7061,
+      "sha256": "8369d01daa40300c5541c1cefba3910c72a95d16d237f7d57e2fc38c59fb8106"
     },
     {
       "name": "blog/como-funciona-cerebro-bilingue/index.html",
       "sourceBytes": 24136,
       "outputBytes": 24272,
-      "gzipBytes": 7173,
-      "sha256": "ba17b5c3cc02efdb5acd56ad28d01a1fc6cd77cdf08113050f61870b07b89cad"
+      "gzipBytes": 7175,
+      "sha256": "903fea8d13b03bb271333a868962a5e44fbc97618af8d3e648308bd7b6794549"
     },
     {
       "name": "blog/como-melhorar-escuta-ingles/index.html",
       "sourceBytes": 24315,
       "outputBytes": 24451,
-      "gzipBytes": 7169,
-      "sha256": "7ffb0425d9aa5330c99be59f72cf7a628c4184d8b3fee033a47e5bea92b1d5ad"
+      "gzipBytes": 7167,
+      "sha256": "0ca25f2726fdf1bd929b7860cbae510ca3c0d93178fc8d4359a220821709fb00"
     },
     {
       "name": "blog/como-preparar-intercambio-irlanda/index.html",
       "sourceBytes": 24505,
       "outputBytes": 24637,
-      "gzipBytes": 7435,
-      "sha256": "c090f489369871e13651222ae37943ca8272151a8624693c1212ae033de5986f"
+      "gzipBytes": 7434,
+      "sha256": "1f509ce4eca0d9d700e63b80e7c9afbd49086fe0d8e6873aa6c7c754b5704698"
     },
     {
       "name": "blog/como-se-preparar-para-entrevista-em-ingles/index.html",
       "sourceBytes": 24800,
       "outputBytes": 24934,
-      "gzipBytes": 7169,
-      "sha256": "a98bd5e5f8b52a6ec5074e8fc1396f316887ff6a538ba5fd6497c2342c3d0392"
+      "gzipBytes": 7168,
+      "sha256": "f4b84206975b86267ae53d849a68624eab12b3c928a58626b4e0b371586fb69e"
     },
     {
       "name": "blog/como-se-preparar-para-uma-entrevista-de-emprego-em-ingles/index.html",
       "sourceBytes": 26187,
       "outputBytes": 26323,
-      "gzipBytes": 7468,
-      "sha256": "228ff4ea4f44abb6bc763f040b8f7cd09c4baf737c7402bccdeec8ba2cf3c5de"
+      "gzipBytes": 7467,
+      "sha256": "7031eccfb2693570cabb679676e4d6f28153d0a4d03dd0bd624c5cf29d2ce4f8"
     },
     {
       "name": "blog/como-usar-get/index.html",
       "sourceBytes": 25313,
       "outputBytes": 25443,
-      "gzipBytes": 7538,
-      "sha256": "dcfba4340839f6caf7d959ff654d43d350f7d5a2c1cb05303ae4336d665bd096"
+      "gzipBytes": 7537,
+      "sha256": "5aae7332f025e1bfe664c15933bcddc5325bd48a1dfbc7bf1c9dc02a9a02d83b"
     },
     {
       "name": "blog/confira-10-girias-em-ingles-e-aprenda-a-usa-las/index.html",
       "sourceBytes": 23696,
       "outputBytes": 23832,
-      "gzipBytes": 7205,
-      "sha256": "951d7693e2994b922421522bcc76db29eb25b24088166ddf03cd7b9b99d74b7e"
+      "gzipBytes": 7204,
+      "sha256": "da9e216f22d8cfd9e5a9d67f1e696d79a92f421aed58cf468a5625fb7690fb8e"
     },
     {
       "name": "blog/confira-10-series-que-vao-melhorar-o-seu-ingles/index.html",
       "sourceBytes": 26401,
       "outputBytes": 26537,
-      "gzipBytes": 7785,
-      "sha256": "85136dfcb8aedc7c15b1d53c8637a8f0881534fd862958e39490389789d5fdef"
+      "gzipBytes": 7788,
+      "sha256": "abc3cad5f4f5e54f34abf26de17e86f8b32554567d2e914b972541ae19edf559"
     },
     {
       "name": "blog/confira-as-expressoes-em-ingles-mais-utilizadas-pelos-americanos/index.html",
       "sourceBytes": 24672,
       "outputBytes": 24808,
-      "gzipBytes": 7264,
-      "sha256": "2f7ed0f52da929dcf2b652d674016a0a6832e1a1ebc73b683db760d15721cbfe"
+      "gzipBytes": 7259,
+      "sha256": "14f9c70c7940cefc467cf9bc893c0c5e84f8e86cb228c1f39066928ec95d40ee"
     },
     {
       "name": "blog/confira-seis-dicas-importantes-para-falar-melhor-em-ingles/index.html",
       "sourceBytes": 24236,
       "outputBytes": 24372,
-      "gzipBytes": 7127,
-      "sha256": "34108395fffefda35a69cf03a9d0746210b751c559ab2db0bcfc86c6f493fa7d"
+      "gzipBytes": 7125,
+      "sha256": "f3390b95b12ca4f82045b4b2a542bf0576cb119744b811f38a4ee538864de9ce"
     },
     {
       "name": "blog/conheca-10-paises-que-tem-o-ingles-como-lingua-oficial/index.html",
       "sourceBytes": 24949,
       "outputBytes": 25085,
-      "gzipBytes": 7379,
-      "sha256": "d66f0ed7b9b8f8fdd79f3a17d9b3f474b102713e227612834844b4b76c87826a"
+      "gzipBytes": 7381,
+      "sha256": "b87c19d03ee9f2abc136af829c42af9f3dc6c33c6d7d8bb7023ab3a2ca94faa2"
     },
     {
       "name": "blog/conheca-5-autoras-internacionais-para-ler-em-ingles/index.html",
       "sourceBytes": 26295,
       "outputBytes": 26428,
-      "gzipBytes": 8033,
-      "sha256": "f7bdada1e5b1722875231af898fb009a31ed27b8990ffe28145f762b3ffe7e62"
+      "gzipBytes": 8032,
+      "sha256": "866541e85709008d242231eafc6cf4d8481014da5b231b39654e3eec3db428b7"
     },
     {
       "name": "blog/conheca-a-metodologia-da-united-idiomas-que-ja-formou-mais-de-100-mil-alunos/index.html",
       "sourceBytes": 24837,
       "outputBytes": 24970,
-      "gzipBytes": 6938,
-      "sha256": "22fb7bb45c88f92a03dc01034b6acb97973f9d9c38c6a0ce836fdad1abb20c82"
+      "gzipBytes": 6936,
+      "sha256": "e9f6e2402a8980caa30bff3bdff6d5f79b630d2ff73852b3dc5a7b36312b67d3"
     },
     {
       "name": "blog/conheca-esportes-americanos-vocabulario/index.html",
       "sourceBytes": 26023,
       "outputBytes": 26159,
       "gzipBytes": 7872,
-      "sha256": "adf3846a9a476d104f6228a50cb9a8ab97c1cd1bb7bf34caf0be03d2df6a057f"
+      "sha256": "be585e200c9b10d04408b3fdd4bd833edfe4ed428bb73c11d6c00c008340f606"
     },
     {
       "name": "blog/conjuncoes-conectivos/index.html",
       "sourceBytes": 23707,
       "outputBytes": 23840,
       "gzipBytes": 7143,
-      "sha256": "b9c6415703fb9049852cc0b82eff50f623fcf7a8a51628602ccd1708498936f5"
+      "sha256": "fe21ebefd044e845699f8ca0874e94a44c5df88aa5f9e09b10d78147296464b7"
     },
     {
       "name": "blog/conversacao-ingles-importancia/index.html",
       "sourceBytes": 24364,
       "outputBytes": 24499,
       "gzipBytes": 7136,
-      "sha256": "384e8dcfabf580ece3fbe84b2ccd767d2e3fe7beb2f6fad1ea8099d4afdc71db"
+      "sha256": "192c29630c6b08f69bbbe9a118b03b3cc93eb536d1aa279a961949dd88a2d95c"
     },
     {
       "name": "blog/curso-ideal-de-ingles-porque-escolher-a-united-idiomas/index.html",
       "sourceBytes": 23847,
       "outputBytes": 23983,
-      "gzipBytes": 6848,
-      "sha256": "7d6f541831d870efd86366b59cdfbf942ebd62a8fe250bc9e07f12d0b5dede52"
+      "gzipBytes": 6847,
+      "sha256": "ca79b0baa5d406607f5ec51648fb664f9742018cb7f7e58026c78b1baab671cc"
     },
     {
       "name": "blog/curso-ingles-corporativo/index.html",
       "sourceBytes": 24896,
       "outputBytes": 25028,
-      "gzipBytes": 7259,
-      "sha256": "2f50047815dc0dfd82854fe7b9957b023ee1add93cde49e2d4691fa28b3aa9ce"
+      "gzipBytes": 7258,
+      "sha256": "95bcc1678d5a87454c56357e638021681aa42aeecf8795ea480356ee752db8b1"
     },
     {
       "name": "blog/curso-ingles-profissionais-ocupados/index.html",
       "sourceBytes": 25399,
       "outputBytes": 25534,
-      "gzipBytes": 7248,
-      "sha256": "3d658d2d53ed6d4a574e6467a6d9aec3c6da59deceafb0fd23783f0c1a9f7e9d"
+      "gzipBytes": 7247,
+      "sha256": "d8b980cf06eb49305c47aabb71333976eb4714dccd3f0cf3800b3fa0dd4da1c8"
     },
     {
       "name": "blog/curso-ingles-rotina-corrida/index.html",
       "sourceBytes": 24504,
       "outputBytes": 24637,
-      "gzipBytes": 7165,
-      "sha256": "80fc3015a5eb0749bbd723489748985755a138bb4ee5bf8c12359cd6fcf62746"
+      "gzipBytes": 7166,
+      "sha256": "7be668ee78bc5f08e374405373e701b2df3d995d6e0a9e2d8f7adce9a8d284ac"
     },
     {
       "name": "blog/curso-united-carreiras/index.html",
       "sourceBytes": 24051,
       "outputBytes": 24181,
-      "gzipBytes": 7119,
-      "sha256": "d37ce6233bfd5bb3eb8b0bc915944196234aea7c99149fce329e2a70598ce267"
+      "gzipBytes": 7118,
+      "sha256": "345480cfa43627b5d634c298ee9138cdca390c24a7dfd815e8a935c76b5aff92"
     },
     {
       "name": "blog/descubra-porque-a-united-idiomas-pode-transformar-sua-carreira/index.html",
       "sourceBytes": 24488,
       "outputBytes": 24624,
       "gzipBytes": 6928,
-      "sha256": "9487f9fb278be1a4fdb874863aa593565fdc95e290e5ce0cea007c3bd358ab1a"
+      "sha256": "70d450df9ca80238660be2f760774b4a26624fbb7666a144ddca3353013aa849"
     },
     {
       "name": "blog/dia-das-maes-anna-jarvis/index.html",
       "sourceBytes": 22846,
       "outputBytes": 22980,
       "gzipBytes": 6946,
-      "sha256": "2fae9f8d00eeb96619263bf1045ee5d270278cafcdb502811b55bb3783838792"
+      "sha256": "1a566a8a621f3363119f714a0d553085d8b22f2cf20c6707f3633fd8c8b5a8f6"
     },
     {
       "name": "blog/dia-dos-namorados-outra-data-brasil/index.html",
       "sourceBytes": 23725,
       "outputBytes": 23861,
-      "gzipBytes": 7127,
-      "sha256": "c2d0583a52e912f89caa9671f844c2be581aca92f21e1787cd340d44d6c301c5"
+      "gzipBytes": 7128,
+      "sha256": "e7cc883f6259a2cb71f7a91b28e6b2505dd107bf0499429941da4f2caeacba9e"
     },
     {
       "name": "blog/dicas-de-como-inserir-o-estudo-do-ingles-dentro-da-rotina-diaria/index.html",
       "sourceBytes": 24879,
       "outputBytes": 25015,
-      "gzipBytes": 7072,
-      "sha256": "7ef5ca209f47b57673ab36d3039a260c5d049331f700bbe2cb063efac8680491"
+      "gzipBytes": 7070,
+      "sha256": "4b671036384161f1601a9f590d0ab637f88b044c997bf8f903324bbea08fcb88"
     },
     {
       "name": "blog/dicas-falar-ingles-publico/index.html",
       "sourceBytes": 23850,
       "outputBytes": 23986,
-      "gzipBytes": 7051,
-      "sha256": "bb0e7c2ec581b8fccad5c1199a528ca69e97562855f76fc04047ab457375ed56"
+      "gzipBytes": 7053,
+      "sha256": "93138e187f1fa911adf8897cef434aa601c870ed74c09702f121183bb829e74b"
     },
     {
       "name": "blog/dicas-para-melhorar-sua-escrita-em-ingles/index.html",
       "sourceBytes": 25009,
       "outputBytes": 25008,
-      "gzipBytes": 7312,
-      "sha256": "9efe65ddde14d6e3878c60eac3959efe2888260b15ac7fa7f48c72b075889239"
+      "gzipBytes": 7307,
+      "sha256": "d38fc0ba8267aee114483d9b4c2ae23f76f64945815a22c75af2d5fc8d53f690"
     },
     {
       "name": "blog/dicas-para-preparar-toefl/index.html",
       "sourceBytes": 24206,
       "outputBytes": 24341,
-      "gzipBytes": 7246,
-      "sha256": "559365f1d64b6768124f88d0ec9fd20aa20006315a6d455af87443355d85698b"
+      "gzipBytes": 7241,
+      "sha256": "042e9f0a70b5110f6ed10a3a2da5030368fb045d3472da1d15c97a24382b7cc1"
     },
     {
       "name": "blog/diferencas-entre-wanna-gonna-e-gotta-descubra-quais-sao/index.html",
       "sourceBytes": 23274,
       "outputBytes": 23410,
-      "gzipBytes": 6670,
-      "sha256": "bf75b84d35bd75a1c4bff2627821e45b471e6331888b38e7c5eb3ba1d7a4ff7e"
+      "gzipBytes": 6668,
+      "sha256": "ae70256d3a34732466c701aaf9b612d5947d109fb3ceaa98655c7a32eb0b4568"
     },
     {
       "name": "blog/diferencas-ingles-paises/index.html",
       "sourceBytes": 26536,
       "outputBytes": 26667,
-      "gzipBytes": 7663,
-      "sha256": "4ccf803bf0f20a709083a717e5b62e34e16b59946ea1ef497e144c81c0d21daa"
+      "gzipBytes": 7658,
+      "sha256": "18909a9868096e7d301e186b980cdcfe6e062371ff89925a9201c59ddc632202"
     },
     {
       "name": "blog/dificuldades-gramatica-ingles/index.html",
       "sourceBytes": 24719,
       "outputBytes": 24849,
-      "gzipBytes": 7287,
-      "sha256": "2b7ad24695f447b9b57c10e2e66c3796558384d35e8cd495b92c2b7424a9e8b2"
+      "gzipBytes": 7285,
+      "sha256": "3980a3a27246c32d54008d0ec25805b07ee413fe1e130ac83968a13c67a9b373"
     },
     {
       "name": "blog/e-mails-profissionais/index.html",
       "sourceBytes": 24777,
       "outputBytes": 24912,
       "gzipBytes": 7571,
-      "sha256": "20854c9fbafa237aa262a1a6962781dd835a4ffae9c9142db1b8ee50316572b9"
+      "sha256": "62e62c189d25a70430dbe474429503f43f5e79472fea96fd3dabcad3a21e6333"
     },
     {
       "name": "blog/e-possivel-aprender-ingles-depois-de-adulto/index.html",
       "sourceBytes": 23505,
       "outputBytes": 23513,
       "gzipBytes": 6736,
-      "sha256": "121802cd92ad097a7f3ea420a9c9c0777850dcfe67997d393e26f287955646fc"
+      "sha256": "164e693afa781512228a238896033339cf6b958c6f38f9d54ddbf1f8cb274e8c"
     },
     {
       "name": "blog/entenda-o-verbo-to-be/index.html",
       "sourceBytes": 23450,
       "outputBytes": 23585,
-      "gzipBytes": 6817,
-      "sha256": "1bc5ac39bd6696465ecb2e8e571870b8ed104f3eeb1bd4284863199871b0fb9d"
+      "gzipBytes": 6819,
+      "sha256": "a1f702e5e12006e7bc1e18f44d593b3f4a45425f9ce08340464e8e0940945a3b"
     },
     {
       "name": "blog/entrevista-emprego-ingles/index.html",
       "sourceBytes": 24841,
       "outputBytes": 24976,
-      "gzipBytes": 7377,
-      "sha256": "9a3772fb6b2dff70a7a5dd8d53438fec928860112db5a48c0b0c2907c5cb8984"
+      "gzipBytes": 7376,
+      "sha256": "edf4b051a6e929299278ee21c4a765ea1e3b96b86c05e69b559fda5ab2ebf093"
     },
     {
       "name": "blog/erros-aprendizado-ingles/index.html",
       "sourceBytes": 24442,
       "outputBytes": 24577,
-      "gzipBytes": 7168,
-      "sha256": "01e93fa4ed43a17842e48cc34515b6daf343332c9a6fbfea7a4878691cefbad6"
+      "gzipBytes": 7165,
+      "sha256": "ea30472431360840996493c09de3672034f2b57a0bd38ee3cc9e7fad16bf33dc"
     },
     {
       "name": "blog/erros-gramaticais-ingles/index.html",
       "sourceBytes": 24617,
       "outputBytes": 24747,
-      "gzipBytes": 7410,
-      "sha256": "49734a3ea29651da05ef18d6e2d6e6531aec5b637f86477093f06632d477f909"
+      "gzipBytes": 7409,
+      "sha256": "f02493f08cb8987040e5401b23f81802b31fb4db20cd8fd50bc910e8067bfc3f"
     },
     {
       "name": "blog/estude-ingles-na-united-e-decole-sua-carreira/index.html",
       "sourceBytes": 25394,
       "outputBytes": 25529,
-      "gzipBytes": 7494,
-      "sha256": "dd2cc11b6b4661f41838e009c82d043f31363e735655a918f596c9792e73fad7"
+      "gzipBytes": 7496,
+      "sha256": "615c34853614cf059f2136880cbf9cc2711309f2972f873564104e7951d33be8"
     },
     {
       "name": "blog/expandir-vocabulario-ingles/index.html",
       "sourceBytes": 24132,
       "outputBytes": 24266,
-      "gzipBytes": 7118,
-      "sha256": "62e50b209528e131a48a0a7a739192dea6de26987b3174201baf9dd8089e3277"
+      "gzipBytes": 7117,
+      "sha256": "e24e6c7274378fe6ce67a6c44f2ffa73a5ffae3c273b7f1dfeb9611e48058a09"
     },
     {
       "name": "blog/expressoes-e-mails/index.html",
       "sourceBytes": 25895,
       "outputBytes": 26026,
-      "gzipBytes": 7672,
-      "sha256": "7f35b032a1817dfc5eef65f0b08b5fb5a2e80d5820343b9bd322e97cea51675c"
+      "gzipBytes": 7671,
+      "sha256": "e03e7b561868485b2703a0e736352bced20b992887f917326dca4d2af491f385"
     },
     {
       "name": "blog/expressoes-ingles-usar-restaurante/index.html",
       "sourceBytes": 25052,
       "outputBytes": 25187,
-      "gzipBytes": 7332,
-      "sha256": "bd95e2b0e7175bdd73d08e413bd6a7f184c5534fe9ec022b2bf3b8bf989bde27"
+      "gzipBytes": 7331,
+      "sha256": "44dfd7b30086e3c4194154aa76e526642b3afd6da1519baccf7da88fb9fe05be"
     },
     {
       "name": "blog/filmes-series-listening/index.html",
       "sourceBytes": 23740,
       "outputBytes": 23871,
-      "gzipBytes": 7180,
-      "sha256": "f2403652dc737a6999a09af64e8da3d716dfd83e684a343210c9ee102a9f8537"
+      "gzipBytes": 7181,
+      "sha256": "09cd39f12c8bd35978fcbb7a178e310061c272e43ce0e3059bd9dda02f1f4a79"
     },
     {
       "name": "blog/frases-ingles-restaurantes/index.html",
       "sourceBytes": 26195,
       "outputBytes": 26329,
       "gzipBytes": 7552,
-      "sha256": "8cd781696472017fa7b30339a1c36cea08295ef1f5d3daa0d11257cc4fff45d2"
+      "sha256": "681a328246a362b6cabfbd4c3ebade509692d98f245708f7b85dfb689a228cd7"
     },
     {
       "name": "blog/frases-uteis-compras-ingles/index.html",
       "sourceBytes": 25249,
       "outputBytes": 25380,
-      "gzipBytes": 7524,
-      "sha256": "02cc93360c671b1f50d7f447cbf3b68670c9253dc84a299067ea4a79954a34cc"
+      "gzipBytes": 7523,
+      "sha256": "0318f37dda0b6c2a9129390c9225a8c928956072f969c5a6ed88c158a30e3f9f"
     },
     {
       "name": "blog/guia-basico-de-ingles-para-viajantes-aurora-boreal/index.html",
       "sourceBytes": 24364,
       "outputBytes": 24499,
-      "gzipBytes": 7089,
-      "sha256": "dc788858be9e6e1bdd1b2601ae6614a46ae1c88f628c6a69c9439cac8cbe8831"
+      "gzipBytes": 7088,
+      "sha256": "a04dfcd0a28250584ff4276deede6c0b4c3cdff950a2fa036af72402cbf34cec"
     },
     {
       "name": "blog/guia-prepositions/index.html",
       "sourceBytes": 23690,
       "outputBytes": 23824,
-      "gzipBytes": 7014,
-      "sha256": "02c9766abd97513f2cab1d0ef16cf27950fc4fca7901dd6fe569145ffed4527c"
+      "gzipBytes": 7012,
+      "sha256": "ab18880d4c38894a6a48c994a862d97c374e7eeb100b718f8c3d302304f47194"
     },
     {
       "name": "blog/guia-rapido-de-ingles-para-viagens/index.html",
       "sourceBytes": 25388,
       "outputBytes": 25522,
-      "gzipBytes": 7284,
-      "sha256": "f97c19132b36589380d2cd773faaf8ca1f8c9b3e2cea5685834ba42579656dfa"
+      "gzipBytes": 7279,
+      "sha256": "d293ef75b9c2c1ae4e41a5c752b6b0b6a9d8d9434fce1a318532044b7b8c1784"
     },
     {
       "name": "blog/halloween-guia-completo/index.html",
       "sourceBytes": 23955,
       "outputBytes": 24086,
-      "gzipBytes": 7426,
-      "sha256": "4ae4f76609d0526541079cab9db9627d268898f202928a25e1e395fce16eede1"
+      "gzipBytes": 7423,
+      "sha256": "d4ea424ca31753eebd409b2132d35d13e63f019621bdad6fe520cba9bd143e78"
     },
     {
       "name": "blog/halloween-origem-vocabulario/index.html",
       "sourceBytes": 23696,
       "outputBytes": 23830,
-      "gzipBytes": 7139,
-      "sha256": "d76fbc84b23a315ab75e4e5ff2914bcf93018516873aa48ef8df07967a671e6a"
+      "gzipBytes": 7138,
+      "sha256": "d7cbf8ee4fdef07a6f051c20ae7ae2fac15aef3a38e7de08c30cf8e3b8321bf6"
     },
     {
       "name": "blog/has-ou-have-aprenda-a-utilizar/index.html",
       "sourceBytes": 22300,
       "outputBytes": 22436,
-      "gzipBytes": 6544,
-      "sha256": "270e3a38893016c3d329141d6c155e2679c4108627242d88f223b37651cf53fc"
+      "gzipBytes": 6543,
+      "sha256": "2ca75597081870755f3814f84dc6f87127618045f14743b0211d40b5f1d8dd2e"
     },
     {
       "name": "blog/ia-aprender-ingles-habilidades-humanas/index.html",
       "sourceBytes": 24904,
       "outputBytes": 25034,
-      "gzipBytes": 7109,
-      "sha256": "429bb34cdf9d9f426bc4d5e6f366124daad428e808e7d0099c864ad6083c7dfa"
+      "gzipBytes": 7108,
+      "sha256": "77f812242740aed8c95742293c35450be8e2dca6e06850446a5077427caac476"
     },
     {
       "name": "blog/ia-aprender-ingles/index.html",
       "sourceBytes": 26154,
       "outputBytes": 26286,
-      "gzipBytes": 7727,
-      "sha256": "2cbedf2aa90ed1becacaa5cac42890283c081b2a658cfbfe9f1cff42ec0bbc15"
+      "gzipBytes": 7726,
+      "sha256": "5d14e9749f9ab24465bbe12ee83d81d87c298ebdcfface3eadc738d7bdc51e32"
     },
     {
       "name": "blog/imersao-ingles-em-casa/index.html",
       "sourceBytes": 25759,
       "outputBytes": 25893,
-      "gzipBytes": 7519,
-      "sha256": "ffc57470506f932ffadce3339db8ab88957455e4ca4e5a16ca80bb568e9396aa"
+      "gzipBytes": 7518,
+      "sha256": "90457ec261a846ab02a45eef3b27d689ea8d40a358ff7bb3563bbdc78406c962"
     },
     {
       "name": "blog/importancia-independence-day/index.html",
       "sourceBytes": 23529,
       "outputBytes": 23663,
-      "gzipBytes": 7132,
-      "sha256": "b252e5cc1149c73309420810548a7c5379b40996ac3dbf9f8515cd6614a56d75"
+      "gzipBytes": 7131,
+      "sha256": "668d3ce140f4ab1b3d82c61716aea7efb4ce5eb511f68d00e272b1b942467d0e"
     },
     {
       "name": "blog/importancia-musica-aprendizado-ingles/index.html",
       "sourceBytes": 24264,
       "outputBytes": 24398,
-      "gzipBytes": 7133,
-      "sha256": "49986c6af4c0c36709812974fe07c5d68a6739e5535184d6ab21f5f156213db4"
+      "gzipBytes": 7131,
+      "sha256": "7d6e1d6a7c1d3412f836e887cf3cfed83fbb3cf2113f2d5c19f8e07cdb051ac2"
     },
     {
       "name": "blog/independence-day/index.html",
       "sourceBytes": 23372,
       "outputBytes": 23508,
-      "gzipBytes": 7251,
-      "sha256": "866673b9cc165b0736ba1e49492ffdeb769e110dae579877ca40a0c22929be8b"
+      "gzipBytes": 7249,
+      "sha256": "07872decefe9bd68b4071e1951ca95bdabb4087729c20912aee42e582a2022a1"
     },
     {
       "name": "blog/index.html",
       "sourceBytes": 25901,
       "outputBytes": 26026,
-      "gzipBytes": 6522,
-      "sha256": "355491bf90a7290137c6937c0cb13ac5c573a5a81aabd340d97b6c8e52c3b2d5"
+      "gzipBytes": 6521,
+      "sha256": "af36fae0a640eb29620cf334a2049e844e4b70b9e062e5c3214d32601c6d0bc3"
     },
     {
       "name": "blog/ingles-americano-britanico-diferencas/index.html",
       "sourceBytes": 23985,
       "outputBytes": 24115,
-      "gzipBytes": 7112,
-      "sha256": "01104f9f705fe6643a2e8a42c2c8db8f1daab4d1790c771d428bb9bb6d1ea102"
+      "gzipBytes": 7111,
+      "sha256": "7900f5c33ece65226e9a845bd073a4dcde4cdf8c7f837fdfe6b9479c8c60d132"
     },
     {
       "name": "blog/ingles-carreira-tecnologia/index.html",
       "sourceBytes": 24768,
       "outputBytes": 24898,
-      "gzipBytes": 7360,
-      "sha256": "e87b0628f31bce163c1daf6b225dd11ae6559dd8c8c4374191eb0c49151ad8ed"
+      "gzipBytes": 7359,
+      "sha256": "c9c0a3ea04071e1cab772c102f1c60c193d31a88dc1e4831634e5bc8214cd7e0"
     },
     {
       "name": "blog/ingles-conversacao-profissional/index.html",
       "sourceBytes": 24011,
       "outputBytes": 24142,
-      "gzipBytes": 7017,
-      "sha256": "546771cfe4d6da86cc9591c497ac5953a281155e9b19b30c36749fa06b5eeacc"
+      "gzipBytes": 7016,
+      "sha256": "451a5d246eff4f6ee2897c2e067576ae0cf3d038f3c32b1d15ce27d5d71eabc2"
     },
     {
       "name": "blog/ingles-corporativo/index.html",
       "sourceBytes": 25625,
       "outputBytes": 25758,
       "gzipBytes": 7408,
-      "sha256": "329ef4ba36c9d566f853045372935bf5abd0679431bfc68efa36d0c45002ab30"
+      "sha256": "13777c9304cea042d4d401669e6b8e912e06f321d4d2aca5cd4c556ac5806dd3"
     },
     {
       "name": "blog/ingles-ead/index.html",
       "sourceBytes": 23610,
       "outputBytes": 23742,
-      "gzipBytes": 7034,
-      "sha256": "7afdcaf9be0b7a753d01bcc93d350bae1c754873574eb0c24fba8a8717691d44"
+      "gzipBytes": 7033,
+      "sha256": "19975054e6fb109b87875c2f138f6c57afc37af08c6c66678a55a576d28e205c"
     },
     {
       "name": "blog/ingles-estudar-trabalhar-exterior/index.html",
       "sourceBytes": 24737,
       "outputBytes": 24871,
-      "gzipBytes": 7104,
-      "sha256": "1b0b5f237cadb387eef65cd11b69d8d0b6b8b55fd6c619c5e4ad506d52b9e273"
+      "gzipBytes": 7101,
+      "sha256": "f3b5919a3bea992da4bf7ed266f8b29cc6cf91e8cb10f2cac94d105b7539d064"
     },
     {
       "name": "blog/ingles-eventos-internacionais/index.html",
       "sourceBytes": 24922,
       "outputBytes": 25055,
-      "gzipBytes": 7243,
-      "sha256": "ad8f3aa7491fff6efdbf3c15d0f409ff173027395111e033fb159df30c82a93b"
+      "gzipBytes": 7242,
+      "sha256": "eb23408d64a7413cf7dff1e9567f9183519cae19aa7fcadadb7735499e430f95"
     },
     {
       "name": "blog/ingles-fluente-carreira/index.html",
       "sourceBytes": 23971,
       "outputBytes": 24104,
       "gzipBytes": 6991,
-      "sha256": "c91da1954423c9f1de56be69ac52af74abd920653c1a378eb341c1b74a2da312"
+      "sha256": "f74dea70ed35917f07356fc85329f29bd734c49d085b55487230441edd816904"
     },
     {
       "name": "blog/ingles-fluente-home-office/index.html",
       "sourceBytes": 24282,
       "outputBytes": 24417,
-      "gzipBytes": 7128,
-      "sha256": "a8babb350173ce424ba8fc8819950275ea8091f7a3e7df27b55f46eca8aded27"
+      "gzipBytes": 7126,
+      "sha256": "01e2d157fb3b34698a1a9813adec404c6f37aff9a717c922261372188fdfc366"
     },
     {
       "name": "blog/ingles-fluente-mercado-corporativo/index.html",
       "sourceBytes": 24558,
       "outputBytes": 24690,
       "gzipBytes": 7198,
-      "sha256": "7e4b7232ff2dcd1b7ba1cdaf76908a77f31a96aa88b1853689f07ca388549168"
+      "sha256": "581d939cdf0767f4d6bf449a99fe460e6240d96b52c1611ef601cf9ea69f9e95"
     },
     {
       "name": "blog/ingles-liderar-reunioes/index.html",
       "sourceBytes": 24872,
       "outputBytes": 25005,
-      "gzipBytes": 7193,
-      "sha256": "f6f70c6c8ae0fb1db89db48fd316675e50d4b0ed377fafd7bd08e58501a5ecce"
+      "gzipBytes": 7192,
+      "sha256": "62436c3268b9d536cb66eb7360ee0a5b1644f3e133bcebdbc816891ea55b1c5d"
     },
     {
       "name": "blog/ingles-medicos-profissionais-saude/index.html",
       "sourceBytes": 24895,
       "outputBytes": 25030,
-      "gzipBytes": 7057,
-      "sha256": "405d569efcdd44c2f8369cea987d2832809d440260c948ec430f920815debe7d"
+      "gzipBytes": 7056,
+      "sha256": "f8fc570841c6bde461c6609fd839123d3c09e20dd8939ebacb57b2b2eb22bd4b"
     },
     {
       "name": "blog/ingles-mudar-carreira/index.html",
       "sourceBytes": 23708,
       "outputBytes": 23840,
-      "gzipBytes": 7059,
-      "sha256": "1362ec0c5b075663840ee9f14cb64399c568ad88c22cdf952912b74bafb8c6f8"
+      "gzipBytes": 7057,
+      "sha256": "e279f877f94ab138fc6b0d9717479ef8ea7c47c164887f71bef88aff13e97c2f"
     },
     {
       "name": "blog/ingles-no-trabalho/index.html",
       "sourceBytes": 25253,
       "outputBytes": 25387,
-      "gzipBytes": 7464,
-      "sha256": "028cc3d07979944f4f205d13e064856f30b23d7d244a513def85b3dc7a0567c6"
+      "gzipBytes": 7463,
+      "sha256": "0722c23b692c13cebfc0d03f14f0793326de96122b21a6e0e4ceb091c9e30a32"
     },
     {
       "name": "blog/ingles-nova-zelandia/index.html",
       "sourceBytes": 24257,
       "outputBytes": 24391,
       "gzipBytes": 7433,
-      "sha256": "4dc2a2505da54017636e99bdfc001e04fd499537ec4017f2947d283d3f356145"
+      "sha256": "d92921eb627f67e950a528c0d703d29b9f7ea5ec0e10243f5b3f8a664ce254bf"
     },
     {
       "name": "blog/ingles-para-economistas/index.html",
       "sourceBytes": 23735,
       "outputBytes": 23871,
-      "gzipBytes": 7017,
-      "sha256": "c244f8f1be785b6964c63d9d2b257b4ef5535406344ea421d2298a13b87778e0"
+      "gzipBytes": 7015,
+      "sha256": "71994ce7ced67cb68a8750d65f8511aa97686263bc1479770f8a4e6e4d6a3e9d"
     },
     {
       "name": "blog/ingles-para-home-office-global/index.html",
       "sourceBytes": 25889,
       "outputBytes": 26024,
-      "gzipBytes": 7672,
-      "sha256": "31793afd05713449e9340fcdd74e83bff6c072a85b6c9917b85450ea3029712f"
+      "gzipBytes": 7669,
+      "sha256": "ccc7d1f1209a9f82cab428942a358f921522ba2761f506cadb8dd0eac7418887"
     },
     {
       "name": "blog/ingles-para-linkedin/index.html",
       "sourceBytes": 24610,
       "outputBytes": 24741,
-      "gzipBytes": 7456,
-      "sha256": "88f9558710861bcdf02545e73a1018f5586e5e3d1609316ccd7a8d48ebbf0a84"
+      "gzipBytes": 7455,
+      "sha256": "8ae0f348f2b24fff98c2b2dd871d0f7a1ecbc503c039ee4c8250942dbfc1d9fc"
     },
     {
       "name": "blog/ingles-para-networking/index.html",
       "sourceBytes": 24274,
       "outputBytes": 24406,
-      "gzipBytes": 7230,
-      "sha256": "42a42b6beda2455bc5b7f61965346bbe110bbcb6b533ee90e2da0f8ab170be5a"
+      "gzipBytes": 7228,
+      "sha256": "546448de119f0f489b5536237b093fc94371457acca8d01b3e4645edfb0a9af2"
     },
     {
       "name": "blog/ingles-para-reunioes/index.html",
       "sourceBytes": 25575,
       "outputBytes": 25708,
-      "gzipBytes": 7496,
-      "sha256": "7386945cc74af1fd206fe6f533bb2d3c18f80c2b6d89b7a76751105a0bdc336c"
+      "gzipBytes": 7495,
+      "sha256": "bf70192e5a3c2263f44092a0f77e6dc76c5ea2442b880e23198de9ef9abe66b3"
     },
     {
       "name": "blog/ingles-para-secretaria-executiva/index.html",
       "sourceBytes": 24191,
       "outputBytes": 24327,
       "gzipBytes": 6973,
-      "sha256": "00ab248a893fe80b002f37dada80f9188acf4a4895dd4013819d8180c2621643"
+      "sha256": "9884391466e70db267843e08b77af9bff6fccde59e85186f311125cd49b1681f"
     },
     {
       "name": "blog/ingles-para-viagem/index.html",
       "sourceBytes": 24270,
       "outputBytes": 24402,
-      "gzipBytes": 7133,
-      "sha256": "19ab14c05bef4bb9bf5cb7fa41dc64069d8e5ad7f26876f01510195359d723d7"
+      "gzipBytes": 7135,
+      "sha256": "404be1ba997d23987477c6a5f09299f701b7c3649a11eb2a5d9d2a6b252ce804"
     },
     {
       "name": "blog/ingles-profissional-trabalho/index.html",
       "sourceBytes": 24037,
       "outputBytes": 24166,
       "gzipBytes": 6952,
-      "sha256": "045eff979369f04db3a53544d6dba09e055f62addbfd295fcae1d352f6ef233a"
+      "sha256": "cf803a9ba372c68bf1aa55f05bcc0ee16de25174bafc58eec077be4fb80ae183"
     },
     {
       "name": "blog/ingles-transporte-publico/index.html",
       "sourceBytes": 24856,
       "outputBytes": 24988,
-      "gzipBytes": 7375,
-      "sha256": "e5c5de2c67eb5dc7003a27eb9c2d05c46deefe6960f03daf37646e5f890349ec"
+      "gzipBytes": 7372,
+      "sha256": "3d42f269346d98c605f7a48d0d5322d5c9131f0f79dedcb544ae2e8cf2c549a1"
     },
     {
       "name": "blog/ingles-viagens-internacionais/index.html",
       "sourceBytes": 24647,
       "outputBytes": 24775,
-      "gzipBytes": 7313,
-      "sha256": "c583a5b6d77d8ecf5da7e3f1cd84476d3ab6300e99608159bb17578476278141"
+      "gzipBytes": 7314,
+      "sha256": "a63fa29ea3f5951a2e701fce3dd8a64e81e6859ba748c492899f0983f5c542c8"
     },
     {
       "name": "blog/ingles-viajar-europa-outono/index.html",
       "sourceBytes": 25863,
       "outputBytes": 25997,
-      "gzipBytes": 7571,
-      "sha256": "b7d9810cc1d964f94584465497c1cc93343a2b43a8d09cfa417810bd4a84c96b"
+      "gzipBytes": 7572,
+      "sha256": "b754c5b9cbd935fc24dcd66156754408aa048e79a729a0c93caaf5c875cf46aa"
     },
     {
       "name": "blog/ingles-viajar-europa/index.html",
       "sourceBytes": 26213,
       "outputBytes": 26343,
-      "gzipBytes": 7733,
-      "sha256": "d7f9d2b0ff9004e8b2eb504198884b805ec29b7e472512f760357eae91ff2ec5"
+      "gzipBytes": 7734,
+      "sha256": "6fa9276445132110c465b47c70a5725dca46ba9183a93ec14ef586fa2cd24725"
     },
     {
       "name": "blog/intercambio-africa-do-sul/index.html",
       "sourceBytes": 23985,
       "outputBytes": 24118,
-      "gzipBytes": 7331,
-      "sha256": "7ec70cb884634996c5cd923ab81ad695bcd88787d509faf351bdf0bed08ceb17"
+      "gzipBytes": 7333,
+      "sha256": "e09a364e4fc15936963d39d6ce9e4dd14b4dbd856a540a72baabe85fd78bb255"
     },
     {
       "name": "blog/intercambio-au-pair-o-que-e-e-como-funciona/index.html",
       "sourceBytes": 24584,
       "outputBytes": 24717,
-      "gzipBytes": 6905,
-      "sha256": "5a8968cf7dfbeff84cb2373df7576f565ccdcbe616d4033f794acaee71a01a3b"
+      "gzipBytes": 6904,
+      "sha256": "440af05cbd056eb84fb10e4b359bf74ce00d003d51612aafcdb5a14bad735b18"
     },
     {
       "name": "blog/intercambio-canada/index.html",
       "sourceBytes": 24383,
       "outputBytes": 24519,
-      "gzipBytes": 7519,
-      "sha256": "1cbd20c95b125ff744e1cb37f1856197cbac70b5a1729d81fb667ca0c966136a"
+      "gzipBytes": 7520,
+      "sha256": "8577f374158b34a2073605fd23f2666eaea87de82b42a762052806e78bffa4f6"
     },
     {
       "name": "blog/intercambio-como-se-preparar/index.html",
       "sourceBytes": 24062,
       "outputBytes": 24194,
-      "gzipBytes": 7152,
-      "sha256": "60f6ffee7da092a1f5079e049e0c1a68d40a5c070c905a5de82cf62155674f8a"
+      "gzipBytes": 7151,
+      "sha256": "2b94daecb588eeed2156d335be515d58492404c601e2d8bad4df6e3fec18c3a0"
     },
     {
       "name": "blog/intercambio-o-que-e-preciso-e-como-se-preparar/index.html",
       "sourceBytes": 27150,
       "outputBytes": 27286,
-      "gzipBytes": 7797,
-      "sha256": "5849550dc5a27fb1dda183c31cc2d7283c73b94a7b457fc2bbcafaa8296471f6"
+      "gzipBytes": 7795,
+      "sha256": "8467f48046f46dc7da43f9771230d25bdaf0fb2a31a5583b9ea968daf39e78f9"
     },
     {
       "name": "blog/labor-day/index.html",
       "sourceBytes": 22673,
       "outputBytes": 22809,
-      "gzipBytes": 6875,
-      "sha256": "a233d29eb962430ef1009ee03c85f02daf5a48917d79f2dfbba27d07ce25bfd3"
+      "gzipBytes": 6872,
+      "sha256": "c737dd680ef783ae055576f3a0c8d8287ff84ab2e60315bd7d6621ad00c2b421"
     },
     {
       "name": "blog/ler-em-ingles-veja-oito-livros-para-iniciar/index.html",
       "sourceBytes": 24759,
       "outputBytes": 24895,
-      "gzipBytes": 7374,
-      "sha256": "a2d2d36df33ac35181ebb0e9dd1adfdbad303c28a691bed3befaea9eece5e764"
+      "gzipBytes": 7372,
+      "sha256": "d2ae36e484137a3024ef9eb8a055a9489db624259112775c52a86a44a8f93c1e"
     },
     {
       "name": "blog/livros-ingles/index.html",
       "sourceBytes": 24250,
       "outputBytes": 24380,
-      "gzipBytes": 7377,
-      "sha256": "0b622de0f4c339735589c6ecc850e86519a77cbba92e569524d56c878693da98"
+      "gzipBytes": 7376,
+      "sha256": "f7fe4218f822aacb8081c985d6958a858467879f1ace899b1712fc33a09faa72"
     },
     {
       "name": "blog/memorial-day-a-importancia-dessa-data-nos-eua/index.html",
       "sourceBytes": 23407,
       "outputBytes": 23543,
-      "gzipBytes": 6971,
-      "sha256": "11956ba8308aa2281988bcaa67c85695bbf8a29ec67785f62a111cfdbc84db7a"
+      "gzipBytes": 6967,
+      "sha256": "a9bbc9b864642ce4fd4c5ed3a07486246c4a9d8dc972e663a73e8b8a80781cff"
     },
     {
       "name": "blog/modal-verbs/index.html",
       "sourceBytes": 23914,
       "outputBytes": 24043,
-      "gzipBytes": 7254,
-      "sha256": "dddb74e2f7e5a9ae91c56d0db99f7998a6ea4aac1ce967aa90faaffc75b0daaa"
+      "gzipBytes": 7248,
+      "sha256": "11f862f8c47f4c57e557a8129316f78458e2e3b367a1b854ffd5448861637ef3"
     },
     {
       "name": "blog/natal-lingua-inglesa/index.html",
       "sourceBytes": 23356,
       "outputBytes": 23489,
-      "gzipBytes": 7236,
-      "sha256": "93a7cdee1f8507c11a326d2dc480e171f44b001a09414164ed801e9fdb9288cb"
+      "gzipBytes": 7231,
+      "sha256": "683dfa8a1a24b49042f0fd414c95e2dccde5320d45eadb62e16dc9ae66352415"
     },
     {
       "name": "blog/negociar-salario-beneficios-ingles/index.html",
       "sourceBytes": 25086,
       "outputBytes": 25219,
-      "gzipBytes": 7403,
-      "sha256": "b00984ccc68d2f9f0af1223830bd5e76a72e3726312b52be6f63afcaad82a4db"
+      "gzipBytes": 7402,
+      "sha256": "b6f4de86d29546aeb0d66d414b54be81368978e25151a444af04802962bd1935"
     },
     {
       "name": "blog/nivel-profissional-ingles/index.html",
       "sourceBytes": 24374,
       "outputBytes": 24507,
-      "gzipBytes": 7344,
-      "sha256": "1c3ddd746bcb1e0fd670b79f45bccb9acec3cb7695c0a63e841e85c82383e6f4"
+      "gzipBytes": 7346,
+      "sha256": "3813c96f1462fa292cf8d84fe4cabd42f24519399e05058c245bfc4132fda35d"
     },
     {
       "name": "blog/o-que-sao-collocations/index.html",
       "sourceBytes": 24597,
       "outputBytes": 24727,
-      "gzipBytes": 7430,
-      "sha256": "a327d0c0c53310c62139bdc2c05ddb35c85f46ec3cac8f70f2dd87541e1006bc"
+      "gzipBytes": 7429,
+      "sha256": "0715b7bd9e1e8eb652a4def0fd900792fa3a12e43967cf9830922b9d2d99d2cb"
     },
     {
       "name": "blog/origem-black-friday/index.html",
       "sourceBytes": 23382,
       "outputBytes": 23514,
-      "gzipBytes": 7183,
-      "sha256": "0723b8335a0fc1c3738c919c1dcdaefd37447a4898e16b9a94bf0007e5d59be5"
+      "gzipBytes": 7182,
+      "sha256": "864545dd0e9afe994a228f44fa0c672073c3bb6e22ea1233fef6b27a56158cb8"
     },
     {
       "name": "blog/pagina/10/index.html",
       "sourceBytes": 24033,
       "outputBytes": 24158,
       "gzipBytes": 6088,
-      "sha256": "2bbecd907e34e8ac73d14814e66bf48bfed6b3a8620c8cb3dc160aa6f37e4715"
+      "sha256": "8e5d3f34a058f2d43b32eec8c5334d6d25ecfbd25caad494ec774d72784dde63"
     },
     {
       "name": "blog/pagina/11/index.html",
       "sourceBytes": 25369,
       "outputBytes": 25494,
-      "gzipBytes": 6096,
-      "sha256": "9bb881fb8b28d1a736b3c8c3b9fef1cafe781d55ea45dc843d61f36c66b2273c"
+      "gzipBytes": 6095,
+      "sha256": "8d172b0dde3b8572b3d3445e50421107a1c13f8607995abedbf48084f7d06dc3"
     },
     {
       "name": "blog/pagina/12/index.html",
       "sourceBytes": 24579,
       "outputBytes": 24704,
       "gzipBytes": 6109,
-      "sha256": "8686bf45c532dbf0195d50e73e644532600f2826c0ed6b5bd590a69037f06e05"
+      "sha256": "7eb99cec4d54d0e2d2f118730d3ed1aa65722305221bcd65374878f06cd00537"
     },
     {
       "name": "blog/pagina/13/index.html",
       "sourceBytes": 24865,
       "outputBytes": 24990,
-      "gzipBytes": 6095,
-      "sha256": "c4630e731c4de1ae4b0552a1311c91120465b711d874f793165bffa42019cf1e"
+      "gzipBytes": 6094,
+      "sha256": "ebd3a455294d688cb8bc72d5b47c119e4174f550a0d9ee0080cee752f778e5d0"
     },
     {
       "name": "blog/pagina/14/index.html",
       "sourceBytes": 24885,
       "outputBytes": 25010,
-      "gzipBytes": 6042,
-      "sha256": "ab34d321b8bf30360ece701bdf758df81d322a345c55ebaa8b337c177ed4783d"
+      "gzipBytes": 6041,
+      "sha256": "657fc7b0e29bf2d254f986525266c0b7ede03a47a267d3aded605219ace83c8e"
     },
     {
       "name": "blog/pagina/15/index.html",
       "sourceBytes": 25704,
       "outputBytes": 25829,
-      "gzipBytes": 6108,
-      "sha256": "4b7791b841fd2893ab0078432c264f090f0be520285e2e617d9e52481cfd3d25"
+      "gzipBytes": 6106,
+      "sha256": "4ebf454579dca6d457d7b3d40de5025a6e60813a12f989a2b9839ca4cea63962"
     },
     {
       "name": "blog/pagina/16/index.html",
       "sourceBytes": 26787,
       "outputBytes": 26912,
-      "gzipBytes": 6273,
-      "sha256": "1a6d4f66e1a17d2be273d4b3f192117a359ef3d90b62bffc095e0a03f48c7c1c"
+      "gzipBytes": 6272,
+      "sha256": "fedfea0fa92977b0bcd4404ac9a3f431a87d11ebc821a3a0d1cccb6886c66146"
     },
     {
       "name": "blog/pagina/17/index.html",
       "sourceBytes": 24811,
       "outputBytes": 24936,
       "gzipBytes": 6174,
-      "sha256": "6b8e3e9abe89b6a10a64d7e5ed2767cc4a3fcca7da90bc7b23555227d7e856b8"
+      "sha256": "a70c65b3992b15df9c13ce1e176b9897c86eb260f15be731de29dd32701132f8"
     },
     {
       "name": "blog/pagina/18/index.html",
       "sourceBytes": 25137,
       "outputBytes": 25262,
-      "gzipBytes": 6153,
-      "sha256": "191cceb0de0cca14706696846eb530023f41c60ed17c391d51633d9c15281bc6"
+      "gzipBytes": 6152,
+      "sha256": "7b9fda6b1c83ca27eb7165d0f62691257277bcc411ad15c6c7af7ad98ea31eef"
     },
     {
       "name": "blog/pagina/19/index.html",
       "sourceBytes": 25924,
       "outputBytes": 26049,
       "gzipBytes": 6280,
-      "sha256": "baed73d9d41a255160a9d8ce32e53f7537159ca8043e8adde7315b31d9d1d382"
+      "sha256": "ae8ca577d3af1079205cbc5642f4d1479733a41cdff4949ba86fe0268f07859b"
     },
     {
       "name": "blog/pagina/2/index.html",
       "sourceBytes": 25025,
       "outputBytes": 25150,
       "gzipBytes": 6174,
-      "sha256": "0ea210ef8efa132c3490c5867ec1a5e9646348908a9a025e56a15fff8c6c2329"
+      "sha256": "4e0bcd2112e8dcb996685a13e9716e427223c1fe32fa1f5d804ab7747a717b35"
     },
     {
       "name": "blog/pagina/20/index.html",
       "sourceBytes": 26602,
       "outputBytes": 26727,
-      "gzipBytes": 6276,
-      "sha256": "a5d94b4f92c1f807e72b2b5051d4bf1adb27cdea8d0acf83e14d72626664f516"
+      "gzipBytes": 6273,
+      "sha256": "46d0948fad0f242588d8d460af509ca3694af0d01b86365ba0c4a397a921dba5"
     },
     {
       "name": "blog/pagina/21/index.html",
       "sourceBytes": 20464,
       "outputBytes": 20589,
       "gzipBytes": 5308,
-      "sha256": "630ddc8dc4a7dfc80df7bf957d357a03c50092b87386ffed5ac00894db6336a3"
+      "sha256": "cf05ec2fa91b783f372eda2aca059ff904d821bbfd4cd648db58bbadf41635c9"
     },
     {
       "name": "blog/pagina/3/index.html",
       "sourceBytes": 24851,
       "outputBytes": 24976,
-      "gzipBytes": 6093,
-      "sha256": "2d0950f85b67256e66ee99dfad8ae75ad9abbb9ec80f754b64e62c6f4235ebaf"
+      "gzipBytes": 6092,
+      "sha256": "17d7c60fa9db34bb28e7366da2dd992ccecf0d49f8f4789a65686ff96012ca0e"
     },
     {
       "name": "blog/pagina/4/index.html",
       "sourceBytes": 24359,
       "outputBytes": 24484,
       "gzipBytes": 6054,
-      "sha256": "a6e9b8d8a222679dc72cafff76e8e1526d99da6383782c0d2135adf8d7fb3a99"
+      "sha256": "e220a8334e66234ea526fe2537063e5332bc9a458d4f0cb2342fb6a9aae6b44b"
     },
     {
       "name": "blog/pagina/5/index.html",
       "sourceBytes": 24457,
       "outputBytes": 24582,
-      "gzipBytes": 6053,
-      "sha256": "7da2d36fdb6ac8065d7568479544562aa687e9e543a4b5a52b27dba47b8e4516"
+      "gzipBytes": 6052,
+      "sha256": "c45691d3b4597df841a567dceb5b5a4db2bac9cc4765c349f76781225b34a6bb"
     },
     {
       "name": "blog/pagina/6/index.html",
       "sourceBytes": 24247,
       "outputBytes": 24372,
-      "gzipBytes": 6053,
-      "sha256": "8f648cb99ad22a662bcd648deae596e8d06a2b68bf715d857e561808e316712f"
+      "gzipBytes": 6051,
+      "sha256": "f5c2704c5b99cc20434c40cc08fc7e6fabe040195c0984c44a0c9f71422be0f9"
     },
     {
       "name": "blog/pagina/7/index.html",
       "sourceBytes": 24267,
       "outputBytes": 24392,
-      "gzipBytes": 6134,
-      "sha256": "9864f7ec8acfaf652ad3b8fabc89a9e7c0fc2658a6ccbabe5e22b0b39e15abb9"
+      "gzipBytes": 6133,
+      "sha256": "d03565a5bbffe112a05735f17ff9531d3bd6e84f11c2cc33c2d46c1420fb8c4a"
     },
     {
       "name": "blog/pagina/8/index.html",
       "sourceBytes": 24138,
       "outputBytes": 24263,
-      "gzipBytes": 6026,
-      "sha256": "5f86fd67cbdb1bb158adad42b3e0930f3cc193b8e86bcb4ce8ebff2a9955e698"
+      "gzipBytes": 6025,
+      "sha256": "a3be657999bad5b394e8789cd2ac1de52e8b5dd3fd82e430b1e2b3ecfaac9b8f"
     },
     {
       "name": "blog/pagina/9/index.html",
       "sourceBytes": 24166,
       "outputBytes": 24291,
-      "gzipBytes": 6034,
-      "sha256": "878216a9474b5fddad527261dfb0af3bd3226f34cf4e86c4a2a551a2d58cd6c8"
+      "gzipBytes": 6033,
+      "sha256": "7f302bad6285796a8087e85ec526f37d7df09fd29972bab1017c2cb8f24911b0"
     },
     {
       "name": "blog/pais-ideal-intercambio/index.html",
       "sourceBytes": 24317,
       "outputBytes": 24448,
-      "gzipBytes": 7502,
-      "sha256": "b2dafa160daec07f04e3117d7440b33a8920f84809bfdae53956493e95bb6da5"
+      "gzipBytes": 7500,
+      "sha256": "434fbf1aa47404390fea085b354a89f333b3295fbea50eac53fc1fbbe394d8b1"
     },
     {
       "name": "blog/palavras-frases-ingles-hoteis/index.html",
       "sourceBytes": 24251,
       "outputBytes": 24383,
       "gzipBytes": 7219,
-      "sha256": "34bd7668369698e635bc576054071fa350bf6f20ec71a9358238063861c4aea1"
+      "sha256": "b81101e2d457795768d0d58985bae5d56ca540f73ac8596c675f914d6748b471"
     },
     {
       "name": "blog/perder-nervosismo-conversar-em-ingles/index.html",
       "sourceBytes": 23974,
       "outputBytes": 24103,
-      "gzipBytes": 7102,
-      "sha256": "cfecebf66520e94db68f3f93d3e7888810a20cfcaadf7913c6fef4659ac8a676"
+      "gzipBytes": 7101,
+      "sha256": "1326cea51f1ecba952416a8d21264c32055cea6721c3d5bac12a8edaf1a0a497"
     },
     {
       "name": "blog/phrasal-verbs-mais-usados/index.html",
       "sourceBytes": 24704,
       "outputBytes": 24836,
-      "gzipBytes": 7448,
-      "sha256": "9a0235d97777552b072129dff5883c4bec0e8abf1eb109dd11ac10065e01e792"
+      "gzipBytes": 7449,
+      "sha256": "1c8a8713a65bf76a0846c52ff6a0514b5bbcd398ed5551c0b0728c3e03893139"
     },
     {
       "name": "blog/phrasal-verbs-o-que-sao/index.html",
       "sourceBytes": 24952,
       "outputBytes": 25088,
-      "gzipBytes": 7412,
-      "sha256": "094dc243c2c96e561e22f7e97ccbcbb585d037a5436e69b30e6318ac0b6227f5"
+      "gzipBytes": 7409,
+      "sha256": "6ffff4b4999951f91c122d2529c458f5cc427e98022e074f3ed32afa9da353c7"
     },
     {
       "name": "blog/por-que-a-rainha-tem-dois-aniversarios/index.html",
       "sourceBytes": 23688,
       "outputBytes": 23824,
-      "gzipBytes": 7109,
-      "sha256": "d920bb8a14b2b2afe978d96ed5d1a5fc9b273b8dd41283803b5a169f410324db"
+      "gzipBytes": 7110,
+      "sha256": "2eff2e7d035ab90f07aa01331863740b4d4d53701583c8e449cf9838c0ee8259"
     },
     {
       "name": "blog/por-que-a-united-idiomas-e-a-escolha-certa-para-aprender-ingles-de-verdade/index.html",
       "sourceBytes": 24845,
       "outputBytes": 24981,
-      "gzipBytes": 7038,
-      "sha256": "f384a75355a1308bb69a84ca4d984ca0f0c737845ba7da3441640347a8ccf5a0"
+      "gzipBytes": 7037,
+      "sha256": "ac41123138be5513ee5225ca9210e6a4afcb5794370ea20bfff95ee8012266c6"
     },
     {
       "name": "blog/pos-graduacao-internacional-no-reino-unido/index.html",
       "sourceBytes": 26561,
       "outputBytes": 26693,
-      "gzipBytes": 7504,
-      "sha256": "f498602c2aa559f0d5cde40dfb1059aea36c36d430426aafa509580df2166cb7"
+      "gzipBytes": 7502,
+      "sha256": "fa98e176d114109ea82ad7e72a4bcc1792d6b3511bfc76642f2d5a3f245eb25d"
     },
     {
       "name": "blog/pratos-tipicos-canada/index.html",
       "sourceBytes": 23765,
       "outputBytes": 23896,
-      "gzipBytes": 7204,
-      "sha256": "fb7fe1870c04fb934a4d1cf49cdd03c658d0d8e3ba9b2468cadd42a8142ad443"
+      "gzipBytes": 7208,
+      "sha256": "1974bc9b6e62f0dd2abd91c1670233ac20d78678196745483ae14b9b53a6de00"
     },
     {
       "name": "blog/principais-girias-ingles/index.html",
       "sourceBytes": 24457,
       "outputBytes": 24590,
-      "gzipBytes": 7477,
-      "sha256": "6112b35d1961b7879cd38203823045bd2100fee1628bb4edaf87553bb883a79f"
+      "gzipBytes": 7475,
+      "sha256": "f3c935ff1e0f3ac0c7565f9c74f84d8d96e9d472927de158a82ceeb9281e2ffb"
     },
     {
       "name": "blog/qual-a-melhor-forma-de-iniciar-os-filhos-no-ingles/index.html",
       "sourceBytes": 24342,
       "outputBytes": 24478,
-      "gzipBytes": 7068,
-      "sha256": "66de821165fe8b973301139b2af06a4b7a662a93744c0988d88ac20f66d28401"
+      "gzipBytes": 7066,
+      "sha256": "a5664d0a8c01f0e4fa32bcf62a17e75b79e2450066092a2c266e8a0e39a21ba1"
     },
     {
       "name": "blog/remoto-presencial-united/index.html",
       "sourceBytes": 23890,
       "outputBytes": 24022,
-      "gzipBytes": 7065,
-      "sha256": "4d633f30b1639054c39137f7b0fdeeec2efafed6d48a36cd5b7b5efe40e8f28d"
+      "gzipBytes": 7064,
+      "sha256": "53ce42623b760aa32706f6d456f6f471a886ed50e9554463956e19f8f7ec164d"
     },
     {
       "name": "blog/reunioes-em-ingles/index.html",
       "sourceBytes": 24713,
       "outputBytes": 24845,
-      "gzipBytes": 7382,
-      "sha256": "90f313ad7d1991c31d77a6f0f7662784a5ba52eaaaa6d8e284b6112d62d7d84c"
+      "gzipBytes": 7380,
+      "sha256": "629c38efce82ae39ce5e80a8626f3dccb2d53b784818bb2b275c8f30ea445501"
     },
     {
       "name": "blog/rotina-ingles-ia/index.html",
       "sourceBytes": 26712,
       "outputBytes": 26842,
-      "gzipBytes": 7824,
-      "sha256": "496bf4f9b842a38fa352886a737b80400b45587838d87fc6151860bd8bf99a51"
+      "gzipBytes": 7820,
+      "sha256": "a46a0e236346d6a637ec5c9734065b7810473e6883efbe2d238dd7343f36adaa"
     },
     {
       "name": "blog/saiba-como-se-preparar-para-um-intercambio/index.html",
       "sourceBytes": 24089,
       "outputBytes": 24224,
-      "gzipBytes": 7134,
-      "sha256": "c45c411c5ef00e703cbc0e519faf6a2f03c4d1233efb49957761b9e3a9aeaf84"
+      "gzipBytes": 7133,
+      "sha256": "1b900f04b67402a5ecbed1692f205d94129fdc20e4c25fc6bb3174b21a40c1fe"
     },
     {
       "name": "blog/saiba-como-validar-seu-diploma-nos-eua/index.html",
       "sourceBytes": 23926,
       "outputBytes": 24062,
-      "gzipBytes": 7036,
-      "sha256": "d763120ca826e44401334c4c627b341f4307eaf4fb4187f880970d32c09d776d"
+      "gzipBytes": 7034,
+      "sha256": "090de32f70b3125a8bf973d2b03b2aba060fdd4588f49146a93fddd2518005e3"
     },
     {
       "name": "blog/saiba-mais-sobre-os-certificados-internacionais-de-ingles/index.html",
       "sourceBytes": 25733,
       "outputBytes": 25868,
-      "gzipBytes": 7479,
-      "sha256": "36471f349999ef410221bacbe62e333e679147cbf374c5b06788299634ba3fd8"
+      "gzipBytes": 7477,
+      "sha256": "dd81bddb5a432e3a61cb16b781c5408ada1f2f9a2c533b19ff4cc1a070db1919"
     },
     {
       "name": "blog/saiba-quais-as-principais-diferencas-entre-o-ingles-americano-e-britanico/index.html",
       "sourceBytes": 28412,
       "outputBytes": 28541,
-      "gzipBytes": 7695,
-      "sha256": "7a164f20bd2f66663398934471a0721e54c557a24fd4865509caa569a399c062"
+      "gzipBytes": 7694,
+      "sha256": "48004b6245928bc6631cad7da82716eae74288028eb0e7c8b3f137b0b92e3ec9"
     },
     {
       "name": "blog/saint-patricks-day-eua/index.html",
       "sourceBytes": 23691,
       "outputBytes": 23826,
-      "gzipBytes": 7183,
-      "sha256": "f4c4381c30ba53f1af6301a0eaa7310a7d2afe1509e9fc6411a21e005000118e"
+      "gzipBytes": 7182,
+      "sha256": "4bd9dd84eb23aa5f51b2907470d0c39a5b7d31528ac570c787048db0d1592941"
     },
     {
       "name": "blog/save-the-date-conheca-a-origem-dessa-expressao/index.html",
       "sourceBytes": 23903,
       "outputBytes": 24039,
-      "gzipBytes": 6971,
-      "sha256": "3723de587d6981f7fcb78fd8143ce611cb0b7ed6cafe0c47dcd954a16095f113"
+      "gzipBytes": 6970,
+      "sha256": "221a9f9c96a0bcd955acb3f8377747feac59326293bec4342145168fa103eb23"
     },
     {
       "name": "blog/search-index.json",
@@ -4704,252 +4725,273 @@
       "sourceBytes": 25024,
       "outputBytes": 25156,
       "gzipBytes": 7161,
-      "sha256": "72a31141f1347dc1c1b58bb63d1d419959bb9145752043eac26d427c06c8be19"
+      "sha256": "cfd14396bb4fd1abecd1eb53415c64abfe65a1a809cc220bda2f855f5f486735"
     },
     {
       "name": "blog/sete-destinos-ingles/index.html",
       "sourceBytes": 24156,
       "outputBytes": 24287,
-      "gzipBytes": 7136,
-      "sha256": "4350e51b07d5662477c6b71535935687ae07f97caf773bbbc39f628f064a5f1e"
+      "gzipBytes": 7135,
+      "sha256": "cb197ddd11c535b16ab3d6fe3e85e25688fbc1758d5df94284e1fd5e768d79c0"
     },
     {
       "name": "blog/sete-motivos-para-voce-comecar-2023-aprendendo-ingles-com-a-united-idiomas/index.html",
       "sourceBytes": 24103,
       "outputBytes": 24239,
-      "gzipBytes": 6875,
-      "sha256": "d240954e74e9675246674e7b608dddbd604de83db51bc58a5e42a5f0d12d55b8"
+      "gzipBytes": 6873,
+      "sha256": "1cc4d68c8fddb63ea65abd309b1b963a08862bd0ff4c2e7acee81fb0e7fce7d7"
     },
     {
       "name": "blog/soft-skills-ingles/index.html",
       "sourceBytes": 24947,
       "outputBytes": 25081,
       "gzipBytes": 7615,
-      "sha256": "05013c5df0fcb5ff29c177d63176f0d8a611a382cf0a156e8b26f45febde107c"
+      "sha256": "9fc8dc06ae0bd38c38473903f51b688282959f380b9c79ba91b920b4257a0022"
     },
     {
       "name": "blog/sotaques-ingles-diferencas/index.html",
       "sourceBytes": 24152,
       "outputBytes": 24288,
-      "gzipBytes": 7077,
-      "sha256": "9ce196021aa3bcc21ae09d265c17649b6fa3282e0f8cb9fe7e2f205c5f6a95e2"
+      "gzipBytes": 7076,
+      "sha256": "444e19612b170580b2fdc6d5f8b0023286fa42b1282300da22e5a5aed86c1fcf"
     },
     {
       "name": "blog/sotaques-ingles/index.html",
       "sourceBytes": 23652,
       "outputBytes": 23784,
       "gzipBytes": 6973,
-      "sha256": "fea37b498e51df0f6c5097349a04b4190a527124b343f27eae2b13972b50742a"
+      "sha256": "0cb8c2b221d36cb4822e9d37b66d7683a29a9db9a60d39fcfbfd856cfacd5682"
     },
     {
       "name": "blog/speak-talk-say-tell/index.html",
       "sourceBytes": 23410,
       "outputBytes": 23546,
-      "gzipBytes": 7094,
-      "sha256": "b074beb4457733895ac68bd79f93aee4c67151153682118844d731ae5f1204fb"
+      "gzipBytes": 7092,
+      "sha256": "497ae5b86ab761225a661f0e7a21ab05e2cdc350e57b21f4dcdf988f01d0dc7b"
     },
     {
       "name": "blog/substantivos-coletivos-em-ingles/index.html",
       "sourceBytes": 24648,
       "outputBytes": 24784,
-      "gzipBytes": 7095,
-      "sha256": "bcab44dd7a54f5956012ce2ff95cd6e651d01854813bfd536c5ed4a61d980b7d"
+      "gzipBytes": 7093,
+      "sha256": "f1480e7f6168d77b08a114031040f8b615811784308be96e5dcd28979c140e0d"
     },
     {
       "name": "blog/tempos-verbais-ingles-2/index.html",
       "sourceBytes": 24647,
       "outputBytes": 24780,
-      "gzipBytes": 7387,
-      "sha256": "03478fd6322a45e22364913f256fd88f26cd7f356b9b6d77658fcf4e1e6a7688"
+      "gzipBytes": 7382,
+      "sha256": "bd57ce84664bafd1b48285810844a9cf7b9b5170213ac8555977bd1bf47cec55"
     },
     {
       "name": "blog/tempos-verbais-ingles/index.html",
       "sourceBytes": 25459,
       "outputBytes": 25588,
-      "gzipBytes": 7404,
-      "sha256": "cf8acd60e4beb730c53f36dcf93046d0fed1a7f96645b95f501693c1e06f7ae0"
+      "gzipBytes": 7401,
+      "sha256": "61270a9987b3e69d17af38711d573417a189ea02fd08f6b13180f432e9e72812"
     },
     {
       "name": "blog/termos-ingles-profissionais-rh/index.html",
       "sourceBytes": 24049,
       "outputBytes": 24185,
-      "gzipBytes": 7118,
-      "sha256": "357a728b02380f6e25ef84cd63ad0407c605b9fc2e9d87f32a2084c66473275b"
+      "gzipBytes": 7117,
+      "sha256": "9b7b5b0eaf59dbcb962c812302876836bd33600071fd684eb99d002c5f86fd4d"
     },
     {
       "name": "blog/thanksgiving-day-curiosidades/index.html",
       "sourceBytes": 24074,
       "outputBytes": 24209,
-      "gzipBytes": 7220,
-      "sha256": "d247aaf6d2ddef5d16b37e7154a22f3addb0badf123f64a0d2a3dfe92a9e913f"
+      "gzipBytes": 7215,
+      "sha256": "8edbb524d94ca4092842581c6c7351c715cc151bbe42b2d6d74d4df724af0740"
     },
     {
       "name": "blog/thanksgiving-day-dia-especial/index.html",
       "sourceBytes": 24950,
       "outputBytes": 25085,
-      "gzipBytes": 7645,
-      "sha256": "3b884015f04b40ee31d44395fd4f8a9dad8c753115c07aa529de06b79e889fb9"
+      "gzipBytes": 7643,
+      "sha256": "e83159912e8e39682e03b862bc5f106bcdd15dc31ad42beecdc30b005fd38648"
     },
     {
       "name": "blog/though-thought-tough/index.html",
       "sourceBytes": 23719,
       "outputBytes": 23851,
       "gzipBytes": 7096,
-      "sha256": "d521c06c0e37f8603a95f713f9135f47e18024d182292bb40f0ef70768ecbeb8"
+      "sha256": "360f6fc787dcbf20c1429004e7a2dc5032cd28d4d378221ecdcb994f6f6fbe45"
     },
     {
       "name": "blog/too-enough-very/index.html",
       "sourceBytes": 23839,
       "outputBytes": 23972,
-      "gzipBytes": 7254,
-      "sha256": "6c4328c1ba2e89792a2b6eb022c59429c99170284ac8eaf4e092575b10955e89"
+      "gzipBytes": 7253,
+      "sha256": "18c9818849937e94bd1f6b7b18feb856b56c8e422bcb591d4a6402f0d0003878"
     },
     {
       "name": "blog/trabalho-no-exterior-entenda-o-nivel-de-ingles-para-trabalhar-fora-do-brasil/index.html",
       "sourceBytes": 24640,
       "outputBytes": 24776,
-      "gzipBytes": 7065,
-      "sha256": "878e7b5a82fe8f577378ab3e59618f958f07d1df80fc42a6d0dd1659b4996fb3"
+      "gzipBytes": 7064,
+      "sha256": "a09bf31ba6d9a7f34be1e48f5c57e34256f67bb7fb43a74dcb5f95c936f97eaf"
     },
     {
       "name": "blog/treinar-ingles-inteligencia-artificial/index.html",
       "sourceBytes": 24814,
       "outputBytes": 24945,
-      "gzipBytes": 7256,
-      "sha256": "e1da329772ee9f5e83e6d12ef5657aad5e981eb607a247a1858750d3e78483a3"
+      "gzipBytes": 7258,
+      "sha256": "e1eb4de99498267608fbcb87f04970348e2022f2ad67c74c95a8e61676d352d8"
     },
     {
       "name": "blog/treinar-ingles-intercambio/index.html",
       "sourceBytes": 23731,
       "outputBytes": 23863,
-      "gzipBytes": 7176,
-      "sha256": "2711a466c87206b031b26a072a3218d91255ca65e2dd63395dbc7153d20b6ee6"
+      "gzipBytes": 7172,
+      "sha256": "0312c4fe73e64410a9ec6e7924cd8b35a70e064de75119788f2de5417828e587"
     },
     {
       "name": "blog/treinar-ingles-series/index.html",
       "sourceBytes": 23815,
       "outputBytes": 23948,
-      "gzipBytes": 7080,
-      "sha256": "6a9975cd3643682aa7ecf5d1597cf1c01dda758ff6f3a6c6cacf41c44a126688"
+      "gzipBytes": 7077,
+      "sha256": "1cecd0e845f1901c31ebad25e208864d28837932e180c75f165fe0696f327e3f"
     },
     {
       "name": "blog/tudo-sobre-intercambio-australia/index.html",
       "sourceBytes": 24003,
       "outputBytes": 24136,
       "gzipBytes": 7259,
-      "sha256": "0d0743c0106856a8c212c4f202b5f5bf22d05021849cd269f61c16b2685df6c1"
+      "sha256": "24109a6fcdf9c12bc8b9799e76119eb9bda39b0cf482833888d892fd6788a9a8"
     },
     {
       "name": "blog/united-ingles-online-aulas-ao-vivo-tecnologia/index.html",
       "sourceBytes": 24630,
       "outputBytes": 24745,
-      "gzipBytes": 7117,
-      "sha256": "60041d98cc2fc2f830d7e7164b259b0e7dbe182dfd7669e6b7d215c77db8c87b"
+      "gzipBytes": 7116,
+      "sha256": "1b899eaa99ec910bf588a79cd6861e78b475d3d77ee23fd922372e844ecca219"
     },
     {
       "name": "blog/united-valor-o-globo-live-class-2/index.html",
       "sourceBytes": 20359,
       "outputBytes": 20470,
-      "gzipBytes": 5669,
-      "sha256": "de37610b30a678cf6a95fd09e069e82d5aabfa448cc1d5ac3427ad2636c6c57e"
+      "gzipBytes": 5667,
+      "sha256": "d5debaf27d98b93754e1bd42560610540768b30a87e7754d2d113b3f5e181f4e"
     },
     {
       "name": "blog/uso-de-preposicoes-em-ingles/index.html",
       "sourceBytes": 24628,
       "outputBytes": 24764,
-      "gzipBytes": 7128,
-      "sha256": "f8ee0875f55be707ef11a7ed2b0b0690cf4f40cef13ba60e8f0711253c7ace69"
+      "gzipBytes": 7127,
+      "sha256": "fb9538b86b61056750941f9491e537aa8a980ae4a7007cab0b9d9331ff49d5cb"
     },
     {
       "name": "blog/valentines-day-conheca-as-diferencas-em-relacao-ao-dia-dos-namorados/index.html",
       "sourceBytes": 24400,
       "outputBytes": 24536,
-      "gzipBytes": 7125,
-      "sha256": "c969797565dc77b131d6edbaf277e65caac0c76e4f80896b28e3be58b0bcb391"
+      "gzipBytes": 7128,
+      "sha256": "fbf4c8c6a4d1d866b027be4e484150ca4cce26dacedc6f745f3a9d988b579cdb"
     },
     {
       "name": "blog/vantagens-de-falar-ingles-fluentemente-no-mercado-de-trabalho/index.html",
       "sourceBytes": 25520,
       "outputBytes": 25656,
-      "gzipBytes": 7231,
-      "sha256": "fb004a7422bd8136fc9d6388eb1d742315ddd6aa7af5f96abf04afb2d124e444"
+      "gzipBytes": 7233,
+      "sha256": "d0fa0a3194f3296ea45b6438385dca25b8c64510d421ba2d1e322f4a8073a141"
     },
     {
       "name": "blog/veja-10-carreiras-e-profissoes-incriveis-para-quem-e-fluente-em-ingles/index.html",
       "sourceBytes": 25328,
       "outputBytes": 25464,
-      "gzipBytes": 7082,
-      "sha256": "539c1bbc6f7fda868420daf89b5a4e5c5a01e3f9121a0770d15d78db10b1f4c6"
+      "gzipBytes": 7081,
+      "sha256": "f47bb9ecdeeefdbd19ad23a691fc20651ad39a059bb32966f7593c9e24b011be"
     },
     {
       "name": "blog/veja-motivos-para-comecar-a-assistir-filmes-com-legenda-em-ingles/index.html",
       "sourceBytes": 25505,
       "outputBytes": 25641,
-      "gzipBytes": 7395,
-      "sha256": "02265aa0710d1485636dc7d3810b1a3656549b17d922481408bf9e9bae18b615"
+      "gzipBytes": 7392,
+      "sha256": "a67e5b11202a7200b8fabc322607d6c57f97e3fa05778532657fb5577b8729fe"
     },
     {
       "name": "blog/verb-tenses/index.html",
       "sourceBytes": 27336,
       "outputBytes": 27466,
-      "gzipBytes": 7518,
-      "sha256": "d69a156ec43ea6df3316dacfd3f86384cedac3429e0ca9210ed8a21a859940d3"
+      "gzipBytes": 7519,
+      "sha256": "a3174f75d0850d95adc2edb1768ec32a481aa7ad71028ba5e644e28c709c7706"
     },
     {
       "name": "blog/veterans-day-importancia/index.html",
       "sourceBytes": 24030,
       "outputBytes": 24165,
-      "gzipBytes": 7202,
-      "sha256": "ec184d4ed1e63e0c5d64f9a2ed5529a24864c076254ea7d3cabd011a7d68b3f6"
+      "gzipBytes": 7201,
+      "sha256": "3e2f59eb989b77082c18a507a80687ed1e621f9a282ee1bb8215d33412367007"
     },
     {
       "name": "blog/viajando-pela-primeira-vez-para-outro-pais-veja-dicas-para-aproveitar-ao-maximo/index.html",
       "sourceBytes": 25470,
       "outputBytes": 25606,
-      "gzipBytes": 7281,
-      "sha256": "7aa7898f3dbb6cdae6b7fdcc57d56f6b8135c0ff182874c58da604d943cda567"
+      "gzipBytes": 7279,
+      "sha256": "fe8188c177672108c46da865320514cb3fa3981e532cb757b205784a6b885627"
     },
     {
       "name": "blog/vocabulario-de-ingles-para-a-area-de-marketing/index.html",
       "sourceBytes": 23989,
       "outputBytes": 24124,
-      "gzipBytes": 7240,
-      "sha256": "3f809ef4bcc8807c261b9ad257d31eaa2cd37c02b688d5fcbe49437ea4189c26"
+      "gzipBytes": 7239,
+      "sha256": "797f53eee7bc9063d8bf817f225bb7cc5842ba9a62e9c9b11f13187730a6c0af"
     },
     {
       "name": "blog/vocabulario-ingles-usado-no-halloween/index.html",
       "sourceBytes": 23898,
       "outputBytes": 24034,
       "gzipBytes": 7280,
-      "sha256": "82ac1a81b559b205988a913e2252dff9bdbf7f779c2ce498efbe546ece5d28d8"
+      "sha256": "52e11155c74d372dcd40f340edc354c0d54ee6e046991f616544043503e6bd70"
     },
     {
       "name": "blog/vocabulario-ingles-viagem/index.html",
       "sourceBytes": 25766,
       "outputBytes": 25895,
-      "gzipBytes": 7626,
-      "sha256": "70ede1667d19f1594a6cf93649c55a60d4db20d32064fdaa33cf452e776ab2af"
+      "gzipBytes": 7623,
+      "sha256": "442c7f43d8c7a79210bfe6fa74484fb53b58abd85735c9459a9f7b9138a2d24d"
     },
     {
       "name": "blog/vocabulario-natal-ingles/index.html",
       "sourceBytes": 23726,
       "outputBytes": 23858,
-      "gzipBytes": 7124,
-      "sha256": "465f289a4828442ddf7aab81442fd327aa1f197a0ddd6455a24cb96683e6d13e"
+      "gzipBytes": 7123,
+      "sha256": "8d7f921462c0b9a6db5b12adc6cb47287a419b2707f7a91d819905a3c0fb3b9e"
     },
     {
       "name": "blog/voce-sabe-como-o-toefl-funciona/index.html",
       "sourceBytes": 23016,
       "outputBytes": 23151,
-      "gzipBytes": 6897,
-      "sha256": "1d0045fa8ffa1dc5d1912fddfcc610cc1c54f64334919c319ad37ceee72b5770"
+      "gzipBytes": 6896,
+      "sha256": "44389fc6b293364e15aae102cb0f59147c05efe968b97fc82bb22e7ceac1f4e4"
     },
     {
       "name": "blog/will-going-to/index.html",
       "sourceBytes": 23871,
       "outputBytes": 24005,
-      "gzipBytes": 7091,
-      "sha256": "0bcd849499ec09c2bf1d3dccf20e98616ad0c35d383f15ab621d7a92ad321815"
+      "gzipBytes": 7090,
+      "sha256": "b224d84ba5a29f8491e32dd51afe5a4e93fca77df32e7afbee779eeda99cf28c"
+    },
+    {
+      "name": "business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "sourceBytes": 25236,
+      "outputBytes": 25236,
+      "gzipBytes": 25264,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "name": "business/assets/business-networking-640w-27b483b92662.webp",
+      "sourceBytes": 46398,
+      "outputBytes": 46398,
+      "gzipBytes": 46431,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "name": "business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "sourceBytes": 61058,
+      "outputBytes": 61058,
+      "gzipBytes": 61096,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
     },
     {
       "name": "business/assets/business-networking.webp",
@@ -5002,17 +5044,17 @@
     },
     {
       "name": "business/index.html",
-      "sourceBytes": 41315,
-      "outputBytes": 41240,
-      "gzipBytes": 9622,
-      "sha256": "b88d404d73e566650b74266f4663b93e22bfd69376f419e12b65f0f434d5aa21"
+      "sourceBytes": 41521,
+      "outputBytes": 41446,
+      "gzipBytes": 9713,
+      "sha256": "64e051a536d3473fed05c5fcfd2fe8a49bea692dda83b1727c224112099abc17"
     },
     {
       "name": "contact-form.css",
-      "sourceBytes": 9725,
-      "outputBytes": 8776,
-      "gzipBytes": 1840,
-      "sha256": "1174d73c4b12ae4570fa256fd8b2e283180e9412a5ec9d7960a7f992a3ac435a"
+      "sourceBytes": 9854,
+      "outputBytes": 8893,
+      "gzipBytes": 1859,
+      "sha256": "4b9c866454403475020b2272dc6c110f680b148a87a98edbd8b5717188a0d473"
     },
     {
       "name": "contact-form.js",
@@ -5046,8 +5088,8 @@
       "name": "faq/index.html",
       "sourceBytes": 31959,
       "outputBytes": 32106,
-      "gzipBytes": 6802,
-      "sha256": "611563e0154434a514758c051f1708607f2b0a4564b2d098f37ca18439e92085"
+      "gzipBytes": 6801,
+      "sha256": "40b5cbc44b65e42d741b8c2a0d21a52d2ecd915a3a3488857d14a1f4008cdcae"
     },
     {
       "name": "footer.css",
@@ -5103,7 +5145,7 @@
       "sourceBytes": 26473,
       "outputBytes": 26455,
       "gzipBytes": 7464,
-      "sha256": "95390be93302ccf68dd855df7f75e3044089ab00590265bda7afdc0cfcaa55ae"
+      "sha256": "3d0f4476e0d158c5b5e48e7ad6fb480a352fd3314d65cb4b6a553b016223ea6a"
     },
     {
       "name": "home/assets/banners/responsive/institucional-1122w-575731c80e66.webp",
@@ -5715,6 +5757,27 @@
       "sha256": "af819859a0ecda016e216627f4ff659667574673cafeb1d47bee4837814eb99a"
     },
     {
+      "name": "home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "sourceBytes": 50426,
+      "outputBytes": 50426,
+      "gzipBytes": 50233,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "name": "home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "sourceBytes": 67642,
+      "outputBytes": 67642,
+      "gzipBytes": 67245,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "name": "home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "sourceBytes": 34736,
+      "outputBytes": 34736,
+      "gzipBytes": 34658,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
       "name": "home/assets/images/responsive/img-plataforma-01-196w-51b7df6914f6.webp",
       "sourceBytes": 3542,
       "outputBytes": 3542,
@@ -5933,10 +5996,10 @@
     },
     {
       "name": "home/index.html",
-      "sourceBytes": 98515,
-      "outputBytes": 98411,
-      "gzipBytes": 22013,
-      "sha256": "18c5501e193f6e1aa72878e7932be71b3e34ba0f087adef3011a4db7d37bda61"
+      "sourceBytes": 98834,
+      "outputBytes": 98730,
+      "gzipBytes": 22094,
+      "sha256": "aab03bc73e87dc589e2600e3c7a3c2eb3e950ef4ddb3b73c3cf5b1cbf5414532"
     },
     {
       "name": "home/media-runtime.js",
@@ -5961,10 +6024,10 @@
     },
     {
       "name": "index.html",
-      "sourceBytes": 50894,
-      "outputBytes": 50008,
-      "gzipBytes": 13012,
-      "sha256": "0e1e51a2aad6aca84e90cf53b0593c36e523ee67772d59fc73b9476ccee392b2"
+      "sourceBytes": 51365,
+      "outputBytes": 50479,
+      "gzipBytes": 13172,
+      "sha256": "7dcea8de49309e0a9681050d25e73151346cac439d078e98ba1db511cc8a76ae"
     },
     {
       "name": "interface-refinements.css",
@@ -6026,8 +6089,8 @@
       "name": "quem-somos/index.html",
       "sourceBytes": 29997,
       "outputBytes": 29889,
-      "gzipBytes": 7841,
-      "sha256": "e24bcf163927c465e48b2f57c1f593d7aec9842d6baa3d69dc8ea3325e792d8c"
+      "gzipBytes": 7842,
+      "sha256": "1c2b9cb5161a4576253fcee2a3cbaa8d65d90b4793d3866666c548cd098d9c01"
     },
     {
       "name": "rdstation-account.js",

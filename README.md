@@ -1,7 +1,25 @@
 # United — entrega para publicação
 
-A versão completa revisada está em **[review/united-site-2026-10-21/](review/united-site-2026-10-21/)**: Home, Live Class, Business, Full, Quem somos, FAQ e blog com 186 artigos, além de SEO, WebP, minificação e integração RD Station.
+## Atualização do site principal — 26/10/2026
 
-Rafael: começar por **[PUBLICAR.md](review/united-site-2026-10-21/PUBLICAR.md)**. Os arquivos públicos prontos ficam em `review/united-site-2026-10-21/dist/`; a fonte editável e o processo de manutenção estão na mesma entrega.
+Rafael: começar pelas **[instruções de publicação](releases/site-2026-10-26/README.md)** e baixar o **[ZIP seletivo](releases/site-2026-10-26/United-Site-Ajustes-2026-10-26.zip)**. O pacote restaura o vermelho de “Quero conhecer”, preserva o WhatsApp verde e acrescenta nove variantes WebP para três imagens.
+
+Publicar somente os **16 arquivos de `publicar/`**: seis HTML comerciais, um CSS e nove WebP. Enviar imagens/CSS antes dos HTMLs, preservar os caminhos e invalidar o cache. O pacote inclui sete arquivos de reversão e foi preparado e conferido; ainda não foi aplicado à hospedagem.
+
+O blog ativo continua no WordPress. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. WordPress, PHP, banco, `.htaccess`, robots e sitemap ficam fora deste ajuste.
+
+## Blog WordPress — integração de 24/10/2026
+
+A integração editorial está em **[wordpress/](wordpress/README.md)**. O plugin usa os posts, categorias e imagens do WordPress atual e aplica o visual aprovado, com prévia administrativa antes da ativação pública. Rafael: seguir **[INSTALACAO-RAFAEL.md](wordpress/docs/INSTALACAO-RAFAEL.md)**. A agência encontra o fluxo de publicação em **[ROTINA-EDITORIAL.md](wordpress/docs/ROTINA-EDITORIAL.md)**.
+
+Para o blog, esta integração substitui o fluxo estático abaixo. Não sobrescrever o WordPress nem reimportar seu acervo a partir do pacote antigo. Os dois textos novos podem ser adicionados como rascunhos pelo plugin.
+
+**Pacote instalável:** [United-Blog-WordPress-2026-10-24.zip](wordpress/releases/United-Blog-WordPress-2026-10-24.zip). O novo [sitemap das páginas comerciais](wordpress/releases/sitemap-united-pages.xml) exclui as rotas estáticas do blog; os posts continuam no sitemap dinâmico do WordPress.
+
+## Entrega do site de 21/10/2026
+
+A fonte do site está em **[review/united-site-2026-10-21/](review/united-site-2026-10-21/)**: Home, Live Class, Business, Full, Quem somos e FAQ, além de SEO, WebP, minificação e integração RD Station. O blog estático com 186 artigos permanece apenas como referência histórica.
+
+O processo de manutenção e as orientações anteriores estão em **[PUBLICAR.md](review/united-site-2026-10-21/PUBLICAR.md)**. Para o site já publicado, usar o ZIP seletivo de 26/10 indicado acima, sem copiar a árvore completa de `dist/`.
 
 O PHP da raiz e a entrega anterior `review/united-2026/` foram preservados. Este commit disponibiliza a revisão no Git; a integração e a publicação na hospedagem ficam com Rafael.

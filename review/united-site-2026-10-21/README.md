@@ -1,6 +1,8 @@
 # United — revisão completa de 21/10/2026
 
-Esta entrega reúne a fonte editável atual e os arquivos prontos para integração na hospedagem. Foi preparada para envio ao Git por solicitação do responsável pela United; a publicação fica com Rafael. Começar por [PUBLICAR.md](PUBLICAR.md).
+> **Atualização vigente — 26/10/2026:** Rafael deve usar as [instruções de publicação](../../releases/site-2026-10-26/README.md) e o [ZIP seletivo](../../releases/site-2026-10-26/United-Site-Ajustes-2026-10-26.zip). Publicar somente os 16 arquivos de `publicar/` (seis HTML, um CSS e nove WebP). Não copiar o `dist/` completo nem `dist/blog/`: o blog ativo continua no WordPress. O pacote está preparado e conferido, ainda não aplicado à hospedagem.
+
+Esta pasta reúne a fonte editável e o processo de manutenção do site. O build completo também conserva o blog estático como referência histórica. A publicação do ajuste atual fica com Rafael, conforme o pacote seletivo acima; [PUBLICAR.md](PUBLICAR.md) distingue esse ajuste das orientações anteriores.
 
 ## O que há no pacote
 
@@ -8,13 +10,13 @@ Esta entrega reúne a fonte editável atual e os arquivos prontos para integraç
 | --- | --- |
 | `src/` | Fonte editável: páginas, CSS, JavaScript, recursos ativos e conteúdo editorial. |
 | `preview/` | Prévia local gerada pelo build, com bloqueio de indexação; não versionada no Git. |
-| `dist/` | Candidato de produção com URLs oficiais, canonical, dados estruturados e sitemap. |
-| `editorial/` | Guia e modelos para artigos semanais. |
+| `dist/` | Resultado completo do build, incluindo o blog estático histórico; não copiar integralmente para a hospedagem. |
+| `editorial/` | Guia e modelos do fluxo editorial estático anterior. |
 | `publication/` | Integração de SEO, robots, sitemap, domínio, cache e compressão. |
 | `reports/` | Resultados das verificações técnicas; não são uma nota PageSpeed. |
 | `tools/` | Ferramentas de build, testes e servidor de revisão. |
 
-São 213 páginas: Home, Live Class, Business, Full, Quem somos, FAQ, 21 páginas de listagem e 186 artigos. A fonte conserva os 184 artigos importados e os dois textos institucionais aprovados. Imagens de conteúdo usam WebP; logos vetoriais, ícones e imagens de compartilhamento podem manter SVG ou PNG quando adequado ao uso.
+O build completo contém 213 páginas: as seis comerciais, 21 listagens e 186 artigos estáticos de referência. A fonte conserva os 184 artigos importados e os dois textos institucionais aprovados; isso não define o inventário atual do WordPress. Imagens de conteúdo usam WebP; logos vetoriais, ícones e imagens de compartilhamento podem manter SVG ou PNG quando adequado ao uso.
 
 ## Abrir a prévia pronta
 
@@ -24,7 +26,7 @@ Requer Python 3. Na pasta desta entrega:
 python3 tools/serve.py --directory dist --port 8792
 ```
 
-Abra `http://127.0.0.1:8792/`. Esse é o candidato com a organização final: Home em `/`, Live Class em `/cursos/live-class/`, Business em `/cursos/business/`, Full em `/cursos/full/`, além de `/quem-somos/`, `/faq/` e `/blog/`.
+Abra `http://127.0.0.1:8792/`. As rotas comerciais são Home em `/`, Live Class em `/cursos/live-class/`, Business em `/cursos/business/`, Full em `/cursos/full/`, além de `/quem-somos/` e `/faq/`. A rota local `/blog/` mostra a referência estática, não o WordPress publicado.
 
 Para conferir as rotas locais originais, execute `python3 tools/serve.py --directory preview --port 8791` e abra `http://127.0.0.1:8791/home/`. Não abra os HTML por `file://`.
 
@@ -43,35 +45,22 @@ npm run test:rd
 npm run audit:blog
 ```
 
-`npm run build` gera o blog, atualiza o cabeçalho/rodapé do blog, minifica os arquivos ativos, prepara `dist/`, valida referências e executa SEO na prévia e no candidato. Nenhum comando publica, faz commit ou push.
+`npm run build` gera a referência estática do blog, atualiza seu cabeçalho/rodapé, minifica os arquivos ativos, prepara `dist/`, valida referências e executa SEO na prévia e no candidato. Nenhum comando publica, faz commit ou push. O resultado completo não é o pacote de instalação do ajuste de 26/10.
 
 Edite sempre `src/`; `preview/` e `dist/` são resultados gerados. `src/navigation.json` registra as páginas locais. `release.config.json` define o domínio e as rotas de produção. Os arquivos de recursos são encontrados a partir das páginas registradas e suas referências; imagens soltas e arquivos de trabalho não entram no build.
 
-## Blog e rotina da agência
+## Blog WordPress e referência estática
 
-O candidato completo já inclui o blog com os 186 artigos; ele pode ser publicado junto com as demais páginas aprovadas. O blog é estático e esta entrega não inclui painel CMS nem sincronização automática com WordPress. A equipe editorial pode preencher `editorial/modelos/pauta-semanal.txt`; a agência cadastra texto, imagem, autoria, data e fontes no template aprovado. Consulte `editorial/GUIA-EDITORIAL.md`.
+O blog ativo é mantido em **Posts** no WordPress, conforme [ROTINA-EDITORIAL.md](../../wordpress/docs/ROTINA-EDITORIAL.md). A integração do plugin está em [wordpress/README.md](../../wordpress/README.md) e permanece separada do ajuste comercial de 26/10.
 
-```sh
-npm run blog:novo -- novo-artigo "Título do novo artigo"
-npm run review
-npm run preview
-```
-
-O comando cria um rascunho sem sobrescrever artigos. O estado `draft` não aparece na prévia; `local-draft` aparece apenas para revisão e bloqueia a preparação de produção, a menos que tenha aprovação explícita em `release.config.json`. Os dois textos já aprovados nesta entrega estão listados nessa configuração. Para novos textos, a equipe deve aprovar o conteúdo antes de marcá-lo como `published` ou acrescentá-lo conscientemente à lista de aprovação. Esses estados não enviam arquivos ao servidor.
-
-Uma data futura não agenda publicação. O painel WordPress atual pode continuar como fluxo editorial se a agência integrar estes templates ao CMS; essa integração é uma etapa própria, não incluída neste ZIP.
-
-Para a rotina semanal, manter uma única fonte vigente no repositório da agência e integrar os novos textos nessa versão. Enviar apenas os arquivos públicos alterados após o build e a revisão do diff. Não reinstalar um ZIP antigo para cadastrar uma matéria: ele pode reverter correções de visual, SEO e formulário feitas nesta revisão. Um pacote editorial separado é uma ferramenta de entrega de conteúdo/modelos; antes de integrar código, conferir a data e as diferenças em relação ao repositório vigente.
+`src/blog/`, `editorial/`, o comando `blog:novo` e os estados editoriais do gerador pertencem à referência estática anterior. Não sincronizam o WordPress nem devem ser usados para substituir seus posts, banco ou uploads. Não publicar `dist/blog/` nem reinstalar uma entrega completa antiga ao cadastrar matérias.
 
 ## Preparar o envio ao Git e a publicação
 
-1. Integrar em uma branch de revisão do repositório correto, mantendo a estrutura e o processo de build da agência. Revisar o diff e excluir arquivos temporários.
-2. Preservar WordPress, `/wp-admin/`, `/wp-content/`, uploads, APIs e páginas que não fazem parte da entrega. Não substituir a instalação nem copiar o pacote inteiro para a raiz pública.
-3. Integrar apenas os arquivos públicos de `dist/` aos caminhos aprovados. `dist/.united-release.json` é um marcador de build local: não precisa ser enviado ao servidor público.
-4. Conferir os redirecionamentos existentes e resolver a inconsistência `www` do blog antes de publicar. A configuração desta entrega usa `https://www.unitedidiomas.com`; o servidor não deve redirecionar essas URLs para outro domínio canônico.
-5. Integrar `publication/robots-snippet.txt` ao robots existente, preservando suas regras, e publicar `sitemap-united-pages.xml`. Não copiar o robots da prévia para produção.
-6. Aplicar cache e compressão conforme `publication/DESEMPENHO-E-INTEGRACAO.md`, preservar o recebimento dos formulários e confirmar medição/consentimento.
-7. Após a publicação autorizada, executar `npm run check:publication` e concluir as verificações de CRM, navegação, redirecionamentos e Search Console.
+1. Integrar em uma branch de revisão do repositório correto, revisar o diff e preservar alterações existentes fora do escopo. O envio ao Git não executa publicação.
+2. Para a atualização de 26/10, seguir o [guia do pacote seletivo](../../releases/site-2026-10-26/README.md). Fazer backup e publicar apenas seus 16 arquivos: imagens/CSS primeiro, depois os seis HTMLs, respeitando os caminhos e invalidando o cache.
+3. Preservar WordPress, `/blog/`, `/wp-admin/`, `/wp-content/`, uploads, PHP, banco, APIs e páginas fora do escopo. Este ajuste não modifica redirects, domínio canônico do blog, `.htaccess`, robots ou sitemap. Não enviar `rollback/`, `conferencia/`, `manutencao/` ou marcadores de build ao servidor público.
+4. Conferir as seis páginas comerciais em desktop e celular após Rafael aplicar a atualização. As instruções de reversão e os hashes estão no pacote. As orientações anteriores de integração completa permanecem em [PUBLICAR.md](PUBLICAR.md) e não ampliam o escopo desta atualização.
 
 ## O que ainda depende do ambiente publicado
 

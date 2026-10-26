@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26",
+  "status": "preview_only",
+  "pluginVersion": "1.0.3",
+  "environment": {
+    "wordpress": "7.1.3",
+    "php": "7.4.33",
+    "theme": {
+      "name": "Divi",
+      "version": "4.27.9"
+    },
+    "seoPlugin": {
+      "name": "Yoast SEO",
+      "version": "28.5"
+    }
+  },
+  "productionEvidenceSource": "Main agent observations in the authenticated production administrator preview, reported to the reviewing subagent on 2026-10-26. The reviewing subagent did not access production.",
+  "productionPreviewChecks": [
+    {
+      "check": "United Blog 1.0.3 installed successfully in administrator preview mode",
+      "status": "passed",
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Minified WhatsApp adapter loaded with ver=1.0.3",
+      "status": "passed",
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Native RD floating WhatsApp trigger has display:none and exactly one layout WhatsApp shortcut remains visible",
+      "status": "passed",
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Layout WhatsApp shortcut opens the original RD form",
+      "status": "passed",
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Quero conhecer opens the approved RD form",
+      "status": "passed",
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Native search for reuniões returns results",
+      "status": "passed",
+      "resultCount": 52,
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Search for reuniões filtered by Negócios returns results",
+      "status": "passed",
+      "resultCount": 32,
+      "source": "main_agent_report"
+    },
+    {
+      "check": "Filtered pagination reaches page 2 of 6 and preserves search/category parameters",
+      "status": "passed",
+      "source": "main_agent_browser_observation"
+    },
+    {
+      "check": "Public blog without preview query still renders the original Divi layout",
+      "status": "passed",
+      "source": "main_agent_browser_observation"
+    },
+    {
+      "check": "Public-layout setting and additional tracking remain disabled; RD contact remains enabled",
+      "status": "passed",
+      "source": "main_agent_browser_observation"
+    },
+    {
+      "check": "Preview index lists 186 published articles",
+      "status": "passed",
+      "source": "main_agent_browser_observation"
+    },
+    {
+      "check": "Preview index has no horizontal overflow at 1280px and no broken loaded images",
+      "status": "passed",
+      "source": "main_agent_browser_observation"
+    }
+  ],
+  "localPackageVerification": {
+    "archive": "releases/United-Blog-WordPress-2026-10-24.zip",
+    "bytes": 382911,
+    "sha256": "bc09f298af9b8a01afa93887662a092047f57ca4625832dd1ee1e14cf7308fcb",
+    "files": 44,
+    "crcPassed": true,
+    "manifestMatches": true,
+    "sourceContentsMatch": true,
+    "uniqueSafePaths": true,
+    "nodeModulesIncluded": false,
+    "pluginAndReadmeVersion": "1.0.3",
+    "source": "local_zip_and_manifest_inspection"
+  },
+  "pullRequest": {
+    "number": 11,
+    "status": "open",
+    "merged": false,
+    "source": "GitHub connector get_pr_info, checked by main agent"
+  },
+  "scopeLimits": [
+    "This record does not assert a public rollout.",
+    "Opening RD forms does not establish successful lead submission, CRM delivery or automation execution.",
+    "This record does not assert SEO, performance scores, accessibility or additional device/browser tests."
+  ]
+}

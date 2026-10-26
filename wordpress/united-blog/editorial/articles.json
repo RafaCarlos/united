@@ -1,0 +1,36 @@
+[
+  {
+    "id": "united-release",
+    "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
+    "title": "United: aulas ao vivo, tecnologia e 18 anos de histórias com o inglês",
+    "seo_title": "United: inglês online, aulas ao vivo e tecnologia própria",
+    "excerpt": "Conheça a trajetória da United: 150 mil alunos, selos da ABF e um curso de inglês online que conecta aulas ao vivo, conversação ilimitada e inteligência artificial.",
+    "byline": "Redação United",
+    "proposed_date": "2026-10-11",
+    "category_slug": "united-idiomas",
+    "category_name": "United Idiomas",
+    "body": "united-ingles-online-aulas-ao-vivo-tecnologia.html",
+    "image": {
+      "file": "images/sala-united-editorial-v32.webp",
+      "alt": "Exemplo ilustrativo da sala United Class, com participantes em vídeo, chat e atividades de inglês na mesma tela",
+      "caption": "Imagem ilustrativa baseada na plataforma United Class."
+    }
+  },
+  {
+    "id": "united-midia-2026-10",
+    "slug": "united-valor-o-globo-live-class-2",
+    "title": "United no Valor e em O Globo: conheça a Live Class 2.0",
+    "seo_title": "United no Valor e em O Globo: Live Class 2.0",
+    "excerpt": "Publicações de 20 de outubro apresentam a proposta da United: aulas ao vivo, conversação, inteligência artificial e histórias que conectam o inglês à vida real.",
+    "byline": "Redação United",
+    "proposed_date": "2026-10-21",
+    "category_slug": "united-idiomas",
+    "category_name": "United Idiomas",
+    "body": "united-valor-o-globo-live-class-2.html",
+    "image": {
+      "file": "images/sala-liveclass.webp",
+      "alt": "Sala United Class com participantes em vídeo e atividades de inglês integradas à aula",
+      "caption": "Tela de apresentação da United Class: interação em vídeo e atividades de inglês no mesmo ambiente."
+    }
+  }
+]
