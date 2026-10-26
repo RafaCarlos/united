@@ -1,10 +1,15 @@
 === United Blog ===
 Requires at least: 6.2
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 
 Layout editorial United conectado aos posts e à Biblioteca de mídia do WordPress.
+
+== Changelog ==
+= 1.0.3 =
+Evita a duplicação do botão WhatsApp quando o RD já está instalado no WordPress,
+preservando seu formulário e seus eventos sem ativar o tracking adicional.
 
 == Desempenho ==
 CSS e JavaScript são entregues minificados em produção, com fontes legíveis no

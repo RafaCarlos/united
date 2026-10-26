@@ -2,7 +2,7 @@
 /**
  * Plugin Name: United Blog
  * Description: Layout editorial United integrado aos posts, categorias e mídia do WordPress.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Requires at least: 6.2
  * Requires PHP: 7.4
  * Author: United Idiomas
@@ -10,7 +10,7 @@
  * Text Domain: united-blog
  */
 if (!defined('ABSPATH')) { exit; }
-define('UB26_VERSION', '1.0.2');
+define('UB26_VERSION', '1.0.3');
 define('UB26_DIR', plugin_dir_path(__FILE__));
 define('UB26_URL', plugin_dir_url(__FILE__));
 
@@ -101,9 +101,10 @@ add_action('wp_enqueue_scripts', function () {
     if (ub26_settings()['contact']) {
         wp_enqueue_script('united-blog-contact', ub26_frontend_asset('js/contact-form.js'), array(), UB26_VERSION, true);
     }
+    // Reuse an RD WhatsApp widget already loaded by WordPress without adding account tracking.
+    wp_enqueue_script('united-blog-whatsapp', ub26_frontend_asset('js/rdstation-whatsapp.js'), array(), UB26_VERSION, true);
     if (ub26_settings()['tracking']) {
         wp_enqueue_script('united-blog-account', ub26_frontend_asset('js/rdstation-account.js'), array(), UB26_VERSION, true);
-        wp_enqueue_script('united-blog-whatsapp', ub26_frontend_asset('js/rdstation-whatsapp.js'), array(), UB26_VERSION, true);
     }
 }, 100);
 add_filter('script_loader_tag', function ($tag, $handle) {
