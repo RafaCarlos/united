@@ -2,7 +2,7 @@
   "origin": "https://www.unitedidiomas.com",
   "pages": 213,
   "files": 846,
-  "bytes": 41806548,
+  "bytes": 41765208,
   "editorialApproval": [
     {
       "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
@@ -272,14 +272,14 @@
       "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
     },
     {
-      "file": "assets/capa-times-square-v2-1672.webp",
-      "bytes": 214242,
-      "sha256": "0a2e5405f3b7030eee48560b1092a81988f9ceb60e84bf330b7ac113f288b169"
+      "file": "assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "bytes": 179992,
+      "sha256": "265566319a8d3329159044305cba4f18c332ff37d9febf4fa7557eff2aa8afb2"
     },
     {
-      "file": "assets/capa-times-square-v2-960.webp",
-      "bytes": 95350,
-      "sha256": "d736b74ba035291dd4996be35777675a2e5353eeb23ac44e66ff7b72bde6225f"
+      "file": "assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "bytes": 88182,
+      "sha256": "6631a1359c29b251cf25994ca2fa0738c32e621399ec8a03084890cdce89a085"
     },
     {
       "file": "assets/exercicio-escuta-720.webp",
@@ -4378,8 +4378,8 @@
     },
     {
       "file": "cursos/live-class/index.html",
-      "bytes": 50862,
-      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
+      "bytes": 50940,
+      "sha256": "2be6068a0c4e363ad806eac7429101971605717308a977ad2e09b31e57043955"
     },
     {
       "file": "interface-refinements.css",

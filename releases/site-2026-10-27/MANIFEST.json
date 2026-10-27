@@ -7,6 +7,16 @@
   "supersedes": "site-2026-10-26",
   "publicar": [
     {
+      "path": "assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "bytes": 179992,
+      "sha256": "265566319a8d3329159044305cba4f18c332ff37d9febf4fa7557eff2aa8afb2"
+    },
+    {
+      "path": "assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "bytes": 88182,
+      "sha256": "6631a1359c29b251cf25994ca2fa0738c32e621399ec8a03084890cdce89a085"
+    },
+    {
       "path": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
       "bytes": 29786,
       "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
@@ -53,8 +63,8 @@
     },
     {
       "path": "cursos/live-class/index.html",
-      "bytes": 50862,
-      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
+      "bytes": 50940,
+      "sha256": "2be6068a0c4e363ad806eac7429101971605717308a977ad2e09b31e57043955"
     },
     {
       "path": "faq/index.html",
@@ -134,5 +144,12 @@
       "sha256": "d7be6f6edbbe7aeb4863de1759abbf9ebe839c8265ace4d5fe0aaa2c05072d6b"
     }
   ],
-  "rollbackNotes": "Sete arquivos da captura pública de 26/10, ainda iguais ao site na conferência de 27/10. authority.css capturado publicamente em 27/10 e idêntico ao baseline Git. Fazer um novo backup da hospedagem antes de aplicar."
+  "rollbackNotes": "Sete arquivos da captura pública de 26/10, ainda iguais ao site na conferência de 27/10. authority.css capturado publicamente em 27/10 e idêntico ao baseline Git. Fazer um novo backup da hospedagem antes de aplicar.",
+  "updatedAt": "2026-10-27T19:37:07.302789+00:00",
+  "revision": 2,
+  "changes": [
+    "Retirada de Osasco e cards de cinco unidades",
+    "CTA vermelho e nove variantes WebP da entrega de 26/10",
+    "Correção da mão da personagem no banner Live Class; duas versões WebP responsivas"
+  ]
 }

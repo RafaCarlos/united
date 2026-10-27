@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-27T18:16:16.469769+00:00",
-  "scope": "Retirada de Osasco de Quem somos; pacote cumulativo com os ajustes de 26/10",
+  "checkedAt": "2026-10-27T19:37:07.302789+00:00",
+  "scope": "Retirada de Osasco de Quem somos e correção do banner Live Class; pacote cumulativo com os ajustes de 26/10",
   "build": {
     "passed": true,
     "pages": 213,
@@ -42,7 +42,27 @@
   ],
   "detailsKeyboardOpenClose": "passed",
   "remainingContacts": "preserved",
-  "publicarFiles": 17,
+  "publicarFiles": 19,
   "rollbackFiles": 8,
-  "note": "Revisão visual no navegador do build de produção servido localmente. Sem envio de formulário, alteração de WordPress ou publicação na hospedagem."
+  "note": "Revisão visual no navegador do build de produção servido localmente. Sem envio de formulário, alteração de WordPress ou publicação na hospedagem.",
+  "liveClassHero": {
+    "corrected": "Dedo extra removido da mão levantada da personagem de roxo; gesto natural de cinco dedos.",
+    "desktop": {
+      "viewport": "1440x900",
+      "image": "assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "bytes": 179992,
+      "dimensions": "1672x941",
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "image": "assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "bytes": 88182,
+      "dimensions": "960x540",
+      "horizontalOverflow": false
+    },
+    "originalComposition": "Preservada visualmente",
+    "responsiveImageLoaded": true,
+    "visualReview": "passed"
+  }
 }

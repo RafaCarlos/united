@@ -2,9 +2,9 @@
 
 ## Atualização seletiva — 27/10/2026
 
-Começar pelas **[instruções atuais](../../releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](../../releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. Ele contém exatamente 17 arquivos em `publicar/`: seis HTML comerciais, dois CSS e nove WebP. Enviar os assets antes dos HTMLs, copiar o conteúdo de `publicar/` para os caminhos correspondentes da raiz pública e invalidar o cache. Conferir o backup e as instruções de reversão antes da aplicação.
+Começar pelas **[instruções atuais](../../releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](../../releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. Ele contém exatamente 19 arquivos em `publicar/`: seis HTML comerciais, dois CSS e onze WebP. Enviar os assets antes dos HTMLs, copiar o conteúdo de `publicar/` para os caminhos correspondentes da raiz pública e invalidar o cache. Conferir o backup e as instruções de reversão antes da aplicação.
 
-O pacote foi preparado e conferido; ainda não foi aplicado à hospedagem. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. O WordPress ativo, PHP, banco, `.htaccess`, robots, sitemap e redirects ficam fora deste ajuste. Não é necessário reinstalar o plugin do blog para aplicar estes 17 arquivos.
+O pacote foi preparado e conferido; ainda não foi aplicado à hospedagem. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. O WordPress ativo, PHP, banco, `.htaccess`, robots, sitemap e redirects ficam fora deste ajuste. Não é necessário reinstalar o plugin do blog para aplicar estes 19 arquivos.
 
 ## Referência das entregas anteriores
 
