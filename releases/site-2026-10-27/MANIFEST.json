@@ -1,0 +1,138 @@
+{
+  "createdAt": "2026-10-27T18:16:16.466490+00:00",
+  "type": "cumulative-selective-commercial-site-update",
+  "status": "prepared-not-deployed",
+  "origin": "https://www.unitedidiomas.com",
+  "baseCommit": "22a68e93ed1a6ef4f206c4ec1ba262b1a0c52aae",
+  "supersedes": "site-2026-10-26",
+  "publicar": [
+    {
+      "path": "assets/jimmy-united-recepcao-320w-ac00a8ce9dd2.webp",
+      "bytes": 29786,
+      "sha256": "ac00a8ce9dd2bb1d78624eec73ce20134ea51208238abec62ab6e8b59d3086dd"
+    },
+    {
+      "path": "assets/jimmy-united-recepcao-400w-0eaceb8eed0b.webp",
+      "bytes": 40064,
+      "sha256": "0eaceb8eed0b87618668c9c56cc765648deb6262b8be81de0ab93000d2c2f0b1"
+    },
+    {
+      "path": "assets/jimmy-united-recepcao-640w-e12e22f557e2.webp",
+      "bytes": 71910,
+      "sha256": "e12e22f557e21310251faea43ca020acfe1df95338aad574f762e630d09d1da3"
+    },
+    {
+      "path": "business/assets/business-networking-400w-164f78d7f3f6.webp",
+      "bytes": 25236,
+      "sha256": "164f78d7f3f6e8e7c5312667a32cb6f1a096ba930b75fbd5140ee57973f85921"
+    },
+    {
+      "path": "business/assets/business-networking-640w-27b483b92662.webp",
+      "bytes": 46398,
+      "sha256": "27b483b92662d5cf495a39982579389cfd0e5f49264ba15d6979fb0b62bb2963"
+    },
+    {
+      "path": "business/assets/business-networking-800w-d32e3d92edaf.webp",
+      "bytes": 61058,
+      "sha256": "d32e3d92edaf0cb699cf6c12dd6ae2ca7e729af5751cd2550ab701047a24df47"
+    },
+    {
+      "path": "contact-form.css",
+      "bytes": 8893,
+      "sha256": "4b9c866454403475020b2272dc6c110f680b148a87a98edbd8b5717188a0d473"
+    },
+    {
+      "path": "cursos/business/index.html",
+      "bytes": 41707,
+      "sha256": "670a247b7d238bb78a3829f0a76589ceb3abc3cbf9746fd55027a30b39de0eaa"
+    },
+    {
+      "path": "cursos/full/index.html",
+      "bytes": 26584,
+      "sha256": "cfe4bda7daa4081aca9f681a2745626c9ad01575c10b55797a9e68e081796521"
+    },
+    {
+      "path": "cursos/live-class/index.html",
+      "bytes": 50862,
+      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
+    },
+    {
+      "path": "faq/index.html",
+      "bytes": 32328,
+      "sha256": "853be75ec449ef4ac262220a072a676d9df02cde5c18368f6fe8a7acc410deb5"
+    },
+    {
+      "path": "home/assets/images/responsive/bg-united-video-1280w-de7ff92a2880.webp",
+      "bytes": 50426,
+      "sha256": "de7ff92a2880c79647426000488cf6acd484b38ca1e91a4a042d43ea8e2bde9f"
+    },
+    {
+      "path": "home/assets/images/responsive/bg-united-video-1600w-27d3d3dc6ca7.webp",
+      "bytes": 67642,
+      "sha256": "27d3d3dc6ca7778b7239f596505b28a45cd5d906be1867c610511ee71264a774"
+    },
+    {
+      "path": "home/assets/images/responsive/bg-united-video-960w-c287430eac05.webp",
+      "bytes": 34736,
+      "sha256": "c287430eac05730c1c95b593f76833f0492e5adef8c97ed2480dad1cb95fd674"
+    },
+    {
+      "path": "index.html",
+      "bytes": 99573,
+      "sha256": "0618dc20f7d47e81bef00ec6009e21878058267517e7f566f48e3b9053a8ebd5"
+    },
+    {
+      "path": "quem-somos/authority.css",
+      "bytes": 22829,
+      "sha256": "996cf081a0eea25cdf90f71f21b7b0ba6db0f66f9e12e5e9899d577eda78ab10"
+    },
+    {
+      "path": "quem-somos/index.html",
+      "bytes": 29275,
+      "sha256": "2536a9d12e9297e3fafa9703168558754421ef83977a726fbb22156556a00a0d"
+    }
+  ],
+  "rollback": [
+    {
+      "path": "contact-form.css",
+      "bytes": 8776,
+      "sha256": "1174d73c4b12ae4570fa256fd8b2e283180e9412a5ec9d7960a7f992a3ac435a"
+    },
+    {
+      "path": "cursos/business/index.html",
+      "bytes": 41461,
+      "sha256": "805b9b62135b13cfefc497e6864c46c8d648450bd79d059d529b7e4a309ae87c"
+    },
+    {
+      "path": "cursos/full/index.html",
+      "bytes": 26584,
+      "sha256": "70b5eea0dd080b9d82231ad9f31e6cf7095aa19a69fa4632057c22e6d9b572e1"
+    },
+    {
+      "path": "cursos/live-class/index.html",
+      "bytes": 50387,
+      "sha256": "7018b4d5d820a323afa5d9fb50161cde3fd4f71233dc39ee9170017de7fb4cfb"
+    },
+    {
+      "path": "faq/index.html",
+      "bytes": 32328,
+      "sha256": "eff4e396fd32b49ca5072e96c7a96b59874110661f1671be75627e21f3c56fbc"
+    },
+    {
+      "path": "index.html",
+      "bytes": 99230,
+      "sha256": "c14196103317fb1b9f8302786ac8784662a5418838ef17aef9e0878f446254c2"
+    },
+    {
+      "path": "quem-somos/authority.css",
+      "bytes": 22121,
+      "sha256": "75f542e966f905a08775c205a0503ca2930d7dcd715e231bee213443a065d1a1"
+    },
+    {
+      "path": "quem-somos/index.html",
+      "bytes": 30124,
+      "sha256": "d7be6f6edbbe7aeb4863de1759abbf9ebe839c8265ace4d5fe0aaa2c05072d6b"
+    }
+  ],
+  "rollbackNotes": "Sete arquivos da captura pública de 26/10, ainda iguais ao site na conferência de 27/10. authority.css capturado publicamente em 27/10 e idêntico ao baseline Git. Fazer um novo backup da hospedagem antes de aplicar."
+}

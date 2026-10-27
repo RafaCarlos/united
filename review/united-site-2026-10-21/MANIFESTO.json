@@ -10,13 +10,13 @@
     },
     {
       "file": "PUBLICAR.md",
-      "bytes": 6568,
-      "sha256": "bc5f97b3782fddfeffde983f8c5702a1377cbc2e3c7cda9b6bcc824871db22b6"
+      "bytes": 6570,
+      "sha256": "6bc00b27d5587320a421ca188aa8695c154c8511f3ddc4d7596945936427a206"
     },
     {
       "file": "README.md",
-      "bytes": 7922,
-      "sha256": "eb185fb07eac6fc6b7d633f82086b3c970dd234c8e47e331d82cad6c75d2348e"
+      "bytes": 7924,
+      "sha256": "f4a426497d8c1411c554d57595168deac36d0a96edea212f3c296d52593bc0e0"
     },
     {
       "file": "dist/.united-release.json",
@@ -4205,8 +4205,8 @@
     },
     {
       "file": "dist/quem-somos/authority.css",
-      "bytes": 22121,
-      "sha256": "75f542e966f905a08775c205a0503ca2930d7dcd715e231bee213443a065d1a1"
+      "bytes": 22829,
+      "sha256": "996cf081a0eea25cdf90f71f21b7b0ba6db0f66f9e12e5e9899d577eda78ab10"
     },
     {
       "file": "dist/quem-somos/authority.js",
@@ -4215,8 +4215,8 @@
     },
     {
       "file": "dist/quem-somos/index.html",
-      "bytes": 30124,
-      "sha256": "16ff7df06cc75b28c7b45e2115175d9af812c92a5f76553a0ad6aab847799470"
+      "bytes": 29275,
+      "sha256": "2536a9d12e9297e3fafa9703168558754421ef83977a726fbb22156556a00a0d"
     },
     {
       "file": "dist/rdstation-account.js",
@@ -4316,12 +4316,12 @@
     {
       "file": "reports/preview-build.json",
       "bytes": 218390,
-      "sha256": "47aeea62ffd84cfadb3dd5bdbaa3d4e2579ad027b1f017c8b5712b2fcd26c0d7"
+      "sha256": "77b40956388e153d1e1b8aa65372f5fc934d0af0a9a88ecebf6bc86a139c7ef0"
     },
     {
       "file": "reports/production-build.json",
       "bytes": 176802,
-      "sha256": "caff8dc9a223b74ec3d33e030c0dac1f2fc4320d92e6898b3dff98c4152a1d6b"
+      "sha256": "e9a552fbd21c38e0d691eef4a936a1cb02e8f1eee430e97395ebf352f03025eb"
     },
     {
       "file": "reports/rd-integration.json",
@@ -4336,12 +4336,12 @@
     {
       "file": "reports/seo-preview.json",
       "bytes": 242058,
-      "sha256": "e795942b616c1c54b5f7742571caa777b8429ba8a4ddc97079d8766ac7cbcadb"
+      "sha256": "b1c633168d460ee0d3acfa863f06eceb2bdc561b962bc2c36225c0d638b5b114"
     },
     {
       "file": "reports/seo-production.json",
       "bytes": 246345,
-      "sha256": "723cbb4aff8234daa418ff6ad269ae6b7035d5257a087c3d29c848292dd94673"
+      "sha256": "d3253215d0f4355d703dc1b300c2710014647e54846cfeeca86f72aa67ab7498"
     },
     {
       "file": "reports/validation.json",
@@ -9485,8 +9485,8 @@
     },
     {
       "file": "src/quem-somos/authority.css",
-      "bytes": 22868,
-      "sha256": "4430a2ed417a712ea18a345b3bd89ce1078743a4e09eacbb32e6d4121ffa3029"
+      "bytes": 23754,
+      "sha256": "c11d4896d01c1432b391f9705ffb315b803efe2727463ee9674269eff58df524"
     },
     {
       "file": "src/quem-somos/authority.js",
@@ -9495,8 +9495,8 @@
     },
     {
       "file": "src/quem-somos/index.html",
-      "bytes": 29997,
-      "sha256": "91b429a7845a6009672272ef206c2ee567c71ce89cd96c4f545e7d2cc7e68ce5"
+      "bytes": 29148,
+      "sha256": "28a075ab0fa627d61dc720442f9bee3309548d0f8ed45c29ac65e0de47a1dc25"
     },
     {
       "file": "src/rdstation-account.js",

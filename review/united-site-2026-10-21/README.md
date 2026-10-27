@@ -1,6 +1,6 @@
 # United — revisão completa de 21/10/2026
 
-> **Atualização vigente — 26/10/2026:** Rafael deve usar as [instruções de publicação](../../releases/site-2026-10-26/README.md) e o [ZIP seletivo](../../releases/site-2026-10-26/United-Site-Ajustes-2026-10-26.zip). Publicar somente os 16 arquivos de `publicar/` (seis HTML, um CSS e nove WebP). Não copiar o `dist/` completo nem `dist/blog/`: o blog ativo continua no WordPress. O pacote está preparado e conferido, ainda não aplicado à hospedagem.
+> **Atualização vigente — 27/10/2026:** Rafael deve usar as [instruções de publicação](../../releases/site-2026-10-27/README.md) e o [ZIP seletivo](../../releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip). Publicar somente os 17 arquivos de `publicar/` (seis HTML, dois CSS e nove WebP). Não copiar o `dist/` completo nem `dist/blog/`: o blog ativo continua no WordPress. O pacote está preparado e conferido, ainda não aplicado à hospedagem.
 
 Esta pasta reúne a fonte editável e o processo de manutenção do site. O build completo também conserva o blog estático como referência histórica. A publicação do ajuste atual fica com Rafael, conforme o pacote seletivo acima; [PUBLICAR.md](PUBLICAR.md) distingue esse ajuste das orientações anteriores.
 
@@ -45,20 +45,20 @@ npm run test:rd
 npm run audit:blog
 ```
 
-`npm run build` gera a referência estática do blog, atualiza seu cabeçalho/rodapé, minifica os arquivos ativos, prepara `dist/`, valida referências e executa SEO na prévia e no candidato. Nenhum comando publica, faz commit ou push. O resultado completo não é o pacote de instalação do ajuste de 26/10.
+`npm run build` gera a referência estática do blog, atualiza seu cabeçalho/rodapé, minifica os arquivos ativos, prepara `dist/`, valida referências e executa SEO na prévia e no candidato. Nenhum comando publica, faz commit ou push. O resultado completo não é o pacote de instalação do ajuste de 27/10.
 
 Edite sempre `src/`; `preview/` e `dist/` são resultados gerados. `src/navigation.json` registra as páginas locais. `release.config.json` define o domínio e as rotas de produção. Os arquivos de recursos são encontrados a partir das páginas registradas e suas referências; imagens soltas e arquivos de trabalho não entram no build.
 
 ## Blog WordPress e referência estática
 
-O blog ativo é mantido em **Posts** no WordPress, conforme [ROTINA-EDITORIAL.md](../../wordpress/docs/ROTINA-EDITORIAL.md). A integração do plugin está em [wordpress/README.md](../../wordpress/README.md) e permanece separada do ajuste comercial de 26/10.
+O blog ativo é mantido em **Posts** no WordPress, conforme [ROTINA-EDITORIAL.md](../../wordpress/docs/ROTINA-EDITORIAL.md). A integração do plugin está em [wordpress/README.md](../../wordpress/README.md) e permanece separada do ajuste comercial de 27/10.
 
 `src/blog/`, `editorial/`, o comando `blog:novo` e os estados editoriais do gerador pertencem à referência estática anterior. Não sincronizam o WordPress nem devem ser usados para substituir seus posts, banco ou uploads. Não publicar `dist/blog/` nem reinstalar uma entrega completa antiga ao cadastrar matérias.
 
 ## Preparar o envio ao Git e a publicação
 
 1. Integrar em uma branch de revisão do repositório correto, revisar o diff e preservar alterações existentes fora do escopo. O envio ao Git não executa publicação.
-2. Para a atualização de 26/10, seguir o [guia do pacote seletivo](../../releases/site-2026-10-26/README.md). Fazer backup e publicar apenas seus 16 arquivos: imagens/CSS primeiro, depois os seis HTMLs, respeitando os caminhos e invalidando o cache.
+2. Para a atualização de 27/10, seguir o [guia do pacote seletivo](../../releases/site-2026-10-27/README.md). Fazer backup e publicar apenas seus 17 arquivos: imagens/CSS primeiro, depois os seis HTMLs, respeitando os caminhos e invalidando o cache.
 3. Preservar WordPress, `/blog/`, `/wp-admin/`, `/wp-content/`, uploads, PHP, banco, APIs e páginas fora do escopo. Este ajuste não modifica redirects, domínio canônico do blog, `.htaccess`, robots ou sitemap. Não enviar `rollback/`, `conferencia/`, `manutencao/` ou marcadores de build ao servidor público.
 4. Conferir as seis páginas comerciais em desktop e celular após Rafael aplicar a atualização. As instruções de reversão e os hashes estão no pacote. As orientações anteriores de integração completa permanecem em [PUBLICAR.md](PUBLICAR.md) e não ampliam o escopo desta atualização.
 

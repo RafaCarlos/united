@@ -1,14 +1,14 @@
 # Rafael — publicação do site principal
 
-## Atualização seletiva — 26/10/2026
+## Atualização seletiva — 27/10/2026
 
-Começar pelas **[instruções atuais](../../releases/site-2026-10-26/README.md)** e baixar o **[ZIP seletivo](../../releases/site-2026-10-26/United-Site-Ajustes-2026-10-26.zip)**. Ele contém exatamente 16 arquivos em `publicar/`: seis HTML comerciais, um CSS e nove WebP. Enviar os assets antes dos HTMLs, copiar o conteúdo de `publicar/` para os caminhos correspondentes da raiz pública e invalidar o cache. Conferir o backup e as instruções de reversão antes da aplicação.
+Começar pelas **[instruções atuais](../../releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](../../releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. Ele contém exatamente 17 arquivos em `publicar/`: seis HTML comerciais, dois CSS e nove WebP. Enviar os assets antes dos HTMLs, copiar o conteúdo de `publicar/` para os caminhos correspondentes da raiz pública e invalidar o cache. Conferir o backup e as instruções de reversão antes da aplicação.
 
-O pacote foi preparado e conferido; ainda não foi aplicado à hospedagem. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. O WordPress ativo, PHP, banco, `.htaccess`, robots, sitemap e redirects ficam fora deste ajuste. Não é necessário reinstalar o plugin do blog para aplicar estes 16 arquivos.
+O pacote foi preparado e conferido; ainda não foi aplicado à hospedagem. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. O WordPress ativo, PHP, banco, `.htaccess`, robots, sitemap e redirects ficam fora deste ajuste. Não é necessário reinstalar o plugin do blog para aplicar estes 17 arquivos.
 
 ## Referência das entregas anteriores
 
-> **Integração do blog de 24/10/2026:** as orientações separadas estão em [wordpress/README.md](../../wordpress/README.md) e [INSTALACAO-RAFAEL.md](../../wordpress/docs/INSTALACAO-RAFAEL.md). O blog permanece no WordPress; não publicar `dist/blog/` sobre ele. O sitemap comercial sem artigos estáticos está em `wordpress/releases/sitemap-united-pages.xml`; sua integração não faz parte da atualização seletiva de 26/10. O domínio canônico do blog segue a configuração do WordPress.
+> **Integração do blog de 24/10/2026:** as orientações separadas estão em [wordpress/README.md](../../wordpress/README.md) e [INSTALACAO-RAFAEL.md](../../wordpress/docs/INSTALACAO-RAFAEL.md). O blog permanece no WordPress; não publicar `dist/blog/` sobre ele. O sitemap comercial sem artigos estáticos está em `wordpress/releases/sitemap-united-pages.xml`; sua integração não faz parte da atualização seletiva de 27/10. O domínio canônico do blog segue a configuração do WordPress.
 
 Esta pasta contém a entrega de 21/10/2026, incluindo o site revisado, o acervo estático de referência e os mecanismos RD. A atualização do blog de 24/10 usa o WordPress conforme indicado acima. O envio ao Git não executa publicação. A raiz PHP existente permanece intacta nesta branch.
 
@@ -37,7 +37,7 @@ Abrir `http://127.0.0.1:8792/`. O servidor de revisão aplica `noindex` por cabe
 
 ## Referência de integração completa na hospedagem
 
-As orientações abaixo documentam as entregas de 21 e 24/10. Para o site já publicado, aplicar somente a atualização seletiva de 26/10 descrita no início deste documento; ela não inclui reinstalação do blog nem mudanças de configuração da hospedagem.
+As orientações abaixo documentam as entregas de 21 e 24/10. Para o site já publicado, aplicar somente a atualização seletiva de 27/10 descrita no início deste documento; ela não inclui reinstalação do blog nem mudanças de configuração da hospedagem.
 
 1. Preparar backup e conferir as regras atuais de PHP, DirectoryIndex, WordPress e CDN. Integrar os arquivos públicos de `dist/` aos caminhos abaixo; não copiar o repositório inteiro para a raiz do servidor.
 2. Home em `/`; cursos em `/cursos/live-class/`, `/cursos/business/` e `/cursos/full/`; demais páginas comerciais em `/quem-somos/` e `/faq/`. Preservar `/blog/` no WordPress; sua integração foi documentada na entrega separada de 24/10. Não copiar `dist/blog/` para a hospedagem.

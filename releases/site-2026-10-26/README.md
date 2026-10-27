@@ -1,5 +1,7 @@
 # Atualização do site United — 26/10/2026
 
+> **Histórico:** substituído pelo [pacote cumulativo de 27/10](../site-2026-10-27/README.md), que também retira Osasco. Não aplicar este pacote antigo depois da atualização de 27/10.
+
 Rafael: esta entrega atualiza o **site principal já publicado**. O envio ao Git não publica na hospedagem.
 
 **[Baixar o ZIP de publicação](United-Site-Ajustes-2026-10-26.zip)** · 622.723 bytes (~608 KiB). As instruções completas também estão em [LEIA-ME-RAFAEL.txt](LEIA-ME-RAFAEL.txt).

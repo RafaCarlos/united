@@ -2,7 +2,7 @@
   "origin": "https://www.unitedidiomas.com",
   "pages": 213,
   "files": 846,
-  "bytes": 41806689,
+  "bytes": 41806548,
   "editorialApproval": [
     {
       "slug": "united-ingles-online-aulas-ao-vivo-tecnologia",
@@ -4413,8 +4413,8 @@
     },
     {
       "file": "quem-somos/authority.css",
-      "bytes": 22121,
-      "sha256": "75f542e966f905a08775c205a0503ca2930d7dcd715e231bee213443a065d1a1"
+      "bytes": 22829,
+      "sha256": "996cf081a0eea25cdf90f71f21b7b0ba6db0f66f9e12e5e9899d577eda78ab10"
     },
     {
       "file": "quem-somos/authority.js",
@@ -4423,8 +4423,8 @@
     },
     {
       "file": "quem-somos/index.html",
-      "bytes": 30124,
-      "sha256": "16ff7df06cc75b28c7b45e2115175d9af812c92a5f76553a0ad6aab847799470"
+      "bytes": 29275,
+      "sha256": "2536a9d12e9297e3fafa9703168558754421ef83977a726fbb22156556a00a0d"
     },
     {
       "file": "rdstation-account.js",

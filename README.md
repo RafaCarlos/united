@@ -1,10 +1,12 @@
 # United — entrega para publicação
 
-## Atualização do site principal — 26/10/2026
+## Atualização do site principal — 27/10/2026
 
-Rafael: começar pelas **[instruções de publicação](releases/site-2026-10-26/README.md)** e baixar o **[ZIP seletivo](releases/site-2026-10-26/United-Site-Ajustes-2026-10-26.zip)**. O pacote restaura o vermelho de “Quero conhecer”, preserva o WhatsApp verde e acrescenta nove variantes WebP para três imagens.
+Rafael: começar pelas **[instruções de publicação](releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. O pacote retira Osasco de Quem somos e organiza as cinco unidades em cards responsivos, restaura o vermelho de “Quero conhecer”, preserva o WhatsApp verde e acrescenta nove variantes WebP para três imagens.
 
-Publicar somente os **16 arquivos de `publicar/`**: seis HTML comerciais, um CSS e nove WebP. Enviar imagens/CSS antes dos HTMLs, preservar os caminhos e invalidar o cache. O pacote inclui sete arquivos de reversão e foi preparado e conferido; ainda não foi aplicado à hospedagem.
+Publicar somente os **17 arquivos de `publicar/`**: seis HTML comerciais, dois CSS e nove WebP. Enviar imagens/CSS antes dos HTMLs, preservar os caminhos e invalidar o cache. O pacote inclui oito arquivos de reversão e foi preparado e conferido; ainda não foi aplicado à hospedagem.
+
+Esta entrega é cumulativa e substitui o pacote de 26/10, que não deve ser aplicado depois dela.
 
 O blog ativo continua no WordPress. Não publicar o `dist/` completo nem `dist/blog/`, e não enviar `rollback/`, `conferencia/` ou `manutencao/` ao servidor público. WordPress, PHP, banco, `.htaccess`, robots e sitemap ficam fora deste ajuste.
 
@@ -20,6 +22,6 @@ Para o blog, esta integração substitui o fluxo estático abaixo. Não sobrescr
 
 A fonte do site está em **[review/united-site-2026-10-21/](review/united-site-2026-10-21/)**: Home, Live Class, Business, Full, Quem somos e FAQ, além de SEO, WebP, minificação e integração RD Station. O blog estático com 186 artigos permanece apenas como referência histórica.
 
-O processo de manutenção e as orientações anteriores estão em **[PUBLICAR.md](review/united-site-2026-10-21/PUBLICAR.md)**. Para o site já publicado, usar o ZIP seletivo de 26/10 indicado acima, sem copiar a árvore completa de `dist/`.
+O processo de manutenção e as orientações anteriores estão em **[PUBLICAR.md](review/united-site-2026-10-21/PUBLICAR.md)**. Para o site já publicado, usar o ZIP seletivo de 27/10 indicado acima, sem copiar a árvore completa de `dist/`.
 
 O PHP da raiz e a entrega anterior `review/united-2026/` foram preservados. Este commit disponibiliza a revisão no Git; a integração e a publicação na hospedagem ficam com Rafael.
