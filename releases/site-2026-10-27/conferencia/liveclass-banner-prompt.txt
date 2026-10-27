@@ -1,0 +1,8 @@
+Modo: ferramenta integrada image_gen (edição).
+Origem: propostas-locais/live-class-2026-10-09/evidence/capa-times-square-v2-original.png
+Arquivo gerado: capa-times-square-v3-original.png
+
+Use case: precise-object-edit.
+Edit target: the supplied original wide 1672x941 cinematic 3D illustration used as a UNITED Live Class website hero.
+Primary request: correct ONLY the anatomical error in the brunette woman's raised LEFT hand (on the viewer's right, between her purple sleeve and the blond man's blue sweater, approximately x=1085, y=478 in the source). It currently has an extra/forked finger. Redraw this single small hand with exactly FIVE anatomically coherent digits total: four fingers plus one thumb, natural relaxed palm-up conversational gesture, clean distinct silhouettes and no fused, forked, duplicated, or extra fingertips. Preserve connection to her wrist and sleeve and the current hand's approximate placement and scale.
+Invariants: preserve the exact wide composition, all six characters, their faces, hair, expressions, other hands, clothing, body poses, the Times Square background, the dark spacious left side for website text, colors, light, shadows, camera angle, framing and image aspect ratio. Keep the image as close to the original as possible everywhere outside this one small hand. No website text, no UI, no cyan marking, no new objects, no logo. Output a full-image corrected version, not a crop.

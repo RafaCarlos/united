@@ -2,9 +2,9 @@
 
 ## Atualização do site principal — 27/10/2026
 
-Rafael: começar pelas **[instruções de publicação](releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. O pacote retira Osasco de Quem somos e organiza as cinco unidades em cards responsivos, restaura o vermelho de “Quero conhecer”, preserva o WhatsApp verde e acrescenta nove variantes WebP para três imagens.
+Rafael: começar pelas **[instruções de publicação](releases/site-2026-10-27/README.md)** e baixar o **[ZIP seletivo](releases/site-2026-10-27/United-Site-Ajustes-2026-10-27.zip)**. O pacote retira Osasco de Quem somos e organiza as cinco unidades em cards responsivos, restaura o vermelho de “Quero conhecer”, preserva o WhatsApp verde, acrescenta nove variantes WebP para três imagens e corrige a mão da personagem no banner inicial do Live Class, com duas versões WebP responsivas.
 
-Publicar somente os **17 arquivos de `publicar/`**: seis HTML comerciais, dois CSS e nove WebP. Enviar imagens/CSS antes dos HTMLs, preservar os caminhos e invalidar o cache. O pacote inclui oito arquivos de reversão e foi preparado e conferido; ainda não foi aplicado à hospedagem.
+Publicar somente os **19 arquivos de `publicar/`**: seis HTML comerciais, dois CSS e onze WebP. Enviar imagens/CSS antes dos HTMLs, preservar os caminhos e invalidar o cache. O pacote inclui oito arquivos de reversão e foi preparado e conferido; ainda não foi aplicado à hospedagem.
 
 Esta entrega é cumulativa e substitui o pacote de 26/10, que não deve ser aplicado depois dela.
 

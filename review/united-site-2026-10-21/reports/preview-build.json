@@ -276,18 +276,18 @@
       "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
     },
     {
-      "name": "assets/capa-times-square-v2-1672.webp",
-      "sourceBytes": 214242,
-      "outputBytes": 214242,
-      "gzipBytes": 214330,
-      "sha256": "0a2e5405f3b7030eee48560b1092a81988f9ceb60e84bf330b7ac113f288b169"
+      "name": "assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "sourceBytes": 179992,
+      "outputBytes": 179992,
+      "gzipBytes": 180065,
+      "sha256": "265566319a8d3329159044305cba4f18c332ff37d9febf4fa7557eff2aa8afb2"
     },
     {
-      "name": "assets/capa-times-square-v2-960.webp",
-      "sourceBytes": 95350,
-      "outputBytes": 95350,
-      "gzipBytes": 95398,
-      "sha256": "d736b74ba035291dd4996be35777675a2e5353eeb23ac44e66ff7b72bde6225f"
+      "name": "assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "sourceBytes": 88182,
+      "outputBytes": 88182,
+      "gzipBytes": 88230,
+      "sha256": "6631a1359c29b251cf25994ca2fa0738c32e621399ec8a03084890cdce89a085"
     },
     {
       "name": "assets/exercicio-escuta-720.webp",
@@ -6024,10 +6024,10 @@
     },
     {
       "name": "index.html",
-      "sourceBytes": 51365,
-      "outputBytes": 50479,
-      "gzipBytes": 13172,
-      "sha256": "7dcea8de49309e0a9681050d25e73151346cac439d078e98ba1db511cc8a76ae"
+      "sourceBytes": 51443,
+      "outputBytes": 50557,
+      "gzipBytes": 13201,
+      "sha256": "b17ba941ff7548e8ba855e15f4e4914dab429c49631fbb2f9229fbb5cd30ea4d"
     },
     {
       "name": "interface-refinements.css",

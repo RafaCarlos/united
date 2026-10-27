@@ -1,7 +1,7 @@
 {
   "version": 1,
   "scope": "Git review payload; excludes this manifest, preview and dependencies",
-  "fileCount": 1929,
+  "fileCount": 1931,
   "files": [
     {
       "file": ".gitignore",
@@ -11,17 +11,17 @@
     {
       "file": "PUBLICAR.md",
       "bytes": 6570,
-      "sha256": "6bc00b27d5587320a421ca188aa8695c154c8511f3ddc4d7596945936427a206"
+      "sha256": "0768515221a165871b0a38a63d10f6b151007f076d2156758c2b51291a7795e0"
     },
     {
       "file": "README.md",
       "bytes": 7924,
-      "sha256": "f4a426497d8c1411c554d57595168deac36d0a96edea212f3c296d52593bc0e0"
+      "sha256": "d27bdbefa3ce119275844770de87a23d93a7372acd6f282bea25d0d3fc655a3f"
     },
     {
       "file": "dist/.united-release.json",
-      "bytes": 43564,
-      "sha256": "224777bc7446349ef5cb7ae0e87dbad9ba6fecf2ae0527aa2362b3601c689c58"
+      "bytes": 43590,
+      "sha256": "e85bd4e2a870194b492c0573f83c49f69b30a87194590df7f9d2a9df57fa7250"
     },
     {
       "file": "dist/app.js",
@@ -74,14 +74,14 @@
       "sha256": "67f89d7cdc84eb519d842ae2d3fd7a5213e33024c058346c2a1751c4e64e9c16"
     },
     {
-      "file": "dist/assets/capa-times-square-v2-1672.webp",
-      "bytes": 214242,
-      "sha256": "0a2e5405f3b7030eee48560b1092a81988f9ceb60e84bf330b7ac113f288b169"
+      "file": "dist/assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "bytes": 179992,
+      "sha256": "265566319a8d3329159044305cba4f18c332ff37d9febf4fa7557eff2aa8afb2"
     },
     {
-      "file": "dist/assets/capa-times-square-v2-960.webp",
-      "bytes": 95350,
-      "sha256": "d736b74ba035291dd4996be35777675a2e5353eeb23ac44e66ff7b72bde6225f"
+      "file": "dist/assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "bytes": 88182,
+      "sha256": "6631a1359c29b251cf25994ca2fa0738c32e621399ec8a03084890cdce89a085"
     },
     {
       "file": "dist/assets/exercicio-escuta-720.webp",
@@ -3490,8 +3490,8 @@
     },
     {
       "file": "dist/cursos/live-class/index.html",
-      "bytes": 50862,
-      "sha256": "b4ebe89f696cec55ea46c283f366b6b0847a9d6a2234b9ab22c6434f597db997"
+      "bytes": 50940,
+      "sha256": "2be6068a0c4e363ad806eac7429101971605717308a977ad2e09b31e57043955"
     },
     {
       "file": "dist/desktop-refinements.css",
@@ -4315,13 +4315,13 @@
     },
     {
       "file": "reports/preview-build.json",
-      "bytes": 218390,
-      "sha256": "77b40956388e153d1e1b8aa65372f5fc934d0af0a9a88ecebf6bc86a139c7ef0"
+      "bytes": 218416,
+      "sha256": "3459a525e11eaf8e57291a48a4f952f06935435194b19169ef38556e6eb01ade"
     },
     {
       "file": "reports/production-build.json",
-      "bytes": 176802,
-      "sha256": "e9a552fbd21c38e0d691eef4a936a1cb02e8f1eee430e97395ebf352f03025eb"
+      "bytes": 176828,
+      "sha256": "81b3e38eedacc707e5d01623bb1a25ef87e41d2bb22372539e028913ed1f84b5"
     },
     {
       "file": "reports/rd-integration.json",
@@ -4336,12 +4336,12 @@
     {
       "file": "reports/seo-preview.json",
       "bytes": 242058,
-      "sha256": "b1c633168d460ee0d3acfa863f06eceb2bdc561b962bc2c36225c0d638b5b114"
+      "sha256": "12bea30228841eb4dc9e787356b95b4ce87fa9da1eca9fe6816ed2646ec85dd5"
     },
     {
       "file": "reports/seo-production.json",
       "bytes": 246345,
-      "sha256": "d3253215d0f4355d703dc1b300c2710014647e54846cfeeca86f72aa67ab7498"
+      "sha256": "f7a5b8f19c94ac50dbab0a7b6fbf7852b1729c00303fb28fbdfcfaa57fe7a4a2"
     },
     {
       "file": "reports/validation.json",
@@ -4407,6 +4407,16 @@
       "file": "src/assets/capa-times-square-v2-960.webp",
       "bytes": 95350,
       "sha256": "d736b74ba035291dd4996be35777675a2e5353eeb23ac44e66ff7b72bde6225f"
+    },
+    {
+      "file": "src/assets/capa-times-square-v3-1672-265566319a8d.webp",
+      "bytes": 179992,
+      "sha256": "265566319a8d3329159044305cba4f18c332ff37d9febf4fa7557eff2aa8afb2"
+    },
+    {
+      "file": "src/assets/capa-times-square-v3-960-6631a1359c29.webp",
+      "bytes": 88182,
+      "sha256": "6631a1359c29b251cf25994ca2fa0738c32e621399ec8a03084890cdce89a085"
     },
     {
       "file": "src/assets/exercicio-escuta-720.webp",
@@ -9445,8 +9455,8 @@
     },
     {
       "file": "src/index.html",
-      "bytes": 51365,
-      "sha256": "a1b3404cceb47d6603d42eced01be4e806eecafe7712093113dacbb86fae6de5"
+      "bytes": 51443,
+      "sha256": "1380415e1013d509e0d572fd571de68719c2a1c0bc1fcaf60bb781427c47d1b3"
     },
     {
       "file": "src/interface-refinements.css",
