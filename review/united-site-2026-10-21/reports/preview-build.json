@@ -6073,10 +6073,10 @@
     },
     {
       "name": "quem-somos/authority.css",
-      "sourceBytes": 22868,
-      "outputBytes": 22121,
-      "gzipBytes": 4593,
-      "sha256": "75f542e966f905a08775c205a0503ca2930d7dcd715e231bee213443a065d1a1"
+      "sourceBytes": 23754,
+      "outputBytes": 22829,
+      "gzipBytes": 4670,
+      "sha256": "996cf081a0eea25cdf90f71f21b7b0ba6db0f66f9e12e5e9899d577eda78ab10"
     },
     {
       "name": "quem-somos/authority.js",
@@ -6087,10 +6087,10 @@
     },
     {
       "name": "quem-somos/index.html",
-      "sourceBytes": 29997,
-      "outputBytes": 29889,
-      "gzipBytes": 7842,
-      "sha256": "1c2b9cb5161a4576253fcee2a3cbaa8d65d90b4793d3866666c548cd098d9c01"
+      "sourceBytes": 29148,
+      "outputBytes": 29040,
+      "gzipBytes": 7748,
+      "sha256": "5e4179254d531dc0a1eca5a518d8faf285f65a08a380a405794194ac43cd3e54"
     },
     {
       "name": "rdstation-account.js",

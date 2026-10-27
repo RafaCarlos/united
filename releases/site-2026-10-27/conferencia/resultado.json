@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-27T18:16:16.469769+00:00",
+  "scope": "Retirada de Osasco de Quem somos; pacote cumulativo com os ajustes de 26/10",
+  "build": {
+    "passed": true,
+    "pages": 213,
+    "checkedReferences": 18546,
+    "errors": 0
+  },
+  "seoCommercial": {
+    "pages": 6,
+    "errors": 0,
+    "warnings": 0
+  },
+  "seoHistoricalBlogWarnings": 207,
+  "units": [
+    "Cornélio Procópio",
+    "Ipiranga",
+    "Maringá",
+    "Santo Amaro",
+    "Tatuapé"
+  ],
+  "responsiveChecks": [
+    {
+      "viewport": "1440x900",
+      "layout": "3+2 centralizado",
+      "cardWidth": 400,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "900x900",
+      "layout": "2+2+1 centralizado",
+      "cardWidth": 412,
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "390x844",
+      "layout": "1 coluna",
+      "cardWidth": 358,
+      "horizontalOverflow": false
+    }
+  ],
+  "detailsKeyboardOpenClose": "passed",
+  "remainingContacts": "preserved",
+  "publicarFiles": 17,
+  "rollbackFiles": 8,
+  "note": "Revisão visual no navegador do build de produção servido localmente. Sem envio de formulário, alteração de WordPress ou publicação na hospedagem."
+}
