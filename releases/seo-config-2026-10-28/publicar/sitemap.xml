@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Indice comercial. O indice WordPress e anunciado separadamente em robots.txt.
+     Nao aninhar blog/sitemap_index.xml aqui: Google rejeita indices aninhados. -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.unitedidiomas.com/sitemap-united-pages.xml</loc>
+  </sitemap>
+</sitemapindex>

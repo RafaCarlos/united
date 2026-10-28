@@ -1,0 +1,463 @@
+{
+  "scope": "local-only; Apache em 127.0.0.1; nenhum acesso externo",
+  "apache": "Server version: Apache/2.4.67 (Unix)",
+  "complete": true,
+  "checks": 113,
+  "passed": 113,
+  "failed": 0,
+  "error": null,
+  "results": [
+    {
+      "check": "sitemap comercial: exatamente seis URLs canonicas",
+      "ok": true
+    },
+    {
+      "check": "sitemap comercial: copia exata da fonte aprovada (SHA-256)",
+      "ok": true
+    },
+    {
+      "check": "indice raiz sem indices aninhados ou hosts misturados",
+      "ok": true
+    },
+    {
+      "check": "robots anuncia comercial e WordPress independente",
+      "ok": true
+    },
+    {
+      "check": "robots libera conteudo publico e recursos",
+      "ok": true
+    },
+    {
+      "check": "robots protege rastreamento administrativo e permite admin-ajax",
+      "ok": true
+    },
+    {
+      "check": "robots nao inventa grupos de IA",
+      "ok": true
+    },
+    {
+      "check": "verificador remoto limita plano a GET/HEAD em HTTPS United",
+      "ok": true
+    },
+    {
+      "check": "verificador remoto detecta query dentro da ancora",
+      "ok": true
+    },
+    {
+      "check": "verificador remoto aceita query antes da ancora",
+      "ok": true
+    },
+    {
+      "check": "verificador remoto detecta pagina 200 com noindex",
+      "ok": true
+    },
+    {
+      "check": "verificador remoto rejeita indice WP aninhado",
+      "ok": true
+    },
+    {
+      "check": "Apache real: sintaxe da configuracao isolada",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos-de-ingles-unitedidiomas",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos-de-ingles-unitedidiomas?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos-de-ingles-unitedidiomas",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos-de-ingles-unitedidiomas?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos-de-ingles-unitedidiomas",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos-de-ingles-unitedidiomas?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos-de-ingles-unitedidiomas",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos-de-ingles-unitedidiomas?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos-de-ingles-unitedidiomas/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos-de-ingles-unitedidiomas/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos-de-ingles-unitedidiomas/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos-de-ingles-unitedidiomas/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos-de-ingles-unitedidiomas/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos-de-ingles-unitedidiomas/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos-de-ingles-unitedidiomas/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos-de-ingles-unitedidiomas/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/o-melhor-curso-de-ingles",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/o-melhor-curso-de-ingles?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/o-melhor-curso-de-ingles",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/o-melhor-curso-de-ingles?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/o-melhor-curso-de-ingles",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/o-melhor-curso-de-ingles?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/o-melhor-curso-de-ingles",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/o-melhor-curso-de-ingles?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/o-melhor-curso-de-ingles/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/o-melhor-curso-de-ingles/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/o-melhor-curso-de-ingles/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/o-melhor-curso-de-ingles/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/o-melhor-curso-de-ingles/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/o-melhor-curso-de-ingles/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/o-melhor-curso-de-ingles/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/o-melhor-curso-de-ingles/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos/curso-de-ingles-online",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos/curso-de-ingles-online?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos/curso-de-ingles-online",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos/curso-de-ingles-online?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos/curso-de-ingles-online",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos/curso-de-ingles-online?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos/curso-de-ingles-online",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos/curso-de-ingles-online?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos/curso-de-ingles-online/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET www.unitedidiomas.com/cursos/curso-de-ingles-online/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos/curso-de-ingles-online/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado GET unitedidiomas.com/cursos/curso-de-ingles-online/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos/curso-de-ingles-online/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD www.unitedidiomas.com/cursos/curso-de-ingles-online/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos/curso-de-ingles-online/",
+      "ok": true
+    },
+    {
+      "check": "301 direto legado HEAD unitedidiomas.com/cursos/curso-de-ingles-online/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora GET /cursos",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora HEAD /cursos",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora GET /cursos?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora HEAD /cursos?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora GET /cursos/",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora HEAD /cursos/",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora GET /cursos/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "catalogo direto com ancora HEAD /cursos/?utm_source=teste&next=a%2Fb%3Fc%3Dd&valor=um+dois&token=x%23y",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /cursos/live-class/",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /cursos/business/",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /cursos/full/",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /quem-somos/",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /faq/",
+      "ok": true
+    },
+    {
+      "check": "destino ou rota atual sem loop: /blog/post-example",
+      "ok": true
+    },
+    {
+      "check": "nao capturar caminho fora do escopo: /blog/cursos",
+      "ok": true
+    },
+    {
+      "check": "nao capturar caminho fora do escopo: /cursos-extra",
+      "ok": true
+    },
+    {
+      "check": "nao capturar caminho fora do escopo: /cursos/live-class-extra/",
+      "ok": true
+    },
+    {
+      "check": "nao capturar caminho fora do escopo: /outro/cursos",
+      "ok": true
+    },
+    {
+      "check": "seguranca existente preservada: /guarded",
+      "ok": true
+    },
+    {
+      "check": "seguranca existente preservada: /painel/",
+      "ok": true
+    },
+    {
+      "check": "POST nao redirecionado pelo fragmento",
+      "ok": true
+    },
+    {
+      "check": "host de previa nao redirecionado pelo fragmento",
+      "ok": true
+    },
+    {
+      "check": "cache CSS/JS 1 dia: /assets/css/test.css",
+      "ok": true
+    },
+    {
+      "check": "cache CSS/JS 1 dia: /assets/js/test.js?v=abc123",
+      "ok": true
+    },
+    {
+      "check": "cache CSS/JS 1 dia: /home/home-local.css?v=xyz",
+      "ok": true
+    },
+    {
+      "check": "cache CSS/JS 1 dia: /site-navigation.js?v=0123456789ab",
+      "ok": true
+    },
+    {
+      "check": "cache imagem/fonte 30 dias: /assets/fonts/test.woff2",
+      "ok": true
+    },
+    {
+      "check": "cache imagem/fonte 30 dias: /assets/images/test.svg",
+      "ok": true
+    },
+    {
+      "check": "cache imagem/fonte 30 dias: /assets/images/test.webp",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /form.php",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /rdstation-account.js",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /home/rdstation-form.js",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /assets/js/rdstation-form.js",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /blog/assets/test.css",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /assets/css/missing.css",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache em HTML/PHP/RD/blog/erro: /assets/css/not-css.css",
+      "ok": true
+    },
+    {
+      "check": "politica de cache existente preservada: /assets/css/private.css",
+      "ok": true
+    },
+    {
+      "check": "politica de cache existente preservada: /assets/css/no-store.css",
+      "ok": true
+    },
+    {
+      "check": "politica de cache existente preservada: /assets/css/established.css",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache com Authorization",
+      "ok": true
+    },
+    {
+      "check": "sem novo cache com Set-Cookie",
+      "ok": true
+    },
+    {
+      "check": "compressao gzip de texto estatico negociada",
+      "ok": true
+    },
+    {
+      "check": "Vary Accept-Encoding preservado para compressao",
+      "ok": true
+    },
+    {
+      "check": "sem compressao adicionada para binario/blog/PHP/RD: /assets/images/test.webp",
+      "ok": true
+    },
+    {
+      "check": "sem compressao adicionada para binario/blog/PHP/RD: /assets/fonts/test.woff2",
+      "ok": true
+    },
+    {
+      "check": "sem compressao adicionada para binario/blog/PHP/RD: /blog/",
+      "ok": true
+    },
+    {
+      "check": "sem compressao adicionada para binario/blog/PHP/RD: /form.php",
+      "ok": true
+    },
+    {
+      "check": "sem compressao adicionada para binario/blog/PHP/RD: /rdstation-account.js",
+      "ok": true
+    },
+    {
+      "check": "304 conserva cache estatico esperado",
+      "ok": true
+    },
+    {
+      "check": "nenhum erro de parse dos fragmentos .htaccess",
+      "ok": true
+    }
+  ]
+}

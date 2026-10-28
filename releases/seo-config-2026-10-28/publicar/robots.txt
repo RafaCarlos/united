@@ -1,0 +1,10 @@
+# Raiz comercial. Mesclar qualquer politica especifica de robos ja existente.
+# Este arquivo nao cria nem altera opt-out de treinamento de IA.
+User-agent: *
+Allow: /
+Disallow: /painel
+Disallow: /blog/wp-admin/
+Allow: /blog/wp-admin/admin-ajax.php
+
+Sitemap: https://www.unitedidiomas.com/sitemap-united-pages.xml
+Sitemap: https://unitedidiomas.com/blog/sitemap_index.xml

@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-28T22:30:55.625560+00:00",
+  "passed": true,
+  "leadsSubmitted": 0,
+  "requests": "GET publicos somente",
+  "pages": [
+    {
+      "url": "https://unitedidiomas.com/blog/sample-page/",
+      "status": 200,
+      "robots": [
+        "<meta name='robots' content='noindex, follow' />"
+      ],
+      "locations": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/teste/",
+      "status": 200,
+      "robots": [
+        "<meta name='robots' content='noindex, follow' />"
+      ],
+      "locations": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/8-2/",
+      "status": 200,
+      "robots": [
+        "<meta name='robots' content='noindex, follow' />"
+      ],
+      "locations": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/pesquisa-blog/",
+      "status": 200,
+      "robots": [
+        "<meta name='robots' content='noindex, follow' />"
+      ],
+      "locations": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/",
+      "status": 200,
+      "robots": [
+        "<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />"
+      ],
+      "locations": []
+    },
+    {
+      "url": "https://unitedidiomas.com/blog/page-sitemap.xml",
+      "status": 200,
+      "robots": [],
+      "locations": [
+        "https://unitedidiomas.com/blog/",
+        "https://unitedidiomas.com/blog/materiais-ricos/",
+        "https://unitedidiomas.com/blog/dicas-e-curiosidades/",
+        "https://unitedidiomas.com/blog/ingles-para-negocios/",
+        "https://unitedidiomas.com/blog/united-idiomas/"
+      ]
+    }
+  ],
+  "publishedArticleUrls": 188
+}

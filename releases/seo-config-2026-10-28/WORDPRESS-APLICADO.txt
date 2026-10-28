@@ -1,0 +1,39 @@
+UNITED — AJUSTES APLICADOS NO WORDPRESS — 28/10/2026
+
+Aplicados pelo painel autenticado, sem modificar textos, layout, slugs ou
+arquivos de tema. Somente a configuracao Yoast "Permitir que os motores de
+pesquisa mostrem este conteudo nos resultados da pesquisa?" foi alterada de
+"Sim (por omissao para Paginas)" para "Nao" nestas quatro paginas auxiliares:
+
+  ID 2   Sample Page    /blog/sample-page/
+  ID 211 teste          /blog/teste/
+  ID 8   Home (blog)    /blog/8-2/
+  ID 363 Pesquisa Blog /blog/pesquisa-blog/
+
+O controle de seguir links permaneceu Yes. O efeito publico confirmado e
+noindex, follow: paginas continuam acessiveis; a remocao dos resultados do
+Google depende de novo rastreamento. Nenhum artigo foi removido ou alterado.
+
+A pagina inicial REAL e "Principal blog", ID 1312; nao e "Home (blog)", ID 8.
+/blog/ continua index, follow. A opcao global de desencorajar motores de
+pesquisa permaneceu desmarcada. Nao foi feito bloqueio global de indexacao.
+
+VERIFICACAO PUBLICA
+
+Validacao GET sem login, sem formularios e sem leads, registrada em
+validacao/resultado-wordpress.json:
+  - Quatro paginas respondem 200 e noindex, follow.
+  - /blog/ responde 200 e index, follow.
+  - page-sitemap.xml contem cinco paginas, incluindo /blog/; os quatro
+    auxiliares nao constam mais no sitemap.
+  - post-sitemap.xml mantem 188 URLs de artigos.
+
+ROLLBACK
+
+Se necessario, abrir cada ID em Paginas > Editar > Yoast SEO > Avancadas,
+restaurar "Sim (por omissao para Paginas)" e clicar Actualizar. Preservar
+"seguir ligacoes: Yes". Conferir o resultado publico e sitemap apos salvar.
+
+Nao reaplicar estes ajustes nem instalar plugins para repeti-los. As regras
+da raiz comercial, redirects e cache estao apenas preparadas no pacote;
+dependem de instalacao na hospedagem conforme README.txt.

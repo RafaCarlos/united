@@ -35,7 +35,7 @@ function click(element, props = {}) {
   return event;
 }
 
-function widget(id) {
+function widget(id, {deferTrigger = false} = {}) {
   const el = d.createElement('div');
   el.id = id;
   el.className = 'floating-button floating-button--close';
@@ -44,15 +44,17 @@ function widget(id) {
     <form action="https://example.invalid/rd-never-submitted"><input name="name" value="Valor local"><input name="email"><input name="personal_phone"><input type="hidden" name="token" value="local-fixture-not-a-secret"><button type="submit">Enviar</button></form>
     <a target="_blank" class="student" href="https://wa.me/5511940040658?text=Sou%20aluno">CLIQUE AQUI</a>`;
   let opens = 0;
-  el.querySelector('.rdstation-popup-js-floating-button').addEventListener('click', () => {
+  const trigger = el.querySelector('.rdstation-popup-js-floating-button');
+  trigger.addEventListener('click', () => {
     opens++;
     el.classList.remove('floating-button--close');
     el.querySelector('[name=name]').focus();
   });
   el.querySelector('.rdstation-popup-js-close-button').addEventListener('click', () => el.classList.add('floating-button--close'));
   el.querySelector('form').addEventListener('submit', event => { event.preventDefault(); throw new Error('No test may submit a lead'); });
+  if (deferTrigger) trigger.remove();
   d.body.appendChild(el);
-  return {el, opens: () => opens};
+  return {el, trigger, opens: () => opens};
 }
 
 assert.equal(click(d.querySelector('#commercial')).defaultPrevented, false);
@@ -112,6 +114,39 @@ assert.equal(d.activeElement, d.querySelector('#commercial'));
 assert.equal(d.querySelector('#commercial').getAttribute('aria-expanded'), 'false');
 cases.push('Escape uses native close; focus trap and return focus preserve accessibility');
 
+const status = d.createElement('p');
+d.body.appendChild(status);
+await flush();
+let linkScans = 0;
+const querySelectorAll = d.querySelectorAll;
+d.querySelectorAll = function (selector) {
+  if (selector === 'a[href]') linkScans++;
+  return querySelectorAll.call(this, selector);
+};
+for (let index = 0; index < 20; index++) {
+  status.textContent = 'Banner ' + index + ' aberto';
+  await flush();
+}
+const unrelatedSection = d.createElement('section');
+unrelatedSection.innerHTML = '<div><p>Conteúdo sem links</p></div>';
+d.body.appendChild(unrelatedSection);
+await flush();
+assert.equal(linkScans, 0, 'Unrelated text/content changes must not rescan all page links');
+d.querySelectorAll = querySelectorAll;
+cases.push('Repeated banner/status text and unrelated subtrees do not rescan page links');
+
+const student = rd.el.querySelector('.student');
+student.textContent = 'CLIQUE AQUI';
+await flush();
+assert.equal(student.textContent, 'Atendimento para alunos');
+const nestedStudent = d.createElement('div');
+nestedStudent.innerHTML = '<a href="https://wa.me/5511940040658?text=Aluno">CLIQUE AQUI</a>';
+rd.el.appendChild(nestedStudent);
+await flush();
+assert.equal(nestedStudent.querySelector('a').textContent, 'Atendimento para alunos');
+assert.equal(rd.el.querySelector('[name=name]').value, 'Valor local');
+cases.push('Existing student-link text updates and controls inserted inside RD still reconcile');
+
 const dynamic = d.createElement('a');
 dynamic.href = 'https://api.whatsapp.com/send?phone=%2B55%20(11)%2094004-0658';
 dynamic.target = '_blank';
@@ -138,6 +173,21 @@ assert.equal(click(d.querySelector('#commercial')).defaultPrevented, true);
 assert.equal(replacement.opens(), 1, 'No duplicated handler after evaluating the bridge twice');
 assert.equal(d.querySelector('#commercial').getAttribute('aria-controls'), replacement.el.id);
 cases.push('Removed/replaced widgets recover cleanly; repeated initialization never duplicates handlers');
+
+replacement.el.remove();
+await flush();
+const delayed = widget('rd-delayed-trigger', {deferTrigger: true});
+await flush();
+assert.equal(d.querySelector('#commercial').hasAttribute('aria-controls'), false);
+const triggerContainer = d.createElement('div');
+triggerContainer.appendChild(delayed.trigger);
+delayed.el.prepend(triggerContainer);
+await flush();
+assert.equal(delayed.trigger.style.display, 'none');
+assert.equal(d.querySelector('#commercial').getAttribute('aria-controls'), delayed.el.id);
+assert.equal(click(d.querySelector('#commercial')).defaultPrevented, true);
+assert.equal(delayed.opens(), 1);
+cases.push('A native trigger inserted later inside a subtree connects without waiting for a click');
 
 dom.window.close();
 console.log(JSON.stringify({passed: true, networkRequests: 0, leadsSubmitted: 0, cases}, null, 2));
