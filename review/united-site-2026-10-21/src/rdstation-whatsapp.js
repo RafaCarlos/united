@@ -172,7 +172,21 @@
     }
   });
 
-  new MutationObserver(connect).observe(document.body, {childList: true, subtree: true});
+  const mutationSelector = 'a[href], .floating-button, ' + TRIGGER_SELECTOR;
+  function affectsBridge(records) {
+    if (wrapper && (!wrapper.isConnected || !trigger || !trigger.isConnected)) return true;
+    return records.some(function (record) {
+      // RD may replace controls or update its student link without a new wrapper.
+      if (wrapper && wrapper.contains(record.target)) return true;
+      return Array.from(record.addedNodes).concat(Array.from(record.removedNodes)).some(function (node) {
+        return node.nodeType === 1 && (node.matches(mutationSelector) || node.querySelector(mutationSelector));
+      });
+    });
+  }
+  new MutationObserver(function (records) {
+    // Banner/status text and unrelated sections do not require a page-wide scan.
+    if (affectsBridge(records)) connect();
+  }).observe(document.body, {childList: true, subtree: true});
   connect();
   window.addEventListener('pageshow', connect);
   document.addEventListener('visibilitychange', function () {
